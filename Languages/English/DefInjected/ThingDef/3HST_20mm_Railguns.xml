@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Gun_3HST_20mmAutocannon.label>3HST 20mm vehicle rail autocannon</Gun_3HST_20mmAutocannon.label>
+  <Gun_3HST_20mmAutocannon.description>High caliber, fast firing railgun commonly found on a wide variety of 3HST vehicles, from IFV to space warship AA guns.</Gun_3HST_20mmAutocannon.description>
+  <Gun_3HST_20mmAutocannon.tools.0.label>stock</Gun_3HST_20mmAutocannon.tools.0.label>
+  <Gun_3HST_20mmAutocannon.tools.1.label>barrel</Gun_3HST_20mmAutocannon.tools.1.label>
+  <Gun_3HST_20mmAutocannon.tools.2.label>muzzle</Gun_3HST_20mmAutocannon.tools.2.label>
+
+
+  <!-- Turret manned -->
+
+  <Turret_3HST20mmACmanned.label>Manned 20mm rail autocannon</Turret_3HST20mmACmanned.label>
+  <Turret_3HST20mmACmanned.description>A 3HST rail autocannon mounted on an fixed mount. Despite the fact this turret is manually operated, this turret still needs a amount of power to operate since railguns consumes power.</Turret_3HST20mmACmanned.description>
+
+
+  <!-- Turret auto -->
+
+  <Turret_3HST20mmHMGAuto.label>Auto 20mm rail autocannon</Turret_3HST20mmHMGAuto.label>
+  <Turret_3HST20mmHMGAuto.description>A permanent defensive structure covered under thick steel armor reinforced by a layer of plasteel surface hardening. While extremely durable and resilent to all but EMP attacks, they're costly to build both in terms of material and time, and being unable to move after construction.</Turret_3HST20mmHMGAuto.description>
+
+  <Turret_3HST20mmHMGAutoMoveable.label>Auto 20mm rail autocannon</Turret_3HST20mmHMGAutoMoveable.label>
+  <Turret_3HST20mmHMGAutoMoveable.description>A gun, a tripod, and some servos between them. While more fragile and inaccurate than their permanent cousins, they enjoy the versatility of being moveable.</Turret_3HST20mmHMGAutoMoveable.description>
+
+  <Gun_20mmAC_Turret.label>Mounted 3HST 20mm rail autocannon</Gun_20mmAC_Turret.label>
+  <Gun_20mmAC_Turret.description>3HST 20mm rail autocannon on a stationary emplacement.</Gun_20mmAC_Turret.description>
+
+
+</LanguageData>

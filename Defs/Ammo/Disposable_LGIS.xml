@@ -1,0 +1,1834 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--=====================Disposable LGIS Launchers ===================-->
+  <ThingDef Name="BaseDisposableLGIS" Abstract="True">
+    <description>Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but you need to retract the sights, switch it to direct fire mode for it to be used in other launchers as ammunition.</description>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <category>Item</category>
+    <thingClass>ThingWithComps</thingClass>
+    <equipmentType>Primary</equipmentType>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <selectable>True</selectable>
+    <stackLimit>50</stackLimit>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <storedConceptLearnOpportunity>BDGW_LGIS</storedConceptLearnOpportunity>
+
+    <graphicData>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+
+    <statBases>
+      <SightsEfficiency>1.0</SightsEfficiency>
+      <ShotSpread>0.08</ShotSpread>
+      <SwayFactor>1.1</SwayFactor>
+      <Bulk>6.8</Bulk>
+      <Mass>2.5</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+      <SellPriceFactor>0.5</SellPriceFactor>
+      <RangedWeapon_Cooldown>2.85</RangedWeapon_Cooldown>
+    </statBases>
+    
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Normal</tickerType>
+    <techLevel>Spacer</techLevel>
+    
+    <thingCategories>
+      <li>Gun3HSTDisposable</li>
+    </thingCategories>
+    <thingSetMakerTags>
+      <li>SingleUseWeapon</li>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+
+    <weaponTags>
+      <li>CE_AI_AOE</li>
+      <li>3HST_Weapons</li>
+    </weaponTags>
+    
+    <generateCommonality>2</generateCommonality>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+    </comps>
+        
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <chanceFactor>1.5</chanceFactor>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.02</cooldownTime>
+        <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+      </li>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+        <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.0,1.0</DrawSize>
+        <DrawOffset>-0.3,0.0</DrawOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" Name="BaseDisposableLGISammo" ParentName="BaseDisposableLGIS" Abstract="True">
+    <description>Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but it is also used to feed various LGIS launchers.</description>
+
+    <thingClass>CombatExtended.AmmoThing</thingClass>
+    <cookOffFlashScale>40</cookOffFlashScale>
+    <cookOffSound>MortarBomb_Explode</cookOffSound>
+
+    <thingCategories>
+      <li>AmmoCategory70mmLGIS</li>
+    </thingCategories>
+
+    <weaponTags>
+      <li>CE_AI_Rifle</li>
+      <li>CE_AI_Launcher</li>
+      <li>3HST_Weapons</li>
+    </weaponTags>
+    <tradeTags>
+      <li>CE_Ammo</li>
+    </tradeTags>
+  </ThingDef>
+
+  <!--===================Direct launchers/ammo=============-->
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseDisposableLGISammo">
+    <defName>Gun_3HST_LGIS_frag</defName>
+    <label>frag LGIS tube</label>
+    <ammoClass>RocketFrag</ammoClass>
+    <detonateProjectile>Projectile_70mmLGIS_Frag</detonateProjectile>
+    
+    <graphicData>
+      <texPath>Things/Weapons/Disposable_LGIS/frag</texPath>
+    </graphicData>
+    <!--<uiIconPath>UI/Icons/Rockets/3HST_IAA_12_LGIS_Missile_frag_a</uiIconPath>-->
+
+    <statBases>
+      <MarketValue>107</MarketValue>
+    </statBases>
+    <weaponTags>
+      <li>GunHeavy</li>
+      <li>IndustrialGunAdvanced</li>
+      <li>3HST_LGIS_Disposable</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+        <defaultProjectile>Projectile_70mmLGIS_Frag</defaultProjectile>
+        <hasStandardCommand>true</hasStandardCommand>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>3.4</warmupTime>
+        <burstShotCount />
+        <range>90</range>
+        <minRange>10</minRange>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>5</muzzleFlashScale>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeThing">
+        <thingDef>Gun_3HST_LGIS_frag_ID</thingDef>
+        <gizmoLabel>Switch to indirect</gizmoLabel>
+        <gizmoDesc>Extend the sights and switch the launcher to indirect fire mode.\n\nImportant: the launcher can't be used as ammo in indirect mode. You'll have to switch it back to direct mode for other launchers to accept as ammo.</gizmoDesc>
+        <icon>UI/Icons/FireModes/Direct</icon>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseDisposableLGISammo">
+    <defName>Gun_3HST_LGIS_cluster</defName>
+    <label>cluster LGIS tube</label>
+    <ammoClass>RocketCluster</ammoClass>
+    <detonateProjectile>Projectile_70mmLGIS_Cluster</detonateProjectile>
+    <generateCommonality>0.01</generateCommonality>
+
+    <graphicData>
+      <texPath>Things/Weapons/Disposable_LGIS/cluster</texPath>
+    </graphicData>
+    <!--<uiIconPath>UI/Icons/Rockets/3HST_IAA_12_LGIS_Missile_frag_a</uiIconPath>-->
+
+    <statBases>
+      <MarketValue>440</MarketValue>
+    </statBases>
+
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+        <defaultProjectile>Projectile_70mmLGIS_Cluster</defaultProjectile>
+        <hasStandardCommand>true</hasStandardCommand>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>3.4</warmupTime>
+        <burstShotCount />
+        <range>90</range>
+        <minRange>10</minRange>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>5</muzzleFlashScale>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeThing">
+        <thingDef>Gun_3HST_LGIS_cluster_ID</thingDef>
+        <gizmoLabel>Switch to indirect</gizmoLabel>
+        <gizmoDesc>Extend the sights and switch the launcher to indirect fire mode.\n\nImportant: the launcher can't be used as ammo in indirect mode. You'll have to switch it back to direct mode for other launchers to accept as ammo.</gizmoDesc>
+        <icon>UI/Icons/FireModes/Direct</icon>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseDisposableLGISammo">
+    <defName>Gun_3HST_LGIS_thermobaric</defName>
+    <label>thermobaric LGIS tube</label>
+    <ammoClass>RocketThermobaric</ammoClass>
+    <detonateProjectile>Projectile_70mmLGIS_Thermobaric</detonateProjectile>
+    <generateCommonality>0.5</generateCommonality>
+
+    <graphicData>
+      <texPath>Things/Weapons/Disposable_LGIS/thermobaric</texPath>
+    </graphicData>
+    <!--<uiIconPath>UI/Icons/Rockets/3HST_IAA_12_LGIS_Missile_thermobaric_a</uiIconPath>-->
+
+    <statBases>
+      <MarketValue>167</MarketValue>
+
+    </statBases>
+    <weaponTags>
+      <li>GunHeavy</li>
+      <li>IndustrialGunAdvanced</li>
+      <li>3HST_LGIS_Disposable_Adv</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+        <defaultProjectile>Projectile_70mmLGIS_Thermobaric</defaultProjectile>
+        <hasStandardCommand>true</hasStandardCommand>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>3.4</warmupTime>
+        <burstShotCount />
+        <range>90</range>
+        <minRange>10</minRange>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>5</muzzleFlashScale>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeThing">
+        <thingDef>Gun_3HST_LGIS_thermobaric_ID</thingDef>
+        <gizmoLabel>Switch to indirect</gizmoLabel>
+        <gizmoDesc>Extend the sights and switch the launcher to indirect fire mode.\n\nImportant: the launcher can't be used as ammo in indirect mode. You'll have to switch it back to direct mode for other launchers to accept as ammo.</gizmoDesc>
+        <icon>UI/Icons/FireModes/Direct</icon>
+      </li>
+    </comps>
+
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseDisposableLGISammo">
+    <defName>Gun_3HST_LGIS_heat</defName>
+    <label>HEAT LGIS tube</label>
+    <ammoClass>RocketHEAT</ammoClass>
+    <detonateProjectile>Projectile_70mmLGIS_HEAT</detonateProjectile>
+    
+    <graphicData>
+      <texPath>Things/Weapons/Disposable_LGIS/heat</texPath>
+    </graphicData>
+    <!--<uiIconPath>UI/Icons/Rockets/3HST_IAA_12_LGIS_Missile_heat_a</uiIconPath>-->
+
+    <statBases>
+      <MarketValue>107</MarketValue>
+
+    </statBases>
+    <weaponTags>
+      <li>GunHeavy</li>
+      <li>IndustrialGunAdvanced</li>
+      <li>3HST_LGIS_Disposable</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+        <defaultProjectile>Projectile_70mmLGIS_HEAT</defaultProjectile>
+        <hasStandardCommand>true</hasStandardCommand>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>3.4</warmupTime>
+        <burstShotCount />
+        <range>90</range>
+        <minRange>10</minRange>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>5</muzzleFlashScale>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeThing">
+        <thingDef>Gun_3HST_LGIS_heat_ID</thingDef>
+        <gizmoLabel>Switch to indirect</gizmoLabel>
+        <gizmoDesc>Extend the sights and switch the launcher to indirect fire mode.\n\nImportant: the launcher can't be used as ammo in indirect mode. You'll have to switch it back to direct mode for other launchers to accept as ammo.</gizmoDesc>
+        <icon>UI/Icons/FireModes/Direct</icon>
+      </li>
+    </comps>
+
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseDisposableLGISammo">
+    <defName>Gun_3HST_LGIS_confetti</defName>
+    <label>confetti LGIS tube</label>
+    <ammoClass>RocketConfetti</ammoClass>
+    <detonateProjectile>Projectile_70mmLGIS_Confetti</detonateProjectile>
+    <generateAllowChance>0</generateAllowChance>
+
+    <graphicData>
+      <texPath>Things/Weapons/Disposable_LGIS/confetti</texPath>
+    </graphicData>
+    <!--<uiIconPath>UI/Icons/Rockets/3HST_IAA_12_LGIS_Missile_confetti_a</uiIconPath>-->
+
+    <statBases>
+      <MarketValue>94</MarketValue>
+
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+        <defaultProjectile>Projectile_70mmLGIS_Confetti</defaultProjectile>
+        <hasStandardCommand>true</hasStandardCommand>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>3.4</warmupTime>
+        <burstShotCount />
+        <range>90</range>
+        <minRange>10</minRange>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>5</muzzleFlashScale>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeThing">
+        <thingDef>Gun_3HST_LGIS_confetti_ID</thingDef>
+        <gizmoLabel>Switch to indirect</gizmoLabel>
+        <gizmoDesc>Extend the sights and switch the launcher to indirect fire mode.\n\nImportant: the launcher can't be used as ammo in indirect mode. You'll have to switch it back to direct mode for other launchers to accept as ammo.</gizmoDesc>
+        <icon>UI/Icons/FireModes/Direct</icon>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseDisposableLGISammo">
+    <defName>Gun_3HST_LGIS_incendiary</defName>
+    <label>incendiary LGIS tube</label>
+    <ammoClass>RocketIncendiary</ammoClass>
+    <detonateProjectile>Projectile_70mmLGIS_Incendiary</detonateProjectile>
+    <generateCommonality>0.5</generateCommonality>
+
+    <graphicData>
+      <texPath>Things/Weapons/Disposable_LGIS/incendiary</texPath>
+    </graphicData>
+    <!--<uiIconPath>UI/Icons/Rockets/3HST_IAA_12_LGIS_Missile_incendiary_a</uiIconPath>-->
+
+    <statBases>
+      <MarketValue>94</MarketValue>
+
+    </statBases>
+    <weaponTags>
+      <li>GunHeavy</li>
+      <li>3HST_LGIS_Disposable_Adv</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+        <defaultProjectile>Projectile_70mmLGIS_Incendiary</defaultProjectile>
+        <hasStandardCommand>true</hasStandardCommand>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>3.4</warmupTime>
+        <burstShotCount />
+        <range>90</range>
+        <minRange>10</minRange>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>5</muzzleFlashScale>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeThing">
+        <thingDef>Gun_3HST_LGIS_incendiary_ID</thingDef>
+        <gizmoLabel>Switch to indirect</gizmoLabel>
+        <gizmoDesc>Extend the sights and switch the launcher to indirect fire mode.\n\nImportant: the launcher can't be used as ammo in indirect mode. You'll have to switch it back to direct mode for other launchers to accept as ammo.</gizmoDesc>
+        <icon>UI/Icons/FireModes/Direct</icon>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseDisposableLGISammo">
+    <defName>Gun_3HST_LGIS_smoke</defName>
+    <label>smoke LGIS tube</label>
+    <ammoClass>RocketSmoke</ammoClass>
+    <detonateProjectile>Projectile_70mmLGIS_Smoke</detonateProjectile>
+    <generateAllowChance>0</generateAllowChance>
+
+    <graphicData>
+      <texPath>Things/Weapons/Disposable_LGIS/smoke</texPath>
+    </graphicData>
+    <!--<uiIconPath>UI/Icons/Rockets/3HST_IAA_12_LGIS_Missile_smoke_a</uiIconPath>-->
+
+    <statBases>
+      <MarketValue>110</MarketValue>
+
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+        <defaultProjectile>Projectile_70mmLGIS_Smoke</defaultProjectile>
+        <hasStandardCommand>true</hasStandardCommand>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>3.4</warmupTime>
+        <burstShotCount />
+        <range>90</range>
+        <minRange>10</minRange>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>5</muzzleFlashScale>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeThing">
+        <thingDef>Gun_3HST_LGIS_smoke_ID</thingDef>
+        <gizmoLabel>Switch to indirect</gizmoLabel>
+        <gizmoDesc>Extend the sights and switch the launcher to indirect fire mode.\n\nImportant: the launcher can't be used as ammo in indirect mode. You'll have to switch it back to direct mode for other launchers to accept as ammo.</gizmoDesc>
+        <icon>UI/Icons/FireModes/Direct</icon>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseDisposableLGISammo">
+    <defName>Gun_3HST_LGIS_firefoam</defName>
+    <label>firefoam LGIS tube</label>
+    <ammoClass>RocketFoam</ammoClass>
+    <detonateProjectile>Projectile_70mmLGIS_Firefoam</detonateProjectile>
+    <generateAllowChance>0</generateAllowChance>
+
+    <graphicData>
+      <texPath>Things/Weapons/Disposable_LGIS/firefoam</texPath>
+    </graphicData>
+    <!--<uiIconPath>UI/Icons/Rockets/3HST_IAA_12_LGIS_Missile_firefoam_a</uiIconPath>-->
+
+    <statBases>
+      <MarketValue>110</MarketValue>
+
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+        <defaultProjectile>Projectile_70mmLGIS_Firefoam</defaultProjectile>
+        <hasStandardCommand>true</hasStandardCommand>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>3.4</warmupTime>
+        <burstShotCount />
+        <range>90</range>
+        <minRange>10</minRange>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>5</muzzleFlashScale>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeThing">
+        <thingDef>Gun_3HST_LGIS_firefoam_ID</thingDef>
+        <gizmoLabel>Switch to indirect</gizmoLabel>
+        <gizmoDesc>Extend the sights and switch the launcher to indirect fire mode.\n\nImportant: the launcher can't be used as ammo in indirect mode. You'll have to switch it back to direct mode for other launchers to accept as ammo.</gizmoDesc>
+        <icon>UI/Icons/FireModes/Direct</icon>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!--
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseDisposableLGISammo">
+    <defName>Gun_3HST_LGIS_slowfoam</defName>
+    <label>slowfoam LGIS tube</label>
+    <ammoClass>RocketFoam</ammoClass>
+    <detonateProjectile>Projectile_70mmLGIS_Slowfoam</detonateProjectile>
+
+    <graphicData>
+      <texPath>Things/Weapons/Disposable_LGIS/slowfoam</texPath>
+    </graphicData>
+
+    <statBases>
+      <MarketValue>120</MarketValue>
+
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+        <defaultProjectile>Projectile_70mmLGIS_Slowfoam</defaultProjectile>
+        <hasStandardCommand>true</hasStandardCommand>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>3.4</warmupTime>
+        <burstShotCount />
+        <range>90</range>
+        <minRange>10</minRange>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>5</muzzleFlashScale>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeThing">
+        <thingDef>Gun_3HST_LGIS_slowfoam_ID</thingDef>
+        <gizmoLabel>Switch to indirect</gizmoLabel>
+        <gizmoDesc>Extend the sights and switch the launcher to indirect fire mode.\n\nImportant: the launcher can't be used as ammo in indirect mode. You'll have to switch it back to direct mode for other launchers to accept as ammo.</gizmoDesc>
+        <icon>UI/Icons/FireModes/Direct</icon>
+      </li>
+    </comps>
+  </ThingDef>
+-->
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseDisposableLGISammo">
+    <defName>Gun_3HST_LGIS_EMP</defName>
+    <label>EMP LGIS tube</label>
+    <ammoClass>RocketEMP</ammoClass>
+    <detonateProjectile>Projectile_70mmLGIS_EMP</detonateProjectile>
+    
+    <graphicData>
+      <texPath>Things/Weapons/Disposable_LGIS/EMP</texPath>
+    </graphicData>
+    <!--<uiIconPath>UI/Icons/Rockets/3HST_IAA_12_LGIS_Missile_emp_a</uiIconPath>-->
+
+    <statBases>
+      <MarketValue>148</MarketValue>
+
+    </statBases>
+    <generateCommonality>0.2</generateCommonality>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+        <defaultProjectile>Projectile_70mmLGIS_EMP</defaultProjectile>
+        <hasStandardCommand>true</hasStandardCommand>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>3.4</warmupTime>
+        <burstShotCount />
+        <range>90</range>
+        <minRange>10</minRange>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>5</muzzleFlashScale>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeThing">
+        <thingDef>Gun_3HST_LGIS_emp_ID</thingDef>
+        <gizmoLabel>Switch to indirect</gizmoLabel>
+        <gizmoDesc>Extend the sights and switch the launcher to indirect fire mode.\n\nImportant: the launcher can't be used as ammo in indirect mode. You'll have to switch it back to direct mode for other launchers to accept as ammo.</gizmoDesc>
+        <icon>UI/Icons/FireModes/Direct</icon>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseDisposableLGISammo">
+    <defName>Gun_3HST_LGIS_Illumination</defName>
+    <label>illumination LGIS tube</label>
+    <ammoClass>RocketIllumination</ammoClass>
+    <detonateProjectile>Projectile_70mmLGIS_Illumination</detonateProjectile>
+    <generateAllowChance>0</generateAllowChance>
+
+    <graphicData>
+      <texPath>Things/Weapons/Disposable_LGIS/illumination</texPath>
+    </graphicData>
+    <!--<uiIconPath>UI/Icons/Rockets/3HST_IAA_12_LGIS_Missile_illumination_a</uiIconPath>-->
+
+    <statBases>
+      <MarketValue>94</MarketValue>
+
+    </statBases>
+    <weaponTags>
+      <li>CE_FlareLauncher</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+        <defaultProjectile>Projectile_70mmLGIS_Illumination</defaultProjectile>
+        <hasStandardCommand>true</hasStandardCommand>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>3.4</warmupTime>
+        <burstShotCount />
+        <range>90</range>
+        <minRange>10</minRange>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>5</muzzleFlashScale>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeThing">
+        <thingDef>Gun_3HST_LGIS_Illumination_ID</thingDef>
+        <gizmoLabel>Switch to indirect</gizmoLabel>
+        <gizmoDesc>Extend the sights and switch the launcher to indirect fire mode.\n\nImportant: the launcher can't be used as ammo in indirect mode. You'll have to switch it back to direct mode for other launchers to accept as ammo.</gizmoDesc>
+        <icon>UI/Icons/FireModes/Direct</icon>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <RecipeDef ParentName="GrenadeRecipeBase">
+    <defName>MakeDLGISfrag</defName>
+    <label>make frag LGIS tube x5</label>
+    <description>Craft 5 frag LGIS tubes.</description>
+    <jobString>Making frag LGIS tubes.</jobString>
+    <workAmount>9000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>35</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FSX</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>7</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>FSX</li>
+        <li>ComponentIndustrial</li>
+        <li>Plasteel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Gun_3HST_LGIS_frag>5</Gun_3HST_LGIS_frag>
+    </products>
+    <researchPrerequisite>CE_AdvancedLaunchers</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="GrenadeRecipeBase">
+    <defName>MakeDLGISCluster</defName>
+    <label>make cluster LGIS tube x2</label>
+    <description>Craft 2 cluster LGIS tubes.</description>
+    <jobString>Making cluster LGIS tubes.</jobString>
+    <workAmount>26000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FSX</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>7</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>FSX</li>
+        <li>ComponentIndustrial</li>
+        <li>ComponentSpacer</li>
+        <li>Plasteel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Gun_3HST_LGIS_cluster>2</Gun_3HST_LGIS_cluster>
+    </products>
+    <researchPrerequisite>CE_AdvancedLaunchers</researchPrerequisite>
+  </RecipeDef>
+
+
+  <RecipeDef ParentName="GrenadeRecipeBase">
+    <defName>MakeDLGISheat</defName>
+    <label>make HEAT LGIS tube x5</label>
+    <description>Craft 5 HEAT LGIS tubes.</description>
+    <jobString>Making HEAT LGIS tubes.</jobString>
+    <workAmount>12000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>35</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FSX</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>7</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>FSX</li>
+        <li>ComponentIndustrial</li>
+        <li>Plasteel</li>
+      </thingDefs>
+    </fixedIngredientFilter>    <products>
+      <Gun_3HST_LGIS_heat>5</Gun_3HST_LGIS_heat>
+    </products>
+    <researchPrerequisite>CE_AdvancedLaunchers</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="GrenadeRecipeBase">
+    <defName>MakeDLGISthermobaric</defName>
+    <label>make thermobaric LGIS tube x5</label>
+    <description>Craft 5 thermobaric LGIS tubes.</description>
+    <jobString>Making thermobaric LGIS tubes.</jobString>
+    <workAmount>15000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>35</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FSX</li>
+          </thingDefs>
+        </filter>
+        <count>45</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>7</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>FSX</li>
+        <li>ComponentIndustrial</li>
+        <li>Plasteel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Gun_3HST_LGIS_thermobaric>5</Gun_3HST_LGIS_thermobaric>
+    </products>
+    <researchPrerequisite>CE_AdvancedLaunchers</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="GrenadeRecipeBase">
+    <defName>MakeDLGISconfetti</defName>
+    <label>make confetti LGIS launcher x5</label>
+    <description>Craft 5 confetti LGIS tubes.</description>
+    <jobString>Making confetti LGIS tubes.</jobString>
+    <workAmount>9000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>35</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FSX</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>7</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Cloth</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>FSX</li>
+        <li>ComponentIndustrial</li>
+        <li>Plasteel</li>
+        <li>Cloth</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Gun_3HST_LGIS_confetti>5</Gun_3HST_LGIS_confetti>
+    </products>
+    <researchPrerequisite>CE_AdvancedLaunchers</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="GrenadeRecipeBase">
+    <defName>MakeDLGISincendiary</defName>
+    <label>make incendiary LGIS tube x5</label>
+    <description>Craft 5 incendiary LGIS tubes.</description>
+    <jobString>Making incendiary LGIS tubes.</jobString>
+    <workAmount>12000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>35</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FSX</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Prometheum</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>7</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>FSX</li>
+        <li>ComponentIndustrial</li>
+        <li>Plasteel</li>
+        <li>Prometheum</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Gun_3HST_LGIS_incendiary>5</Gun_3HST_LGIS_incendiary>
+    </products>
+    <researchPrerequisite>CE_AdvancedLaunchers</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="GrenadeRecipeBase">
+    <defName>MakeDLGISsmoke</defName>
+    <label>make smoke LGIS tube x5</label>
+    <description>Craft 5 smoke LGIS tubes.</description>
+    <jobString>Making smoke LGIS tubes.</jobString>
+    <workAmount>9000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>35</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FSX</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Prometheum</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>7</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>FSX</li>
+        <li>ComponentIndustrial</li>
+        <li>Plasteel</li>
+        <li>Prometheum</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Gun_3HST_LGIS_smoke>5</Gun_3HST_LGIS_smoke>
+    </products>
+    <researchPrerequisite>CE_AdvancedLaunchers</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="GrenadeRecipeBase">
+    <defName>MakeDLGISfirefoam</defName>
+    <label>make firefoam LGIS tube x5</label>
+    <description>Craft 5 firefoam LGIS tubes.</description>
+    <jobString>Making firefoam LGIS tubes.</jobString>
+    <workAmount>9000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>35</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>7</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>FSX</li>
+        <li>ComponentIndustrial</li>
+        <li>Plasteel</li>
+      </thingDefs>
+      <categories>
+        <li>MeatRaw</li>
+      </categories>
+    </fixedIngredientFilter>
+    <products>
+      <Gun_3HST_LGIS_firefoam>5</Gun_3HST_LGIS_firefoam>
+    </products>
+    <researchPrerequisite>CE_AdvancedLaunchers</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="GrenadeRecipeBase">
+    <defName>MakeDLGISemp</defName>
+    <label>make EMP LGIS tube x5</label>
+    <description>Craft 5 EMP LGIS tubes.</description>
+    <jobString>Making EMP LGIS tubes.</jobString>
+    <workAmount>15000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>35</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>18</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>ComponentIndustrial</li>
+        <li>Plasteel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Gun_3HST_LGIS_EMP>5</Gun_3HST_LGIS_EMP>
+    </products>
+    <researchPrerequisite>CE_AdvancedLaunchers</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="GrenadeRecipeBase">
+    <defName>MakeDLGISillumination</defName>
+    <label>make illumination LGIS tube x5</label>
+    <description>Craft 5 illumination LGIS tubes.</description>
+    <jobString>Making illumination LGIS tubes.</jobString>
+    <workAmount>9000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>35</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FSX</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Prometheum</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>7</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>FSX</li>
+        <li>ComponentIndustrial</li>
+        <li>Plasteel</li>
+        <li>Prometheum</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Gun_3HST_LGIS_Illumination>5</Gun_3HST_LGIS_Illumination>
+    </products>
+    <researchPrerequisite>CE_AdvancedLaunchers</researchPrerequisite>
+  </RecipeDef>
+
+
+  <!--=====================Indirect LGIS Launchers ===================-->
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseDisposableLGIS">
+    <defName>Gun_3HST_LGIS_frag_ID</defName>
+    <label>indirect frag LGIS launcher</label>
+    <detonateProjectile>Projectile_70mmLGIS_Frag</detonateProjectile>
+    <graphicData>
+      <texPath>Things/Weapons/Disposable_LGIS/ID_frag</texPath>
+    </graphicData>
+    <!--<uiIconPath>UI/Icons/Rockets/3HST_IAA_12_LGIS_Missile_frag_a</uiIconPath>-->
+
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+      <li>GunHeavy</li>
+      <li>3HST_LGIS_Disposable_ID</li>
+    </weaponTags>
+    
+    <statBases>
+      <MarketValue>400</MarketValue>
+    </statBases>
+
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+        <defaultProjectile>Projectile_70mmLGIS_Frag_Indirect</defaultProjectile>
+        <hasStandardCommand>true</hasStandardCommand>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>6.4</warmupTime>
+        <burstShotCount />
+        <range>150</range>
+        <minRange>20</minRange>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>5</muzzleFlashScale>
+        <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+        <circularError>1</circularError>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_Charges">
+        <chargeSpeeds>
+          <li>30</li>
+          <li>50</li>
+          <li>70</li>
+          <li>90</li>
+        </chargeSpeeds>
+      </li>
+      <li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeThing">
+        <thingDef>Gun_3HST_LGIS_frag</thingDef>
+        <gizmoLabel>Switch to indirect</gizmoLabel>
+        <gizmoDesc>Retract the sights and switch the launcher to direct fire mode.\n\nImportant: the launcher can't be used as ammo in indirect mode. You'll have to switch it back to direct mode for other launchers to accept as ammo.</gizmoDesc>
+        <icon>UI/Icons/FireModes/Indirect</icon>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseDisposableLGISammo">
+    <defName>Gun_3HST_LGIS_cluster_ID</defName>
+    <label>indirect cluster LGIS launcher</label>
+    <ammoClass>RocketFrag</ammoClass>
+    <detonateProjectile>Projectile_70mmLGIS_Cluster</detonateProjectile>
+
+    <graphicData>
+      <texPath>Things/Weapons/Disposable_LGIS/ID_cluster</texPath>
+    </graphicData>
+    <!--<uiIconPath>UI/Icons/Rockets/3HST_IAA_12_LGIS_Missile_frag_a</uiIconPath>-->
+
+    <statBases>
+      <MarketValue>440</MarketValue>
+    </statBases>
+
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+        <defaultProjectile>Projectile_70mmLGIS_Cluster_Indirect</defaultProjectile>
+        <hasStandardCommand>true</hasStandardCommand>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>6.4</warmupTime>
+        <burstShotCount />
+        <range>150</range>
+        <minRange>20</minRange>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>5</muzzleFlashScale>
+        <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+        <circularError>1</circularError>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_Charges">
+        <chargeSpeeds>
+          <li>30</li>
+          <li>50</li>
+          <li>70</li>
+          <li>90</li>
+        </chargeSpeeds>
+      </li>
+      <li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeThing">
+        <thingDef>Gun_3HST_LGIS_cluster</thingDef>
+        <gizmoLabel>Switch to direct</gizmoLabel>
+        <gizmoDesc>Retract the sights and switch the launcher to direct fire mode.\n\nImportant: the launcher can't be used as ammo in indirect mode. You'll have to switch it back to direct mode for other launchers to accept as ammo.</gizmoDesc>
+        <icon>UI/Icons/FireModes/Indirect</icon>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseDisposableLGIS">
+    <defName>Gun_3HST_LGIS_thermobaric_ID</defName>
+    <label>indirect thermobaric LGIS launcher</label>
+    <detonateProjectile>Projectile_70mmLGIS_Thermobaric</detonateProjectile>
+    <graphicData>
+      <texPath>Things/Weapons/Disposable_LGIS/ID_thermobaric</texPath>
+    </graphicData>
+    <!--<uiIconPath>UI/Icons/Rockets/3HST_IAA_12_LGIS_Missile_thermobaric_a</uiIconPath>-->
+
+    <statBases>
+      <MarketValue>167</MarketValue>
+
+    </statBases>
+    <weaponTags>
+      <li>GunHeavy</li>
+      <li>IndustrialGunAdvanced</li>
+      <li>3HST_LGIS_Disposable_ID_Adv</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+        <defaultProjectile>Projectile_70mmLGIS_Thermobaric_Indirect</defaultProjectile>
+        <hasStandardCommand>true</hasStandardCommand>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>6.4</warmupTime>
+        <burstShotCount />
+        <range>150</range>
+        <minRange>20</minRange>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>5</muzzleFlashScale>
+        <circularError>1</circularError>
+        <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_Charges">
+        <chargeSpeeds>
+          <li>30</li>
+          <li>50</li>
+          <li>70</li>
+          <li>90</li>
+        </chargeSpeeds>
+      </li>
+      <li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeThing">
+        <thingDef>Gun_3HST_LGIS_thermobaric</thingDef>
+        <gizmoLabel>Switch to direct</gizmoLabel>
+        <gizmoDesc>Retract the sights and switch the launcher to direct fire mode.\n\nImportant: the launcher can't be used as ammo in indirect mode. You'll have to switch it back to direct mode for other launchers to accept as ammo.</gizmoDesc>
+        <icon>UI/Icons/FireModes/Indirect</icon>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseDisposableLGIS">
+    <defName>Gun_3HST_LGIS_heat_ID</defName>
+    <label>indirect HEAT LGIS launcher</label>
+    <detonateProjectile>Projectile_70mmLGIS_HEAT</detonateProjectile>
+
+    <graphicData>
+      <texPath>Things/Weapons/Disposable_LGIS/ID_heat</texPath>
+    </graphicData>
+    <!--<uiIconPath>UI/Icons/Rockets/3HST_IAA_12_LGIS_Missile_heat_a</uiIconPath>-->
+
+    <statBases>
+      <MarketValue>107</MarketValue>
+
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+        <defaultProjectile>Projectile_70mmLGIS_HEAT_Indirect</defaultProjectile>
+        <hasStandardCommand>true</hasStandardCommand>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>6.4</warmupTime>
+        <burstShotCount />
+        <range>90</range>
+        <minRange>10</minRange>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>5</muzzleFlashScale>
+        <circularError>1</circularError>
+        <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_Charges">
+        <chargeSpeeds>
+          <li>30</li>
+          <li>50</li>
+          <li>70</li>
+          <li>90</li>
+        </chargeSpeeds>
+      </li>
+      <li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeThing">
+        <thingDef>Gun_3HST_LGIS_heat</thingDef>
+        <gizmoLabel>Switch to direct</gizmoLabel>
+        <gizmoDesc>Retract the sights and switch the launcher to direct fire mode.\n\nImportant: the launcher can't be used as ammo in indirect mode. You'll have to switch it back to direct mode for other launchers to accept as ammo.</gizmoDesc>
+        <icon>UI/Icons/FireModes/Indirect</icon>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseDisposableLGIS">
+    <defName>Gun_3HST_LGIS_confetti_ID</defName>
+    <label>indirect confetti LGIS launcher</label>
+    <detonateProjectile>Projectile_70mmLGIS_Confetti</detonateProjectile>
+
+    <graphicData>
+      <texPath>Things/Weapons/Disposable_LGIS/ID_confetti</texPath>
+    </graphicData>
+    <!--<uiIconPath>UI/Icons/Rockets/3HST_IAA_12_LGIS_Missile_confetti_a</uiIconPath>-->
+
+    <statBases>
+      <MarketValue>94</MarketValue>
+
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+        <defaultProjectile>Projectile_70mmLGIS_Confetti_Indirect</defaultProjectile>
+        <hasStandardCommand>true</hasStandardCommand>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>6.4</warmupTime>
+        <burstShotCount />
+        <range>90</range>
+        <minRange>10</minRange>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>5</muzzleFlashScale>
+        <circularError>1</circularError>
+        <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_Charges">
+        <chargeSpeeds>
+          <li>30</li>
+          <li>50</li>
+          <li>70</li>
+          <li>90</li>
+        </chargeSpeeds>
+      </li>
+      <li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeThing">
+        <thingDef>Gun_3HST_LGIS_confetti</thingDef>
+        <gizmoLabel>Switch to direct</gizmoLabel>
+        <gizmoDesc>Retract the sights and switch the launcher to direct fire mode.\n\nImportant: the launcher can't be used as ammo in indirect mode. You'll have to switch it back to direct mode for other launchers to accept as ammo.</gizmoDesc>
+        <icon>UI/Icons/FireModes/Indirect</icon>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseDisposableLGIS">
+    <defName>Gun_3HST_LGIS_incendiary_ID</defName>
+    <label>indirect incendiary LGIS launcher</label>
+    <detonateProjectile>Projectile_70mmLGIS_Incendiary</detonateProjectile>
+
+    <graphicData>
+      <texPath>Things/Weapons/Disposable_LGIS/ID_incendiary</texPath>
+    </graphicData>
+    <!--<uiIconPath>UI/Icons/Rockets/3HST_IAA_12_LGIS_Missile_incendiary_a</uiIconPath>-->
+
+    <statBases>
+      <MarketValue>94</MarketValue>
+
+    </statBases>
+    <weaponTags>
+      <li>GunHeavy</li>
+      <li>3HST_LGIS_Disposable_ID_Adv</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+        <defaultProjectile>Projectile_70mmLGIS_Incendiary_Indirect</defaultProjectile>
+        <hasStandardCommand>true</hasStandardCommand>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>6.4</warmupTime>
+        <burstShotCount />
+        <range>90</range>
+        <minRange>20</minRange>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>5</muzzleFlashScale>
+        <circularError>1</circularError>
+        <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_Charges">
+        <chargeSpeeds>
+          <li>30</li>
+          <li>50</li>
+          <li>70</li>
+          <li>90</li>
+        </chargeSpeeds>
+      </li>
+      <li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeThing">
+        <thingDef>Gun_3HST_LGIS_incendiary</thingDef>
+        <gizmoLabel>Switch to direct</gizmoLabel>
+        <gizmoDesc>Retract the sights and switch the launcher to direct fire mode.\n\nImportant: the launcher can't be used as ammo in indirect mode. You'll have to switch it back to direct mode for other launchers to accept as ammo.</gizmoDesc>
+        <icon>UI/Icons/FireModes/Indirect</icon>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseDisposableLGIS">
+    <defName>Gun_3HST_LGIS_smoke_ID</defName>
+    <label>indirect smoke LGIS launcher</label>
+    <detonateProjectile>Projectile_70mmLGIS_Smoke</detonateProjectile>
+
+    <graphicData>
+      <texPath>Things/Weapons/Disposable_LGIS/ID_smoke</texPath>
+    </graphicData>
+    <!--<uiIconPath>UI/Icons/Rockets/3HST_IAA_12_LGIS_Missile_smoke_a</uiIconPath>-->
+
+    <statBases>
+      <MarketValue>110</MarketValue>
+
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+        <defaultProjectile>Projectile_70mmLGIS_Smoke_Indirect</defaultProjectile>
+        <hasStandardCommand>true</hasStandardCommand>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>6.4</warmupTime>
+        <burstShotCount />
+        <range>90</range>
+        <minRange>20</minRange>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>5</muzzleFlashScale>
+        <circularError>1</circularError>
+        <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_Charges">
+        <chargeSpeeds>
+          <li>30</li>
+          <li>50</li>
+          <li>70</li>
+          <li>90</li>
+        </chargeSpeeds>
+      </li>
+      <li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeThing">
+        <thingDef>Gun_3HST_LGIS_smoke</thingDef>
+        <gizmoLabel>Switch to direct</gizmoLabel>
+        <gizmoDesc>Retract the sights and switch the launcher to direct fire mode.\n\nImportant: the launcher can't be used as ammo in indirect mode. You'll have to switch it back to direct mode for other launchers to accept as ammo.</gizmoDesc>
+        <icon>UI/Icons/FireModes/Indirect</icon>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseDisposableLGIS">
+    <defName>Gun_3HST_LGIS_firefoam_ID</defName>
+    <label>indirect firefoam LGIS launcher</label>
+    <detonateProjectile>Projectile_70mmLGIS_Firefoam</detonateProjectile>
+
+    <graphicData>
+      <texPath>Things/Weapons/Disposable_LGIS/ID_firefoam</texPath>
+    </graphicData>
+    <!--<uiIconPath>UI/Icons/Rockets/3HST_IAA_12_LGIS_Missile_firefoam_a</uiIconPath>-->
+
+    <statBases>
+      <MarketValue>110</MarketValue>
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+        <defaultProjectile>Projectile_70mmLGIS_Firefoam_Indirect</defaultProjectile>
+        <hasStandardCommand>true</hasStandardCommand>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>6.4</warmupTime>
+        <burstShotCount />
+        <range>90</range>
+        <minRange>20</minRange>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>5</muzzleFlashScale>
+        <circularError>1</circularError>
+        <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_Charges">
+        <chargeSpeeds>
+          <li>30</li>
+          <li>50</li>
+          <li>70</li>
+          <li>90</li>
+        </chargeSpeeds>
+      </li>
+      <li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeThing">
+        <thingDef>Gun_3HST_LGIS_firefoam</thingDef>
+        <gizmoLabel>Switch to direct</gizmoLabel>
+        <gizmoDesc>Retract the sights and switch the launcher to direct fire mode.\n\nImportant: the launcher can't be used as ammo in indirect mode. You'll have to switch it back to direct mode for other launchers to accept as ammo.</gizmoDesc>
+        <icon>UI/Icons/FireModes/Indirect</icon>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!--
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseDisposableLGIS">
+    <defName>Gun_3HST_LGIS_slowfoam_ID</defName>
+    <label>indirect slowfoam LGIS launcher</label>
+    <detonateProjectile>Projectile_70mmLGIS_Slowfoam</detonateProjectile>
+
+    <graphicData>
+      <texPath>Things/Weapons/Disposable_LGIS/ID_slowfoam</texPath>
+    </graphicData>
+
+    <statBases>
+      <MarketValue>120</MarketValue>
+
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+        <defaultProjectile>Projectile_70mmLGIS_Slowfoam_Indirect</defaultProjectile>
+        <hasStandardCommand>true</hasStandardCommand>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>6.4</warmupTime>
+        <burstShotCount />
+        <range>90</range>
+        <minRange>20</minRange>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>5</muzzleFlashScale>
+        <circularError>1</circularError>
+        <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_Charges">
+        <chargeSpeeds>
+          <li>30</li>
+          <li>50</li>
+          <li>70</li>
+          <li>90</li>
+        </chargeSpeeds>
+      </li>
+      <li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeThing">
+        <thingDef>Gun_3HST_LGIS_slowfoam</thingDef>
+        <gizmoLabel>Switch to direct</gizmoLabel>
+        <gizmoDesc>Retract the sights and switch the launcher to direct fire mode.\n\nImportant: the launcher can't be used as ammo in indirect mode. You'll have to switch it back to direct mode for other launchers to accept as ammo.</gizmoDesc>
+        <icon>UI/Icons/FireModes/Indirect</icon>
+      </li>
+    </comps>
+  </ThingDef>
+-->
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseDisposableLGIS">
+    <defName>Gun_3HST_LGIS_emp_ID</defName>
+    <label>indirect EMP LGIS launcher</label>
+    <detonateProjectile>Projectile_70mmLGIS_EMP</detonateProjectile>
+
+    <graphicData>
+      <texPath>Things/Weapons/Disposable_LGIS/ID_EMP</texPath>
+    </graphicData>
+    <!--<uiIconPath>UI/Icons/Rockets/3HST_IAA_12_LGIS_Missile_emp_a</uiIconPath>-->
+
+    <statBases>
+      <MarketValue>148</MarketValue>
+
+    </statBases>
+    <generateCommonality>0.2</generateCommonality>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+      <li>GunHeavy</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+        <defaultProjectile>Projectile_70mmLGIS_EMP_Indirect</defaultProjectile>
+        <hasStandardCommand>true</hasStandardCommand>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>6.4</warmupTime>
+        <burstShotCount />
+        <range>90</range>
+        <minRange>20</minRange>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>5</muzzleFlashScale>
+        <circularError>1</circularError>
+        <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_Charges">
+        <chargeSpeeds>
+          <li>30</li>
+          <li>50</li>
+          <li>70</li>
+          <li>90</li>
+        </chargeSpeeds>
+      </li>
+      <li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeThing">
+        <thingDef>Gun_3HST_LGIS_EMP</thingDef>
+        <gizmoLabel>Switch to direct</gizmoLabel>
+        <gizmoDesc>Retract the sights and switch the launcher to direct fire mode.\n\nImportant: the launcher can't be used as ammo in indirect mode. You'll have to switch it back to direct mode for other launchers to accept as ammo.</gizmoDesc>
+        <icon>UI/Icons/FireModes/Indirect</icon>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseDisposableLGIS">
+    <defName>Gun_3HST_LGIS_Illumination_ID</defName>
+    <label>indirect illumination LGIS launcher</label>
+    <detonateProjectile>Projectile_70mmLGIS_Illumination</detonateProjectile>
+
+    <graphicData>
+      <texPath>Things/Weapons/Disposable_LGIS/ID_illumination</texPath>
+    </graphicData>
+    <!--<uiIconPath>UI/Icons/Rockets/3HST_IAA_12_LGIS_Missile_illumination_a</uiIconPath>-->
+
+    <statBases>
+      <MarketValue>94</MarketValue>
+
+    </statBases>
+    <weaponTags>
+      <li>CE_FlareLauncher</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+        <defaultProjectile>Projectile_70mmLGIS_Illumination_Indirect</defaultProjectile>
+        <hasStandardCommand>true</hasStandardCommand>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>6.4</warmupTime>
+        <burstShotCount />
+        <range>90</range>
+        <minRange>20</minRange>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>5</muzzleFlashScale>
+        <circularError>1</circularError>
+        <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_Charges">
+        <chargeSpeeds>
+          <li>30</li>
+          <li>50</li>
+          <li>70</li>
+          <li>90</li>
+        </chargeSpeeds>
+      </li>
+      <li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeThing">
+        <thingDef>Gun_3HST_LGIS_Illumination</thingDef>
+        <gizmoLabel>Switch to direct</gizmoLabel>
+        <gizmoDesc>Retract the sights and switch the launcher to direct fire mode.\n\nImportant: the launcher can't be used as ammo in indirect mode. You'll have to switch it back to direct mode for other launchers to accept as ammo.</gizmoDesc>
+        <icon>UI/Icons/FireModes/Indirect</icon>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

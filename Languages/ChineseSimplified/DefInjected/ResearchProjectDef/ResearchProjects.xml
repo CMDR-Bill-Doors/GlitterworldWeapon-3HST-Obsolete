@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Research_3HST_Railgun.label>3HST制磁轨炮</Research_3HST_Railgun.label>
+  <Research_3HST_Railgun.description>解锁3HST制磁轨武器的制作。</Research_3HST_Railgun.description>
+
+  <Research_3HST_Railgun_Components.label>3HST磁轨部件</Research_3HST_Railgun_Components.label>
+  <Research_3HST_Railgun_Components.description>解锁3HST制磁轨武器所使用的电磁加速轨道的制作。</Research_3HST_Railgun_Components.description>
+
+
+  <!-- EN: 3HST railguns -->
+  <!-- EN: Allows production of 3HST-designed railguns. -->
+  <!-- EN: 3HST railgun components -->
+  <!-- EN: Allows production of advanced electromagnetic accelerators used by 3HST railguns. -->
+
+</LanguageData>

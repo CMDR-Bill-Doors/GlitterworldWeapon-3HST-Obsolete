@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_3HST20mmRG_Steel.label>3HST 20mm Steel Railgun Slug</Ammo_3HST20mmRG_Steel.label>
+  <Ammo_3HST20mmRG_Steel.description>High caliber railgun cartridges used by a variety of 3HST-made heavy weapons</Ammo_3HST20mmRG_Steel.description>
+
+
+  <!-- Projectiles -->
+
+  <Projectile_3HST20mmRG_Steel.label>20mm Railgun shell (Sabot)</Projectile_3HST20mmRG_Steel.label>
+
+
+</LanguageData>

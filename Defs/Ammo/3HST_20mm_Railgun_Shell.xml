@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingCategoryDef>
+    <defName>AmmoCategory_3HST_20mm_Railgun</defName>
+    <label>3HST 20mm Railgun Slug</label>
+    <parent>AmmoAdvanced</parent>
+    <iconPath>UI/Icons/ThingCategories/CaliberRailgunHighCaliber</iconPath>
+  </ThingCategoryDef>
+
+  <!-- ==================== AmmoSet ========================== -->
+
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_3HST20mmRG</defName>
+    <label>3HST 20mm railgun</label>
+    <ammoTypes>
+      <Ammo_3HST20mmRG_Steel>Projectile_3HST20mmRG_Steel</Ammo_3HST20mmRG_Steel>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+
+  <!-- ==================== Ammo ========================== -->
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="SmallAmmoBase">
+    <defName>Ammo_3HST20mmRG_Steel</defName>
+    <label>3HST 20mm Steel Railgun Slug</label>
+    <description>High caliber railgun cartridges used by a variety of 3HST-made heavy weapons</description>
+    <statBases>
+      <Mass>0.625</Mass>
+      <Bulk>0.25</Bulk>
+    </statBases>
+    <tradeTags>
+      <li>CE_AutoEnableTrade</li>
+      <li>CE_AutoEnableCrafting_FabricationBench</li>
+      <!-- Railgun ammo isn't handloaded because it contains no propellant, and the sabots must be precision-machined anyway -->
+    </tradeTags>
+    <thingCategories>
+      <li>AmmoCategory_3HST_20mm_Railgun</li>
+    </thingCategories>
+    <stackLimit>3000</stackLimit>
+    <graphicData>
+      <texPath>Things/Ammo/Railgun/Ammo_3HST_20mm</texPath>
+      <graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+    <ammoClass>RailgunSabot</ammoClass>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseFragment">
+    <defName>Fragment_Large_20mmRG</defName>
+    <label>large fragments</label>
+    <graphicData>
+      <texPath>Things/Projectile/Fragments/Fragment_Large</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageDef>Fragment</damageDef>
+      <damageAmountBase>31</damageAmountBase>
+      <speed>40</speed>
+      <armorPenetrationSharp>4.5</armorPenetrationSharp>
+      <armorPenetrationBlunt>175</armorPenetrationBlunt>
+      <gravityFactor>80</gravityFactor>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseFragment">
+    <defName>Fragment_Small_20mmRG</defName>
+    <label>small fragments</label>
+    <graphicData>
+      <texPath>Things/Projectile/Fragments/Fragment_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageDef>Fragment</damageDef>
+      <damageAmountBase>7</damageAmountBase>
+      <speed>30</speed>
+      <armorPenetrationSharp>2</armorPenetrationSharp>
+      <armorPenetrationBlunt>6.4</armorPenetrationBlunt>
+      <gravityFactor>80</gravityFactor>
+    </projectile>
+  </ThingDef>
+
+  <!-- ================== Projectiles ================== -->
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
+    <defName>Projectile_3HST20mmRG_Steel</defName>
+    <label>20mm Railgun shell (Sabot)</label>
+    <thingClass>BDsGlitterworldFaction3HST.PenetratingBullet</thingClass>
+    <uiIconPath>UI/Icons/Projectile_3HST_Rail_Icon</uiIconPath>
+
+    <graphicData>
+      <texPath>Things/Projectile/Projectile_3HST_Rail</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>120</damageAmountBase>
+      <armorPenetrationSharp>289</armorPenetrationSharp>
+      <armorPenetrationBlunt>45839</armorPenetrationBlunt>
+      <speed>540</speed>
+    </projectile>
+    <comps>
+      <li Class="CombatExtended.CompProperties_ExplosiveCE">
+        <damageAmountBase>20</damageAmountBase>
+        <explosiveDamageType>DamageDef_Shockwave</explosiveDamageType>
+        <explosiveRadius>1.2</explosiveRadius>
+        <explosionSound>Explosion_Stun</explosionSound>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      </li>
+      <li Class="CombatExtended.CompProperties_Fragments">
+        <fragments>
+          <Fragment_Large_20mmRG>3</Fragment_Large_20mmRG>
+          <Fragment_Small_20mmRG>10</Fragment_Small_20mmRG>
+        </fragments>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- ==================== Recipes ========================== -->
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_3HST20mmRG_Steel</defName>
+    <label>make 20mm Railgun cartridge (Sabot) x100</label>
+    <description>Craft 100 20mm Railgun (Sabot) cartridges.</description>
+    <jobString>Making 20mm Railgun (Sabot) cartridges.</jobString>
+    <workAmount>8000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>Uranium</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_3HST20mmRG_Steel>100</Ammo_3HST20mmRG_Steel>
+    </products>
+  </RecipeDef>
+
+</Defs>

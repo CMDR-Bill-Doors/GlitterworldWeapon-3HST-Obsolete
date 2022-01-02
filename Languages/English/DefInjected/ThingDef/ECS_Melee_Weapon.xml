@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Melee_3HST_ECSBlade.label>ECS blade</Melee_3HST_ECSBlade.label>
+  <Melee_3HST_ECSBlade.description>An energy saber using a shard of ECS shield force field as it's cutting edge. Sharper than mono blade and swifter than a feather, it deals less damage than it and is really fragile.</Melee_3HST_ECSBlade.description>
+  <Melee_3HST_ECSBlade.tools.0.label>handle</Melee_3HST_ECSBlade.tools.0.label>
+  <Melee_3HST_ECSBlade.tools.1.label>point</Melee_3HST_ECSBlade.tools.1.label>
+  <Melee_3HST_ECSBlade.tools.2.label>edge</Melee_3HST_ECSBlade.tools.2.label>
+
+
+</LanguageData>

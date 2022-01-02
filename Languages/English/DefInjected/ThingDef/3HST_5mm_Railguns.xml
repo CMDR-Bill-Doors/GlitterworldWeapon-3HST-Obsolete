@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Projectile_3HST5mmLPRG_Steel.label>Low Power 5mm Railgun bullet (Sabot)</Projectile_3HST5mmLPRG_Steel.label>
+
+
+  <!-- Low Power Railgun -->
+
+  <Gun_3HST_LPRG.label>3HST low power railgun</Gun_3HST_LPRG.label>
+  <Gun_3HST_LPRG.description>Standard service rifle of 3HST slave-fodders. Decreased muzzle velocity and longer rail greatly reduced the stress of power system and rails, allowing cheaper materials to be used on this rifle.</Gun_3HST_LPRG.description>
+  <Gun_3HST_LPRG.tools.0.label>stock</Gun_3HST_LPRG.tools.0.label>
+  <Gun_3HST_LPRG.tools.1.label>barrel</Gun_3HST_LPRG.tools.1.label>
+  <Gun_3HST_LPRG.tools.2.label>muzzle</Gun_3HST_LPRG.tools.2.label>
+  <Gun_3HST_LPRG.tools.3.label>energy bayonet blade</Gun_3HST_LPRG.tools.3.label>
+  <Gun_3HST_LPRG.tools.4.label>energy BayonetPoint</Gun_3HST_LPRG.tools.4.label>
+
+
+  <!-- Assault Railgun -->
+
+  <Gun_3HST_Assault_Railgun.label>3HST assault railgun</Gun_3HST_Assault_Railgun.label>
+  <Gun_3HST_Assault_Railgun.description>Standard issue assault rifle of 3HST elven forces.</Gun_3HST_Assault_Railgun.description>
+  <Gun_3HST_Assault_Railgun.comps.2.label>Rail durability</Gun_3HST_Assault_Railgun.comps.2.label>
+  <Gun_3HST_Assault_Railgun.tools.0.label>stock</Gun_3HST_Assault_Railgun.tools.0.label>
+  <Gun_3HST_Assault_Railgun.tools.1.label>barrel</Gun_3HST_Assault_Railgun.tools.1.label>
+  <Gun_3HST_Assault_Railgun.tools.2.label>muzzle</Gun_3HST_Assault_Railgun.tools.2.label>
+  <Gun_3HST_Assault_Railgun.tools.3.label>energy bayonet blade</Gun_3HST_Assault_Railgun.tools.3.label>
+  <Gun_3HST_Assault_Railgun.tools.4.label>energy BayonetPoint</Gun_3HST_Assault_Railgun.tools.4.label>
+
+
+  <!-- Light Machine Gun -->
+
+  <Gun_3HST_Light_Machine_Railgun.label>3HST light machine railgun</Gun_3HST_Light_Machine_Railgun.label>
+  <Gun_3HST_Light_Machine_Railgun.description>Standard issue light machinegun of 3HST planetary forces.</Gun_3HST_Light_Machine_Railgun.description>
+  <Gun_3HST_Light_Machine_Railgun.tools.0.label>stock</Gun_3HST_Light_Machine_Railgun.tools.0.label>
+  <Gun_3HST_Light_Machine_Railgun.tools.1.label>barrel</Gun_3HST_Light_Machine_Railgun.tools.1.label>
+  <Gun_3HST_Light_Machine_Railgun.tools.2.label>muzzle</Gun_3HST_Light_Machine_Railgun.tools.2.label>
+  <Gun_3HST_Light_Machine_Railgun.tools.3.label>energy bayonet blade</Gun_3HST_Light_Machine_Railgun.tools.3.label>
+  <Gun_3HST_Light_Machine_Railgun.tools.4.label>energy BayonetPoint</Gun_3HST_Light_Machine_Railgun.tools.4.label>
+
+
+  <!-- DMR -->
+
+  <Gun_3HST_5mmDMR.label>3HST designated marksman rifle</Gun_3HST_5mmDMR.label>
+  <Gun_3HST_5mmDMR.description>Small caliber sniper rifle developed by 3HST limited weaponry department.</Gun_3HST_5mmDMR.description>
+  <Gun_3HST_5mmDMR.tools.0.label>stock</Gun_3HST_5mmDMR.tools.0.label>
+  <Gun_3HST_5mmDMR.tools.1.label>barrel</Gun_3HST_5mmDMR.tools.1.label>
+  <Gun_3HST_5mmDMR.tools.2.label>muzzle</Gun_3HST_5mmDMR.tools.2.label>
+  <Gun_3HST_5mmDMR.tools.3.label>energy bayonet blade</Gun_3HST_5mmDMR.tools.3.label>
+  <Gun_3HST_5mmDMR.tools.4.label>energy BayonetPoint</Gun_3HST_5mmDMR.tools.4.label>
+
+
+  <!-- Turret manned -->
+
+  <Turret_3HST5mmLMGmanned.label>Manned 5mm light machine railgun</Turret_3HST5mmLMGmanned.label>
+  <Turret_3HST5mmLMGmanned.description>A 3HST light machine railgun mounted on an stationary mount. Despite the fact this turret is manually operated, this turret still needs a amount of power to operate since railguns consumes power.</Turret_3HST5mmLMGmanned.description>
+
+
+  <!-- Turret auto -->
+
+  <Turret_3HST5mmLMGAuto.label>Auto 5mm light machine railgun</Turret_3HST5mmLMGAuto.label>
+  <Turret_3HST5mmLMGAuto.description>A permanent defensive structure covered under thick steel armor reinforced by a layer of plasteel surface hardening. While extremely durable and resilent to all but EMP attacks, they're costly to build both in terms of material and time, and being unable to move after construction.</Turret_3HST5mmLMGAuto.description>
+
+  <Turret_3HST5mmLMGAutoMoveable.label>Auto 5mm light machine railgun</Turret_3HST5mmLMGAutoMoveable.label>
+  <Turret_3HST5mmLMGAutoMoveable.description>A gun, a tripod, and some servos between them. While more fragile and inaccurate than their permanent cousins, they enjoy the versatility of being moveable.</Turret_3HST5mmLMGAutoMoveable.description>
+
+  <Gun_5mmHMG_TurretManned.label>Mounted 3HST 5mm LMG</Gun_5mmHMG_TurretManned.label>
+  <Gun_5mmHMG_TurretManned.description>3HST 5mm LMG on a stationary emplacement.</Gun_5mmHMG_TurretManned.description>
+
+  <Gun_5mmHMG_TurretAuto.label>Mounted 3HST 5mm LMG</Gun_5mmHMG_TurretAuto.label>
+  <Gun_5mmHMG_TurretAuto.description>3HST 5mm LMG on a stationary emplacement.</Gun_5mmHMG_TurretAuto.description>
+
+
+</LanguageData>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_3HST5mmRG_Steel.label>3HST 5x66mm Steel Railgun Slug</Ammo_3HST5mmRG_Steel.label>
+  <Ammo_3HST5mmRG_Steel.description>Small caliber railgun cartridges used by a variety of 3HST-made weapons</Ammo_3HST5mmRG_Steel.description>
+
+
+  <!-- Projectiles -->
+
+  <Projectile_3HST5mmRG_Steel.label>5x66mm Railgun bullet (Sabot)</Projectile_3HST5mmRG_Steel.label>
+
+
+</LanguageData>

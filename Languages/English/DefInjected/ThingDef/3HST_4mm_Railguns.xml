@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 4mm autopistol -->
+
+  <Gun_3HST_4mm_AutoRailPistol.label>3HST 4mm AutoRailPistol</Gun_3HST_4mm_AutoRailPistol.label>
+  <Gun_3HST_4mm_AutoRailPistol.description>Standard sidearm for 3HST combatants.</Gun_3HST_4mm_AutoRailPistol.description>
+  <Gun_3HST_4mm_AutoRailPistol.tools.0.label>grip</Gun_3HST_4mm_AutoRailPistol.tools.0.label>
+  <Gun_3HST_4mm_AutoRailPistol.tools.1.label>muzzle</Gun_3HST_4mm_AutoRailPistol.tools.1.label>
+  <Gun_3HST_4mm_AutoRailPistol.tools.2.label>energy bayonet blade</Gun_3HST_4mm_AutoRailPistol.tools.2.label>
+  <Gun_3HST_4mm_AutoRailPistol.tools.3.label>energy BayonetPoint</Gun_3HST_4mm_AutoRailPistol.tools.3.label>
+
+
+  <!-- 4mm Triple -->
+
+  <Gun_3HST_4mm_TriRailPistol.label>3HST 4mm Triple RailPistol</Gun_3HST_4mm_TriRailPistol.label>
+  <Gun_3HST_4mm_TriRailPistol.description>A highly simplified railgun that don't even contains srevos. Standard sidearm for 3HST slave-fodders</Gun_3HST_4mm_TriRailPistol.description>
+  <Gun_3HST_4mm_TriRailPistol.tools.0.label>grip</Gun_3HST_4mm_TriRailPistol.tools.0.label>
+  <Gun_3HST_4mm_TriRailPistol.tools.1.label>muzzle</Gun_3HST_4mm_TriRailPistol.tools.1.label>
+  <Gun_3HST_4mm_TriRailPistol.tools.2.label>energy bayonet blade</Gun_3HST_4mm_TriRailPistol.tools.2.label>
+  <Gun_3HST_4mm_TriRailPistol.tools.3.label>energy BayonetPoint</Gun_3HST_4mm_TriRailPistol.tools.3.label>
+
+
+  <!-- 4mm SMG -->
+
+  <Gun_3HST_4mm_SMG.label>3HST 4mm Submachinerailgun</Gun_3HST_4mm_SMG.label>
+  <Gun_3HST_4mm_SMG.description>Standard sidearm for 3HST combatants.</Gun_3HST_4mm_SMG.description>
+  <Gun_3HST_4mm_SMG.tools.0.label>grip</Gun_3HST_4mm_SMG.tools.0.label>
+  <Gun_3HST_4mm_SMG.tools.1.label>muzzle</Gun_3HST_4mm_SMG.tools.1.label>
+  <Gun_3HST_4mm_SMG.tools.2.label>energy bayonet blade</Gun_3HST_4mm_SMG.tools.2.label>
+  <Gun_3HST_4mm_SMG.tools.3.label>energy BayonetPoint</Gun_3HST_4mm_SMG.tools.3.label>
+  <Gun_3HST_4mm_SMG.tools.4.label>stock</Gun_3HST_4mm_SMG.tools.4.label>
+  <Gun_3HST_4mm_SMG.tools.5.label>barrel</Gun_3HST_4mm_SMG.tools.5.label>
+  <Gun_3HST_4mm_SMG.tools.6.label>muzzle</Gun_3HST_4mm_SMG.tools.6.label>
+  <Gun_3HST_4mm_SMG.tools.7.label>energy bayonet blade</Gun_3HST_4mm_SMG.tools.7.label>
+  <Gun_3HST_4mm_SMG.tools.8.label>energy BayonetPoint</Gun_3HST_4mm_SMG.tools.8.label>
+
+
+</LanguageData>

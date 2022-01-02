@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_3HST76mmRG_Steel.label>make 76mm Railgun cartridge (Sabot) x25</MakeAmmo_3HST76mmRG_Steel.label>
+  <MakeAmmo_3HST76mmRG_Steel.description>Craft 25 76mm Railgun (Sabot) cartridges.</MakeAmmo_3HST76mmRG_Steel.description>
+  <MakeAmmo_3HST76mmRG_Steel.jobString>Making 76mm Railgun (Sabot) cartridges.</MakeAmmo_3HST76mmRG_Steel.jobString>
+
+  <MakeAmmo_3HST76mmRG_HE.label>make 76mm Railgun cartridge (HE) x25</MakeAmmo_3HST76mmRG_HE.label>
+  <MakeAmmo_3HST76mmRG_HE.description>Craft 25 76mm Railgun (HE) cartridges.</MakeAmmo_3HST76mmRG_HE.description>
+  <MakeAmmo_3HST76mmRG_HE.jobString>Making 76mm Railgun (HE) cartridges.</MakeAmmo_3HST76mmRG_HE.jobString>
+
+
+</LanguageData>

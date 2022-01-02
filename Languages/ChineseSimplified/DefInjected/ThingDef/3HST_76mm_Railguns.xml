@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Gun_3HST_76mm_Cannon.label>3HST制 76mm重型磁轨炮</Gun_3HST_76mm_Cannon.label>
+  <Gun_3HST_76mm_Cannon.description>一门3HST制磁轨重炮。通常用作坦克主炮或者小型战舰主炮。当然，你也可以把它拎起来打，如果你够强壮的话。</Gun_3HST_76mm_Cannon.description>
+  <Gun_3HST_76mm_Cannon.comps.2.label>磁轨耐久</Gun_3HST_76mm_Cannon.comps.2.label>
+  <Gun_3HST_76mm_Cannon.tools.0.label>枪托</Gun_3HST_76mm_Cannon.tools.0.label>
+  <Gun_3HST_76mm_Cannon.tools.1.label>枪管</Gun_3HST_76mm_Cannon.tools.1.label>
+  <Gun_3HST_76mm_Cannon.tools.2.label>枪口</Gun_3HST_76mm_Cannon.tools.2.label>
+
+  <Turret_76mmCorvette.label>76mm 轻型护卫舰主炮炮塔</Turret_76mmCorvette.label>
+  <Turret_76mmCorvette.description>一台安装有76mm主炮的3HST-XML-58炮塔模块。这种炮塔通常安装在3HST有限公司的护卫舰上面。</Turret_76mmCorvette.description>
+
+  <Gun_76mmCorvette.label>3HST制 76mm轻护主炮（炮塔用）</Gun_76mmCorvette.label>
+  <Gun_76mmCorvette.description>安装在舰用炮塔上面的76mm磁轨重炮。</Gun_76mmCorvette.description>
+  <Gun_76mmCorvette.comps.2.description>切换发射模式</Gun_76mmCorvette.comps.2.description>
+
+
+  <!-- EN: 3HST 76mm heavy railgun -->
+  <!-- EN: A heavy railgun usually found ou 3HST tanks or corvettes, you can also choose to wield it with your hands, if you have the strenth to do so. -->
+  <!-- EN: stock -->
+  <!--<Gun_3HST_76mm_Cannon.tools.stock.label>枪托</Gun_3HST_76mm_Cannon.tools.stock.label>-->
+  <!-- EN: barrel -->
+  <!--<Gun_3HST_76mm_Cannon.tools.barrel.label>枪管</Gun_3HST_76mm_Cannon.tools.barrel.label>-->
+  <!-- EN: muzzle -->
+  <!--<Gun_3HST_76mm_Cannon.tools.muzzle.label>枪口</Gun_3HST_76mm_Cannon.tools.muzzle.label>-->
+  <!--<Gun_3HST_76mm_Cannon.verbs.Verb_ShootCE.label>TODO</Gun_3HST_76mm_Cannon.verbs.Verb_ShootCE.label>-->
+  <!-- EN: 3HST 76mm corvette maingun -->
+  <!-- EN: 3HST 76mm heavy railgun on a ship turret. -->
+  <!--<Gun_76mmCorvette.verbs.Verb_ShootCE.label>TODO</Gun_76mmCorvette.verbs.Verb_ShootCE.label>-->
+  <!-- EN: 3HST 76mm Corvette Maingun -->
+  <!-- EN: A 3HST-XML-58 corvette maingun module armed with a 76mm heavy railgun. Turrets like this are commonly found on 3HST corvettes and frigates. This turret is too large to be placed under a roof. -->
+
+</LanguageData>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_3HST20mmRG_Steel.label>make 20mm Railgun cartridge (Sabot) x100</MakeAmmo_3HST20mmRG_Steel.label>
+  <MakeAmmo_3HST20mmRG_Steel.description>Craft 100 20mm Railgun (Sabot) cartridges.</MakeAmmo_3HST20mmRG_Steel.description>
+  <MakeAmmo_3HST20mmRG_Steel.jobString>Making 20mm Railgun (Sabot) cartridges.</MakeAmmo_3HST20mmRG_Steel.jobString>
+
+
+</LanguageData>

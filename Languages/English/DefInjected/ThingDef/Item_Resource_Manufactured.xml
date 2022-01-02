@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RailComponent.label>electromagnetic accelerator rail</RailComponent.label>
+  <RailComponent.description>Advanced magnetic accelerator rails used in various 3HST railgun designs</RailComponent.description>
+  <RailComponent.comps.0.useLabel>Rearm rail</RailComponent.comps.0.useLabel>
+
+
+</LanguageData>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <TipSetDef>
+    <defName>BDGW_Tips</defName>
+    <tips>
+      <li>Railgun rails are short-lived, remember to bring spares or you may end up in a gun fight with a malfunctional railgun.\nTo replace the spent rails, equip the gun that needs replacement, right-click on an electromagnetic accelerator rail on the ground and select "Rearm rail"</li>
+      <li>Most if not all LGIS launchers are capable of switching between direct fire and indirect, mortar-like fire. Use this at your advantage!</li>
+      <li>Scatterailguns introduce heavy rail degradation, with an estimated rail life of 125 rounds per standard rail package. Mind your rail durability when using them!</li>
+      <li>Railgun turrets consume extra power after firing to charge it's capacitors. Be aware of your battery charge if you intend to use them!</li>
+    </tips>
+  </TipSetDef>
+
+  <ConceptDef>
+    <defName>BDGW_RailRearm</defName>
+    <label>Rearming Railguns</label>
+    <priority>50</priority>
+    <needsOpportunity>True</needsOpportunity>
+    <helpText>Railguns of both handheld and turret mounted consumes rail durability when firing, which are replenished with electromagnetic accelerator rails, the same one you make railguns with.\n\nTo replace the spent rails, equip the gun that needs replacement, right-click on an electromagnetic accelerator rail on the ground and select "Rearm rail"\n\nNote that all LGIS launchers but the dual LGIS turret are railguns and require rails as well.</helpText>
+    <highlightTags>
+      <li>BDGW_RailRearm</li>
+    </highlightTags>
+  </ConceptDef>
+
+  <ConceptDef>
+    <defName>BDGW_LGIS</defName>
+    <label>LGIS missiles</label>
+    <priority>50</priority>
+    <needsOpportunity>True</needsOpportunity>
+    <helpText>The LGIS missile, short for Laser-Guided-Infantry-Support missiles comes in the form of ready-to-fire launch tubes. While launch them as disposable rockets are a perfectly valid way of using them, you can also load and fire them in rail-assisted dedictated launchers for greater range, accurancy or fire rate.\n\nMost if not all LGIS launchers, including disposable launch tubes themselves, are capable of switching between direct fire and indirect, mortar-like fire.\n\nIt's noteworthy that most LGIS launchers are railguns, requiring rails and power to function, with the sole exception of dual LGIS launcher. And LGIS launch tubes in their indirect-fire mode cannot be used in launcher as ammo, they have to be switched back to direct mode for that.</helpText>
+    <highlightTags>
+      <li>BDGW_LGIS</li>
+    </highlightTags>
+  </ConceptDef>
+</Defs>

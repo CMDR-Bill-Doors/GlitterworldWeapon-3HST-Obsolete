@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>Hediff_3HSTSlaveTag</defName>
+    <label>Slave RFID tag</label>
+    <labelNoun>a slave identification RFID coil</labelNoun>
+    <description>A slave identification RFID coil used by 3HST limited cooperation, pretty much useless here due to the lack of approperate infrastructure support. It's proximity to major arteries and trachea makes it risky to remove, a safety measure to prevent the tag from being uninstalled.</description>
+    <spawnThingOnRemoved>ComponentIndustrial</spawnThingOnRemoved>
+    <priceOffset>300</priceOffset>
+    <stages>
+      <li>
+        <statOffsets>
+          <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.10</SlaveSuppressionOffset>
+        </statOffsets>
+        <painOffset>0.005</painOffset>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>Install3HSTSlaveTag</defName>
+    <label>install slave RFID tag</label>
+    <description>Install a 3HST standard slave RFID tag. Useless on it's own, but slavers prefer tagged slaves and will pay better. However, removing the RFID coil is much more difficult and dangerous than installing it.</description>
+    <descriptionHyperlinks>
+      <HediffDef>Hediff_3HSTSlaveTag</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing slave RFID tag.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ComponentIndustrial</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Neck</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Hediff_3HSTSlaveTag</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>Remove3HSTSlaveTag</defName>
+    <label>remove slave RFID tag</label>
+    <description>Removing the slave identification RFID chip installed in the neck. Due to it's proximity to major arteries and trachea, this operation can be risky.</description>
+    <descriptionHyperlinks>
+      <HediffDef>Hediff_3HSTSlaveTag</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing slave RFID tag.</jobString>
+    <removesHediff>Hediff_3HSTSlaveTag</removesHediff>
+    <surgerySuccessChanceFactor>0.5</surgerySuccessChanceFactor>
+  </RecipeDef>
+</Defs>

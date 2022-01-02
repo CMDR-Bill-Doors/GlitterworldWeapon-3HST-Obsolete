@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Gun_3HST_9mmDMR.label>3HST制9mm反装甲步枪</Gun_3HST_9mmDMR.label>
+  <Gun_3HST_9mmDMR.description>3HST陆军狙击手的标配步枪之一，打人穿透过剩，反器材力不从心。</Gun_3HST_9mmDMR.description>
+  <Gun_3HST_9mmDMR.comps.2.label>磁轨耐久</Gun_3HST_9mmDMR.comps.2.label>
+  <Gun_3HST_9mmDMR.tools.0.label>枪托</Gun_3HST_9mmDMR.tools.0.label>
+  <Gun_3HST_9mmDMR.tools.1.label>枪管</Gun_3HST_9mmDMR.tools.1.label>
+  <Gun_3HST_9mmDMR.tools.2.label>枪口</Gun_3HST_9mmDMR.tools.2.label>
+  <Gun_3HST_9mmDMR.tools.3.label>能量刺刀刀刃</Gun_3HST_9mmDMR.tools.3.label>
+  <Gun_3HST_9mmDMR.tools.4.label>能量刺刀刀尖</Gun_3HST_9mmDMR.tools.4.label>
+
+  <Gun_3HST_9mmHMG.label>3HST制9mm重磁轨机枪</Gun_3HST_9mmHMG.label>
+  <Gun_3HST_9mmHMG.description>一般安装在固定炮塔、载具，或者由重型火力掩护动力甲携带的重机枪，虽然完全可以手提，但是打的打不准另说。</Gun_3HST_9mmHMG.description>
+  <Gun_3HST_9mmHMG.comps.2.label>磁轨耐久</Gun_3HST_9mmHMG.comps.2.label>
+  <Gun_3HST_9mmHMG.tools.0.label>枪托</Gun_3HST_9mmHMG.tools.0.label>
+  <Gun_3HST_9mmHMG.tools.1.label>枪管</Gun_3HST_9mmHMG.tools.1.label>
+  <Gun_3HST_9mmHMG.tools.2.label>枪口</Gun_3HST_9mmHMG.tools.2.label>
+
+
+  <!-- Turret manned -->
+
+  <Turret_3HST9mmHMGmanned.label>手动9mm重磁轨机枪炮塔</Turret_3HST9mmHMGmanned.label>
+  <Turret_3HST9mmHMGmanned.description>一部安装在三脚架上面的9mm重磁轨机枪。虽然是手动炮塔，但是由于磁轨炮需要供能的缘故所以还是需要电力才能工作。</Turret_3HST9mmHMGmanned.description>
+
+
+  <!-- Turret auto -->
+
+  <Turret_3HST9mmHMGAuto.label>固定 自动9mm重磁轨机枪炮塔</Turret_3HST9mmHMGAuto.label>
+  <Turret_3HST9mmHMGAuto.description>一部装在自动炮塔上的3HST制9mm重磁轨机枪，厚重的装甲保护着内部结构，但是也使得这个炮塔一旦完工就再也无法移动。</Turret_3HST9mmHMGAuto.description>
+
+  <Turret_3HST9mmHMGAutoMoveable.label>可移动 自动9mm重磁轨机枪炮塔</Turret_3HST9mmHMGAutoMoveable.label>
+  <Turret_3HST9mmHMGAutoMoveable.description>安装在带有作动器的三脚架上的3HST制9mm重磁轨机枪，虽然便于转移，但是很容易在炮火下损毁。</Turret_3HST9mmHMGAutoMoveable.description>
+
+  <Gun_9mmHMG_Turret.label>3HST制9mm重磁轨机枪（炮塔用）</Gun_9mmHMG_Turret.label>
+  <Gun_9mmHMG_Turret.description>安装在炮塔上的9mm重磁轨机枪。</Gun_9mmHMG_Turret.description>
+
+
+  <!-- Sniper Turret -->
+
+  <Turret_3HST9mmSniperAuto.label>固定 自动9mm磁轨狙击炮塔</Turret_3HST9mmSniperAuto.label>
+  <Turret_3HST9mmSniperAuto.description>一部装在自动炮塔上的3HST制9mm磁轨狙击步枪，厚重的装甲保护着内部结构，但是也使得这个炮塔一旦完工就再也无法移动。</Turret_3HST9mmSniperAuto.description>
+
+  <Turret_3HST9mmSniperAutoMoveable.label>可移动 自动9mm磁轨狙击炮塔</Turret_3HST9mmSniperAutoMoveable.label>
+  <Turret_3HST9mmSniperAutoMoveable.description>安装在带有作动器的三脚架上的3HST制9mm磁轨狙击步枪，虽然便于转移，但是很容易在炮火下损毁。</Turret_3HST9mmSniperAutoMoveable.description>
+
+  <Turret_3HST9mmSniperManned.label>手动9mm磁轨狙击炮塔</Turret_3HST9mmSniperManned.label>
+  <Turret_3HST9mmSniperManned.description>一部安装在三脚架上面的9mm磁轨狙击步枪。虽然是手动炮塔，但是由于磁轨炮需要供能的缘故所以还是需要电力才能工作。</Turret_3HST9mmSniperManned.description>
+
+  <Gun_9mmSniper_Turret.label>3HST制9mm反装甲步枪（炮塔用）</Gun_9mmSniper_Turret.label>
+  <Gun_9mmSniper_Turret.description>安装在炮塔上的9mm反装甲步枪</Gun_9mmSniper_Turret.description>
+
+
+  <!-- EN: 3HST designated marksman rifle -->
+  <!-- EN: Intermediate caliber sniper rifle developed by 3HST limited weaponry department. -->
+  <!-- EN: stock -->
+  <!--<Gun_3HST_9mmDMR.tools.stock.label>枪托</Gun_3HST_9mmDMR.tools.stock.label>-->
+  <!-- EN: barrel -->
+  <!--<Gun_3HST_9mmDMR.tools.barrel.label>枪管</Gun_3HST_9mmDMR.tools.barrel.label>-->
+  <!-- EN: muzzle -->
+  <!--<Gun_3HST_9mmDMR.tools.muzzle.label>枪口</Gun_3HST_9mmDMR.tools.muzzle.label>-->
+  <!-- EN: energy bayonet blade -->
+  <!--<Gun_3HST_9mmDMR.tools.energy_bayonet_blade.label>能量刺刀刀刃</Gun_3HST_9mmDMR.tools.energy_bayonet_blade.label>-->
+  <!-- EN: energy BayonetPoint -->
+  <!--<Gun_3HST_9mmDMR.tools.energy_bayonet_point.label>能量刺刀刀尖</Gun_3HST_9mmDMR.tools.energy_bayonet_point.label>-->
+  <!--<Gun_3HST_9mmDMR.verbs.Verb_ShootCE.label>TODO</Gun_3HST_9mmDMR.verbs.Verb_ShootCE.label>-->
+  <!-- EN: 3HST 9mm heavy machine railgun -->
+  <!-- EN: Heavy machine railgun installed on 3HST fighting vehicles and carried by power armor soldiers, devastating against personnel and light vehicles. -->
+  <!--<Gun_3HST_9mmHMG.tools.stock.label>枪托</Gun_3HST_9mmHMG.tools.stock.label>-->
+  <!--<Gun_3HST_9mmHMG.tools.barrel.label>枪管</Gun_3HST_9mmHMG.tools.barrel.label>-->
+  <!--<Gun_3HST_9mmHMG.tools.muzzle.label>枪口</Gun_3HST_9mmHMG.tools.muzzle.label>-->
+  <!--<Gun_3HST_9mmHMG.verbs.Verb_ShootCE.label>TODO</Gun_3HST_9mmHMG.verbs.Verb_ShootCE.label>-->
+  <!-- EN: Mounted 3HST 9mm HMG -->
+  <!-- EN: 3HST 9mm HMG on a stationary emplacement. -->
+  <!--<Gun_9mmHMG_Turret.verbs.Verb_ShootCE.label>TODO</Gun_9mmHMG_Turret.verbs.Verb_ShootCE.label>-->
+  <!-- EN: Auto 9mm heavy machine railgun -->
+  <!-- EN: A 3HST heavy machine railgun mounted on an automatic mount. -->
+  <!-- EN: Manned 9mm heavy machine railgun -->
+  <!-- EN: A 3HST heavy machine railgun mounted on an stationary mount. Despite the fact this turret is manually operated, this turret still needs a amount of power to operate since railguns consumes power. -->
+
+</LanguageData>

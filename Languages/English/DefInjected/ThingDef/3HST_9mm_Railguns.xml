@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Gun_3HST_9mmDMR.label>3HST anti-armor rifle</Gun_3HST_9mmDMR.label>
+  <Gun_3HST_9mmDMR.description>Intermediate caliber sniper rifle developed by 3HST limited weaponry department, designed to fight enemy combatants in heavy armor.</Gun_3HST_9mmDMR.description>
+  <Gun_3HST_9mmDMR.tools.0.label>stock</Gun_3HST_9mmDMR.tools.0.label>
+  <Gun_3HST_9mmDMR.tools.1.label>barrel</Gun_3HST_9mmDMR.tools.1.label>
+  <Gun_3HST_9mmDMR.tools.2.label>muzzle</Gun_3HST_9mmDMR.tools.2.label>
+  <Gun_3HST_9mmDMR.tools.3.label>energy bayonet blade</Gun_3HST_9mmDMR.tools.3.label>
+  <Gun_3HST_9mmDMR.tools.4.label>energy BayonetPoint</Gun_3HST_9mmDMR.tools.4.label>
+
+  <Gun_3HST_9mmHMG.label>3HST 9mm heavy machine railgun</Gun_3HST_9mmHMG.label>
+  <Gun_3HST_9mmHMG.description>Heavy machine railgun installed on 3HST fighting vehicles and carried by power armor soldiers, devastating against personnel and light vehicles.</Gun_3HST_9mmHMG.description>
+  <Gun_3HST_9mmHMG.tools.0.label>stock</Gun_3HST_9mmHMG.tools.0.label>
+  <Gun_3HST_9mmHMG.tools.1.label>barrel</Gun_3HST_9mmHMG.tools.1.label>
+  <Gun_3HST_9mmHMG.tools.2.label>muzzle</Gun_3HST_9mmHMG.tools.2.label>
+
+
+  <!-- Turret manned -->
+
+  <Turret_3HST9mmHMGmanned.label>Manned 9mm heavy machine railgun</Turret_3HST9mmHMGmanned.label>
+  <Turret_3HST9mmHMGmanned.description>A 3HST heavy machine railgun mounted on an stationary mount. Despite the fact this turret is manually operated, this turret still needs a amount of power to operate since railguns consumes power.</Turret_3HST9mmHMGmanned.description>
+
+
+  <!-- Turret auto -->
+
+  <Turret_3HST9mmHMGAuto.label>Auto 9mm heavy machine railgun</Turret_3HST9mmHMGAuto.label>
+  <Turret_3HST9mmHMGAuto.description>A permanent defensive structure covered under thick steel armor reinforced by a layer of plasteel surface hardening. While extremely durable and resilent to all but EMP attacks, they're costly to build both in terms of material and time, and being unable to move after construction.</Turret_3HST9mmHMGAuto.description>
+
+  <Turret_3HST9mmHMGAutoMoveable.label>Auto 9mm heavy machine railgun</Turret_3HST9mmHMGAutoMoveable.label>
+  <Turret_3HST9mmHMGAutoMoveable.description>A gun, a tripod, and some servos between them. While more fragile and inaccurate than their permanent cousins, they enjoy the versatility of being moveable.</Turret_3HST9mmHMGAutoMoveable.description>
+
+  <Gun_9mmHMG_Turret.label>Mounted 3HST 9mm HMG</Gun_9mmHMG_Turret.label>
+  <Gun_9mmHMG_Turret.description>3HST 9mm HMG on a stationary emplacement.</Gun_9mmHMG_Turret.description>
+
+
+  <!-- Sniper Turret -->
+
+  <Turret_3HST9mmSniperAuto.label>Auto 9mm sniper railgun</Turret_3HST9mmSniperAuto.label>
+  <Turret_3HST9mmSniperAuto.description>A permanent defensive structure covered under thick steel armor reinforced by a layer of plasteel surface hardening. While extremely durable and resilent to all but EMP attacks, they're costly to build both in terms of material and time, and being unable to move after construction.</Turret_3HST9mmSniperAuto.description>
+
+  <Turret_3HST9mmSniperAutoMoveable.label>Auto 9mm sniper railgun</Turret_3HST9mmSniperAutoMoveable.label>
+  <Turret_3HST9mmSniperAutoMoveable.description>A gun, a tripod, and some servos between them. While more fragile and inaccurate than their permanent cousins, they enjoy the versatility of being moveable.</Turret_3HST9mmSniperAutoMoveable.description>
+
+  <Turret_3HST9mmSniperManned.label>Manned 9mm sniper railgun</Turret_3HST9mmSniperManned.label>
+  <Turret_3HST9mmSniperManned.description>A 3HST anti-armor sniper railgun mounted on an tripod mount.</Turret_3HST9mmSniperManned.description>
+
+  <Gun_9mmSniper_Turret.label>Mounted 3HST 9mm sniper</Gun_9mmSniper_Turret.label>
+  <Gun_9mmSniper_Turret.description>3HST 9mm sniper on a stationary emplacement.</Gun_9mmSniper_Turret.description>
+
+
+</LanguageData>

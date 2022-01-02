@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Gun_3HST_Scatter_Railgun.label>3HST制轻型霰射磁轨“新重庆喷洒者”</Gun_3HST_Scatter_Railgun.label>
+  <Gun_3HST_Scatter_Railgun.description>一部3HST有限公司设计的19管霰弹磁轨炮，在第三次内战的无尽的废墟巷战中发光发热。但是内战结束后这个武器立刻失去了使用价值，现在多用于警用或者二三线部队清剿海盗和叛军时装备。</Gun_3HST_Scatter_Railgun.description>
+  <Gun_3HST_Scatter_Railgun.comps.2.label>磁轨耐久</Gun_3HST_Scatter_Railgun.comps.2.label>
+  <Gun_3HST_Scatter_Railgun.tools.0.label>握把</Gun_3HST_Scatter_Railgun.tools.0.label>
+  <Gun_3HST_Scatter_Railgun.tools.1.label>枪口</Gun_3HST_Scatter_Railgun.tools.1.label>
+  <Gun_3HST_Scatter_Railgun.tools.2.label>能量刺刀刀刃</Gun_3HST_Scatter_Railgun.tools.2.label>
+  <Gun_3HST_Scatter_Railgun.tools.3.label>能量刺刀刀尖</Gun_3HST_Scatter_Railgun.tools.3.label>
+
+  <Gun_3HST_Scatter_Railgun_Heavy.label>3HST制重型霰射磁轨“新重庆覆盖者”</Gun_3HST_Scatter_Railgun_Heavy.label>
+  <Gun_3HST_Scatter_Railgun_Heavy.description>一部3HST有限公司设计的重型7管霰弹磁轨炮，在第三次内战的无尽的废墟巷战中发光发热。但是内战结束后这个武器立刻失去了使用价值，现在多用于警用或者二三线部队清剿海盗和叛军时装备。</Gun_3HST_Scatter_Railgun_Heavy.description>
+  <Gun_3HST_Scatter_Railgun_Heavy.comps.2.label>磁轨耐久</Gun_3HST_Scatter_Railgun_Heavy.comps.2.label>
+  <Gun_3HST_Scatter_Railgun_Heavy.tools.0.label>枪托</Gun_3HST_Scatter_Railgun_Heavy.tools.0.label>
+  <Gun_3HST_Scatter_Railgun_Heavy.tools.1.label>枪管</Gun_3HST_Scatter_Railgun_Heavy.tools.1.label>
+  <Gun_3HST_Scatter_Railgun_Heavy.tools.2.label>枪口</Gun_3HST_Scatter_Railgun_Heavy.tools.2.label>
+  <Gun_3HST_Scatter_Railgun_Heavy.tools.3.label>能量刺刀刀刃</Gun_3HST_Scatter_Railgun_Heavy.tools.3.label>
+  <Gun_3HST_Scatter_Railgun_Heavy.tools.4.label>能量刺刀刀尖</Gun_3HST_Scatter_Railgun_Heavy.tools.4.label>
+
+  <Gun_3HST_Scatter_Railgun_Pump.label>3HST制泵动霰射磁轨“新重庆喷溅者”</Gun_3HST_Scatter_Railgun_Pump.label>
+  <Gun_3HST_Scatter_Railgun_Pump.description>一把泵动磁轨霰弹。\n\n是的，你没看错，泵动、磁轨、霰弹。</Gun_3HST_Scatter_Railgun_Pump.description>
+  <Gun_3HST_Scatter_Railgun_Pump.comps.2.label>磁轨耐久</Gun_3HST_Scatter_Railgun_Pump.comps.2.label>
+  <Gun_3HST_Scatter_Railgun_Pump.tools.0.label>枪托</Gun_3HST_Scatter_Railgun_Pump.tools.0.label>
+  <Gun_3HST_Scatter_Railgun_Pump.tools.1.label>枪管</Gun_3HST_Scatter_Railgun_Pump.tools.1.label>
+  <Gun_3HST_Scatter_Railgun_Pump.tools.2.label>枪口</Gun_3HST_Scatter_Railgun_Pump.tools.2.label>
+  <Gun_3HST_Scatter_Railgun_Pump.tools.3.label>能量刺刀刀刃</Gun_3HST_Scatter_Railgun_Pump.tools.3.label>
+  <Gun_3HST_Scatter_Railgun_Pump.tools.4.label>能量刺刀刀尖</Gun_3HST_Scatter_Railgun_Pump.tools.4.label>
+
+
+</LanguageData>

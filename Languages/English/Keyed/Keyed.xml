@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <BDGW_BarrelFullMessage>The rails don't need replacement</BDGW_BarrelFullMessage>
+  <BDGW_NoWeaponMessage>No weapon to rearm</BDGW_NoWeaponMessage>
+  <BDGW_BarrelWornMessage>The rail of {0}'s weapon has worn out! Rearm it with accelerator rails is needed.</BDGW_BarrelWornMessage>
+
+  <BD_RechargePower>Recharge power consumption</BD_RechargePower>
+</LanguageData>

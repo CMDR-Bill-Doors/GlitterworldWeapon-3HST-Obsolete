@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Install3HSTSlaveTag.label>install slave RFID tag</Install3HSTSlaveTag.label>
+  <Install3HSTSlaveTag.description>Install a 3HST standard slave RFID tag. Useless on it's own, but slavers prefer tagged slaves and will pay better. However, removing the RFID coil is much more difficult and dangerous than installing it.</Install3HSTSlaveTag.description>
+  <Install3HSTSlaveTag.jobString>Installing slave RFID tag.</Install3HSTSlaveTag.jobString>
+
+  <Remove3HSTSlaveTag.label>remove slave RFID tag</Remove3HSTSlaveTag.label>
+  <Remove3HSTSlaveTag.description>Removing the slave identification RFID chip installed in the neck. Due to it's proximity to major arteries and trachea, this operation can be risky.</Remove3HSTSlaveTag.description>
+  <Remove3HSTSlaveTag.jobString>Removing slave RFID tag.</Remove3HSTSlaveTag.jobString>
+
+
+</LanguageData>

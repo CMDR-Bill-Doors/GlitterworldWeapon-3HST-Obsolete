@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_3HST9mmRG_Steel.label>制作 3HST制9mm大口径磁轨弹 x100</MakeAmmo_3HST9mmRG_Steel.label>
+  <MakeAmmo_3HST9mmRG_Steel.description>制作 3HST制9mm大口径磁轨弹 x100。</MakeAmmo_3HST9mmRG_Steel.description>
+  <MakeAmmo_3HST9mmRG_Steel.jobString>正在制作 3HST制9mm大口径磁轨弹 x100。</MakeAmmo_3HST9mmRG_Steel.jobString>
+
+
+  <!-- EN: make 9mm Railgun cartridge (Sabot) x300 -->
+  <!-- EN: Craft 300 9mm Railgun (Sabot) cartridges. -->
+  <!-- EN: Making 9mm Railgun (Sabot) cartridges. -->
+
+</LanguageData>

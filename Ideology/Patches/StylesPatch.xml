@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/StyleCategoryDef[defName="Morbid" or defName="Spikecore"]/thingDefStyles</xpath>
+    <value>
+      <li>
+        <thingDef>Gun_3HST_LPRG</thingDef>
+        <styleDef>Imperial_Gun_3HST_LPRG</styleDef>
+      </li>
+      <li>
+        <thingDef>Gun_3HST_Assault_Railgun</thingDef>
+        <styleDef>Imperial_Gun_3HST_Assault_Railgun</styleDef>
+      </li>
+    </value>
+  </Operation>
+</Patch>

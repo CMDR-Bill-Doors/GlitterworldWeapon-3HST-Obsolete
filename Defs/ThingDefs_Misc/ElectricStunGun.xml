@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <DamageDef ParentName="Electrical">
+    <defName>ElectricStunGun</defName>
+    <label>non-lethal electric arc</label>
+    <deathMessage>{0} has been electrocuted.</deathMessage>
+
+    <hediff>MuscleSpasms</hediff>
+    <hediffSkin>ElectricalBurn</hediffSkin>
+    <hediffSolid>ElectricalBurn</hediffSolid>
+  </DamageDef>
+
+  <ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" ParentName="BaseBullet">
+    <defName>ElectricStunGunBeam</defName>
+    <thingClass>CombatExtended.Lasers.LaserBeamCE</thingClass>
+    <label>non-lethal electric arc</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.5</drawSize>
+      <color>(5,195,221)</color>
+    </graphicData>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <beamGraphic>BeamGraphic</beamGraphic>
+    <seam>0</seam>
+    <textures>
+      <li>Things/Mote/LongSparkThrown</li>
+    </textures>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <isInstant>true</isInstant>
+      <damageDef>Taser</damageDef>
+      <damageAmountBase>2</damageAmountBase>
+      <armorPenetrationSharp>18.25</armorPenetrationSharp>
+      <armorPenetrationBlunt>0.001</armorPenetrationBlunt>
+    </projectile>
+    <modExtensions>
+      <li Class="ProjectileImpactFX.EffectProjectileExtension">
+        <explosionMote>true</explosionMote>
+        <explosionMoteSize>0.25</explosionMoteSize>
+        <ImpactMoteDef>Mote_YellowSparkFlash</ImpactMoteDef>
+        <ImpactMoteSize>1</ImpactMoteSize>
+        <ImpactGlowMoteDef>Mote_ExplosionFlash</ImpactGlowMoteDef>
+        <ImpactGlowMoteSize>2.5</ImpactGlowMoteSize>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="Base3HSTHeavyGun">
+    <defName>Gun_3HST_ElectricStunGun</defName>
+    <label>3HST non-lethal electric arc gun</label>
+    <description>An expensive non-lethal weapon solution.</description>
+    <graphicData>
+      <texPath>Things/Weapons/ElectricStunRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.45,1.45</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>93500</WorkToMake>
+      <Mass>29</Mass>
+      <Bulk>25</Bulk>
+      <SwayFactor>2.2</SwayFactor>
+      <ShotSpread>0.01</ShotSpread>
+      <SightsEfficiency>1</SightsEfficiency>
+      <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>220</Steel>
+      <Plasteel>80</Plasteel>
+      <ComponentIndustrial>10</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+      <RailComponent>4</RailComponent>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>BDsGlitterworldFaction3HST.Verb_ShootByBarrel</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ElectricStunGunBeam</defaultProjectile>
+        <warmupTime>1.1</warmupTime>
+        <burstShotCount>10</burstShotCount>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <range>86</range>
+        <soundCast>RG_9mm</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <recoilAmount>0</recoilAmount>
+        <muzzleFlashScale>18</muzzleFlashScale>
+        <ai_AvoidFriendlyFireRadius>2</ai_AvoidFriendlyFireRadius>
+      </li>
+    </verbs>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.45,1.45</DrawSize>
+        <DrawOffset>0.12,-0.20</DrawOffset>
+      </li>
+    </modExtensions>
+    <comps>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aimedBurstShotCount>5</aimedBurstShotCount>
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>SuppressFire</aiAimMode>
+      </li>
+      <li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeBarrel">
+        <durability>75</durability>
+        <label>Rail durability</label>
+        <loadingAmount>75</loadingAmount>
+      </li>
+    </comps>
+    <weaponTags>
+      <li>GunHeavy</li>
+    </weaponTags>
+    <!--<AllowWithRunAndGun>false</AllowWithRunAndGun>-->
+    <recipeMaker>
+      <researchPrerequisite>Research_3HST_Railgun</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

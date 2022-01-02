@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <BDGW_RailRearm.label>磁轨更换</BDGW_RailRearm.label>
+  <BDGW_RailRearm.helpText>无论是手持磁轨武器还是磁轨炮塔，在开火的时候都会消耗其磁轨的耐久。磁轨耐久的补充需要用到电磁加速轨道，也就是制造磁轨武器所用到的同一个东西。\n\n为更换一把武器的磁轨，这把武器首先需要被装备在一个殖民者的手上，然后选中该殖民者，右键放在地上的电磁加速轨道，然后选择“更换磁轨”。\n\n除了双联LGIS炮塔之外，所有的LGIS发射器都属于磁轨武器，所以在频繁使用后也需要更换磁轨。</BDGW_RailRearm.helpText>
+  <BDGW_LGIS.label>LGIS导弹</BDGW_LGIS.label>
+  <BDGW_LGIS.helpText>LGIS导弹本身可以直接当作一次性发射筒发射，但是也可以作为弹药用在包括炮塔在内的其他专用发射器上，以获得更大的射程，精确度或者射速。\n\n几乎所有LGIS发射器都可以在直射和曲射模式之间切换，但是注意只有直射模式的一次性LGIS发射筒才能作为炮塔和武器的弹药。\n\n除了双联LGIS炮塔之外，所有的LGIS发射器都属于磁轨武器，所以在频繁使用后也需要更换磁轨。</BDGW_LGIS.helpText>
+
+</LanguageData>

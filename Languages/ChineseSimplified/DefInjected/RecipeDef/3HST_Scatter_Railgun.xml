@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_ScatterRGStandard.label>制作 3HST制标准霰射磁轨弹 (脱壳穿甲弹) x200</MakeAmmo_ScatterRGStandard.label>
+  <MakeAmmo_ScatterRGStandard.description>制作 3HST制标准霰射磁轨弹 (脱壳穿甲弹) x200。</MakeAmmo_ScatterRGStandard.description>
+  <MakeAmmo_ScatterRGStandard.jobString>正在制作 3HST制标准霰射磁轨弹 (脱壳穿甲弹) x200。</MakeAmmo_ScatterRGStandard.jobString>
+
+  <MakeAmmo_ScatterRGHeavy.label>制作 3HST制重霰射磁轨弹 (脱壳穿甲弹) x200</MakeAmmo_ScatterRGHeavy.label>
+  <MakeAmmo_ScatterRGHeavy.description>制作 3HST制重霰射磁轨弹 (脱壳穿甲弹) x200。</MakeAmmo_ScatterRGHeavy.description>
+  <MakeAmmo_ScatterRGHeavy.jobString>正在制作 3HST制重霰射磁轨弹 (脱壳穿甲弹) x200。</MakeAmmo_ScatterRGHeavy.jobString>
+
+
+</LanguageData>

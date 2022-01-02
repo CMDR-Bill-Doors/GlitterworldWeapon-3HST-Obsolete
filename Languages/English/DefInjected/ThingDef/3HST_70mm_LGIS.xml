@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Confetti frags -->
+
+  <Fragment_ConfettiLarge.label>Confetti</Fragment_ConfettiLarge.label>
+  <Fragment_ConfettiMedium.label>Confetti</Fragment_ConfettiMedium.label>
+  <Fragment_ConfettiSmallR.label>Confetti</Fragment_ConfettiSmallR.label>
+  <Fragment_ConfettiSmallY.label>Confetti</Fragment_ConfettiSmallY.label>
+  <Fragment_ConfettiSmallG.label>Confetti</Fragment_ConfettiSmallG.label>
+  <Fragment_ConfettiSmallB.label>Confetti</Fragment_ConfettiSmallB.label>
+  <Fragment_ExplosiveSubmunitionFar.label>Explosive submunition</Fragment_ExplosiveSubmunitionFar.label>
+  <Fragment_ExplosiveSubmunition.label>Explosive submunition</Fragment_ExplosiveSubmunition.label>
+  <Fragment_ExplosiveSubmunitionNear.label>Explosive submunition</Fragment_ExplosiveSubmunitionNear.label>
+  <Fragment_RecursiveSubmunition.label>Recursive submunition</Fragment_RecursiveSubmunition.label>
+
+
+  <!-- Decelerator foam -->
+
+  <Filth_SlowFoam.label>foam</Filth_SlowFoam.label>
+
+
+  <!-- Projectiles -->
+
+  <Projectile_70mmLGIS_HEAT.label>LGIS missile (HEAT)</Projectile_70mmLGIS_HEAT.label>
+  <Projectile_70mmLGIS_Thermobaric.label>LGIS missile (Thermobaric)</Projectile_70mmLGIS_Thermobaric.label>
+  <Projectile_70mmLGIS_Frag.label>LGIS missile (Frag)</Projectile_70mmLGIS_Frag.label>
+  <Projectile_70mmLGIS_Cluster.label>LGIS missile (Cluster)</Projectile_70mmLGIS_Cluster.label>
+  <Projectile_70mmLGIS_Confetti.label>LGIS missile (Confetti)</Projectile_70mmLGIS_Confetti.label>
+  <Projectile_70mmLGIS_Incendiary.label>LGIS missile (Incendiary)</Projectile_70mmLGIS_Incendiary.label>
+  <Projectile_70mmLGIS_Firefoam.label>LGIS missile (Foam)</Projectile_70mmLGIS_Firefoam.label>
+  <Projectile_70mmLGIS_Slowfoam.label>LGIS missile (Slow Foam)</Projectile_70mmLGIS_Slowfoam.label>
+  <Projectile_70mmLGIS_Smoke.label>LGIS missile (Smoke)</Projectile_70mmLGIS_Smoke.label>
+  <Projectile_70mmLGIS_EMP.label>LGIS missile (EMP)</Projectile_70mmLGIS_EMP.label>
+  <Projectile_70mmLGIS_Illumination.label>LGIS missile (Illumination)</Projectile_70mmLGIS_Illumination.label>
+  <Projectile_70mmLGIS_HEAT_Indirect.label>LGIS missile (HEAT)</Projectile_70mmLGIS_HEAT_Indirect.label>
+  <Projectile_70mmLGIS_Thermobaric_Indirect.label>LGIS missile (Thermobaric)</Projectile_70mmLGIS_Thermobaric_Indirect.label>
+  <Projectile_70mmLGIS_Frag_Indirect.label>LGIS missile (Frag)</Projectile_70mmLGIS_Frag_Indirect.label>
+  <Projectile_70mmLGIS_Cluster_Indirect.label>LGIS missile (Cluster)</Projectile_70mmLGIS_Cluster_Indirect.label>
+  <Projectile_70mmLGIS_Confetti_Indirect.label>LGIS missile (Confetti)</Projectile_70mmLGIS_Confetti_Indirect.label>
+  <Projectile_70mmLGIS_Incendiary_Indirect.label>LGIS missile (Incendiary)</Projectile_70mmLGIS_Incendiary_Indirect.label>
+  <Projectile_70mmLGIS_Firefoam_Indirect.label>LGIS missile (Foam)</Projectile_70mmLGIS_Firefoam_Indirect.label>
+  <Projectile_70mmLGIS_Slowfoam_Indirect.label>LGIS missile (Slow Foam)</Projectile_70mmLGIS_Slowfoam_Indirect.label>
+  <Projectile_70mmLGIS_Smoke_Indirect.label>LGIS missile (Smoke)</Projectile_70mmLGIS_Smoke_Indirect.label>
+  <Projectile_70mmLGIS_EMP_Indirect.label>LGIS missile (EMP)</Projectile_70mmLGIS_EMP_Indirect.label>
+  <Projectile_70mmLGIS_Illumination_Indirect.label>LGIS missile (Illumination)</Projectile_70mmLGIS_Illumination_Indirect.label>
+
+
+</LanguageData>

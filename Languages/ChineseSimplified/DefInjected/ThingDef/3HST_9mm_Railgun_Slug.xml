@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_3HST9mmRG_Steel.label>3HST制9mm大口径磁轨弹</Ammo_3HST9mmRG_Steel.label>
+  <Ammo_3HST9mmRG_Steel.description>用于一系列3HST制重机枪和狙击枪的中间口径磁轨弹。</Ammo_3HST9mmRG_Steel.description>
+
+
+  <!-- Projectiles -->
+
+  <Projectile_3HST9mmRG_Steel.label>3HST制9mm大口径磁轨弹 (脱壳穿甲弹)</Projectile_3HST9mmRG_Steel.label>
+
+
+  <!-- EN: 3HST 9mm Steel Railgun Slug -->
+  <!-- EN: Intermediate caliber railgun cartridges used by a variety of 3HST-made weapons -->
+  <!-- EN: 9mm Railgun bullet (Sabot) -->
+
+</LanguageData>

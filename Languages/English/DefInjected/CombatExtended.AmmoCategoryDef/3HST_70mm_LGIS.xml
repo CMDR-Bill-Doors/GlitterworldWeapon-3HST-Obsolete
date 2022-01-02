@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RocketConfetti.label>confetti shell</RocketConfetti.label>
+  <RocketConfetti.labelShort>confetti</RocketConfetti.labelShort>
+  <RocketConfetti.description>Filled with confetti and a small explosive charge, barely destructive but extremely humiliating.</RocketConfetti.description>
+
+  <RocketIncendiary.label>Incendiary</RocketIncendiary.label>
+  <RocketIncendiary.labelShort>incendiary</RocketIncendiary.labelShort>
+  <RocketIncendiary.description>Filled with incendiary agent. The agent is dispersed on impact, covering the area in flames.</RocketIncendiary.description>
+
+  <RocketSmoke.label>Smoke</RocketSmoke.label>
+  <RocketSmoke.labelShort>smoke</RocketSmoke.labelShort>
+  <RocketSmoke.description>Filled with a smoke-producing agent. Explodes on impact to generate a thick smokescreen.</RocketSmoke.description>
+
+  <RocketEMP.label>EMP</RocketEMP.label>
+  <RocketEMP.labelShort>EMP</RocketEMP.labelShort>
+  <RocketEMP.description>Creates an electro-magnetic burst on impact, temporarily disrupting electronic systems and Mechanoids.</RocketEMP.description>
+
+  <RocketFoam.label>Foam</RocketFoam.label>
+  <RocketFoam.labelShort>foam</RocketFoam.labelShort>
+  <RocketFoam.description>Special round designed for civilian fire-fighting purposes. Filled with fire-retardant foam to suppress fires in a large area.</RocketFoam.description>
+
+  <RocketCluster.label>Cluster</RocketCluster.label>
+  <RocketCluster.labelShort>cluster</RocketCluster.labelShort>
+  <RocketCluster.description>Advanced rocket containing multiple submunitions.</RocketCluster.description>
+
+  <RocketIllumination.label>Illumination</RocketIllumination.label>
+  <RocketIllumination.labelShort>illumination</RocketIllumination.labelShort>
+  <RocketIllumination.description>Lights up a large area with the illumination agents insides that ignited on impact, lasts for roughtly 3 hours. May cause fire when ignited in enclosed space.</RocketIllumination.description>
+
+
+</LanguageData>

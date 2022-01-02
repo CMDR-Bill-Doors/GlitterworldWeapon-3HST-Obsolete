@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>Research_3HST_Railgun</defName>
+    <label>3HST railguns</label>
+    <description>Allows production of 3HST-designed railguns.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>ChargedShot</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>16.00</researchViewX>
+    <researchViewY>3.8</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Research_3HST_Railgun_Components</defName>
+    <label>3HST railgun components</label>
+    <description>Allows production of advanced electromagnetic accelerators used by 3HST railguns.</description>
+    <baseCost>5000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>Research_3HST_Railgun</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <!--
+    <techprintCount>2</techprintCount>
+    <techprintCommonality>3</techprintCommonality>
+    <techprintMarketValue>3000</techprintMarketValue>
+    -->
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>16.00</researchViewX>
+    <researchViewY>4.8</researchViewY>
+  </ResearchProjectDef>
+
+
+</Defs>

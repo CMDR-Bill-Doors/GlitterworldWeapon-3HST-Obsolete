@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RailComponent.label>电磁加速轨道</RailComponent.label>
+  <RailComponent.description>极其先进的电磁加速轨道，用于各式各样的3HST制武器。</RailComponent.description>
+  <RailComponent.comps.0.useLabel>Rearm rail</RailComponent.comps.0.useLabel>
+
+
+  <!--<AdvancedServo.label>先进作动器</AdvancedServo.label>-->
+  <!--<AdvancedServo.description>包含精密传动部件，高精度电机及其控制板的一系列先进零部件，通常用于高端武器的装填系统。</AdvancedServo.description>-->
+  <!--<MilitaryCapacitor.label>军用级电容器</MilitaryCapacitor.label>-->
+  <!--<MilitaryCapacitor.description>达到军用标准的高性能电容器和电源设备，用于给高耗能武器供电。</MilitaryCapacitor.description>-->
+  <!-- EN: advanced servo -->
+  <!-- EN: Advanced servo system including guide rails, servo motors, pistons and associated controllers. They are used in some delicate situations like loading your hand-held guns. -->
+  <!-- EN: military grade capacitor -->
+  <!-- EN: Military capacitors and power adaptors, robust and resistant to electormagnetic disruptions, they supply pulses of power to energy-demanding weapons. -->
+  <!-- EN: electromagnetic accelerator rail -->
+  <!-- EN: Advanced magnetic accelerator rails used in various 3HST railgun designs -->
+
+</LanguageData>

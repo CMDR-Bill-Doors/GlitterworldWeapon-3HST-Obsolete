@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Projectile_3HST5mmLPRG_Steel.label>3HST制5mm磁轨通用弹 (脱壳穿甲弹)</Projectile_3HST5mmLPRG_Steel.label>
+
+
+  <!-- Low Power Railgun -->
+
+  <Gun_3HST_LPRG.label>3HST制低功率磁轨战斗步枪</Gun_3HST_LPRG.label>
+  <Gun_3HST_LPRG.description>3HST奴隶炮灰的标配武器。由于其远低于普通磁轨炮的设计枪口速度极大的降低了对输出功率、供电系统和材料的要求，它不需要像常规磁轨炮那样高标准的零件，因此可以以普通的材料较为迅速的量产。</Gun_3HST_LPRG.description>
+  <Gun_3HST_LPRG.tools.0.label>枪托</Gun_3HST_LPRG.tools.0.label>
+  <Gun_3HST_LPRG.tools.1.label>枪管</Gun_3HST_LPRG.tools.1.label>
+  <Gun_3HST_LPRG.tools.2.label>枪口</Gun_3HST_LPRG.tools.2.label>
+  <Gun_3HST_LPRG.tools.3.label>能量刺刀刀刃</Gun_3HST_LPRG.tools.3.label>
+  <Gun_3HST_LPRG.tools.4.label>能量刺刀刀尖</Gun_3HST_LPRG.tools.4.label>
+
+
+  <!-- Assault Railgun -->
+
+  <Gun_3HST_Assault_Railgun.label>3HST制5mm突击磁轨炮</Gun_3HST_Assault_Railgun.label>
+  <Gun_3HST_Assault_Railgun.description>3HST陆军正规军的标配武器。</Gun_3HST_Assault_Railgun.description>
+  <Gun_3HST_Assault_Railgun.comps.2.label>磁轨耐久</Gun_3HST_Assault_Railgun.comps.2.label>
+  <Gun_3HST_Assault_Railgun.tools.0.label>枪托</Gun_3HST_Assault_Railgun.tools.0.label>
+  <Gun_3HST_Assault_Railgun.tools.1.label>枪管</Gun_3HST_Assault_Railgun.tools.1.label>
+  <Gun_3HST_Assault_Railgun.tools.2.label>枪口</Gun_3HST_Assault_Railgun.tools.2.label>
+  <Gun_3HST_Assault_Railgun.tools.3.label>能量刺刀刀刃</Gun_3HST_Assault_Railgun.tools.3.label>
+  <Gun_3HST_Assault_Railgun.tools.4.label>能量刺刀刀尖</Gun_3HST_Assault_Railgun.tools.4.label>
+
+
+  <!-- Light Machine Gun -->
+
+  <Gun_3HST_Light_Machine_Railgun.label>3HST制5mm磁轨轻机枪</Gun_3HST_Light_Machine_Railgun.label>
+  <Gun_3HST_Light_Machine_Railgun.description>3HST陆军机枪手所使用的机枪，火力极其凶猛，堪比某些转管机枪。</Gun_3HST_Light_Machine_Railgun.description>
+  <Gun_3HST_Light_Machine_Railgun.comps.2.label>磁轨耐久</Gun_3HST_Light_Machine_Railgun.comps.2.label>
+  <Gun_3HST_Light_Machine_Railgun.tools.0.label>枪托</Gun_3HST_Light_Machine_Railgun.tools.0.label>
+  <Gun_3HST_Light_Machine_Railgun.tools.1.label>枪管</Gun_3HST_Light_Machine_Railgun.tools.1.label>
+  <Gun_3HST_Light_Machine_Railgun.tools.2.label>枪口</Gun_3HST_Light_Machine_Railgun.tools.2.label>
+  <Gun_3HST_Light_Machine_Railgun.tools.3.label>能量刺刀刀刃</Gun_3HST_Light_Machine_Railgun.tools.3.label>
+  <Gun_3HST_Light_Machine_Railgun.tools.4.label>能量刺刀刀尖</Gun_3HST_Light_Machine_Railgun.tools.4.label>
+
+
+  <!-- DMR -->
+
+  <Gun_3HST_5mmDMR.label>3HST制5mm磁轨精确射手步枪</Gun_3HST_5mmDMR.label>
+  <Gun_3HST_5mmDMR.description>使用3HST制5mm标准弹的狙击步枪，可以短点射，虽然后续的子弹因为后坐力所以基本上打不中。</Gun_3HST_5mmDMR.description>
+  <Gun_3HST_5mmDMR.comps.2.label>磁轨耐久</Gun_3HST_5mmDMR.comps.2.label>
+  <Gun_3HST_5mmDMR.tools.0.label>枪托</Gun_3HST_5mmDMR.tools.0.label>
+  <Gun_3HST_5mmDMR.tools.1.label>枪管</Gun_3HST_5mmDMR.tools.1.label>
+  <Gun_3HST_5mmDMR.tools.2.label>枪口</Gun_3HST_5mmDMR.tools.2.label>
+  <Gun_3HST_5mmDMR.tools.3.label>能量刺刀刀刃</Gun_3HST_5mmDMR.tools.3.label>
+  <Gun_3HST_5mmDMR.tools.4.label>能量刺刀刀尖</Gun_3HST_5mmDMR.tools.4.label>
+
+
+  <!-- Turret manned -->
+
+  <Turret_3HST5mmLMGmanned.label>手动5mm磁轨轻机枪炮塔</Turret_3HST5mmLMGmanned.label>
+  <Turret_3HST5mmLMGmanned.description>一部安装在三脚架上面的5mm磁轨轻机枪。虽然是手动炮塔，但是由于磁轨炮需要供能的缘故所以还是需要电力才能工作。</Turret_3HST5mmLMGmanned.description>
+
+
+  <!-- Turret auto -->
+
+  <Turret_3HST5mmLMGAuto.label>固定 自动5mm磁轨轻机枪炮塔</Turret_3HST5mmLMGAuto.label>
+  <Turret_3HST5mmLMGAuto.description>一部装在自动炮塔上的3HST制5mm磁轨轻机枪，厚重的装甲保护着内部结构，但是也使得这个炮塔一旦完工就再也无法移动。</Turret_3HST5mmLMGAuto.description>
+
+  <Turret_3HST5mmLMGAutoMoveable.label>可移动 自动5mm磁轨轻机枪炮塔</Turret_3HST5mmLMGAutoMoveable.label>
+  <Turret_3HST5mmLMGAutoMoveable.description>安装在带有作动器的三脚架上的3HST制5mm磁轨轻机枪，虽然便于转移，但是很容易在炮火下损毁。</Turret_3HST5mmLMGAutoMoveable.description>
+
+  <Gun_5mmHMG_TurretManned.label>3HST制5mm磁轨轻机枪（炮塔用）</Gun_5mmHMG_TurretManned.label>
+  <Gun_5mmHMG_TurretManned.description>安装在固定支架上的3HST制20mm磁轨自动炮。</Gun_5mmHMG_TurretManned.description>
+
+  <Gun_5mmHMG_TurretAuto.label>3HST制5mm磁轨轻机枪（炮塔用）</Gun_5mmHMG_TurretAuto.label>
+  <Gun_5mmHMG_TurretAuto.description>安装在固定支架上的3HST制20mm磁轨自动炮。</Gun_5mmHMG_TurretAuto.description>
+
+
+  <!-- EN: 3HST assault railgun -->
+  <!-- EN: Standard issue assault rifle of 3HST elven forces. -->
+  <!-- EN: stock -->
+  <!--<Gun_3HST_Assault_Railgun.tools.stock.label>枪托</Gun_3HST_Assault_Railgun.tools.stock.label>-->
+  <!-- EN: barrel -->
+  <!--<Gun_3HST_Assault_Railgun.tools.barrel.label>枪管</Gun_3HST_Assault_Railgun.tools.barrel.label>-->
+  <!-- EN: muzzle -->
+  <!--<Gun_3HST_Assault_Railgun.tools.muzzle.label>枪口</Gun_3HST_Assault_Railgun.tools.muzzle.label>-->
+  <!-- EN: energy bayonet blade -->
+  <!--<Gun_3HST_Assault_Railgun.tools.energy_bayonet_blade.label>能量刺刀刀刃</Gun_3HST_Assault_Railgun.tools.energy_bayonet_blade.label>-->
+  <!-- EN: energy BayonetPoint -->
+  <!--<Gun_3HST_Assault_Railgun.tools.energy_bayonet_point.label>能量刺刀刀尖</Gun_3HST_Assault_Railgun.tools.energy_bayonet_point.label>-->
+  <!--<Gun_3HST_Assault_Railgun.verbs.Verb_ShootCE.label>TODO</Gun_3HST_Assault_Railgun.verbs.Verb_ShootCE.label>-->
+  <!-- EN: 3HST light machine railgun -->
+  <!-- EN: Standard issue light machinegun of 3HST planetary forces. -->
+  <!--<Gun_3HST_Light_Machine_Railgun.tools.stock.label>枪托</Gun_3HST_Light_Machine_Railgun.tools.stock.label>-->
+  <!--<Gun_3HST_Light_Machine_Railgun.tools.barrel.label>枪管</Gun_3HST_Light_Machine_Railgun.tools.barrel.label>-->
+  <!--<Gun_3HST_Light_Machine_Railgun.tools.muzzle.label>枪口</Gun_3HST_Light_Machine_Railgun.tools.muzzle.label>-->
+  <!--<Gun_3HST_Light_Machine_Railgun.tools.energy_bayonet_blade.label>能量刺刀刀刃</Gun_3HST_Light_Machine_Railgun.tools.energy_bayonet_blade.label>-->
+  <!--<Gun_3HST_Light_Machine_Railgun.tools.energy_bayonet_point.label>能量刺刀刀尖</Gun_3HST_Light_Machine_Railgun.tools.energy_bayonet_point.label>-->
+  <!--<Gun_3HST_Light_Machine_Railgun.verbs.Verb_ShootCE.label>TODO</Gun_3HST_Light_Machine_Railgun.verbs.Verb_ShootCE.label>-->
+  <!-- EN: 3HST low power railgun -->
+  <!-- EN: Standard service rifle of 3HST slave-fodders. Decreased muzzle velocity and longer rail greatly reduced the stress of power system and rails, allowing cheaper materials to be used on this rifle. -->
+  <!--<Gun_3HST_LPRG.tools.stock.label>枪托</Gun_3HST_LPRG.tools.stock.label>-->
+  <!--<Gun_3HST_LPRG.tools.barrel.label>枪管</Gun_3HST_LPRG.tools.barrel.label>-->
+  <!--<Gun_3HST_LPRG.tools.muzzle.label>枪口</Gun_3HST_LPRG.tools.muzzle.label>-->
+  <!--<Gun_3HST_LPRG.tools.energy_bayonet_blade.label>能量刺刀刀刃</Gun_3HST_LPRG.tools.energy_bayonet_blade.label>-->
+  <!--<Gun_3HST_LPRG.tools.energy_bayonet_point.label>能量刺刀刀尖</Gun_3HST_LPRG.tools.energy_bayonet_point.label>-->
+  <!--<Gun_3HST_LPRG.verbs.Verb_ShootCE.label>TODO</Gun_3HST_LPRG.verbs.Verb_ShootCE.label>-->
+  <!-- EN: Low Power 5mm Railgun bullet (Sabot) -->
+
+</LanguageData>

@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingCategoryDef>
+    <defName>AmmoCategory_ScatterRG</defName>
+    <label>3HST Scatterailgun Cartridge</label>
+    <parent>AmmoAdvanced</parent>
+    <iconPath>UI/Icons/ThingCategories/CaliberRailgunPistol</iconPath>
+  </ThingCategoryDef>
+
+  <!-- ==================== AmmoSet ========================== -->
+
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_ScatterRG</defName>
+    <label>3HST scatterailgun</label>
+    <ammoTypes>
+      <Ammo_ScatterRGStandard>Projectile_ScatterRGStandard</Ammo_ScatterRGStandard>
+      <Ammo_ScatterRGHeavy>Projectile_ScatterRGHeavy</Ammo_ScatterRGHeavy>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+
+  <CombatExtended.AmmoCategoryDef>
+    <defName>Scatterailgun_Standard</defName>
+    <label>Scatterailgun</label>
+    <labelShort>scatterailgun</labelShort>
+    <description>A cluster of railgun rounds encased in a large discarding sabot in the similar fashion of a shotgun.</description>
+  </CombatExtended.AmmoCategoryDef>
+
+  <CombatExtended.AmmoCategoryDef>
+    <defName>Scatterailgun_Heavy</defName>
+    <label>Heavy Scatterailgun</label>
+    <labelShort>heavy scatterailgun</labelShort>
+    <description>A cluster of larger railgun rounds encased in a large discarding sabot in the similar fashion of a shotgun.</description>
+  </CombatExtended.AmmoCategoryDef>
+
+  <!-- ==================== Ammo ========================== -->
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="SmallAmmoBase">
+    <defName>Ammo_ScatterRGStandard</defName>
+    <label>3HST Standard Scatterailgun Cartridge</label>
+    <description>Pistol round sized cartridge containing 19 1mm railgun sabots used on various 3HST scatterailguns.</description>
+    <statBases>
+      <Mass>0.01</Mass>
+      <Bulk>0.02</Bulk>
+    </statBases>
+    <tradeTags>
+      <li>CE_AutoEnableTrade</li>
+      <li>CE_AutoEnableCrafting_FabricationBench</li>
+    </tradeTags>
+    <thingCategories>
+      <li>AmmoCategory_ScatterRG</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Ammo/Railgun/Ammo_3HST_6mm</texPath>
+      <graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
+    </graphicData>
+    <ammoClass>Scatterailgun_Standard</ammoClass>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="SmallAmmoBase">
+    <defName>Ammo_ScatterRGHeavy</defName>
+    <label>3HST Heavy Scatterailgun Cartridge</label>
+    <description>Rifle round sized cartridge containing seven 2mm railgun sabots. Contains less but larger pellets.</description>
+    <statBases>
+      <Mass>0.01</Mass>
+      <Bulk>0.02</Bulk>
+    </statBases>
+    <tradeTags>
+      <li>CE_AutoEnableTrade</li>
+      <li>CE_AutoEnableCrafting_FabricationBench</li>
+    </tradeTags>
+    <thingCategories>
+      <li>AmmoCategory_ScatterRG</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Ammo/Railgun/Ammo_3HST_8mm</texPath>
+      <graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
+    </graphicData>
+    <ammoClass>Scatterailgun_Heavy</ammoClass>
+  </ThingDef>
+
+
+  <!-- ================== Projectiles ================== -->
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
+    <defName>Projectile_ScatterRGStandard</defName>
+    <label>1x14mm Scatterailgun Sabot</label>
+    <graphicData>
+      <texPath>Things/Projectile/Shotgun_Pellet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <speed>300</speed>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>3</damageAmountBase>
+      <armorPenetrationSharp>7.1</armorPenetrationSharp>
+      <armorPenetrationBlunt>1.94</armorPenetrationBlunt>
+      <spreadMult>17.8</spreadMult>
+      <pelletCount>19</pelletCount>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
+    <defName>Projectile_ScatterRGHeavy</defName>
+    <label>2x32.5mm Scatterailgun Sabot</label>
+    <graphicData>
+      <texPath>Things/Projectile/Shotgun_Pellet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <speed>300</speed>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>6</damageAmountBase>
+      <armorPenetrationSharp>16.1</armorPenetrationSharp>
+      <armorPenetrationBlunt>25.88</armorPenetrationBlunt>
+      <spreadMult>17.8</spreadMult>
+      <pelletCount>7</pelletCount>
+    </projectile>
+  </ThingDef>
+
+  <!-- ==================== Recipes ========================== -->
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_ScatterRGStandard</defName>
+    <label>make Standard Scatterailgun cartridge (Sabot) x200</label>
+    <description>Craft 200 Standard Scatterailgun (Sabot) cartridges.</description>
+    <jobString>Making Standard Scatterailgun (Sabot) cartridges.</jobString>
+    <workAmount>2700</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>Plasteel</li>
+        <li>Uranium</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_ScatterRGStandard>200</Ammo_ScatterRGStandard>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_ScatterRGHeavy</defName>
+    <label>make Heavy Scatterailgun cartridge (Sabot) x200</label>
+    <description>Craft 200 Heavy Scatterailgun (Sabot) cartridges.</description>
+    <jobString>Making Heavy Scatterailgun (Sabot) cartridges.</jobString>
+    <workAmount>3000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>Plasteel</li>
+        <li>Uranium</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_ScatterRGHeavy>200</Ammo_ScatterRGHeavy>
+    </products>
+  </RecipeDef>
+
+
+</Defs>

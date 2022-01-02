@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Direct launchers/ammo -->
+
+  <Gun_3HST_LGIS_frag.label>frag LGIS tube</Gun_3HST_LGIS_frag.label>
+  <Gun_3HST_LGIS_frag.description>Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but it is also used to feed various LGIS launchers.</Gun_3HST_LGIS_frag.description>
+  <Gun_3HST_LGIS_frag.tools.0.label>stock</Gun_3HST_LGIS_frag.tools.0.label>
+  <Gun_3HST_LGIS_frag.tools.1.label>barrel</Gun_3HST_LGIS_frag.tools.1.label>
+  <Gun_3HST_LGIS_frag.tools.2.label>muzzle</Gun_3HST_LGIS_frag.tools.2.label>
+
+  <Gun_3HST_LGIS_cluster.label>cluster LGIS tube</Gun_3HST_LGIS_cluster.label>
+  <Gun_3HST_LGIS_cluster.description>Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but it is also used to feed various LGIS launchers.</Gun_3HST_LGIS_cluster.description>
+  <Gun_3HST_LGIS_cluster.tools.0.label>stock</Gun_3HST_LGIS_cluster.tools.0.label>
+  <Gun_3HST_LGIS_cluster.tools.1.label>barrel</Gun_3HST_LGIS_cluster.tools.1.label>
+  <Gun_3HST_LGIS_cluster.tools.2.label>muzzle</Gun_3HST_LGIS_cluster.tools.2.label>
+
+  <Gun_3HST_LGIS_thermobaric.label>thermobaric LGIS tube</Gun_3HST_LGIS_thermobaric.label>
+  <Gun_3HST_LGIS_thermobaric.description>Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but it is also used to feed various LGIS launchers.</Gun_3HST_LGIS_thermobaric.description>
+  <Gun_3HST_LGIS_thermobaric.tools.0.label>stock</Gun_3HST_LGIS_thermobaric.tools.0.label>
+  <Gun_3HST_LGIS_thermobaric.tools.1.label>barrel</Gun_3HST_LGIS_thermobaric.tools.1.label>
+  <Gun_3HST_LGIS_thermobaric.tools.2.label>muzzle</Gun_3HST_LGIS_thermobaric.tools.2.label>
+
+  <Gun_3HST_LGIS_heat.label>HEAT LGIS tube</Gun_3HST_LGIS_heat.label>
+  <Gun_3HST_LGIS_heat.description>Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but it is also used to feed various LGIS launchers.</Gun_3HST_LGIS_heat.description>
+  <Gun_3HST_LGIS_heat.tools.0.label>stock</Gun_3HST_LGIS_heat.tools.0.label>
+  <Gun_3HST_LGIS_heat.tools.1.label>barrel</Gun_3HST_LGIS_heat.tools.1.label>
+  <Gun_3HST_LGIS_heat.tools.2.label>muzzle</Gun_3HST_LGIS_heat.tools.2.label>
+
+  <Gun_3HST_LGIS_confetti.label>confetti LGIS tube</Gun_3HST_LGIS_confetti.label>
+  <Gun_3HST_LGIS_confetti.description>Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but it is also used to feed various LGIS launchers.</Gun_3HST_LGIS_confetti.description>
+  <Gun_3HST_LGIS_confetti.tools.0.label>stock</Gun_3HST_LGIS_confetti.tools.0.label>
+  <Gun_3HST_LGIS_confetti.tools.1.label>barrel</Gun_3HST_LGIS_confetti.tools.1.label>
+  <Gun_3HST_LGIS_confetti.tools.2.label>muzzle</Gun_3HST_LGIS_confetti.tools.2.label>
+
+  <Gun_3HST_LGIS_incendiary.label>incendiary LGIS tube</Gun_3HST_LGIS_incendiary.label>
+  <Gun_3HST_LGIS_incendiary.description>Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but it is also used to feed various LGIS launchers.</Gun_3HST_LGIS_incendiary.description>
+  <Gun_3HST_LGIS_incendiary.tools.0.label>stock</Gun_3HST_LGIS_incendiary.tools.0.label>
+  <Gun_3HST_LGIS_incendiary.tools.1.label>barrel</Gun_3HST_LGIS_incendiary.tools.1.label>
+  <Gun_3HST_LGIS_incendiary.tools.2.label>muzzle</Gun_3HST_LGIS_incendiary.tools.2.label>
+
+  <Gun_3HST_LGIS_smoke.label>smoke LGIS tube</Gun_3HST_LGIS_smoke.label>
+  <Gun_3HST_LGIS_smoke.description>Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but it is also used to feed various LGIS launchers.</Gun_3HST_LGIS_smoke.description>
+  <Gun_3HST_LGIS_smoke.tools.0.label>stock</Gun_3HST_LGIS_smoke.tools.0.label>
+  <Gun_3HST_LGIS_smoke.tools.1.label>barrel</Gun_3HST_LGIS_smoke.tools.1.label>
+  <Gun_3HST_LGIS_smoke.tools.2.label>muzzle</Gun_3HST_LGIS_smoke.tools.2.label>
+
+  <Gun_3HST_LGIS_firefoam.label>firefoam LGIS tube</Gun_3HST_LGIS_firefoam.label>
+  <Gun_3HST_LGIS_firefoam.description>Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but it is also used to feed various LGIS launchers.</Gun_3HST_LGIS_firefoam.description>
+  <Gun_3HST_LGIS_firefoam.tools.0.label>stock</Gun_3HST_LGIS_firefoam.tools.0.label>
+  <Gun_3HST_LGIS_firefoam.tools.1.label>barrel</Gun_3HST_LGIS_firefoam.tools.1.label>
+  <Gun_3HST_LGIS_firefoam.tools.2.label>muzzle</Gun_3HST_LGIS_firefoam.tools.2.label>
+
+
+  <!-- <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseDisposableLGISammo">
+    <defName>Gun_3HST_LGIS_slowfoam</defName>
+    <label>slowfoam LGIS tube</label>
+    <ammoClass>RocketFoam</ammoClass>
+    <detonateProjectile>Projectile_70mmLGIS_Slowfoam</detonateProjectile>
+
+    <graphicData>
+      <texPath>Things/Weapons/Disposable_LGIS/slowfoam</texPath>
+    </graphicData>
+
+    <statBases>
+      <MarketValue>120</MarketValue>
+
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+        <defaultProjectile>Projectile_70mmLGIS_Slowfoam</defaultProjectile>
+        <hasStandardCommand>true</hasStandardCommand>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>3.4</warmupTime>
+        <burstShotCount />
+        <range>90</range>
+        <minRange>10</minRange>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>5</muzzleFlashScale>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeThing">
+        <thingDef>Gun_3HST_LGIS_slowfoam_ID</thingDef>
+        <gizmoLabel>Switch to indirect</gizmoLabel>
+        <gizmoDesc>Extend the sights and switch the launcher to indirect fire mode.\n\nImportant: the launcher can't be used as ammo in indirect mode. You'll have to switch it back to direct mode for other launchers to accept as ammo.</gizmoDesc>
+        <icon>UI/Icons/FireModes/Direct</icon>
+      </li>
+    </comps>
+  </ThingDef> -->
+
+  <Gun_3HST_LGIS_EMP.label>EMP LGIS tube</Gun_3HST_LGIS_EMP.label>
+  <Gun_3HST_LGIS_EMP.description>Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but it is also used to feed various LGIS launchers.</Gun_3HST_LGIS_EMP.description>
+  <Gun_3HST_LGIS_EMP.tools.0.label>stock</Gun_3HST_LGIS_EMP.tools.0.label>
+  <Gun_3HST_LGIS_EMP.tools.1.label>barrel</Gun_3HST_LGIS_EMP.tools.1.label>
+  <Gun_3HST_LGIS_EMP.tools.2.label>muzzle</Gun_3HST_LGIS_EMP.tools.2.label>
+
+  <Gun_3HST_LGIS_Illumination.label>illumination LGIS tube</Gun_3HST_LGIS_Illumination.label>
+  <Gun_3HST_LGIS_Illumination.description>Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but it is also used to feed various LGIS launchers.</Gun_3HST_LGIS_Illumination.description>
+  <Gun_3HST_LGIS_Illumination.tools.0.label>stock</Gun_3HST_LGIS_Illumination.tools.0.label>
+  <Gun_3HST_LGIS_Illumination.tools.1.label>barrel</Gun_3HST_LGIS_Illumination.tools.1.label>
+  <Gun_3HST_LGIS_Illumination.tools.2.label>muzzle</Gun_3HST_LGIS_Illumination.tools.2.label>
+
+
+  <!-- Indirect LGIS Launchers -->
+
+  <Gun_3HST_LGIS_frag_ID.label>indirect frag LGIS launcher</Gun_3HST_LGIS_frag_ID.label>
+  <Gun_3HST_LGIS_frag_ID.description>Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but you need to retract the sights, switch it to direct fire mode for it to be used in other launchers as ammunition.</Gun_3HST_LGIS_frag_ID.description>
+  <Gun_3HST_LGIS_frag_ID.tools.0.label>stock</Gun_3HST_LGIS_frag_ID.tools.0.label>
+  <Gun_3HST_LGIS_frag_ID.tools.1.label>barrel</Gun_3HST_LGIS_frag_ID.tools.1.label>
+  <Gun_3HST_LGIS_frag_ID.tools.2.label>muzzle</Gun_3HST_LGIS_frag_ID.tools.2.label>
+
+  <Gun_3HST_LGIS_cluster_ID.label>indirect cluster LGIS launcher</Gun_3HST_LGIS_cluster_ID.label>
+  <Gun_3HST_LGIS_cluster_ID.description>Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but it is also used to feed various LGIS launchers.</Gun_3HST_LGIS_cluster_ID.description>
+  <Gun_3HST_LGIS_cluster_ID.tools.0.label>stock</Gun_3HST_LGIS_cluster_ID.tools.0.label>
+  <Gun_3HST_LGIS_cluster_ID.tools.1.label>barrel</Gun_3HST_LGIS_cluster_ID.tools.1.label>
+  <Gun_3HST_LGIS_cluster_ID.tools.2.label>muzzle</Gun_3HST_LGIS_cluster_ID.tools.2.label>
+
+  <Gun_3HST_LGIS_thermobaric_ID.label>indirect thermobaric LGIS launcher</Gun_3HST_LGIS_thermobaric_ID.label>
+  <Gun_3HST_LGIS_thermobaric_ID.description>Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but you need to retract the sights, switch it to direct fire mode for it to be used in other launchers as ammunition.</Gun_3HST_LGIS_thermobaric_ID.description>
+  <Gun_3HST_LGIS_thermobaric_ID.tools.0.label>stock</Gun_3HST_LGIS_thermobaric_ID.tools.0.label>
+  <Gun_3HST_LGIS_thermobaric_ID.tools.1.label>barrel</Gun_3HST_LGIS_thermobaric_ID.tools.1.label>
+  <Gun_3HST_LGIS_thermobaric_ID.tools.2.label>muzzle</Gun_3HST_LGIS_thermobaric_ID.tools.2.label>
+
+  <Gun_3HST_LGIS_heat_ID.label>indirect HEAT LGIS launcher</Gun_3HST_LGIS_heat_ID.label>
+  <Gun_3HST_LGIS_heat_ID.description>Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but you need to retract the sights, switch it to direct fire mode for it to be used in other launchers as ammunition.</Gun_3HST_LGIS_heat_ID.description>
+  <Gun_3HST_LGIS_heat_ID.tools.0.label>stock</Gun_3HST_LGIS_heat_ID.tools.0.label>
+  <Gun_3HST_LGIS_heat_ID.tools.1.label>barrel</Gun_3HST_LGIS_heat_ID.tools.1.label>
+  <Gun_3HST_LGIS_heat_ID.tools.2.label>muzzle</Gun_3HST_LGIS_heat_ID.tools.2.label>
+
+  <Gun_3HST_LGIS_confetti_ID.label>indirect confetti LGIS launcher</Gun_3HST_LGIS_confetti_ID.label>
+  <Gun_3HST_LGIS_confetti_ID.description>Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but you need to retract the sights, switch it to direct fire mode for it to be used in other launchers as ammunition.</Gun_3HST_LGIS_confetti_ID.description>
+  <Gun_3HST_LGIS_confetti_ID.tools.0.label>stock</Gun_3HST_LGIS_confetti_ID.tools.0.label>
+  <Gun_3HST_LGIS_confetti_ID.tools.1.label>barrel</Gun_3HST_LGIS_confetti_ID.tools.1.label>
+  <Gun_3HST_LGIS_confetti_ID.tools.2.label>muzzle</Gun_3HST_LGIS_confetti_ID.tools.2.label>
+
+  <Gun_3HST_LGIS_incendiary_ID.label>indirect incendiary LGIS launcher</Gun_3HST_LGIS_incendiary_ID.label>
+  <Gun_3HST_LGIS_incendiary_ID.description>Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but you need to retract the sights, switch it to direct fire mode for it to be used in other launchers as ammunition.</Gun_3HST_LGIS_incendiary_ID.description>
+  <Gun_3HST_LGIS_incendiary_ID.tools.0.label>stock</Gun_3HST_LGIS_incendiary_ID.tools.0.label>
+  <Gun_3HST_LGIS_incendiary_ID.tools.1.label>barrel</Gun_3HST_LGIS_incendiary_ID.tools.1.label>
+  <Gun_3HST_LGIS_incendiary_ID.tools.2.label>muzzle</Gun_3HST_LGIS_incendiary_ID.tools.2.label>
+
+  <Gun_3HST_LGIS_smoke_ID.label>indirect smoke LGIS launcher</Gun_3HST_LGIS_smoke_ID.label>
+  <Gun_3HST_LGIS_smoke_ID.description>Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but you need to retract the sights, switch it to direct fire mode for it to be used in other launchers as ammunition.</Gun_3HST_LGIS_smoke_ID.description>
+  <Gun_3HST_LGIS_smoke_ID.tools.0.label>stock</Gun_3HST_LGIS_smoke_ID.tools.0.label>
+  <Gun_3HST_LGIS_smoke_ID.tools.1.label>barrel</Gun_3HST_LGIS_smoke_ID.tools.1.label>
+  <Gun_3HST_LGIS_smoke_ID.tools.2.label>muzzle</Gun_3HST_LGIS_smoke_ID.tools.2.label>
+
+  <Gun_3HST_LGIS_firefoam_ID.label>indirect firefoam LGIS launcher</Gun_3HST_LGIS_firefoam_ID.label>
+  <Gun_3HST_LGIS_firefoam_ID.description>Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but you need to retract the sights, switch it to direct fire mode for it to be used in other launchers as ammunition.</Gun_3HST_LGIS_firefoam_ID.description>
+  <Gun_3HST_LGIS_firefoam_ID.tools.0.label>stock</Gun_3HST_LGIS_firefoam_ID.tools.0.label>
+  <Gun_3HST_LGIS_firefoam_ID.tools.1.label>barrel</Gun_3HST_LGIS_firefoam_ID.tools.1.label>
+  <Gun_3HST_LGIS_firefoam_ID.tools.2.label>muzzle</Gun_3HST_LGIS_firefoam_ID.tools.2.label>
+
+
+  <!-- <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseDisposableLGIS">
+    <defName>Gun_3HST_LGIS_slowfoam_ID</defName>
+    <label>indirect slowfoam LGIS launcher</label>
+    <detonateProjectile>Projectile_70mmLGIS_Slowfoam</detonateProjectile>
+
+    <graphicData>
+      <texPath>Things/Weapons/Disposable_LGIS/ID_slowfoam</texPath>
+    </graphicData>
+
+    <statBases>
+      <MarketValue>120</MarketValue>
+
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+        <defaultProjectile>Projectile_70mmLGIS_Slowfoam_Indirect</defaultProjectile>
+        <hasStandardCommand>true</hasStandardCommand>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>6.4</warmupTime>
+        <burstShotCount />
+        <range>90</range>
+        <minRange>20</minRange>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>5</muzzleFlashScale>
+        <circularError>1</circularError>
+        <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_Charges">
+        <chargeSpeeds>
+          <li>30</li>
+          <li>50</li>
+          <li>70</li>
+          <li>90</li>
+        </chargeSpeeds>
+      </li>
+      <li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeThing">
+        <thingDef>Gun_3HST_LGIS_slowfoam</thingDef>
+        <gizmoLabel>Switch to direct</gizmoLabel>
+        <gizmoDesc>Retract the sights and switch the launcher to direct fire mode.\n\nImportant: the launcher can't be used as ammo in indirect mode. You'll have to switch it back to direct mode for other launchers to accept as ammo.</gizmoDesc>
+        <icon>UI/Icons/FireModes/Indirect</icon>
+      </li>
+    </comps>
+  </ThingDef> -->
+
+  <Gun_3HST_LGIS_emp_ID.label>indirect EMP LGIS launcher</Gun_3HST_LGIS_emp_ID.label>
+  <Gun_3HST_LGIS_emp_ID.description>Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but you need to retract the sights, switch it to direct fire mode for it to be used in other launchers as ammunition.</Gun_3HST_LGIS_emp_ID.description>
+  <Gun_3HST_LGIS_emp_ID.tools.0.label>stock</Gun_3HST_LGIS_emp_ID.tools.0.label>
+  <Gun_3HST_LGIS_emp_ID.tools.1.label>barrel</Gun_3HST_LGIS_emp_ID.tools.1.label>
+  <Gun_3HST_LGIS_emp_ID.tools.2.label>muzzle</Gun_3HST_LGIS_emp_ID.tools.2.label>
+
+  <Gun_3HST_LGIS_Illumination_ID.label>indirect illumination LGIS launcher</Gun_3HST_LGIS_Illumination_ID.label>
+  <Gun_3HST_LGIS_Illumination_ID.description>Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but you need to retract the sights, switch it to direct fire mode for it to be used in other launchers as ammunition.</Gun_3HST_LGIS_Illumination_ID.description>
+  <Gun_3HST_LGIS_Illumination_ID.tools.0.label>stock</Gun_3HST_LGIS_Illumination_ID.tools.0.label>
+  <Gun_3HST_LGIS_Illumination_ID.tools.1.label>barrel</Gun_3HST_LGIS_Illumination_ID.tools.1.label>
+  <Gun_3HST_LGIS_Illumination_ID.tools.2.label>muzzle</Gun_3HST_LGIS_Illumination_ID.tools.2.label>
+
+
+</LanguageData>

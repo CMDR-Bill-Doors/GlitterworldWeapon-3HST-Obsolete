@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_ScatterRGStandard.label>3HST制标准霰射磁轨弹</Ammo_ScatterRGStandard.label>
+  <Ammo_ScatterRGStandard.description>如同化学能霰弹一样在一个大口径弹托内放有大量小型投射物的磁轨弹药。</Ammo_ScatterRGStandard.description>
+
+  <Ammo_ScatterRGHeavy.label>3HST制重霰射磁轨弹</Ammo_ScatterRGHeavy.label>
+  <Ammo_ScatterRGHeavy.description>如同化学能霰弹一样在一个大口径弹托内放有大量小型投射物的磁轨弹药。更重的弹丸带来了更好的穿甲性能。</Ammo_ScatterRGHeavy.description>
+
+
+  <!-- Projectiles -->
+
+  <Projectile_ScatterRGStandard.label>3HST制 1mm 磁轨霰射弹丸（脱壳穿甲弹）</Projectile_ScatterRGStandard.label>
+  <Projectile_ScatterRGHeavy.label>3HST制 2mm 磁轨霰射弹丸（脱壳穿甲弹）</Projectile_ScatterRGHeavy.label>
+
+
+</LanguageData>

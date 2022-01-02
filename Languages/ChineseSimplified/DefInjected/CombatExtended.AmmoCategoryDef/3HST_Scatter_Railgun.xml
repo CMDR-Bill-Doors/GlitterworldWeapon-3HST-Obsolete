@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- AmmoSet -->
+
+  <Scatterailgun_Standard.label>霰射磁轨</Scatterailgun_Standard.label>
+  <Scatterailgun_Standard.labelShort>霰弹</Scatterailgun_Standard.labelShort>
+  <Scatterailgun_Standard.description>如同化学能霰弹一样在一个大口径弹托内放有大量小型投射物的磁轨弹药。</Scatterailgun_Standard.description>
+
+  <Scatterailgun_Heavy.label>重霰射磁轨</Scatterailgun_Heavy.label>
+  <Scatterailgun_Heavy.labelShort>重霰弹</Scatterailgun_Heavy.labelShort>
+  <Scatterailgun_Heavy.description>如同化学能霰弹一样在一个大口径弹托内放有大量小型投射物的磁轨弹药。更重的弹丸带来了更好的穿甲性能。</Scatterailgun_Heavy.description>
+
+
+</LanguageData>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_3HST20mmRG_Steel.label>3HST制20mm磁轨机炮弹</Ammo_3HST20mmRG_Steel.label>
+  <Ammo_3HST20mmRG_Steel.description>用于一系列3HST制重武器的大口径磁轨机炮炮弹</Ammo_3HST20mmRG_Steel.description>
+
+  <Fragment_Large_20mmRG.label>大型磁轨弹碎片</Fragment_Large_20mmRG.label>
+  <Fragment_Small_20mmRG.label>小型磁轨弹碎片</Fragment_Small_20mmRG.label>
+
+
+  <!-- Projectiles -->
+
+  <Projectile_3HST20mmRG_Steel.label>3HST制20mm磁轨机炮弹 (脱壳穿甲弹)</Projectile_3HST20mmRG_Steel.label>
+
+
+  <!-- EN: 3HST 20mm Steel Railgun Slug -->
+  <!-- EN: High caliber railgun cartridges used by a variety of 3HST-made heavy weapons -->
+  <!-- EN: 20mm Railgun shell (Sabot) -->
+
+</LanguageData>

@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="Base3HSTShortGun">
+    <defName>Gun_3HST_Scatter_Railgun</defName>
+    <label>3HST "NCQ Sprayer" Scatterailgun</label>
+    <description>A pistol-sized automatic scatterailgun developed by 3HST Limited during the Third Elven Civil War.</description>
+    <graphicData>
+      <texPath>Things/Weapons/3HST_DWR_07_NCQ_Sprayer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.8</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>43000</WorkToMake>
+      <Mass>2.5</Mass>
+      <Bulk>3.1</Bulk>
+      <SwayFactor>1.87</SwayFactor>
+      <ShotSpread>0.15</ShotSpread>
+      <SightsEfficiency>0.7</SightsEfficiency>
+      <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>CE_Sidearm</li>
+      <li>CE_OneHandedWeapon</li>
+      <li>3HST_Sidearm</li>
+      <li>CE_AI_AssaultWeapon</li>
+    </weaponTags>
+    <costList>
+      <Steel>30</Steel>
+      <Plasteel>20</Plasteel>
+      <ComponentIndustrial>9</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+      <RailComponent>2</RailComponent>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>BDsGlitterworldFaction3HST.Verb_ShootByBarrel</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Projectile_ScatterRGStandard</defaultProjectile>
+        <warmupTime>1.1</warmupTime>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>18</ticksBetweenBurstShots>
+        <range>10</range>
+        <soundCast>RG_6mm</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <recoilAmount>1.58</recoilAmount>
+        <muzzleFlashScale>5</muzzleFlashScale>
+      </li>
+    </verbs>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>0.8,0.8</DrawSize>
+        <DrawOffset>-0.10,-0.07</DrawOffset>
+      </li>
+    </modExtensions>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>18</magazineSize>
+        <reloadTime>4</reloadTime>
+        <ammoSet>AmmoSet_ScatterRG</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aimedBurstShotCount>2</aimedBurstShotCount>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+      <li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeBarrel">
+       <durability>125</durability>
+       <label>Rail durability</label>
+       <loadingAmount>125</loadingAmount>
+     </li>
+    </comps>
+
+    <recipeMaker>
+      <researchPrerequisite>Research_3HST_Railgun</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="Base3HSTLongGun">
+    <defName>Gun_3HST_Scatter_Railgun_Heavy</defName>
+    <label>3HST "NCQ Spammer" Scatterailgun</label>
+    <description>A Machinegun-sized automatic scatterailgun developed by 3HST Limited during the Third Elven Civil War. Half shotgun, half machinegun, complete slaughter.</description>
+    <weaponClasses Inherit="False">
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <graphicData>
+      <texPath>Things/Weapons/3HST_IWR_22_NCQ_Spammer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.18</drawSize>
+    </graphicData>
+    <generateCommonality>0.6</generateCommonality>
+    <statBases>
+      <WorkToMake>79000</WorkToMake>
+      <Mass>5.2</Mass>
+      <Bulk>14.7</Bulk>
+      <SwayFactor>1.32</SwayFactor>
+      <ShotSpread>0.13</ShotSpread>
+      <SightsEfficiency>1.1</SightsEfficiency>
+      <RangedWeapon_Cooldown>0.57</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>CE_AI_AssaultWeapon</li>
+      <li>3HST_NCQSH</li>
+    </weaponTags>
+    <costList>
+      <Steel>70</Steel>
+      <Plasteel>35</Plasteel>
+      <ComponentIndustrial>11</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+      <RailComponent>4</RailComponent>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>BDsGlitterworldFaction3HST.Verb_ShootByBarrel</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Projectile_ScatterRGStandard</defaultProjectile>
+        <warmupTime>1.2</warmupTime>
+        <burstShotCount>5</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <range>22</range>
+        <soundCast>RG_6mm</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <recoilAmount>1.12</recoilAmount>
+        <muzzleFlashScale>10</muzzleFlashScale>
+      </li>
+    </verbs>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.18,1.18</DrawSize>
+        <DrawOffset>0.00,-0.03</DrawOffset>
+      </li>
+    </modExtensions>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>50</magazineSize>
+        <reloadTime>7.7</reloadTime>
+        <ammoSet>AmmoSet_ScatterRG</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aimedBurstShotCount>3</aimedBurstShotCount>
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+      <li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeBarrel">
+        <durability>250</durability>
+        <label>Rail durability</label>
+        <loadingAmount>125</loadingAmount>
+      </li>
+    </comps>
+    <recipeMaker>
+      <researchPrerequisite>Research_3HST_Railgun</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="Base3HSTLongGun">
+    <defName>Gun_3HST_Scatter_Railgun_Pump</defName>
+    <label>3HST "NCQ Splasher" Scatterailgun</label>
+    <description>A old school pump action scatterailgun developed by 3HST Limited during the Third Elven Civil War.</description>
+    <graphicData>
+      <texPath>Things/Weapons/3HST_IWR_21</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.18</drawSize>
+    </graphicData>
+    <generateCommonality>0.3</generateCommonality>
+    <statBases>
+      <WorkToMake>30000</WorkToMake>
+      <Mass>5.2</Mass>
+      <Bulk>14.7</Bulk>
+      <SwayFactor>1.32</SwayFactor>
+      <ShotSpread>0.15</ShotSpread>
+      <SightsEfficiency>0.7</SightsEfficiency>
+      <RangedWeapon_Cooldown>0.96</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>CE_AI_AssaultWeapon</li>
+      <li>3HST_NCQSP</li>
+    </weaponTags>
+    <costList>
+      <Steel>40</Steel>
+      <Plasteel>25</Plasteel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
+      <RailComponent>3</RailComponent>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>BDsGlitterworldFaction3HST.Verb_ShootByBarrel</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Projectile_ScatterRGStandard</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>22</range>
+        <soundCast>RG_6mm</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>10</muzzleFlashScale>
+      </li>
+    </verbs>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>1.18,1.18</DrawSize>
+        <DrawOffset>0.00,-0.03</DrawOffset>
+      </li>
+    </modExtensions>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>12</magazineSize>
+        <reloadTime>0.65</reloadTime>
+        <reloadOneAtATime>true</reloadOneAtATime>
+        <ammoSet>AmmoSet_ScatterRG</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>Snapshot</aiAimMode>
+      </li>
+      <li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeBarrel">
+        <durability>250</durability>
+        <label>Rail durability</label>
+        <loadingAmount>125</loadingAmount>
+      </li>
+    </comps>
+    <recipeMaker>
+      <researchPrerequisite>Research_3HST_Railgun</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+
+</Defs>

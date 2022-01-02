@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ElectricStunGunBeam.label>非致命电弧</ElectricStunGunBeam.label>
+
+  <Gun_3HST_ElectricStunGun.label>3HST制非致命电弧枪</Gun_3HST_ElectricStunGun.label>
+  <Gun_3HST_ElectricStunGun.description>一发昂贵的非致命武器，虽然不需要弹药，但是每次放电都会对其电极造成损耗。</Gun_3HST_ElectricStunGun.description>
+  <Gun_3HST_ElectricStunGun.comps.1.label>磁轨耐久</Gun_3HST_ElectricStunGun.comps.1.label>
+  <Gun_3HST_ElectricStunGun.tools.0.label>枪托</Gun_3HST_ElectricStunGun.tools.0.label>
+  <Gun_3HST_ElectricStunGun.tools.1.label>枪管</Gun_3HST_ElectricStunGun.tools.1.label>
+  <Gun_3HST_ElectricStunGun.tools.2.label>枪口</Gun_3HST_ElectricStunGun.tools.2.label>
+
+
+</LanguageData>

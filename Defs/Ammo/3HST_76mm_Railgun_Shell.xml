@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingCategoryDef>
+    <defName>AmmoCategory_3HST_76mm_Railgun</defName>
+    <label>3HST 76mm Railgun Shell</label>
+    <parent>AmmoAdvanced</parent>
+    <iconPath>UI/Icons/ThingCategories/CaliberRailgunHighCaliber</iconPath>
+  </ThingCategoryDef>
+
+  <!-- ==================== AmmoSet ========================== -->
+
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_3HST76mmRG</defName>
+    <label>3HST 76mm heavy railgun</label>
+    <ammoTypes>
+      <Ammo_3HST76mmRG_Steel>Projectile_3HST76mmRG_Steel</Ammo_3HST76mmRG_Steel>
+      <Ammo_3HST76mmRG_HE>Projectile_3HST76mmRG_HE</Ammo_3HST76mmRG_HE>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_3HST76mmRG_ID</defName>
+    <label>3HST 76mm heavy railgun</label>
+    <ammoTypes>
+      <Ammo_3HST76mmRG_Steel>Projectile_3HST76mmRG_Steel_ID</Ammo_3HST76mmRG_Steel>
+      <Ammo_3HST76mmRG_HE>Projectile_3HST76mmRG_HE_ID</Ammo_3HST76mmRG_HE>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+
+  <!-- ==================== Ammo ========================== -->
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="SmallAmmoBase">
+    <defName>Ammo_3HST76mmRG_Steel</defName>
+    <label>3HST 76mm Steel Railgun Shell (Sabot)</label>
+    <description>Large caliber railgun shells used by a variety of 3HST-made heavy weapons, including tank guns and corvette main guns.\nThis shell is a solid penetrator.</description>
+    <statBases>
+      <Mass>40</Mass>
+      <Bulk>15.25</Bulk>
+    </statBases>
+    <tradeTags>
+      <li>CE_AutoEnableTrade</li>
+      <li>CE_AutoEnableCrafting_FabricationBench</li>
+      <!-- Railgun ammo isn't handloaded because it contains no propellant, and the sabots must be precision-machined anyway -->
+    </tradeTags>
+    <thingCategories>
+      <li>AmmoCategory_3HST_76mm_Railgun</li>
+    </thingCategories>
+    <stackLimit>75</stackLimit>
+    <graphicData>
+      <texPath>Things/Ammo/Railgun/Ammo_3HST_76mm/Conventional</texPath>
+      <graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
+      <drawSize>1.5</drawSize>
+
+    </graphicData>
+    <ammoClass>RailgunSabot</ammoClass>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="SmallAmmoBase">
+    <defName>Ammo_3HST76mmRG_HE</defName>
+    <label>3HST 76mm Steel Railgun Shell (AP_HE)</label>
+    <description>Large caliber railgun shells used by a variety of 3HST-made heavy weapons, including tank guns and corvette main guns.\nThis shell is a explosive filling behind a half-length penetrator.</description>
+    <statBases>
+      <Mass>30</Mass>
+      <Bulk>15.25</Bulk>
+    </statBases>
+    <tradeTags>
+      <li>CE_AutoEnableTrade</li>
+      <li>CE_AutoEnableCrafting_FabricationBench</li>
+      <!-- Railgun ammo isn't handloaded because it contains no propellant, and the sabots must be precision-machined anyway -->
+    </tradeTags>
+    <thingCategories>
+      <li>AmmoCategory_3HST_76mm_Railgun</li>
+    </thingCategories>
+    <stackLimit>75</stackLimit>
+    <graphicData>
+      <texPath>Things/Ammo/Railgun/Ammo_3HST_76mm/APHE</texPath>
+      <graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
+      <drawSize>1.5</drawSize>
+
+    </graphicData>
+    <ammoClass>ExplosiveAP</ammoClass>
+  </ThingDef>
+
+  <!-- ================== Projectiles ================== -->
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
+    <defName>Projectile_3HST76mmRG_Steel</defName>
+    <label>76mm Railgun shell (Sabot)</label>
+    <thingClass>BDsGlitterworldFaction3HST.PenetratingBullet</thingClass>
+
+    <graphicData>
+      <texPath>Things/Projectile/3HST_76mm_Shell_AP</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>960</damageAmountBase>
+      <armorPenetrationSharp>1407</armorPenetrationSharp>
+      <armorPenetrationBlunt>4885545</armorPenetrationBlunt>
+      <speed>700</speed>
+    </projectile>
+    <comps>
+      <li Class="CombatExtended.CompProperties_ExplosiveCE">
+        <damageAmountBase>150</damageAmountBase>
+        <explosiveDamageType>DamageDef_Shockwave</explosiveDamageType>
+        <explosiveRadius>2.5</explosiveRadius>
+        <explosionSound>Explosion_Stun</explosionSound>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      </li>
+      <li Class="CombatExtended.CompProperties_Fragments">
+        <fragments>
+          <Fragment_Large>3</Fragment_Large>
+          <Fragment_Small>10</Fragment_Small>
+        </fragments>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
+    <defName>Projectile_3HST76mmRG_HE</defName>
+    <label>76mm Railgun shell (AP-HE)</label>
+    <graphicData>
+      <texPath>Things/Projectile/3HST_76mm_Shell_APHE</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>870</damageAmountBase>
+      <secondaryDamage>
+        <li>
+          <def>Bomb_Secondary</def>
+          <amount>522</amount>
+        </li>
+      </secondaryDamage>
+      <armorPenetrationSharp>898</armorPenetrationSharp>
+      <armorPenetrationBlunt>3675000</armorPenetrationBlunt>
+      <speed>700</speed>
+    </projectile>
+    <comps>
+      <li Class="CombatExtended.CompProperties_ExplosiveCE">
+        <damageAmountBase>480</damageAmountBase>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <explosiveRadius>7</explosiveRadius>
+        <explosionSound>Explosion_Stun</explosionSound>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      </li>
+      <li Class="CombatExtended.CompProperties_Fragments">
+        <fragments>
+          <Fragment_Large>10</Fragment_Large>
+          <Fragment_Small>35</Fragment_Small>
+        </fragments>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
+    <defName>Projectile_3HST76mmRG_Steel_ID</defName>
+    <label>76mm Railgun shell (Sabot)</label>
+    <graphicData>
+      <texPath>Things/Projectile/3HST_76mm_Shell_AP</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>960</damageAmountBase>
+      <armorPenetrationSharp>1407</armorPenetrationSharp>
+      <armorPenetrationBlunt>4885545</armorPenetrationBlunt>
+      <speed>0</speed>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <flyOverhead>true</flyOverhead>
+      <gravityFactor>40</gravityFactor>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+    <comps>
+      <li Class="CombatExtended.CompProperties_ExplosiveCE">
+        <damageAmountBase>150</damageAmountBase>
+        <explosiveDamageType>DamageDef_Shockwave</explosiveDamageType>
+        <explosiveRadius>2.5</explosiveRadius>
+        <explosionSound>Explosion_Stun</explosionSound>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      </li>
+      <li Class="CombatExtended.CompProperties_Fragments">
+        <fragments>
+          <Fragment_Large>3</Fragment_Large>
+          <Fragment_Small>10</Fragment_Small>
+        </fragments>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
+    <defName>Projectile_3HST76mmRG_HE_ID</defName>
+    <label>76mm Railgun shell (AP-HE)</label>
+    <graphicData>
+      <texPath>Things/Projectile/3HST_76mm_Shell_APHE</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>870</damageAmountBase>
+      <secondaryDamage>
+        <li>
+          <def>Bomb_Secondary</def>
+          <amount>522</amount>
+        </li>
+      </secondaryDamage>
+      <armorPenetrationSharp>898</armorPenetrationSharp>
+      <armorPenetrationBlunt>3675000</armorPenetrationBlunt>
+      <speed>0</speed>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <flyOverhead>true</flyOverhead>
+      <gravityFactor>40</gravityFactor>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+    <comps>
+      <li Class="CombatExtended.CompProperties_ExplosiveCE">
+        <damageAmountBase>480</damageAmountBase>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <explosiveRadius>7</explosiveRadius>
+        <explosionSound>Explosion_Stun</explosionSound>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      </li>
+      <li Class="CombatExtended.CompProperties_Fragments">
+        <fragments>
+          <Fragment_Large>10</Fragment_Large>
+          <Fragment_Small>35</Fragment_Small>
+        </fragments>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+  <!-- ==================== Recipes ========================== -->
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_3HST76mmRG_Steel</defName>
+    <label>make 76mm Railgun cartridge (Sabot) x25</label>
+    <description>Craft 25 76mm Railgun (Sabot) cartridges.</description>
+    <jobString>Making 76mm Railgun (Sabot) cartridges.</jobString>
+    <workAmount>66000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>400</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ComponentSpacer</li>
+        <li>Steel</li>
+        <li>Uranium</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_3HST76mmRG_Steel>25</Ammo_3HST76mmRG_Steel>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_3HST76mmRG_HE</defName>
+    <label>make 76mm Railgun cartridge (HE) x25</label>
+    <description>Craft 25 76mm Railgun (HE) cartridges.</description>
+    <jobString>Making 76mm Railgun (HE) cartridges.</jobString>
+    <workAmount>54000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>300</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FSX</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ComponentSpacer</li>
+        <li>Steel</li>
+        <li>Uranium</li>
+        <li>FSX</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_3HST76mmRG_HE>25</Ammo_3HST76mmRG_HE>
+    </products>
+  </RecipeDef>
+
+
+</Defs>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_3HST76mmRG_Steel.label>3HST制 76mm磁轨重炮弹 (脱壳穿甲弹)</Ammo_3HST76mmRG_Steel.label>
+  <Ammo_3HST76mmRG_Steel.description>用于3HST有限公司的坦克和轻型护卫舰主炮的大口径磁轨炮弹。该弹为一整个实心穿甲体。</Ammo_3HST76mmRG_Steel.description>
+
+  <Ammo_3HST76mmRG_HE.label>3HST制 76mm磁轨重炮弹 (半穿甲高爆)</Ammo_3HST76mmRG_HE.label>
+  <Ammo_3HST76mmRG_HE.description>用于3HST有限公司的坦克和轻型护卫舰主炮的大口径磁轨炮弹。该弹由一半长度的实心穿甲体和一半长度的爆炸物组成。</Ammo_3HST76mmRG_HE.description>
+
+
+  <!-- Projectiles -->
+
+  <Projectile_3HST76mmRG_Steel.label>3HST制 76mm磁轨重炮弹 (脱壳穿甲弹)</Projectile_3HST76mmRG_Steel.label>
+  <Projectile_3HST76mmRG_HE.label>3HST制 76mm磁轨重炮弹 (半穿甲高爆)</Projectile_3HST76mmRG_HE.label>
+  <Projectile_3HST76mmRG_Steel_ID.label>3HST制 76mm磁轨重炮弹 (脱壳穿甲弹)</Projectile_3HST76mmRG_Steel_ID.label>
+  <Projectile_3HST76mmRG_HE_ID.label>3HST制 76mm磁轨重炮弹 (半穿甲高爆)</Projectile_3HST76mmRG_HE_ID.label>
+
+
+  <!-- EN: 3HST 76mm Steel Railgun Shell (AP_HE) -->
+  <!-- EN: Large caliber railgun shells used by a variety of 3HST-made heavy weapons, including tank guns and corvette main guns.\nThis shell is a explosive filling behind a half-length penetrator. -->
+  <!-- EN: 3HST 76mm Steel Railgun Shell (Sabot) -->
+  <!-- EN: Large caliber railgun shells used by a variety of 3HST-made heavy weapons, including tank guns and corvette main guns.\nThis shell is a solid penetrator. -->
+  <!-- EN: 76mm Railgun shell (AP-HE) -->
+  <!-- EN: 76mm Railgun shell (Sabot) -->
+
+</LanguageData>
