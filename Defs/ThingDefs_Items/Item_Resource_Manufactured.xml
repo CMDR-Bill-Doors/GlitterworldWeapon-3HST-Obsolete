@@ -28,7 +28,6 @@
         <loadSound>Interact_ChargeRifle</loadSound>
       </li>
     </comps>
-    <intricate>true</intricate>
     <thingCategories>
       <li>Manufactured</li>
     </thingCategories>

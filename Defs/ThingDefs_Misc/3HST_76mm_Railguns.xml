@@ -48,6 +48,7 @@
         <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
       </li>
     </verbs>
+    <tradeability>Sellable</tradeability>
     <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">
         <DrawSize>3,3</DrawSize>
