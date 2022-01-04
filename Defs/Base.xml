@@ -247,6 +247,9 @@
     <building>
       <spawnedConceptLearnOpportunity>BDGW_RailRearm</spawnedConceptLearnOpportunity>
     </building>
+    <placeWorkers Inherit="False">
+      <li>PlaceWorker_TurretTop</li>
+    </placeWorkers>
   </ThingDef>
 
 
@@ -277,6 +280,9 @@
     <building>
       <spawnedConceptLearnOpportunity>BDGW_RailRearm</spawnedConceptLearnOpportunity>
     </building>
+    <placeWorkers Inherit="False">
+      <li>PlaceWorker_TurretTop</li>
+    </placeWorkers>
   </ThingDef>
 
 

@@ -22,6 +22,18 @@
   </ConceptDef>
 
   <ConceptDef>
+    <defName>BDGW_RailPiercing</defName>
+    <label>Piercing munitions</label>
+    <priority>50</priority>
+    <needsOpportunity>True</needsOpportunity>
+    <helpText>The majority of 3HST railguns has far more penetration than most of opponents you may face, while this is more or less due to the heavy anti-power-armor need in the designer's homeland, the extra penetraing power won't go wasted.\n\nFor every enemy hit, the rail sabot's sharp penetration will be reduced by:\n 2 x target's general defense (as shown in gear tab) + 5 x target body size\nIf the bullet still have more than 20% of it's initial penetration potential left, it will overpenetrate, continue on it's flight path and hit the next unlucky victim.\nBuildings, items, trees etc. may also be penetrated, their sharp defence is estimated as HP remaining / 8.</helpText>
+    <highlightTags>
+      <li>BDGW_RailPiercing</li>
+    </highlightTags>
+  </ConceptDef>
+
+
+  <ConceptDef>
     <defName>BDGW_LGIS</defName>
     <label>LGIS missiles</label>
     <priority>50</priority>
