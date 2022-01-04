@@ -536,8 +536,7 @@
       <li>CE_AdvancedLaunchers</li>
     </researchPrerequisites>
     <designationCategory>Security</designationCategory>
-    <placeWorkers>
-      <li>PlaceWorker_ShowTurretRadius</li>
+    <placeWorkers Inherit="False">
       <li>PlaceWorker_TurretTop</li>
     </placeWorkers>
 
@@ -678,8 +677,7 @@
       <li>CE_AdvancedLaunchers</li>
     </researchPrerequisites>
     <designationCategory>Security</designationCategory>
-    <placeWorkers>
-      <li>PlaceWorker_ShowTurretRadius</li>
+    <placeWorkers Inherit="False">
       <li>PlaceWorker_TurretTop</li>
     </placeWorkers>
 
