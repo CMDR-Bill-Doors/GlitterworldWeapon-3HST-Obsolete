@@ -112,7 +112,7 @@
         <fuelCapacity>500</fuelCapacity>
         <fuelMultiplier>100</fuelMultiplier>
         <initialFuelPercent>1</initialFuelPercent>
-        <autoRefuelPercent>0.1</autoRefuelPercent>
+        <autoRefuelPercent>0.8</autoRefuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
@@ -184,7 +184,7 @@
         <fuelCapacity>500</fuelCapacity>
         <fuelMultiplier>100</fuelMultiplier>
         <initialFuelPercent>1</initialFuelPercent>
-        <autoRefuelPercent>0.1</autoRefuelPercent>
+        <autoRefuelPercent>0.8</autoRefuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
@@ -250,7 +250,7 @@
         <fuelCapacity>500</fuelCapacity>
         <fuelMultiplier>100</fuelMultiplier>
         <initialFuelPercent>1</initialFuelPercent>
-        <autoRefuelPercent>0.1</autoRefuelPercent>
+        <autoRefuelPercent>0.8</autoRefuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>

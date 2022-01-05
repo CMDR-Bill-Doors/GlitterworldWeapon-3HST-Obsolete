@@ -504,7 +504,7 @@
         <fuelCapacity>200</fuelCapacity>
         <fuelMultiplier>50</fuelMultiplier>
         <initialFuelPercent>1</initialFuelPercent>
-        <autoRefuelPercent>0.1</autoRefuelPercent>
+        <autoRefuelPercent>0.75</autoRefuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
