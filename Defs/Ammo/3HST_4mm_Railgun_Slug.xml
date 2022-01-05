@@ -42,7 +42,7 @@
       <texPath>Things/Ammo/Railgun/Ammo_3HST_4mm</texPath>
       <graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
     </graphicData>
-    <ammoClass>RailgunArchotech</ammoClass>
+    <ammoClass>RailgunSabot</ammoClass>
   </ThingDef>
 
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="SmallAmmoBase">
@@ -61,7 +61,7 @@
       <texPath>Things/Ammo/Railgun/Ammo_3HST_4mm</texPath>
       <graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
     </graphicData>
-    <ammoClass>RailgunSabot</ammoClass>
+    <ammoClass>RailgunArchotech</ammoClass>
   </ThingDef>
 
   <!-- ================== Projectiles ================== -->
@@ -82,7 +82,7 @@
       <damageAmountBase>10</damageAmountBase>
       <armorPenetrationSharp>14.8</armorPenetrationSharp>
       <armorPenetrationBlunt>177.46</armorPenetrationBlunt>
-      <speed>130</speed>
+      <speed>50</speed>
     </projectile>
   </ThingDef>
 

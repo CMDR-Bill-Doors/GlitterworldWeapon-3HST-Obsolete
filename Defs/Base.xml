@@ -87,7 +87,7 @@
   <CombatExtended.AmmoCategoryDef>
     <defName>RailgunArchotech</defName>
     <label>Archotech railgun sabot</label>
-    <labelShort>Sabot</labelShort>
+    <labelShort>Archotech</labelShort>
     <description>Homing railgun sabots created by an archotech superintelligence for unknown purpose.</description>
     <advanced>true</advanced>
   </CombatExtended.AmmoCategoryDef>
