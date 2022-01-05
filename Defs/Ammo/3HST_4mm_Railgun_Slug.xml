@@ -42,12 +42,12 @@
       <texPath>Things/Ammo/Railgun/Ammo_3HST_4mm</texPath>
       <graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
     </graphicData>
-    <ammoClass>RailgunSabot</ammoClass>
+    <ammoClass>RailgunArchotech</ammoClass>
   </ThingDef>
 
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="SmallAmmoBase">
     <defName>Ammo_3HST4mmRG_Archo</defName>
-    <label>3HST 4x35mm Steel Railgun Slug</label>
+    <label>3HST 4x35mm Archotech Railgun Slug</label>
     <description>Small caliber railgun cartridges used by a variety of 3HST-made weapons</description>
     <statBases>
       <Mass>0.011</Mass>
@@ -58,7 +58,7 @@
     </thingCategories>
     <stackLimit>5000</stackLimit>
     <graphicData>
-      <texPath>Things/Ammo/Railgun/Ammo_3HST_4mm_Archo</texPath>
+      <texPath>Things/Ammo/Railgun/Ammo_3HST_4mm</texPath>
       <graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
     </graphicData>
     <ammoClass>RailgunSabot</ammoClass>
@@ -82,7 +82,7 @@
       <damageAmountBase>10</damageAmountBase>
       <armorPenetrationSharp>14.8</armorPenetrationSharp>
       <armorPenetrationBlunt>177.46</armorPenetrationBlunt>
-      <speed>260</speed>
+      <speed>130</speed>
     </projectile>
   </ThingDef>
 

@@ -83,6 +83,14 @@
     <defName>BayonetPoint</defName>
     <label>bayonet point</label>
   </BodyPartGroupDef>
+
+  <CombatExtended.AmmoCategoryDef>
+    <defName>RailgunArchotech</defName>
+    <label>Archotech railgun sabot</label>
+    <labelShort>Sabot</labelShort>
+    <description>Homing railgun sabots created by an archotech superintelligence for unknown purpose.</description>
+    <advanced>true</advanced>
+  </CombatExtended.AmmoCategoryDef>
   
   
   
