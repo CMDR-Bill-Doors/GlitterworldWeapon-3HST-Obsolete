@@ -58,7 +58,7 @@
     </thingCategories>
     <stackLimit>5000</stackLimit>
     <graphicData>
-      <texPath>Things/Ammo/Railgun/Ammo_3HST_4mm</texPath>
+      <texPath>Things/Ammo/ArchoRailgun/Ammo_3HST_4mm</texPath>
       <graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
     </graphicData>
     <ammoClass>RailgunArchotech</ammoClass>
@@ -78,11 +78,15 @@
       <drawSize>(1,1)</drawSize>
     </graphicData>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+
       <damageDef>Bullet</damageDef>
       <damageAmountBase>10</damageAmountBase>
       <armorPenetrationSharp>14.8</armorPenetrationSharp>
       <armorPenetrationBlunt>177.46</armorPenetrationBlunt>
       <speed>50</speed>
+      <gravityFactor>114514</gravityFactor>
     </projectile>
   </ThingDef>
 
