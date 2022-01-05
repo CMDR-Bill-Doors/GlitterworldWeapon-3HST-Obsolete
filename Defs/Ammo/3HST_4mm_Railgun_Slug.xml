@@ -15,6 +15,7 @@
     <label>3HST 4x35mm railgun</label>
     <ammoTypes>
       <Ammo_3HST4mmRG_Steel>Projectile_3HST4mmRG_Steel</Ammo_3HST4mmRG_Steel>
+      <Ammo_3HST4mmRG_Archo>Projectile_3HST4mmRG_Archo</Ammo_3HST4mmRG_Archo>
     </ammoTypes>
   </CombatExtended.AmmoSetDef>
 
@@ -44,6 +45,25 @@
     <ammoClass>RailgunSabot</ammoClass>
   </ThingDef>
 
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="SmallAmmoBase">
+    <defName>Ammo_3HST4mmRG_Archo</defName>
+    <label>3HST 4x35mm Steel Railgun Slug</label>
+    <description>Small caliber railgun cartridges used by a variety of 3HST-made weapons</description>
+    <statBases>
+      <Mass>0.011</Mass>
+      <Bulk>0.01</Bulk>
+    </statBases>
+    <thingCategories>
+      <li>AmmoCategory_3HST_4x35_Railgun</li>
+    </thingCategories>
+    <stackLimit>5000</stackLimit>
+    <graphicData>
+      <texPath>Things/Ammo/Railgun/Ammo_3HST_4mm_Archo</texPath>
+      <graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
+    </graphicData>
+    <ammoClass>RailgunSabot</ammoClass>
+  </ThingDef>
+
   <!-- ================== Projectiles ================== -->
 
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
@@ -60,6 +80,26 @@
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageDef>Bullet</damageDef>
       <damageAmountBase>10</damageAmountBase>
+      <armorPenetrationSharp>14.8</armorPenetrationSharp>
+      <armorPenetrationBlunt>177.46</armorPenetrationBlunt>
+      <speed>260</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
+    <defName>Projectile_3HST4mmRG_Archo</defName>
+    <label>4x35mm Railgun bullet (Archotech)</label>
+    <thingClass>ThreeHST.ProjectileMissileCE</thingClass>
+    <uiIconPath>UI/Icons/Projectile_3HST_Archo_Icon</uiIconPath>
+
+    <graphicData>
+      <texPath>Things/Projectile/Projectile_3HST_Archo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>20</damageAmountBase>
       <armorPenetrationSharp>14.8</armorPenetrationSharp>
       <armorPenetrationBlunt>177.46</armorPenetrationBlunt>
       <speed>260</speed>
