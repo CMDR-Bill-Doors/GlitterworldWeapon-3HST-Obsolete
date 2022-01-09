@@ -28,7 +28,7 @@
     <costList>
       <Steel>20</Steel>
       <Plasteel>20</Plasteel>
-      <ComponentIndustrial>5</ComponentIndustrial>
+      <ComponentIndustrial>3</ComponentIndustrial>
       <RailComponent>1</RailComponent>
     </costList>
     <verbs>
@@ -101,7 +101,7 @@
     <costList>
       <Steel>15</Steel>
       <Plasteel>15</Plasteel>
-      <ComponentIndustrial>2</ComponentIndustrial>
+      <ComponentIndustrial>1</ComponentIndustrial>
       <RailComponent>1</RailComponent>
     </costList>
     <verbs>
@@ -175,7 +175,7 @@
     <costList>
       <Steel>35</Steel>
       <Plasteel>20</Plasteel>
-      <ComponentIndustrial>9</ComponentIndustrial>
+      <ComponentIndustrial>5</ComponentIndustrial>
       <RailComponent>1</RailComponent>
     </costList>
     <verbs>

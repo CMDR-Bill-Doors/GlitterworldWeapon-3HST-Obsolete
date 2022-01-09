@@ -23,7 +23,7 @@
     <costList>
       <Steel>65</Steel>
       <Plasteel>35</Plasteel>
-      <ComponentIndustrial>9</ComponentIndustrial>
+      <ComponentIndustrial>6</ComponentIndustrial>
       <ComponentSpacer>1</ComponentSpacer>
       <RailComponent>2</RailComponent>
     </costList>
