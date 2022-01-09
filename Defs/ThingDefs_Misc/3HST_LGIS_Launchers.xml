@@ -536,10 +536,6 @@
       <li>CE_AdvancedLaunchers</li>
     </researchPrerequisites>
     <designationCategory>Security</designationCategory>
-    <placeWorkers Inherit="False">
-      <li>PlaceWorker_TurretTop</li>
-    </placeWorkers>
-
   </ThingDef>
 
   <ThingDef ParentName="BaseArtilleryWeapon">
@@ -677,10 +673,6 @@
       <li>CE_AdvancedLaunchers</li>
     </researchPrerequisites>
     <designationCategory>Security</designationCategory>
-    <placeWorkers Inherit="False">
-      <li>PlaceWorker_TurretTop</li>
-    </placeWorkers>
-
   </ThingDef>
 
   <ThingDef ParentName="BaseArtilleryWeapon">

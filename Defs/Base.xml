@@ -140,6 +140,7 @@
     <tradeability>None</tradeability>
     <placeWorkers Inherit="False">
       <li>PlaceWorker_TurretTop</li>
+      <li>BDsGlitterworldFaction3HST.PlaceWorker_ShowVerbRadiusBySight</li>
     </placeWorkers>
     <damageMultipliers>
       <li>
@@ -249,6 +250,7 @@
     </building>
     <placeWorkers Inherit="False">
       <li>PlaceWorker_TurretTop</li>
+      <li>BDsGlitterworldFaction3HST.PlaceWorker_ShowVerbRadiusBySight</li>
     </placeWorkers>
   </ThingDef>
 
@@ -282,6 +284,7 @@
     </building>
     <placeWorkers Inherit="False">
       <li>PlaceWorker_TurretTop</li>
+      <li>BDsGlitterworldFaction3HST.PlaceWorker_ShowVerbRadiusBySight</li>
     </placeWorkers>
   </ThingDef>
 

@@ -133,6 +133,7 @@
     </building>
     <placeWorkers Inherit="False">
       <li>PlaceWorker_TurretTop</li>
+      <li>BDsGlitterworldFaction3HST.PlaceWorker_ShowVerbRadiusBySight</li>
     </placeWorkers>
     <castEdgeShadows>false</castEdgeShadows>
     <size>(2,2)</size>
