@@ -54,10 +54,10 @@
     </graphicData>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageDef>Fragment</damageDef>
-      <damageAmountBase>31</damageAmountBase>
+      <damageAmountBase>15</damageAmountBase>
       <speed>40</speed>
       <armorPenetrationSharp>4.5</armorPenetrationSharp>
-      <armorPenetrationBlunt>175</armorPenetrationBlunt>
+      <armorPenetrationBlunt>75</armorPenetrationBlunt>
       <gravityFactor>80</gravityFactor>
     </projectile>
   </ThingDef>
@@ -71,7 +71,7 @@
     </graphicData>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageDef>Fragment</damageDef>
-      <damageAmountBase>7</damageAmountBase>
+      <damageAmountBase>4</damageAmountBase>
       <speed>30</speed>
       <armorPenetrationSharp>2</armorPenetrationSharp>
       <armorPenetrationBlunt>6.4</armorPenetrationBlunt>
@@ -107,12 +107,7 @@
         <explosionSound>Explosion_Stun</explosionSound>
         <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
       </li>
-      <li Class="CombatExtended.CompProperties_Fragments">
-        <fragments>
-          <Fragment_Large_20mmRG>3</Fragment_Large_20mmRG>
-          <Fragment_Small_20mmRG>10</Fragment_Small_20mmRG>
-        </fragments>
-      </li>
+
     </comps>
   </ThingDef>
 

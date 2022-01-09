@@ -185,7 +185,7 @@
         <defaultProjectile>Projectile_3HST4mmRG_Steel</defaultProjectile>
         <warmupTime>0.6</warmupTime>
         <burstShotCount>5</burstShotCount>
-        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
         <range>18</range>
         <soundCast>RG_4mm</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>

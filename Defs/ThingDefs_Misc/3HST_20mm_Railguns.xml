@@ -131,7 +131,7 @@
       <turretTopDrawSize>4</turretTopDrawSize>
       <turretBurstCooldownTime>3</turretBurstCooldownTime>
     </building>
-    <placeWorkers>
+    <placeWorkers Inherit="False">
       <li>PlaceWorker_TurretTop</li>
     </placeWorkers>
     <castEdgeShadows>false</castEdgeShadows>
@@ -145,6 +145,7 @@
       <Plasteel>50</Plasteel>
       <Gun_3HST_20mmAutocannon>1</Gun_3HST_20mmAutocannon>
     </killedLeavings>
+
   </ThingDef>
 
   <!--Turret auto-->
