@@ -9,6 +9,17 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationAdd">
+    <xpath>
+      /Defs/ThingDef[defName="Gun_3HST_Scatter_Railgun" or defName="Gun_3HST_Scatter_Railgun_Pump" or defName="Gun_3HST_Scatter_Railgun_Heavy"]
+    </xpath>
+    <value>
+      <recipeMaker>
+        <researchPrerequisite>Research_3HST_Scatterailgun</researchPrerequisite>
+      </recipeMaker>
+    </value>
+  </Operation>
+
   
   
 </Patch>
