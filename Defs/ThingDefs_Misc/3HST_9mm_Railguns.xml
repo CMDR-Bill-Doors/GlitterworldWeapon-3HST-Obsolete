@@ -366,7 +366,7 @@
     </comps>
   </ThingDef>
 
-	<ThingDef ParentName="BaseGun">
+	<ThingDef ParentName="BaseGun" Name="BaseADS9mm">
 		<defName>Gun_9mmHMG_ADS</defName>
 		<label>Mounted 3HST 9mm HMG</label>
 		<graphicData>
@@ -383,6 +383,9 @@
 			<MarketValue>2400</MarketValue>
 			<Mass>55</Mass>
 		</statBases>
+		<techLevel>Spacer</techLevel>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
 		<weaponTags>
 			<li>3HST_ADS_9mm</li>
 		</weaponTags>
@@ -413,6 +416,22 @@
 				<aiAimMode>AimedShot</aiAimMode>
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="CombatExtended.ThingDefExtensionCE">
+				<MenuHidden>True</MenuHidden>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGun" Name="BaseADS9mm">
+		<defName>Gun_9mmHMG_ADS_Worn</defName>
+		<graphicData>
+			<texPath>Things/Building/Turrets/3HST_HWR_03_HMG_TurretWorn</texPath>
+		</graphicData>
+		<description>Old 3HST 9mm HMG on a stationary emplacement. No less deadly despite it's age.</description>
+		<weaponTags Inherit="false">
+			<li>3HST_ADS_9mmWorn</li>
+		</weaponTags>
 	</ThingDef>
   
   <!--Sniper Turret-->

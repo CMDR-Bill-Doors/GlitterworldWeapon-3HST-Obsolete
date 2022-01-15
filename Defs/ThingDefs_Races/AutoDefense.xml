@@ -103,6 +103,7 @@
     <defName>Mech_AutoFirePlatform</defName>
     <label>3HST automatic fire platform</label>
     <combatPower>400</combatPower>
+	  <weaponMoney>9999~9999</weaponMoney>
 	  <weaponTags>
 		  <li>3HST_ADS_9mm</li>
 	  </weaponTags>
@@ -121,8 +122,9 @@
 		<label>3HST automatic fire platform</label>
 		<combatPower>400</combatPower>
 		<weaponTags>
-			<li>3HST_ADS_9mm</li>
+			<li>3HST_ADS_9mmWorn</li>
 		</weaponTags>
+		<weaponMoney>9999~9999</weaponMoney>
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>
