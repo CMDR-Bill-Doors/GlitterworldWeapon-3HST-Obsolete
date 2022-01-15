@@ -365,6 +365,55 @@
       </li>
     </comps>
   </ThingDef>
+
+	<ThingDef ParentName="BaseGun">
+		<defName>Gun_9mmHMG_ADS</defName>
+		<label>Mounted 3HST 9mm HMG</label>
+		<graphicData>
+			<texPath>Things/Building/Turrets/3HST_HWR_03_HMG_Turret</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>3HST 9mm HMG on a stationary emplacement.</description>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<statBases>
+			<SightsEfficiency>1.2</SightsEfficiency>
+			<ShotSpread>0.01</ShotSpread>
+			<SwayFactor>1.25</SwayFactor>
+			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+			<MarketValue>2400</MarketValue>
+			<Mass>55</Mass>
+		</statBases>
+		<weaponTags>
+			<li>3HST_ADS_9mm</li>
+		</weaponTags>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_3HST9mmRG_Steel</defaultProjectile>
+				<warmupTime>1.4</warmupTime>
+				<burstShotCount>10</burstShotCount>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<range>86</range>
+				<soundCast>RG_9mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<recoilAmount>1.5</recoilAmount>
+				<muzzleFlashScale>18</muzzleFlashScale>
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+				<recoilPattern>Mounted</recoilPattern>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>180</magazineSize>
+				<reloadTime>5.8</reloadTime>
+				<ammoSet>AmmoSet_3HST9mmRG</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+		</comps>
+	</ThingDef>
   
   <!--Sniper Turret-->
   <ThingDef ParentName="Base3HSTStationaryTurret">

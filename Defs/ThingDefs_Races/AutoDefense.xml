@@ -21,7 +21,6 @@
     </statBases>
     <comps>
       <li Class="PLA.CompProperties_VehicleWeapon">
-        <turretDef>Gun_9mmHMG_Turret</turretDef>
       </li>
     </comps>
     <tools>
@@ -89,7 +88,7 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/AutoTurretCart/AutoTurretCartWorn</texPath>
+					<texPath>Things/Pawn/AutoTurretCartWorn/AutoTurretCartWorn</texPath>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>2</drawSize>
 					<shadowData>
@@ -104,14 +103,9 @@
     <defName>Mech_AutoFirePlatform</defName>
     <label>3HST automatic fire platform</label>
     <combatPower>400</combatPower>
-    <inventoryOptions>
-      <subOptionsChooseOne>
-        <li>
-          <thingDef>Ammo_3HST9mmRG_Steel</thingDef>
-          <countRange>1800</countRange>
-        </li>
-      </subOptionsChooseOne>
-    </inventoryOptions>
+	  <weaponTags>
+		  <li>3HST_ADS_9mm</li>
+	  </weaponTags>
     <modExtensions>
       <li Class="CombatExtended.LoadoutPropertiesExtension">
         <primaryMagazineCount>
@@ -123,17 +117,12 @@
   </PawnKindDef>
 
 	<PawnKindDef ParentName="BaseAutoFirePlatformWorn">
-		<defName>Mech_AutoFirePlatform</defName>
+		<defName>Mech_AutoFirePlatformWorn</defName>
 		<label>3HST automatic fire platform</label>
 		<combatPower>400</combatPower>
-		<inventoryOptions>
-			<subOptionsChooseOne>
-				<li>
-					<thingDef>Ammo_3HST9mmRG_Steel</thingDef>
-					<countRange>1800</countRange>
-				</li>
-			</subOptionsChooseOne>
-		</inventoryOptions>
+		<weaponTags>
+			<li>3HST_ADS_9mm</li>
+		</weaponTags>
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>
