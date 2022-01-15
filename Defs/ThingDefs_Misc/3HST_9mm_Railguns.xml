@@ -376,8 +376,8 @@
 		<description>3HST 9mm HMG on a stationary emplacement.</description>
 		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<statBases>
-			<SightsEfficiency>1.2</SightsEfficiency>
-			<ShotSpread>0.01</ShotSpread>
+			<SightsEfficiency>0.9</SightsEfficiency>
+			<ShotSpread>0.1</ShotSpread>
 			<SwayFactor>1.25</SwayFactor>
 			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
 			<MarketValue>2400</MarketValue>
@@ -423,7 +423,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseGun" Name="BaseADS9mm">
+	<ThingDef ParentName="BaseADS9mm">
 		<defName>Gun_9mmHMG_ADS_Worn</defName>
 		<graphicData>
 			<texPath>Things/Building/Turrets/3HST_HWR_03_HMG_TurretWorn</texPath>

@@ -501,8 +501,8 @@
     <description>3HST 5mm LMG on a stationary emplacement.</description>
     <soundInteract>Artillery_ShellLoaded</soundInteract>
     <statBases>
-      <SightsEfficiency>1.2</SightsEfficiency>
-      <ShotSpread>0.01</ShotSpread>
+      <SightsEfficiency>0.9</SightsEfficiency>
+      <ShotSpread>0.1</ShotSpread>
       <SwayFactor>1.25</SwayFactor>
       <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
     </statBases>
@@ -585,7 +585,77 @@
     </comps>
   </ThingDef>
 
-  <!--Turret Quad-->
+	<ThingDef ParentName="BaseGun" Name="BaseADS5mm">
+		<defName>Gun_5mmHMG_ADS</defName>
+		<label>Mounted 3HST 5mm LMG</label>
+		<graphicData>
+			<texPath>Things/Building/Turrets/3HST_HWR_04_LMG_Auto</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>3HST 5mm LMG on a stationary emplacement.</description>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<techLevel>Spacer</techLevel>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<weaponTags>
+			<li>3HST_ADS_5mm</li>
+		</weaponTags>
+		<statBases>
+			<SightsEfficiency>1.2</SightsEfficiency>
+			<ShotSpread>0.01</ShotSpread>
+			<SwayFactor>1.25</SwayFactor>
+			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+			<MarketValue>2400</MarketValue>
+			<Mass>55</Mass>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>BDsGlitterworldFaction3HST.Verb_ShootWithPower</verbClass>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_3HST5mmRG_Steel</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<burstShotCount>20</burstShotCount>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<range>65</range>
+				<soundCast>RG_5mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<recoilAmount>1</recoilAmount>
+				<muzzleFlashScale>8</muzzleFlashScale>
+				<ai_AvoidFriendlyFireRadius>2</ai_AvoidFriendlyFireRadius>
+				<recoilPattern>Mounted</recoilPattern>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>160</magazineSize>
+				<reloadTime>3.5</reloadTime>
+				<ammoSet>AmmoSet_3HST5mmRG</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="CombatExtended.ThingDefExtensionCE">
+				<MenuHidden>True</MenuHidden>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseADS5mm">
+		<defName>Gun_5mmHMG_ADS_Worn</defName>
+		<graphicData>
+			<texPath>Things/Building/Turrets/3HST_HWR_04_LMG_Worn</texPath>
+		</graphicData>
+		<description>Old 3HST 5mm HMG on a stationary emplacement. No less deadly despite it's age.</description>
+		<weaponTags Inherit="false">
+			<li>3HST_ADS_5mmWorn</li>
+		</weaponTags>
+	</ThingDef>
+
+
+	<!--Turret Quad-->
   <ThingDef ParentName="Base3HSTStationaryTurretHeavy">
     <defName>Turret_3HST5mmLMGQuad</defName>
     <label>Quadruple 5mm light machine railgun</label>
