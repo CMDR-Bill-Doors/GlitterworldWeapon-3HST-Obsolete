@@ -3,7 +3,7 @@
   <ThingDef ParentName="Base3HSTShortGun">
     <defName>Gun_3HST_Scatter_Railgun</defName>
     <label>3HST "NCQ Sprayer" Scatterailgun</label>
-    <description>A pistol-sized automatic scatterailgun developed by 3HST Limited during the Third Elven Civil War.</description>
+    <description>A pistol-sized high-caliber scatterailgun developed by 3HST Limited during the Third Elven Civil War, also capable of launching a variety of grenades.</description>
     <graphicData>
       <texPath>Things/Weapons/3HST_DWR_07_NCQ_Sprayer</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -13,7 +13,7 @@
       <WorkToMake>43000</WorkToMake>
       <Mass>2.5</Mass>
       <Bulk>3.1</Bulk>
-      <SwayFactor>1.87</SwayFactor>
+      <SwayFactor>2.87</SwayFactor>
       <ShotSpread>0.15</ShotSpread>
       <SightsEfficiency>0.7</SightsEfficiency>
       <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
@@ -27,7 +27,7 @@
     <costList>
       <Steel>30</Steel>
       <Plasteel>20</Plasteel>
-      <ComponentIndustrial>9</ComponentIndustrial>
+      <ComponentIndustrial>2</ComponentIndustrial>
       <ComponentSpacer>1</ComponentSpacer>
       <RailComponent>2</RailComponent>
     </costList>
@@ -35,15 +35,17 @@
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>BDsGlitterworldFaction3HST.Verb_ShootByBarrel</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Projectile_ScatterRGStandard</defaultProjectile>
+        <defaultProjectile>Projectile_ScatterRG_Heavy</defaultProjectile>
         <warmupTime>1.1</warmupTime>
-        <burstShotCount>3</burstShotCount>
-        <ticksBetweenBurstShots>18</ticksBetweenBurstShots>
-        <range>10</range>
-        <soundCast>RG_6mm</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
-        <recoilAmount>1.58</recoilAmount>
+        <range>25</range>
+        <soundCast>RG_20mm</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>5</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+
       </li>
     </verbs>
     <modExtensions>
@@ -59,7 +61,6 @@
         <ammoSet>AmmoSet_ScatterRG</ammoSet>
       </li>
       <li Class="CombatExtended.CompProperties_FireModes">
-        <aimedBurstShotCount>2</aimedBurstShotCount>
         <aiAimMode>Snapshot</aiAimMode>
       </li>
       <li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeBarrel">
@@ -68,10 +69,6 @@
        <loadingAmount>125</loadingAmount>
      </li>
     </comps>
-
-    <recipeMaker>
-      <researchPrerequisite>Research_3HST_Railgun</researchPrerequisite>
-    </recipeMaker>
   </ThingDef>
 
   <ThingDef ParentName="Base3HSTLongGun">
@@ -91,7 +88,7 @@
       <WorkToMake>79000</WorkToMake>
       <Mass>5.2</Mass>
       <Bulk>14.7</Bulk>
-      <SwayFactor>1.32</SwayFactor>
+      <SwayFactor>2.32</SwayFactor>
       <ShotSpread>0.13</ShotSpread>
       <SightsEfficiency>1.1</SightsEfficiency>
       <RangedWeapon_Cooldown>0.57</RangedWeapon_Cooldown>
@@ -111,15 +108,20 @@
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>BDsGlitterworldFaction3HST.Verb_ShootByBarrel</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Projectile_ScatterRGStandard</defaultProjectile>
+        <defaultProjectile>Projectile_ScatterRG_Heavy</defaultProjectile>
         <warmupTime>1.2</warmupTime>
         <burstShotCount>5</burstShotCount>
         <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-        <range>22</range>
-        <soundCast>RG_6mm</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <range>44</range>
+        <soundCast>RG_20mm</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
         <recoilAmount>1.12</recoilAmount>
         <muzzleFlashScale>10</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+
       </li>
     </verbs>
     <modExtensions>
@@ -130,7 +132,7 @@
     </modExtensions>
     <comps>
       <li Class="CombatExtended.CompProperties_AmmoUser">
-        <magazineSize>50</magazineSize>
+        <magazineSize>35</magazineSize>
         <reloadTime>7.7</reloadTime>
         <ammoSet>AmmoSet_ScatterRG</ammoSet>
       </li>
@@ -144,9 +146,6 @@
         <loadingAmount>125</loadingAmount>
       </li>
     </comps>
-    <recipeMaker>
-      <researchPrerequisite>Research_3HST_Railgun</researchPrerequisite>
-    </recipeMaker>
   </ThingDef>
 
   <ThingDef ParentName="Base3HSTLongGun">
@@ -175,7 +174,7 @@
     <costList>
       <Steel>40</Steel>
       <Plasteel>25</Plasteel>
-      <ComponentIndustrial>6</ComponentIndustrial>
+      <ComponentIndustrial>2</ComponentIndustrial>
       <ComponentSpacer>1</ComponentSpacer>
       <RailComponent>3</RailComponent>
     </costList>
@@ -183,12 +182,16 @@
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>BDsGlitterworldFaction3HST.Verb_ShootByBarrel</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Projectile_ScatterRGStandard</defaultProjectile>
+        <defaultProjectile>Projectile_ScatterRG_Heavy</defaultProjectile>
         <warmupTime>0.5</warmupTime>
-        <range>22</range>
-        <soundCast>RG_6mm</soundCast>
-        <soundCastTail>GunTail_Medium</soundCastTail>
+        <range>44</range>
+        <soundCast>RG_20mm</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>10</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
       </li>
     </verbs>
     <modExtensions>
@@ -213,9 +216,6 @@
         <loadingAmount>125</loadingAmount>
       </li>
     </comps>
-    <recipeMaker>
-      <researchPrerequisite>Research_3HST_Railgun</researchPrerequisite>
-    </recipeMaker>
   </ThingDef>
 
 
