@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="BaseMechanoid">
+    <defName>Mech_AutoFirePlatform</defName>
+    <label>3HST automatic fire platform</label>
+    <description>An armored automated vehicle with rudimentary IFF system and a turret mount.</description>
+    <statBases>
+      <MoveSpeed>1.9</MoveSpeed>
+      <ArmorRating_Blunt>15</ArmorRating_Blunt>
+      <ArmorRating_Sharp>15</ArmorRating_Sharp>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <CarryWeight>400</CarryWeight>
+      <CarryBulk>80</CarryBulk>
+      <AimingAccuracy>1.1</AimingAccuracy>
+      <ShootingAccuracyPawn>1</ShootingAccuracyPawn>
+      <MeleeDodgeChance>0</MeleeDodgeChance>
+      <MeleeCritChance>0</MeleeCritChance>
+      <MeleeParryChance>0</MeleeParryChance>
+      <AimingDelayFactor>0.75</AimingDelayFactor>
+      <MaxHitPoints>500</MaxHitPoints>
+    </statBases>
+    <comps>
+      <li Class="PLA.CompProperties_VehicleWeapon">
+        <turretDef>Gun_9mmHMG_Turret</turretDef>
+      </li>
+    </comps>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>chassis</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>3.51</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <armorPenetrationSharp>0</armorPenetrationSharp>
+        <armorPenetrationBlunt>15</armorPenetrationBlunt>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+    </tools>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <body>ADS_TurretCart</body>
+      <baseBodySize>2</baseBodySize>
+      <baseHealthScale>2.5</baseHealthScale>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+          <soundCall>Pawn_Mech_Centipede_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+      <Steel>30</Steel>
+      <Plasteel>10</Plasteel>
+    </butcherProducts>
+    <modExtensions>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>QuadrupedLow</bodyShape>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <PawnKindDef Abstract="true" Name="BaseAutoFirePlatform" ParentName="BaseMechanoidKind">
+    <race>Mech_AutoFirePlatform</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/AutoTurretCart/AutoTurretCart</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+	<PawnKindDef Abstract="true" Name="BaseAutoFirePlatformWorn" ParentName="BaseMechanoidKind">
+		<race>Mech_AutoFirePlatform</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/AutoTurretCart/AutoTurretCartWorn</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+  <PawnKindDef ParentName="BaseAutoFirePlatform">
+    <defName>Mech_AutoFirePlatform</defName>
+    <label>3HST automatic fire platform</label>
+    <combatPower>400</combatPower>
+    <inventoryOptions>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Ammo_3HST9mmRG_Steel</thingDef>
+          <countRange>1800</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+    <modExtensions>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>9</min>
+          <max>10</max>
+        </primaryMagazineCount>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+
+	<PawnKindDef ParentName="BaseAutoFirePlatformWorn">
+		<defName>Mech_AutoFirePlatform</defName>
+		<label>3HST automatic fire platform</label>
+		<combatPower>400</combatPower>
+		<inventoryOptions>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Ammo_3HST9mmRG_Steel</thingDef>
+					<countRange>1800</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>9</min>
+					<max>10</max>
+				</primaryMagazineCount>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+</Defs>

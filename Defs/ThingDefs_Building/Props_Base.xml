@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef Abstract="True" Name="Prop3HSTBase" ParentName="BuildingBase">
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.5</fillPercent>
+		<altitudeLayer>Building</altitudeLayer>
+		<blockWind>false</blockWind>
+		<rotatable>true</rotatable>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<drawerType>MapMeshOnly</drawerType>
+		<repairEffect>ConstructMetal</repairEffect>
+		<statBases>
+			<Flammability>0.2</Flammability>
+			<Beauty>-20</Beauty>
+		</statBases>
+		<building>
+			<claimable>false</claimable>
+			<destroySound>BuildingDestroyed_Metal_Big</destroySound>
+		</building>
+	</ThingDef>
+
+</Defs>

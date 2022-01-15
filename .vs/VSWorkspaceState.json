@@ -3,10 +3,7 @@
     "",
     "\\About",
     "\\Defs",
-    "\\Defs\\Ammo",
-    "\\Defs\\ThingDefs_Misc",
-    "\\Patches"
+    "\\Defs\\ThingDefs_Building"
   ],
-  "SelectedNode": "\\Defs\\ThingDefs_Misc\\3HST_9mm_Railguns.xml",
   "PreviewInSolutionExplorer": false
 }
