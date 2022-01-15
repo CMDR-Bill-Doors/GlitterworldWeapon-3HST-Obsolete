@@ -181,7 +181,7 @@
     <label>cluster LGIS tube</label>
     <ammoClass>RocketCluster</ammoClass>
     <detonateProjectile>Projectile_70mmLGIS_Cluster</detonateProjectile>
-    <generateCommonality>0.01</generateCommonality>
+	  <generateAllowChance>0.01</generateAllowChance>
 
     <graphicData>
       <texPath>Things/Weapons/Disposable_LGIS/cluster</texPath>
@@ -1289,7 +1289,7 @@
     <label>indirect cluster LGIS launcher</label>
     <ammoClass>RocketFrag</ammoClass>
     <detonateProjectile>Projectile_70mmLGIS_Cluster</detonateProjectile>
-
+	  <generateAllowChance>0.01</generateAllowChance>
     <graphicData>
       <texPath>Things/Weapons/Disposable_LGIS/ID_cluster</texPath>
     </graphicData>

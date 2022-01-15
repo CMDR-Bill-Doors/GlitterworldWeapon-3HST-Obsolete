@@ -585,18 +585,13 @@
     </comps>
   </ThingDef>
 
-	<ThingDef ParentName="BaseGun" Name="BaseADS5mm">
+	<ThingDef ParentName="Base3HSTADSGun" Name="BaseADS5mm">
 		<defName>Gun_5mmHMG_ADS</defName>
 		<label>Mounted 3HST 5mm LMG</label>
 		<graphicData>
 			<texPath>Things/Building/Turrets/3HST_HWR_04_LMG_Auto</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<description>3HST 5mm LMG on a stationary emplacement.</description>
-		<soundInteract>Artillery_ShellLoaded</soundInteract>
-		<techLevel>Spacer</techLevel>
-		<tradeability>None</tradeability>
-		<destroyOnDrop>true</destroyOnDrop>
 		<weaponTags>
 			<li>3HST_ADS_5mm</li>
 		</weaponTags>
@@ -605,8 +600,8 @@
 			<ShotSpread>0.01</ShotSpread>
 			<SwayFactor>1.25</SwayFactor>
 			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
-			<MarketValue>2400</MarketValue>
-			<Mass>55</Mass>
+			<MarketValue>1200</MarketValue>
+			<Mass>15</Mass>
 		</statBases>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -636,11 +631,6 @@
 				<aiAimMode>AimedShot</aiAimMode>
 			</li>
 		</comps>
-		<modExtensions>
-			<li Class="CombatExtended.ThingDefExtensionCE">
-				<MenuHidden>True</MenuHidden>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseADS5mm">

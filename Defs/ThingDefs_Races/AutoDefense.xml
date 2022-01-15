@@ -170,4 +170,40 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
+
+	<PawnKindDef ParentName="BaseAutoFirePlatform">
+		<defName>Mech_AutoFirePlatform_LGIS</defName>
+		<label>3HST automatic fire platform</label>
+		<combatPower>400</combatPower>
+		<weaponTags>
+			<li>3HST_ADS_LGIS</li>
+		</weaponTags>
+		<weaponMoney>9999~9999</weaponMoney>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>9</min>
+					<max>10</max>
+				</primaryMagazineCount>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BaseAutoFirePlatformWorn">
+		<defName>Mech_AutoFirePlatformWorn_LGIS</defName>
+		<label>3HST automatic fire platform</label>
+		<combatPower>400</combatPower>
+		<weaponTags>
+			<li>3HST_ADS_LGIS_Worn</li>
+		</weaponTags>
+		<weaponMoney>9999~9999</weaponMoney>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>9</min>
+					<max>10</max>
+				</primaryMagazineCount>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 </Defs>

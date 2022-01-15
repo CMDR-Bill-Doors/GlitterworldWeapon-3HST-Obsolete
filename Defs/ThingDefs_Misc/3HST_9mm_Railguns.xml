@@ -366,15 +366,13 @@
     </comps>
   </ThingDef>
 
-	<ThingDef ParentName="BaseGun" Name="BaseADS9mm">
+	<ThingDef ParentName="Base3HSTADSGun" Name="BaseADS9mm">
 		<defName>Gun_9mmHMG_ADS</defName>
 		<label>Mounted 3HST 9mm HMG</label>
 		<graphicData>
 			<texPath>Things/Building/Turrets/3HST_HWR_03_HMG_Turret</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<description>3HST 9mm HMG on a stationary emplacement.</description>
-		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<statBases>
 			<SightsEfficiency>0.9</SightsEfficiency>
 			<ShotSpread>0.1</ShotSpread>
@@ -383,9 +381,6 @@
 			<MarketValue>2400</MarketValue>
 			<Mass>55</Mass>
 		</statBases>
-		<techLevel>Spacer</techLevel>
-		<tradeability>None</tradeability>
-		<destroyOnDrop>true</destroyOnDrop>
 		<weaponTags>
 			<li>3HST_ADS_9mm</li>
 		</weaponTags>
@@ -416,11 +411,6 @@
 				<aiAimMode>AimedShot</aiAimMode>
 			</li>
 		</comps>
-		<modExtensions>
-			<li Class="CombatExtended.ThingDefExtensionCE">
-				<MenuHidden>True</MenuHidden>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseADS9mm">
