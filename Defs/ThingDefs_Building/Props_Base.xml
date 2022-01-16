@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<ThingDef Abstract="True" Name="Prop3HSTBase" ParentName="BuildingBase">
-		<passability>PassThroughOnly</passability>
 		<fillPercent>0.5</fillPercent>
 		<altitudeLayer>Building</altitudeLayer>
 		<blockWind>false</blockWind>
@@ -10,14 +9,63 @@
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<drawerType>MapMeshOnly</drawerType>
 		<repairEffect>ConstructMetal</repairEffect>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
 		<statBases>
 			<Flammability>0.2</Flammability>
 			<Beauty>-20</Beauty>
+			<WorkToBuild>500</WorkToBuild>
 		</statBases>
 		<building>
 			<claimable>false</claimable>
 			<destroySound>BuildingDestroyed_Metal_Big</destroySound>
 		</building>
+		<designationCategory>Furniture</designationCategory>
 	</ThingDef>
 
+
+	<ThingDef ParentName="Prop3HSTBase">
+		<defName>Prop_Abandoned3HSTCrateSmall</defName>
+		<label>abandoned crate</label>
+		<description>An abandoned crate of 3HST origin. Any valuables it once contained have degraded to uselessness, but itself can be deconstructed for some resource.</description>
+		<graphicData>
+			<texPath>Things/Building/Props/Props_Abandoned3HSTCrateSmall</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(1, 1)</drawSize>
+			<shadowData>
+				<volume>(0.8, 0.5, 0.8)</volume>
+			</shadowData>
+		</graphicData>
+		<size>(1, 1)</size>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+		</statBases>
+		<costList>
+			<Steel>25</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="Prop3HSTBase">
+		<defName>Props_Abandoned3HSTflatbedRusted</defName>
+		<label>abandoned flatbed truck</label>
+		<description>An abandoned flatbed truck of 3HST origin. Any valuables it once contained have degraded to uselessness, but itself can be deconstructed for some resource.</description>
+		<graphicData>
+			<texPath>Things/Building/Props/Props_Abandoned3HSTflatbedRusted</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,4)</drawSize>
+			<shadowData>
+				<volume>(1.5, 0.5, 3.5)</volume>
+			</shadowData>
+		</graphicData>
+		<size>(2,4)</size>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+		</statBases>
+		<costList>
+			<Steel>125</Steel>
+			<Plasteel>100</Plasteel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+		</costList>
+		<passability>Impassable</passability>
+	</ThingDef>
 </Defs>
