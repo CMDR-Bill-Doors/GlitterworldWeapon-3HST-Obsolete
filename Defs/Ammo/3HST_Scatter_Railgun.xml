@@ -113,7 +113,7 @@
     <defName>Ammo_ScatterRG_EMP</defName>
     <label>3HST Scatterailgun Cartridge (EMP)</label>
     <uiIconPath>UI/Icons/Grenades/3HST_20mmG_EMP_1</uiIconPath>
-
+	  <generateAllowChance>0.1</generateAllowChance>
     <description>Large-caliber cartridge containing EMP emmiter used on various 3HST scatterailguns.\n\nDespite also calibered as 20mm, its internal component can not survive the extreme acceleration of a railcannon, preventing such ammunition to be used on them.</description>
     <graphicData>
       <texPath>Things/Ammo/GrenadeLauncher/Ammo_3HST_20mm/3HST_20mmG_EMP</texPath>
@@ -127,7 +127,7 @@
     <defName>Ammo_ScatterRG_Smoke</defName>
     <label>3HST Scatterailgun Cartridge (Smoke)</label>
     <uiIconPath>UI/Icons/Grenades/3HST_20mmG_Smoke_1</uiIconPath>
-
+	<generateAllowChance>0</generateAllowChance>
     <description>Large-caliber cartridge containing smoke generating agent used on various 3HST scatterailguns.\n\nDespite also calibered as 20mm, its internal component can not survive the extreme acceleration of a railcannon, preventing such ammunition to be used on them.</description>
     <graphicData>
       <texPath>Things/Ammo/GrenadeLauncher/Ammo_3HST_20mm/3HST_20mmG_Smoke</texPath>
@@ -155,13 +155,13 @@
     <defName>Ammo_ScatterRG_Incendiary</defName>
     <label>3HST Scatterailgun Cartridge (Incendiary)</label>
     <uiIconPath>UI/Icons/Grenades/3HST_20mmG_Incendiary_1</uiIconPath>
-
+	  <generateAllowChance>0.5</generateAllowChance>
     <description>Large-caliber cartridge containing combustive material used on various 3HST scatterailguns.\n\nDespite also calibered as 20mm, its internal component can not survive the extreme acceleration of a railcannon, preventing such ammunition to be used on them.</description>
     <graphicData>
       <texPath>Things/Ammo/GrenadeLauncher/Ammo_3HST_20mm/3HST_20mmG_Incendiary</texPath>
       <graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
     </graphicData>
-    <ammoClass>Scatterailgun_Smoke</ammoClass>
+    <ammoClass>Scatterailgun_Incendiary</ammoClass>
     <detonateProjectile>Projectile_ScatterRG_Incendiary</detonateProjectile>
   </ThingDef>
   <!-- ================== Projectiles ================== -->
@@ -182,7 +182,7 @@
       <armorPenetrationSharp>16.1</armorPenetrationSharp>
       <armorPenetrationBlunt>25.88</armorPenetrationBlunt>
       <spreadMult>17.8</spreadMult>
-      <pelletCount>19</pelletCount>
+      <pelletCount>12</pelletCount>
     </projectile>
   </ThingDef>
 
@@ -219,6 +219,7 @@
   <ThingDef ParentName="BaseScatterailgunExplosive">
     <defName>Projectile_ScatterRG_EMP</defName>
     <label>20x40mm Rail-launched grenade (EMP)</label>
+
     <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageDef>EMP</damageDef>
@@ -266,7 +267,8 @@
 
   <ThingDef ParentName="BaseScatterailgunExplosive">
     <defName>Projectile_ScatterRG_Incendiary</defName>
-    <label>20x40mm Rail-launched grenade (Smoke)</label>
+    <label>20x40mm Rail-launched grenade (Incendiary)</label>
+
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageDef>PrometheumFlame</damageDef>
       <damageAmountBase>0</damageAmountBase>

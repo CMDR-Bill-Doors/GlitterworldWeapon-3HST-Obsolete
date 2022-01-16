@@ -72,14 +72,14 @@
 		<label>3HST automatic security bot</label>
 		<description>An automated robotic infantry with rudimentary IFF system.</description>
 		<statBases>
-			<MoveSpeed>4.7</MoveSpeed>
-			<ArmorRating_Blunt>6</ArmorRating_Blunt>
-			<ArmorRating_Sharp>4</ArmorRating_Sharp>
+			<MoveSpeed>3.7</MoveSpeed>
+			<ArmorRating_Blunt>10</ArmorRating_Blunt>
+			<ArmorRating_Sharp>5</ArmorRating_Sharp>
 			<PsychicSensitivity>0</PsychicSensitivity>
 			<CarryWeight>50</CarryWeight>
 			<CarryBulk>20</CarryBulk>
-			<AimingAccuracy>1.0</AimingAccuracy>
-			<ShootingAccuracyPawn>2.6</ShootingAccuracyPawn>
+			<AimingAccuracy>0.8</AimingAccuracy>
+			<ShootingAccuracyPawn>1</ShootingAccuracyPawn>
 			<MeleeDodgeChance>0.19</MeleeDodgeChance>
 			<MeleeCritChance>0.22</MeleeCritChance>
 			<MeleeParryChance>0.09</MeleeParryChance>
@@ -250,8 +250,8 @@
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>
-					<min>3</min>
-					<max>6</max>
+					<min>0</min>
+					<max>3</max>
 				</primaryMagazineCount>
 			</li>
 		</modExtensions>
@@ -286,8 +286,8 @@
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>
-					<min>3</min>
-					<max>6</max>
+					<min>1</min>
+					<max>3</max>
 				</primaryMagazineCount>
 			</li>
 		</modExtensions>
@@ -322,8 +322,8 @@
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>
-					<min>9</min>
-					<max>10</max>
+					<min>1</min>
+					<max>5</max>
 				</primaryMagazineCount>
 			</li>
 		</modExtensions>
@@ -358,8 +358,8 @@
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>
-					<min>9</min>
-					<max>10</max>
+					<min>2</min>
+					<max>5</max>
 				</primaryMagazineCount>
 			</li>
 		</modExtensions>
