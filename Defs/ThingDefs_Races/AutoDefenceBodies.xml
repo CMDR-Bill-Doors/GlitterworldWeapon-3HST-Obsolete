@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-	<!--======== Common to various mechanoids ========-->
-
 	<BodyPartDef>
 		<defName>ADSChassis</defName>
 		<labelShort>chassis</labelShort>
@@ -133,7 +130,10 @@
 				<li>
 					<def>ADSSensorComplex</def>
 					<coverage>0.05</coverage>
-					<height>Middle</height>
+					<height>Top</height>
+					<groups>
+						<li>CoveredByNaturalArmor</li>
+					</groups>
 					<parts>
 
 						<li>
@@ -172,28 +172,30 @@
 				</li>
 				<li>
 					<def>ADSMotor</def>
-					<coverage>0.05</coverage>
+					<coverage>0.10</coverage>
 					<groups>
 						<li>CoveredByNaturalArmor</li>
 					</groups>
-					<parts>
-						<li>
-							<def>ADSWheels</def>
-							<coverage>0.15</coverage>
-							<customLabel>left wheel complex</customLabel>
-							<groups>
-								<li>CoveredByNaturalArmor</li>
-							</groups>
-						</li>
-						<li>
-							<def>ADSWheels</def>
-							<coverage>0.15</coverage>
-							<customLabel>right wheel complex</customLabel>
-							<groups>
-								<li>CoveredByNaturalArmor</li>
-							</groups>
-						</li>
-					</parts>
+				</li>
+				<li>
+					<def>ADSWheels</def>
+					<coverage>0.05</coverage>
+					<customLabel>left wheel</customLabel>
+				</li>
+				<li>
+					<def>ADSWheels</def>
+					<coverage>0.05</coverage>
+					<customLabel>right wheel</customLabel>
+				</li>
+				<li>
+					<def>ADSWheels</def>
+					<coverage>0.05</coverage>
+					<customLabel>left wheel</customLabel>
+				</li>
+				<li>
+					<def>ADSWheels</def>
+					<coverage>0.05</coverage>
+					<customLabel>right wheel</customLabel>
 				</li>
 			</parts>
 		</corePart>

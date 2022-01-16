@@ -169,6 +169,7 @@
       <li>CE_Sidearm</li>
       <li>CE_OneHandedWeapon</li>
       <li>3HST_Sidearm</li>
+	  <li>3HST_SMG</li>
       <li>CE_SMG</li>
       <li>CE_AI_AssaultWeapon</li>
     </weaponTags>

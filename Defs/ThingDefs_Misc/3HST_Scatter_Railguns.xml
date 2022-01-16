@@ -157,7 +157,6 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.18</drawSize>
     </graphicData>
-    <generateCommonality>0.3</generateCommonality>
     <statBases>
       <WorkToMake>30000</WorkToMake>
       <Mass>5.2</Mass>
@@ -202,7 +201,7 @@
     </modExtensions>
     <comps>
       <li Class="CombatExtended.CompProperties_AmmoUser">
-        <magazineSize>12</magazineSize>
+        <magazineSize>6</magazineSize>
         <reloadTime>0.65</reloadTime>
         <reloadOneAtATime>true</reloadOneAtATime>
         <ammoSet>AmmoSet_ScatterRG</ammoSet>

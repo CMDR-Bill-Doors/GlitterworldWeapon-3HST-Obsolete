@@ -16,7 +16,7 @@
       <MeleeDodgeChance>0</MeleeDodgeChance>
       <MeleeCritChance>0</MeleeCritChance>
       <MeleeParryChance>0</MeleeParryChance>
-      <AimingDelayFactor>0.75</AimingDelayFactor>
+      <AimingDelayFactor>1.2</AimingDelayFactor>
       <MaxHitPoints>500</MaxHitPoints>
     </statBases>
     <comps>
@@ -67,6 +67,92 @@
     </modExtensions>
   </ThingDef>
 
+	<ThingDef ParentName="BaseMechanoid">
+		<defName>Mech_SecurityBot</defName>
+		<label>3HST automatic security bot</label>
+		<description>An automated robotic infantry with rudimentary IFF system.</description>
+		<statBases>
+			<MoveSpeed>4.7</MoveSpeed>
+			<ArmorRating_Blunt>6</ArmorRating_Blunt>
+			<ArmorRating_Sharp>4</ArmorRating_Sharp>
+			<PsychicSensitivity>0</PsychicSensitivity>
+			<CarryWeight>50</CarryWeight>
+			<CarryBulk>20</CarryBulk>
+			<AimingAccuracy>1.0</AimingAccuracy>
+			<ShootingAccuracyPawn>2.6</ShootingAccuracyPawn>
+			<MeleeDodgeChance>0.19</MeleeDodgeChance>
+			<MeleeCritChance>0.22</MeleeCritChance>
+			<MeleeParryChance>0.09</MeleeParryChance>
+			<MaxHitPoints>200</MaxHitPoints>
+			<AimingDelayFactor>0.75</AimingDelayFactor>
+		</statBases>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>1.11</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<armorPenetrationSharp>0</armorPenetrationSharp>
+				<armorPenetrationBlunt>1.688</armorPenetrationBlunt>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>1.11</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<armorPenetrationSharp>0</armorPenetrationSharp>
+				<armorPenetrationBlunt>1.688</armorPenetrationBlunt>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>1.85</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<chanceFactor>0.2</chanceFactor>
+				<armorPenetrationSharp>0</armorPenetrationSharp>
+				<armorPenetrationBlunt>0.625</armorPenetrationBlunt>
+			</li>
+		</tools>
+		<race>
+			<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<baseBodySize>1.0</baseBodySize>
+			<body>Lancer</body>
+			<baseHealthScale>0.72</baseHealthScale>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+					<soundCall>Pawn_Mech_Scyther_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+		<butcherProducts>
+			<Steel>15</Steel>
+		</butcherProducts>
+		<modExtensions>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Humanoid</bodyShape>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
   <PawnKindDef Abstract="true" Name="BaseAutoFirePlatform" ParentName="BaseMechanoidKind">
     <race>Mech_AutoFirePlatform</race>
     <lifeStages>
@@ -97,6 +183,78 @@
 				</bodyGraphicData>
 			</li>
 		</lifeStages>
+	</PawnKindDef>
+
+	<PawnKindDef Abstract="true" Name="BaseSecurityBot" ParentName="BaseMechanoidKind">
+		<race>Mech_SecurityBot</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/SecurityBot/SecurityBot</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<PawnKindDef Abstract="true" Name="BaseSecurityBotWorn" ParentName="BaseMechanoidKind">
+		<race>Mech_SecurityBot</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/SecurityBotWorn/SecurityBotWorn</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BaseSecurityBot">
+		<defName>Mech_SecurityBot</defName>
+		<label>3HST automatic security bot</label>
+		<combatPower>150</combatPower>
+		<weaponMoney>9999~9999</weaponMoney>
+		<weaponTags>
+			<li>3HST_SMG</li>
+			<li>3HST_NCQSP</li>
+			<li>3HST_ARG</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>3</min>
+					<max>6</max>
+				</primaryMagazineCount>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BaseSecurityBotWorn">
+		<defName>Mech_SecurityBotWorn</defName>
+		<label>3HST automatic security bot</label>
+		<combatPower>150</combatPower>
+		<weaponMoney>9999~9999</weaponMoney>
+		<weaponTags>
+			<li>3HST_SMG</li>
+			<li>3HST_NCQSP</li>
+			<li>3HST_ARG</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>3</min>
+					<max>6</max>
+				</primaryMagazineCount>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 
   <PawnKindDef ParentName="BaseAutoFirePlatform">
