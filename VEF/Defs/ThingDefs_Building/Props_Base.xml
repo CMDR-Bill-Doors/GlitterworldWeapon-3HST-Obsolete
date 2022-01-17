@@ -24,6 +24,142 @@
 		<designationCategory>Furniture</designationCategory>
 	</ThingDef>
 
+	<ThingDef ParentName="DoorBase">
+		<defName>Door3HSTabandoned</defName>
+		<label>abandoned door</label>
+		<description>An abandoned door of 3HST origin.</description>
+		<statBases>
+			<WorkToBuild>850</WorkToBuild>
+			<MaxHitPoints>1600</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<stuffCategories Inherit="false"/>
+		<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+		<graphicData>
+			<texPath>Things/Building/Abandoned3HSTdoor_Mover</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>UI/Icons/Abandoned3HSTdoor_MenuIcon</uiIconPath>
+		<costStuffCount/>
+		<costList>
+			<Steel>25</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="Wall">
+		<defName>Abandoned3HSTwall</defName>
+		<label>abandoned wall</label>
+		<description>An impassable wall. Capable of holding up a roof.</description>
+		<graphicData>
+			<texPath>Things/Building/Abandoned3HSTwall</texPath>
+		</graphicData>
+		<uiIconPath>UI/Icons/Abandoned3HSTwall_MenuIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>135</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<MeditationFocusStrength>0.22</MeditationFocusStrength>
+		</statBases>
+		<costStuffCount/>
+		<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+		<stuffCategories Inherit="false"/>
+		<building>
+			<relatedBuildCommands Inherit="false"/>
+		</building>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="LampBase" Name="3HSTwallLightBase">
+		<defName>abandoned3HSTwallLight</defName>
+		<label>abandoned wall light</label>
+		<description>An abandoned wall light of 3HST origin, still intact.</description>
+		<graphicData>
+			<texPath>Things/Building/Props/Abandoned3HSTwallLight/Abandoned3HSTwallLight</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+		</graphicData>
+		<rotatable>true</rotatable>
+		<comps>
+			<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
+				<spawnGlowerInFacedCell>true</spawnGlowerInFacedCell>
+				<colorOptions>
+					<li>
+						<glowRadius>12</glowRadius>
+						<glowColor>(199,252,252,0)</glowColor>
+					</li>
+				</colorOptions>
+			</li>
+			<li Class="VanillaFurnitureExpanded.CompProperties_MountableOnWall"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>30</basePowerConsumption>
+			</li>
+		</comps>
+		<building>
+			<isInert>true</isInert>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<placeWorkers>
+			<li>VanillaFurnitureExpanded.PlaceWorker_OnWall</li>
+		</placeWorkers>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<costList>
+			<Steel>25</Steel>
+		</costList>
+		<minifiedDef Inherit="false"/>
+		<thingCategories Inherit="false"/>
+		<designationCategory>Furniture</designationCategory>
+	</ThingDef>
+
+	<ThingDef ParentName="3HSTwallLightBase">
+		<defName>abandoned3HSTwallLightDimmed</defName>
+		<label>abandoned wall light</label>
+		<description>An abandoned wall light of 3HST origin, a faulty circuit resulted in reduced brightness.</description>
+		<graphicData>
+			<texPath>Things/Building/Props/Abandoned3HSTwallLight/Abandoned3HSTwallLight</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+		</graphicData>
+		<rotatable>true</rotatable>
+		<comps>
+			<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
+				<spawnGlowerInFacedCell>true</spawnGlowerInFacedCell>
+				<colorOptions>
+					<li>
+						<glowRadius>12</glowRadius>
+						<glowColor>(100,126,126,0)</glowColor>
+					</li>
+				</colorOptions>
+			</li>
+			<li Class="VanillaFurnitureExpanded.CompProperties_MountableOnWall"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>30</basePowerConsumption>
+			</li>
+		</comps>
+		<building>
+			<isInert>true</isInert>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<placeWorkers>
+			<li>VanillaFurnitureExpanded.PlaceWorker_OnWall</li>
+		</placeWorkers>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<costList>
+			<Steel>25</Steel>
+		</costList>
+		<minifiedDef Inherit="false"/>
+		<thingCategories Inherit="false"/>
+		<designationCategory>Furniture</designationCategory>
+	</ThingDef>
+
 
 	<ThingDef ParentName="Prop3HSTBase">
 		<defName>Prop_Abandoned3HSTCrateSmall</defName>
@@ -55,12 +191,12 @@
 		<graphicData>
 			<texPath>Things/Building/Props/Props_Abandoned3HSTflatbedRusted</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2,4)</drawSize>
+			<drawSize>(2.5,5)</drawSize>
 			<shadowData>
 				<volume>(1.5, 0.5, 3.5)</volume>
 			</shadowData>
 		</graphicData>
-		<size>(2,4)</size>
+		<size>(2,5)</size>
 		<statBases>
 			<MaxHitPoints>250</MaxHitPoints>
 		</statBases>
