@@ -550,7 +550,7 @@
 				<warmupTime>2.5</warmupTime>
 				<minRange>15</minRange>
 				<range>200</range>
-				<burstShotCount>2</burstShotCount>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
 				<soundCast>InfernoCannon_Fire</soundCast>
 				<muzzleFlashScale>16</muzzleFlashScale>
 				<circularError>2</circularError>
@@ -579,7 +579,7 @@
 					<warmupTime>6.5</warmupTime>
 					<minRange>15</minRange>
 					<range>200</range>
-					<burstShotCount>2</burstShotCount>
+					<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
 					<soundCast>InfernoCannon_Fire</soundCast>
 					<muzzleFlashScale>16</muzzleFlashScale>
 					<circularError>2</circularError>

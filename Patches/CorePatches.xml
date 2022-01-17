@@ -53,11 +53,12 @@
     </value>
   </Operation>
 
-  <!--
-  <Operation Class="PatchOperationRemove">
-    <xpath>/Defs/ThingDef[@Name="Base3HSTStationaryTurret"]/placeWorkers/li[li="PlaceWorker_ShowTurretRadius"]</xpath>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[@Name="TurretBase"]/placeWorkers/li[2]</xpath>
+	  <value>
+		  <li>BDsGlitterworldFaction3HST.PlaceWorker_ShowVerbRadiusBySight</li>
+	  </value>
   </Operation>
--->
 
   <Operation Class="PatchOperationFindMod">
     <mods>

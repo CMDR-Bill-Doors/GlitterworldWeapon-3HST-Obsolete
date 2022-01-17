@@ -138,10 +138,6 @@
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <thingCategories Inherit="False" />
     <tradeability>None</tradeability>
-    <placeWorkers Inherit="False">
-      <li>PlaceWorker_TurretTop</li>
-      <li>BDsGlitterworldFaction3HST.PlaceWorker_ShowVerbRadiusBySight</li>
-    </placeWorkers>
     <damageMultipliers>
       <li>
         <damageDef>RangedStab</damageDef>
@@ -248,10 +244,6 @@
     <building>
       <spawnedConceptLearnOpportunity>BDGW_RailRearm</spawnedConceptLearnOpportunity>
     </building>
-    <placeWorkers Inherit="False">
-      <li>PlaceWorker_TurretTop</li>
-      <li>BDsGlitterworldFaction3HST.PlaceWorker_ShowVerbRadiusBySight</li>
-    </placeWorkers>
   </ThingDef>
 
 
@@ -282,10 +274,6 @@
     <building>
       <spawnedConceptLearnOpportunity>BDGW_RailRearm</spawnedConceptLearnOpportunity>
     </building>
-    <placeWorkers Inherit="False">
-      <li>PlaceWorker_TurretTop</li>
-      <li>BDsGlitterworldFaction3HST.PlaceWorker_ShowVerbRadiusBySight</li>
-    </placeWorkers>
   </ThingDef>
 
 
