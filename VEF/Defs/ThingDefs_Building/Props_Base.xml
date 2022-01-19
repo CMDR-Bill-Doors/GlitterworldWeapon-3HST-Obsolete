@@ -124,7 +124,7 @@
 
 	<ThingDef ParentName="3HSTwallLightBase">
 		<defName>abandoned3HSTwallLightDimmed</defName>
-		<label>abandoned wall light</label>
+		<label>faulty abandoned wall light</label>
 		<description>An abandoned wall light of 3HST origin, a faulty circuit resulted in reduced brightness.</description>
 		<comps>
 			<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
@@ -160,6 +160,29 @@
 		</statBases>
 		<costList>
 			<Steel>25</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="Prop3HSTBase">
+		<defName>Prop_3HSTcardboxSmall</defName>
+		<label>abandoned cardboard box</label>
+		<description>An abandoned cardboard box of 3HST origin. Any valuables it once contained have degraded to uselessness, but itself can be deconstructed for some resource.</description>
+		<graphicData>
+			<texPath>Things/Building/Props/Prop_3HSTcardboxSmall</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(2.2,2.2)</drawSize>
+			<shadowData>
+				<volume>(0.9, 0.5, 0.9)</volume>
+			</shadowData>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<size>(1, 1)</size>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+		</statBases>
+		<costList>
+			<Cloth>25</Cloth>
 		</costList>
 	</ThingDef>
 
