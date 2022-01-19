@@ -484,30 +484,4 @@
   <ThingDef Name="Base3HSTTurretGun" ParentName="BaseTurretGun" Abstract="True">
     <relicChance>0</relicChance>
   </ThingDef>
-
-	
-	<ThingDef ParentName="BaseGun" Name="Base3HSTADSGun" Abstract="True">
-		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<statBases>
-			<MarketValue>1200</MarketValue>
-			<Mass>15</Mass>
-		</statBases>
-		<soundInteract>Artillery_ShellLoaded</soundInteract>
-		<techLevel>Spacer</techLevel>
-		<tradeability>None</tradeability>
-		<destroyOnDrop>true</destroyOnDrop>
-		<weaponTags>
-			<li>3HST_ADS_Gun</li>
-		</weaponTags>
-		<modExtensions>
-			<li Class="CombatExtended.ThingDefExtensionCE">
-				<MenuHidden>True</MenuHidden>
-			</li>
-		</modExtensions>
-	</ThingDef>
-
-
-
 </Defs>

@@ -98,7 +98,7 @@
       <damageAmountBase>960</damageAmountBase>
       <armorPenetrationSharp>1407</armorPenetrationSharp>
       <armorPenetrationBlunt>4885545</armorPenetrationBlunt>
-      <speed>700</speed>
+      <speed>350</speed>
     </projectile>
     <comps>
       <li Class="CombatExtended.CompProperties_ExplosiveCE">

@@ -74,25 +74,13 @@
 		</costList>
 	</ThingDef>
 
-	<ThingDef ParentName="LampBase" Name="3HSTwallLightBase">
-		<defName>abandoned3HSTwallLight</defName>
-		<label>abandoned wall light</label>
-		<description>An abandoned wall light of 3HST origin, still intact.</description>
+	<ThingDef Abstract="True" ParentName="LampBase" Name="3HSTwallLightBase">
 		<graphicData>
 			<texPath>Things/Building/Props/Abandoned3HSTwallLight/Abandoned3HSTwallLight</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 		</graphicData>
 		<rotatable>true</rotatable>
 		<comps>
-			<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
-				<spawnGlowerInFacedCell>true</spawnGlowerInFacedCell>
-				<colorOptions>
-					<li>
-						<glowRadius>12</glowRadius>
-						<glowColor>(199,252,252,0)</glowColor>
-					</li>
-				</colorOptions>
-			</li>
 			<li Class="VanillaFurnitureExpanded.CompProperties_MountableOnWall"/>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
@@ -118,14 +106,26 @@
 	</ThingDef>
 
 	<ThingDef ParentName="3HSTwallLightBase">
+		<defName>abandoned3HSTwallLight</defName>
+		<label>abandoned wall light</label>
+		<description>An abandoned wall light of 3HST origin, still intact.</description>
+		<comps>
+			<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
+				<spawnGlowerInFacedCell>true</spawnGlowerInFacedCell>
+				<colorOptions>
+					<li>
+						<glowRadius>12</glowRadius>
+						<glowColor>(199,252,252,0)</glowColor>
+					</li>
+				</colorOptions>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="3HSTwallLightBase">
 		<defName>abandoned3HSTwallLightDimmed</defName>
 		<label>abandoned wall light</label>
 		<description>An abandoned wall light of 3HST origin, a faulty circuit resulted in reduced brightness.</description>
-		<graphicData>
-			<texPath>Things/Building/Props/Abandoned3HSTwallLight/Abandoned3HSTwallLight</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-		</graphicData>
-		<rotatable>true</rotatable>
 		<comps>
 			<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
 				<spawnGlowerInFacedCell>true</spawnGlowerInFacedCell>
@@ -136,28 +136,7 @@
 					</li>
 				</colorOptions>
 			</li>
-			<li Class="VanillaFurnitureExpanded.CompProperties_MountableOnWall"/>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>30</basePowerConsumption>
-			</li>
 		</comps>
-		<building>
-			<isInert>true</isInert>
-			<isEdifice>false</isEdifice>
-			<canPlaceOverWall>true</canPlaceOverWall>
-		</building>
-		<altitudeLayer>BuildingOnTop</altitudeLayer>
-		<placeWorkers>
-			<li>VanillaFurnitureExpanded.PlaceWorker_OnWall</li>
-		</placeWorkers>
-		<defaultPlacingRot>South</defaultPlacingRot>
-		<costList>
-			<Steel>25</Steel>
-		</costList>
-		<minifiedDef Inherit="false"/>
-		<thingCategories Inherit="false"/>
-		<designationCategory>Furniture</designationCategory>
 	</ThingDef>
 
 

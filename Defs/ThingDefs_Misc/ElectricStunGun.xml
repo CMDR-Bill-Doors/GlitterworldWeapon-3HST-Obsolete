@@ -106,9 +106,7 @@
         <loadingAmount>75</loadingAmount>
       </li>
     </comps>
-    <weaponTags>
-      <li>GunHeavy</li>
-    </weaponTags>
+	  <weaponTags Inherit="False"/>
     <!--<AllowWithRunAndGun>false</AllowWithRunAndGun>-->
     <recipeMaker>
       <researchPrerequisite>Research_3HST_Railgun</researchPrerequisite>

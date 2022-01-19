@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BaseGun" Name="Base3HSTADSGun" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<Mass>15</Mass>
+		</statBases>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<techLevel>Spacer</techLevel>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<weaponTags>
+			<li>3HST_ADS_Gun</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.ThingDefExtensionCE">
+				<MenuHidden>True</MenuHidden>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTADSGun" Name="BaseADS5mm">
+		<defName>Gun_5mmHMG_ADS</defName>
+		<label>Mounted 3HST 5mm LMG</label>
+		<graphicData>
+			<texPath>Things/Building/Turrets/3HST_HWR_04_LMG_Auto</texPath>
+		</graphicData>
+		<description>3HST 5mm LMG on a stationary emplacement.</description>
+		<weaponTags>
+			<li>3HST_ADS_5mm</li>
+		</weaponTags>
+		<statBases>
+			<SightsEfficiency>1.2</SightsEfficiency>
+			<ShotSpread>0.01</ShotSpread>
+			<SwayFactor>1.25</SwayFactor>
+			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+			<MarketValue>1200</MarketValue>
+			<Mass>15</Mass>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>BDsGlitterworldFaction3HST.Verb_ShootWithPower</verbClass>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_3HST5mmRG_Steel</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<burstShotCount>20</burstShotCount>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<range>65</range>
+				<soundCast>RG_5mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<recoilAmount>1</recoilAmount>
+				<muzzleFlashScale>8</muzzleFlashScale>
+				<ai_AvoidFriendlyFireRadius>2</ai_AvoidFriendlyFireRadius>
+				<recoilPattern>Mounted</recoilPattern>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>160</magazineSize>
+				<reloadTime>3.5</reloadTime>
+				<ammoSet>AmmoSet_3HST5mmRG</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseADS5mm">
+		<defName>Gun_5mmHMG_ADS_Worn</defName>
+		<graphicData>
+			<texPath>Things/Building/Turrets/3HST_HWR_04_LMG_Worn</texPath>
+		</graphicData>
+		<description>Old 3HST 5mm HMG on a stationary emplacement. No less deadly despite it's age.</description>
+		<weaponTags Inherit="false">
+			<li>3HST_ADS_5mmWorn</li>
+		</weaponTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="Base3HSTADSGun" Name="BaseADS9mm">
+		<defName>Gun_9mmHMG_ADS</defName>
+		<label>Mounted 3HST 9mm HMG</label>
+		<graphicData>
+			<texPath>Things/Building/Turrets/3HST_HWR_03_HMG_Turret</texPath>
+		</graphicData>
+		<description>3HST 9mm HMG on a stationary emplacement.</description>
+		<statBases>
+			<SightsEfficiency>0.9</SightsEfficiency>
+			<ShotSpread>0.1</ShotSpread>
+			<SwayFactor>1.25</SwayFactor>
+			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+			<MarketValue>2400</MarketValue>
+			<Mass>55</Mass>
+		</statBases>
+		<weaponTags>
+			<li>3HST_ADS_9mm</li>
+		</weaponTags>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_3HST9mmRG_Steel</defaultProjectile>
+				<warmupTime>1.4</warmupTime>
+				<burstShotCount>10</burstShotCount>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<range>86</range>
+				<soundCast>RG_9mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<recoilAmount>1.5</recoilAmount>
+				<muzzleFlashScale>18</muzzleFlashScale>
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+				<recoilPattern>Mounted</recoilPattern>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>180</magazineSize>
+				<reloadTime>5.8</reloadTime>
+				<ammoSet>AmmoSet_3HST9mmRG</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseADS9mm">
+		<defName>Gun_9mmHMG_ADS_Worn</defName>
+		<graphicData>
+			<texPath>Things/Building/Turrets/3HST_HWR_03_HMG_TurretWorn</texPath>
+		</graphicData>
+		<description>Old 3HST 9mm HMG on a stationary emplacement. No less deadly despite it's age.</description>
+		<weaponTags Inherit="false">
+			<li>3HST_ADS_9mmWorn</li>
+		</weaponTags>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTADSGun" Name="BaseADSLGIS">
+		<defName>Gun_SinglelLGIS_ADS</defName>
+		<label>single LGIS missile launcher</label>
+		<description>A rocket launcher capable of holding and firing a LGIS missile.</description>
+		<graphicData>
+			<texPath>Things/Building/Turrets/SLGIS_Turret</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<weaponTags>
+			<li>Artillery_BaseDestroyer</li>
+			<li>CE_AI_AOE</li>
+			<li>3HST_ADS_LGIS</li>
+		</weaponTags>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<statBases>
+			<SightsEfficiency>2</SightsEfficiency>
+			<ShotSpread>0.2</ShotSpread>
+			<SwayFactor>1.68</SwayFactor>
+			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+			<MarketValue>2400</MarketValue>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>ThreeHST.Verb_ShootCEAutoSwitchMode</verbClass>
+				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_70mmLGIS_Frag</defaultProjectile>
+				<warmupTime>2.5</warmupTime>
+				<minRange>15</minRange>
+				<range>200</range>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>InfernoCannon_Fire</soundCast>
+				<muzzleFlashScale>16</muzzleFlashScale>
+				<circularError>2</circularError>
+				<indirectFirePenalty>0.2</indirectFirePenalty>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<requireLineOfSight>false</requireLineOfSight>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<reloadTime>6.6</reloadTime>
+				<ammoSet>AmmoSet_70mmLGIS</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+			<li Class="ThreeHST.CompProperties_SecondaryAmmo">
+				<secondaryVerb>
+					<verbClass>ThreeHST.Verb_ShootCEAutoSwitchMode</verbClass>
+					<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>Projectile_70mmLGIS_Frag_Indirect</defaultProjectile>
+					<warmupTime>6.5</warmupTime>
+					<minRange>15</minRange>
+					<range>200</range>
+					<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+					<soundCast>InfernoCannon_Fire</soundCast>
+					<muzzleFlashScale>16</muzzleFlashScale>
+					<circularError>2</circularError>
+					<indirectFirePenalty>0.2</indirectFirePenalty>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+					</targetParams>
+					<requireLineOfSight>false</requireLineOfSight>
+				</secondaryVerb>
+				<secondaryAmmoProps>
+					<magazineSize>1</magazineSize>
+					<reloadTime>6.6</reloadTime>
+					<ammoSet>AmmoSet_70mmLGIS_Indirect</ammoSet>
+				</secondaryAmmoProps>
+				<mainWeaponLabel>direct fire</mainWeaponLabel>
+				<secondaryWeaponLabel>indirect fire</secondaryWeaponLabel>
+				<description>switch firing mode</description>
+				<mainCommandIcon>UI/Icons/FireModes/Direct</mainCommandIcon>
+				<secondaryCommandIcon>UI/Icons/FireModes/Indirect</secondaryCommandIcon>
+				<secondaryWeaponChargeSpeeds>
+					<li>30</li>
+					<li>50</li>
+					<li>70</li>
+					<li>90</li>
+				</secondaryWeaponChargeSpeeds>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseADSLGIS">
+		<defName>Gun_SinglelLGIS_ADS_Worn</defName>
+		<graphicData>
+			<texPath>Things/Building/Turrets/SLGIS_Worn</texPath>
+		</graphicData>
+		<description>Old 3HST 5mm HMG on a stationary emplacement. No less deadly despite it's age.</description>
+		<weaponTags Inherit="false">
+			<li>Artillery_BaseDestroyer</li>
+			<li>CE_AI_AOE</li>
+			<li>3HST_ADS_LGIS_Worn</li>
+		</weaponTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="Base3HSTADSGun">
+		<defName>Gun_3HST_MBT_Cannon</defName>
+		<label>3HST 76mm heavy railgun</label>
+		<description>A heavy railgun installed on a tank turret.</description>
+		<graphicData>
+			<texPath>Things/Weapons/3HST_LCB_04 MBT_Turret</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>8</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>3500</Mass>
+			<Bulk>76</Bulk>
+			<SightsEfficiency>5</SightsEfficiency>
+			<ShotSpread>0.01</ShotSpread>
+			<SwayFactor>1</SwayFactor>
+			<RangedWeapon_Cooldown>0.35</RangedWeapon_Cooldown>
+			<MarketValue>2400</MarketValue>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_3HST76mmRG_Steel</defaultProjectile>
+				<warmupTime>4.4</warmupTime>
+				<range>200</range>
+				<minRange>10</minRange>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<soundCast>RG_76mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>5</muzzleFlashScale>
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>Artillery_BaseDestroyer</li>
+			<li>CE_AI_AOE</li>
+			<li>3HST_ADS_MBT</li>
+		</weaponTags>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<reloadTime>5</reloadTime>
+				<ammoSet>AmmoSet_3HST76mmRG</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>
