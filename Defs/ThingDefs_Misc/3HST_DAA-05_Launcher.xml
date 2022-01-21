@@ -44,7 +44,7 @@
       <Plasteel>385</Plasteel>
       <ComponentIndustrial>13</ComponentIndustrial>
       <ComponentSpacer>2</ComponentSpacer>
-      <RailComponent>5</RailComponent>
+      <Resource_3HST_RailComponent>5</Resource_3HST_RailComponent>
     </costList>
     <specialDisplayRadius>80</specialDisplayRadius>
     <building>

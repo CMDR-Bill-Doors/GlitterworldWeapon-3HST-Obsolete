@@ -26,7 +26,7 @@
 			<Plasteel>3000</Plasteel>
 			<ComponentIndustrial>30</ComponentIndustrial>
 			<ComponentSpacer>10</ComponentSpacer>
-			<RailComponent>100</RailComponent>
+			<Resource_3HST_RailComponent>100</Resource_3HST_RailComponent>
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -119,7 +119,7 @@
 				<outOfFuelMessage>Cannot shoot: Needs new accelerator rail</outOfFuelMessage>
 				<fuelFilter>
 					<thingDefs>
-						<li>RailComponent</li>
+						<li>Resource_3HST_RailComponent</li>
 					</thingDefs>
 				</fuelFilter>
 				<fuelCapacity>250</fuelCapacity>
@@ -129,7 +129,7 @@
 				<showFuelGizmo>true</showFuelGizmo>
 				<minimumFueledThreshold>1</minimumFueledThreshold>
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-				<fuelIconPath>Things/Item/Resource/RailComponent</fuelIconPath>
+				<fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
 			</li>
 		</comps>
 		<description>A 3HST-XML-58 corvette maingun module armed with a 76mm heavy railgun. Turrets like this are commonly found on 3HST corvettes and frigates. This turret is too large to be placed under a roof.</description>

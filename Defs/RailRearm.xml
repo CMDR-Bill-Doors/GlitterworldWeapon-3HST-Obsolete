@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <JobDef>
-    <defName>Job_RailRearm</defName>
+    <defName>Job_3HSTRailRearm</defName>
     <driverClass>JobDriver_UseItem</driverClass>
     <reportString>Rearming railgun rails</reportString>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>

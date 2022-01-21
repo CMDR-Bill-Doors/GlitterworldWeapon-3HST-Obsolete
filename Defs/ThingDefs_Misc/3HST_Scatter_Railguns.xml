@@ -29,7 +29,7 @@
       <Plasteel>20</Plasteel>
       <ComponentIndustrial>2</ComponentIndustrial>
       <ComponentSpacer>1</ComponentSpacer>
-      <RailComponent>2</RailComponent>
+      <Resource_3HST_RailComponent>2</Resource_3HST_RailComponent>
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
@@ -102,7 +102,7 @@
       <Plasteel>35</Plasteel>
       <ComponentIndustrial>11</ComponentIndustrial>
       <ComponentSpacer>1</ComponentSpacer>
-      <RailComponent>4</RailComponent>
+      <Resource_3HST_RailComponent>4</Resource_3HST_RailComponent>
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
@@ -175,7 +175,7 @@
       <Plasteel>25</Plasteel>
       <ComponentIndustrial>2</ComponentIndustrial>
       <ComponentSpacer>1</ComponentSpacer>
-      <RailComponent>3</RailComponent>
+      <Resource_3HST_RailComponent>3</Resource_3HST_RailComponent>
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">

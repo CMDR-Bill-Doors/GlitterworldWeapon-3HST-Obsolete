@@ -117,7 +117,7 @@
       <Plasteel>25</Plasteel>
       <ComponentIndustrial>11</ComponentIndustrial>
       <ComponentSpacer>1</ComponentSpacer>
-      <RailComponent>1</RailComponent>
+      <Resource_3HST_RailComponent>1</Resource_3HST_RailComponent>
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
@@ -194,7 +194,7 @@
       <Plasteel>40</Plasteel>
       <ComponentIndustrial>15</ComponentIndustrial>
       <ComponentSpacer>1</ComponentSpacer>
-      <RailComponent>2</RailComponent>
+      <Resource_3HST_RailComponent>2</Resource_3HST_RailComponent>
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
@@ -270,7 +270,7 @@
       <Plasteel>25</Plasteel>
       <ComponentIndustrial>6</ComponentIndustrial>
       <ComponentSpacer>1</ComponentSpacer>
-      <RailComponent>1</RailComponent>
+      <Resource_3HST_RailComponent>1</Resource_3HST_RailComponent>
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
@@ -346,7 +346,7 @@
         <outOfFuelMessage>Cannot shoot: Needs new accelerator rail</outOfFuelMessage>
         <fuelFilter>
           <thingDefs>
-            <li>RailComponent</li>
+            <li>Resource_3HST_RailComponent</li>
           </thingDefs>
         </fuelFilter>
         <fuelCapacity>500</fuelCapacity>
@@ -356,7 +356,7 @@
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-        <fuelIconPath>Things/Item/Resource/RailComponent</fuelIconPath>
+        <fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
       </li>
     </comps>
     <description>A 3HST light machine railgun mounted on an stationary mount. Despite the fact this turret is manually operated, this turret still needs a amount of power to operate since railguns consumes power.</description>
@@ -404,7 +404,7 @@
         <outOfFuelMessage>Cannot shoot: Needs new accelerator rail</outOfFuelMessage>
         <fuelFilter>
           <thingDefs>
-            <li>RailComponent</li>
+            <li>Resource_3HST_RailComponent</li>
           </thingDefs>
         </fuelFilter>
         <fuelCapacity>500</fuelCapacity>
@@ -414,7 +414,7 @@
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-        <fuelIconPath>Things/Item/Resource/RailComponent</fuelIconPath>
+        <fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
       </li>
     </comps>
     <costList>
@@ -459,7 +459,7 @@
         <outOfFuelMessage>Cannot shoot: Needs new accelerator rail</outOfFuelMessage>
         <fuelFilter>
           <thingDefs>
-            <li>RailComponent</li>
+            <li>Resource_3HST_RailComponent</li>
           </thingDefs>
         </fuelFilter>
         <fuelCapacity>500</fuelCapacity>
@@ -469,7 +469,7 @@
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-        <fuelIconPath>Things/Item/Resource/RailComponent</fuelIconPath>
+        <fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
       </li>
     </comps>
     <costList>
@@ -613,7 +613,7 @@
         <outOfFuelMessage>Cannot shoot: Needs new accelerator rail</outOfFuelMessage>
         <fuelFilter>
           <thingDefs>
-            <li>RailComponent</li>
+            <li>Resource_3HST_RailComponent</li>
           </thingDefs>
         </fuelFilter>
         <fuelCapacity>2000</fuelCapacity>
@@ -623,7 +623,7 @@
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-        <fuelIconPath>Things/Item/Resource/RailComponent</fuelIconPath>
+        <fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
       </li>
     </comps>
     <costList>

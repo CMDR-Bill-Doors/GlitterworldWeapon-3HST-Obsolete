@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <RailComponent.label>电磁加速轨道</RailComponent.label>
-  <RailComponent.description>极其先进的电磁加速轨道，用于各式各样的3HST制武器。</RailComponent.description>
-  <RailComponent.comps.0.useLabel>Rearm rail</RailComponent.comps.0.useLabel>
+  <Resource_3HST_RailComponent.label>电磁加速轨道</Resource_3HST_RailComponent.label>
+  <Resource_3HST_RailComponent.description>极其先进的电磁加速轨道，用于各式各样的3HST制武器。</Resource_3HST_RailComponent.description>
+  <Resource_3HST_RailComponent.comps.0.useLabel>Rearm rail</Resource_3HST_RailComponent.comps.0.useLabel>
 
 
   <!--<AdvancedServo.label>先进作动器</AdvancedServo.label>-->

@@ -28,7 +28,7 @@
 			<Plasteel>20</Plasteel>
 			<ComponentIndustrial>4</ComponentIndustrial>
 			<ComponentSpacer>1</ComponentSpacer>
-			<RailComponent>1</RailComponent>
+			<Resource_3HST_RailComponent>1</Resource_3HST_RailComponent>
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -145,7 +145,7 @@
 			<Plasteel>80</Plasteel>
 			<ComponentIndustrial>10</ComponentIndustrial>
 			<ComponentSpacer>2</ComponentSpacer>
-			<RailComponent>4</RailComponent>
+			<Resource_3HST_RailComponent>4</Resource_3HST_RailComponent>
 		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -291,7 +291,7 @@
         <outOfFuelMessage>Cannot shoot: Needs new accelerator rail</outOfFuelMessage>
         <fuelFilter>
           <thingDefs>
-            <li>RailComponent</li>
+            <li>Resource_3HST_RailComponent</li>
           </thingDefs>
         </fuelFilter>
         <fuelCapacity>125</fuelCapacity>
@@ -301,7 +301,7 @@
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-        <fuelIconPath>Things/Item/Resource/RailComponent</fuelIconPath>
+        <fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
       </li>
 
     </comps>
@@ -311,7 +311,7 @@
       <Steel>1150</Steel>
       <Plasteel>385</Plasteel>
       <ComponentSpacer>2</ComponentSpacer>
-      <RailComponent>5</RailComponent>
+      <Resource_3HST_RailComponent>5</Resource_3HST_RailComponent>
     </costList>
     <specialDisplayRadius>15</specialDisplayRadius>
     <building>
@@ -559,7 +559,7 @@
 				<outOfFuelMessage>Cannot shoot: Needs new accelerator rail</outOfFuelMessage>
 				<fuelFilter>
 					<thingDefs>
-						<li>RailComponent</li>
+						<li>Resource_3HST_RailComponent</li>
 					</thingDefs>
 				</fuelFilter>
 				<fuelCapacity>200</fuelCapacity>
@@ -569,7 +569,7 @@
 				<showFuelGizmo>true</showFuelGizmo>
 				<minimumFueledThreshold>1</minimumFueledThreshold>
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-				<fuelIconPath>Things/Item/Resource/RailComponent</fuelIconPath>
+				<fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
 			</li>
 			<li Class="ThreeHST.CompProperties_TurretWithSecondaryAmmo"/>
 		</comps>
@@ -580,7 +580,7 @@
 			<Plasteel>385</Plasteel>
 			<ComponentIndustrial>13</ComponentIndustrial>
 			<ComponentSpacer>1</ComponentSpacer>
-			<RailComponent>7</RailComponent>
+			<Resource_3HST_RailComponent>7</Resource_3HST_RailComponent>
 		</costList>
 		<specialDisplayRadius>10</specialDisplayRadius>
 		<building>
@@ -713,7 +713,7 @@
 				<outOfFuelMessage>Cannot shoot: Needs new accelerator rail</outOfFuelMessage>
 				<fuelFilter>
 					<thingDefs>
-						<li>RailComponent</li>
+						<li>Resource_3HST_RailComponent</li>
 					</thingDefs>
 				</fuelFilter>
 				<fuelCapacity>50</fuelCapacity>
@@ -723,7 +723,7 @@
 				<showFuelGizmo>true</showFuelGizmo>
 				<minimumFueledThreshold>1</minimumFueledThreshold>
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-				<fuelIconPath>Things/Item/Resource/RailComponent</fuelIconPath>
+				<fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
 			</li>
 			<li Class="ThreeHST.CompProperties_TurretWithSecondaryAmmo"/>
 		</comps>
@@ -734,7 +734,7 @@
 			<Plasteel>100</Plasteel>
 			<ComponentIndustrial>5</ComponentIndustrial>
 			<ComponentSpacer>1</ComponentSpacer>
-			<RailComponent>2</RailComponent>
+			<Resource_3HST_RailComponent>2</Resource_3HST_RailComponent>
 		</costList>
 		<specialDisplayRadius>10</specialDisplayRadius>
 		<building>

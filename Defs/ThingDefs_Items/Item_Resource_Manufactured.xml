@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="ResourceBase">
-    <defName>RailComponent</defName>
+    <defName>Resource_3HST_RailComponent</defName>
     <label>electromagnetic accelerator rail</label>
     <description>Advanced magnetic accelerator rails used in various 3HST railgun designs</description>
     <graphicData>
@@ -20,7 +20,7 @@
     </statBases>
     <comps>
       <li Class="CompProperties_Usable">
-        <useJob>Job_RailRearm</useJob>
+        <useJob>Job_3HSTRailRearm</useJob>
         <useLabel>Rearm rail</useLabel>
         <useDuration>120</useDuration>
       </li>
@@ -41,7 +41,7 @@
   </ThingDef>
 
   <RecipeDef>
-    <defName>Make_RailComponent</defName>
+    <defName>Make_Resource_3HST_RailComponent</defName>
     <label>make electromagnetic accelerator rail</label>
     <description>Make electromagnetic accelerator rail.</description>
     <jobString>Making electromagnetic accelerator rail.</jobString>
@@ -87,7 +87,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <RailComponent>3</RailComponent>
+      <Resource_3HST_RailComponent>3</Resource_3HST_RailComponent>
     </products>
     <researchPrerequisite>Research_3HST_Railgun_Components</researchPrerequisite>
     <skillRequirements>

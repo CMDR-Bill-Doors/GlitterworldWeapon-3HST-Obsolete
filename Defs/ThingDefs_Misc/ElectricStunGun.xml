@@ -70,7 +70,7 @@
       <Plasteel>80</Plasteel>
       <ComponentIndustrial>10</ComponentIndustrial>
       <ComponentSpacer>1</ComponentSpacer>
-      <RailComponent>4</RailComponent>
+      <Resource_3HST_RailComponent>4</Resource_3HST_RailComponent>
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">

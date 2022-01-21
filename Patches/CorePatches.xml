@@ -4,7 +4,7 @@
     <xpath>/Defs/TraderKindDef[defName="Caravan_Outlander_CombatSupplier"]/stockGenerators</xpath>
           <value>
             <li Class="StockGenerator_SingleDef">
-              <thingDef>RailComponent</thingDef>
+              <thingDef>Resource_3HST_RailComponent</thingDef>
               <countRange>1~5</countRange>
             </li>
           </value>
@@ -14,7 +14,7 @@
     <xpath>/Defs/TraderKindDef[defName="Orbital_CombatSupplier"]/stockGenerators</xpath>
     <value>
       <li Class="StockGenerator_SingleDef">
-        <thingDef>RailComponent</thingDef>
+        <thingDef>Resource_3HST_RailComponent</thingDef>
         <countRange>2~10</countRange>
       </li>
     </value>
@@ -77,4 +77,11 @@
       </operations>
     </match>
   </Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThinkTreeDef[defName="MainColonistBehaviorCore"]/thinkRoot/subNodes/li[@Class="ThinkNode_PrioritySorter"]/subNodes</xpath>
+		<value>
+			<li Class="BDsGlitterworldFaction3HST.JobGiver_RailRearm"/>
+		</value>
+	</Operation>
 </Patch>

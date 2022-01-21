@@ -23,7 +23,7 @@
       <Plasteel>150</Plasteel>
       <ComponentIndustrial>10</ComponentIndustrial>
       <ComponentSpacer>2</ComponentSpacer>
-      <RailComponent>15</RailComponent>
+      <Resource_3HST_RailComponent>15</Resource_3HST_RailComponent>
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
@@ -106,7 +106,7 @@
         <outOfFuelMessage>Cannot shoot: Needs new accelerator rail</outOfFuelMessage>
         <fuelFilter>
           <thingDefs>
-            <li>RailComponent</li>
+            <li>Resource_3HST_RailComponent</li>
           </thingDefs>
         </fuelFilter>
         <fuelCapacity>500</fuelCapacity>
@@ -116,7 +116,7 @@
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-        <fuelIconPath>Things/Item/Resource/RailComponent</fuelIconPath>
+        <fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
       </li>
     </comps>
     <description>A 3HST rail autocannon mounted on an fixed mount. Despite the fact this turret is manually operated, this turret still needs a amount of power to operate since railguns consumes power.</description>
@@ -176,7 +176,7 @@
         <outOfFuelMessage>Cannot shoot: Needs new accelerator rail</outOfFuelMessage>
         <fuelFilter>
           <thingDefs>
-            <li>RailComponent</li>
+            <li>Resource_3HST_RailComponent</li>
           </thingDefs>
         </fuelFilter>
         <fuelCapacity>500</fuelCapacity>
@@ -186,7 +186,7 @@
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-        <fuelIconPath>Things/Item/Resource/RailComponent</fuelIconPath>
+        <fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
       </li>
     </comps>
     <costList>
@@ -242,7 +242,7 @@
         <outOfFuelMessage>Cannot shoot: Needs new accelerator rail</outOfFuelMessage>
         <fuelFilter>
           <thingDefs>
-            <li>RailComponent</li>
+            <li>Resource_3HST_RailComponent</li>
           </thingDefs>
         </fuelFilter>
         <fuelCapacity>500</fuelCapacity>
@@ -252,7 +252,7 @@
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-        <fuelIconPath>Things/Item/Resource/RailComponent</fuelIconPath>
+        <fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
       </li>
     </comps>
     <costList>
