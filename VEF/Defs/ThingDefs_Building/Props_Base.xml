@@ -168,7 +168,53 @@
 		<label>abandoned cardboard box</label>
 		<description>An abandoned cardboard box of 3HST origin. Any valuables it once contained have degraded to uselessness, but itself can be deconstructed for some resource.</description>
 		<graphicData>
-			<texPath>Things/Building/Props/Prop_3HSTcardboxSmall</texPath>
+			<texPath>Things/Building/Props/Prop_3HSTcardboxSmallN</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(2.2,2.2)</drawSize>
+			<shadowData>
+				<volume>(0.9, 0.5, 0.9)</volume>
+			</shadowData>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<size>(1, 1)</size>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+		</statBases>
+		<costList>
+			<Cloth>25</Cloth>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="Prop3HSTBase">
+		<defName>Prop_3HSTcardboxSmallR</defName>
+		<label>abandoned cardboard box</label>
+		<description>An abandoned cardboard box of 3HST origin. Any valuables it once contained have degraded to uselessness, but itself can be deconstructed for some resource.</description>
+		<graphicData>
+			<texPath>Things/Building/Props/Prop_3HSTcardboxSmallR</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(2.2,2.2)</drawSize>
+			<shadowData>
+				<volume>(0.9, 0.5, 0.9)</volume>
+			</shadowData>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<size>(1, 1)</size>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+		</statBases>
+		<costList>
+			<Cloth>25</Cloth>
+		</costList>
+	</ThingDef>
+	
+	<ThingDef ParentName="Prop3HSTBase">
+		<defName>Prop_3HSTcardboxSmallL</defName>
+		<label>abandoned cardboard box</label>
+		<description>An abandoned cardboard box of 3HST origin. Any valuables it once contained have degraded to uselessness, but itself can be deconstructed for some resource.</description>
+		<graphicData>
+			<texPath>Things/Building/Props/Prop_3HSTcardboxSmallL</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<drawSize>(2.2,2.2)</drawSize>
 			<shadowData>
