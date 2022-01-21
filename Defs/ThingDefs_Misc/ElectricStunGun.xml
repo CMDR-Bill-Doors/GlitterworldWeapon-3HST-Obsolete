@@ -1,17 +1,34 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  
-  <DamageDef ParentName="Electrical">
-    <defName>ElectricStunGun</defName>
-    <label>non-lethal electric arc</label>
-    <deathMessage>{0} has been electrocuted.</deathMessage>
+	<DamageDef ParentName="BurnBase">
+		<defName>ElectricStunGun</defName>
+		<label>non-lethal electric arc</label>
+		<deathMessage>{0} has been tasered to death.</deathMessage>
+		<hediff>MuscleSpasms</hediff>
+		<hediffSkin>ElectricStunBurn</hediffSkin>
+		<hediffSolid>ElectricStunBurn</hediffSolid>
+		<hasForcefulImpact>false</hasForcefulImpact>
+		<makesBlood>false</makesBlood>
+		<armorCategory>Heat</armorCategory>
+		<canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+		<modExtensions>
+			<li Class="CombatExtended.DamageDefExtensionCE">
+				<harmOnlyOutsideLayers>true</harmOnlyOutsideLayers>
+			</li>
+		</modExtensions>
 
-    <hediff>MuscleSpasms</hediff>
-    <hediffSkin>ElectricalBurn</hediffSkin>
-    <hediffSolid>ElectricalBurn</hediffSolid>
-  </DamageDef>
+	</DamageDef>
 
-  <ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" ParentName="BaseBullet">
+	<HediffDef ParentName="Burn">
+		<defName>ElectricStunBurn</defName>
+		<label>electric arc burn</label>
+		<labelNoun>an electric arc burn</labelNoun>
+		<comps>
+			<li Class="CombatExtended.HediffCompProperties_Beanbag"/>
+		</comps>
+	</HediffDef>
+
+	<ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" ParentName="BaseBullet">
     <defName>ElectricStunGunBeam</defName>
     <thingClass>CombatExtended.Lasers.LaserBeamCE</thingClass>
     <label>non-lethal electric arc</label>
@@ -30,10 +47,9 @@
     </textures>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <isInstant>true</isInstant>
-      <damageDef>Taser</damageDef>
-      <damageAmountBase>2</damageAmountBase>
+      <damageDef>ElectricStunGun</damageDef>
+      <damageAmountBase>5</damageAmountBase>
       <armorPenetrationSharp>18.25</armorPenetrationSharp>
-      <armorPenetrationBlunt>0.001</armorPenetrationBlunt>
     </projectile>
     <modExtensions>
       <li Class="ProjectileImpactFX.EffectProjectileExtension">
@@ -50,7 +66,7 @@
   <ThingDef ParentName="Base3HSTHeavyGun">
     <defName>Gun_3HST_ElectricStunGun</defName>
     <label>3HST non-lethal electric arc gun</label>
-    <description>An expensive non-lethal weapon solution.</description>
+    <description>An expensive and clumbersome non-lethal weapon solution.</description>
     <graphicData>
       <texPath>Things/Weapons/ElectricStunRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -66,10 +82,10 @@
       <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
     </statBases>
     <costList>
-      <Steel>220</Steel>
-      <Plasteel>80</Plasteel>
+      <Steel>250</Steel>
+      <Plasteel>100</Plasteel>
       <ComponentIndustrial>10</ComponentIndustrial>
-      <ComponentSpacer>1</ComponentSpacer>
+      <ComponentSpacer>2</ComponentSpacer>
       <Resource_3HST_RailComponent>4</Resource_3HST_RailComponent>
     </costList>
     <verbs>
@@ -77,15 +93,14 @@
         <verbClass>BDsGlitterworldFaction3HST.Verb_ShootByBarrel</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>ElectricStunGunBeam</defaultProjectile>
-        <warmupTime>1.1</warmupTime>
-        <burstShotCount>10</burstShotCount>
+        <warmupTime>2.1</warmupTime>
+        <burstShotCount>6</burstShotCount>
         <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-        <range>86</range>
+        <range>15</range>
         <soundCast>RG_9mm</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <recoilAmount>0</recoilAmount>
         <muzzleFlashScale>18</muzzleFlashScale>
-        <ai_AvoidFriendlyFireRadius>2</ai_AvoidFriendlyFireRadius>
       </li>
     </verbs>
     <modExtensions>
@@ -96,8 +111,7 @@
     </modExtensions>
     <comps>
       <li Class="CombatExtended.CompProperties_FireModes">
-        <aimedBurstShotCount>5</aimedBurstShotCount>
-        <aiUseBurstMode>FALSE</aiUseBurstMode>
+		  <aimedBurstShotCount>5</aimedBurstShotCount>
         <aiAimMode>SuppressFire</aiAimMode>
       </li>
       <li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeBarrel">
@@ -107,7 +121,6 @@
       </li>
     </comps>
 	  <weaponTags Inherit="False"/>
-    <!--<AllowWithRunAndGun>false</AllowWithRunAndGun>-->
     <recipeMaker>
       <researchPrerequisite>Research_3HST_Railgun</researchPrerequisite>
     </recipeMaker>

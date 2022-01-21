@@ -84,4 +84,36 @@
 			<li Class="BDsGlitterworldFaction3HST.JobGiver_RailRearm"/>
 		</value>
 	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/HediffDef[defName="Burn" and @Name="Burn"]</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAttributeSet">
+				<xpath>Defs/HediffDef[defName="Burn"]</xpath>
+				<attribute>Name</attribute>
+				<value>Burn</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/DamageDef[defName="Burn" and @Name="BurnBase"]</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAttributeSet">
+				<xpath>Defs/DamageDef[defName="Burn"]</xpath>
+				<attribute>Name</attribute>
+				<value>BurnBase</value>
+			</li>
+		</operations>
+	</Operation>
+
+
 </Patch>

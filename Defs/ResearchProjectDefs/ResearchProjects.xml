@@ -6,20 +6,20 @@
     <description>Allows production of 3HST-designed railguns.</description>
     <baseCost>2000</baseCost>
     <techLevel>Spacer</techLevel>
-    <prerequisites>
-      <li>ChargedShot</li>
-    </prerequisites>
+	  <hiddenPrerequisites>
+		  <li>ChargedShot</li>
+	  </hiddenPrerequisites>
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <researchViewX>16.00</researchViewX>
-    <researchViewY>3.8</researchViewY>
+    <researchViewY>5.3</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
     <defName>Research_3HST_Railgun_Components</defName>
-    <label>3HST railgun components</label>
+    <label>3HST EMA rails</label>
     <description>Allows production of advanced electromagnetic accelerators used by 3HST railguns.</description>
     <baseCost>5000</baseCost>
     <techLevel>Spacer</techLevel>
@@ -35,8 +35,8 @@
     <techprintMarketValue>3000</techprintMarketValue>
     -->
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-    <researchViewX>16.00</researchViewX>
-    <researchViewY>4.8</researchViewY>
+    <researchViewX>17.00</researchViewX>
+    <researchViewY>5.3</researchViewY>
   </ResearchProjectDef>
 
 
