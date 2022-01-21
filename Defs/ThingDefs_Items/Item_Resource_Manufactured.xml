@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="ResourceBase">
-    <defName>Resource_3HST_RailComponent</defName>
+    <defName>RailComponent</defName>
     <label>electromagnetic accelerator rail</label>
     <description>Advanced magnetic accelerator rails used in various 3HST railgun designs</description>
     <graphicData>
