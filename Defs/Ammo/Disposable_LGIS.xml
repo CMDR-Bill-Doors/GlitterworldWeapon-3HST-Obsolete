@@ -933,7 +933,7 @@
 						<li>FSX</li>
 					</thingDefs>
 				</filter>
-				<count>15</count>
+				<count>10</count>
 			</li>
 			<li>
 				<filter>
@@ -1105,7 +1105,7 @@
 						<li>FSX</li>
 					</thingDefs>
 				</filter>
-				<count>45</count>
+				<count>35</count>
 			</li>
 			<li>
 				<filter>
@@ -1230,7 +1230,7 @@
 						<li>Prometheum</li>
 					</thingDefs>
 				</filter>
-				<count>6</count>
+				<count>5</count>
 			</li>
 			<li>
 				<filter>
@@ -1285,7 +1285,7 @@
 						<li>FSX</li>
 					</thingDefs>
 				</filter>
-				<count>15</count>
+				<count>5</count>
 			</li>
 			<li>
 				<filter>
@@ -1348,7 +1348,7 @@
 						<li>MeatRaw</li>
 					</categories>
 				</filter>
-				<count>20</count>
+				<count>10</count>
 			</li>
 			<li>
 				<filter>
@@ -1458,7 +1458,7 @@
 						<li>Prometheum</li>
 					</thingDefs>
 				</filter>
-				<count>6</count>
+				<count>5</count>
 			</li>
 			<li>
 				<filter>
