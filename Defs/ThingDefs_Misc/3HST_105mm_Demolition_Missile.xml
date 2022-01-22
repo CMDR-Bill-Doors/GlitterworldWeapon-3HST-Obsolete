@@ -101,6 +101,7 @@
     <alwaysHaulable>True</alwaysHaulable>
     <techLevel>Spacer</techLevel>
     <tickerType>Never</tickerType>
+	  <generateCommonality>0.2</generateCommonality>
     <thingCategories>
       <li>WeaponsRanged</li>
     </thingCategories>
@@ -172,7 +173,7 @@
       <texPath>Things/Weapons/Demolition_Rocket/3HST_105mm_Demolition_Rocket_Thermobaric_Launcher</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <generateCommonality>0.2</generateCommonality>
+    <generateCommonality>0.04</generateCommonality>
     <weaponTags>
       <li>3HST_Demolition</li>
     </weaponTags>
@@ -208,7 +209,7 @@
       <texPath>Things/Weapons/Demolition_Rocket/3HST_105mm_Demolition_Rocket_Thermobaric_Launcher_Tacticool</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <generateCommonality>0.1</generateCommonality>
+    <generateCommonality>0.02</generateCommonality>
     <weaponTags>
       <li>Gun</li>
       <li>GunSingleUse</li>
@@ -316,7 +317,7 @@
       <texPath>Things/Weapons/Demolition_Rocket/3HST_105mm_Demolition_Rocket_Incendiary_Launcher</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <generateCommonality>0.5</generateCommonality>
+    <generateCommonality>0.02</generateCommonality>
     <weaponTags>
       <li>3HST_Demolition</li>
     </weaponTags>
@@ -352,7 +353,7 @@
       <texPath>Things/Weapons/Demolition_Rocket/3HST_105mm_Demolition_Rocket_Incendiary_Launcher_Tacticool</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <generateCommonality>0.1</generateCommonality>
+    <generateCommonality>0.02</generateCommonality>
     <weaponTags>
       <li>Gun</li>
       <li>GunSingleUse</li>
