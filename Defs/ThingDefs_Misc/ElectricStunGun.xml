@@ -119,6 +119,11 @@
         <label>Rail durability</label>
         <loadingAmount>75</loadingAmount>
       </li>
+		<li Class="ThreeHST.CompProperties_ShowConcept">
+			<concepts>
+				<li>BDGW_RailRearm</li>
+			</concepts>
+		</li>
     </comps>
 	  <weaponTags Inherit="False"/>
     <recipeMaker>

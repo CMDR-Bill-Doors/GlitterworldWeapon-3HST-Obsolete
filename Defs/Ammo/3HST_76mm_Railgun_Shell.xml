@@ -30,7 +30,7 @@
 
   <!-- ==================== Ammo ========================== -->
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="SmallAmmoBase">
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="HeavyAmmoBase">
     <defName>Ammo_3HST76mmRG_Steel</defName>
     <label>3HST 76mm Steel Railgun Shell (Sabot)</label>
     <description>Large caliber railgun shells used by a variety of 3HST-made heavy weapons, including tank guns and corvette main guns.\nThis shell is a solid penetrator.</description>
@@ -38,8 +38,7 @@
       <Mass>40</Mass>
       <Bulk>15.25</Bulk>
     </statBases>
-    <tradeTags>
-      <li>CE_AutoEnableTrade</li>
+    <tradeTags  inherit="false">
       <li>CE_AutoEnableCrafting_FabricationBench</li>
       <!-- Railgun ammo isn't handloaded because it contains no propellant, and the sabots must be precision-machined anyway -->
     </tradeTags>
@@ -51,12 +50,11 @@
       <texPath>Things/Ammo/Railgun/Ammo_3HST_76mm/Conventional</texPath>
       <graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
       <drawSize>1.5</drawSize>
-
-    </graphicData>
+	</graphicData>
     <ammoClass>RailgunSabot</ammoClass>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="SmallAmmoBase">
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="HeavyAmmoBase">
     <defName>Ammo_3HST76mmRG_HE</defName>
     <label>3HST 76mm Steel Railgun Shell (AP_HE)</label>
     <description>Large caliber railgun shells used by a variety of 3HST-made heavy weapons, including tank guns and corvette main guns.\nThis shell is a explosive filling behind a half-length penetrator.</description>
@@ -64,8 +62,7 @@
       <Mass>30</Mass>
       <Bulk>15.25</Bulk>
     </statBases>
-    <tradeTags>
-      <li>CE_AutoEnableTrade</li>
+    <tradeTags  inherit="false">
       <li>CE_AutoEnableCrafting_FabricationBench</li>
       <!-- Railgun ammo isn't handloaded because it contains no propellant, and the sabots must be precision-machined anyway -->
     </tradeTags>
@@ -77,7 +74,6 @@
       <texPath>Things/Ammo/Railgun/Ammo_3HST_76mm/APHE</texPath>
       <graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
       <drawSize>1.5</drawSize>
-
     </graphicData>
     <ammoClass>ExplosiveAP</ammoClass>
   </ThingDef>

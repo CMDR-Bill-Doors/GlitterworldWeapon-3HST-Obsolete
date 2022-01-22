@@ -15,7 +15,7 @@
     <label>Rearming Railguns</label>
     <priority>50</priority>
     <needsOpportunity>True</needsOpportunity>
-    <helpText>Railguns of both handheld and turret mounted consumes rail durability when firing, which are replenished with electromagnetic accelerator rails, the same one you make railguns with.\n\nTo replace the spent rails, equip the gun that needs replacement, right-click on an electromagnetic accelerator rail on the ground and select "Rearm rail"\n\nNote that all LGIS launchers but the dual LGIS turret are railguns and require rails as well.</helpText>
+    <helpText>Railguns of both handheld and turret mounted consumes rail durability when firing, which are replenished with electromagnetic accelerator rails, the same one you make railguns with.\n\nTo replace the spent rails, equip the gun that needs replacement, right-click on an electromagnetic accelerator rail on the ground and select "Rearm rail"\n\nNote that all LGIS launchers but the dual LGIS turret are railguns and require rails as well.\n\nYour pawn will try to rearm their main weapon if its rail durability has fallen below 20%, or has less than 25 shots left, whichever is earlier.</helpText>
     <highlightTags>
       <li>BDGW_RailRearm</li>
     </highlightTags>
@@ -38,9 +38,20 @@
     <label>LGIS missiles</label>
     <priority>50</priority>
     <needsOpportunity>True</needsOpportunity>
-    <helpText>The LGIS missile, short for Laser-Guided-Infantry-Support missiles comes in the form of ready-to-fire launch tubes. While launch them as disposable rockets are a perfectly valid way of using them, you can also load and fire them in rail-assisted dedictated launchers for greater range, accurancy or fire rate.\n\nMost if not all LGIS launchers, including disposable launch tubes themselves, are capable of switching between direct fire and indirect, mortar-like fire.\n\nIt's noteworthy that most LGIS launchers are railguns, requiring rails and power to function, with the sole exception of dual LGIS launcher. And LGIS launch tubes in their indirect-fire mode cannot be used in launcher as ammo, they have to be switched back to direct mode for that.</helpText>
+    <helpText>The LGIS missile, short for Laser-Guided-Infantry-Support missiles comes in the form of ready-to-fire launch tubes. While launch them as disposable rockets are a perfectly valid way of using them, you can also load and fire them in rail-assisted dedictated launchers for greater range, accurancy or fire rate.\n\nMost if not all LGIS launchers, including disposable launch tubes themselves, are capable of switching between direct fire and indirect, mortar-like fire.\n\nIt's noteworthy that most LGIS launchers are railguns, requiring rails and power to function, with the sole exception of dual LGIS launcher.</helpText>
     <highlightTags>
       <li>BDGW_LGIS</li>
     </highlightTags>
   </ConceptDef>
+
+	<ConceptDef>
+		<defName>BDGW_Turret</defName>
+		<label>Railgun turrets</label>
+		<priority>50</priority>
+		<needsOpportunity>True</needsOpportunity>
+		<helpText>Railgun turrets, even manual ones, consume power after firing to recharge their capacitors. Turrets will have extra power consumption during turret cool down, proportional to rounds fired in the previous salvo, fewer the shot, lower the power draw, so don't be afraid to switch them to single-shot mode.\n\nThe electricity consumed per shot is displayed on the left-lower panel and info panel of the turret, while some deviation may occur, it should be within 5/4 of the expected power consumption.\n\nDon't panic if your turret are consuming half a million watt per day, it'll only last for a second!</helpText>
+		<highlightTags>
+			<li>BDGW_Turret</li>
+		</highlightTags>
+	</ConceptDef>
 </Defs>

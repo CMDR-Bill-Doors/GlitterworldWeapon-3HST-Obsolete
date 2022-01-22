@@ -70,6 +70,12 @@
 				<label>Rail durability</label>
 				<loadingAmount>10</loadingAmount>
 			</li>
+			<li Class="ThreeHST.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_RailPiercing</li>
+				</concepts>
+			</li>
 		</comps>
 		<recipeMaker>
 			<researchPrerequisite>CE_AdvancedLaunchers</researchPrerequisite>
@@ -130,6 +136,13 @@
 				<minimumFueledThreshold>1</minimumFueledThreshold>
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 				<fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
+			</li>
+			<li Class="ThreeHST.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_RailPiercing</li>
+					<li>BDGW_Turret</li>
+				</concepts>
 			</li>
 		</comps>
 		<description>A 3HST-XML-58 corvette maingun module armed with a 76mm heavy railgun. Turrets like this are commonly found on 3HST corvettes and frigates. This turret is too large to be placed under a roof.</description>

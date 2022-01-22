@@ -61,6 +61,12 @@
         <label>Rail durability</label>
         <loadingAmount>500</loadingAmount>
       </li>
+		<li Class="ThreeHST.CompProperties_ShowConcept">
+			<concepts>
+				<li>BDGW_RailRearm</li>
+				<li>BDGW_RailPiercing</li>
+			</concepts>
+		</li>
     </comps>
     <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">
@@ -134,6 +140,12 @@
         <label>Rail durability</label>
         <loadingAmount>500</loadingAmount>
       </li>
+		<li Class="ThreeHST.CompProperties_ShowConcept">
+			<concepts>
+				<li>BDGW_RailRearm</li>
+				<li>BDGW_RailPiercing</li>
+			</concepts>
+		</li>
     </comps>
     <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">
@@ -209,6 +221,12 @@
         <label>Rail durability</label>
         <loadingAmount>500</loadingAmount>
       </li>
+		<li Class="ThreeHST.CompProperties_ShowConcept">
+			<concepts>
+				<li>BDGW_RailRearm</li>
+				<li>BDGW_RailPiercing</li>
+			</concepts>
+		</li>
     </comps>
     <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">

@@ -68,6 +68,12 @@
        <label>Rail durability</label>
        <loadingAmount>125</loadingAmount>
      </li>
+		<li Class="ThreeHST.CompProperties_ShowConcept">
+			<concepts>
+				<li>BDGW_RailRearm</li>
+				<li>BDGW_RailPiercing</li>
+			</concepts>
+		</li>
     </comps>
   </ThingDef>
 
@@ -145,6 +151,12 @@
         <label>Rail durability</label>
         <loadingAmount>125</loadingAmount>
       </li>
+		<li Class="ThreeHST.CompProperties_ShowConcept">
+			<concepts>
+				<li>BDGW_RailRearm</li>
+				<li>BDGW_RailPiercing</li>
+			</concepts>
+		</li>
     </comps>
   </ThingDef>
 
@@ -214,6 +226,12 @@
         <label>Rail durability</label>
         <loadingAmount>125</loadingAmount>
       </li>
+		<li Class="ThreeHST.CompProperties_ShowConcept">
+			<concepts>
+				<li>BDGW_RailRearm</li>
+				<li>BDGW_RailPiercing</li>
+			</concepts>
+		</li>
     </comps>
   </ThingDef>
 

@@ -1,98 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!--
-  <CombatExtended.AmmoSetDef>
-    <defName>AmmoSet_3HST5mmLPRG</defName>
-    <label>3HST 5mm railgun</label>
-    <ammoTypes>
-      <Ammo_3HST5mmRG_Steel>Projectile_3HST5mmLPRG_Steel</Ammo_3HST5mmRG_Steel>
-    </ammoTypes>
-  </CombatExtended.AmmoSetDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
-    <defName>Projectile_3HST5mmLPRG_Steel</defName>
-    <label>Low Power 5mm Railgun bullet (Sabot)</label>
-    <graphicData>
-      <texPath>Things/Projectile/Projectile_3HST_Rail</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1.6,1.6)</drawSize>
-    </graphicData>
-    <projectile Class="CombatExtended.ProjectilePropertiesCE">
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>10</damageAmountBase>
-      <armorPenetrationSharp>22.3</armorPenetrationSharp>
-      <armorPenetrationBlunt>170.7</armorPenetrationBlunt>
-      <speed>260</speed>
-    </projectile>
-  </ThingDef>
--->
-<!--================= Low Power Railgun ================-->
-	<!--
-  <ThingDef ParentName="Base3HSTLongGun">
-    <defName>Gun_3HST_LPRG</defName>
-    <label>3HST low power railgun</label>
-    <description>Standard service rifle of 3HST slave-fodders. Decreased muzzle velocity and longer rail greatly reduced the stress of power system and rails, allowing cheaper materials to be used on this rifle.</description>    <graphicData>
-      <texPath>Things/Weapons/3HST_IWR_13_Low_Power_Railgun</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <statBases>
-      <WorkToMake>40000</WorkToMake>
-      <Mass>3.8</Mass>
-      <Bulk>11</Bulk>
-      <SwayFactor>1.48</SwayFactor>
-      <ShotSpread>0.05</ShotSpread>
-      <SightsEfficiency>1</SightsEfficiency>
-      <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
-      <NightVisionEfficiency_Weapon>0.4</NightVisionEfficiency_Weapon>
-    </statBases>
-    <costList>
-      <Steel>55</Steel>
-      <Plasteel>30</Plasteel>
-      <ComponentIndustrial>10</ComponentIndustrial>
-      <ComponentSpacer>1</ComponentSpacer>
-    </costList>
-    <verbs>
-      <li Class="CombatExtended.VerbPropertiesCE">
-        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Projectile_3HST5mmLPRG_Steel</defaultProjectile>
-        <warmupTime>1.1</warmupTime>
-        <burstShotCount>6</burstShotCount>
-        <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
-        <range>62</range>
-        <soundCast>RG_5mm</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
-        <recoilAmount>2.62</recoilAmount>
-        <muzzleFlashScale>5</muzzleFlashScale>
-      </li>
-    </verbs>
-    <comps>
-      <li Class="CombatExtended.CompProperties_AmmoUser">
-        <magazineSize>20</magazineSize>
-        <reloadTime>4.5</reloadTime>
-        <ammoSet>AmmoSet_3HST5mmLPRG</ammoSet>
-      </li>
-      <li Class="CombatExtended.CompProperties_FireModes">
-        <aimedBurstShotCount>3</aimedBurstShotCount>
-        <aiAimMode>AimedShot</aiAimMode>
-      </li>
-    </comps>
-    <modExtensions>
-      <li Class="CombatExtended.GunDrawExtension">
-        <DrawSize>1,1</DrawSize>
-        <DrawOffset>-0.05,-0.07</DrawOffset>
-      </li>
-    </modExtensions>
-    <weaponTags>
-      <li>IndustrialGunAdvanced</li>
-      <li>CE_AI_AssaultWeapon</li>
-      <li>3HST_SlaveRG</li>
-    </weaponTags>
-    <recipeMaker>
-      <researchPrerequisite>Research_3HST_Railgun</researchPrerequisite>
-    </recipeMaker>
-  </ThingDef>
--->
 <!--================= Assault Railgun ===================-->
   <ThingDef ParentName="Base3HSTLongGun">
     <defName>Gun_3HST_Assault_Railgun</defName>
@@ -150,6 +58,12 @@
         <label>Rail durability</label>
         <loadingAmount>250</loadingAmount>
       </li>
+		<li Class="ThreeHST.CompProperties_ShowConcept">
+			<concepts>
+				<li>BDGW_RailRearm</li>
+				<li>BDGW_RailPiercing</li>
+			</concepts>
+		</li>
     </comps>
     <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">
@@ -228,6 +142,12 @@
         <label>Rail durability</label>
         <loadingAmount>250</loadingAmount>
       </li>
+		<li Class="ThreeHST.CompProperties_ShowConcept">
+			<concepts>
+				<li>BDGW_RailRearm</li>
+				<li>BDGW_RailPiercing</li>
+			</concepts>
+		</li>
     </comps>
     <weaponTags>
       <li>CE_MachineGun</li>
@@ -308,6 +228,12 @@
         <label>Rail durability</label>
         <loadingAmount>250</loadingAmount>
       </li>
+		<li Class="ThreeHST.CompProperties_ShowConcept">
+			<concepts>
+				<li>BDGW_RailRearm</li>
+				<li>BDGW_RailPiercing</li>
+			</concepts>
+		</li>
     </comps>
     <weaponTags>
       <li>SniperRifle</li>
@@ -358,6 +284,13 @@
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
       </li>
+		<li Class="ThreeHST.CompProperties_ShowConcept">
+			<concepts>
+				<li>BDGW_RailRearm</li>
+				<li>BDGW_RailPiercing</li>
+				<li>BDGW_Turret</li>
+			</concepts>
+		</li>
     </comps>
     <description>A 3HST light machine railgun mounted on an stationary mount. Despite the fact this turret is manually operated, this turret still needs a amount of power to operate since railguns consumes power.</description>
     <costList>
@@ -416,6 +349,13 @@
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
       </li>
+		<li Class="ThreeHST.CompProperties_ShowConcept">
+			<concepts>
+				<li>BDGW_RailRearm</li>
+				<li>BDGW_RailPiercing</li>
+				<li>BDGW_Turret</li>
+			</concepts>
+		</li>
     </comps>
     <costList>
       <Plasteel>40</Plasteel>
@@ -471,6 +411,13 @@
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
       </li>
+		<li Class="ThreeHST.CompProperties_ShowConcept">
+			<concepts>
+				<li>BDGW_RailRearm</li>
+				<li>BDGW_RailPiercing</li>
+				<li>BDGW_Turret</li>
+			</concepts>
+		</li>
     </comps>
     <costList>
       <Steel>25</Steel>
@@ -625,6 +572,13 @@
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
       </li>
+		<li Class="ThreeHST.CompProperties_ShowConcept">
+			<concepts>
+				<li>BDGW_RailRearm</li>
+				<li>BDGW_RailPiercing</li>
+				<li>BDGW_Turret</li>
+			</concepts>
+		</li>
     </comps>
     <costList>
       <Plasteel>100</Plasteel>

@@ -20,7 +20,7 @@
 
   <!-- ==================== Ammo ========================== -->
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="SmallAmmoBase">
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
     <defName>Ammo_3HST4mmRG_Steel</defName>
     <label>3HST 4x35mm Steel Railgun Slug</label>
     <description>Small caliber railgun cartridges used by a variety of 3HST-made weapons</description>

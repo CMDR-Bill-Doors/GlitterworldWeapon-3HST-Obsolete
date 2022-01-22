@@ -61,6 +61,13 @@
         <label>Rail durability</label>
         <loadingAmount>50</loadingAmount>
       </li>
+		<li Class="ThreeHST.CompProperties_ShowConcept">
+			<concepts>
+				<li>BDGW_RailRearm</li>
+				<li>BDGW_RailPiercing</li>
+				<li>BDGW_Turret</li>
+			</concepts>
+		</li>
     </comps>
     <weaponTags>
       <li>3HST_Autocannon</li>
@@ -118,6 +125,13 @@
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
       </li>
+		<li Class="ThreeHST.CompProperties_ShowConcept">
+			<concepts>
+				<li>BDGW_RailRearm</li>
+				<li>BDGW_RailPiercing</li>
+				<li>BDGW_Turret</li>
+			</concepts>
+		</li>
     </comps>
     <description>A 3HST rail autocannon mounted on an fixed mount. Despite the fact this turret is manually operated, this turret still needs a amount of power to operate since railguns consumes power.</description>
     <costList>
@@ -188,6 +202,13 @@
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
       </li>
+		<li Class="ThreeHST.CompProperties_ShowConcept">
+			<concepts>
+				<li>BDGW_RailRearm</li>
+				<li>BDGW_RailPiercing</li>
+				<li>BDGW_Turret</li>
+			</concepts>
+		</li>
     </comps>
     <costList>
       <Plasteel>100</Plasteel>
@@ -254,6 +275,13 @@
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
       </li>
+		<li Class="ThreeHST.CompProperties_ShowConcept">
+			<concepts>
+				<li>BDGW_RailRearm</li>
+				<li>BDGW_RailPiercing</li>
+				<li>BDGW_Turret</li>
+			</concepts>
+		</li>
     </comps>
     <costList>
       <Plasteel>100</Plasteel>

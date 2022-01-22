@@ -101,6 +101,12 @@
 				<label>Rail durability</label>
 				<loadingAmount>50</loadingAmount>
 			</li>
+			<li Class="ThreeHST.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_LGIS</li>
+				</concepts>
+			</li>
 		</comps>
 		<weaponTags>
 			<li>CE_AI_AOE</li>
@@ -222,6 +228,12 @@
 				<label>Rail durability</label>
 				<loadingAmount>50</loadingAmount>
 			</li>
+			<li Class="ThreeHST.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_LGIS</li>
+				</concepts>
+			</li>
 		</comps>
 		<weaponTags>
 			<li>CE_AI_AOE</li>
@@ -260,6 +272,11 @@
 		</statBases>
 		<comps>
 			<li Class="ThreeHST.CompProperties_TurretWithSecondaryAmmo"/>
+			<li Class="ThreeHST.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_LGIS</li>
+				</concepts>
+			</li>
 		</comps>
 		<designatorDropdown Inherit="False">Group_LGIS_Launchers</designatorDropdown>
 		<techLevel>Spacer</techLevel>
@@ -426,6 +443,13 @@
 				<fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
 			</li>
 			<li Class="ThreeHST.CompProperties_TurretWithSecondaryAmmo"/>
+			<li Class="ThreeHST.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_LGIS</li>
+					<li>BDGW_Turret</li>
+				</concepts>
+			</li>
 		</comps>
 		<fillPercent>0.9</fillPercent>
 		<description>A multiple LGIS missile turret with it's targeting system set to direct fire.</description>
@@ -580,6 +604,13 @@
 				<fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
 			</li>
 			<li Class="ThreeHST.CompProperties_TurretWithSecondaryAmmo"/>
+			<li Class="ThreeHST.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_LGIS</li>
+					<li>BDGW_Turret</li>
+				</concepts>
+			</li>
 		</comps>
 		<fillPercent>0.9</fillPercent>
 		<description>A multiple LGIS missile turret with it's targeting system set to direct fire.</description>

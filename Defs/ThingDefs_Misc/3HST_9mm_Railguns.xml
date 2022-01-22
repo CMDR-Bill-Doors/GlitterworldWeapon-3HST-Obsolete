@@ -61,6 +61,12 @@
         <label>Rail durability</label>
         <loadingAmount>125</loadingAmount>
       </li>
+		<li Class="ThreeHST.CompProperties_ShowConcept">
+			<concepts>
+				<li>BDGW_RailRearm</li>
+				<li>BDGW_RailPiercing</li>
+			</concepts>
+		</li>
     </comps>
     <weaponTags>
       <li>SniperRifle</li>
@@ -136,6 +142,12 @@
         <label>Rail durability</label>
         <loadingAmount>125</loadingAmount>
       </li>
+		<li Class="ThreeHST.CompProperties_ShowConcept">
+			<concepts>
+				<li>BDGW_RailRearm</li>
+				<li>BDGW_RailPiercing</li>
+			</concepts>
+		</li>
     </comps>
     <weaponTags>
       <li>GunHeavy</li>
@@ -185,6 +197,13 @@
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
       </li>
+		<li Class="ThreeHST.CompProperties_ShowConcept">
+			<concepts>
+				<li>BDGW_RailRearm</li>
+				<li>BDGW_RailPiercing</li>
+				<li>BDGW_Turret</li>
+			</concepts>
+		</li>
     </comps>
     <description>A 3HST heavy machine railgun mounted on an stationary mount. Despite the fact this turret is manually operated, this turret still needs a amount of power to operate since railguns consumes power.</description>
     <costList>
@@ -241,6 +260,13 @@
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
       </li>
+		<li Class="ThreeHST.CompProperties_ShowConcept">
+			<concepts>
+				<li>BDGW_RailRearm</li>
+				<li>BDGW_RailPiercing</li>
+				<li>BDGW_Turret</li>
+			</concepts>
+		</li>
     </comps>
     <costList>
       <Plasteel>40</Plasteel>
@@ -296,6 +322,13 @@
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
       </li>
+		<li Class="ThreeHST.CompProperties_ShowConcept">
+			<concepts>
+				<li>BDGW_RailRearm</li>
+				<li>BDGW_RailPiercing</li>
+				<li>BDGW_Turret</li>
+			</concepts>
+		</li>
     </comps>
     <costList>
       <Plasteel>25</Plasteel>
@@ -410,6 +443,13 @@
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
       </li>
+		<li Class="ThreeHST.CompProperties_ShowConcept">
+			<concepts>
+				<li>BDGW_RailRearm</li>
+				<li>BDGW_RailPiercing</li>
+				<li>BDGW_Turret</li>
+			</concepts>
+		</li>
     </comps>
     <costList>
       <Plasteel>40</Plasteel>
@@ -475,6 +515,13 @@
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
       </li>
+		<li Class="ThreeHST.CompProperties_ShowConcept">
+			<concepts>
+				<li>BDGW_RailRearm</li>
+				<li>BDGW_RailPiercing</li>
+				<li>BDGW_Turret</li>
+			</concepts>
+		</li>
     </comps>
     <costList>
       <Plasteel>25</Plasteel>
@@ -539,6 +586,13 @@
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
       </li>
+		<li Class="ThreeHST.CompProperties_ShowConcept">
+			<concepts>
+				<li>BDGW_RailRearm</li>
+				<li>BDGW_RailPiercing</li>
+				<li>BDGW_Turret</li>
+			</concepts>
+		</li>
     </comps>
     <description>A 3HST anti-armor sniper railgun mounted on an tripod mount.</description>
     <costList>
@@ -638,6 +692,13 @@
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
       </li>
+		<li Class="ThreeHST.CompProperties_ShowConcept">
+			<concepts>
+				<li>BDGW_RailRearm</li>
+				<li>BDGW_RailPiercing</li>
+				<li>BDGW_Turret</li>
+			</concepts>
+		</li>
     </comps>
     <costList>
       <Plasteel>40</Plasteel>

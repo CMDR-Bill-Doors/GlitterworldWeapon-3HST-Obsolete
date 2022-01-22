@@ -62,6 +62,11 @@
 				<aiUseBurstMode>FALSE</aiUseBurstMode>
 				<aiAimMode>AimedShot</aiAimMode>
 			</li>
+			<li Class="ThreeHST.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_LGIS</li>
+				</concepts>
+			</li>
 		</comps>
 
 		<tools>
@@ -123,7 +128,7 @@
 			<li>3HST_Weapons</li>
 		</weaponTags>
 		<tradeTags>
-			<li>CE_Ammo</li>
+			<li>CE_HeavyAmmo</li>
 		</tradeTags>
 	</ThingDef>
 

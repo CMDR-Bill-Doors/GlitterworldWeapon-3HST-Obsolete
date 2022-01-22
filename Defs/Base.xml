@@ -291,10 +291,6 @@
     <weaponClasses>
       <li>RangedLight</li>
     </weaponClasses>
-    <comps>
-      <!--li Class="CompProperties_Styleable" /-->
-      <!-- Removed due to red letters during load-->
-    </comps>
     <thingCategories>
       <li>Gun3HST</li>
     </thingCategories>
