@@ -3,7 +3,7 @@
   <ResearchProjectDef>
     <defName>Research_3HST_Railgun</defName>
     <label>3HST railguns</label>
-    <description>Allows production of 3HST-designed railguns.</description>
+    <description>Allows production of 3HST-designed railguns, weapons that trade barrel life and damage for penetration.</description>
     <baseCost>2000</baseCost>
     <techLevel>Spacer</techLevel>
 	  <hiddenPrerequisites>
@@ -20,7 +20,7 @@
   <ResearchProjectDef>
     <defName>Research_3HST_Railgun_Components</defName>
     <label>3HST EMA rails</label>
-    <description>Allows production of advanced electromagnetic accelerators used by 3HST railguns.</description>
+    <description>Allows production of advanced electromagnetic accelerators, an essential component if you want to keep your railguns firing.</description>
     <baseCost>5000</baseCost>
     <techLevel>Spacer</techLevel>
     <prerequisites>

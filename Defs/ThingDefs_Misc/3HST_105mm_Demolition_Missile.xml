@@ -74,7 +74,7 @@
   </ThingDef>
 
   <ThingDef Name="Base105mmDemoLauncher" Abstract="True">
-    <description>Dedicated indirect fire infantry support missile.</description>
+    <description>Dedicated indirect fire infantry support missile, replacing ill-reputated LGIS missiles in 3HST military. Not so versatile and affordable than LGIS, but packs some real punch.</description>
     <soundInteract>Interact_Rifle</soundInteract>
     <category>Item</category>
     <thingClass>ThingWithComps</thingClass>

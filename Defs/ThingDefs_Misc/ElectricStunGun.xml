@@ -66,7 +66,7 @@
   <ThingDef ParentName="Base3HSTHeavyGun">
     <defName>Gun_3HST_ElectricStunGun</defName>
     <label>3HST non-lethal electric arc gun</label>
-    <description>An expensive and clumbersome non-lethal weapon solution.</description>
+    <description>An expensive and clumbersome non-lethal weapon solution, this weapon fires an electric arc from its electrodes, burning and electrifying the victim. The electrodes will erode from each fire, eventurally need a pair of accelerator rails to replace, which happened to be a good material for electrode and readily avaliable.</description>
     <graphicData>
       <texPath>Things/Weapons/ElectricStunRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>

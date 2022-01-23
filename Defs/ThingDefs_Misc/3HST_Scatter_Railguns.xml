@@ -56,7 +56,7 @@
     </modExtensions>
     <comps>
       <li Class="CombatExtended.CompProperties_AmmoUser">
-        <magazineSize>18</magazineSize>
+        <magazineSize>9</magazineSize>
         <reloadTime>4</reloadTime>
         <ammoSet>AmmoSet_ScatterRG</ammoSet>
       </li>
@@ -80,7 +80,7 @@
   <ThingDef ParentName="Base3HSTLongGun">
     <defName>Gun_3HST_Scatter_Railgun_Heavy</defName>
     <label>3HST "NCQ Spammer" Scatterailgun</label>
-    <description>A Machinegun-sized automatic scatterailgun developed by 3HST Limited during the Third Elven Civil War. Half shotgun, half machinegun, complete slaughter.</description>
+    <description>A Machinegun-sized automatic scatterailgun developed by 3HST Limited during the Third Elven Civil War, also capable of launching a variety of grenades. Half shotgun, half machinegun, complete slaughter.</description>
     <weaponClasses Inherit="False">
       <li>RangedHeavy</li>
     </weaponClasses>
@@ -163,7 +163,7 @@
   <ThingDef ParentName="Base3HSTLongGun">
     <defName>Gun_3HST_Scatter_Railgun_Pump</defName>
     <label>3HST "NCQ Splasher" Scatterailgun</label>
-    <description>A old school pump action scatterailgun developed by 3HST Limited during the Third Elven Civil War.</description>
+    <description>A old school pump action scatterailgun developed by 3HST Limited during the Third Elven Civil War, a popular choice for mafia-themed joywire recordings.</description>
     <graphicData>
       <texPath>Things/Weapons/3HST_IWR_21</texPath>
       <graphicClass>Graphic_Single</graphicClass>

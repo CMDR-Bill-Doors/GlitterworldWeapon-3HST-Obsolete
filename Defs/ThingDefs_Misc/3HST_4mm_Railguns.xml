@@ -4,7 +4,7 @@
   <ThingDef ParentName="Base3HSTShortGun">
     <defName>Gun_3HST_4mm_AutoRailPistol</defName>
     <label>3HST 4mm AutoRailPistol</label>
-    <description>Standard sidearm for 3HST combatants.</description>
+    <description>An automatic pistol chambered in 4mm railgun sabot. Standard sidearm for 3HST combatants.</description>
     <graphicData>
       <texPath>Things/Weapons/3HST_DWR_01_NCQ_RailPistol</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -83,7 +83,7 @@
   <ThingDef ParentName="Base3HSTShortGun">
     <defName>Gun_3HST_4mm_TriRailPistol</defName>
     <label>3HST 4mm Triple RailPistol</label>
-    <description>A highly simplified railgun that don't even contains srevos. Standard sidearm for 3HST slave-fodders</description>
+    <description>A highly simplified railgun that doesn't contain any servos. Standard sidearm for 3HST slave-fodders and a common sight in spacer spaghetti western joywire programs.</description>
     <graphicData>
       <texPath>Things/Weapons/3HST_DWR_04_RailPistol</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -162,7 +162,7 @@
   <ThingDef ParentName="Base3HSTShortGun">
     <defName>Gun_3HST_4mm_SMG</defName>
     <label>3HST 4mm Submachinerailgun</label>
-    <description>Standard sidearm for 3HST combatants.</description>
+    <description>A rail submachinegun with better fire rate, accuracy, handling and magazine capacity than auto pistol. Standard sidearm for 3HST combatants and armed police.</description>
     <graphicData>
       <texPath>Things/Weapons/3HST_DWR_04_Submachinerailgun</texPath>
       <graphicClass>Graphic_Single</graphicClass>

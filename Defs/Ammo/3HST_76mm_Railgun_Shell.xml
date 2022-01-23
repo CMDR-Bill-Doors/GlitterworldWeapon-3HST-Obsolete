@@ -57,7 +57,7 @@
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="HeavyAmmoBase">
     <defName>Ammo_3HST76mmRG_HE</defName>
     <label>3HST 76mm Steel Railgun Shell (AP_HE)</label>
-    <description>Large caliber railgun shells used by a variety of 3HST-made heavy weapons, including tank guns and corvette main guns.\nThis shell is a explosive filling behind a half-length penetrator.</description>
+    <description>Large caliber railgun shells used by a variety of 3HST-made heavy weapons, including tank guns and corvette main guns.\nThis shell has a explosive filling behind a half-length penetrator.</description>
     <statBases>
       <Mass>30</Mass>
       <Bulk>15.25</Bulk>

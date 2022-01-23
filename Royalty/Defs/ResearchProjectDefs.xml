@@ -3,7 +3,7 @@
   <ResearchProjectDef>
     <defName>Research_3HST_Scatterailgun</defName>
     <label>3HST Scatterailguns</label>
-    <description>Allows production of rarer scatterailguns.</description>
+    <description>Allows production of scatterailguns, high caliber low power railguns designed to fire buckshot and grenades.</description>
     <baseCost>5000</baseCost>
     <techLevel>Spacer</techLevel>
     <prerequisites>

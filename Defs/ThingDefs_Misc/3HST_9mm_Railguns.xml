@@ -3,7 +3,7 @@
   <ThingDef ParentName="Base3HSTLongGun">
     <defName>Gun_3HST_9mmDMR</defName>
     <label>3HST anti-armor rifle</label>
-    <description>Intermediate caliber sniper rifle developed by 3HST limited weaponry department, designed to fight enemy combatants in heavy armor.</description>
+    <description>Intermediate caliber sniper rifle developed by 3HST limited weaponry department, designed to fight enemy combatants in heavy armor when 5mm rifle is not enough.</description>
     <generateCommonality>0.2</generateCommonality>
     <graphicData>
       <texPath>Things/Weapons/3HST_IWR_08_DMR</texPath>

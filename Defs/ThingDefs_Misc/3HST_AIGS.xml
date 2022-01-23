@@ -3,7 +3,7 @@
   <ThingDef ParentName="Base3HSTHeavyGun">
     <defName>Gun_3HST_AutoGrenade</defName>
     <label>3HST automatic indirect grenade system</label>
-    <description>A automatic grenade launcher designed to fire at a high angle.</description>
+    <description>A automatic grenade launcher designed to fire at a high angle, raining grenade from above.</description>
     <graphicData>
       <drawSize>1.5,1.5</drawSize>
       <texPath>Things/Weapons/3HST_Automatic_Indirect_Grenade_System</texPath>

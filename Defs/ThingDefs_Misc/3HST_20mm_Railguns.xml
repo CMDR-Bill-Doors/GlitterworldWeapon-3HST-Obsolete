@@ -3,7 +3,7 @@
   <ThingDef ParentName="Base3HSTHeavyGun">
     <defName>Gun_3HST_20mmAutocannon</defName>
     <label>3HST 20mm vehicle rail autocannon</label>
-    <description>High caliber, fast firing railgun commonly found on a wide variety of 3HST vehicles, from IFV to space warship AA guns.</description>
+    <description>High caliber, fast firing railgun commonly found on a wide variety of 3HST vehicles, from IFV to space warship AA guns, and probably super strength ancient soldiers with archotech implants.</description>
     <graphicData>
       <texPath>Things/Weapons/3HST_HWR_11_Autocannon</texPath>
       <graphicClass>Graphic_Single</graphicClass>
