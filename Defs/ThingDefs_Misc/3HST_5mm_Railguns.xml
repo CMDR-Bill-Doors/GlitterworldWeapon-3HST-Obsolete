@@ -118,7 +118,7 @@
         <warmupTime>1.2</warmupTime>
         <burstShotCount>20</burstShotCount>
         <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
-        <range>65</range>
+        <range>68</range>
         <soundCast>RG_5mm</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <recoilAmount>1.9</recoilAmount>
@@ -168,7 +168,7 @@
   <!--=============== DMR =====================-->
   <ThingDef ParentName="Base3HSTLongGun">
     <defName>Gun_3HST_5mmDMR</defName>
-    <label>3HST designated marksman rifle</label>
+    <label>3HST rail DMR</label>
     <description>Small caliber sniper rifle developed by 3HST limited weaponry department. While capable of three-round burst, the recoil causes successive shots not likely to hit.</description>
     <graphicData>
       <texPath>Things/Weapons/3HST_IWR_06_DMR</texPath>
@@ -468,7 +468,7 @@
         <warmupTime>1.2</warmupTime>
         <burstShotCount>20</burstShotCount>
         <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
-        <range>65</range>
+        <range>68</range>
         <soundCast>RG_5mm</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <recoilAmount>1.25</recoilAmount>
@@ -514,7 +514,7 @@
         <warmupTime>1.2</warmupTime>
         <burstShotCount>20</burstShotCount>
         <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
-        <range>65</range>
+        <range>68</range>
         <soundCast>RG_5mm</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <recoilAmount>1</recoilAmount>
@@ -629,7 +629,7 @@
         <warmupTime>1.2</warmupTime>
         <burstShotCount>80</burstShotCount>
         <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
-        <range>65</range>
+        <range>68</range>
         <soundCast>RG_5mm</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <recoilAmount>1</recoilAmount>
