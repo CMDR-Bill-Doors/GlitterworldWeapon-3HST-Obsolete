@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 3HST anti-armor rifle -->
+  <Gun_3HST_9mmDMR.label>3HST制9mm反装甲步枪</Gun_3HST_9mmDMR.label>
+  <!-- EN: Intermediate caliber sniper rifle developed by 3HST limited weaponry department, designed to fight enemy combatants in heavy armor when 5mm rifle is not enough. -->
+  <Gun_3HST_9mmDMR.description>3HST陆军狙击手的标配步枪之一，打人穿透过剩，反器材力不从心。</Gun_3HST_9mmDMR.description>
+  <!-- EN: Rail durability -->
+  <Gun_3HST_9mmDMR.comps.CompChangeBarrel.label>磁轨寿命</Gun_3HST_9mmDMR.comps.CompChangeBarrel.label>
+  <!-- EN: stock -->
+  <Gun_3HST_9mmDMR.tools.stock.label>枪托</Gun_3HST_9mmDMR.tools.stock.label>
+  <!-- EN: barrel -->
+  <Gun_3HST_9mmDMR.tools.barrel.label>枪管</Gun_3HST_9mmDMR.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <Gun_3HST_9mmDMR.tools.muzzle.label>枪口</Gun_3HST_9mmDMR.tools.muzzle.label>
+  <!-- EN: energy bayonet blade -->
+  <Gun_3HST_9mmDMR.tools.energy_bayonet_blade.label>能量刺刀刀刃</Gun_3HST_9mmDMR.tools.energy_bayonet_blade.label>
+  <!-- EN: energy bayonet point -->
+  <Gun_3HST_9mmDMR.tools.energy_bayonet_point.label>能量刺刀刀尖</Gun_3HST_9mmDMR.tools.energy_bayonet_point.label>
+  <!-- EN: 3HST anti-armor rifle -->
+  <Gun_3HST_9mmDMR.verbs.Verb_ShootByBarrel.label>3HST制9mm反装甲步枪</Gun_3HST_9mmDMR.verbs.Verb_ShootByBarrel.label>
+  
+  <!-- EN: 3HST 9mm heavy machine railgun -->
+  <Gun_3HST_9mmHMG.label>3HST制9mm重磁轨机枪</Gun_3HST_9mmHMG.label>
+  <!-- EN: Heavy machine railgun installed on 3HST fighting vehicles and carried by power armor soldiers, devastating against personnel and light vehicles. -->
+  <Gun_3HST_9mmHMG.description>一般安装在固定炮塔、载具，或者由重型火力掩护动力甲携带的重机枪，虽然完全可以手提，但是打的打不准另说。</Gun_3HST_9mmHMG.description>
+  <!-- EN: Rail durability -->
+  <Gun_3HST_9mmHMG.comps.CompChangeBarrel.label>磁轨寿命</Gun_3HST_9mmHMG.comps.CompChangeBarrel.label>
+  <!-- EN: stock -->
+  <Gun_3HST_9mmHMG.tools.stock.label>枪托</Gun_3HST_9mmHMG.tools.stock.label>
+  <!-- EN: barrel -->
+  <Gun_3HST_9mmHMG.tools.barrel.label>枪管</Gun_3HST_9mmHMG.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <Gun_3HST_9mmHMG.tools.muzzle.label>枪口</Gun_3HST_9mmHMG.tools.muzzle.label>
+  <!-- EN: 3HST 9mm heavy machine railgun -->
+  <Gun_3HST_9mmHMG.verbs.Verb_ShootByBarrel.label>3HST制9mm重磁轨机枪</Gun_3HST_9mmHMG.verbs.Verb_ShootByBarrel.label>
+  
+  <!-- EN: Dual 3HST 9mm HMG -->
+  <Gun_9mmHMG_Dual.label>双联3HST制9mm重磁轨机枪</Gun_9mmHMG_Dual.label>
+  <!-- EN: Two 3HST 9mm HMG on a stationary emplacement. -->
+  <Gun_9mmHMG_Dual.description>安装在炮塔上的两把9mm重磁轨机枪。</Gun_9mmHMG_Dual.description>
+  <!-- EN: Dual 3HST 9mm HMG -->
+  <Gun_9mmHMG_Dual.verbs.Verb_ShootWithPower.label>双联3HST制9mm重磁轨机枪</Gun_9mmHMG_Dual.verbs.Verb_ShootWithPower.label>
+  
+  <!-- EN: Mounted 3HST 9mm HMG -->
+  <Gun_9mmHMG_Turret.label>3HST制9mm重磁轨机枪（炮塔用）</Gun_9mmHMG_Turret.label>
+  <!-- EN: 3HST 9mm HMG on a stationary emplacement. -->
+  <Gun_9mmHMG_Turret.description>安装在炮塔上的9mm重磁轨机枪。</Gun_9mmHMG_Turret.description>
+  <!-- EN: Mounted 3HST 9mm HMG -->
+  <Gun_9mmHMG_Turret.verbs.Verb_ShootWithPower.label>3HST制9mm反装甲步枪</Gun_9mmHMG_Turret.verbs.Verb_ShootWithPower.label>
+  
+  <!-- EN: Mounted 3HST 9mm sniper -->
+  <Gun_9mmSniper_Turret.label>3HST制9mm反装甲步枪（炮塔用）</Gun_9mmSniper_Turret.label>
+  <!-- EN: 3HST 9mm sniper on a stationary emplacement. -->
+  <Gun_9mmSniper_Turret.description>安装在炮塔上的9mm反装甲步枪</Gun_9mmSniper_Turret.description>
+  <!-- EN: Mounted 3HST 9mm sniper -->
+  <Gun_9mmSniper_Turret.verbs.Verb_ShootWithPower.label>3HST制9mm反装甲步枪</Gun_9mmSniper_Turret.verbs.Verb_ShootWithPower.label>
+  
+  <!-- EN: Auto 9mm heavy machine railgun -->
+  <Turret_3HST9mmHMGAuto.label>固定 自动9mm重磁轨机枪炮塔</Turret_3HST9mmHMGAuto.label>
+  <!-- EN: A permanent defensive structure covered under thick steel armor reinforced by a layer of plasteel surface hardening. While extremely durable and resilent to all but EMP attacks, they're costly to build both in terms of material and time, and being unable to move after construction. -->
+  <Turret_3HST9mmHMGAuto.description>一部装在自动炮塔上的3HST制9mm重磁轨机枪，厚重的装甲保护着内部结构，但是也使得这个炮塔一旦完工就再也无法移动。</Turret_3HST9mmHMGAuto.description>
+  <!-- EN: Recharge power consumption -->
+  <Turret_3HST9mmHMGAuto.comps.CompPowerTrader_ForTurretGunCE.rechargePower>每次射击充能耗电</Turret_3HST9mmHMGAuto.comps.CompPowerTrader_ForTurretGunCE.rechargePower>
+  <!-- EN: The amount of power the weapon will draw from the power grid during cool down.\n\nRailguns' built in capacitors need to be recharged after each salvo, leading to a power consumption spike.\n\nThe power consumption is calculated as: Power draw x Turret cooldown / 1000\n{0} W x {1} s / 1000 = {2} Wd -->
+  <Turret_3HST9mmHMGAuto.comps.CompPowerTrader_ForTurretGunCE.rechargePower_Stat>该炮塔在冷却时每发子弹要消耗的电力，\n\n每次射击后，磁轨炮塔的内置电容器都需要充电，造成耗电激增。\n\n耗电为 消耗功率 x 炮塔冷却 / 1000\n{0} W x {1} s / 1000 = {2} Wd</Turret_3HST9mmHMGAuto.comps.CompPowerTrader_ForTurretGunCE.rechargePower_Stat>
+  <!-- EN: Rail durability -->
+  <Turret_3HST9mmHMGAuto.comps.CompRefuelable.fuelGizmoLabel>磁轨寿命</Turret_3HST9mmHMGAuto.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Shots until accelerator rail change -->
+  <Turret_3HST9mmHMGAuto.comps.CompRefuelable.fuelLabel>在磁轨彻底损坏前剩余射击次数</Turret_3HST9mmHMGAuto.comps.CompRefuelable.fuelLabel>
+  <!-- EN: Cannot shoot: Needs new accelerator rail -->
+  <Turret_3HST9mmHMGAuto.comps.CompRefuelable.outOfFuelMessage>无法射击：需要更换磁轨</Turret_3HST9mmHMGAuto.comps.CompRefuelable.outOfFuelMessage>
+  
+  <!-- EN: Auto 9mm heavy machine railgun -->
+  <Turret_3HST9mmHMGAutoMoveable.label>可移动 自动9mm重磁轨机枪炮塔</Turret_3HST9mmHMGAutoMoveable.label>
+  <!-- EN: A gun, a tripod, and some servos between them. While more fragile and inaccurate than their permanent cousins, they enjoy the versatility of being moveable. -->
+  <Turret_3HST9mmHMGAutoMoveable.description>安装在带有作动器的三脚架上的3HST制9mm重磁轨机枪，虽然便于转移，但是很容易在炮火下损毁。</Turret_3HST9mmHMGAutoMoveable.description>
+  <!-- EN: Recharge power consumption -->
+  <Turret_3HST9mmHMGAutoMoveable.comps.CompPowerTrader_ForTurretGunCE.rechargePower>每次射击充能耗电</Turret_3HST9mmHMGAutoMoveable.comps.CompPowerTrader_ForTurretGunCE.rechargePower>
+  <!-- EN: The amount of power the weapon will draw from the power grid during cool down.\n\nRailguns' built in capacitors need to be recharged after each salvo, leading to a power consumption spike.\n\nThe power consumption is calculated as: Power draw x Turret cooldown / 1000\n{0} W x {1} s / 1000 = {2} Wd -->
+  <Turret_3HST9mmHMGAutoMoveable.comps.CompPowerTrader_ForTurretGunCE.rechargePower_Stat>该炮塔在冷却时每发子弹要消耗的电力，\n\n每次射击后，磁轨炮塔的内置电容器都需要充电，造成耗电激增。\n\n耗电为 消耗功率 x 炮塔冷却 / 1000\n{0} W x {1} s / 1000 = {2} Wd</Turret_3HST9mmHMGAutoMoveable.comps.CompPowerTrader_ForTurretGunCE.rechargePower_Stat>
+  <!-- EN: Rail durability -->
+  <Turret_3HST9mmHMGAutoMoveable.comps.CompRefuelable.fuelGizmoLabel>磁轨寿命</Turret_3HST9mmHMGAutoMoveable.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Shots until accelerator rail change -->
+  <Turret_3HST9mmHMGAutoMoveable.comps.CompRefuelable.fuelLabel>在磁轨彻底损坏前剩余射击次数</Turret_3HST9mmHMGAutoMoveable.comps.CompRefuelable.fuelLabel>
+  <!-- EN: Cannot shoot: Needs new accelerator rail -->
+  <Turret_3HST9mmHMGAutoMoveable.comps.CompRefuelable.outOfFuelMessage>无法射击：需要更换磁轨</Turret_3HST9mmHMGAutoMoveable.comps.CompRefuelable.outOfFuelMessage>
+  
+  <!-- EN: Dual 9mm heavy machine railgun -->
+  <Turret_3HST9mmHMGDual.label>固定 自动双联9mm重磁轨机枪炮塔</Turret_3HST9mmHMGDual.label>
+  <!-- EN: A permanent defensive structure covered under thick steel armor reinforced by a layer of plasteel surface hardening. While extremely durable and resilent to all but EMP attacks, they're costly to build both in terms of material and time, and being unable to move after construction. -->
+  <Turret_3HST9mmHMGDual.description>两门装在自动炮塔上的3HST制9mm重磁轨机枪，厚重的装甲保护着内部结构，但是也使得这个炮塔一旦完工就再也无法移动。</Turret_3HST9mmHMGDual.description>
+  <!-- EN: Recharge power consumption -->
+  <Turret_3HST9mmHMGDual.comps.CompPowerTrader_ForTurretGunCE.rechargePower>每次射击充能耗电</Turret_3HST9mmHMGDual.comps.CompPowerTrader_ForTurretGunCE.rechargePower>
+  <!-- EN: The amount of power the weapon will draw from the power grid during cool down.\n\nRailguns' built in capacitors need to be recharged after each salvo, leading to a power consumption spike.\n\nThe power consumption is calculated as: Power draw x Turret cooldown / 1000\n{0} W x {1} s / 1000 = {2} Wd -->
+  <Turret_3HST9mmHMGDual.comps.CompPowerTrader_ForTurretGunCE.rechargePower_Stat>该炮塔在冷却时每发子弹要消耗的电力，\n\n每次射击后，磁轨炮塔的内置电容器都需要充电，造成耗电激增。\n\n耗电为 消耗功率 x 炮塔冷却 / 1000\n{0} W x {1} s / 1000 = {2} Wd</Turret_3HST9mmHMGDual.comps.CompPowerTrader_ForTurretGunCE.rechargePower_Stat>
+  <!-- EN: Rail durability -->
+  <Turret_3HST9mmHMGDual.comps.CompRefuelable.fuelGizmoLabel>磁轨寿命</Turret_3HST9mmHMGDual.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Shots until accelerator rail change -->
+  <Turret_3HST9mmHMGDual.comps.CompRefuelable.fuelLabel>在磁轨彻底损坏前剩余射击次数</Turret_3HST9mmHMGDual.comps.CompRefuelable.fuelLabel>
+  <!-- EN: Cannot shoot: Needs new accelerator rail -->
+  <Turret_3HST9mmHMGDual.comps.CompRefuelable.outOfFuelMessage>无法射击：需要更换磁轨</Turret_3HST9mmHMGDual.comps.CompRefuelable.outOfFuelMessage>
+  
+  <!-- EN: Manned 9mm heavy machine railgun -->
+  <Turret_3HST9mmHMGmanned.label>手动9mm重磁轨机枪炮塔</Turret_3HST9mmHMGmanned.label>
+  <!-- EN: A 3HST heavy machine railgun mounted on an stationary mount. Despite the fact this turret is manually operated, this turret still needs a amount of power to operate since railguns consumes power. -->
+  <Turret_3HST9mmHMGmanned.description>一部安装在三脚架上面的9mm重磁轨机枪。虽然是手动炮塔，但是由于磁轨炮需要供能的缘故所以还是需要电力才能工作。</Turret_3HST9mmHMGmanned.description>
+  <!-- EN: Recharge power consumption -->
+  <Turret_3HST9mmHMGmanned.comps.CompPowerTrader_ForTurretGunCE.rechargePower>每次射击充能耗电</Turret_3HST9mmHMGmanned.comps.CompPowerTrader_ForTurretGunCE.rechargePower>
+  <!-- EN: The amount of power the weapon will draw from the power grid during cool down.\n\nRailguns' built in capacitors need to be recharged after each salvo, leading to a power consumption spike.\n\nThe power consumption is calculated as: Power draw x Turret cooldown / 1000\n{0} W x {1} s / 1000 = {2} Wd -->
+  <Turret_3HST9mmHMGmanned.comps.CompPowerTrader_ForTurretGunCE.rechargePower_Stat>该炮塔在冷却时每发子弹要消耗的电力，\n\n每次射击后，磁轨炮塔的内置电容器都需要充电，造成耗电激增。\n\n耗电为 消耗功率 x 炮塔冷却 / 1000\n{0} W x {1} s / 1000 = {2} Wd</Turret_3HST9mmHMGmanned.comps.CompPowerTrader_ForTurretGunCE.rechargePower_Stat>
+  <!-- EN: Rail durability -->
+  <Turret_3HST9mmHMGmanned.comps.CompRefuelable.fuelGizmoLabel>磁轨寿命</Turret_3HST9mmHMGmanned.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Shots until accelerator rail change -->
+  <Turret_3HST9mmHMGmanned.comps.CompRefuelable.fuelLabel>在磁轨彻底损坏前剩余射击次数</Turret_3HST9mmHMGmanned.comps.CompRefuelable.fuelLabel>
+  <!-- EN: Cannot shoot: Needs new accelerator rail -->
+  <Turret_3HST9mmHMGmanned.comps.CompRefuelable.outOfFuelMessage>无法射击：需要更换磁轨</Turret_3HST9mmHMGmanned.comps.CompRefuelable.outOfFuelMessage>
+  
+  <!-- EN: Auto 9mm sniper railgun -->
+  <Turret_3HST9mmSniperAuto.label>固定 自动9mm磁轨狙击炮塔</Turret_3HST9mmSniperAuto.label>
+  <!-- EN: A permanent defensive structure covered under thick steel armor reinforced by a layer of plasteel surface hardening. While extremely durable and resilent to all but EMP attacks, they're costly to build both in terms of material and time, and being unable to move after construction. -->
+  <Turret_3HST9mmSniperAuto.description>一部装在自动炮塔上的3HST制9mm磁轨狙击步枪，厚重的装甲保护着内部结构，但是也使得这个炮塔一旦完工就再也无法移动。</Turret_3HST9mmSniperAuto.description>
+  <!-- EN: Recharge power consumption -->
+  <Turret_3HST9mmSniperAuto.comps.CompPowerTrader_ForTurretGunCE.rechargePower>每次射击充能耗电</Turret_3HST9mmSniperAuto.comps.CompPowerTrader_ForTurretGunCE.rechargePower>
+  <!-- EN: The amount of power the weapon will draw from the power grid during cool down.\n\nRailguns' built in capacitors need to be recharged after each salvo, leading to a power consumption spike.\n\nThe power consumption is calculated as: Power draw x Turret cooldown / 1000\n{0} W x {1} s / 1000 = {2} Wd -->
+  <Turret_3HST9mmSniperAuto.comps.CompPowerTrader_ForTurretGunCE.rechargePower_Stat>该炮塔在冷却时每发子弹要消耗的电力，\n\n每次射击后，磁轨炮塔的内置电容器都需要充电，造成耗电激增。\n\n耗电为 消耗功率 x 炮塔冷却 / 1000\n{0} W x {1} s / 1000 = {2} Wd</Turret_3HST9mmSniperAuto.comps.CompPowerTrader_ForTurretGunCE.rechargePower_Stat>
+  <!-- EN: Rail durability -->
+  <Turret_3HST9mmSniperAuto.comps.CompRefuelable.fuelGizmoLabel>磁轨寿命</Turret_3HST9mmSniperAuto.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Shots until accelerator rail change -->
+  <Turret_3HST9mmSniperAuto.comps.CompRefuelable.fuelLabel>在磁轨彻底损坏前剩余射击次数</Turret_3HST9mmSniperAuto.comps.CompRefuelable.fuelLabel>
+  <!-- EN: Cannot shoot: Needs new accelerator rail -->
+  <Turret_3HST9mmSniperAuto.comps.CompRefuelable.outOfFuelMessage>无法射击：需要更换磁轨</Turret_3HST9mmSniperAuto.comps.CompRefuelable.outOfFuelMessage>
+  
+  <!-- EN: Auto 9mm sniper railgun -->
+  <Turret_3HST9mmSniperAutoMoveable.label>可移动 自动9mm磁轨狙击炮塔</Turret_3HST9mmSniperAutoMoveable.label>
+  <!-- EN: A gun, a tripod, and some servos between them. While more fragile and inaccurate than their permanent cousins, they enjoy the versatility of being moveable. -->
+  <Turret_3HST9mmSniperAutoMoveable.description>安装在带有作动器的三脚架上的3HST制9mm磁轨狙击步枪，虽然便于转移，但是很容易在炮火下损毁。</Turret_3HST9mmSniperAutoMoveable.description>
+  <!-- EN: Recharge power consumption -->
+  <Turret_3HST9mmSniperAutoMoveable.comps.CompPowerTrader_ForTurretGunCE.rechargePower>每次射击充能耗电</Turret_3HST9mmSniperAutoMoveable.comps.CompPowerTrader_ForTurretGunCE.rechargePower>
+  <!-- EN: The amount of power the weapon will draw from the power grid during cool down.\n\nRailguns' built in capacitors need to be recharged after each salvo, leading to a power consumption spike.\n\nThe power consumption is calculated as: Power draw x Turret cooldown / 1000\n{0} W x {1} s / 1000 = {2} Wd -->
+  <Turret_3HST9mmSniperAutoMoveable.comps.CompPowerTrader_ForTurretGunCE.rechargePower_Stat>该炮塔在冷却时每发子弹要消耗的电力，\n\n每次射击后，磁轨炮塔的内置电容器都需要充电，造成耗电激增。\n\n耗电为 消耗功率 x 炮塔冷却 / 1000\n{0} W x {1} s / 1000 = {2} Wd</Turret_3HST9mmSniperAutoMoveable.comps.CompPowerTrader_ForTurretGunCE.rechargePower_Stat>
+  <!-- EN: Rail durability -->
+  <Turret_3HST9mmSniperAutoMoveable.comps.CompRefuelable.fuelGizmoLabel>磁轨寿命</Turret_3HST9mmSniperAutoMoveable.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Shots until accelerator rail change -->
+  <Turret_3HST9mmSniperAutoMoveable.comps.CompRefuelable.fuelLabel>在磁轨彻底损坏前剩余射击次数</Turret_3HST9mmSniperAutoMoveable.comps.CompRefuelable.fuelLabel>
+  <!-- EN: Cannot shoot: Needs new accelerator rail -->
+  <Turret_3HST9mmSniperAutoMoveable.comps.CompRefuelable.outOfFuelMessage>无法射击：需要更换磁轨</Turret_3HST9mmSniperAutoMoveable.comps.CompRefuelable.outOfFuelMessage>
+  
+  <!-- EN: Manned 9mm sniper railgun -->
+  <Turret_3HST9mmSniperManned.label>手动9mm磁轨狙击炮塔</Turret_3HST9mmSniperManned.label>
+  <!-- EN: A 3HST anti-armor sniper railgun mounted on an tripod mount. -->
+  <Turret_3HST9mmSniperManned.description>一部安装在三脚架上面的9mm磁轨狙击步枪。虽然是手动炮塔，但是由于磁轨炮需要供能的缘故所以还是需要电力才能工作。</Turret_3HST9mmSniperManned.description>
+  <!-- EN: Recharge power consumption -->
+  <Turret_3HST9mmSniperManned.comps.CompPowerTrader_ForTurretGunCE.rechargePower>每次射击充能耗电</Turret_3HST9mmSniperManned.comps.CompPowerTrader_ForTurretGunCE.rechargePower>
+  <!-- EN: The amount of power the weapon will draw from the power grid during cool down.\n\nRailguns' built in capacitors need to be recharged after each salvo, leading to a power consumption spike.\n\nThe power consumption is calculated as: Power draw x Turret cooldown / 1000\n{0} W x {1} s / 1000 = {2} Wd -->
+  <Turret_3HST9mmSniperManned.comps.CompPowerTrader_ForTurretGunCE.rechargePower_Stat>该炮塔在冷却时每发子弹要消耗的电力，\n\n每次射击后，磁轨炮塔的内置电容器都需要充电，造成耗电激增。\n\n耗电为 消耗功率 x 炮塔冷却 / 1000\n{0} W x {1} s / 1000 = {2} Wd</Turret_3HST9mmSniperManned.comps.CompPowerTrader_ForTurretGunCE.rechargePower_Stat>
+  <!-- EN: Rail durability -->
+  <Turret_3HST9mmSniperManned.comps.CompRefuelable.fuelGizmoLabel>磁轨寿命</Turret_3HST9mmSniperManned.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Shots until accelerator rail change -->
+  <Turret_3HST9mmSniperManned.comps.CompRefuelable.fuelLabel>在磁轨彻底损坏前剩余射击次数</Turret_3HST9mmSniperManned.comps.CompRefuelable.fuelLabel>
+  <!-- EN: Cannot shoot: Needs new accelerator rail -->
+  <Turret_3HST9mmSniperManned.comps.CompRefuelable.outOfFuelMessage>无法射击：需要更换磁轨</Turret_3HST9mmSniperManned.comps.CompRefuelable.outOfFuelMessage>
+  
+</LanguageData>

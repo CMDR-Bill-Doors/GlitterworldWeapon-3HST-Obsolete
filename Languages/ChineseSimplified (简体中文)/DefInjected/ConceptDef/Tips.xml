@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: LGIS missiles -->
+  <BDGW_LGIS.label>LGIS导弹</BDGW_LGIS.label>
+  <!-- EN: The LGIS missile, short for Laser-Guided-Infantry-Support missiles comes in the form of ready-to-fire launch tubes. While launch them as disposable rockets are a perfectly valid way of using them, you can also load and fire them in rail-assisted dedictated launchers for greater range, accurancy or fire rate.\n\nMost if not all LGIS launchers, including disposable launch tubes themselves, are capable of switching between direct fire and indirect, mortar-like fire.\n\nIt's noteworthy that most LGIS launchers are railguns, requiring rails and power to function, with the sole exception of dual LGIS launcher. -->
+  <BDGW_LGIS.helpText>LGIS导弹本身可以直接当作一次性发射筒发射，但是也可以作为弹药用在包括炮塔在内的其他专用发射器上，以获得更大的射程，精确度或者射速。\n\n几乎所有LGIS发射器都可以在直射和曲射模式之间切换，但是注意只有直射模式的一次性LGIS发射筒才能作为炮塔和武器的弹药。\n\n除了双联LGIS炮塔之外，所有的LGIS发射器都属于磁轨武器，所以在频繁使用后也需要更换磁轨。</BDGW_LGIS.helpText>
+  
+  <!-- EN: Piercing munitions -->
+  <BDGW_RailPiercing.label>穿透弹药</BDGW_RailPiercing.label>
+  <!-- EN: The majority of 3HST railguns has far more penetration than most of opponents you may face, while this is more or less due to the heavy anti-power-armor need in the designer's homeland, the extra penetraing power won't go wasted.\n\nFor every enemy hit, the rail sabot's sharp penetration will be reduced by:\n 2 x target's general defense (as shown in gear tab) + 5 x target body size\nIf the bullet still have more than 20% of it's initial penetration potential left, it will overpenetrate, continue on it's flight path and hit the next unlucky victim.\nBuildings, items, trees etc. may also be penetrated, their sharp defence is estimated as HP remaining / 8. -->
+  <BDGW_RailPiercing.helpText>大部分3HST制磁轨武器都有着远超边缘世界多数敌人的穿甲能力。虽然这是由于在这些武器的设计者需要用它们打穿动力甲，但是这些溢出的穿甲能力不会被浪费掉。经过特殊设计的子弹命中时不会破碎，而会击穿目标，打中后面的物体。\n\n每次命中敌人，磁轨弹的穿甲能力就会降低：\n目标平均护甲x2+目标体型x5\n如果命中建筑的话，穿甲将降低：\n建筑剩余耐久/8\n如果子弹剩余穿甲高于初始穿甲的20%，子弹将穿透目标继续飞行，反之子弹将停留在目标体内不再穿透。</BDGW_RailPiercing.helpText>
+  
+  <!-- EN: Rearming Railguns -->
+  <BDGW_RailRearm.label>磁轨更换</BDGW_RailRearm.label>
+  <!-- EN: Railguns of both handheld and turret mounted consumes rail durability when firing, which are replenished with electromagnetic accelerator rails, the same one you make railguns with.\n\nTo replace the spent rails, equip the gun that needs replacement, right-click on an electromagnetic accelerator rail on the ground and select "Rearm rail"\n\nNote that all LGIS launchers but the dual LGIS turret are railguns and require rails as well.\n\nYour pawn will try to rearm their main weapon if its rail durability has fallen below 20%, or has less than 25 shots left, whichever is earlier. -->
+  <BDGW_RailRearm.helpText>无论是手持磁轨武器还是磁轨炮塔，在开火的时候都会消耗其磁轨的耐久。磁轨耐久的补充需要用到电磁加速轨道，也就是制造磁轨武器所用到的同一个东西。\n\n为更换一把武器的磁轨，这把武器首先需要被装备在一个殖民者的手上，然后选中该殖民者，右键放在地上的电磁加速轨道，然后选择“更换磁轨”。\n\n除了双联LGIS炮塔之外，所有的LGIS发射器都属于磁轨武器，所以在频繁使用后也需要更换磁轨。</BDGW_RailRearm.helpText>
+  
+  <!-- EN: Railgun turrets -->
+  <BDGW_Turret.label>磁轨炮台耗能</BDGW_Turret.label>
+  <!-- EN: Railgun turrets, even manual ones, consume power after firing to recharge their capacitors. Turrets will have extra power consumption during turret cool down, proportional to rounds fired in the previous salvo, fewer the shot, lower the power draw, so don't be afraid to switch them to single-shot mode.\n\nThe electricity consumed per shot is displayed on the left-lower panel and info panel of the turret, while some deviation may occur, it should be within 5/4 of the expected power consumption.\n\nDon't panic if your turret are consuming half a million watt per day, it'll only last for a second! -->
+  <BDGW_Turret.helpText>包括人操炮塔在内的磁轨炮塔，在发射后都需要用大量电力给电容器充电，未能满足耗电需求将使其无法完成冷却。在炮塔冷却时间内，炮塔的电力需求将极大上升，上升幅度和上一轮射击的射击次数成正比，所以不用为了怕浪费电而不使用单发射击。\n\n每次射击的耗电量显示在炮塔的左下角页面和信息栏里，虽然由于各种原因会有误差，但是误差一般在1/4范围内。\n\n当你看见你的炮塔耗电几十万Wd的时候不用担心，这只会持续一秒。</BDGW_Turret.helpText>
+  
+</LanguageData>

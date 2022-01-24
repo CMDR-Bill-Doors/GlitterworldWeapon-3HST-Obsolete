@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: non-lethal electric arc -->
+  <ElectricStunGun.label>非致命电弧</ElectricStunGun.label>
+  <!-- EN: {0} has been tasered to death. -->
+  <ElectricStunGun.deathMessage>{0} 被电死了。</ElectricStunGun.deathMessage>
+  
+</LanguageData>

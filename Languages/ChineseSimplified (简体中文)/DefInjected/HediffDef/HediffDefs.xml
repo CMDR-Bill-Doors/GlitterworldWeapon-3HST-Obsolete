@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Slave RFID tag -->
+  <Hediff_3HSTSlaveTag.label>TODO</Hediff_3HSTSlaveTag.label>
+  <!-- EN: A slave identification RFID coil used by 3HST limited cooperation, pretty much useless here due to the lack of approperate infrastructure support. It's proximity to major arteries and trachea makes it risky to remove, a safety measure to prevent the tag from being uninstalled. -->
+  <Hediff_3HSTSlaveTag.description>TODO</Hediff_3HSTSlaveTag.description>
+  <!-- EN: a slave identification RFID coil -->
+  <Hediff_3HSTSlaveTag.labelNoun>TODO</Hediff_3HSTSlaveTag.labelNoun>
+  
+</LanguageData>

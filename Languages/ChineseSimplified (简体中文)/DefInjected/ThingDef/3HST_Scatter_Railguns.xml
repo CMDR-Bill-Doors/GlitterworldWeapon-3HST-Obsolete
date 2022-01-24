@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 3HST "NCQ Sprayer" Scatterailgun -->
+  <Gun_3HST_Scatter_Railgun.label>3HST制轻型霰射磁轨“新重庆喷洒者”</Gun_3HST_Scatter_Railgun.label>
+  <!-- EN: A pistol-sized high-caliber scatterailgun developed by 3HST Limited during the Third Elven Civil War, also capable of launching a variety of grenades. -->
+  <Gun_3HST_Scatter_Railgun.description>一部3HST有限公司设计的便携大口径霰弹磁轨炮，同时也可发射一系列小口径榴弹，在第三次内战的无尽的废墟巷战中发光发热。但是内战结束后这个武器立刻失去了使用价值，现在多用于警用或者二三线部队清剿海盗和叛军时装备。</Gun_3HST_Scatter_Railgun.description>
+  <!-- EN: Rail durability -->
+  <Gun_3HST_Scatter_Railgun.comps.CompChangeBarrel.label>磁轨寿命</Gun_3HST_Scatter_Railgun.comps.CompChangeBarrel.label>
+  <!-- EN: grip -->
+  <Gun_3HST_Scatter_Railgun.tools.grip.label>握把</Gun_3HST_Scatter_Railgun.tools.grip.label>
+  <!-- EN: muzzle -->
+  <Gun_3HST_Scatter_Railgun.tools.muzzle.label>枪口</Gun_3HST_Scatter_Railgun.tools.muzzle.label>
+  <!-- EN: energy bayonet blade -->
+  <Gun_3HST_Scatter_Railgun.tools.energy_bayonet_blade.label>能量刺刀刀刃</Gun_3HST_Scatter_Railgun.tools.energy_bayonet_blade.label>
+  <!-- EN: energy bayonet point -->
+  <Gun_3HST_Scatter_Railgun.tools.energy_bayonet_point.label>能量刺刀刀尖</Gun_3HST_Scatter_Railgun.tools.energy_bayonet_point.label>
+  <!-- EN: 3HST "NCQ Sprayer" Scatterailgun -->
+  <Gun_3HST_Scatter_Railgun.verbs.Verb_ShootByBarrel.label>3HST制轻型霰射磁轨“新重庆喷洒者”</Gun_3HST_Scatter_Railgun.verbs.Verb_ShootByBarrel.label>
+  
+  <!-- EN: 3HST "NCQ Spammer" Scatterailgun -->
+  <Gun_3HST_Scatter_Railgun_Heavy.label>3HST制重型霰射磁轨“新重庆覆盖者”</Gun_3HST_Scatter_Railgun_Heavy.label>
+  <!-- EN: A Machinegun-sized automatic scatterailgun developed by 3HST Limited during the Third Elven Civil War, also capable of launching a variety of grenades. Half shotgun, half machinegun, complete slaughter. -->
+  <Gun_3HST_Scatter_Railgun_Heavy.description>一部3HST有限公司设计的重型速射霰弹磁轨炮，同时也可发射一系列小口径榴弹。虽然威力强大但是对磁轨损伤比较严重。</Gun_3HST_Scatter_Railgun_Heavy.description>
+  <!-- EN: Rail durability -->
+  <Gun_3HST_Scatter_Railgun_Heavy.comps.CompChangeBarrel.label>磁轨寿命</Gun_3HST_Scatter_Railgun_Heavy.comps.CompChangeBarrel.label>
+  <!-- EN: stock -->
+  <Gun_3HST_Scatter_Railgun_Heavy.tools.stock.label>枪托</Gun_3HST_Scatter_Railgun_Heavy.tools.stock.label>
+  <!-- EN: barrel -->
+  <Gun_3HST_Scatter_Railgun_Heavy.tools.barrel.label>枪管</Gun_3HST_Scatter_Railgun_Heavy.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <Gun_3HST_Scatter_Railgun_Heavy.tools.muzzle.label>枪口</Gun_3HST_Scatter_Railgun_Heavy.tools.muzzle.label>
+  <!-- EN: energy bayonet blade -->
+  <Gun_3HST_Scatter_Railgun_Heavy.tools.energy_bayonet_blade.label>能量刺刀刀刃</Gun_3HST_Scatter_Railgun_Heavy.tools.energy_bayonet_blade.label>
+  <!-- EN: energy bayonet point -->
+  <Gun_3HST_Scatter_Railgun_Heavy.tools.energy_bayonet_point.label>能量刺刀刀尖</Gun_3HST_Scatter_Railgun_Heavy.tools.energy_bayonet_point.label>
+  <!-- EN: 3HST "NCQ Spammer" Scatterailgun -->
+  <Gun_3HST_Scatter_Railgun_Heavy.verbs.Verb_ShootByBarrel.label>3HST制重型霰射磁轨“新重庆覆盖者”</Gun_3HST_Scatter_Railgun_Heavy.verbs.Verb_ShootByBarrel.label>
+  
+  <!-- EN: 3HST "NCQ Splasher" Scatterailgun -->
+  <Gun_3HST_Scatter_Railgun_Pump.label>3HST制泵动霰射磁轨“新重庆喷溅者”</Gun_3HST_Scatter_Railgun_Pump.label>
+  <!-- EN: A old school pump action scatterailgun developed by 3HST Limited during the Third Elven Civil War, a popular choice for mafia-themed joywire recordings. -->
+  <Gun_3HST_Scatter_Railgun_Pump.description>一把泵动磁轨霰弹。\n\n是的，你没看错，泵动、磁轨、霰弹。</Gun_3HST_Scatter_Railgun_Pump.description>
+  <!-- EN: Rail durability -->
+  <Gun_3HST_Scatter_Railgun_Pump.comps.CompChangeBarrel.label>磁轨寿命</Gun_3HST_Scatter_Railgun_Pump.comps.CompChangeBarrel.label>
+  <!-- EN: stock -->
+  <Gun_3HST_Scatter_Railgun_Pump.tools.stock.label>枪托</Gun_3HST_Scatter_Railgun_Pump.tools.stock.label>
+  <!-- EN: barrel -->
+  <Gun_3HST_Scatter_Railgun_Pump.tools.barrel.label>枪管</Gun_3HST_Scatter_Railgun_Pump.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <Gun_3HST_Scatter_Railgun_Pump.tools.muzzle.label>枪口</Gun_3HST_Scatter_Railgun_Pump.tools.muzzle.label>
+  <!-- EN: energy bayonet blade -->
+  <Gun_3HST_Scatter_Railgun_Pump.tools.energy_bayonet_blade.label>能量刺刀刀刃</Gun_3HST_Scatter_Railgun_Pump.tools.energy_bayonet_blade.label>
+  <!-- EN: energy bayonet point -->
+  <Gun_3HST_Scatter_Railgun_Pump.tools.energy_bayonet_point.label>能量刺刀刀尖</Gun_3HST_Scatter_Railgun_Pump.tools.energy_bayonet_point.label>
+  <!-- EN: 3HST "NCQ Splasher" Scatterailgun -->
+  <Gun_3HST_Scatter_Railgun_Pump.verbs.Verb_ShootByBarrel.label>3HST制泵动霰射磁轨“新重庆喷溅者”</Gun_3HST_Scatter_Railgun_Pump.verbs.Verb_ShootByBarrel.label>
+  
+</LanguageData>

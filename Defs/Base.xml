@@ -120,9 +120,6 @@
       <AimingAccuracy>0.75</AimingAccuracy>
       <ShootingAccuracyTurret>1</ShootingAccuracyTurret>
     </statBases>
-    <building>
-      <spawnedConceptLearnOpportunity>BDGW_RailRearm</spawnedConceptLearnOpportunity>
-    </building>
     <size>(1,1)</size>
     <fillPercent>0.72</fillPercent>
     <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
@@ -241,9 +238,6 @@
     </researchPrerequisites>
     <designationCategory>Security</designationCategory>
     <minifiedDef>MinifiedThing</minifiedDef>
-    <building>
-      <spawnedConceptLearnOpportunity>BDGW_RailRearm</spawnedConceptLearnOpportunity>
-    </building>
   </ThingDef>
 
 
@@ -271,9 +265,6 @@
     </researchPrerequisites>
     <designationCategory>Security</designationCategory>
     <minifiedDef>MinifiedThing</minifiedDef>
-    <building>
-      <spawnedConceptLearnOpportunity>BDGW_RailRearm</spawnedConceptLearnOpportunity>
-    </building>
   </ThingDef>
 
 

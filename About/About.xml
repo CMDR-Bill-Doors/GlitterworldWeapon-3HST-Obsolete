@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>Bill Doors' Gliterworld Weapon Pack: 3HST limited cooperation</name>
+  <name>Bill Doors' Glitterworld Weapon Pack: 3HST limited corporation</name>
   <author>3HST Limited</author>
   <packageId>3HSTltd.Weapons.Base</packageId>
   <supportedVersions>
@@ -12,6 +12,7 @@
     <li>Ludeon.RimWorld</li>
     <li>Ludeon.RimWorld.Royalty</li>
     <li>CETeam.CombatExtended</li>
+	  <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
   </loadAfter>
   <modDependencies>
     <li>

@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-  <BDGW_BarrelFullMessage>磁轨完好，无需更换</BDGW_BarrelFullMessage>
-  <BDGW_NoWeaponMessage>无可更换磁轨的武器</BDGW_NoWeaponMessage>
-  <BDGW_BarrelWornMessage>{0}'的武器的磁轨已彻底损坏！在更换磁轨之前这把武器将无法使用。</BDGW_BarrelWornMessage>
-
-  <BD_RechargePower>齐射耗电量</BD_RechargePower>
-
-</LanguageData>

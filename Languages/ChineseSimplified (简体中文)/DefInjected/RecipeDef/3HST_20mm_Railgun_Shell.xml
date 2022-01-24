@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make 20mm Railgun cartridge (Sabot) x100 -->
+  <MakeAmmo_3HST20mmRG_Steel.label>制作 3HST制20mm磁轨炮弹 (脱壳穿甲弹) x100</MakeAmmo_3HST20mmRG_Steel.label>
+  <!-- EN: Craft 100 20mm Railgun (Sabot) cartridges. -->
+  <MakeAmmo_3HST20mmRG_Steel.description>制作 3HST制20mm磁轨炮弹 (脱壳穿甲弹) x100</MakeAmmo_3HST20mmRG_Steel.description>
+  <!-- EN: Making 20mm Railgun (Sabot) cartridges. -->
+  <MakeAmmo_3HST20mmRG_Steel.jobString>正在制作 3HST制20mm磁轨炮弹 (脱壳穿甲弹) x100。</MakeAmmo_3HST20mmRG_Steel.jobString>
+  
+</LanguageData>

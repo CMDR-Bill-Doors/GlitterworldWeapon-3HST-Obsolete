@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make Scatterailgun cartridge (EMP) x100 -->
+  <MakeAmmo_ScatterRG_EMP.label>TODO</MakeAmmo_ScatterRG_EMP.label>
+  <!-- EN: Craft 100 Scatterailgun cartridges (EMP). -->
+  <MakeAmmo_ScatterRG_EMP.description>TODO</MakeAmmo_ScatterRG_EMP.description>
+  <!-- EN: Making Scatterailgun cartridges (EMP). -->
+  <MakeAmmo_ScatterRG_EMP.jobString>TODO</MakeAmmo_ScatterRG_EMP.jobString>
+  
+  <!-- EN: make Scatterailgun cartridge (HE) x100 -->
+  <MakeAmmo_ScatterRG_HE.label>TODO</MakeAmmo_ScatterRG_HE.label>
+  <!-- EN: Craft 100 Scatterailgun cartridges (HE). -->
+  <MakeAmmo_ScatterRG_HE.description>TODO</MakeAmmo_ScatterRG_HE.description>
+  <!-- EN: Making Scatterailgun cartridges (HE). -->
+  <MakeAmmo_ScatterRG_HE.jobString>TODO</MakeAmmo_ScatterRG_HE.jobString>
+  
+  <!-- EN: make Scatterailgun cartridge (HEAT) x100 -->
+  <MakeAmmo_ScatterRG_HEAT.label>TODO</MakeAmmo_ScatterRG_HEAT.label>
+  <!-- EN: Craft 100 Scatterailgun cartridges (HEAT). -->
+  <MakeAmmo_ScatterRG_HEAT.description>TODO</MakeAmmo_ScatterRG_HEAT.description>
+  <!-- EN: Making Scatterailgun cartridges (HEAT). -->
+  <MakeAmmo_ScatterRG_HEAT.jobString>TODO</MakeAmmo_ScatterRG_HEAT.jobString>
+  
+  <!-- EN: make Scatterailgun cartridge (Incendiary) x100 -->
+  <MakeAmmo_ScatterRG_Incendiary.label>TODO</MakeAmmo_ScatterRG_Incendiary.label>
+  <!-- EN: Craft 100 Scatterailgun cartridges (Incendiary). -->
+  <MakeAmmo_ScatterRG_Incendiary.description>TODO</MakeAmmo_ScatterRG_Incendiary.description>
+  <!-- EN: Making Scatterailgun cartridges (Incendiary). -->
+  <MakeAmmo_ScatterRG_Incendiary.jobString>TODO</MakeAmmo_ScatterRG_Incendiary.jobString>
+  
+  <!-- EN: make Scatterailgun cartridge (Smoke) x100 -->
+  <MakeAmmo_ScatterRG_Smoke.label>TODO</MakeAmmo_ScatterRG_Smoke.label>
+  <!-- EN: Craft 100 Scatterailgun cartridges (Smoke). -->
+  <MakeAmmo_ScatterRG_Smoke.description>TODO</MakeAmmo_ScatterRG_Smoke.description>
+  <!-- EN: Making Scatterailgun cartridges (Smoke). -->
+  <MakeAmmo_ScatterRG_Smoke.jobString>TODO</MakeAmmo_ScatterRG_Smoke.jobString>
+  
+  <!-- EN: make Scatterailgun cartridge (Buck) x200 -->
+  <MakeAmmo_ScatterRG_Standard.label>TODO</MakeAmmo_ScatterRG_Standard.label>
+  <!-- EN: Craft 200 Scatterailgun cartridges (Buck). -->
+  <MakeAmmo_ScatterRG_Standard.description>TODO</MakeAmmo_ScatterRG_Standard.description>
+  <!-- EN: Making Scatterailgun cartridges (Buck). -->
+  <MakeAmmo_ScatterRG_Standard.jobString>TODO</MakeAmmo_ScatterRG_Standard.jobString>
+  
+</LanguageData>

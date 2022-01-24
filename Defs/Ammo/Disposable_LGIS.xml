@@ -52,7 +52,7 @@
 			<li>3HST_Weapons</li>
 		</weaponTags>
 
-		<generateCommonality>5</generateCommonality>
+		<generateCommonality>2</generateCommonality>
 		<comps>
 			<li Class="CompProperties_Forbiddable" />
 			<li>

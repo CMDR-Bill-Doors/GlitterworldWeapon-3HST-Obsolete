@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make 40x53mm HE grenades x100 -->
+  <MakeAmmo_3HST40mmGrenade_HE.label>制作 3HST制40mm榴弹 x100</MakeAmmo_3HST40mmGrenade_HE.label>
+  <!-- EN: Craft 100 40x53mm HE grenades. -->
+  <MakeAmmo_3HST40mmGrenade_HE.description>制作 3HST制40mm榴弹 x100</MakeAmmo_3HST40mmGrenade_HE.description>
+  <!-- EN: Making 40x53mm HE grenades. -->
+  <MakeAmmo_3HST40mmGrenade_HE.jobString>正在制作 3HST制40mm榴弹 x100</MakeAmmo_3HST40mmGrenade_HE.jobString>
+  
+</LanguageData>

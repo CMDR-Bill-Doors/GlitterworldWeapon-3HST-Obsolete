@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 3HST 40mm grenade (HE) -->
+  <Ammo_3HST40mmGrenade_HE.label>3HST制40mm箭型弹榴弹 (高爆)</Ammo_3HST40mmGrenade_HE.label>
+  <!-- EN: Advanced high-velocity grenades loaded with prefabricated flechettes for better armor penetration. -->
+  <Ammo_3HST40mmGrenade_HE.description>先进的高速高爆榴弹，内部填充有箭型预制破片，比普通破片穿甲性能更好。</Ammo_3HST40mmGrenade_HE.description>
+  
+  <!-- EN: 3HST 40mm grenade -->
+  <Bullet_3HST40mmGrenade_HE.label>3HST制40mm箭型弹榴弹</Bullet_3HST40mmGrenade_HE.label>
+  
+  <!-- EN: 3HST 40mm grenade -->
+  <Bullet_3HST40mmGrenade_HE_D.label>3HST制40mm箭型弹榴弹</Bullet_3HST40mmGrenade_HE_D.label>
+  
+  <!-- EN: prefabricated flechette -->
+  <Fragment_Prefab_Flechette.label>预制箭型破片</Fragment_Prefab_Flechette.label>
+  
+</LanguageData>

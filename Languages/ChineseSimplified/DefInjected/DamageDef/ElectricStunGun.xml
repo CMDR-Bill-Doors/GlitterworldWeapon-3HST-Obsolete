@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-
-  <ElectricStunGun.label>非致命电弧</ElectricStunGun.label>
-  <ElectricStunGun.deathMessage>{0} 被电死了。</ElectricStunGun.deathMessage>
-
-
-</LanguageData>

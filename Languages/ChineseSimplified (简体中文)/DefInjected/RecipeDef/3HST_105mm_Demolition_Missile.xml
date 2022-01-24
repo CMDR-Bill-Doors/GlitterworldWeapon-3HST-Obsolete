@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make disposable HE demolition missile launcher x5 -->
+  <Make105mmDemoHE.label>制作 105mm 一次性高爆破拆弹发射器 x5</Make105mmDemoHE.label>
+  <!-- EN: Craft 5 disposable HE demolition missile launchers. -->
+  <Make105mmDemoHE.description>制作 105mm 一次性高爆破拆弹发射器 x5</Make105mmDemoHE.description>
+  <!-- EN: Making HE demolition missile launchers. -->
+  <Make105mmDemoHE.jobString>正在制作 105mm 一次性高爆破拆弹发射器 x5。</Make105mmDemoHE.jobString>
+  
+  <!-- EN: make disposable HE demolition missile launcher x5 -->
+  <Make105mmDemoHET.label>制作 105mm 一次性高爆破拆弹发射器 x5</Make105mmDemoHET.label>
+  <!-- EN: Craft 5 disposable HE demolition missile launchers. -->
+  <Make105mmDemoHET.description>制作 105mm 一次性高爆破拆弹发射器 x5</Make105mmDemoHET.description>
+  <!-- EN: Making HE demolition missile launchers. -->
+  <Make105mmDemoHET.jobString>正在制作 105mm 一次性高爆破拆弹发射器 x5。</Make105mmDemoHET.jobString>
+  
+  <!-- EN: make disposable incendiary demolition missile launcher x5 -->
+  <Make105mmDemoIncendiary.label>制作 105mm 一次性燃烧破拆弹发射器 x5</Make105mmDemoIncendiary.label>
+  <!-- EN: Craft 5 disposable incendiary demolition missile launchers. -->
+  <Make105mmDemoIncendiary.description>制作 105mm 一次性燃烧破拆弹发射器 x5</Make105mmDemoIncendiary.description>
+  <!-- EN: Making incendiary demolition missile launchers. -->
+  <Make105mmDemoIncendiary.jobString>正在制作 105mm 一次性燃烧破拆弹发射器 x5。</Make105mmDemoIncendiary.jobString>
+  
+  <!-- EN: make disposable incendiary demolition missile launcher x5 -->
+  <Make105mmDemoIncendiaryT.label>制作 105mm 一次性燃烧破拆弹发射器 x5</Make105mmDemoIncendiaryT.label>
+  <!-- EN: Craft 5 disposable incendiary demolition missile launchers. -->
+  <Make105mmDemoIncendiaryT.description>制作 105mm 一次性燃烧破拆弹发射器 x5</Make105mmDemoIncendiaryT.description>
+  <!-- EN: Making incendiary demolition missile launchers. -->
+  <Make105mmDemoIncendiaryT.jobString>正在制作 105mm 一次性燃烧破拆弹发射器 x5。</Make105mmDemoIncendiaryT.jobString>
+  
+  <!-- EN: make disposable thermobaric demolition missile launcher x5 -->
+  <Make105mmDemoThermobaric.label>制作 105mm 一次性温压破拆弹发射器 x5</Make105mmDemoThermobaric.label>
+  <!-- EN: Craft 5 disposable thermobaric demolition missile launchers. -->
+  <Make105mmDemoThermobaric.description>制作 105mm 一次性温压破拆弹发射器 x5</Make105mmDemoThermobaric.description>
+  <!-- EN: Making thermobaric demolition missile launchers. -->
+  <Make105mmDemoThermobaric.jobString>正在制作 105mm 一次性温压破拆弹发射器 x5。</Make105mmDemoThermobaric.jobString>
+  
+  <!-- EN: make disposable thermobaric demolition missile launcher x5 -->
+  <Make105mmDemoThermobaricT.label>制作 105mm 一次性温压破拆弹发射器 x5</Make105mmDemoThermobaricT.label>
+  <!-- EN: Craft 5 disposable thermobaric demolition missile launchers. -->
+  <Make105mmDemoThermobaricT.description>制作 105mm 一次性温压破拆弹发射器 x5</Make105mmDemoThermobaricT.description>
+  <!-- EN: Making thermobaric demolition missile launchers. -->
+  <Make105mmDemoThermobaricT.jobString>正在制作 105mm 一次性温压破拆弹发射器 x5。</Make105mmDemoThermobaricT.jobString>
+  
+</LanguageData>

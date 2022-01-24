@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 3HST weapons -->
+  <Gun3HST.label>3HST制武器</Gun3HST.label>
+  
+  <!-- EN: 3HST disposable weapons -->
+  <Gun3HSTDisposable.label>3HST一次性武器</Gun3HSTDisposable.label>
+  
+  <!-- EN: 3HST heavy weapons -->
+  <GunHeavy3HST.label>3HST重武器</GunHeavy3HST.label>
+  
+  <!-- EN: 3HST infantry weapons -->
+  <GunInfantry3HST.label>3HST单兵武器</GunInfantry3HST.label>
+  
+</LanguageData>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: electromagnetic accelerator rail -->
+  <Resource_3HST_RailComponent.label>电磁加速轨道</Resource_3HST_RailComponent.label>
+  <!-- EN: Advanced magnetic accelerator rails used in various 3HST railgun designs. While durable against the ablation from railgun fire, it'll deteriorate rapidly in the open air. -->
+  <Resource_3HST_RailComponent.description>极其先进的电磁加速轨道，用于各式各样的3HST制武器。</Resource_3HST_RailComponent.description>
+  <!-- EN: Rearm rail -->
+  <Resource_3HST_RailComponent.comps.CompUsable.useLabel>更换磁轨</Resource_3HST_RailComponent.comps.CompUsable.useLabel>
+  
+</LanguageData>

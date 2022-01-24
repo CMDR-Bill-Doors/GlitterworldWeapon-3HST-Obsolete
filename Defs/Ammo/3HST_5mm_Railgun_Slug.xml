@@ -63,8 +63,6 @@
       <armorPenetrationSharp>44</armorPenetrationSharp>
       <armorPenetrationBlunt>315</armorPenetrationBlunt>
       <speed>400</speed>
-      <gravityFactor>20</gravityFactor>
-
     </projectile>
   </ThingDef>
 

@@ -164,4 +164,35 @@
     </subSounds>
   </SoundDef>
 
+	<SoundDef>
+		<defName>RG_Hit_Tree</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Interact/Work/Construct/Trees/Tree_Chop</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>100~120</volumeRange>
+				<pitchRange>0.9408336~1.207082</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>RG_Hit_TreeLeaf</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>GunShoot/Leaf</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>50~100</volumeRange>
+				<pitchRange>0.5~1.5</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
 </Defs>

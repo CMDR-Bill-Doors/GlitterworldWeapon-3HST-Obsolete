@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 3HST automatic indirect grenade system -->
+  <Gun_3HST_AutoGrenade.label>3HST制自动曲射榴弹系统</Gun_3HST_AutoGrenade.label>
+  <!-- EN: A automatic grenade launcher designed to fire at a high angle, raining grenade from above. -->
+  <Gun_3HST_AutoGrenade.description>一个设计用于高角度曲射的自动榴弹发射器。因为实战效果低于预期所以存世量不高。</Gun_3HST_AutoGrenade.description>
+  <!-- EN: stock -->
+  <Gun_3HST_AutoGrenade.tools.stock.label>枪托</Gun_3HST_AutoGrenade.tools.stock.label>
+  <!-- EN: barrel -->
+  <Gun_3HST_AutoGrenade.tools.barrel.label>枪管</Gun_3HST_AutoGrenade.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <Gun_3HST_AutoGrenade.tools.muzzle.label>枪口</Gun_3HST_AutoGrenade.tools.muzzle.label>
+  <!-- EN: 3HST automatic indirect grenade system -->
+  <Gun_3HST_AutoGrenade.verbs.Verb_ShootMortarCE.label>3HST制自动曲射榴弹系统</Gun_3HST_AutoGrenade.verbs.Verb_ShootMortarCE.label>
+  
+  <!-- EN: Mounted 3HST automatic indirect grenade system -->
+  <Gun_3HST_AutoGrenade_Turret.label>3HST自动曲射榴弹系统（炮塔用）</Gun_3HST_AutoGrenade_Turret.label>
+  <!-- EN: 3HST automatic indirect grenade system on a stationary emplacement. -->
+  <Gun_3HST_AutoGrenade_Turret.description>安装在炮塔上的3HST自动曲射榴弹系统。</Gun_3HST_AutoGrenade_Turret.description>
+  <!-- EN: Mounted 3HST automatic indirect grenade system -->
+  <Gun_3HST_AutoGrenade_Turret.verbs.Verb_ShootCE.label>3HST制自动曲射榴弹系统</Gun_3HST_AutoGrenade_Turret.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: Mounted 3HST automatic indirect grenade system -->
+  <Gun_3HST_AutoGrenade_Turret_Auto.label>3HST自动曲射榴弹系统（炮塔用）</Gun_3HST_AutoGrenade_Turret_Auto.label>
+  <!-- EN: 3HST automatic indirect grenade system on a stationary emplacement. -->
+  <Gun_3HST_AutoGrenade_Turret_Auto.description>安装在炮塔上的3HST自动曲射榴弹系统。</Gun_3HST_AutoGrenade_Turret_Auto.description>
+  <!-- EN: Mounted 3HST automatic indirect grenade system -->
+  <Gun_3HST_AutoGrenade_Turret_Auto.verbs.Verb_ShootCE.label>3HST制自动曲射榴弹系统</Gun_3HST_AutoGrenade_Turret_Auto.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: Auto 3HST automatic indirect grenade system turret -->
+  <Turret_3HSTAIGSAuto.label>自动曲射榴弹系统炮塔</Turret_3HSTAIGSAuto.label>
+  <!-- EN: A permanent defensive structure covered under thick steel armor reinforced by a layer of plasteel surface hardening. While extremely durable and resilent to all but EMP attacks, they're costly to build both in terms of material and time, and being unable to move after construction. -->
+  <Turret_3HSTAIGSAuto.description>一部装在自动炮塔上的3HST自动曲射榴弹发射器，厚重的装甲保护着内部结构，但是也使得这个炮塔一旦完工就再也无法移动。</Turret_3HSTAIGSAuto.description>
+  
+  <!-- EN: Manned 3HST automatic indirect grenade system -->
+  <Turret_3HSTAIGSmanned.label>手动自动曲射榴弹系统炮塔</Turret_3HSTAIGSmanned.label>
+  <!-- EN: A 3HST automatic indirect grenade system mounted on a turret mount. -->
+  <Turret_3HSTAIGSmanned.description>一门安装在三脚架上面的3HST自动曲射榴弹系统。</Turret_3HSTAIGSmanned.description>
+  
+</LanguageData>

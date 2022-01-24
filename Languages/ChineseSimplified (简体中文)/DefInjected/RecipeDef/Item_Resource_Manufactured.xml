@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make electromagnetic accelerator rail -->
+  <Make_Resource_3HST_RailComponent.label>制作 电磁加速轨道</Make_Resource_3HST_RailComponent.label>
+  <!-- EN: Make electromagnetic accelerator rail. -->
+  <Make_Resource_3HST_RailComponent.description>制作 电磁加速轨道</Make_Resource_3HST_RailComponent.description>
+  <!-- EN: Making electromagnetic accelerator rail. -->
+  <Make_Resource_3HST_RailComponent.jobString>正在制作 电磁加速轨道。</Make_Resource_3HST_RailComponent.jobString>
+  
+</LanguageData>

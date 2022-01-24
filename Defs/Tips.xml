@@ -3,7 +3,7 @@
   <TipSetDef>
     <defName>BDGW_Tips</defName>
     <tips>
-      <li>Railgun rails are short-lived, remember to bring spares or you may end up in a gun fight with a malfunctional railgun.\nTo replace the spent rails, equip the gun that needs replacement, right-click on an electromagnetic accelerator rail on the ground and select "Rearm rail"</li>
+      <li>Railgun rails are short-lived, remember to bring spares or you may end up in a gun fight with a malfunctional railgun.</li>
       <li>Most if not all LGIS launchers are capable of switching between direct fire and indirect, mortar-like fire. Use this at your advantage!</li>
       <li>Scatterailguns introduce heavy rail degradation, with an estimated rail life of 125 rounds per standard rail package. Mind your rail durability when using them!</li>
       <li>Railgun turrets consume extra power after firing to charge it's capacitors. Be aware of your battery charge if you intend to use them!</li>
@@ -49,7 +49,7 @@
 		<label>Railgun turrets</label>
 		<priority>50</priority>
 		<needsOpportunity>True</needsOpportunity>
-		<helpText>Railgun turrets, even manual ones, consume power after firing to recharge their capacitors. Turrets will have extra power consumption during turret cool down, proportional to rounds fired in the previous salvo, fewer the shot, lower the power draw, so don't be afraid to switch them to single-shot mode.\n\nThe electricity consumed per shot is displayed on the left-lower panel and info panel of the turret, while some deviation may occur, it should be within 5/4 of the expected power consumption.\n\nDon't panic if your turret are consuming half a million watt per day, it'll only last for a second!</helpText>
+		<helpText>Railgun turrets, even manual ones, consume power after firing to recharge their capacitors， failure to fullfil the power demand will prevent the turret from complete its cool down. Turrets will have extra power consumption during turret cool down, proportional to rounds fired in the previous salvo, fewer the shot, lower the power draw, so don't be afraid to switch them to single-shot mode.\n\nThe electricity consumed per shot is displayed on the left-lower panel and info panel of the turret, while some deviation may occur, it should be within 5/4 of the expected power consumption.\n\nDon't panic if your turret are consuming half a million watt per day, it'll only last for a second!</helpText>
 		<highlightTags>
 			<li>BDGW_Turret</li>
 		</highlightTags>

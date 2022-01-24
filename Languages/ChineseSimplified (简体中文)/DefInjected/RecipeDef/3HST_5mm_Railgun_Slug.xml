@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make 5x66mm Railgun cartridge (Sabot) 500 -->
+  <MakeAmmo_3HST5mmRG_Steel.label>制作 3HST制5mm磁轨通用弹 (脱壳穿甲弹) x500</MakeAmmo_3HST5mmRG_Steel.label>
+  <!-- EN: Craft 500 5x66mm Railgun (Sabot) cartridges. -->
+  <MakeAmmo_3HST5mmRG_Steel.description>制作 3HST制5mm磁轨通用弹 (脱壳穿甲弹) x500</MakeAmmo_3HST5mmRG_Steel.description>
+  <!-- EN: Making 5x66mm Railgun (Sabot) cartridges. -->
+  <MakeAmmo_3HST5mmRG_Steel.jobString>正在制作 3HST制5mm磁轨通用弹 (脱壳穿甲弹) x500。</MakeAmmo_3HST5mmRG_Steel.jobString>
+  
+</LanguageData>

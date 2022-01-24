@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Mounted 3HST 20mm rail autocannon -->
+  <Gun_20mmAC_Turret.label>3HST制20mm磁轨自动炮（炮塔用）</Gun_20mmAC_Turret.label>
+  <!-- EN: 3HST 20mm rail autocannon on a stationary emplacement. -->
+  <Gun_20mmAC_Turret.description>安装在固定支架上的3HST制20mm磁轨自动炮。</Gun_20mmAC_Turret.description>
+  <!-- EN: Mounted 3HST 20mm rail autocannon -->
+  <Gun_20mmAC_Turret.verbs.Verb_ShootWithPower.label>3HST制20mm磁轨自动炮</Gun_20mmAC_Turret.verbs.Verb_ShootWithPower.label>
+  
+  <!-- EN: 3HST 20mm vehicle rail autocannon -->
+  <Gun_3HST_20mmAutocannon.label>3HST制20mm载具用磁轨自动炮</Gun_3HST_20mmAutocannon.label>
+  <!-- EN: High caliber, fast firing railgun commonly found on a wide variety of 3HST vehicles, from IFV to space warship AA guns, and probably super strength ancient soldiers with archotech implants. -->
+  <Gun_3HST_20mmAutocannon.description>一种常见的3HST制大口径磁轨自动炮，从步战车到战舰防空炮都有使用。</Gun_3HST_20mmAutocannon.description>
+  <!-- EN: Rail durability -->
+  <Gun_3HST_20mmAutocannon.comps.CompChangeBarrel.label>磁轨寿命</Gun_3HST_20mmAutocannon.comps.CompChangeBarrel.label>
+  <!-- EN: stock -->
+  <Gun_3HST_20mmAutocannon.tools.stock.label>枪托</Gun_3HST_20mmAutocannon.tools.stock.label>
+  <!-- EN: barrel -->
+  <Gun_3HST_20mmAutocannon.tools.barrel.label>枪管</Gun_3HST_20mmAutocannon.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <Gun_3HST_20mmAutocannon.tools.muzzle.label>枪口</Gun_3HST_20mmAutocannon.tools.muzzle.label>
+  <!-- EN: 3HST 20mm vehicle rail autocannon -->
+  <Gun_3HST_20mmAutocannon.verbs.Verb_ShootByBarrel.label>3HST制20mm载具用磁轨自动炮</Gun_3HST_20mmAutocannon.verbs.Verb_ShootByBarrel.label>
+  
+  <!-- EN: Manned 20mm rail autocannon -->
+  <Turret_3HST20mmACmanned.label>手动20mm磁轨自动炮炮塔</Turret_3HST20mmACmanned.label>
+  <!-- EN: A 3HST rail autocannon mounted on an fixed mount. Despite the fact this turret is manually operated, this turret still needs a amount of power to operate since railguns consumes power. -->
+  <Turret_3HST20mmACmanned.description>一部装在固定炮架上的3HST制20mm磁轨自动炮。虽然是手动炮塔，但是由于磁轨炮需要供能的缘故所以还是需要电力才能工作。</Turret_3HST20mmACmanned.description>
+  <!-- EN: Recharge power consumption -->
+  <Turret_3HST20mmACmanned.comps.CompPowerTrader_ForTurretGunCE.rechargePower>每次射击充能耗电</Turret_3HST20mmACmanned.comps.CompPowerTrader_ForTurretGunCE.rechargePower>
+  <!-- EN: The amount of power the weapon will draw from the power grid during cool down.\n\nRailguns' built in capacitors need to be recharged after each salvo, leading to a power consumption spike.\n\nThe power consumption is calculated as: Power draw x Turret cooldown / 1000\n{0} W x {1} s / 1000 = {2} Wd -->
+  <Turret_3HST20mmACmanned.comps.CompPowerTrader_ForTurretGunCE.rechargePower_Stat>该炮塔在冷却时每发子弹要消耗的电力，\n\n每次射击后，磁轨炮塔的内置电容器都需要充电，造成耗电激增。\n\n耗电为 消耗功率 x 炮塔冷却 / 1000\n{0} W x {1} s / 1000 = {2} Wd</Turret_3HST20mmACmanned.comps.CompPowerTrader_ForTurretGunCE.rechargePower_Stat>
+  <!-- EN: Rail durability -->
+  <Turret_3HST20mmACmanned.comps.CompRefuelable.fuelGizmoLabel>磁轨寿命</Turret_3HST20mmACmanned.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Shots until accelerator rail change -->
+  <Turret_3HST20mmACmanned.comps.CompRefuelable.fuelLabel>在磁轨彻底损坏前剩余射击次数</Turret_3HST20mmACmanned.comps.CompRefuelable.fuelLabel>
+  <!-- EN: Cannot shoot: Needs new accelerator rail -->
+  <Turret_3HST20mmACmanned.comps.CompRefuelable.outOfFuelMessage>无法射击：需要更换磁轨</Turret_3HST20mmACmanned.comps.CompRefuelable.outOfFuelMessage>
+  
+  <!-- EN: Auto 20mm rail autocannon -->
+  <Turret_3HST20mmHMGAuto.label>固定自动20mm磁轨自动炮炮塔</Turret_3HST20mmHMGAuto.label>
+  <!-- EN: A permanent defensive structure covered under thick steel armor reinforced by a layer of plasteel surface hardening. While extremely durable and resilent to all but EMP attacks, they're costly to build both in terms of material and time, and being unable to move after construction. -->
+  <Turret_3HST20mmHMGAuto.description>一部装在自动炮塔上的3HST制20mm自动磁轨炮，厚重的装甲保护着内部结构，但是也使得这个炮塔一旦完工就再也无法移动。</Turret_3HST20mmHMGAuto.description>
+  <!-- EN: Recharge power consumption -->
+  <Turret_3HST20mmHMGAuto.comps.CompPowerTrader_ForTurretGunCE.rechargePower>每次射击充能耗电</Turret_3HST20mmHMGAuto.comps.CompPowerTrader_ForTurretGunCE.rechargePower>
+  <!-- EN: The amount of power the weapon will draw from the power grid during cool down.\n\nRailguns' built in capacitors need to be recharged after each salvo, leading to a power consumption spike.\n\nThe power consumption is calculated as: Power draw x Turret cooldown / 1000\n{0} W x {1} s / 1000 = {2} Wd -->
+  <Turret_3HST20mmHMGAuto.comps.CompPowerTrader_ForTurretGunCE.rechargePower_Stat>该炮塔在冷却时每发子弹要消耗的电力，\n\n每次射击后，磁轨炮塔的内置电容器都需要充电，造成耗电激增。\n\n耗电为 消耗功率 x 炮塔冷却 / 1000\n{0} W x {1} s / 1000 = {2} Wd</Turret_3HST20mmHMGAuto.comps.CompPowerTrader_ForTurretGunCE.rechargePower_Stat>
+  <!-- EN: Rail durability -->
+  <Turret_3HST20mmHMGAuto.comps.CompRefuelable.fuelGizmoLabel>磁轨寿命</Turret_3HST20mmHMGAuto.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Shots until accelerator rail change -->
+  <Turret_3HST20mmHMGAuto.comps.CompRefuelable.fuelLabel>在磁轨彻底损坏前剩余射击次数</Turret_3HST20mmHMGAuto.comps.CompRefuelable.fuelLabel>
+  <!-- EN: Cannot shoot: Needs new accelerator rail -->
+  <Turret_3HST20mmHMGAuto.comps.CompRefuelable.outOfFuelMessage>无法射击：需要更换磁轨</Turret_3HST20mmHMGAuto.comps.CompRefuelable.outOfFuelMessage>
+  
+  <!-- EN: Auto 20mm rail autocannon -->
+  <Turret_3HST20mmHMGAutoMoveable.label>可移动自动20mm磁轨自动炮炮塔</Turret_3HST20mmHMGAutoMoveable.label>
+  <!-- EN: A gun, a tripod, and some servos between them. While more fragile and inaccurate than their permanent cousins, they enjoy the versatility of being moveable. -->
+  <Turret_3HST20mmHMGAutoMoveable.description>安装在带有作动器的三脚架上的3HST制20mm自动磁轨炮，虽然便于转移，但是很容易在炮火下损毁。</Turret_3HST20mmHMGAutoMoveable.description>
+  <!-- EN: Recharge power consumption -->
+  <Turret_3HST20mmHMGAutoMoveable.comps.CompPowerTrader_ForTurretGunCE.rechargePower>每次射击充能耗电</Turret_3HST20mmHMGAutoMoveable.comps.CompPowerTrader_ForTurretGunCE.rechargePower>
+  <!-- EN: The amount of power the weapon will draw from the power grid during cool down.\n\nRailguns' built in capacitors need to be recharged after each salvo, leading to a power consumption spike.\n\nThe power consumption is calculated as: Power draw x Turret cooldown / 1000\n{0} W x {1} s / 1000 = {2} Wd -->
+  <Turret_3HST20mmHMGAutoMoveable.comps.CompPowerTrader_ForTurretGunCE.rechargePower_Stat>该炮塔在冷却时每发子弹要消耗的电力，\n\n每次射击后，磁轨炮塔的内置电容器都需要充电，造成耗电激增。\n\n耗电为 消耗功率 x 炮塔冷却 / 1000\n{0} W x {1} s / 1000 = {2} Wd</Turret_3HST20mmHMGAutoMoveable.comps.CompPowerTrader_ForTurretGunCE.rechargePower_Stat>
+  <!-- EN: Rail durability -->
+  <Turret_3HST20mmHMGAutoMoveable.comps.CompRefuelable.fuelGizmoLabel>磁轨寿命</Turret_3HST20mmHMGAutoMoveable.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Shots until accelerator rail change -->
+  <Turret_3HST20mmHMGAutoMoveable.comps.CompRefuelable.fuelLabel>在磁轨彻底损坏前剩余射击次数</Turret_3HST20mmHMGAutoMoveable.comps.CompRefuelable.fuelLabel>
+  <!-- EN: Cannot shoot: Needs new accelerator rail -->
+  <Turret_3HST20mmHMGAutoMoveable.comps.CompRefuelable.outOfFuelMessage>无法射击：需要更换磁轨</Turret_3HST20mmHMGAutoMoveable.comps.CompRefuelable.outOfFuelMessage>
+  
+</LanguageData>

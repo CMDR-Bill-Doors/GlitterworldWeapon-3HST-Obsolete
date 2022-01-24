@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: install slave RFID tag -->
+  <Install3HSTSlaveTag.label>安装射频奴隶标签</Install3HSTSlaveTag.label>
+  <!-- EN: Install a 3HST standard slave RFID tag. Useless on it's own, but slavers prefer tagged slaves and will pay better. However, removing the RFID coil is much more difficult and dangerous than installing it. -->
+  <Install3HSTSlaveTag.description>在颈部安装一个射频奴隶标签。\n虽然在缺少对应基建设施的边缘世界并没有什么用，但是奴隶商人会更青睐被打上标签的奴隶。然而，安装这个标签很容易，但是拆除它并不简单。</Install3HSTSlaveTag.description>
+  <!-- EN: Installing slave RFID tag. -->
+  <Install3HSTSlaveTag.jobString>正在安装射频奴隶标签。</Install3HSTSlaveTag.jobString>
+  
+  <!-- EN: remove slave RFID tag -->
+  <Remove3HSTSlaveTag.label>移除射频奴隶标签</Remove3HSTSlaveTag.label>
+  <!-- EN: Removing the slave identification RFID chip installed in the neck. Due to it's proximity to major arteries and trachea, this operation can be risky. -->
+  <Remove3HSTSlaveTag.description>将已经安装的射频奴隶标签移除。\n由于这个标签被安装在大动脉和气管附近，所以这个手术的风险较大。</Remove3HSTSlaveTag.description>
+  <!-- EN: Removing slave RFID tag. -->
+  <Remove3HSTSlaveTag.jobString>正在移除射频奴隶标签。</Remove3HSTSlaveTag.jobString>
+  
+</LanguageData>

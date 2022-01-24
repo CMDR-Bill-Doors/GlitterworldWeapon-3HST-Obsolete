@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: cluster LGIS tube -->
+  <Gun_3HST_LGIS_cluster.label>集束 LGIS发射筒</Gun_3HST_LGIS_cluster.label>
+  <!-- EN: Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but it is also used to feed various LGIS launchers. -->
+  <Gun_3HST_LGIS_cluster.description>搭载激光制导和惯性制导的小口径导弹，装备于步兵或者轻型战斗载具上。\n该导弹是帝国陆军在第三次内战前数十年委托3HST有限公司设计和生产，用于替代榴弹发射器，单兵火箭筒，迫击炮，车载导弹发射器等一系列武器的“终极解决方案”。但是事实上这个决定是否正确还有待历史证明。\nLGIS导弹出厂时便被装在装备有可折叠简易握把和瞄准装置的，可以作为一次性发射筒发射的保护筒包装内。在用做弹药时，将握把和瞄具折叠便可装入发射器。\n这个发射筒目前处在直射模式，利用一系列陀螺仪，测距仪射击诸元输入，发射器上的简易火控会将数据输入进LGIS导弹的惯性导引头，对目标发起快速，突然，精确的直接打击。但是由于尺寸缘故，LGIS导弹的杀伤力有点差强人意，以至于被戏称为“窜天猴”或者“摔炮”。在战后，一款新的导弹研发出来代替它的位置，而战争期间产能过剩的LGIS弹便被大量下发至担任反恐反海盗清剿叛军任务的二线部队。</Gun_3HST_LGIS_cluster.description>
+  <!-- EN: Extend the sights and switch the launcher to indirect fire mode, or fold it back to direct fire mode. -->
+  <Gun_3HST_LGIS_cluster.comps.CompSecondaryVerb.description>展开瞄具切换成曲射模式，或是收起瞄具切换成直射模式</Gun_3HST_LGIS_cluster.comps.CompSecondaryVerb.description>
+  <!-- EN: direct fire -->
+  <Gun_3HST_LGIS_cluster.comps.CompSecondaryVerb.mainWeaponLabel>直射模式</Gun_3HST_LGIS_cluster.comps.CompSecondaryVerb.mainWeaponLabel>
+  <!-- EN: indirect fire -->
+  <Gun_3HST_LGIS_cluster.comps.CompSecondaryVerb.secondaryWeaponLabel>曲射模式</Gun_3HST_LGIS_cluster.comps.CompSecondaryVerb.secondaryWeaponLabel>
+  <!-- EN: stock -->
+  <Gun_3HST_LGIS_cluster.tools.stock.label>枪托</Gun_3HST_LGIS_cluster.tools.stock.label>
+  <!-- EN: barrel -->
+  <Gun_3HST_LGIS_cluster.tools.barrel.label>枪管</Gun_3HST_LGIS_cluster.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <Gun_3HST_LGIS_cluster.tools.muzzle.label>枪口</Gun_3HST_LGIS_cluster.tools.muzzle.label>
+  
+  <!-- EN: confetti LGIS tube -->
+  <Gun_3HST_LGIS_confetti.label>礼花 LGIS发射筒</Gun_3HST_LGIS_confetti.label>
+  <!-- EN: Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but it is also used to feed various LGIS launchers. -->
+  <Gun_3HST_LGIS_confetti.description>搭载激光制导和惯性制导的小口径导弹，装备于步兵或者轻型战斗载具上。\n该导弹是帝国陆军在第三次内战前数十年委托3HST有限公司设计和生产，用于替代榴弹发射器，单兵火箭筒，迫击炮，车载导弹发射器等一系列武器的“终极解决方案”。但是事实上这个决定是否正确还有待历史证明。\nLGIS导弹出厂时便被装在装备有可折叠简易握把和瞄准装置的，可以作为一次性发射筒发射的保护筒包装内。在用做弹药时，将握把和瞄具折叠便可装入发射器。\n这个发射筒目前处在直射模式，利用一系列陀螺仪，测距仪射击诸元输入，发射器上的简易火控会将数据输入进LGIS导弹的惯性导引头，对目标发起快速，突然，精确的直接打击。但是由于尺寸缘故，LGIS导弹的杀伤力有点差强人意，以至于被戏称为“窜天猴”或者“摔炮”。在战后，一款新的导弹研发出来代替它的位置，而战争期间产能过剩的LGIS弹便被大量下发至担任反恐反海盗清剿叛军任务的二线部队。</Gun_3HST_LGIS_confetti.description>
+  <!-- EN: Extend the sights and switch the launcher to indirect fire mode, or fold it back to direct fire mode. -->
+  <Gun_3HST_LGIS_confetti.comps.CompSecondaryVerb.description>展开瞄具切换成曲射模式，或是收起瞄具切换成直射模式</Gun_3HST_LGIS_confetti.comps.CompSecondaryVerb.description>
+  <!-- EN: direct fire -->
+  <Gun_3HST_LGIS_confetti.comps.CompSecondaryVerb.mainWeaponLabel>直射模式</Gun_3HST_LGIS_confetti.comps.CompSecondaryVerb.mainWeaponLabel>
+  <!-- EN: indirect fire -->
+  <Gun_3HST_LGIS_confetti.comps.CompSecondaryVerb.secondaryWeaponLabel>曲射模式</Gun_3HST_LGIS_confetti.comps.CompSecondaryVerb.secondaryWeaponLabel>
+  <!-- EN: stock -->
+  <Gun_3HST_LGIS_confetti.tools.stock.label>枪托</Gun_3HST_LGIS_confetti.tools.stock.label>
+  <!-- EN: barrel -->
+  <Gun_3HST_LGIS_confetti.tools.barrel.label>枪管</Gun_3HST_LGIS_confetti.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <Gun_3HST_LGIS_confetti.tools.muzzle.label>枪口</Gun_3HST_LGIS_confetti.tools.muzzle.label>
+  
+  <!-- EN: EMP LGIS tube -->
+  <Gun_3HST_LGIS_EMP.label>EMP LGIS发射筒</Gun_3HST_LGIS_EMP.label>
+  <!-- EN: Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but it is also used to feed various LGIS launchers. -->
+  <Gun_3HST_LGIS_EMP.description>搭载激光制导和惯性制导的小口径导弹，装备于步兵或者轻型战斗载具上。\n该导弹是帝国陆军在第三次内战前数十年委托3HST有限公司设计和生产，用于替代榴弹发射器，单兵火箭筒，迫击炮，车载导弹发射器等一系列武器的“终极解决方案”。但是事实上这个决定是否正确还有待历史证明。\nLGIS导弹出厂时便被装在装备有可折叠简易握把和瞄准装置的，可以作为一次性发射筒发射的保护筒包装内。在用做弹药时，将握把和瞄具折叠便可装入发射器。\n这个发射筒目前处在直射模式，利用一系列陀螺仪，测距仪射击诸元输入，发射器上的简易火控会将数据输入进LGIS导弹的惯性导引头，对目标发起快速，突然，精确的直接打击。但是由于尺寸缘故，LGIS导弹的杀伤力有点差强人意，以至于被戏称为“窜天猴”或者“摔炮”。在战后，一款新的导弹研发出来代替它的位置，而战争期间产能过剩的LGIS弹便被大量下发至担任反恐反海盗清剿叛军任务的二线部队。</Gun_3HST_LGIS_EMP.description>
+  <!-- EN: Extend the sights and switch the launcher to indirect fire mode, or fold it back to direct fire mode. -->
+  <Gun_3HST_LGIS_EMP.comps.CompSecondaryVerb.description>展开瞄具切换成曲射模式，或是收起瞄具切换成直射模式</Gun_3HST_LGIS_EMP.comps.CompSecondaryVerb.description>
+  <!-- EN: direct fire -->
+  <Gun_3HST_LGIS_EMP.comps.CompSecondaryVerb.mainWeaponLabel>直射模式</Gun_3HST_LGIS_EMP.comps.CompSecondaryVerb.mainWeaponLabel>
+  <!-- EN: indirect fire -->
+  <Gun_3HST_LGIS_EMP.comps.CompSecondaryVerb.secondaryWeaponLabel>曲射模式</Gun_3HST_LGIS_EMP.comps.CompSecondaryVerb.secondaryWeaponLabel>
+  <!-- EN: stock -->
+  <Gun_3HST_LGIS_EMP.tools.stock.label>枪托</Gun_3HST_LGIS_EMP.tools.stock.label>
+  <!-- EN: barrel -->
+  <Gun_3HST_LGIS_EMP.tools.barrel.label>枪管</Gun_3HST_LGIS_EMP.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <Gun_3HST_LGIS_EMP.tools.muzzle.label>枪口</Gun_3HST_LGIS_EMP.tools.muzzle.label>
+  
+  <!-- EN: firefoam LGIS tube -->
+  <Gun_3HST_LGIS_firefoam.label>灭火 LGIS发射筒</Gun_3HST_LGIS_firefoam.label>
+  <!-- EN: Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but it is also used to feed various LGIS launchers. -->
+  <Gun_3HST_LGIS_firefoam.description>搭载激光制导和惯性制导的小口径导弹，装备于步兵或者轻型战斗载具上。\n该导弹是帝国陆军在第三次内战前数十年委托3HST有限公司设计和生产，用于替代榴弹发射器，单兵火箭筒，迫击炮，车载导弹发射器等一系列武器的“终极解决方案”。但是事实上这个决定是否正确还有待历史证明。\nLGIS导弹出厂时便被装在装备有可折叠简易握把和瞄准装置的，可以作为一次性发射筒发射的保护筒包装内。在用做弹药时，将握把和瞄具折叠便可装入发射器。\n这个发射筒目前处在直射模式，利用一系列陀螺仪，测距仪射击诸元输入，发射器上的简易火控会将数据输入进LGIS导弹的惯性导引头，对目标发起快速，突然，精确的直接打击。但是由于尺寸缘故，LGIS导弹的杀伤力有点差强人意，以至于被戏称为“窜天猴”或者“摔炮”。在战后，一款新的导弹研发出来代替它的位置，而战争期间产能过剩的LGIS弹便被大量下发至担任反恐反海盗清剿叛军任务的二线部队。</Gun_3HST_LGIS_firefoam.description>
+  <!-- EN: Extend the sights and switch the launcher to indirect fire mode, or fold it back to direct fire mode. -->
+  <Gun_3HST_LGIS_firefoam.comps.CompSecondaryVerb.description>展开瞄具切换成曲射模式，或是收起瞄具切换成直射模式</Gun_3HST_LGIS_firefoam.comps.CompSecondaryVerb.description>
+  <!-- EN: direct fire -->
+  <Gun_3HST_LGIS_firefoam.comps.CompSecondaryVerb.mainWeaponLabel>直射模式</Gun_3HST_LGIS_firefoam.comps.CompSecondaryVerb.mainWeaponLabel>
+  <!-- EN: indirect fire -->
+  <Gun_3HST_LGIS_firefoam.comps.CompSecondaryVerb.secondaryWeaponLabel>曲射模式</Gun_3HST_LGIS_firefoam.comps.CompSecondaryVerb.secondaryWeaponLabel>
+  <!-- EN: stock -->
+  <Gun_3HST_LGIS_firefoam.tools.stock.label>枪托</Gun_3HST_LGIS_firefoam.tools.stock.label>
+  <!-- EN: barrel -->
+  <Gun_3HST_LGIS_firefoam.tools.barrel.label>枪管</Gun_3HST_LGIS_firefoam.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <Gun_3HST_LGIS_firefoam.tools.muzzle.label>枪口</Gun_3HST_LGIS_firefoam.tools.muzzle.label>
+  
+  <!-- EN: frag LGIS tube -->
+  <Gun_3HST_LGIS_frag.label>破片 LGIS发射筒</Gun_3HST_LGIS_frag.label>
+  <!-- EN: Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but it is also used to feed various LGIS launchers. -->
+  <Gun_3HST_LGIS_frag.description>搭载激光制导和惯性制导的小口径导弹，装备于步兵或者轻型战斗载具上。\n该导弹是帝国陆军在第三次内战前数十年委托3HST有限公司设计和生产，用于替代榴弹发射器，单兵火箭筒，迫击炮，车载导弹发射器等一系列武器的“终极解决方案”。但是事实上这个决定是否正确还有待历史证明。\nLGIS导弹出厂时便被装在装备有可折叠简易握把和瞄准装置的，可以作为一次性发射筒发射的保护筒包装内。在用做弹药时，将握把和瞄具折叠便可装入发射器。\n这个发射筒目前处在直射模式，利用一系列陀螺仪，测距仪射击诸元输入，发射器上的简易火控会将数据输入进LGIS导弹的惯性导引头，对目标发起快速，突然，精确的直接打击。但是由于尺寸缘故，LGIS导弹的杀伤力有点差强人意，以至于被戏称为“窜天猴”或者“摔炮”。在战后，一款新的导弹研发出来代替它的位置，而战争期间产能过剩的LGIS弹便被大量下发至担任反恐反海盗清剿叛军任务的二线部队。</Gun_3HST_LGIS_frag.description>
+  <!-- EN: Extend the sights and switch the launcher to indirect fire mode, or fold it back to direct fire mode. -->
+  <Gun_3HST_LGIS_frag.comps.CompSecondaryVerb.description>展开瞄具切换成曲射模式，或是收起瞄具切换成直射模式</Gun_3HST_LGIS_frag.comps.CompSecondaryVerb.description>
+  <!-- EN: direct fire -->
+  <Gun_3HST_LGIS_frag.comps.CompSecondaryVerb.mainWeaponLabel>直射模式</Gun_3HST_LGIS_frag.comps.CompSecondaryVerb.mainWeaponLabel>
+  <!-- EN: indirect fire -->
+  <Gun_3HST_LGIS_frag.comps.CompSecondaryVerb.secondaryWeaponLabel>曲射模式</Gun_3HST_LGIS_frag.comps.CompSecondaryVerb.secondaryWeaponLabel>
+  <!-- EN: stock -->
+  <Gun_3HST_LGIS_frag.tools.stock.label>枪托</Gun_3HST_LGIS_frag.tools.stock.label>
+  <!-- EN: barrel -->
+  <Gun_3HST_LGIS_frag.tools.barrel.label>枪管</Gun_3HST_LGIS_frag.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <Gun_3HST_LGIS_frag.tools.muzzle.label>枪口</Gun_3HST_LGIS_frag.tools.muzzle.label>
+  
+  <!-- EN: HEAT LGIS tube -->
+  <Gun_3HST_LGIS_heat.label>破甲 LGIS发射筒</Gun_3HST_LGIS_heat.label>
+  <!-- EN: Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but it is also used to feed various LGIS launchers. -->
+  <Gun_3HST_LGIS_heat.description>搭载激光制导和惯性制导的小口径导弹，装备于步兵或者轻型战斗载具上。\n该导弹是帝国陆军在第三次内战前数十年委托3HST有限公司设计和生产，用于替代榴弹发射器，单兵火箭筒，迫击炮，车载导弹发射器等一系列武器的“终极解决方案”。但是事实上这个决定是否正确还有待历史证明。\nLGIS导弹出厂时便被装在装备有可折叠简易握把和瞄准装置的，可以作为一次性发射筒发射的保护筒包装内。在用做弹药时，将握把和瞄具折叠便可装入发射器。\n这个发射筒目前处在直射模式，利用一系列陀螺仪，测距仪射击诸元输入，发射器上的简易火控会将数据输入进LGIS导弹的惯性导引头，对目标发起快速，突然，精确的直接打击。但是由于尺寸缘故，LGIS导弹的杀伤力有点差强人意，以至于被戏称为“窜天猴”或者“摔炮”。在战后，一款新的导弹研发出来代替它的位置，而战争期间产能过剩的LGIS弹便被大量下发至担任反恐反海盗清剿叛军任务的二线部队。</Gun_3HST_LGIS_heat.description>
+  <!-- EN: Extend the sights and switch the launcher to indirect fire mode, or fold it back to direct fire mode. -->
+  <Gun_3HST_LGIS_heat.comps.CompSecondaryVerb.description>展开瞄具切换成曲射模式，或是收起瞄具切换成直射模式</Gun_3HST_LGIS_heat.comps.CompSecondaryVerb.description>
+  <!-- EN: direct fire -->
+  <Gun_3HST_LGIS_heat.comps.CompSecondaryVerb.mainWeaponLabel>直射模式</Gun_3HST_LGIS_heat.comps.CompSecondaryVerb.mainWeaponLabel>
+  <!-- EN: indirect fire -->
+  <Gun_3HST_LGIS_heat.comps.CompSecondaryVerb.secondaryWeaponLabel>曲射模式</Gun_3HST_LGIS_heat.comps.CompSecondaryVerb.secondaryWeaponLabel>
+  <!-- EN: stock -->
+  <Gun_3HST_LGIS_heat.tools.stock.label>枪托</Gun_3HST_LGIS_heat.tools.stock.label>
+  <!-- EN: barrel -->
+  <Gun_3HST_LGIS_heat.tools.barrel.label>枪管</Gun_3HST_LGIS_heat.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <Gun_3HST_LGIS_heat.tools.muzzle.label>枪口</Gun_3HST_LGIS_heat.tools.muzzle.label>
+  
+  <!-- EN: illumination LGIS tube -->
+  <Gun_3HST_LGIS_Illumination.label>照明 LGIS发射筒</Gun_3HST_LGIS_Illumination.label>
+  <!-- EN: Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but it is also used to feed various LGIS launchers. -->
+  <Gun_3HST_LGIS_Illumination.description>搭载激光制导和惯性制导的小口径导弹，装备于步兵或者轻型战斗载具上。\n该导弹是帝国陆军在第三次内战前数十年委托3HST有限公司设计和生产，用于替代榴弹发射器，单兵火箭筒，迫击炮，车载导弹发射器等一系列武器的“终极解决方案”。但是事实上这个决定是否正确还有待历史证明。\nLGIS导弹出厂时便被装在装备有可折叠简易握把和瞄准装置的，可以作为一次性发射筒发射的保护筒包装内。在用做弹药时，将握把和瞄具折叠便可装入发射器。\n这个发射筒目前处在直射模式，利用一系列陀螺仪，测距仪射击诸元输入，发射器上的简易火控会将数据输入进LGIS导弹的惯性导引头，对目标发起快速，突然，精确的直接打击。但是由于尺寸缘故，LGIS导弹的杀伤力有点差强人意，以至于被戏称为“窜天猴”或者“摔炮”。在战后，一款新的导弹研发出来代替它的位置，而战争期间产能过剩的LGIS弹便被大量下发至担任反恐反海盗清剿叛军任务的二线部队。</Gun_3HST_LGIS_Illumination.description>
+  <!-- EN: Extend the sights and switch the launcher to indirect fire mode, or fold it back to direct fire mode. -->
+  <Gun_3HST_LGIS_Illumination.comps.CompSecondaryVerb.description>展开瞄具切换成曲射模式，或是收起瞄具切换成直射模式</Gun_3HST_LGIS_Illumination.comps.CompSecondaryVerb.description>
+  <!-- EN: direct fire -->
+  <Gun_3HST_LGIS_Illumination.comps.CompSecondaryVerb.mainWeaponLabel>直射模式</Gun_3HST_LGIS_Illumination.comps.CompSecondaryVerb.mainWeaponLabel>
+  <!-- EN: indirect fire -->
+  <Gun_3HST_LGIS_Illumination.comps.CompSecondaryVerb.secondaryWeaponLabel>曲射模式</Gun_3HST_LGIS_Illumination.comps.CompSecondaryVerb.secondaryWeaponLabel>
+  <!-- EN: stock -->
+  <Gun_3HST_LGIS_Illumination.tools.stock.label>枪托</Gun_3HST_LGIS_Illumination.tools.stock.label>
+  <!-- EN: barrel -->
+  <Gun_3HST_LGIS_Illumination.tools.barrel.label>枪管</Gun_3HST_LGIS_Illumination.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <Gun_3HST_LGIS_Illumination.tools.muzzle.label>枪口</Gun_3HST_LGIS_Illumination.tools.muzzle.label>
+  
+  <!-- EN: incendiary LGIS tube -->
+  <Gun_3HST_LGIS_incendiary.label>燃烧 LGIS发射筒</Gun_3HST_LGIS_incendiary.label>
+  <!-- EN: Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but it is also used to feed various LGIS launchers. -->
+  <Gun_3HST_LGIS_incendiary.description>搭载激光制导和惯性制导的小口径导弹，装备于步兵或者轻型战斗载具上。\n该导弹是帝国陆军在第三次内战前数十年委托3HST有限公司设计和生产，用于替代榴弹发射器，单兵火箭筒，迫击炮，车载导弹发射器等一系列武器的“终极解决方案”。但是事实上这个决定是否正确还有待历史证明。\nLGIS导弹出厂时便被装在装备有可折叠简易握把和瞄准装置的，可以作为一次性发射筒发射的保护筒包装内。在用做弹药时，将握把和瞄具折叠便可装入发射器。\n这个发射筒目前处在直射模式，利用一系列陀螺仪，测距仪射击诸元输入，发射器上的简易火控会将数据输入进LGIS导弹的惯性导引头，对目标发起快速，突然，精确的直接打击。但是由于尺寸缘故，LGIS导弹的杀伤力有点差强人意，以至于被戏称为“窜天猴”或者“摔炮”。在战后，一款新的导弹研发出来代替它的位置，而战争期间产能过剩的LGIS弹便被大量下发至担任反恐反海盗清剿叛军任务的二线部队。</Gun_3HST_LGIS_incendiary.description>
+  <!-- EN: Extend the sights and switch the launcher to indirect fire mode, or fold it back to direct fire mode. -->
+  <Gun_3HST_LGIS_incendiary.comps.CompSecondaryVerb.description>展开瞄具切换成曲射模式，或是收起瞄具切换成直射模式</Gun_3HST_LGIS_incendiary.comps.CompSecondaryVerb.description>
+  <!-- EN: direct fire -->
+  <Gun_3HST_LGIS_incendiary.comps.CompSecondaryVerb.mainWeaponLabel>直射模式</Gun_3HST_LGIS_incendiary.comps.CompSecondaryVerb.mainWeaponLabel>
+  <!-- EN: indirect fire -->
+  <Gun_3HST_LGIS_incendiary.comps.CompSecondaryVerb.secondaryWeaponLabel>曲射模式</Gun_3HST_LGIS_incendiary.comps.CompSecondaryVerb.secondaryWeaponLabel>
+  <!-- EN: stock -->
+  <Gun_3HST_LGIS_incendiary.tools.stock.label>枪托</Gun_3HST_LGIS_incendiary.tools.stock.label>
+  <!-- EN: barrel -->
+  <Gun_3HST_LGIS_incendiary.tools.barrel.label>枪管</Gun_3HST_LGIS_incendiary.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <Gun_3HST_LGIS_incendiary.tools.muzzle.label>枪口</Gun_3HST_LGIS_incendiary.tools.muzzle.label>
+  
+  <!-- EN: smoke LGIS tube -->
+  <Gun_3HST_LGIS_smoke.label>烟雾 LGIS发射筒</Gun_3HST_LGIS_smoke.label>
+  <!-- EN: Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but it is also used to feed various LGIS launchers. -->
+  <Gun_3HST_LGIS_smoke.description>搭载激光制导和惯性制导的小口径导弹，装备于步兵或者轻型战斗载具上。\n该导弹是帝国陆军在第三次内战前数十年委托3HST有限公司设计和生产，用于替代榴弹发射器，单兵火箭筒，迫击炮，车载导弹发射器等一系列武器的“终极解决方案”。但是事实上这个决定是否正确还有待历史证明。\nLGIS导弹出厂时便被装在装备有可折叠简易握把和瞄准装置的，可以作为一次性发射筒发射的保护筒包装内。在用做弹药时，将握把和瞄具折叠便可装入发射器。\n这个发射筒目前处在直射模式，利用一系列陀螺仪，测距仪射击诸元输入，发射器上的简易火控会将数据输入进LGIS导弹的惯性导引头，对目标发起快速，突然，精确的直接打击。但是由于尺寸缘故，LGIS导弹的杀伤力有点差强人意，以至于被戏称为“窜天猴”或者“摔炮”。在战后，一款新的导弹研发出来代替它的位置，而战争期间产能过剩的LGIS弹便被大量下发至担任反恐反海盗清剿叛军任务的二线部队。</Gun_3HST_LGIS_smoke.description>
+  <!-- EN: Extend the sights and switch the launcher to indirect fire mode, or fold it back to direct fire mode. -->
+  <Gun_3HST_LGIS_smoke.comps.CompSecondaryVerb.description>展开瞄具切换成曲射模式，或是收起瞄具切换成直射模式</Gun_3HST_LGIS_smoke.comps.CompSecondaryVerb.description>
+  <!-- EN: direct fire -->
+  <Gun_3HST_LGIS_smoke.comps.CompSecondaryVerb.mainWeaponLabel>直射模式</Gun_3HST_LGIS_smoke.comps.CompSecondaryVerb.mainWeaponLabel>
+  <!-- EN: indirect fire -->
+  <Gun_3HST_LGIS_smoke.comps.CompSecondaryVerb.secondaryWeaponLabel>曲射模式</Gun_3HST_LGIS_smoke.comps.CompSecondaryVerb.secondaryWeaponLabel>
+  <!-- EN: stock -->
+  <Gun_3HST_LGIS_smoke.tools.stock.label>枪托</Gun_3HST_LGIS_smoke.tools.stock.label>
+  <!-- EN: barrel -->
+  <Gun_3HST_LGIS_smoke.tools.barrel.label>枪管</Gun_3HST_LGIS_smoke.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <Gun_3HST_LGIS_smoke.tools.muzzle.label>枪口</Gun_3HST_LGIS_smoke.tools.muzzle.label>
+  
+  <!-- EN: thermobaric LGIS tube -->
+  <Gun_3HST_LGIS_thermobaric.label>温压 LGIS发射筒</Gun_3HST_LGIS_thermobaric.label>
+  <!-- EN: Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but it is also used to feed various LGIS launchers. -->
+  <Gun_3HST_LGIS_thermobaric.description>搭载激光制导和惯性制导的小口径导弹，装备于步兵或者轻型战斗载具上。\n该导弹是帝国陆军在第三次内战前数十年委托3HST有限公司设计和生产，用于替代榴弹发射器，单兵火箭筒，迫击炮，车载导弹发射器等一系列武器的“终极解决方案”。但是事实上这个决定是否正确还有待历史证明。\nLGIS导弹出厂时便被装在装备有可折叠简易握把和瞄准装置的，可以作为一次性发射筒发射的保护筒包装内。在用做弹药时，将握把和瞄具折叠便可装入发射器。\n这个发射筒目前处在直射模式，利用一系列陀螺仪，测距仪射击诸元输入，发射器上的简易火控会将数据输入进LGIS导弹的惯性导引头，对目标发起快速，突然，精确的直接打击。但是由于尺寸缘故，LGIS导弹的杀伤力有点差强人意，以至于被戏称为“窜天猴”或者“摔炮”。在战后，一款新的导弹研发出来代替它的位置，而战争期间产能过剩的LGIS弹便被大量下发至担任反恐反海盗清剿叛军任务的二线部队。</Gun_3HST_LGIS_thermobaric.description>
+  <!-- EN: Extend the sights and switch the launcher to indirect fire mode, or fold it back to direct fire mode. -->
+  <Gun_3HST_LGIS_thermobaric.comps.CompSecondaryVerb.description>展开瞄具切换成曲射模式，或是收起瞄具切换成直射模式</Gun_3HST_LGIS_thermobaric.comps.CompSecondaryVerb.description>
+  <!-- EN: direct fire -->
+  <Gun_3HST_LGIS_thermobaric.comps.CompSecondaryVerb.mainWeaponLabel>直射模式</Gun_3HST_LGIS_thermobaric.comps.CompSecondaryVerb.mainWeaponLabel>
+  <!-- EN: indirect fire -->
+  <Gun_3HST_LGIS_thermobaric.comps.CompSecondaryVerb.secondaryWeaponLabel>曲射模式</Gun_3HST_LGIS_thermobaric.comps.CompSecondaryVerb.secondaryWeaponLabel>
+  <!-- EN: stock -->
+  <Gun_3HST_LGIS_thermobaric.tools.stock.label>枪托</Gun_3HST_LGIS_thermobaric.tools.stock.label>
+  <!-- EN: barrel -->
+  <Gun_3HST_LGIS_thermobaric.tools.barrel.label>枪管</Gun_3HST_LGIS_thermobaric.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <Gun_3HST_LGIS_thermobaric.tools.muzzle.label>枪口</Gun_3HST_LGIS_thermobaric.tools.muzzle.label>
+  
+</LanguageData>

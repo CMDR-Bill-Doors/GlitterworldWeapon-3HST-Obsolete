@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: ECS blade -->
+  <Melee_3HST_ECSBlade.label>ECS剑刃</Melee_3HST_ECSBlade.label>
+  <!-- EN: An energy saber using a shard of ECS shield force field as it's cutting edge. Sharper than mono blade and swifter than a feather, it deals less damage than it and is really fragile. -->
+  <Melee_3HST_ECSBlade.description>用一片ECS护盾力场作为刀刃的军刀。比羽毛更轻，比单分子剑更锐利，但是很脆而且伤害不高。</Melee_3HST_ECSBlade.description>
+  <!-- EN: handle -->
+  <Melee_3HST_ECSBlade.tools.handle.label>剑柄</Melee_3HST_ECSBlade.tools.handle.label>
+  <!-- EN: point -->
+  <Melee_3HST_ECSBlade.tools.point.label>剑尖</Melee_3HST_ECSBlade.tools.point.label>
+  <!-- EN: edge -->
+  <Melee_3HST_ECSBlade.tools.edge.label>剑刃</Melee_3HST_ECSBlade.tools.edge.label>
+  
+</LanguageData>

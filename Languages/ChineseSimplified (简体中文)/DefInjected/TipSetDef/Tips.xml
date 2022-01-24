@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Railgun rails are short-lived, remember to bring spares or you may end up in a gun fight with a malfunctional railgun.\nTo replace the spent rails, equip the gun that needs replacement, right-click on an electromagnetic accelerator rail on the ground and select "Rearm rail" -->
+  <BDGW_Tips.tips.0>磁轨轨道的使用寿命很短，根据口径的不同，只有一千到一百发的寿命。在远征前记得带上几个备用磁轨轨道。</BDGW_Tips.tips.0>
+  <!-- EN: Most if not all LGIS launchers are capable of switching between direct fire and indirect, mortar-like fire. Use this at your advantage! -->
+  <BDGW_Tips.tips.1>几乎所有LGIS发射器都能切换直射和曲射模式。</BDGW_Tips.tips.1>
+  <!-- EN: Scatterailguns introduce heavy rail degradation, with an estimated rail life of 125 rounds per standard rail package. Mind your rail durability when using them! -->
+  <BDGW_Tips.tips.2>霰射磁轨弹对磁轨的磨损尤其严重，平均一根轨道只有125发的寿命。</BDGW_Tips.tips.2>
+  <!-- EN: Railgun turrets consume extra power after firing to charge it's capacitors. Be aware of your battery charge if you intend to use them! -->
+  <BDGW_Tips.tips.3>磁轨炮塔发射后需要额外电力充能，在袭击中请注意自己的电力储备！</BDGW_Tips.tips.3>
+  
+</LanguageData>

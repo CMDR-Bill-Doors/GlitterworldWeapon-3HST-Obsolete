@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 3HST automatic indirect grenade system -->
+  <Group_3HST_AIGS.label>3HST自动曲射榴弹系统</Group_3HST_AIGS.label>
+  
+  <!-- EN: Stationary automatic railgun turrets -->
+  <Group_3HST_AutoRailgunTurret.label>固定自动磁轨炮炮塔</Group_3HST_AutoRailgunTurret.label>
+  
+  <!-- EN: Manned railgun turrets -->
+  <Group_3HST_ManualRailgunTurret.label>手动磁轨炮炮塔</Group_3HST_ManualRailgunTurret.label>
+  
+  <!-- EN: Moveable automatic railgun turrets -->
+  <Group_3HST_MoveableAutoRailgunTurret.label>可移动自动磁轨炮炮塔</Group_3HST_MoveableAutoRailgunTurret.label>
+  
+  <!-- EN: LGIS launchers -->
+  <Group_LGIS_Launchers.label>LGIS发射器</Group_LGIS_Launchers.label>
+  
+</LanguageData>
