@@ -403,7 +403,6 @@
 				<verbClass>ThreeHST.Verb_ShootCEAutoSwitchModeOneUse</verbClass>
 				<defaultProjectile>Projectile_70mmLGIS_HEAT</defaultProjectile>
 				<hasStandardCommand>true</hasStandardCommand>
-				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
 				<warmupTime>3.4</warmupTime>
 				<burstShotCount />
 				<range>60</range>
@@ -425,7 +424,6 @@
 					<verbClass>ThreeHST.Verb_ShootCEAutoSwitchModeOneUse</verbClass>
 					<defaultProjectile>Projectile_70mmLGIS_HEAT_Indirect</defaultProjectile>
 					<hasStandardCommand>true</hasStandardCommand>
-					<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
 					<warmupTime>6.4</warmupTime>
 					<range>90</range>
 					<minRange>20</minRange>
@@ -635,7 +633,6 @@
 				<verbClass>ThreeHST.Verb_ShootCEAutoSwitchModeOneUse</verbClass>
 				<defaultProjectile>Projectile_70mmLGIS_Smoke</defaultProjectile>
 				<hasStandardCommand>true</hasStandardCommand>
-				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
 				<warmupTime>3.4</warmupTime>
 				<burstShotCount />
 				<range>60</range>
@@ -657,7 +654,6 @@
 					<verbClass>ThreeHST.Verb_ShootCEAutoSwitchModeOneUse</verbClass>
 					<defaultProjectile>Projectile_70mmLGIS_Smoke_Indirect</defaultProjectile>
 					<hasStandardCommand>true</hasStandardCommand>
-					<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
 					<warmupTime>6.4</warmupTime>
 					<range>90</range>
 					<minRange>20</minRange>
@@ -710,7 +706,6 @@
 				<verbClass>ThreeHST.Verb_ShootCEAutoSwitchModeOneUse</verbClass>
 				<defaultProjectile>Projectile_70mmLGIS_Firefoam</defaultProjectile>
 				<hasStandardCommand>true</hasStandardCommand>
-				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
 				<warmupTime>3.4</warmupTime>
 				<burstShotCount />
 				<range>60</range>
@@ -732,7 +727,6 @@
 					<verbClass>ThreeHST.Verb_ShootCEAutoSwitchModeOneUse</verbClass>
 					<defaultProjectile>Projectile_70mmLGIS_Firefoam_Indirect</defaultProjectile>
 					<hasStandardCommand>true</hasStandardCommand>
-					<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
 					<warmupTime>6.4</warmupTime>
 					<range>90</range>
 					<minRange>20</minRange>
@@ -785,7 +779,6 @@
 				<verbClass>ThreeHST.Verb_ShootCEAutoSwitchModeOneUse</verbClass>
 				<defaultProjectile>Projectile_70mmLGIS_EMP</defaultProjectile>
 				<hasStandardCommand>true</hasStandardCommand>
-				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
 				<warmupTime>3.4</warmupTime>
 				<burstShotCount />
 				<range>60</range>
@@ -807,7 +800,6 @@
 					<verbClass>ThreeHST.Verb_ShootCEAutoSwitchModeOneUse</verbClass>
 					<defaultProjectile>Projectile_70mmLGIS_EMP_Indirect</defaultProjectile>
 					<hasStandardCommand>true</hasStandardCommand>
-					<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
 					<warmupTime>6.4</warmupTime>
 					<range>90</range>
 					<minRange>20</minRange>
@@ -863,7 +855,6 @@
 				<verbClass>ThreeHST.Verb_ShootCEAutoSwitchModeOneUse</verbClass>
 				<defaultProjectile>Projectile_70mmLGIS_Illumination</defaultProjectile>
 				<hasStandardCommand>true</hasStandardCommand>
-				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
 				<warmupTime>3.4</warmupTime>
 				<burstShotCount />
 				<range>60</range>
@@ -885,7 +876,6 @@
 					<verbClass>ThreeHST.Verb_ShootCEAutoSwitchModeOneUse</verbClass>
 					<defaultProjectile>Projectile_70mmLGIS_Illumination_Indirect</defaultProjectile>
 					<hasStandardCommand>true</hasStandardCommand>
-					<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
 					<warmupTime>6.4</warmupTime>
 					<range>90</range>
 					<minRange>20</minRange>
