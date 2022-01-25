@@ -24,7 +24,7 @@
       <Steel>50</Steel>
       <Plasteel>25</Plasteel>
       <ComponentIndustrial>11</ComponentIndustrial>
-      <ComponentSpacer>1</ComponentSpacer>
+      <ComponentSpacer>2</ComponentSpacer>
       <Resource_3HST_RailComponent>1</Resource_3HST_RailComponent>
     </costList>
     <verbs>
@@ -107,7 +107,7 @@
       <Steel>90</Steel>
       <Plasteel>40</Plasteel>
       <ComponentIndustrial>15</ComponentIndustrial>
-      <ComponentSpacer>1</ComponentSpacer>
+      <ComponentSpacer>3</ComponentSpacer>
       <Resource_3HST_RailComponent>2</Resource_3HST_RailComponent>
     </costList>
     <verbs>

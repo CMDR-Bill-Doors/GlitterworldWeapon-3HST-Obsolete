@@ -38,7 +38,7 @@
 				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
 				<warmupTime>3.4</warmupTime>
 				<burstShotCount />
-				<range>200</range>
+				<range>150</range>
 				<minRange>10</minRange>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
@@ -161,7 +161,7 @@
 				<warmupTime>3.4</warmupTime>
 				<burstShotCount>4</burstShotCount>
 				<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
-				<range>200</range>
+				<range>150</range>
 				<minRange>10</minRange>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>

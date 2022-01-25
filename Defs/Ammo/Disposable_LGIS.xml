@@ -2,7 +2,7 @@
 <Defs>
 	<!--=====================Disposable LGIS Launchers ===================-->
 	<ThingDef Name="BaseDisposableLGIS" Abstract="True">
-		<description>Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but you need to retract the sights, switch it to direct fire mode for it to be used in other launchers as ammunition.</description>
+		<description>Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher.</description>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<category>Item</category>
 		<thingClass>ThingWithComps</thingClass>

@@ -16,13 +16,13 @@
       <SwayFactor>10.2</SwayFactor>
       <ShotSpread>0.01</ShotSpread>
       <SightsEfficiency>1</SightsEfficiency>
-      <RangedWeapon_Cooldown>0.69</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>2.69</RangedWeapon_Cooldown>
     </statBases>
     <costList>
       <Steel>420</Steel>
       <Plasteel>150</Plasteel>
-      <ComponentIndustrial>10</ComponentIndustrial>
-      <ComponentSpacer>2</ComponentSpacer>
+      <ComponentIndustrial>20</ComponentIndustrial>
+      <ComponentSpacer>10</ComponentSpacer>
       <Resource_3HST_RailComponent>15</Resource_3HST_RailComponent>
     </costList>
     <verbs>
@@ -318,7 +318,7 @@
       <SightsEfficiency>1.1</SightsEfficiency>
       <ShotSpread>0.01</ShotSpread>
       <SwayFactor>0.98</SwayFactor>
-      <RangedWeapon_Cooldown>0.56</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>2.69</RangedWeapon_Cooldown>
     </statBases>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">

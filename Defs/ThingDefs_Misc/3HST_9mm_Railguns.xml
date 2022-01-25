@@ -24,7 +24,7 @@
       <Steel>65</Steel>
       <Plasteel>35</Plasteel>
       <ComponentIndustrial>6</ComponentIndustrial>
-      <ComponentSpacer>1</ComponentSpacer>
+      <ComponentSpacer>2</ComponentSpacer>
       <Resource_3HST_RailComponent>2</Resource_3HST_RailComponent>
     </costList>
     <verbs>
@@ -33,7 +33,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Projectile_3HST9mmRG_Steel</defaultProjectile>
         <warmupTime>2.5</warmupTime>
-        <range>85</range>
+        <range>86</range>
         <soundCast>RG_9mm</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <recoilAmount>0</recoilAmount>
@@ -95,13 +95,13 @@
       <SwayFactor>7.2</SwayFactor>
       <ShotSpread>0.01</ShotSpread>
       <SightsEfficiency>1</SightsEfficiency>
-      <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.37</RangedWeapon_Cooldown>
     </statBases>
     <costList>
       <Steel>220</Steel>
       <Plasteel>80</Plasteel>
-      <ComponentIndustrial>10</ComponentIndustrial>
-      <ComponentSpacer>1</ComponentSpacer>
+      <ComponentIndustrial>15</ComponentIndustrial>
+      <ComponentSpacer>5</ComponentSpacer>
       <Resource_3HST_RailComponent>4</Resource_3HST_RailComponent>
     </costList>
     <verbs>
@@ -109,7 +109,7 @@
         <verbClass>BDsGlitterworldFaction3HST.Verb_ShootByBarrel</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Projectile_3HST9mmRG_Steel</defaultProjectile>
-        <warmupTime>1.1</warmupTime>
+        <warmupTime>2.1</warmupTime>
         <burstShotCount>10</burstShotCount>
         <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
         <range>86</range>
@@ -373,7 +373,7 @@
         <consumeFuelPerShot>1</consumeFuelPerShot>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Projectile_3HST9mmRG_Steel</defaultProjectile>
-        <warmupTime>1.4</warmupTime>
+        <warmupTime>2.1</warmupTime>
         <burstShotCount>10</burstShotCount>
         <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
         <range>86</range>
@@ -742,7 +742,7 @@
         <consumeFuelPerShot>1</consumeFuelPerShot>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Projectile_3HST9mmRG_Steel</defaultProjectile>
-        <warmupTime>1.4</warmupTime>
+        <warmupTime>2.1</warmupTime>
         <burstShotCount>20</burstShotCount>
         <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
         <range>86</range>
