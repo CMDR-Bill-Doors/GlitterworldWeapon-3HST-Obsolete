@@ -92,7 +92,7 @@
     <generateCommonality>0.6</generateCommonality>
     <statBases>
       <WorkToMake>79000</WorkToMake>
-      <Mass>5.2</Mass>
+      <Mass>12.2</Mass>
       <Bulk>14.7</Bulk>
       <SwayFactor>2.32</SwayFactor>
       <ShotSpread>0.13</ShotSpread>
@@ -172,7 +172,7 @@
     <statBases>
       <WorkToMake>30000</WorkToMake>
       <Mass>5.2</Mass>
-      <Bulk>14.7</Bulk>
+      <Bulk>10.2</Bulk>
       <SwayFactor>1.32</SwayFactor>
       <ShotSpread>0.15</ShotSpread>
       <SightsEfficiency>0.7</SightsEfficiency>
