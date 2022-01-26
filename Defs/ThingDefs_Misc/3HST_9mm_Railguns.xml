@@ -174,7 +174,7 @@
         <basePowerConsumption>10</basePowerConsumption>
       </li>
       <li Class="BDsGlitterworldFaction3HST.CompProperties_PowerTurretGunCE">
-        <rechargePowerConsumption>6000</rechargePowerConsumption>
+        <rechargePowerConsumption>5000</rechargePowerConsumption>
         <rechargePower>Recharge power consumption</rechargePower>
         <cooldownTime>1.5</cooldownTime>
         <rechargePower_Stat>The amount of power the weapon will draw from the power grid during cool down.\n\nRailguns' built in capacitors need to be recharged after each salvo, leading to a power consumption spike.\n\nThe power consumption is calculated as: Power draw x Turret cooldown / 1000\n{0} W x {1} s / 1000 = {2} Wd</rechargePower_Stat>
@@ -237,7 +237,7 @@
         <basePowerConsumption>200</basePowerConsumption>
       </li>
       <li Class="BDsGlitterworldFaction3HST.CompProperties_PowerTurretGunCE">
-        <rechargePowerConsumption>6000</rechargePowerConsumption>
+        <rechargePowerConsumption>5000</rechargePowerConsumption>
         <rechargePower>Recharge power consumption</rechargePower>
         <cooldownTime>1.5</cooldownTime>
         <rechargePower_Stat>The amount of power the weapon will draw from the power grid during cool down.\n\nRailguns' built in capacitors need to be recharged after each salvo, leading to a power consumption spike.\n\nThe power consumption is calculated as: Power draw x Turret cooldown / 1000\n{0} W x {1} s / 1000 = {2} Wd</rechargePower_Stat>
@@ -299,7 +299,7 @@
         <basePowerConsumption>200</basePowerConsumption>
       </li>
       <li Class="BDsGlitterworldFaction3HST.CompProperties_PowerTurretGunCE">
-        <rechargePowerConsumption>6000</rechargePowerConsumption>
+        <rechargePowerConsumption>5000</rechargePowerConsumption>
         <rechargePower>Recharge power consumption</rechargePower>
         <cooldownTime>1.5</cooldownTime>
         <rechargePower_Stat>The amount of power the weapon will draw from the power grid during cool down.\n\nRailguns' built in capacitors need to be recharged after each salvo, leading to a power consumption spike.\n\nThe power consumption is calculated as: Power draw x Turret cooldown / 1000\n{0} W x {1} s / 1000 = {2} Wd</rechargePower_Stat>
@@ -420,7 +420,7 @@
         <basePowerConsumption>200</basePowerConsumption>
       </li>
       <li Class="BDsGlitterworldFaction3HST.CompProperties_PowerTurretGunCE">
-        <rechargePowerConsumption>6000</rechargePowerConsumption>
+        <rechargePowerConsumption>5000</rechargePowerConsumption>
         <rechargePower>Recharge power consumption</rechargePower>
         <cooldownTime>1.5</cooldownTime>
         <rechargePower_Stat>The amount of power the weapon will draw from the power grid during cool down.\n\nRailguns' built in capacitors need to be recharged after each salvo, leading to a power consumption spike.\n\nThe power consumption is calculated as: Power draw x Turret cooldown / 1000\n{0} W x {1} s / 1000 = {2} Wd</rechargePower_Stat>
@@ -492,7 +492,7 @@
         <basePowerConsumption>200</basePowerConsumption>
       </li>
       <li Class="BDsGlitterworldFaction3HST.CompProperties_PowerTurretGunCE">
-        <rechargePowerConsumption>6000</rechargePowerConsumption>
+        <rechargePowerConsumption>5000</rechargePowerConsumption>
         <rechargePower>Recharge power consumption</rechargePower>
         <cooldownTime>1.5</cooldownTime>
         <rechargePower_Stat>The amount of power the weapon will draw from the power grid during cool down.\n\nRailguns' built in capacitors need to be recharged after each salvo, leading to a power consumption spike.\n\nThe power consumption is calculated as: Power draw x Turret cooldown / 1000\n{0} W x {1} s / 1000 = {2} Wd</rechargePower_Stat>
@@ -563,7 +563,7 @@
         <basePowerConsumption>10</basePowerConsumption>
       </li>
       <li Class="BDsGlitterworldFaction3HST.CompProperties_PowerTurretGunCE">
-        <rechargePowerConsumption>6000</rechargePowerConsumption>
+        <rechargePowerConsumption>5000</rechargePowerConsumption>
         <rechargePower>Recharge power consumption</rechargePower>
         <cooldownTime>1.5</cooldownTime>
         <rechargePower_Stat>The amount of power the weapon will draw from the power grid during cool down.\n\nRailguns' built in capacitors need to be recharged after each salvo, leading to a power consumption spike.\n\nThe power consumption is calculated as: Power draw x Turret cooldown / 1000\n{0} W x {1} s / 1000 = {2} Wd</rechargePower_Stat>
@@ -669,7 +669,7 @@
         <basePowerConsumption>200</basePowerConsumption>
       </li>
       <li Class="BDsGlitterworldFaction3HST.CompProperties_PowerTurretGunCE">
-        <rechargePowerConsumption>6000</rechargePowerConsumption>
+        <rechargePowerConsumption>5000</rechargePowerConsumption>
         <rechargePower>Recharge power consumption</rechargePower>
         <cooldownTime>1.5</cooldownTime>
         <rechargePower_Stat>The amount of power the weapon will draw from the power grid during cool down.\n\nRailguns' built in capacitors need to be recharged after each salvo, leading to a power consumption spike.\n\nThe power consumption is calculated as: Power draw x Turret cooldown / 1000\n{0} W x {1} s / 1000 = {2} Wd</rechargePower_Stat>

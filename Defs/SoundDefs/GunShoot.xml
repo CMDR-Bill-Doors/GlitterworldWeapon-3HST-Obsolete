@@ -174,8 +174,8 @@
 						<clipFolderPath>Interact/Work/Construct/Trees/Tree_Chop</clipFolderPath>
 					</li>
 				</grains>
-				<volumeRange>100~120</volumeRange>
-				<pitchRange>0.9408336~1.207082</pitchRange>
+				<volumeRange>75~125</volumeRange>
+				<pitchRange>0.5~1.5</pitchRange>
 			</li>
 		</subSounds>
 	</SoundDef>
@@ -187,10 +187,10 @@
 			<li>
 				<grains>
 					<li Class="AudioGrain_Folder">
-						<clipFolderPath>GunShoot/Leaf</clipFolderPath>
+						<clipFolderPath>GunShoot/LeafShort</clipFolderPath>
 					</li>
 				</grains>
-				<volumeRange>50~100</volumeRange>
+				<volumeRange>25~75</volumeRange>
 				<pitchRange>0.5~1.5</pitchRange>
 			</li>
 		</subSounds>

@@ -33,7 +33,7 @@
 		<altitudeLayer>MoteOverhead</altitudeLayer>
 		<fadeInTime>0.04</fadeInTime>
 		<solidTime>0.05</solidTime>
-		<fadeOutTime>0.2</fadeOutTime>
+		<fadeOutTime>0.3</fadeOutTime>
 	</FleckDef>
 
 	<EffecterDef>
@@ -48,13 +48,14 @@
 				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
 				<positionRadius>0.2</positionRadius>
 				<fleckDef>Fleck_RGhitTreeLeafA</fleckDef>
-				<burstCount>10~15</burstCount>
+				<burstCount>3~6</burstCount>
 				<speed>1.5~2.5</speed>
 				<scale>0.2~0.4</scale>
 				<rotation>135~225</rotation>
-				<spawnLocType>RandomCellOnTarget</spawnLocType>
+				<spawnLocType>OnSource</spawnLocType>
 				<fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
 				<angle>135~225</angle>
+				<positionOffset>(0,0,0.5)</positionOffset>
 			</li>
 		</children>
 		<offsetTowardsTarget>1~1</offsetTowardsTarget>
@@ -73,13 +74,14 @@
 				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
 				<positionRadius>0.2</positionRadius>
 				<fleckDef>Fleck_RGhitTreeLeafB</fleckDef>
-				<burstCount>10~15</burstCount>
+				<burstCount>3~6</burstCount>
 				<speed>1.5~2.5</speed>
 				<scale>0.2~0.4</scale>
 				<rotation>135~225</rotation>
-				<spawnLocType>RandomCellOnTarget</spawnLocType>
+				<spawnLocType>OnSource</spawnLocType>
 				<fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
 				<angle>135~225</angle>
+				<positionOffset>(0,0,0.5)</positionOffset>
 			</li>
 		</children>
 		<offsetTowardsTarget>1~1</offsetTowardsTarget>
@@ -100,7 +102,7 @@
 				<fleckDef>Fleck_RGhitTreeWoodBit</fleckDef>
 				<burstCount>5~10</burstCount>
 				<speed>6~10</speed>
-				<scale>0.25~0.4</scale>
+				<scale>0.5~0.8</scale>
 				<rotation>0~359</rotation>
 				<spawnLocType>OnSource</spawnLocType>
 				<fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
