@@ -701,9 +701,9 @@
 		</li>
     </comps>
     <costList>
-      <Plasteel>40</Plasteel>
-      <Steel>125</Steel>
-      <ComponentIndustrial>5</ComponentIndustrial>
+		<Plasteel>100</Plasteel>
+		<Steel>400</Steel>
+		<ComponentIndustrial>5</ComponentIndustrial>
       <Gun_3HST_9mmHMG>2</Gun_3HST_9mmHMG>
     </costList>
     <building>

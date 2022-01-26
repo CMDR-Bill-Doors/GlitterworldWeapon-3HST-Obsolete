@@ -37,7 +37,7 @@
 	</FleckDef>
 
 	<EffecterDef>
-		<defName>Effector_3HST_RGhitTreeLeafAutumn</defName>
+		<defName>Effecter_3HST_RGhitTreeLeafAutumn</defName>
 		<children>
 			<li>
 				<subEffecterClass>SubEffecter_SoundTriggered</subEffecterClass>
@@ -62,7 +62,7 @@
 	</EffecterDef>
 
 	<EffecterDef>
-		<defName>Effector_3HST_RGhitTreeLeafGreen</defName>
+		<defName>Effecter_3HST_RGhitTreeLeafSpring</defName>
 		<children>
 			<li>
 				<subEffecterClass>SubEffecter_SoundTriggered</subEffecterClass>
@@ -87,7 +87,7 @@
 	</EffecterDef>
 
 	<EffecterDef>
-		<defName>Effector_3HST_RGhitTreeTrunk</defName>
+		<defName>Effecter_3HST_RGhitTreeTrunk</defName>
 		<children>
 			<li>
 				<subEffecterClass>SubEffecter_SoundTriggered</subEffecterClass>
