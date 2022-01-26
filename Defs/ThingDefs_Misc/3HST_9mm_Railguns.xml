@@ -704,7 +704,7 @@
       <Plasteel>40</Plasteel>
       <Steel>125</Steel>
       <ComponentIndustrial>5</ComponentIndustrial>
-      <Gun_3HST_9mmHMG>1</Gun_3HST_9mmHMG>
+      <Gun_3HST_9mmHMG>2</Gun_3HST_9mmHMG>
     </costList>
     <building>
       <turretGunDef>Gun_9mmHMG_Dual</turretGunDef>
@@ -717,7 +717,7 @@
       <ChunkSlagSteel>10</ChunkSlagSteel>
       <Steel>50</Steel>
       <Plasteel>50</Plasteel>
-      <Gun_3HST_9mmHMG>4</Gun_3HST_9mmHMG>
+      <Gun_3HST_9mmHMG>2</Gun_3HST_9mmHMG>
     </killedLeavings>
   </ThingDef>
 
