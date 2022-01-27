@@ -64,60 +64,51 @@
     </filth>
   </ThingDef>
 
-	<ThingDef ParentName="BaseFilth">
+	<ThingDef ParentName="Base3HSTcosmeticFilth">
 		<defName>Filth_ADScarrierCasingA</defName>
 		<label>ADM carrier casing</label>
-		<statBases>
-			<Beauty>-12</Beauty>
-		</statBases>
 		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Projectile/ADM_carrier_casingLeft</texPath>
-			<onGroundRandomRotateAngle>180</onGroundRandomRotateAngle>
 		</graphicData>
-		<filth>
-			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
-			<disappearsInDays>5~10</disappearsInDays>
-			<cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
-			<canFilthAttach>false</canFilthAttach>
-		</filth>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseFilth">
+	<ThingDef ParentName="Base3HSTcosmeticFilth">
 		<defName>Filth_ADScarrierCasingB</defName>
 		<label>ADM carrier casing</label>
-		<statBases>
-			<Beauty>-12</Beauty>
-		</statBases>
 		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Projectile/ADM_carrier_casingRight</texPath>
-			<onGroundRandomRotateAngle>180</onGroundRandomRotateAngle>
 		</graphicData>
-		<filth>
-			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
-			<disappearsInDays>5~10</disappearsInDays>
-			<cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
-			<canFilthAttach>false</canFilthAttach>
-		</filth>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseFilth">
+	<ThingDef ParentName="Base3HSTcosmeticFilth">
 		<defName>Filth_ADScarrierCasingC</defName>
 		<label>ADM carrier thruster</label>
-		<statBases>
-			<Beauty>-12</Beauty>
-		</statBases>
 		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Projectile/ADM_carrier_Thruster</texPath>
-			<onGroundRandomRotateAngle>180</onGroundRandomRotateAngle>
 		</graphicData>
-		<filth>
-			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
-			<disappearsInDays>5~10</disappearsInDays>
-			<cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
-			<canFilthAttach>false</canFilthAttach>
-		</filth>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTcosmeticFilth">
+		<defName>Filth_ClusterMissile_casingA</defName>
+		<label>Cluster LGIS casing</label>
+		<graphicData>
+			<texPath>Things/Projectile/ClusterMissile_casingA</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTcosmeticFilth">
+		<defName>Filth_ClusterMissile_casingB</defName>
+		<label>Cluster LGIS casing</label>
+		<graphicData>
+			<texPath>Things/Projectile/ClusterMissile_casingB</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTcosmeticFilth">
+		<defName>Filth_ClusterMissile_casingC</defName>
+		<label>Cluster LGIS thruster</label>
+		<graphicData>
+			<texPath>Things/Projectile/ADM_carrier_Thruster</texPath>
+		</graphicData>
 	</ThingDef>
 </Defs>

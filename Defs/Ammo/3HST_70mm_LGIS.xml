@@ -212,6 +212,8 @@
       <gravityFactor>3</gravityFactor>
     </projectile>
   </ThingDef>
+	
+	
 
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseSubmunition">
     <defName>Fragment_ExplosiveSubmunitionFar</defName>
@@ -223,6 +225,7 @@
   <ThingDef Class="CombatExtended.AmmoDef" Name="BaseSubmunition" ParentName="BaseFragment">
     <defName>Fragment_ExplosiveSubmunition</defName>
     <label>Explosive submunition</label>
+	  <thingClass>ThreeHST.ProjectileCE_FromAirExplode</thingClass>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -254,6 +257,8 @@
     </projectile>
   </ThingDef>
   
+	
+	
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseFragment">
     <defName>Fragment_RecursiveSubmunition</defName>
     <label>Recursive submunition</label>
@@ -282,6 +287,8 @@
     </comps>
   </ThingDef>
 
+	
+	
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseFragment">
 		<defName>Fragment_AerialDeployedMine</defName>
 		<label>aerial deployed mine</label>
@@ -306,7 +313,9 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3HSTcosmicFragmentAirBurst">
+	
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3HSTcosmeticFragmentAirBurst">
 		<defName>Fragment_AerialDeployedMineCasingA</defName>
 		<label>ADM carrier casing</label>
 		<graphicData>
@@ -319,7 +328,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3HSTcosmicFragmentAirBurst">
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3HSTcosmeticFragmentAirBurst">
 		<defName>Fragment_AerialDeployedMineCasingB</defName>
 		<label>ADM carrier casing</label>
 		<graphicData>
@@ -332,7 +341,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3HSTcosmicFragmentAirBurst">
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3HSTcosmeticFragmentAirBurst">
 		<defName>Fragment_AerialDeployedMineCasingC</defName>
 		<label>ADM carrier thruster</label>
 		<graphicData>
@@ -342,9 +351,54 @@
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<preExplosionSpawnThingDef>Filth_ADScarrierCasingC</preExplosionSpawnThingDef>
 			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			<armorPenetrationBlunt>100</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
 
+	
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3HSTcosmeticFragmentAirBurst">
+		<defName>Fragment_ClusterMissile_casingA</defName>
+		<label>ADM carrier casing</label>
+		<graphicData>
+			<texPath>Things/Projectile/ClusterMissile_casingA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<preExplosionSpawnThingDef>Filth_ClusterMissile_casingA</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3HSTcosmeticFragmentAirBurst">
+		<defName>Fragment_ClusterMissile_casingB</defName>
+		<label>ADM carrier casing</label>
+		<graphicData>
+			<texPath>Things/Projectile/ClusterMissile_casingB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<preExplosionSpawnThingDef>Filth_ClusterMissile_casingB</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3HSTcosmeticFragmentAirBurst">
+		<defName>Fragment_ClusterMissile_casingC</defName>
+		<label>ADM carrier thruster</label>
+		<graphicData>
+			<texPath>Things/Projectile/ADM_carrier_Thruster</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<preExplosionSpawnThingDef>Filth_ClusterMissile_casingC</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			<armorPenetrationBlunt>100</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+	
+	
 	<ThingDef ParentName="BuildingBase">
 		<defName>Trap_AerialDeployedMine</defName>
 		<label>aerial deployed mine</label>
@@ -358,7 +412,7 @@
 				<enabled>false</enabled>
 			</damageData>
 		</graphicData>
-		<altitudeLayer>Building</altitudeLayer>
+		<altitudeLayer>Filth</altitudeLayer>
 		<rotatable>false</rotatable>
 		<tickerType>Normal</tickerType>
 		<neverMultiSelect>true</neverMultiSelect>
@@ -381,6 +435,7 @@
 			<li Class="CompProperties_Explosive">
 				<explosiveDamageType>Bomb</explosiveDamageType>
 				<explosiveRadius>1.5</explosiveRadius>
+				<damageAmountBase>25</damageAmountBase>
 				<wickTicks>
 					<min>5</min>
 					<max>30</max>
@@ -483,26 +538,26 @@
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGIS">
     <defName>Projectile_70mmLGIS_Cluster</defName>
     <label>LGIS missile (Cluster)</label>
+	  <thingClass>ThreeHST.ProjectileCE_AirExplode</thingClass>
     <graphicData>
       <texPath>Things/Projectile/Rocket/3HST_IAA_12_LGIS_Missile_cluster_projectile</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
-      <explosionRadius>1.5</explosionRadius>
-      <damageDef>DamageDef_BombNoShakey</damageDef>
-      <armorPenetrationSharp>0</armorPenetrationSharp>
-      <damageAmountBase>105</damageAmountBase>
-      <armorPenetrationBlunt>0</armorPenetrationBlunt>
-      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+		<damageDef>Smoke</damageDef>
+		<armorPenetrationSharp>0</armorPenetrationSharp>
+		<armorPenetrationBlunt>0</armorPenetrationBlunt>
+		<soundExplode>InfernoCannon_Fire</soundExplode>
     </projectile>
     <comps>
       <li Class="CombatExtended.CompProperties_Fragments">
         <fragments>
-          <Fragment_Large>6</Fragment_Large>
-          <Fragment_Small>48</Fragment_Small>
           <Fragment_ExplosiveSubmunitionNear>5</Fragment_ExplosiveSubmunitionNear>
           <Fragment_ExplosiveSubmunition>10</Fragment_ExplosiveSubmunition>
           <Fragment_ExplosiveSubmunitionFar>15</Fragment_ExplosiveSubmunitionFar>
+			<Fragment_ClusterMissile_casingA>1</Fragment_ClusterMissile_casingA>
+			<Fragment_ClusterMissile_casingB>1</Fragment_ClusterMissile_casingB>
+			<Fragment_ClusterMissile_casingC>1</Fragment_ClusterMissile_casingC>
         </fragments>
       </li>
     </comps>
@@ -753,26 +808,26 @@
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGISIDR">
     <defName>Projectile_70mmLGIS_Cluster_Indirect</defName>
     <label>LGIS missile (Cluster)</label>
+	  <thingClass>ThreeHST.ProjectileCE_AirExplode</thingClass>
     <graphicData>
       <texPath>Things/Projectile/Rocket/3HST_IAA_12_LGIS_Missile_cluster_projectile</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
-      <explosionRadius>1.5</explosionRadius>
-      <damageDef>DamageDef_BombNoShakey</damageDef>
-      <armorPenetrationSharp>0</armorPenetrationSharp>
-      <damageAmountBase>105</damageAmountBase>
-      <armorPenetrationBlunt>0</armorPenetrationBlunt>
-      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+		<damageDef>Smoke</damageDef>
+		<armorPenetrationSharp>0</armorPenetrationSharp>
+		<armorPenetrationBlunt>0</armorPenetrationBlunt>
+		<soundExplode>InfernoCannon_Fire</soundExplode>
     </projectile>
     <comps>
       <li Class="CombatExtended.CompProperties_Fragments">
         <fragments>
-          <Fragment_Large>6</Fragment_Large>
-          <Fragment_Small>48</Fragment_Small>
           <Fragment_ExplosiveSubmunitionNear>5</Fragment_ExplosiveSubmunitionNear>
           <Fragment_ExplosiveSubmunition>15</Fragment_ExplosiveSubmunition>
           <Fragment_ExplosiveSubmunitionFar>25</Fragment_ExplosiveSubmunitionFar>
+			<Fragment_ClusterMissile_casingA>1</Fragment_ClusterMissile_casingA>
+			<Fragment_ClusterMissile_casingB>1</Fragment_ClusterMissile_casingB>
+			<Fragment_ClusterMissile_casingC>1</Fragment_ClusterMissile_casingC>
         </fragments>
       </li>
     </comps>

@@ -106,26 +106,43 @@
   </DamageDef>
 
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseFragment" Name="Base3HSTcosmicFragment"  Abstract="True">
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseFragment" Name="Base3HSTcosmeticFragment"  Abstract="True">
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>10</damageAmountBase>
+			<damageAmountBase>30</damageAmountBase>
 			<armorPenetrationSharp>0</armorPenetrationSharp>
-			<armorPenetrationBlunt>250</armorPenetrationBlunt>
+			<armorPenetrationBlunt>50</armorPenetrationBlunt>
 			<speed>15</speed>
 			<alwaysFreeIntercept>true</alwaysFreeIntercept>
 			<gravityFactor>10</gravityFactor>
 		</projectile>
+		<randomizeRotationOnSpawn>true</randomizeRotationOnSpawn>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3HSTcosmicFragment" Name="Base3HSTcosmicFragmentAirBurst"  Abstract="True">
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3HSTcosmeticFragment" Name="Base3HSTcosmeticFragmentAirBurst"  Abstract="True">
 		<thingClass>ThreeHST.ProjectileCE_FromAirExplode</thingClass>
 	</ThingDef>
-  
-  
+
+	<ThingDef ParentName="BaseFilth" Name="Base3HSTcosmeticFilth" Abstract="True">
+		<statBases>
+			<Beauty>-12</Beauty>
+		</statBases>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<onGroundRandomRotateAngle>180</onGroundRandomRotateAngle>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<filth>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<disappearsInDays>5~10</disappearsInDays>
+			<cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
+			<canFilthAttach>false</canFilthAttach>
+		</filth>
+	</ThingDef>
   
   <ThingDef Name="Base3HSTStationaryTurret" ParentName="TurretAutoBase" Abstract="True">
     <description>A permanent defensive structure covered under thick steel armor reinforced by a layer of plasteel surface hardening. While extremely durable and resilent to all but EMP attacks, they're costly to build both in terms of material and time, and being unable to move after construction.</description>

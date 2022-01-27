@@ -225,7 +225,7 @@
 		<!--<uiIconPath>UI/Icons/Rockets/3HST_IAA_12_LGIS_Missile_frag_a</uiIconPath>-->
 
 		<statBases>
-			<MarketValue>440</MarketValue>
+			<Mass>4.5</Mass>
 		</statBases>
 		<weaponTags>
 			<li>GunHeavy</li>
@@ -915,6 +915,9 @@
 		<graphicData>
 			<texPath>Things/Weapons/Disposable_LGIS/minelayer</texPath>
 		</graphicData>
+		<statBases>
+			<Mass>4.5</Mass>
+		</statBases>
 		<weaponTags>
 			<li>GunHeavy</li>
 			<li>IndustrialGunAdvanced</li>
