@@ -226,16 +226,18 @@
     <defName>Fragment_ExplosiveSubmunition</defName>
     <label>Explosive submunition</label>
 	  <thingClass>ThreeHST.ProjectileCE_FromAirExplode</thingClass>
+	  <randomizeRotationOnSpawn>true</randomizeRotationOnSpawn>
     <graphicData>
-      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <texPath>Things/Projectile/ClusterBomblet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(0.2,0.2)</drawSize>
     </graphicData>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <explosionRadius>0.9</explosionRadius>
       <damageDef>Bomb</damageDef>
       <speed>20</speed>
       <armorPenetrationSharp>0</armorPenetrationSharp>
-      <damageAmountBase>45</damageAmountBase>
+      <damageAmountBase>15</damageAmountBase>
       <armorPenetrationBlunt>0</armorPenetrationBlunt>
       <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
       <alwaysFreeIntercept>true</alwaysFreeIntercept>
@@ -244,7 +246,7 @@
     <comps>
       <li Class="CombatExtended.CompProperties_Fragments">
         <fragments>
-          <Fragment_Small>15</Fragment_Small>
+          <Fragment_Small>5</Fragment_Small>
         </fragments>
       </li>
     </comps>
@@ -262,9 +264,11 @@
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseFragment">
     <defName>Fragment_RecursiveSubmunition</defName>
     <label>Recursive submunition</label>
+	  <randomizeRotationOnSpawn>true</randomizeRotationOnSpawn>
     <graphicData>
-      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <texPath>Things/Projectile/ClusterBomblet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(0.4,0.4)</drawSize>
     </graphicData>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <explosionRadius>1.5</explosionRadius>
