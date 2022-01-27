@@ -57,6 +57,13 @@
     <description>Lights up a large area with the illumination agents insides that ignited on impact, lasts for roughtly 3 hours. May cause fire when ignited in enclosed space.</description>
   </CombatExtended.AmmoCategoryDef>
 
+	<CombatExtended.AmmoCategoryDef>
+		<defName>RocketMinelayer</defName>
+		<label>mine layer</label>
+		<labelShort>minelayer</labelShort>
+		<description>Advanced missile designed for remote destribution of land mines.</description>
+	</CombatExtended.AmmoCategoryDef>
+
 
   <!-- ==================== AmmoSet ========================== -->
 
@@ -74,6 +81,7 @@
       <Gun_3HST_LGIS_firefoam>Projectile_70mmLGIS_Firefoam</Gun_3HST_LGIS_firefoam>
       <Gun_3HST_LGIS_EMP>Projectile_70mmLGIS_EMP</Gun_3HST_LGIS_EMP>
       <Gun_3HST_LGIS_Illumination>Projectile_70mmLGIS_Illumination</Gun_3HST_LGIS_Illumination>
+		<Gun_3HST_LGIS_Minelayer>Projectile_70mmLGIS_MineLayer</Gun_3HST_LGIS_Minelayer>
     </ammoTypes>
   </CombatExtended.AmmoSetDef>
 
@@ -91,6 +99,7 @@
       <Gun_3HST_LGIS_firefoam>Projectile_70mmLGIS_Firefoam_Indirect</Gun_3HST_LGIS_firefoam>
       <Gun_3HST_LGIS_EMP>Projectile_70mmLGIS_EMP_Indirect</Gun_3HST_LGIS_EMP>
       <Gun_3HST_LGIS_Illumination>Projectile_70mmLGIS_Illumination_Indirect</Gun_3HST_LGIS_Illumination>
+		<Gun_3HST_LGIS_Minelayer>Projectile_70mmLGIS_MineLayer_Indirect</Gun_3HST_LGIS_Minelayer>
   </ammoTypes>
   </CombatExtended.AmmoSetDef>
 
@@ -272,6 +281,119 @@
       </li>
     </comps>
   </ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseFragment">
+		<defName>Fragment_AerialDeployedMine</defName>
+		<label>aerial deployed mine</label>
+		<thingClass>ThreeHST.ProjectileCE_FromAirExplode</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/ADM_projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.4,0.4)</drawSize>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Smoke</damageDef>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<speed>15</speed>
+			<alwaysFreeIntercept>true</alwaysFreeIntercept>
+			<gravityFactor>10</gravityFactor>
+		</projectile>
+		<comps>
+			<li Class="ThreeHST.CompProperties_SpawnThingOnDestroy">
+				<def>Trap_AerialDeployedMine</def>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3HSTcosmicFragmentAirBurst">
+		<defName>Fragment_AerialDeployedMineCasingA</defName>
+		<label>ADM carrier casing</label>
+		<graphicData>
+			<texPath>Things/Projectile/ADM_carrier_casingLeft</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<preExplosionSpawnThingDef>Filth_ADScarrierCasingA</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3HSTcosmicFragmentAirBurst">
+		<defName>Fragment_AerialDeployedMineCasingB</defName>
+		<label>ADM carrier casing</label>
+		<graphicData>
+			<texPath>Things/Projectile/ADM_carrier_casingRight</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<preExplosionSpawnThingDef>Filth_ADScarrierCasingB</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3HSTcosmicFragmentAirBurst">
+		<defName>Fragment_AerialDeployedMineCasingC</defName>
+		<label>ADM carrier thruster</label>
+		<graphicData>
+			<texPath>Things/Projectile/ADM_carrier_Thruster</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<preExplosionSpawnThingDef>Filth_ADScarrierCasingC</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Trap_AerialDeployedMine</defName>
+		<label>aerial deployed mine</label>
+		<description>A pair of high-explosive shells connected to a trigger which detonates on touch or bullet impact. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
+		<thingClass>Building_TrapExplosive</thingClass>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/Aerial_Deployed_Mine</texPath>
+			<drawSize>(0.4,0.4)</drawSize>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<neverMultiSelect>true</neverMultiSelect>
+		<statBases>
+			<Mass>0.25</Mass>
+			<MaxHitPoints>20</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<Beauty>-4</Beauty>
+			<TrapSpringChance>1.0</TrapSpringChance>
+		</statBases>
+		<building>
+			<isTrap>true</isTrap>
+			<trapPeacefulWildAnimalsSpringChanceFactor>0.25</trapPeacefulWildAnimalsSpringChanceFactor>
+			<expandHomeArea>false</expandHomeArea>
+			<ai_chillDestination>false</ai_chillDestination>
+			<deconstructible>false</deconstructible>
+			<claimable>false</claimable>
+		</building>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveRadius>1.5</explosiveRadius>
+				<wickTicks>
+					<min>5</min>
+					<max>30</max>
+				</wickTicks>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>4</Fragment_Large>
+					<Fragment_Small>20</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
 
   <!-- ================== Projectiles ================== -->
 
@@ -514,6 +636,32 @@
       <soundExplode>MortarIncendiary_Explode</soundExplode>
     </projectile>
   </ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGIS">
+		<defName>Projectile_70mmLGIS_MineLayer</defName>
+		<label>LGIS missile (Mine layer)</label>
+		<thingClass>ThreeHST.ProjectileCE_AirExplode</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/ADM_carrier</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Smoke</damageDef>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<soundExplode>InfernoCannon_Fire</soundExplode>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_AerialDeployedMine>5</Fragment_AerialDeployedMine>
+					<Fragment_AerialDeployedMineCasingA>1</Fragment_AerialDeployedMineCasingA>
+					<Fragment_AerialDeployedMineCasingB>1</Fragment_AerialDeployedMineCasingB>
+					<Fragment_AerialDeployedMineCasingC>1</Fragment_AerialDeployedMineCasingC>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
 
 
 
@@ -758,4 +906,30 @@
       <soundExplode>MortarIncendiary_Explode</soundExplode>
     </projectile>
   </ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGISIDR">
+		<defName>Projectile_70mmLGIS_MineLayer_Indirect</defName>
+		<label>LGIS missile (Mine layer)</label>
+		<thingClass>ThreeHST.ProjectileCE_AirExplode</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/ADM_carrier</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Smoke</damageDef>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<soundExplode>InfernoCannon_Fire</soundExplode>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_AerialDeployedMine>5</Fragment_AerialDeployedMine>
+					<Fragment_AerialDeployedMineCasingA>1</Fragment_AerialDeployedMineCasingA>
+					<Fragment_AerialDeployedMineCasingB>1</Fragment_AerialDeployedMineCasingB>
+					<Fragment_AerialDeployedMineCasingC>1</Fragment_AerialDeployedMineCasingC>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
 </Defs>

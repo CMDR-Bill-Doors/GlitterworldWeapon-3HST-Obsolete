@@ -63,4 +63,61 @@
       <canFilthAttach>true</canFilthAttach>
     </filth>
   </ThingDef>
+
+	<ThingDef ParentName="BaseFilth">
+		<defName>Filth_ADScarrierCasingA</defName>
+		<label>ADM carrier casing</label>
+		<statBases>
+			<Beauty>-12</Beauty>
+		</statBases>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectile/ADM_carrier_casingLeft</texPath>
+			<onGroundRandomRotateAngle>180</onGroundRandomRotateAngle>
+		</graphicData>
+		<filth>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<disappearsInDays>5~10</disappearsInDays>
+			<cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
+			<canFilthAttach>false</canFilthAttach>
+		</filth>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseFilth">
+		<defName>Filth_ADScarrierCasingB</defName>
+		<label>ADM carrier casing</label>
+		<statBases>
+			<Beauty>-12</Beauty>
+		</statBases>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectile/ADM_carrier_casingRight</texPath>
+			<onGroundRandomRotateAngle>180</onGroundRandomRotateAngle>
+		</graphicData>
+		<filth>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<disappearsInDays>5~10</disappearsInDays>
+			<cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
+			<canFilthAttach>false</canFilthAttach>
+		</filth>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseFilth">
+		<defName>Filth_ADScarrierCasingC</defName>
+		<label>ADM carrier thruster</label>
+		<statBases>
+			<Beauty>-12</Beauty>
+		</statBases>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectile/ADM_carrier_Thruster</texPath>
+			<onGroundRandomRotateAngle>180</onGroundRandomRotateAngle>
+		</graphicData>
+		<filth>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<disappearsInDays>5~10</disappearsInDays>
+			<cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
+			<canFilthAttach>false</canFilthAttach>
+		</filth>
+	</ThingDef>
 </Defs>

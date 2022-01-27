@@ -179,9 +179,9 @@
       <speed>200</speed>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>6</damageAmountBase>
-      <armorPenetrationSharp>16.1</armorPenetrationSharp>
+      <armorPenetrationSharp>10</armorPenetrationSharp>
       <armorPenetrationBlunt>25.88</armorPenetrationBlunt>
-      <spreadMult>17.8</spreadMult>
+      <spreadMult>23.8</spreadMult>
       <pelletCount>12</pelletCount>
     </projectile>
   </ThingDef>

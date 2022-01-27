@@ -380,7 +380,7 @@
 		<defName>Gun_3HST_LGIS_heat</defName>
 		<label>HEAT LGIS tube</label>
 		<ammoClass>RocketHEAT</ammoClass>
-		<detonateProjectile>Projectile_70mmLGIS_HEAT</detonateProjectile>
+		<detonateProjectile>Projectile_70mmLGIS_Frag</detonateProjectile>
 
 		<graphicData>
 			<texPath>Things/Weapons/Disposable_LGIS/heat</texPath>
@@ -616,7 +616,7 @@
 		<defName>Gun_3HST_LGIS_smoke</defName>
 		<label>smoke LGIS tube</label>
 		<ammoClass>RocketSmoke</ammoClass>
-		<detonateProjectile>Projectile_70mmLGIS_Smoke</detonateProjectile>
+		<detonateProjectile>Projectile_70mmLGIS_Incendiary</detonateProjectile>
 		<generateAllowChance>0</generateAllowChance>
 
 		<graphicData>
@@ -835,7 +835,7 @@
 		<defName>Gun_3HST_LGIS_Illumination</defName>
 		<label>illumination LGIS tube</label>
 		<ammoClass>RocketIllumination</ammoClass>
-		<detonateProjectile>Projectile_70mmLGIS_Illumination</detonateProjectile>
+		<detonateProjectile>Projectile_70mmLGIS_Incendiary</detonateProjectile>
 		<generateAllowChance>0</generateAllowChance>
 
 		<graphicData>
@@ -904,8 +904,80 @@
 				</secondaryWeaponChargeSpeeds>
 			</li>
 		</comps>
-
 	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseDisposableLGISammo">
+		<defName>Gun_3HST_LGIS_Minelayer</defName>
+		<label>minelayer LGIS tube</label>
+		<ammoClass>RocketMinelayer</ammoClass>
+		<detonateProjectile>Projectile_70mmLGIS_Frag</detonateProjectile>
+		<generateAllowChance>0.4</generateAllowChance>
+		<graphicData>
+			<texPath>Things/Weapons/Disposable_LGIS/minelayer</texPath>
+		</graphicData>
+		<weaponTags>
+			<li>GunHeavy</li>
+			<li>IndustrialGunAdvanced</li>
+			<li>3HST_LGIS_Disposable</li>
+			<li>Gun</li>
+			<li>GunSingleUse</li>
+		</weaponTags>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>ThreeHST.Verb_ShootCEAutoSwitchModeOneUse</verbClass>
+				<defaultProjectile>Projectile_70mmLGIS_MineLayer</defaultProjectile>
+				<hasStandardCommand>true</hasStandardCommand>
+				<warmupTime>3.4</warmupTime>
+				<burstShotCount />
+				<range>60</range>
+				<minRange>10</minRange>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<soundCast>InfernoCannon_Fire</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>5</muzzleFlashScale>
+				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+				<requireLineOfSight>false</requireLineOfSight>
+				<circularError>10</circularError>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="ThreeHST.CompProperties_SecondaryVerb">
+				<verbProps>
+					<verbClass>ThreeHST.Verb_ShootCEAutoSwitchModeOneUse</verbClass>
+					<defaultProjectile>Projectile_70mmLGIS_MineLayer_Indirect</defaultProjectile>
+					<hasStandardCommand>true</hasStandardCommand>
+					<warmupTime>6.4</warmupTime>
+					<range>90</range>
+					<minRange>20</minRange>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+					</targetParams>
+					<soundCast>InfernoCannon_Fire</soundCast>
+					<soundCastTail>GunTail_Medium</soundCastTail>
+					<muzzleFlashScale>5</muzzleFlashScale>
+					<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+					<circularError>3</circularError>
+					<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+					<indirectFirePenalty>0.3</indirectFirePenalty>
+					<requireLineOfSight>false</requireLineOfSight>
+				</verbProps>
+				<mainWeaponLabel>direct fire</mainWeaponLabel>
+				<secondaryWeaponLabel>indirect fire</secondaryWeaponLabel>
+				<description>Extend the sights and switch the launcher to indirect fire mode, or fold it back to direct fire mode.</description>
+				<mainCommandIcon>UI/Icons/FireModes/Direct</mainCommandIcon>
+				<secondaryCommandIcon>UI/Icons/FireModes/Indirect</secondaryCommandIcon>
+				<secondaryWeaponChargeSpeeds>
+					<li>30</li>
+					<li>50</li>
+					<li>70</li>
+					<li>90</li>
+				</secondaryWeaponChargeSpeeds>
+			</li>
+		</comps>
+	</ThingDef>
+
 
 	<RecipeDef ParentName="GrenadeRecipeBase">
 		<defName>MakeDLGISfrag</defName>
@@ -1020,6 +1092,61 @@
 		</fixedIngredientFilter>
 		<products>
 			<Gun_3HST_LGIS_cluster>2</Gun_3HST_LGIS_cluster>
+		</products>
+		<researchPrerequisite>CE_AdvancedLaunchers</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="GrenadeRecipeBase">
+		<defName>MakeDLGISMineLayer</defName>
+		<label>make minelayer LGIS tube x2</label>
+		<description>Craft 2 minelayer LGIS tubes.</description>
+		<jobString>Making minelayer LGIS tubes.</jobString>
+		<workAmount>18000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>45</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>7</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+				<li>ComponentSpacer</li>
+				<li>Plasteel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Gun_3HST_LGIS_Minelayer>5</Gun_3HST_LGIS_Minelayer>
 		</products>
 		<researchPrerequisite>CE_AdvancedLaunchers</researchPrerequisite>
 	</RecipeDef>
