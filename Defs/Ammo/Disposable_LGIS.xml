@@ -152,7 +152,7 @@
 			<li>IndustrialGunAdvanced</li>
 			<li>3HST_LGIS_Disposable</li>
 			<li>Gun</li>
-			<li>GunSingleUse</li>
+
 		</weaponTags>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -232,7 +232,7 @@
 			<li>IndustrialGunAdvanced</li>
 			<li>3HST_LGIS_Disposable_Adv</li>
 			<li>Gun</li>
-			<li>GunSingleUse</li>
+
 		</weaponTags>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -314,7 +314,7 @@
 			<li>IndustrialGunAdvanced</li>
 			<li>3HST_LGIS_Disposable_Adv</li>
 			<li>Gun</li>
-			<li>GunSingleUse</li>
+
 		</weaponTags>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -396,7 +396,7 @@
 			<li>IndustrialGunAdvanced</li>
 			<li>3HST_LGIS_Disposable</li>
 			<li>Gun</li>
-			<li>GunSingleUse</li>
+
 		</weaponTags>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -551,7 +551,7 @@
 			<li>GunHeavy</li>
 			<li>3HST_LGIS_Disposable_Adv</li>
 			<li>Gun</li>
-			<li>GunSingleUse</li>
+
 		</weaponTags>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -910,26 +910,30 @@
 		<defName>Gun_3HST_LGIS_Minelayer</defName>
 		<label>minelayer LGIS tube</label>
 		<ammoClass>RocketMinelayer</ammoClass>
-		<detonateProjectile>Projectile_70mmLGIS_Frag</detonateProjectile>
-		<generateAllowChance>0.4</generateAllowChance>
+		<detonateProjectile>Projectile_70mmLGIS_MineLayer</detonateProjectile>
+		<generateCommonality>0.4</generateCommonality>
 		<graphicData>
 			<texPath>Things/Weapons/Disposable_LGIS/minelayer</texPath>
 		</graphicData>
 		<statBases>
 			<Mass>4.5</Mass>
 		</statBases>
+		<descriptionHyperlinks>
+			<ThingDef>Trap_AerialDeployedMine</ThingDef>
+		</descriptionHyperlinks>
 		<weaponTags>
 			<li>GunHeavy</li>
 			<li>IndustrialGunAdvanced</li>
-			<li>3HST_LGIS_Disposable</li>
+			<li>3HST_LGIS_Disposable_Adv</li>
 			<li>Gun</li>
-			<li>GunSingleUse</li>
+			<li>3HST_LGIS_Minelayer</li>
 		</weaponTags>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
 				<verbClass>ThreeHST.Verb_ShootCEAutoSwitchModeOneUse</verbClass>
 				<defaultProjectile>Projectile_70mmLGIS_MineLayer</defaultProjectile>
 				<hasStandardCommand>true</hasStandardCommand>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
 				<warmupTime>3.4</warmupTime>
 				<burstShotCount />
 				<range>60</range>
@@ -951,6 +955,7 @@
 					<verbClass>ThreeHST.Verb_ShootCEAutoSwitchModeOneUse</verbClass>
 					<defaultProjectile>Projectile_70mmLGIS_MineLayer_Indirect</defaultProjectile>
 					<hasStandardCommand>true</hasStandardCommand>
+					<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
 					<warmupTime>6.4</warmupTime>
 					<range>90</range>
 					<minRange>20</minRange>
@@ -977,6 +982,11 @@
 					<li>70</li>
 					<li>90</li>
 				</secondaryWeaponChargeSpeeds>
+			</li>
+			<li Class="ThreeHST.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_Mines</li>
+				</concepts>
 			</li>
 		</comps>
 	</ThingDef>
@@ -1096,15 +1106,15 @@
 		<products>
 			<Gun_3HST_LGIS_cluster>2</Gun_3HST_LGIS_cluster>
 		</products>
-		<researchPrerequisite>CE_AdvancedLaunchers</researchPrerequisite>
+		<researchPrerequisite>Research_3HST_ADV_LGIS</researchPrerequisite>
 	</RecipeDef>
 
 	<RecipeDef ParentName="GrenadeRecipeBase">
 		<defName>MakeDLGISMineLayer</defName>
-		<label>make minelayer LGIS tube x2</label>
-		<description>Craft 2 minelayer LGIS tubes.</description>
+		<label>make minelayer LGIS tube x5</label>
+		<description>Craft 5 minelayer LGIS tubes.</description>
 		<jobString>Making minelayer LGIS tubes.</jobString>
-		<workAmount>18000</workAmount>
+		<workAmount>28000</workAmount>
 		<ingredients>
 			<li>
 				<filter>
@@ -1120,7 +1130,7 @@
 						<li>FSX</li>
 					</thingDefs>
 				</filter>
-				<count>15</count>
+				<count>25</count>
 			</li>
 			<li>
 				<filter>
@@ -1128,7 +1138,7 @@
 						<li>ComponentIndustrial</li>
 					</thingDefs>
 				</filter>
-				<count>7</count>
+				<count>10</count>
 			</li>
 			<li>
 				<filter>
@@ -1136,7 +1146,7 @@
 						<li>Plasteel</li>
 					</thingDefs>
 				</filter>
-				<count>10</count>
+				<count>20</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -1144,14 +1154,13 @@
 				<li>Steel</li>
 				<li>FSX</li>
 				<li>ComponentIndustrial</li>
-				<li>ComponentSpacer</li>
 				<li>Plasteel</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
 			<Gun_3HST_LGIS_Minelayer>5</Gun_3HST_LGIS_Minelayer>
 		</products>
-		<researchPrerequisite>CE_AdvancedLaunchers</researchPrerequisite>
+		<researchPrerequisite>Research_3HST_ADV_LGIS</researchPrerequisite>
 	</RecipeDef>
 
 

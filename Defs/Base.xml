@@ -112,10 +112,9 @@
 			<drawSize>1.5</drawSize>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageDef>Bullet</damageDef>
-			<damageAmountBase>30</damageAmountBase>
-			<armorPenetrationSharp>0</armorPenetrationSharp>
-			<armorPenetrationBlunt>50</armorPenetrationBlunt>
+			<damageDef>Blunt</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationBlunt>20</armorPenetrationBlunt>
 			<speed>15</speed>
 			<alwaysFreeIntercept>true</alwaysFreeIntercept>
 			<gravityFactor>10</gravityFactor>
@@ -128,13 +127,14 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseFilth" Name="Base3HSTcosmeticFilth" Abstract="True">
+		<useHitPoints>True</useHitPoints>
 		<statBases>
 			<Beauty>-12</Beauty>
+			<MaxHitPoints>50</MaxHitPoints>
 		</statBases>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<onGroundRandomRotateAngle>180</onGroundRandomRotateAngle>
-			<drawSize>1.5</drawSize>
 		</graphicData>
 		<filth>
 			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>

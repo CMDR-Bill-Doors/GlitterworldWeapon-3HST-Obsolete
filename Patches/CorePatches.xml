@@ -115,5 +115,21 @@
 		</operations>
 	</Operation>
 
-
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers</xpath>
+		<value>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>4</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<Mercenary_Minelayer>10</Mercenary_Minelayer>
+					<Mercenary_Gunner>10</Mercenary_Gunner>
+					<PirateBoss>5</PirateBoss>
+				</options>
+			</li>
+		</value>
+	</Operation>
 </Patch>

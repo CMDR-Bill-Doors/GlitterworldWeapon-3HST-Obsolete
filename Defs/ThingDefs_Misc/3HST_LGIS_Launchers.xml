@@ -472,7 +472,7 @@
 		<size>(2,2)</size>
 		<researchPrerequisites>
 			<li>CE_TurretHeavyWeapons</li>
-			<li>CE_AdvancedLaunchers</li>
+			<li>Research_3HST_ADV_LGIS</li>
 		</researchPrerequisites>
 		<designationCategory>Security</designationCategory>
 	</ThingDef>
@@ -487,7 +487,7 @@
 		</graphicData>
 		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<statBases>
-			<SightsEfficiency>5</SightsEfficiency>
+			<SightsEfficiency>1.5</SightsEfficiency>
 			<ShotSpread>0.4</ShotSpread>
 			<SwayFactor>3.77</SwayFactor>
 			<RangedWeapon_Cooldown>0.35</RangedWeapon_Cooldown>
@@ -501,7 +501,7 @@
 				<defaultProjectile>Projectile_70mmLGIS_Frag</defaultProjectile>
 				<warmupTime>4.6</warmupTime>
 				<minRange>10</minRange>
-				<range>250</range>
+				<range>150</range>
 				<burstShotCount>9</burstShotCount>
 				<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
 				<soundCast>InfernoCannon_Fire</soundCast>
@@ -525,15 +525,15 @@
 					<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
 					<hasStandardCommand>true</hasStandardCommand>
 					<defaultProjectile>Projectile_70mmLGIS_Frag_Indirect</defaultProjectile>
-					<warmupTime>6.6</warmupTime>
-					<minRange>10</minRange>
-					<range>250</range>
+					<warmupTime>10.6</warmupTime>
+					<minRange>20</minRange>
+					<range>180</range>
 					<burstShotCount>9</burstShotCount>
 					<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
 					<soundCast>InfernoCannon_Fire</soundCast>
 					<muzzleFlashScale>16</muzzleFlashScale>
-					<circularError>3</circularError>
-					<indirectFirePenalty>0.3</indirectFirePenalty>
+					<circularError>10</circularError>
+					<indirectFirePenalty>1</indirectFirePenalty>
 				</secondaryVerb>
 
 				<secondaryAmmoProps>
@@ -568,7 +568,7 @@
 			<WorkToBuild>37500</WorkToBuild>
 			<Mass>55</Mass>
 			<Bulk>70</Bulk>
-			<AimingAccuracy>0.9</AimingAccuracy>
+			<AimingAccuracy>0.5</AimingAccuracy>
 			<ShootingAccuracyTurret>0.5</ShootingAccuracyTurret>
 		</statBases>
 		<designatorDropdown>Group_LGIS_Launchers</designatorDropdown>
@@ -633,7 +633,7 @@
 		<size>(1,1)</size>
 		<researchPrerequisites>
 			<li>CE_TurretHeavyWeapons</li>
-			<li>CE_AdvancedLaunchers</li>
+			<li>Research_3HST_ADV_LGIS</li>
 		</researchPrerequisites>
 		<designationCategory>Security</designationCategory>
 	</ThingDef>
@@ -649,7 +649,7 @@
 		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<statBases>
 			<SightsEfficiency>2</SightsEfficiency>
-			<ShotSpread>0.2</ShotSpread>
+			<ShotSpread>0.4</ShotSpread>
 			<SwayFactor>2.25</SwayFactor>
 			<RangedWeapon_Cooldown>0.35</RangedWeapon_Cooldown>
 		</statBases>
@@ -662,7 +662,7 @@
 				<defaultProjectile>Projectile_70mmLGIS_Frag</defaultProjectile>
 				<warmupTime>1.6</warmupTime>
 				<minRange>10</minRange>
-				<range>250</range>
+				<range>150</range>
 				<burstShotCount>3</burstShotCount>
 				<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
 				<soundCast>InfernoCannon_Fire</soundCast>
@@ -686,15 +686,15 @@
 					<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
 					<hasStandardCommand>true</hasStandardCommand>
 					<defaultProjectile>Projectile_70mmLGIS_Frag_Indirect</defaultProjectile>
-					<warmupTime>6.6</warmupTime>
+					<warmupTime>10.6</warmupTime>
 					<minRange>20</minRange>
-					<range>250</range>
+					<range>180</range>
 					<burstShotCount>3</burstShotCount>
 					<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
 					<soundCast>InfernoCannon_Fire</soundCast>
 					<muzzleFlashScale>16</muzzleFlashScale>
-					<circularError>3</circularError>
-					<indirectFirePenalty>0.3</indirectFirePenalty>
+					<circularError>10</circularError>
+					<indirectFirePenalty>1</indirectFirePenalty>
 				</secondaryVerb>
 				<secondaryAmmoProps>
 					<magazineSize>6</magazineSize>

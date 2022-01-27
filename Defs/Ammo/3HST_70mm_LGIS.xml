@@ -444,11 +444,14 @@
 				<enabled>false</enabled>
 			</damageData>
 		</graphicData>
-		<fillPercent>0.01</fillPercent>
 		<altitudeLayer>Filth</altitudeLayer>
 		<rotatable>false</rotatable>
 		<tickerType>Normal</tickerType>
+		<pathCost>0</pathCost>
+		<!--
 		<neverMultiSelect>true</neverMultiSelect>
+		-->
+		<selectable>false</selectable>
 		<statBases>
 			<Mass>0.25</Mass>
 			<MaxHitPoints>20</MaxHitPoints>
@@ -471,6 +474,8 @@
 				<damageAmountBase>25</damageAmountBase>
 				<startWickOnDamageTaken>
 					<li>EMP</li>
+					<li>PrometheumFlame</li>
+					<li>Flame</li>
 				</startWickOnDamageTaken>
 				<wickTicks>
 					<min>5</min>
@@ -480,13 +485,17 @@
 			<li Class="CombatExtended.CompProperties_ExplosiveCE">
 				<damageAmountBase>25</damageAmountBase>
 				<explosiveDamageType>Bomb</explosiveDamageType>
-				<explosiveRadius>1.5</explosiveRadius>
+				<explosiveRadius>1.2</explosiveRadius>
 			</li>
 			<li Class="CombatExtended.CompProperties_Fragments">
 				<fragments>
-					<Fragment_Large>4</Fragment_Large>
-					<Fragment_Small>20</Fragment_Small>
+					<Fragment_Small>10</Fragment_Small>
 				</fragments>
+			</li>
+			<li Class="ThreeHST.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_Mines</li>
+				</concepts>
 			</li>
 		</comps>
 	</ThingDef>

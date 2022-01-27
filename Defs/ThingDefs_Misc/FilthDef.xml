@@ -15,7 +15,7 @@
       <graphicClass>Graphic_Single</graphicClass>
 		<drawSize>5</drawSize>
 		<shaderType>Transparent</shaderType>
-		<drawOffset>(0, 0, 2.5)</drawOffset>
+		<drawOffset>(0, 0, 3.5)</drawOffset>
     </graphicData>
     <altitudeLayer>Skyfaller</altitudeLayer>
     <statBases>
