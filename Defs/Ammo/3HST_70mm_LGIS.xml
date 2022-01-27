@@ -401,12 +401,40 @@
 		</projectile>
 	</ThingDef>
 
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3HSTcosmeticFragmentAirBurst">
+		<defName>Fragment_LGISthrusterAB</defName>
+		<label>LGIS missile thruster</label>
+		<graphicData>
+			<texPath>Things/Projectile/LGISthruster</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<preExplosionSpawnThingDef>Filth_LGISthruster</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			<armorPenetrationBlunt>100</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3HSTcosmeticFragment">
+		<defName>Fragment_LGISthruster</defName>
+		<label>LGIS missile thruster</label>
+		<graphicData>
+			<texPath>Things/Projectile/LGISthruster</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<preExplosionSpawnThingDef>Filth_LGISthruster</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			<armorPenetrationBlunt>100</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
 	
 	
 	<ThingDef ParentName="BuildingBase">
 		<defName>Trap_AerialDeployedMine</defName>
 		<label>aerial deployed mine</label>
-		<description>A pair of high-explosive shells connected to a trigger which detonates on touch or bullet impact. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.</description>
+		<description>A tiny anti-personnel mine deployed en masse via LGIS missiles and detonates on touch. Its small size prohibits complicated IFF system to be installed, rendering it impossible to deconstruct it safely, requiring manual detonation via gunfire or EMP blast to defuse. Animals can sense these when calm.</description>
 		<thingClass>Building_TrapExplosive</thingClass>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -416,6 +444,7 @@
 				<enabled>false</enabled>
 			</damageData>
 		</graphicData>
+		<fillPercent>0.01</fillPercent>
 		<altitudeLayer>Filth</altitudeLayer>
 		<rotatable>false</rotatable>
 		<tickerType>Normal</tickerType>
@@ -440,10 +469,18 @@
 				<explosiveDamageType>Bomb</explosiveDamageType>
 				<explosiveRadius>1.5</explosiveRadius>
 				<damageAmountBase>25</damageAmountBase>
+				<startWickOnDamageTaken>
+					<li>EMP</li>
+				</startWickOnDamageTaken>
 				<wickTicks>
 					<min>5</min>
 					<max>30</max>
 				</wickTicks>
+			</li>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>25</damageAmountBase>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveRadius>1.5</explosiveRadius>
 			</li>
 			<li Class="CombatExtended.CompProperties_Fragments">
 				<fragments>
@@ -492,6 +529,7 @@
         <fragments>
           <Fragment_Large>6</Fragment_Large>
           <Fragment_Small>48</Fragment_Small>
+			<Fragment_LGISthruster>1</Fragment_LGISthruster>
         </fragments>
       </li>
     </comps>
@@ -512,6 +550,13 @@
       <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
       <soundExplode>MortarIncendiary_Explode</soundExplode>
     </projectile>
+	  <comps>
+		  <li Class="CombatExtended.CompProperties_Fragments">
+			  <fragments>
+				  <Fragment_LGISthruster>1</Fragment_LGISthruster>
+			  </fragments>
+		  </li>
+	  </comps>
   </ThingDef>
 
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGIS">
@@ -534,6 +579,7 @@
         <fragments>
           <Fragment_Large>8</Fragment_Large>
           <Fragment_Small>75</Fragment_Small>
+			<Fragment_LGISthruster>1</Fragment_LGISthruster>
         </fragments>
       </li>
     </comps>
@@ -592,6 +638,7 @@
           <Fragment_ConfettiSmallG>30</Fragment_ConfettiSmallG>
           <Fragment_ConfettiSmallB>30</Fragment_ConfettiSmallB>
           <Fragment_ConfettiSmallY>30</Fragment_ConfettiSmallY>
+			<Fragment_LGISthruster>1</Fragment_LGISthruster>
         </fragments>
       </li>
     </comps>
@@ -615,6 +662,13 @@
       <preExplosionSpawnChance>0.3</preExplosionSpawnChance>
       <soundExplode>MortarIncendiary_Explode</soundExplode>
     </projectile>
+	  <comps>
+		  <li Class="CombatExtended.CompProperties_Fragments">
+			  <fragments>
+				  <Fragment_LGISthruster>1</Fragment_LGISthruster>
+			  </fragments>
+		  </li>
+	  </comps>
   </ThingDef>
 
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGIS">
@@ -637,6 +691,13 @@
       <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
       <explosionEffect>ExtinguisherExplosion</explosionEffect>
     </projectile>
+	  <comps>
+		  <li Class="CombatExtended.CompProperties_Fragments">
+			  <fragments>
+				  <Fragment_LGISthruster>1</Fragment_LGISthruster>
+			  </fragments>
+		  </li>
+	  </comps>
   </ThingDef>
  
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGIS">
@@ -658,6 +719,13 @@
       <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
       <explosionEffect>ExtinguisherExplosion</explosionEffect>
     </projectile>
+	  <comps>
+		  <li Class="CombatExtended.CompProperties_Fragments">
+			  <fragments>
+				  <Fragment_LGISthruster>1</Fragment_LGISthruster>
+			  </fragments>
+		  </li>
+	  </comps>
   </ThingDef>
 
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGIS">
@@ -675,12 +743,19 @@
       <armorPenetrationBlunt>0</armorPenetrationBlunt>
       <explosionRadius>3.5</explosionRadius>
     </projectile>
+	  <comps>
+		  <li Class="CombatExtended.CompProperties_Fragments">
+			  <fragments>
+				  <Fragment_LGISthruster>1</Fragment_LGISthruster>
+			  </fragments>
+		  </li>
+	  </comps>
   </ThingDef>
 
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGIS">
     <defName>Projectile_70mmLGIS_Illumination</defName>
     <label>LGIS missile (Illumination)</label>
-    <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+	  <thingClass>ThreeHST.ProjectileCE_AirExplode</thingClass>
     <graphicData>
       <texPath>Things/Projectile/Rocket/3HST_IAA_12_LGIS_Missile_illumination_projectile</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -694,6 +769,13 @@
       <preExplosionSpawnChance>1</preExplosionSpawnChance>
       <soundExplode>MortarIncendiary_Explode</soundExplode>
     </projectile>
+	  <comps>
+		  <li Class="CombatExtended.CompProperties_Fragments">
+			  <fragments>
+				  <Fragment_LGISthrusterAB>1</Fragment_LGISthrusterAB>
+			  </fragments>
+		  </li>
+	  </comps>
   </ThingDef>
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGIS">
@@ -763,6 +845,7 @@
         <fragments>
           <Fragment_Large>6</Fragment_Large>
           <Fragment_Small>48</Fragment_Small>
+			<Fragment_LGISthruster>1</Fragment_LGISthruster>
         </fragments>
       </li>
     </comps>
@@ -782,6 +865,13 @@
       <damageAmountBase>277</damageAmountBase>
       <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     </projectile>
+	  <comps>
+		  <li Class="CombatExtended.CompProperties_Fragments">
+			  <fragments>
+				  <Fragment_LGISthruster>1</Fragment_LGISthruster>
+			  </fragments>
+		  </li>
+	  </comps>
   </ThingDef>
 
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGISIDR">
@@ -804,6 +894,7 @@
         <fragments>
           <Fragment_Large>10</Fragment_Large>
           <Fragment_Small>145</Fragment_Small>
+			<Fragment_LGISthruster>1</Fragment_LGISthruster>
         </fragments>
       </li>
     </comps>
@@ -862,6 +953,7 @@
           <Fragment_ConfettiSmallG>30</Fragment_ConfettiSmallG>
           <Fragment_ConfettiSmallB>30</Fragment_ConfettiSmallB>
           <Fragment_ConfettiSmallY>30</Fragment_ConfettiSmallY>
+			<Fragment_LGISthruster>1</Fragment_LGISthruster>
         </fragments>
       </li>
     </comps>
@@ -885,6 +977,13 @@
       <preExplosionSpawnChance>0.3</preExplosionSpawnChance>
       <soundExplode>MortarIncendiary_Explode</soundExplode>
     </projectile>
+	  <comps>
+		  <li Class="CombatExtended.CompProperties_Fragments">
+			  <fragments>
+				  <Fragment_LGISthruster>1</Fragment_LGISthruster>
+			  </fragments>
+		  </li>
+	  </comps>
   </ThingDef>
 
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGISIDR">
@@ -907,6 +1006,13 @@
       <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
       <explosionEffect>ExtinguisherExplosion</explosionEffect>
     </projectile>
+	  <comps>
+		  <li Class="CombatExtended.CompProperties_Fragments">
+			  <fragments>
+				  <Fragment_LGISthruster>1</Fragment_LGISthruster>
+			  </fragments>
+		  </li>
+	  </comps>
   </ThingDef>
 
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGISIDR">
@@ -928,6 +1034,13 @@
       <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
       <explosionEffect>ExtinguisherExplosion</explosionEffect>
     </projectile>
+	  <comps>
+		  <li Class="CombatExtended.CompProperties_Fragments">
+			  <fragments>
+				  <Fragment_LGISthruster>1</Fragment_LGISthruster>
+			  </fragments>
+		  </li>
+	  </comps>
   </ThingDef>
 
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGISIDR">
@@ -945,12 +1058,19 @@
       <armorPenetrationBlunt>0</armorPenetrationBlunt>
       <explosionRadius>3.5</explosionRadius>
     </projectile>
+	  <comps>
+		  <li Class="CombatExtended.CompProperties_Fragments">
+			  <fragments>
+				  <Fragment_LGISthruster>1</Fragment_LGISthruster>
+			  </fragments>
+		  </li>
+	  </comps>
   </ThingDef>
 
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGISIDR">
     <defName>Projectile_70mmLGIS_Illumination_Indirect</defName>
     <label>LGIS missile (Illumination)</label>
-    <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+	  <thingClass>ThreeHST.ProjectileCE_AirExplode</thingClass>
     <graphicData>
       <texPath>Things/Projectile/Rocket/3HST_IAA_12_LGIS_Missile_illumination_projectile</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -964,6 +1084,13 @@
       <preExplosionSpawnChance>1</preExplosionSpawnChance>
       <soundExplode>MortarIncendiary_Explode</soundExplode>
     </projectile>
+	  <comps>
+		  <li Class="CombatExtended.CompProperties_Fragments">
+			  <fragments>
+				  <Fragment_LGISthrusterAB>1</Fragment_LGISthrusterAB>
+			  </fragments>
+		  </li>
+	  </comps>
   </ThingDef>
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGISIDR">

@@ -13,9 +13,11 @@
     <graphicData>
       <texPath>Things/Filth/3HST_IAA_12_LGIS_Missile_illumination_filth</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <onGroundRandomRotateAngle>180</onGroundRandomRotateAngle>
+		<drawSize>5</drawSize>
+		<shaderType>Transparent</shaderType>
+		<drawOffset>(0, 0, 2.5)</drawOffset>
     </graphicData>
-    <altitudeLayer>Filth</altitudeLayer>
+    <altitudeLayer>Skyfaller</altitudeLayer>
     <statBases>
       <Beauty>-4</Beauty>
     </statBases>
@@ -54,7 +56,7 @@
     <graphicData>
       <texPath>Things/Filth/Ash</texPath>
       <color>(64, 64, 64, 220)</color>
-      <drawSize>1</drawSize>
+      <drawSize>2</drawSize>
     </graphicData>
     <filth>
       <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
@@ -109,6 +111,14 @@
 		<label>Cluster LGIS thruster</label>
 		<graphicData>
 			<texPath>Things/Projectile/ADM_carrier_Thruster</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTcosmeticFilth">
+		<defName>Filth_LGISthruster</defName>
+		<label>LGIS missile thruster</label>
+		<graphicData>
+			<texPath>Things/Projectile/LGISthruster</texPath>
 		</graphicData>
 	</ThingDef>
 </Defs>
