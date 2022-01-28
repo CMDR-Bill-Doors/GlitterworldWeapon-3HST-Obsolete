@@ -64,6 +64,13 @@
 		<description>Advanced missile designed for remote destribution of land mines.</description>
 	</CombatExtended.AmmoCategoryDef>
 
+	<CombatExtended.AmmoCategoryDef>
+		<defName>RocketDecoy</defName>
+		<label>decoy</label>
+		<labelShort>decoy</labelShort>
+		<description>Deploys a decoy projector on impact, distracts enemy attention.</description>
+	</CombatExtended.AmmoCategoryDef>
+
 
   <!-- ==================== AmmoSet ========================== -->
 
@@ -82,6 +89,7 @@
       <Gun_3HST_LGIS_EMP>Projectile_70mmLGIS_EMP</Gun_3HST_LGIS_EMP>
       <Gun_3HST_LGIS_Illumination>Projectile_70mmLGIS_Illumination</Gun_3HST_LGIS_Illumination>
 		<Gun_3HST_LGIS_Minelayer>Projectile_70mmLGIS_MineLayer</Gun_3HST_LGIS_Minelayer>
+		<Gun_3HST_LGIS_Holodecoy>Projectile_70mmLGIS_Holodecoy</Gun_3HST_LGIS_Holodecoy>
     </ammoTypes>
   </CombatExtended.AmmoSetDef>
 
@@ -100,6 +108,7 @@
       <Gun_3HST_LGIS_EMP>Projectile_70mmLGIS_EMP_Indirect</Gun_3HST_LGIS_EMP>
       <Gun_3HST_LGIS_Illumination>Projectile_70mmLGIS_Illumination_Indirect</Gun_3HST_LGIS_Illumination>
 		<Gun_3HST_LGIS_Minelayer>Projectile_70mmLGIS_MineLayer_Indirect</Gun_3HST_LGIS_Minelayer>
+		<Gun_3HST_LGIS_Holodecoy>Projectile_70mmLGIS_Holodecoy_Indirect</Gun_3HST_LGIS_Holodecoy>
   </ammoTypes>
   </CombatExtended.AmmoSetDef>
 
@@ -303,9 +312,9 @@
 			<drawSize>(0.4,0.4)</drawSize>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageDef>Smoke</damageDef>
-			<armorPenetrationSharp>0</armorPenetrationSharp>
-			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<damageDef>Blunt</damageDef>
+			<damageAmountBase>5</damageAmountBase>
+			<armorPenetrationBlunt>20</armorPenetrationBlunt>
 			<speed>15</speed>
 			<alwaysFreeIntercept>true</alwaysFreeIntercept>
 			<gravityFactor>10</gravityFactor>
@@ -355,6 +364,7 @@
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<preExplosionSpawnThingDef>Filth_ADScarrierCasingC</preExplosionSpawnThingDef>
 			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			<damageAmountBase>20</damageAmountBase>
 			<armorPenetrationBlunt>100</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
@@ -389,7 +399,7 @@
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3HSTcosmeticFragmentAirBurst">
 		<defName>Fragment_ClusterMissile_casingC</defName>
-		<label>ADM carrier thruster</label>
+		<label>cluster missile thruster</label>
 		<graphicData>
 			<texPath>Things/Projectile/ADM_carrier_Thruster</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -397,7 +407,53 @@
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<preExplosionSpawnThingDef>Filth_ClusterMissile_casingC</preExplosionSpawnThingDef>
 			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			<damageAmountBase>20</damageAmountBase>
 			<armorPenetrationBlunt>100</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3HSTcosmeticFragment">
+		<defName>Fragment_Holodecoy_casingA</defName>
+		<label>holodecoy missile casing</label>
+		<graphicData>
+			<texPath>Things/Projectile/Holodecoy_CasingA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<preExplosionSpawnThingDef>Filth_Holodecoy_casingA</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			<damageDef>Smoke</damageDef>
+			<damageAmountBase>0</damageAmountBase>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3HSTcosmeticFragment">
+		<defName>Fragment_Holodecoy_casingB</defName>
+		<label>holodecoy missile casing</label>
+		<graphicData>
+			<texPath>Things/Projectile/Holodecoy_CasingB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<preExplosionSpawnThingDef>Filth_Holodecoy_casingB</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			<damageDef>Smoke</damageDef>
+			<damageAmountBase>0</damageAmountBase>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3HSTcosmeticFragment">
+		<defName>Fragment_Holodecoy_casingC</defName>
+		<label>holodecoy missile thruster</label>
+		<graphicData>
+			<texPath>Things/Projectile/ADM_carrier_Thruster</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<preExplosionSpawnThingDef>Filth_Holodecoy_casingC</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			<damageDef>Smoke</damageDef>
+			<damageAmountBase>0</damageAmountBase>
 		</projectile>
 	</ThingDef>
 
@@ -411,6 +467,7 @@
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<preExplosionSpawnThingDef>Filth_LGISthruster</preExplosionSpawnThingDef>
 			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			<damageAmountBase>20</damageAmountBase>
 			<armorPenetrationBlunt>100</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
@@ -425,6 +482,7 @@
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<preExplosionSpawnThingDef>Filth_LGISthruster</preExplosionSpawnThingDef>
 			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			<damageAmountBase>20</damageAmountBase>
 			<armorPenetrationBlunt>100</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
@@ -438,37 +496,37 @@
 		<thingClass>Building_TrapExplosive</thingClass>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Building/Aerial_Deployed_Mine</texPath>
-			<drawSize>(0.4,0.4)</drawSize>
+			<texPath>Things/none</texPath>
 			<damageData>
 				<enabled>false</enabled>
 			</damageData>
 		</graphicData>
+		<uiIconPath>Things/Building/Aerial_Deployed_Mine</uiIconPath>
 		<altitudeLayer>Filth</altitudeLayer>
 		<rotatable>false</rotatable>
 		<tickerType>Normal</tickerType>
-		<pathCost>0</pathCost>
 		<!--
 		<neverMultiSelect>true</neverMultiSelect>
-		-->
+
 		<selectable>false</selectable>
+		-->
 		<statBases>
 			<Mass>0.25</Mass>
 			<MaxHitPoints>20</MaxHitPoints>
 			<Flammability>1</Flammability>
 			<Beauty>-4</Beauty>
-			<TrapSpringChance>1.0</TrapSpringChance>
+			<TrapSpringChance>10</TrapSpringChance>
 		</statBases>
 		<building>
 			<isTrap>true</isTrap>
-			<trapPeacefulWildAnimalsSpringChanceFactor>0.25</trapPeacefulWildAnimalsSpringChanceFactor>
+			<trapPeacefulWildAnimalsSpringChanceFactor>0.2</trapPeacefulWildAnimalsSpringChanceFactor>
 			<expandHomeArea>false</expandHomeArea>
 			<ai_chillDestination>false</ai_chillDestination>
 			<deconstructible>false</deconstructible>
 			<claimable>false</claimable>
 		</building>
 		<comps>
-			<li Class="CompProperties_Explosive">
+			<li Class="ThreeHST.CompProperties_ProximityExplosive">
 				<explosiveDamageType>Bomb</explosiveDamageType>
 				<explosiveRadius>1.5</explosiveRadius>
 				<damageAmountBase>25</damageAmountBase>
@@ -478,18 +536,19 @@
 					<li>Flame</li>
 				</startWickOnDamageTaken>
 				<wickTicks>
-					<min>5</min>
+					<min>10</min>
 					<max>30</max>
 				</wickTicks>
+				<detectionRadius>1.7</detectionRadius>
 			</li>
 			<li Class="CombatExtended.CompProperties_ExplosiveCE">
 				<damageAmountBase>25</damageAmountBase>
 				<explosiveDamageType>Bomb</explosiveDamageType>
-				<explosiveRadius>1.2</explosiveRadius>
+				<explosiveRadius>1.5</explosiveRadius>
 			</li>
 			<li Class="CombatExtended.CompProperties_Fragments">
 				<fragments>
-					<Fragment_Small>10</Fragment_Small>
+					<Fragment_Small>14</Fragment_Small>
 				</fragments>
 			</li>
 			<li Class="ThreeHST.CompProperties_ShowConcept">
@@ -497,7 +556,139 @@
 					<li>BDGW_Mines</li>
 				</concepts>
 			</li>
+			<li Class="BDsGlitterworldFaction3HST.CompProperties_RandomPositionPrint">
+				<graphicData>
+					<graphicClass>Graphic_Single</graphicClass>
+					<texPath>Things/Building/Aerial_Deployed_Mine</texPath>
+					<drawSize>(0.4,0.4)</drawSize>
+					<damageData>
+						<enabled>false</enabled>
+					</damageData>
+				</graphicData>
+				<maxDeviation>0.5</maxDeviation>
+			</li>
 		</comps>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BuildingBase">
+		<thingClass>CombatExtended.Building_TurretGunCE</thingClass>
+		<defName>Turret_Holodecoy</defName>
+		<label>holographic decoy</label>
+		<description>A holographic decoy that attracts enemy aggression. It's internal battery lasts for 6 hours.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<drawSize>2</drawSize>
+			<shaderType>Transparent</shaderType>
+			<texPath>Things/Building/Holodecoy</texPath>
+			<drawOffset>(0, 0, 0.5)</drawOffset>
+			<shadowData>
+				<volume>(0.27,0.25,0.27)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<tradeability>None</tradeability>
+		<techLevel>Spacer</techLevel>
+		<stealable>false</stealable>
+		<rotatable>false</rotatable>
+		<statBases>
+			<AimingAccuracy>1</AimingAccuracy>
+			<ShootingAccuracyTurret>1</ShootingAccuracyTurret>
+			<MaxHitPoints>240</MaxHitPoints>
+			<Flammability>0.1</Flammability>
+			<Beauty>10</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.15</fillPercent>
+		<castEdgeShadows>false</castEdgeShadows>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<building>
+			<expandHomeArea>false</expandHomeArea>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretBurstCooldownTime>1</turretBurstCooldownTime>
+			<turretGunDef>Gun_Holodecoy</turretGunDef>
+		</building>
+		<placeWorkers Inherit="False">
+			<li>PlaceWorker_TurretTop</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveDamageType>EMP</explosiveDamageType>
+				<explosiveRadius>2</explosiveRadius>
+				<damageAmountBase>10</damageAmountBase>
+				<startWickOnDamageTaken>
+					<li>EMP</li>
+				</startWickOnDamageTaken>
+				<wickTicks>
+					<min>5</min>
+					<max>30</max>
+				</wickTicks>
+			</li>
+			<li Class="CompProperties_DestroyAfterDelay">
+				<delayTicks>21600</delayTicks>
+				<destroyMode>KillFinalize</destroyMode>
+				<countdownLabel>Power off in</countdownLabel>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(43,255,255,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseAutoTurretGun">
+		<defName>Gun_Holodecoy</defName>
+		<label>Taunter</label>
+		<graphicData>
+			<texPath>Things/none</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>A built-in loud speaker that attracts enemy aggression.</description>
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+		<destroyOnDrop>true</destroyOnDrop>
+		<tradeability>None</tradeability>
+		<useHitPoints>false</useHitPoints>
+		<statBases>
+			<MarketValue>0</MarketValue>
+			<SightsEfficiency>1</SightsEfficiency>
+			<ShotSpread>0</ShotSpread>
+			<SwayFactor>0</SwayFactor>
+			<RangedWeapon_Cooldown>0</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>0</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_none</defaultProjectile>
+				<warmupTime>0</warmupTime>
+				<range>0</range>
+				<ticksBetweenBurstShots>114514</ticksBetweenBurstShots>
+				<burstShotCount>0</burstShotCount>
+				<muzzleFlashScale>0</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+<ThingDef ParentName="BaseBullet">
+		<defName>Projectile_none</defName>
+		<label>nothing</label>
+		<graphicData>
+			<texPath>Things/none</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Smoke</damageDef>
+			<damageAmountBase>0</damageAmountBase>
+			<speed>114514</speed>
+		</projectile>
 	</ThingDef>
 
   <!-- ================== Projectiles ================== -->
@@ -813,6 +1004,34 @@
 		</comps>
 	</ThingDef>
 
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGIS">
+		<defName>Projectile_70mmLGIS_Holodecoy</defName>
+		<label>LGIS missile (Holodecoy)</label>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/Holodecoy_Projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Smoke</damageDef>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<soundExplode>InfernoCannon_Fire</soundExplode>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Holodecoy_casingA>1</Fragment_Holodecoy_casingA>
+					<Fragment_Holodecoy_casingB>1</Fragment_Holodecoy_casingB>
+					<Fragment_Holodecoy_casingC>1</Fragment_Holodecoy_casingC>
+				</fragments>
+			</li>
+			<li Class="ThreeHST.CompProperties_SpawnThingOnDestroy">
+				<def>Turret_Holodecoy</def>
+			</li>
+		</comps>
+	</ThingDef>
+
 
 
   <ThingDef Class="CombatExtended.AmmoDef" Name="Base70mmLGISIDR" ParentName="BaseBullet" Abstract="true">
@@ -1124,6 +1343,34 @@
 					<Fragment_AerialDeployedMineCasingB>1</Fragment_AerialDeployedMineCasingB>
 					<Fragment_AerialDeployedMineCasingC>1</Fragment_AerialDeployedMineCasingC>
 				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGISIDR">
+		<defName>Projectile_70mmLGIS_Holodecoy_Indirect</defName>
+		<label>LGIS missile (Holodecoy)</label>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/Holodecoy_Projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Smoke</damageDef>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<soundExplode>InfernoCannon_Fire</soundExplode>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Holodecoy_casingA>1</Fragment_Holodecoy_casingA>
+					<Fragment_Holodecoy_casingB>1</Fragment_Holodecoy_casingB>
+					<Fragment_Holodecoy_casingC>1</Fragment_Holodecoy_casingC>
+				</fragments>
+			</li>
+			<li Class="ThreeHST.CompProperties_SpawnThingOnDestroy">
+				<def>Turret_Holodecoy</def>
 			</li>
 		</comps>
 	</ThingDef>

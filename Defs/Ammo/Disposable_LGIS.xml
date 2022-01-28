@@ -991,6 +991,81 @@
 		</comps>
 	</ThingDef>
 
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseDisposableLGISammo">
+		<defName>Gun_3HST_LGIS_Holodecoy</defName>
+		<label>holodecoy LGIS tube</label>
+		<ammoClass>RocketDecoy</ammoClass>
+		<detonateProjectile>Projectile_70mmLGIS_EMP</detonateProjectile>
+		<generateCommonality>0.1</generateCommonality>
+		<graphicData>
+			<texPath>Things/Weapons/Disposable_LGIS/holodecoy</texPath>
+		</graphicData>
+		<statBases>
+			<Mass>4.5</Mass>
+		</statBases>
+		<weaponTags>
+			<li>GunHeavy</li>
+			<li>IndustrialGunAdvanced</li>
+			<li>3HST_LGIS_Disposable_Adv</li>
+			<li>Gun</li>
+		</weaponTags>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>ThreeHST.Verb_ShootCEAutoSwitchModeOneUse</verbClass>
+				<defaultProjectile>Projectile_70mmLGIS_Holodecoy</defaultProjectile>
+				<hasStandardCommand>true</hasStandardCommand>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<warmupTime>3.4</warmupTime>
+				<burstShotCount />
+				<range>60</range>
+				<minRange>10</minRange>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<soundCast>InfernoCannon_Fire</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>5</muzzleFlashScale>
+				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+				<requireLineOfSight>false</requireLineOfSight>
+				<circularError>10</circularError>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="ThreeHST.CompProperties_SecondaryVerb">
+				<verbProps>
+					<verbClass>ThreeHST.Verb_ShootCEAutoSwitchModeOneUse</verbClass>
+					<defaultProjectile>Projectile_70mmLGIS_Holodecoy_Indirect</defaultProjectile>
+					<hasStandardCommand>true</hasStandardCommand>
+					<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+					<warmupTime>6.4</warmupTime>
+					<range>90</range>
+					<minRange>20</minRange>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+					</targetParams>
+					<soundCast>InfernoCannon_Fire</soundCast>
+					<soundCastTail>GunTail_Medium</soundCastTail>
+					<muzzleFlashScale>5</muzzleFlashScale>
+					<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+					<circularError>3</circularError>
+					<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+					<indirectFirePenalty>0.3</indirectFirePenalty>
+					<requireLineOfSight>false</requireLineOfSight>
+				</verbProps>
+				<mainWeaponLabel>direct fire</mainWeaponLabel>
+				<secondaryWeaponLabel>indirect fire</secondaryWeaponLabel>
+				<description>Extend the sights and switch the launcher to indirect fire mode, or fold it back to direct fire mode.</description>
+				<mainCommandIcon>UI/Icons/FireModes/Direct</mainCommandIcon>
+				<secondaryCommandIcon>UI/Icons/FireModes/Indirect</secondaryCommandIcon>
+				<secondaryWeaponChargeSpeeds>
+					<li>30</li>
+					<li>50</li>
+					<li>70</li>
+					<li>90</li>
+				</secondaryWeaponChargeSpeeds>
+			</li>
+		</comps>
+	</ThingDef>
 
 	<RecipeDef ParentName="GrenadeRecipeBase">
 		<defName>MakeDLGISfrag</defName>
@@ -1159,6 +1234,69 @@
 		</fixedIngredientFilter>
 		<products>
 			<Gun_3HST_LGIS_Minelayer>5</Gun_3HST_LGIS_Minelayer>
+		</products>
+		<researchPrerequisite>Research_3HST_ADV_LGIS</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="GrenadeRecipeBase">
+		<defName>MakeDLGISDecoy</defName>
+		<label>make holodecoy LGIS tube x5</label>
+		<description>Craft 5 holodecoy LGIS tubes.</description>
+		<jobString>Making holodecoy LGIS tubes.</jobString>
+		<workAmount>18000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentSpacer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+				<li>Plasteel</li>
+				<li>ComponentSpacer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Gun_3HST_LGIS_Holodecoy>5</Gun_3HST_LGIS_Holodecoy>
 		</products>
 		<researchPrerequisite>Research_3HST_ADV_LGIS</researchPrerequisite>
 	</RecipeDef>

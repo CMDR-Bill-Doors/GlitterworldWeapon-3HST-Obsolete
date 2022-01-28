@@ -115,6 +115,30 @@
 	</ThingDef>
 
 	<ThingDef ParentName="Base3HSTcosmeticFilth">
+		<defName>Filth_Holodecoy_casingA</defName>
+		<label>Holodecoy LGIS casing</label>
+		<graphicData>
+			<texPath>Things/Projectile/Holodecoy_CasingA</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTcosmeticFilth">
+		<defName>Filth_Holodecoy_casingB</defName>
+		<label>Holodecoy LGIS casing</label>
+		<graphicData>
+			<texPath>Things/Projectile/Holodecoy_CasingB</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTcosmeticFilth">
+		<defName>Filth_Holodecoy_casingC</defName>
+		<label>Holodecoy LGIS thruster</label>
+		<graphicData>
+			<texPath>Things/Projectile/ADM_carrier_Thruster</texPath>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTcosmeticFilth">
 		<defName>Filth_LGISthruster</defName>
 		<label>LGIS missile thruster</label>
 		<graphicData>
