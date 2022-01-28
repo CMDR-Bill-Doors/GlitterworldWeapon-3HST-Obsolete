@@ -507,9 +507,8 @@
 		<tickerType>Normal</tickerType>
 		<!--
 		<neverMultiSelect>true</neverMultiSelect>
-
+-->
 		<selectable>false</selectable>
-		-->
 		<statBases>
 			<Mass>0.25</Mass>
 			<MaxHitPoints>20</MaxHitPoints>

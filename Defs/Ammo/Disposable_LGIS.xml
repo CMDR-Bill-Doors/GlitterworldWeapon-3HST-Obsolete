@@ -1189,7 +1189,7 @@
 		<label>make minelayer LGIS tube x5</label>
 		<description>Craft 5 minelayer LGIS tubes.</description>
 		<jobString>Making minelayer LGIS tubes.</jobString>
-		<workAmount>28000</workAmount>
+		<workAmount>18000</workAmount>
 		<ingredients>
 			<li>
 				<filter>
