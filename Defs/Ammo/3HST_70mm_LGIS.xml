@@ -514,6 +514,11 @@
 				<explosiveDamageType>Bomb</explosiveDamageType>
 				<explosiveRadius>1.5</explosiveRadius>
 				<damageAmountBase>25</damageAmountBase>
+				<wildAnimalSpringChance>0.05</wildAnimalSpringChance>
+				<colonistSpringChance>0.05</colonistSpringChance>
+				<selfExplodeChance>0.2</selfExplodeChance>
+				<minSelfExplodeTick>2592000</minSelfExplodeTick>
+				<maxSelfExplodeTick>51840000</maxSelfExplodeTick>
 				<startWickOnDamageTaken>
 					<li>EMP</li>
 					<li>PrometheumFlame</li>
