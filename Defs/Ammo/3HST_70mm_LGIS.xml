@@ -487,8 +487,7 @@
 		</projectile>
 	</ThingDef>
 
-	
-	
+
 	<ThingDef>
 		<defName>Trap_AerialDeployedMine</defName>
 		<label>aerial deployed mine</label>
@@ -503,9 +502,6 @@
 		<altitudeLayer>Filth</altitudeLayer>
 		<tickerType>Normal</tickerType>
 		<drawerType>MapMeshOnly</drawerType>
-		<!--
-		<neverMultiSelect>true</neverMultiSelect>
--->
 		<selectable>false</selectable>
 		<statBases>
 			<Mass>0.25</Mass>
@@ -557,6 +553,8 @@
 			</li>
 		</comps>
 	</ThingDef>
+
+
 
 
 	<ThingDef ParentName="BuildingBase">
