@@ -489,22 +489,20 @@
 
 	
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef>
 		<defName>Trap_AerialDeployedMine</defName>
 		<label>aerial deployed mine</label>
 		<description>A tiny anti-personnel mine deployed en masse via LGIS missiles and detonates on touch. Its small size prohibits complicated IFF system to be installed, rendering it impossible to deconstruct it safely, requiring manual detonation via gunfire or EMP blast to defuse. Animals can sense these when calm.</description>
-		<thingClass>Building_TrapExplosive</thingClass>
+		<thingClass>ThreeHST.Mine</thingClass>
+		<category>Item</category>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/none</texPath>
-			<damageData>
-				<enabled>false</enabled>
-			</damageData>
 		</graphicData>
 		<uiIconPath>Things/Building/Aerial_Deployed_Mine</uiIconPath>
 		<altitudeLayer>Filth</altitudeLayer>
-		<rotatable>false</rotatable>
 		<tickerType>Normal</tickerType>
+		<drawerType>MapMeshOnly</drawerType>
 		<!--
 		<neverMultiSelect>true</neverMultiSelect>
 -->
@@ -513,17 +511,8 @@
 			<Mass>0.25</Mass>
 			<MaxHitPoints>20</MaxHitPoints>
 			<Flammability>1</Flammability>
-			<Beauty>-4</Beauty>
 			<TrapSpringChance>10</TrapSpringChance>
 		</statBases>
-		<building>
-			<isTrap>true</isTrap>
-			<trapPeacefulWildAnimalsSpringChanceFactor>0.2</trapPeacefulWildAnimalsSpringChanceFactor>
-			<expandHomeArea>false</expandHomeArea>
-			<ai_chillDestination>false</ai_chillDestination>
-			<deconstructible>false</deconstructible>
-			<claimable>false</claimable>
-		</building>
 		<comps>
 			<li Class="ThreeHST.CompProperties_ProximityExplosive">
 				<explosiveDamageType>Bomb</explosiveDamageType>

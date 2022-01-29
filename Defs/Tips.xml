@@ -7,6 +7,8 @@
       <li>Most if not all LGIS launchers are capable of switching between direct fire and indirect, mortar-like fire. Use this at your advantage!</li>
       <li>Scatterailguns introduce heavy rail degradation, with an estimated rail life of 125 rounds per standard rail package. Mind your rail durability when using them!</li>
       <li>Railgun turrets consume extra power after firing to charge it's capacitors. Be aware of your battery charge if you intend to use them!</li>
+		<li>Directly damaging explosions, incendiary weapons and EMP blasts are capable of detonating an ADM without risking your pawn's life.</li>
+		<li>Sometimes it's easier to spot the ADM carrier casing than the mine itself.</li>
     </tips>
   </TipSetDef>
 

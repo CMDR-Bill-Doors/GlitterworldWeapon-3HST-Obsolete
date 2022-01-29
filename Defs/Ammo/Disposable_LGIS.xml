@@ -1189,7 +1189,7 @@
 		<label>make minelayer LGIS tube x5</label>
 		<description>Craft 5 minelayer LGIS tubes.</description>
 		<jobString>Making minelayer LGIS tubes.</jobString>
-		<workAmount>18000</workAmount>
+		<workAmount>14000</workAmount>
 		<ingredients>
 			<li>
 				<filter>
@@ -1205,7 +1205,7 @@
 						<li>FSX</li>
 					</thingDefs>
 				</filter>
-				<count>25</count>
+				<count>15</count>
 			</li>
 			<li>
 				<filter>
