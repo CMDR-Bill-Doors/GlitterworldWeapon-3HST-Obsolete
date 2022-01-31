@@ -63,10 +63,29 @@
     </modExtensions>
   </ThingDef>
 
+	<ThingDef ParentName="BaseBullet">
+		<defName>ElectricStunGunEMP</defName>
+		<label>directed EMP blast</label>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Charge_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+			<color>(5,195,221)</color>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<explosionRadius>2</explosionRadius>
+			<damageDef>EMP</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<speed>180</speed>
+		</projectile>
+	</ThingDef>
+
   <ThingDef ParentName="Base3HSTHeavyGun">
     <defName>Gun_3HST_ElectricStunGun</defName>
     <label>3HST non-lethal electric arc gun</label>
-    <description>An expensive and clumbersome non-lethal weapon solution, this weapon fires an electric arc from its electrodes, burning and electrifying the victim. The electrodes will erode from each fire, eventurally need a pair of accelerator rails to replace, which happened to be a good material for electrode and readily avaliable.</description>
+    <description>An expensive and clumbersome non-lethal weapon solution, this weapon fires an electric arc from its electrodes, burning and electrifying the victim. The electrodes will erode from each fire, eventurally need a pair of accelerator rails to replace, which happened to be a good material for electrode and readily avaliable.\n\nCan also be reprogrammed to fire EMP blasts.</description>
     <graphicData>
       <texPath>Things/Weapons/ElectricStunRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -90,18 +109,20 @@
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
-        <verbClass>BDsGlitterworldFaction3HST.Verb_ShootByBarrel</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>ElectricStunGunBeam</defaultProjectile>
-        <warmupTime>2.1</warmupTime>
-        <burstShotCount>6</burstShotCount>
-        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-        <range>15</range>
-        <soundCast>RG_9mm</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
-        <recoilAmount>0</recoilAmount>
-        <muzzleFlashScale>18</muzzleFlashScale>
-      </li>
+		  <verbClass>BDsGlitterworldFaction3HST.Verb_ShootByBarrel</verbClass>
+		  <hasStandardCommand>true</hasStandardCommand>
+		  <defaultProjectile>ElectricStunGunEMP</defaultProjectile>
+		  <warmupTime>3.1</warmupTime>
+		  <burstShotCount>6</burstShotCount>
+		  <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+		  <range>15</range>
+		  <targetParams>
+			  <canTargetLocations>true</canTargetLocations>
+		  </targetParams>
+		  <soundCast>RG_9mm</soundCast>
+		  <soundCastTail>GunTail_Heavy</soundCastTail>
+		  <muzzleFlashScale>18</muzzleFlashScale>
+	  </li>
     </verbs>
     <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">
@@ -123,6 +144,29 @@
 			<concepts>
 				<li>BDGW_RailRearm</li>
 			</concepts>
+		</li>
+		<li Class="ThreeHST.CompProperties_SecondaryVerb">
+			<verbProps>
+				<verbClass>BDsGlitterworldFaction3HST.Verb_ShootByBarrel</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>ElectricStunGunBeam</defaultProjectile>
+				<warmupTime>2.1</warmupTime>
+				<burstShotCount>6</burstShotCount>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<range>15</range>
+				<soundCast>RG_9mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<recoilAmount>0</recoilAmount>
+				<muzzleFlashScale>18</muzzleFlashScale>
+			</verbProps>
+			<mainWeaponLabel>directed EMP blast</mainWeaponLabel>
+			<secondaryWeaponLabel>non-lethal electric arc</secondaryWeaponLabel>
+			<description>switch firing mode</description>
+			<mainCommandIcon>UI/Icons/FireModes/EMP_Blast</mainCommandIcon>
+			<secondaryCommandIcon>UI/Icons/FireModes/Non_Lethal</secondaryCommandIcon>
+			<secondaryWeaponChargeSpeeds>
+				<li>0</li>
+			</secondaryWeaponChargeSpeeds>
 		</li>
     </comps>
 	  <weaponTags Inherit="False"/>

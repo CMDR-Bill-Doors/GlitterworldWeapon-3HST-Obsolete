@@ -266,7 +266,7 @@
 			<li>CE_Turret</li>
 		</tradeTags>
 		<statBases>
-			<WorkToBuild>66000</WorkToBuild>
+			<WorkToBuild>6600</WorkToBuild>
 			<Mass>30</Mass>
 			<Bulk>100</Bulk>
 		</statBases>
@@ -286,7 +286,7 @@
 			<Steel>50</Steel>
 			<Plasteel>35</Plasteel>
 			<ComponentIndustrial>4</ComponentIndustrial>
-			<ComponentSpacer>2</ComponentSpacer>
+			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<specialDisplayRadius>15</specialDisplayRadius>
 		<building>
@@ -311,7 +311,7 @@
 	<ThingDef ParentName="BaseArtilleryWeapon">
 		<defName>Gun_DualLGIS_ID</defName>
 		<label>dual LGIS missile launcher</label>
-		<description>A multiple rocket launcher capable of holding and firing 2 LGIS missiles.\n\nThis simple launcher does not come with rail accelerators and solely depends on the propellant charge in the casing to fire.</description>
+		<description>A multiple rocket launcher capable of holding and firing 2 LGIS missiles.\n\nThis simple launcher does not come with rail accelerators and solely depends on the propellant charge in the casing to fire. While range remain unchanged, this launcher benefits from better fire rate and accuracy.</description>
 		<graphicData>
 			<texPath>Things/Building/Turrets/3HST_XML_26_DualLGISL</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -333,13 +333,11 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Projectile_70mmLGIS_Frag</defaultProjectile>
 				<warmupTime>2.5</warmupTime>
-				<minRange>15</minRange>
-				<range>200</range>
+				<minRange>10</minRange>
+				<range>60</range>
 				<burstShotCount>2</burstShotCount>
 				<soundCast>InfernoCannon_Fire</soundCast>
 				<muzzleFlashScale>16</muzzleFlashScale>
-				<circularError>2</circularError>
-				<indirectFirePenalty>0.2</indirectFirePenalty>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
@@ -361,12 +359,12 @@
 					<hasStandardCommand>true</hasStandardCommand>
 					<defaultProjectile>Projectile_70mmLGIS_Frag_Indirect</defaultProjectile>
 					<warmupTime>6.5</warmupTime>
-					<minRange>15</minRange>
-					<range>200</range>
+					<minRange>20</minRange>
+					<range>90</range>
 					<burstShotCount>2</burstShotCount>
 					<soundCast>InfernoCannon_Fire</soundCast>
 					<muzzleFlashScale>16</muzzleFlashScale>
-					<circularError>2</circularError>
+					<circularError>3</circularError>
 					<indirectFirePenalty>0.2</indirectFirePenalty>
 					<targetParams>
 						<canTargetLocations>true</canTargetLocations>
