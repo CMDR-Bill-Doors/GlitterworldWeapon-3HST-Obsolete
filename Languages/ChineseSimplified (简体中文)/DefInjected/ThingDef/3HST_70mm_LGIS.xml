@@ -1,6 +1,27 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
+  <!-- EN: aerial deployed mine -->
+  <Fragment_AerialDeployedMine.label>ADM空布雷</Fragment_AerialDeployedMine.label>
+  
+  <!-- EN: ADM carrier casing -->
+  <Fragment_AerialDeployedMineCasingA.label>布雷LGIS壳体</Fragment_AerialDeployedMineCasingA.label>
+  
+  <!-- EN: ADM carrier casing -->
+  <Fragment_AerialDeployedMineCasingB.label>布雷LGIS壳体</Fragment_AerialDeployedMineCasingB.label>
+  
+  <!-- EN: ADM carrier thruster -->
+  <Fragment_AerialDeployedMineCasingC.label>布雷LGIS推进段</Fragment_AerialDeployedMineCasingC.label>
+  
+  <!-- EN: ADM carrier casing -->
+  <Fragment_ClusterMissile_casingA.label>集束LGIS壳体</Fragment_ClusterMissile_casingA.label>
+  
+  <!-- EN: ADM carrier casing -->
+  <Fragment_ClusterMissile_casingB.label>集束LGIS壳体</Fragment_ClusterMissile_casingB.label>
+  
+  <!-- EN: cluster missile thruster -->
+  <Fragment_ClusterMissile_casingC.label>集束LGIS推进段</Fragment_ClusterMissile_casingC.label>
+  
   <!-- EN: Confetti -->
   <Fragment_ConfettiLarge.label>彩纸</Fragment_ConfettiLarge.label>
   
@@ -28,8 +49,30 @@
   <!-- EN: Explosive submunition -->
   <Fragment_ExplosiveSubmunitionNear.label>爆炸性分弹药</Fragment_ExplosiveSubmunitionNear.label>
   
+  <!-- EN: holodecoy missile casing -->
+  <Fragment_Holodecoy_casingA.label>诱饵LGIS壳体</Fragment_Holodecoy_casingA.label>
+  
+  <!-- EN: holodecoy missile casing -->
+  <Fragment_Holodecoy_casingB.label>诱饵LGIS壳体</Fragment_Holodecoy_casingB.label>
+  
+  <!-- EN: holodecoy missile thruster -->
+  <Fragment_Holodecoy_casingC.label>诱饵LGIS推进段</Fragment_Holodecoy_casingC.label>
+  
+  <!-- EN: LGIS missile thruster -->
+  <Fragment_LGISthruster.label>LGIS导弹推进段</Fragment_LGISthruster.label>
+  
+  <!-- EN: LGIS missile thruster -->
+  <Fragment_LGISthrusterAB.label>LGIS导弹推进段</Fragment_LGISthrusterAB.label>
+  
   <!-- EN: Recursive submunition -->
   <Fragment_RecursiveSubmunition.label>爆炸性分弹药</Fragment_RecursiveSubmunition.label>
+  
+  <!-- EN: Taunt -->
+  <Gun_Holodecoy.label>嘲讽</Gun_Holodecoy.label>
+  <!-- EN: A built-in loud speaker that attracts enemy aggression. -->
+  <Gun_Holodecoy.description>你追我，你追到我，我就让你嘿嘿嘿~</Gun_Holodecoy.description>
+  <!-- EN: Taunt -->
+  <Gun_Holodecoy.verbs.Verb_ShootCE.label>有本事你就打我啊</Gun_Holodecoy.verbs.Verb_ShootCE.label>
   
   <!-- EN: LGIS missile (Cluster) -->
   <Projectile_70mmLGIS_Cluster.label>3HST制 70mm LGIS 导弹 (集束)</Projectile_70mmLGIS_Cluster.label>
@@ -67,6 +110,12 @@
   <!-- EN: LGIS missile (HEAT) -->
   <Projectile_70mmLGIS_HEAT_Indirect.label>3HST制 70mm LGIS 导弹 (破甲)</Projectile_70mmLGIS_HEAT_Indirect.label>
   
+  <!-- EN: LGIS missile (Holodecoy) -->
+  <Projectile_70mmLGIS_Holodecoy.label>3HST制 70mm LGIS 导弹 (诱饵)</Projectile_70mmLGIS_Holodecoy.label>
+  
+  <!-- EN: LGIS missile (Holodecoy) -->
+  <Projectile_70mmLGIS_Holodecoy_Indirect.label>3HST制 70mm LGIS 导弹 (诱饵)</Projectile_70mmLGIS_Holodecoy_Indirect.label>
+  
   <!-- EN: LGIS missile (Illumination) -->
   <Projectile_70mmLGIS_Illumination.label>3HST制 70mm LGIS 导弹 (照明)</Projectile_70mmLGIS_Illumination.label>
   
@@ -79,6 +128,12 @@
   <!-- EN: LGIS missile (Incendiary) -->
   <Projectile_70mmLGIS_Incendiary_Indirect.label>3HST制 70mm LGIS 导弹 (燃烧)</Projectile_70mmLGIS_Incendiary_Indirect.label>
   
+  <!-- EN: LGIS missile (Mine layer) -->
+  <Projectile_70mmLGIS_MineLayer.label>3HST制 70mm LGIS 导弹 (布雷)</Projectile_70mmLGIS_MineLayer.label>
+  
+  <!-- EN: LGIS missile (Mine layer) -->
+  <Projectile_70mmLGIS_MineLayer_Indirect.label>3HST制 70mm LGIS 导弹 (布雷)</Projectile_70mmLGIS_MineLayer_Indirect.label>
+  
   <!-- EN: LGIS missile (Smoke) -->
   <Projectile_70mmLGIS_Smoke.label>3HST制 70mm LGIS 导弹 (烟雾)</Projectile_70mmLGIS_Smoke.label>
   
@@ -90,5 +145,20 @@
   
   <!-- EN: LGIS missile (Thermobaric) -->
   <Projectile_70mmLGIS_Thermobaric_Indirect.label>3HST制 70mm LGIS 导弹 (温压)</Projectile_70mmLGIS_Thermobaric_Indirect.label>
+  
+  <!-- EN: nothing -->
+  <Projectile_none.label>这里啥都没有</Projectile_none.label>
+  
+  <!-- EN: aerial deployed mine -->
+  <Trap_AerialDeployedMine.label>ADM空布雷</Trap_AerialDeployedMine.label>
+  <!-- EN: A tiny anti-personnel proximity mine deployed en masse via LGIS missiles and detonates on touch. Due to the ADM's nature of missile deployment, your colonists don't know their exact location thus won't automatically avoid them! Its small size prohibits complicated IFF system to be installed, rendering it impossible to deconstruct it safely, requiring manual detonation via gunfire or EMP blast to defuse. Its proximity sensor may be accidently triggered by colonists. -->
+  <Trap_AerialDeployedMine.description>设计用于远程大规模布雷的微型反人员感应地雷，当爆炸范围内检测到敌人时就会起爆。因为ADM空布雷由导弹播撒而非殖民者人工安装，再加上其极小的尺寸能很好的使其隐藏在环境中或者半埋在土里，所以殖民者并不知道其具体位置，无法选中，也不会在寻路的时候自动避开地上的ADM。由于尺寸限制，其搭载的敌我识别系统并不十分可靠，在殖民者或者野生动物进入感应范围时有极小概率会误触发，也因此无法被安全拆除，必须通过其他手段引爆。 虽然子弹无法击中ADM，但是爆炸能直接摧毁它，EMP冲击或者燃烧弹的火焰也能引爆它。</Trap_AerialDeployedMine.description>
+  
+  <!-- EN: holographic decoy -->
+  <Turret_Holodecoy.label>全息诱饵</Turret_Holodecoy.label>
+  <!-- EN: A holographic decoy that attracts enemy aggression. It's internal battery lasts for 6 hours. -->
+  <Turret_Holodecoy.description>一个能吸引敌人注意的全息诱饵。内置电池能维持其运转六个小时。</Turret_Holodecoy.description>
+  <!-- EN: Power off in -->
+  <Turret_Holodecoy.comps.CompDestroyAfterDelay.countdownLabel>断电于</Turret_Holodecoy.comps.CompDestroyAfterDelay.countdownLabel>
   
 </LanguageData>

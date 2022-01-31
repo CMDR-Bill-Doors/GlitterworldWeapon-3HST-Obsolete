@@ -1,6 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
+  <!-- EN: Advanced LGIS missile -->
+  <Research_3HST_ADV_LGIS.label>先进LGIS导弹</Research_3HST_ADV_LGIS.label>
+  <!-- EN: Craft experimental, advanced yet more costy LGIS missiles. -->
+  <Research_3HST_ADV_LGIS.description>解锁更为昂贵，更为先进，或许还有附带伤害的实验性LGIS导弹。</Research_3HST_ADV_LGIS.description>
+  
   <!-- EN: 3HST railguns -->
   <Research_3HST_Railgun.label>3HST制磁轨炮</Research_3HST_Railgun.label>
   <!-- EN: Allows production of 3HST-designed railguns, weapons that trade barrel life and damage for penetration. -->

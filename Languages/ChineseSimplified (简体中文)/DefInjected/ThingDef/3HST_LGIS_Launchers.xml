@@ -53,7 +53,7 @@
   
   <!-- EN: dual LGIS missile launcher -->
   <Gun_DualLGIS_ID.label>双联LGIS发射器（曲射炮塔用）</Gun_DualLGIS_ID.label>
-  <!-- EN: A multiple rocket launcher capable of holding and firing 2 LGIS missiles.\n\nThis simple launcher does not come with rail accelerators and solely depends on the propellant charge in the casing to fire. -->
+  <!-- EN: A multiple rocket launcher capable of holding and firing 2 LGIS missiles.\n\nThis simple launcher does not come with rail accelerators and solely depends on the propellant charge in the casing to fire. While range remain unchanged, this launcher benefits from better fire rate and accuracy. -->
   <Gun_DualLGIS_ID.description>安装在三脚架上面的两个LGIS发射筒。</Gun_DualLGIS_ID.description>
   <!-- EN: switch firing mode -->
   <Gun_DualLGIS_ID.comps.CompSecondaryAmmo.description>切换射击模式</Gun_DualLGIS_ID.comps.CompSecondaryAmmo.description>

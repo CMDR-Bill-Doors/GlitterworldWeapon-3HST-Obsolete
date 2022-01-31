@@ -373,7 +373,7 @@
 	
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3HSTcosmeticFragmentAirBurst">
 		<defName>Fragment_ClusterMissile_casingA</defName>
-		<label>ADM carrier casing</label>
+		<label>cluster missile casing</label>
 		<graphicData>
 			<texPath>Things/Projectile/ClusterMissile_casingA</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -386,7 +386,7 @@
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3HSTcosmeticFragmentAirBurst">
 		<defName>Fragment_ClusterMissile_casingB</defName>
-		<label>ADM carrier casing</label>
+		<label>cluster missile casing</label>
 		<graphicData>
 			<texPath>Things/Projectile/ClusterMissile_casingB</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -491,7 +491,7 @@
 	<ThingDef>
 		<defName>Trap_AerialDeployedMine</defName>
 		<label>aerial deployed mine</label>
-		<description>A tiny anti-personnel proximity mine deployed en masse via LGIS missiles and detonates on touch. Due to the ADM's nature of missile deployment, your colonists don't know their exact location thus won't automatically avoid them! Its small size prohibits complicated IFF system to be installed, rendering it impossible to deconstruct it safely, requiring manual detonation via gunfire or EMP blast to defuse. Its proximity sensor may be accidently triggered by colonists.</description>
+		<description>A tiny anti-personnel proximity mine deployed en masse via LGIS missiles and detonates once hostile personnel is detected within blast radius. Due to the ADM's nature of missile deployment, your colonists don't know their exact location thus won't automatically avoid them! Its small size prohibits complicated IFF system to be installed, rendering it impossible to deconstruct it safely, requiring manual detonation via gunfire or EMP blast to defuse. Its proximity sensor may be accidently triggered by colonists.</description>
 		<thingClass>ThreeHST.Mine</thingClass>
 		<category>Item</category>
 		<graphicData>

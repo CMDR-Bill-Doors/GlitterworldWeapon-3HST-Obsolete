@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: dismaltle minelayer LGIS for ADM -->
+  <DismantleLGISminelayer.label>从LGIS布雷弹拆取ADM空布雷</DismantleLGISminelayer.label>
+  <!-- EN: Open up a minelayer LGIS to retrive the ADM mines inside, but.....why? -->
+  <DismantleLGISminelayer.description>拆开一发LGIS布雷弹以获取其中的ADM空布雷......但是这不是脱裤子放屁吗？</DismantleLGISminelayer.description>
+  <!-- EN: Opening minelayer LGIS tubes. -->
+  <DismantleLGISminelayer.jobString>正在拆解LGIS布雷弹。</DismantleLGISminelayer.jobString>
+  
+  <!-- EN: make aerial deployed mine x10 -->
+  <MakeDetachedADM.label>制作 ADM空布雷 x10</MakeDetachedADM.label>
+  <!-- EN: Craft 10 aerial deployed mines without its LGIS missile carrier. -->
+  <MakeDetachedADM.description>跳过LGIS载体，直接制作 ADM空布雷 x10。</MakeDetachedADM.description>
+  <!-- EN: Making aerial deployed mines. -->
+  <MakeDetachedADM.jobString>正在制作 ADM空布雷 x10。</MakeDetachedADM.jobString>
+  
+  <!-- EN: make minelayer LGIS tube with ADM -->
+  <MakeDLGISMineLayerfromADM.label>用现有ADM制作LGIS布雷弹</MakeDLGISMineLayerfromADM.label>
+  <!-- EN: Craft a minelayer LGIS tube with existing ADM mines. -->
+  <MakeDLGISMineLayerfromADM.description>用现有ADM制作LGIS布雷弹.</MakeDLGISMineLayerfromADM.description>
+  <!-- EN: Making minelayer LGIS tubes. -->
+  <MakeDLGISMineLayerfromADM.jobString>正在制作 LGIS 布雷弹发射筒 x1。</MakeDLGISMineLayerfromADM.jobString>
+  
+</LanguageData>

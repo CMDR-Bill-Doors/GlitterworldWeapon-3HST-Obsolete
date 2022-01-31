@@ -8,6 +8,9 @@
   <!-- EN: Mounted 3HST 20mm rail autocannon -->
   <Gun_20mmAC_Turret.verbs.Verb_ShootWithPower.label>3HST制20mm磁轨自动炮</Gun_20mmAC_Turret.verbs.Verb_ShootWithPower.label>
   
+  <!-- UNUSED -->
+  <Gun_20mmAC_Turret.verbs.Verb_ShootWithPower.label>3HST制20mm磁轨自动炮</Gun_20mmAC_Turret.verbs.Verb_ShootWithPower.label>
+  
   <!-- EN: 3HST 20mm vehicle rail autocannon -->
   <Gun_3HST_20mmAutocannon.label>3HST制20mm载具用磁轨自动炮</Gun_3HST_20mmAutocannon.label>
   <!-- EN: High caliber, fast firing railgun commonly found on a wide variety of 3HST vehicles, from IFV to space warship AA guns, and probably super strength ancient soldiers with archotech implants. -->
@@ -21,6 +24,9 @@
   <!-- EN: muzzle -->
   <Gun_3HST_20mmAutocannon.tools.muzzle.label>枪口</Gun_3HST_20mmAutocannon.tools.muzzle.label>
   <!-- EN: 3HST 20mm vehicle rail autocannon -->
+  <Gun_3HST_20mmAutocannon.verbs.Verb_ShootByBarrel.label>3HST制20mm载具用磁轨自动炮</Gun_3HST_20mmAutocannon.verbs.Verb_ShootByBarrel.label>
+  
+  <!-- UNUSED -->
   <Gun_3HST_20mmAutocannon.verbs.Verb_ShootByBarrel.label>3HST制20mm载具用磁轨自动炮</Gun_3HST_20mmAutocannon.verbs.Verb_ShootByBarrel.label>
   
   <!-- EN: Manned 20mm rail autocannon -->

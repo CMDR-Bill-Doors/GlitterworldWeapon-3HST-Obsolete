@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN: 3HST designated marksman rifle -->
+  <!-- EN: 3HST rail DMR -->
   <Gun_3HST_5mmDMR.label>3HST制5mm磁轨精确射手步枪</Gun_3HST_5mmDMR.label>
-  <!-- EN: Small caliber sniper rifle developed by 3HST limited weaponry department. -->
+  <!-- EN: Small caliber sniper rifle developed by 3HST limited weaponry department. While capable of three-round burst, the recoil causes successive shots not likely to hit. -->
   <Gun_3HST_5mmDMR.description>使用3HST制5mm标准弹的狙击步枪，可以短点射，虽然后续的子弹因为后坐力所以基本上打不中。</Gun_3HST_5mmDMR.description>
   <!-- EN: Rail durability -->
   <Gun_3HST_5mmDMR.comps.CompChangeBarrel.label>磁轨寿命</Gun_3HST_5mmDMR.comps.CompChangeBarrel.label>
@@ -17,12 +17,12 @@
   <Gun_3HST_5mmDMR.tools.energy_bayonet_blade.label>能量刺刀刀刃</Gun_3HST_5mmDMR.tools.energy_bayonet_blade.label>
   <!-- EN: energy bayonet point -->
   <Gun_3HST_5mmDMR.tools.energy_bayonet_point.label>能量刺刀刀尖</Gun_3HST_5mmDMR.tools.energy_bayonet_point.label>
-  <!-- EN: 3HST designated marksman rifle -->
+  <!-- EN: 3HST rail DMR -->
   <Gun_3HST_5mmDMR.verbs.Verb_ShootByBarrel.label>3HST制5mm磁轨精确射手步枪</Gun_3HST_5mmDMR.verbs.Verb_ShootByBarrel.label>
   
   <!-- EN: 3HST assault railgun -->
   <Gun_3HST_Assault_Railgun.label>3HST制5mm突击磁轨步枪</Gun_3HST_Assault_Railgun.label>
-  <!-- EN: Standard issue assault rifle of 3HST elven forces. -->
+  <!-- EN: Standard issue assault rifle of 3HST forces. While recoil and barrel life remain to be desired, this rifle allows light infantry to defeat power armors, hit enemies behind light cover, and even damage some light armored vehicles without relying on explosives. -->
   <Gun_3HST_Assault_Railgun.description>3HST陆军正规军的标配武器。虽然后坐力和枪管耐久是个问题，但是为了能打穿动力甲，这一切都是值得的......吧？</Gun_3HST_Assault_Railgun.description>
   <!-- EN: Rail durability -->
   <Gun_3HST_Assault_Railgun.comps.CompChangeBarrel.label>磁轨寿命</Gun_3HST_Assault_Railgun.comps.CompChangeBarrel.label>
@@ -41,7 +41,7 @@
   
   <!-- EN: 3HST light machine railgun -->
   <Gun_3HST_Light_Machine_Railgun.label>3HST制5mm磁轨轻机枪</Gun_3HST_Light_Machine_Railgun.label>
-  <!-- EN: Standard issue light machinegun of 3HST planetary forces. -->
+  <!-- EN: Standard issue light machinegun of 3HST planetary forces. Thanks to its twin barrel design, this machinegun is capable of extreme fire rate and high burst count before needing to cool down, but at the cost of bulky size and noxious accurancy. -->
   <Gun_3HST_Light_Machine_Railgun.description>3HST陆军机枪手和部分载具所使用的机枪。双管结构带来了极其凶猛，堪比某些转管机枪的火力，但是代价是让这把机枪极其笨重，且精度没法看。</Gun_3HST_Light_Machine_Railgun.description>
   <!-- EN: Rail durability -->
   <Gun_3HST_Light_Machine_Railgun.comps.CompChangeBarrel.label>磁轨寿命</Gun_3HST_Light_Machine_Railgun.comps.CompChangeBarrel.label>

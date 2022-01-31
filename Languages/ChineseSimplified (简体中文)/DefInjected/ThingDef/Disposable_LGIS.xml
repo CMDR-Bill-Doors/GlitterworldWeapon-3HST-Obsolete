@@ -103,6 +103,28 @@
   <!-- EN: muzzle -->
   <Gun_3HST_LGIS_heat.tools.muzzle.label>枪口</Gun_3HST_LGIS_heat.tools.muzzle.label>
   
+  <!-- EN: holodecoy LGIS tube -->
+  <Gun_3HST_LGIS_Holodecoy.label>诱饵 LGIS发射筒</Gun_3HST_LGIS_Holodecoy.label>
+  <!-- EN: Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but it is also used to feed various LGIS launchers.
+\n\nDecoy:
+\nDeploys a decoy projector on impact, distracts enemy attention.
+\n\n使用者: -->
+  <Gun_3HST_LGIS_Holodecoy.description>搭载激光制导和惯性制导的小口径导弹，装备于步兵或者轻型战斗载具上。\n该导弹是帝国陆军在第三次内战前数十年委托3HST有限公司设计和生产，用于替代榴弹发射器，单兵火箭筒，迫击炮，车载导弹发射器等一系列武器的“终极解决方案”。但是事实上这个决定是否正确还有待历史证明。\nLGIS导弹出厂时便被装在装备有可折叠简易握把和瞄准装置的，可以作为一次性发射筒发射的保护筒包装内。在用做弹药时，将握把和瞄具折叠便可装入发射器。\n这个发射筒目前处在直射模式，利用一系列陀螺仪，测距仪射击诸元输入，发射器上的简易火控会将数据输入进LGIS导弹的惯性导引头，对目标发起快速，突然，精确的直接打击。但是由于尺寸缘故，LGIS导弹的杀伤力有点差强人意，以至于被戏称为“窜天猴”或者“摔炮”。在战后，一款新的导弹研发出来代替它的位置，而战争期间产能过剩的LGIS弹便被大量下发至担任反恐反海盗清剿叛军任务的二线部队。</Gun_3HST_LGIS_Holodecoy.description>
+  <!-- EN: Extend the sights and switch the launcher to indirect fire mode, or fold it back to direct fire mode. -->
+  <Gun_3HST_LGIS_Holodecoy.comps.CompSecondaryVerb.description>展开瞄具切换成曲射模式，或是收起瞄具切换成直射模式</Gun_3HST_LGIS_Holodecoy.comps.CompSecondaryVerb.description>
+  <!-- EN: direct fire -->
+  <Gun_3HST_LGIS_Holodecoy.comps.CompSecondaryVerb.mainWeaponLabel>直射模式</Gun_3HST_LGIS_Holodecoy.comps.CompSecondaryVerb.mainWeaponLabel>
+  <!-- EN: indirect fire -->
+  <Gun_3HST_LGIS_Holodecoy.comps.CompSecondaryVerb.secondaryWeaponLabel>曲射模式</Gun_3HST_LGIS_Holodecoy.comps.CompSecondaryVerb.secondaryWeaponLabel>
+  <!-- EN: Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but it is also used to feed various LGIS launchers. -->
+  <Gun_3HST_LGIS_Holodecoy.oldDescription>搭载激光制导和惯性制导的小口径导弹，装备于步兵或者轻型战斗载具上。\n该导弹是帝国陆军在第三次内战前数十年委托3HST有限公司设计和生产，用于替代榴弹发射器，单兵火箭筒，迫击炮，车载导弹发射器等一系列武器的“终极解决方案”。但是事实上这个决定是否正确还有待历史证明。\nLGIS导弹出厂时便被装在装备有可折叠简易握把和瞄准装置的，可以作为一次性发射筒发射的保护筒包装内。在用做弹药时，将握把和瞄具折叠便可装入发射器。\n这个发射筒目前处在直射模式，利用一系列陀螺仪，测距仪射击诸元输入，发射器上的简易火控会将数据输入进LGIS导弹的惯性导引头，对目标发起快速，突然，精确的直接打击。但是由于尺寸缘故，LGIS导弹的杀伤力有点差强人意，以至于被戏称为“窜天猴”或者“摔炮”。在战后，一款新的导弹研发出来代替它的位置，而战争期间产能过剩的LGIS弹便被大量下发至担任反恐反海盗清剿叛军任务的二线部队。</Gun_3HST_LGIS_Holodecoy.oldDescription>
+  <!-- EN: stock -->
+  <Gun_3HST_LGIS_Holodecoy.tools.stock.label>枪托</Gun_3HST_LGIS_Holodecoy.tools.stock.label>
+  <!-- EN: barrel -->
+  <Gun_3HST_LGIS_Holodecoy.tools.barrel.label>枪管</Gun_3HST_LGIS_Holodecoy.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <Gun_3HST_LGIS_Holodecoy.tools.muzzle.label>枪口</Gun_3HST_LGIS_Holodecoy.tools.muzzle.label>
+  
   <!-- EN: illumination LGIS tube -->
   <Gun_3HST_LGIS_Illumination.label>照明 LGIS发射筒</Gun_3HST_LGIS_Illumination.label>
   <!-- EN: Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but it is also used to feed various LGIS launchers. -->
@@ -136,6 +158,28 @@
   <Gun_3HST_LGIS_incendiary.tools.barrel.label>枪管</Gun_3HST_LGIS_incendiary.tools.barrel.label>
   <!-- EN: muzzle -->
   <Gun_3HST_LGIS_incendiary.tools.muzzle.label>枪口</Gun_3HST_LGIS_incendiary.tools.muzzle.label>
+  
+  <!-- EN: minelayer LGIS tube -->
+  <Gun_3HST_LGIS_Minelayer.label>布雷 LGIS发射筒</Gun_3HST_LGIS_Minelayer.label>
+  <!-- EN: Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but it is also used to feed various LGIS launchers.
+\n\nMine layer:
+\nAdvanced missile designed for remote destribution of land mines.
+\n\n使用者: -->
+  <Gun_3HST_LGIS_Minelayer.description>搭载激光制导和惯性制导的小口径导弹，装备于步兵或者轻型战斗载具上。\n该导弹是帝国陆军在第三次内战前数十年委托3HST有限公司设计和生产，用于替代榴弹发射器，单兵火箭筒，迫击炮，车载导弹发射器等一系列武器的“终极解决方案”。但是事实上这个决定是否正确还有待历史证明。\nLGIS导弹出厂时便被装在装备有可折叠简易握把和瞄准装置的，可以作为一次性发射筒发射的保护筒包装内。在用做弹药时，将握把和瞄具折叠便可装入发射器。\n这个发射筒目前处在直射模式，利用一系列陀螺仪，测距仪射击诸元输入，发射器上的简易火控会将数据输入进LGIS导弹的惯性导引头，对目标发起快速，突然，精确的直接打击。但是由于尺寸缘故，LGIS导弹的杀伤力有点差强人意，以至于被戏称为“窜天猴”或者“摔炮”。在战后，一款新的导弹研发出来代替它的位置，而战争期间产能过剩的LGIS弹便被大量下发至担任反恐反海盗清剿叛军任务的二线部队。</Gun_3HST_LGIS_Minelayer.description>
+  <!-- EN: Extend the sights and switch the launcher to indirect fire mode, or fold it back to direct fire mode. -->
+  <Gun_3HST_LGIS_Minelayer.comps.CompSecondaryVerb.description>展开瞄具切换成曲射模式，或是收起瞄具切换成直射模式</Gun_3HST_LGIS_Minelayer.comps.CompSecondaryVerb.description>
+  <!-- EN: direct fire -->
+  <Gun_3HST_LGIS_Minelayer.comps.CompSecondaryVerb.mainWeaponLabel>直射模式</Gun_3HST_LGIS_Minelayer.comps.CompSecondaryVerb.mainWeaponLabel>
+  <!-- EN: indirect fire -->
+  <Gun_3HST_LGIS_Minelayer.comps.CompSecondaryVerb.secondaryWeaponLabel>曲射模式</Gun_3HST_LGIS_Minelayer.comps.CompSecondaryVerb.secondaryWeaponLabel>
+  <!-- EN: Minature missile with low-end laser guidance, designed to be carried by infantry or light armored vehicles, capable of beam-riding guidance, inertia guidance or unguided dumb fire. The missile comes in protective packaging that can also be used as a disposable launcher, but it is also used to feed various LGIS launchers. -->
+  <Gun_3HST_LGIS_Minelayer.oldDescription>搭载激光制导和惯性制导的小口径导弹，装备于步兵或者轻型战斗载具上。\n该导弹是帝国陆军在第三次内战前数十年委托3HST有限公司设计和生产，用于替代榴弹发射器，单兵火箭筒，迫击炮，车载导弹发射器等一系列武器的“终极解决方案”。但是事实上这个决定是否正确还有待历史证明。\nLGIS导弹出厂时便被装在装备有可折叠简易握把和瞄准装置的，可以作为一次性发射筒发射的保护筒包装内。在用做弹药时，将握把和瞄具折叠便可装入发射器。\n这个发射筒目前处在直射模式，利用一系列陀螺仪，测距仪射击诸元输入，发射器上的简易火控会将数据输入进LGIS导弹的惯性导引头，对目标发起快速，突然，精确的直接打击。但是由于尺寸缘故，LGIS导弹的杀伤力有点差强人意，以至于被戏称为“窜天猴”或者“摔炮”。在战后，一款新的导弹研发出来代替它的位置，而战争期间产能过剩的LGIS弹便被大量下发至担任反恐反海盗清剿叛军任务的二线部队。</Gun_3HST_LGIS_Minelayer.oldDescription>
+  <!-- EN: stock -->
+  <Gun_3HST_LGIS_Minelayer.tools.stock.label>枪托</Gun_3HST_LGIS_Minelayer.tools.stock.label>
+  <!-- EN: barrel -->
+  <Gun_3HST_LGIS_Minelayer.tools.barrel.label>枪管</Gun_3HST_LGIS_Minelayer.tools.barrel.label>
+  <!-- EN: muzzle -->
+  <Gun_3HST_LGIS_Minelayer.tools.muzzle.label>枪口</Gun_3HST_LGIS_Minelayer.tools.muzzle.label>
   
   <!-- EN: smoke LGIS tube -->
   <Gun_3HST_LGIS_smoke.label>烟雾 LGIS发射筒</Gun_3HST_LGIS_smoke.label>

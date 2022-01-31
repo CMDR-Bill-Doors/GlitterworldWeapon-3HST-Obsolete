@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: aerial deployed mine -->
+  <Projectile_AerialDeployedMine.label>ADM空布雷</Projectile_AerialDeployedMine.label>
+  
+  <!-- EN: detached ADM -->
+  <Weapon_ThrownADM.label>ADM空布雷</Weapon_ThrownADM.label>
+  <!-- EN: An aerial deployed mine independent from its LGIS carrier, either removed from one or crafted independently. Can be thrown like a grenade and leaves a land mine on spot. -->
+  <Weapon_ThrownADM.description>独立于其通常的LGIS导弹载体的ADM空布雷，可以像手雷一样投掷出去，在落点留下一颗激活的ADM。</Weapon_ThrownADM.description>
+  
+</LanguageData>
