@@ -51,6 +51,13 @@
 				<DrawOffset>0.0,0.0</DrawOffset>
 			</li>
 		</modExtensions>
+		<comps>
+			<li Class="ThreeHST.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_Mines</li>
+				</concepts>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeProjectile">
