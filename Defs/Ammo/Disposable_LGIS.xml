@@ -1123,8 +1123,8 @@
 
 	<RecipeDef ParentName="GrenadeRecipeBase">
 		<defName>MakeDLGISCluster</defName>
-		<label>make cluster LGIS tube x2</label>
-		<description>Craft 2 cluster LGIS tubes.</description>
+		<label>make cluster LGIS tube x5</label>
+		<description>Craft 5 cluster LGIS tubes.</description>
 		<jobString>Making cluster LGIS tubes.</jobString>
 		<workAmount>26000</workAmount>
 		<ingredients>
@@ -1179,7 +1179,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Gun_3HST_LGIS_cluster>2</Gun_3HST_LGIS_cluster>
+			<Gun_3HST_LGIS_cluster>5</Gun_3HST_LGIS_cluster>
 		</products>
 		<researchPrerequisite>Research_3HST_ADV_LGIS</researchPrerequisite>
 	</RecipeDef>

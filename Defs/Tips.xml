@@ -62,7 +62,7 @@
 		<label>Aerial deployed mines</label>
 		<priority>50</priority>
 		<needsOpportunity>True</needsOpportunity>
-		<helpText>Aerial deployed mines are made extremely simple to fit in a LGIS missile, thus they lack any proper friend and foe identification system. Your colonist and animals are more likely to accidemtly trigger them, and it's never safe to deconstruct one, leaving alone the fact They blend in the terrain so well that you can't select them, and they're buried in the ground so bullets can't harm them.\n\nTo safely disarm an ADM, you'll need to use am EMP blast to trigger its fuse, use incendiary weapons to ignite the mine, or simply blow'em up with explosives like HE or thermobaric shells.</helpText>
+		<helpText>Aerial deployed mines are proximity mines made extremely simple to fit in a LGIS missile, thus they lack any proper friend and foe identification system and have a risk of self-detonation after half a year. Your colonist and animals are more likely to accidently trigger them, and it's never safe to deconstruct one, leaving alone the fact They blend in the terrain so well that you can't select them, and they're buried in the ground so bullets can't harm them.\n\nTo safely disarm an ADM, you'll need to use am EMP blast to trigger its fuse, use incendiary weapons to ignite the mine, or simply blow'em up with explosives like HE or thermobaric shells.</helpText>
 		<highlightTags>
 			<li>BDGW_Mines</li>
 		</highlightTags>

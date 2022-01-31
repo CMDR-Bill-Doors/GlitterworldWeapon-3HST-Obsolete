@@ -255,7 +255,7 @@
     <comps>
       <li Class="CombatExtended.CompProperties_Fragments">
         <fragments>
-          <Fragment_Small>5</Fragment_Small>
+          <Fragment_Small>15</Fragment_Small>
         </fragments>
       </li>
     </comps>
@@ -491,7 +491,7 @@
 	<ThingDef>
 		<defName>Trap_AerialDeployedMine</defName>
 		<label>aerial deployed mine</label>
-		<description>A tiny anti-personnel mine deployed en masse via LGIS missiles and detonates on touch. Its small size prohibits complicated IFF system to be installed, rendering it impossible to deconstruct it safely, requiring manual detonation via gunfire or EMP blast to defuse. Animals can sense these when calm.</description>
+		<description>A tiny anti-personnel proximity mine deployed en masse via LGIS missiles and detonates on touch. Due to the ADM's nature of missile deployment, your colonists don't know their exact location thus won't automatically avoid them! Its small size prohibits complicated IFF system to be installed, rendering it impossible to deconstruct it safely, requiring manual detonation via gunfire or EMP blast to defuse. Its proximity sensor may be accidently triggered by colonists.</description>
 		<thingClass>ThreeHST.Mine</thingClass>
 		<category>Item</category>
 		<graphicData>
@@ -512,32 +512,32 @@
 		<comps>
 			<li Class="ThreeHST.CompProperties_ProximityExplosive">
 				<explosiveDamageType>Bomb</explosiveDamageType>
-				<explosiveRadius>1.5</explosiveRadius>
-				<damageAmountBase>25</damageAmountBase>
-				<wildAnimalSpringChance>0.05</wildAnimalSpringChance>
-				<colonistSpringChance>0.05</colonistSpringChance>
-				<selfExplodeChance>0.2</selfExplodeChance>
+				<explosiveRadius>2</explosiveRadius>
+				<damageAmountBase>35</damageAmountBase>
+				<wildAnimalSpringChance>0.005</wildAnimalSpringChance>
+				<colonistSpringChance>0.015</colonistSpringChance>
+				<selfExplodeChance>0.8</selfExplodeChance>
 				<minSelfExplodeTick>2592000</minSelfExplodeTick>
-				<maxSelfExplodeTick>51840000</maxSelfExplodeTick>
+				<maxSelfExplodeTick>10368000</maxSelfExplodeTick>
 				<startWickOnDamageTaken>
 					<li>EMP</li>
 					<li>PrometheumFlame</li>
 					<li>Flame</li>
 				</startWickOnDamageTaken>
 				<wickTicks>
-					<min>10</min>
-					<max>30</max>
+					<min>20</min>
+					<max>60</max>
 				</wickTicks>
 				<detectionRadius>1.7</detectionRadius>
 			</li>
 			<li Class="CombatExtended.CompProperties_ExplosiveCE">
-				<damageAmountBase>25</damageAmountBase>
+				<damageAmountBase>35</damageAmountBase>
 				<explosiveDamageType>Bomb</explosiveDamageType>
-				<explosiveRadius>1.5</explosiveRadius>
+				<explosiveRadius>2</explosiveRadius>
 			</li>
 			<li Class="CombatExtended.CompProperties_Fragments">
 				<fragments>
-					<Fragment_Small>14</Fragment_Small>
+					<Fragment_Small>25</Fragment_Small>
 				</fragments>
 			</li>
 			<li Class="ThreeHST.CompProperties_ShowConcept">
@@ -636,7 +636,7 @@
 
 	<ThingDef ParentName="BaseAutoTurretGun">
 		<defName>Gun_Holodecoy</defName>
-		<label>Taunter</label>
+		<label>Taunt</label>
 		<graphicData>
 			<texPath>Things/none</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
