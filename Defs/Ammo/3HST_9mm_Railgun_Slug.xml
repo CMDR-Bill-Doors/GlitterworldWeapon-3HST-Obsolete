@@ -46,7 +46,7 @@
 
   <!-- ================== Projectiles ================== -->
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
+  <ThingDef ParentName="BaseBullet">
     <defName>Projectile_3HST9mmRG_Steel</defName>
     <label>9x103mm Railgun bullet (Sabot)</label>
     <thingClass>BDsGlitterworldFaction3HST.PenetratingBullet</thingClass>

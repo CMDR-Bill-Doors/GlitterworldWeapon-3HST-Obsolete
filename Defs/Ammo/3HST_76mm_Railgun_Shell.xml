@@ -80,7 +80,7 @@
 
   <!-- ================== Projectiles ================== -->
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
+  <ThingDef ParentName="BaseBullet">
     <defName>Projectile_3HST76mmRG_Steel</defName>
     <label>76mm Railgun shell (Sabot)</label>
     <thingClass>BDsGlitterworldFaction3HST.PenetratingBullet</thingClass>
@@ -113,7 +113,7 @@
     </comps>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
+  <ThingDef ParentName="BaseBullet">
     <defName>Projectile_3HST76mmRG_HE</defName>
     <label>76mm Railgun shell (AP-HE)</label>
     <graphicData>
@@ -150,7 +150,7 @@
     </comps>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
+  <ThingDef ParentName="BaseBullet">
     <defName>Projectile_3HST76mmRG_Steel_ID</defName>
     <label>76mm Railgun shell (Sabot)</label>
     <graphicData>
@@ -186,7 +186,7 @@
     </comps>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
+  <ThingDef ParentName="BaseBullet">
     <defName>Projectile_3HST76mmRG_HE_ID</defName>
     <label>76mm Railgun shell (AP-HE)</label>
     <graphicData>

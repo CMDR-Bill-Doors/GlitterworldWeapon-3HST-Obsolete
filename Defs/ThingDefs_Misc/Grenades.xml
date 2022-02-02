@@ -60,7 +60,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeProjectile">
+	<ThingDef ParentName="BaseGrenadeProjectile">
 		<defName>Projectile_AerialDeployedMine</defName>
 		<label>aerial deployed mine</label>
 		<graphicData>

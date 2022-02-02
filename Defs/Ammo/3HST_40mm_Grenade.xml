@@ -48,7 +48,7 @@
     <detonateProjectile>Bullet_3HST40mmGrenade_HE</detonateProjectile>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseFragment">
+  <ThingDef ParentName="BaseFragment">
     <defName>Fragment_Prefab_Flechette</defName>
     <label>prefabricated flechette</label>
     <graphicData>

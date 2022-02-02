@@ -114,7 +114,7 @@
 
   <!--======================= Confetti frags ==============-->
   
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseFragment">
+  <ThingDef ParentName="BaseFragment">
     <defName>Fragment_ConfettiLarge</defName>
     <label>Confetti</label>
     <graphicData>
@@ -132,7 +132,7 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseFragment">
+  <ThingDef ParentName="BaseFragment">
     <defName>Fragment_ConfettiMedium</defName>
     <label>Confetti</label>
     <graphicData>
@@ -150,7 +150,7 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseFragment">
+  <ThingDef ParentName="BaseFragment">
     <defName>Fragment_ConfettiSmallR</defName>
     <label>Confetti</label>
     <graphicData>
@@ -168,7 +168,7 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseFragment">
+  <ThingDef ParentName="BaseFragment">
     <defName>Fragment_ConfettiSmallY</defName>
     <label>Confetti</label>
     <graphicData>
@@ -186,7 +186,7 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseFragment">
+  <ThingDef ParentName="BaseFragment">
     <defName>Fragment_ConfettiSmallG</defName>
     <label>Confetti</label>
     <graphicData>
@@ -204,7 +204,7 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseFragment">
+  <ThingDef ParentName="BaseFragment">
     <defName>Fragment_ConfettiSmallB</defName>
     <label>Confetti</label>
     <graphicData>
@@ -224,14 +224,14 @@
 	
 	
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseSubmunition">
+  <ThingDef ParentName="BaseSubmunition">
     <defName>Fragment_ExplosiveSubmunitionFar</defName>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <gravityFactor>10</gravityFactor>
     </projectile>
   </ThingDef>
   
-  <ThingDef Class="CombatExtended.AmmoDef" Name="BaseSubmunition" ParentName="BaseFragment">
+  <ThingDef Name="BaseSubmunition" ParentName="BaseFragment">
     <defName>Fragment_ExplosiveSubmunition</defName>
     <label>Explosive submunition</label>
 	  <thingClass>ThreeHST.ProjectileCE_FromAirExplode</thingClass>
@@ -261,7 +261,7 @@
     </comps>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseSubmunition">
+  <ThingDef ParentName="BaseSubmunition">
     <defName>Fragment_ExplosiveSubmunitionNear</defName>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <gravityFactor>30</gravityFactor>
@@ -270,7 +270,7 @@
   
 	
 	
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseFragment">
+  <ThingDef ParentName="BaseFragment">
     <defName>Fragment_RecursiveSubmunition</defName>
     <label>Recursive submunition</label>
 	  <randomizeRotationOnSpawn>true</randomizeRotationOnSpawn>
@@ -302,7 +302,7 @@
 
 	
 	
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseFragment">
+	<ThingDef ParentName="BaseFragment">
 		<defName>Fragment_AerialDeployedMine</defName>
 		<label>aerial deployed mine</label>
 		<thingClass>ThreeHST.ProjectileCE_FromAirExplode</thingClass>
@@ -328,7 +328,7 @@
 
 	
 	
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3HSTcosmeticFragmentAirBurst">
+	<ThingDef ParentName="Base3HSTcosmeticFragmentAirBurst">
 		<defName>Fragment_AerialDeployedMineCasingA</defName>
 		<label>ADM carrier casing</label>
 		<graphicData>
@@ -341,7 +341,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3HSTcosmeticFragmentAirBurst">
+	<ThingDef ParentName="Base3HSTcosmeticFragmentAirBurst">
 		<defName>Fragment_AerialDeployedMineCasingB</defName>
 		<label>ADM carrier casing</label>
 		<graphicData>
@@ -354,7 +354,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3HSTcosmeticFragmentAirBurst">
+	<ThingDef ParentName="Base3HSTcosmeticFragmentAirBurst">
 		<defName>Fragment_AerialDeployedMineCasingC</defName>
 		<label>ADM carrier thruster</label>
 		<graphicData>
@@ -371,7 +371,7 @@
 
 	
 	
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3HSTcosmeticFragmentAirBurst">
+	<ThingDef ParentName="Base3HSTcosmeticFragmentAirBurst">
 		<defName>Fragment_ClusterMissile_casingA</defName>
 		<label>cluster missile casing</label>
 		<graphicData>
@@ -384,7 +384,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3HSTcosmeticFragmentAirBurst">
+	<ThingDef ParentName="Base3HSTcosmeticFragmentAirBurst">
 		<defName>Fragment_ClusterMissile_casingB</defName>
 		<label>cluster missile casing</label>
 		<graphicData>
@@ -397,7 +397,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3HSTcosmeticFragmentAirBurst">
+	<ThingDef ParentName="Base3HSTcosmeticFragmentAirBurst">
 		<defName>Fragment_ClusterMissile_casingC</defName>
 		<label>cluster missile thruster</label>
 		<graphicData>
@@ -412,7 +412,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3HSTcosmeticFragment">
+	<ThingDef ParentName="Base3HSTcosmeticFragment">
 		<defName>Fragment_Holodecoy_casingA</defName>
 		<label>holodecoy missile casing</label>
 		<graphicData>
@@ -427,7 +427,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3HSTcosmeticFragment">
+	<ThingDef ParentName="Base3HSTcosmeticFragment">
 		<defName>Fragment_Holodecoy_casingB</defName>
 		<label>holodecoy missile casing</label>
 		<graphicData>
@@ -442,7 +442,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3HSTcosmeticFragment">
+	<ThingDef ParentName="Base3HSTcosmeticFragment">
 		<defName>Fragment_Holodecoy_casingC</defName>
 		<label>holodecoy missile thruster</label>
 		<graphicData>
@@ -457,7 +457,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3HSTcosmeticFragmentAirBurst">
+	<ThingDef ParentName="Base3HSTcosmeticFragmentAirBurst">
 		<defName>Fragment_LGISthrusterAB</defName>
 		<label>LGIS missile thruster</label>
 		<graphicData>
@@ -472,7 +472,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base3HSTcosmeticFragment">
+	<ThingDef ParentName="Base3HSTcosmeticFragment">
 		<defName>Fragment_LGISthruster</defName>
 		<label>LGIS missile thruster</label>
 		<graphicData>
@@ -684,7 +684,7 @@
 
   <!-- ================== Projectiles ================== -->
 
-  <ThingDef Class="CombatExtended.AmmoDef" Name="Base70mmLGIS" ParentName="BaseBullet" Abstract="true">
+  <ThingDef Name="Base70mmLGIS" ParentName="BaseBullet" Abstract="true">
     <graphicData>
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
@@ -694,7 +694,7 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGIS">
+  <ThingDef ParentName="Base70mmLGIS">
     <defName>Projectile_70mmLGIS_HEAT</defName>
     <label>LGIS missile (HEAT)</label>
     <graphicData>
@@ -726,7 +726,7 @@
     </comps>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGIS">
+  <ThingDef ParentName="Base70mmLGIS">
     <defName>Projectile_70mmLGIS_Thermobaric</defName>
     <label>LGIS missile (Thermobaric)</label>
     <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
@@ -750,7 +750,7 @@
 	  </comps>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGIS">
+  <ThingDef ParentName="Base70mmLGIS">
     <defName>Projectile_70mmLGIS_Frag</defName>
     <label>LGIS missile (Frag)</label>
     <graphicData>
@@ -776,7 +776,7 @@
     </comps>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGIS">
+  <ThingDef ParentName="Base70mmLGIS">
     <defName>Projectile_70mmLGIS_Cluster</defName>
     <label>LGIS missile (Cluster)</label>
 	  <thingClass>ThreeHST.ProjectileCE_AirExplode</thingClass>
@@ -804,7 +804,7 @@
     </comps>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGIS">
+  <ThingDef ParentName="Base70mmLGIS">
     <defName>Projectile_70mmLGIS_Confetti</defName>
     <label>LGIS missile (Confetti)</label>
     <graphicData>
@@ -835,7 +835,7 @@
     </comps>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGIS">
+  <ThingDef ParentName="Base70mmLGIS">
     <defName>Projectile_70mmLGIS_Incendiary</defName>
     <label>LGIS missile (Incendiary)</label>
     <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
@@ -862,7 +862,7 @@
 	  </comps>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGIS">
+  <ThingDef ParentName="Base70mmLGIS">
     <defName>Projectile_70mmLGIS_Firefoam</defName>
     <label>LGIS missile (Foam)</label>
     <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
@@ -891,7 +891,7 @@
 	  </comps>
   </ThingDef>
  
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGIS">
+  <ThingDef ParentName="Base70mmLGIS">
     <defName>Projectile_70mmLGIS_Smoke</defName>
     <label>LGIS missile (Smoke)</label>
     <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
@@ -919,7 +919,7 @@
 	  </comps>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGIS">
+  <ThingDef ParentName="Base70mmLGIS">
     <defName>Projectile_70mmLGIS_EMP</defName>
     <label>LGIS missile (EMP)</label>
     <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
@@ -943,7 +943,7 @@
 	  </comps>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGIS">
+  <ThingDef ParentName="Base70mmLGIS">
     <defName>Projectile_70mmLGIS_Illumination</defName>
     <label>LGIS missile (Illumination)</label>
 	  <thingClass>ThreeHST.ProjectileCE_AirExplode</thingClass>
@@ -969,7 +969,7 @@
 	  </comps>
   </ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGIS">
+	<ThingDef ParentName="Base70mmLGIS">
 		<defName>Projectile_70mmLGIS_MineLayer</defName>
 		<label>LGIS missile (Mine layer)</label>
 		<thingClass>ThreeHST.ProjectileCE_AirExplode</thingClass>
@@ -995,7 +995,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGIS">
+	<ThingDef ParentName="Base70mmLGIS">
 		<defName>Projectile_70mmLGIS_Holodecoy</defName>
 		<label>LGIS missile (Holodecoy)</label>
 		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
@@ -1025,7 +1025,7 @@
 
 
 
-  <ThingDef Class="CombatExtended.AmmoDef" Name="Base70mmLGISIDR" ParentName="BaseBullet" Abstract="true">
+  <ThingDef Name="Base70mmLGISIDR" ParentName="BaseBullet" Abstract="true">
     <graphicData>
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
@@ -1039,7 +1039,7 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGISIDR">
+  <ThingDef ParentName="Base70mmLGISIDR">
     <defName>Projectile_70mmLGIS_HEAT_Indirect</defName>
     <label>LGIS missile (HEAT)</label>
     <graphicData>
@@ -1070,7 +1070,7 @@
     </comps>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGISIDR">
+  <ThingDef ParentName="Base70mmLGISIDR">
     <defName>Projectile_70mmLGIS_Thermobaric_Indirect</defName>
     <label>LGIS missile (Thermobaric)</label>
     <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
@@ -1093,7 +1093,7 @@
 	  </comps>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGISIDR">
+  <ThingDef ParentName="Base70mmLGISIDR">
     <defName>Projectile_70mmLGIS_Frag_Indirect</defName>
     <label>LGIS missile (Frag)</label>
     <graphicData>
@@ -1119,7 +1119,7 @@
     </comps>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGISIDR">
+  <ThingDef ParentName="Base70mmLGISIDR">
     <defName>Projectile_70mmLGIS_Cluster_Indirect</defName>
     <label>LGIS missile (Cluster)</label>
 	  <thingClass>ThreeHST.ProjectileCE_AirExplode</thingClass>
@@ -1147,7 +1147,7 @@
     </comps>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGISIDR">
+  <ThingDef ParentName="Base70mmLGISIDR">
     <defName>Projectile_70mmLGIS_Confetti_Indirect</defName>
     <label>LGIS missile (Confetti)</label>
     <graphicData>
@@ -1178,7 +1178,7 @@
     </comps>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGISIDR">
+  <ThingDef ParentName="Base70mmLGISIDR">
     <defName>Projectile_70mmLGIS_Incendiary_Indirect</defName>
     <label>LGIS missile (Incendiary)</label>
     <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
@@ -1205,7 +1205,7 @@
 	  </comps>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGISIDR">
+  <ThingDef ParentName="Base70mmLGISIDR">
     <defName>Projectile_70mmLGIS_Firefoam_Indirect</defName>
     <label>LGIS missile (Foam)</label>
     <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
@@ -1234,7 +1234,7 @@
 	  </comps>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGISIDR">
+  <ThingDef ParentName="Base70mmLGISIDR">
     <defName>Projectile_70mmLGIS_Smoke_Indirect</defName>
     <label>LGIS missile (Smoke)</label>
     <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
@@ -1262,7 +1262,7 @@
 	  </comps>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGISIDR">
+  <ThingDef ParentName="Base70mmLGISIDR">
     <defName>Projectile_70mmLGIS_EMP_Indirect</defName>
     <label>LGIS missile (EMP)</label>
     <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
@@ -1286,7 +1286,7 @@
 	  </comps>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGISIDR">
+  <ThingDef ParentName="Base70mmLGISIDR">
     <defName>Projectile_70mmLGIS_Illumination_Indirect</defName>
     <label>LGIS missile (Illumination)</label>
 	  <thingClass>ThreeHST.ProjectileCE_AirExplode</thingClass>
@@ -1312,7 +1312,7 @@
 	  </comps>
   </ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGISIDR">
+	<ThingDef ParentName="Base70mmLGISIDR">
 		<defName>Projectile_70mmLGIS_MineLayer_Indirect</defName>
 		<label>LGIS missile (Mine layer)</label>
 		<thingClass>ThreeHST.ProjectileCE_AirExplode</thingClass>
@@ -1338,7 +1338,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base70mmLGISIDR">
+	<ThingDef ParentName="Base70mmLGISIDR">
 		<defName>Projectile_70mmLGIS_Holodecoy_Indirect</defName>
 		<label>LGIS missile (Holodecoy)</label>
 		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>

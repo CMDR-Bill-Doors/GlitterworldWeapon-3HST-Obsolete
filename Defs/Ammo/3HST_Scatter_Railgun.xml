@@ -166,7 +166,7 @@
   </ThingDef>
   <!-- ================== Projectiles ================== -->
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
+  <ThingDef ParentName="BaseBullet">
     <defName>Projectile_ScatterRG_Heavy</defName>
     <label>2x32.5mm Scatterailgun Sabot</label>
     <thingClass>BDsGlitterworldFaction3HST.PenetratingBullet</thingClass>

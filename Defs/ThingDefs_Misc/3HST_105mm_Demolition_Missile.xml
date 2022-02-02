@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ThingDef Class="CombatExtended.AmmoDef" Name="Base105mmDemo" ParentName="BaseBullet" Abstract="true">
+  <ThingDef Name="Base105mmDemo" ParentName="BaseBullet" Abstract="true">
     <graphicData>
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
@@ -14,7 +14,7 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base105mmDemo">
+  <ThingDef ParentName="Base105mmDemo">
     <defName>Projectile_105mmDemo_Thermobaric</defName>
     <label>Demolition missile (Thermobaric)</label>
     <graphicData>
@@ -29,7 +29,7 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base105mmDemo">
+  <ThingDef ParentName="Base105mmDemo">
     <defName>Projectile_105mmDemo_HE</defName>
     <label>Demolition missile (HE)</label>
     <graphicData>
@@ -54,7 +54,7 @@
     </comps>
   </ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base105mmDemo">
+  <ThingDef ParentName="Base105mmDemo">
     <defName>Projectile_105mmDemo_Incendiary</defName>
     <label>Demolition missile (Incendiary)</label>
     <graphicData>

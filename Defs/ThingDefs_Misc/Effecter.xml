@@ -100,7 +100,7 @@
 				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
 				<positionRadius>0.2</positionRadius>
 				<fleckDef>Fleck_RGhitTreeWoodBit</fleckDef>
-				<burstCount>5~10</burstCount>
+				<burstCount>10~20</burstCount>
 				<speed>6~10</speed>
 				<scale>0.5~0.8</scale>
 				<rotation>0~359</rotation>
