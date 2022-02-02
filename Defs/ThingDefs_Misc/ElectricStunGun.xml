@@ -136,9 +136,9 @@
         <aiAimMode>SuppressFire</aiAimMode>
       </li>
       <li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeBarrel">
-        <durability>75</durability>
-        <label>Rail durability</label>
-        <loadingAmount>75</loadingAmount>
+        <durability>50</durability>
+        <label>Electrode durability</label>
+        <loadingAmount>50</loadingAmount>
       </li>
 		<li Class="ThreeHST.CompProperties_ShowConcept">
 			<concepts>
