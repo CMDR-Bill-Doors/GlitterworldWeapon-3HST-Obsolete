@@ -161,6 +161,7 @@
       <texPath>Things/Building/Turrets/3HST_Turret_Auto_Light/3HST_Turret_Auto_Light</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1,1)</drawSize>
+		<drawOffset>(0,0,-0.025)</drawOffset>
     </graphicData>
     <designatorDropdown>Group_3HST_AutoRailgunTurret</designatorDropdown>
     <researchPrerequisites>
@@ -242,6 +243,7 @@
     <graphicData>
       <texPath>Things/Building/Turrets/3HST_Turret_Heavy/3HST_Heavy_Turret_Base</texPath>
       <drawSize>(2,2)</drawSize>
+		<drawOffset>(0,0,-0.05)</drawOffset>
     </graphicData>
     <size>(2,2)</size>
   </ThingDef>
