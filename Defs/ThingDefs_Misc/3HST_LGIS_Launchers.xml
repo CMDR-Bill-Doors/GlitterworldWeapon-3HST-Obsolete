@@ -631,7 +631,7 @@
 		<size>(1,1)</size>
 		<researchPrerequisites>
 			<li>CE_TurretHeavyWeapons</li>
-			<li>Research_3HST_ADV_LGIS</li>
+			<li>CE_AdvancedLaunchers</li>
 		</researchPrerequisites>
 		<designationCategory>Security</designationCategory>
 	</ThingDef>
