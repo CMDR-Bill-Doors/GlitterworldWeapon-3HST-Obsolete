@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef Abstract="True" Name="Prop3HSTBase" ParentName="BuildingBase">
+		<fillPercent>0.5</fillPercent>
+		<altitudeLayer>Building</altitudeLayer>
+		<blockWind>false</blockWind>
+		<rotatable>true</rotatable>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<drawerType>MapMeshOnly</drawerType>
+		<repairEffect>ConstructMetal</repairEffect>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<defaultPlacingRot>East</defaultPlacingRot>
+		<statBases>
+			<Flammability>0.2</Flammability>
+			<Beauty>-20</Beauty>
+			<WorkToBuild>500</WorkToBuild>
+		</statBases>
+		<building>
+			<claimable>false</claimable>
+			<destroySound>BuildingDestroyed_Metal_Big</destroySound>
+		</building>
+		<designationCategory>Furniture</designationCategory>
+	</ThingDef>
+
+	<ThingDef ParentName="DoorBase">
+		<defName>Door3HSTabandoned</defName>
+		<label>abandoned door</label>
+		<description>An abandoned door of 3HST origin.</description>
+		<statBases>
+			<WorkToBuild>850</WorkToBuild>
+			<MaxHitPoints>1600</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<stuffCategories Inherit="false"/>
+		<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+		<graphicData>
+			<texPath>Things/Building/Abandoned3HSTdoor_Mover</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>UI/Icons/Abandoned3HSTdoor_MenuIcon</uiIconPath>
+		<costStuffCount/>
+		<costList>
+			<Steel>25</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="Wall">
+		<defName>Abandoned3HSTwall</defName>
+		<label>abandoned wall</label>
+		<description>An impassable wall. Capable of holding up a roof.</description>
+		<graphicData>
+			<texPath>Things/Building/Abandoned3HSTwall</texPath>
+		</graphicData>
+		<uiIconPath>UI/Icons/Abandoned3HSTwall_MenuIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>135</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<MeditationFocusStrength>0.22</MeditationFocusStrength>
+		</statBases>
+		<costStuffCount/>
+		<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+		<stuffCategories Inherit="false"/>
+		<building>
+			<relatedBuildCommands Inherit="false"/>
+		</building>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef Abstract="True" ParentName="LampBase" Name="3HSTwallLightBase">
+		<graphicData>
+			<texPath>Things/Building/Props/Abandoned3HSTwallLight/Abandoned3HSTwallLight</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+		</graphicData>
+		<rotatable>true</rotatable>
+		<comps>
+			<li Class="VanillaFurnitureExpanded.CompProperties_MountableOnWall"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>30</basePowerConsumption>
+			</li>
+		</comps>
+		<building>
+			<isInert>true</isInert>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<placeWorkers>
+			<li>VanillaFurnitureExpanded.PlaceWorker_OnWall</li>
+		</placeWorkers>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<costList>
+			<Steel>25</Steel>
+		</costList>
+		<minifiedDef Inherit="false"/>
+		<thingCategories Inherit="false"/>
+		<designationCategory>Furniture</designationCategory>
+	</ThingDef>
+
+	<ThingDef ParentName="3HSTwallLightBase">
+		<defName>abandoned3HSTwallLight</defName>
+		<label>abandoned wall light</label>
+		<description>An abandoned wall light of 3HST origin, still intact.</description>
+		<comps>
+			<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
+				<spawnGlowerInFacedCell>true</spawnGlowerInFacedCell>
+				<colorOptions>
+					<li>
+						<glowRadius>12</glowRadius>
+						<glowColor>(199,252,252,0)</glowColor>
+					</li>
+				</colorOptions>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="3HSTwallLightBase">
+		<defName>abandoned3HSTwallLightDimmed</defName>
+		<label>faulty abandoned wall light</label>
+		<description>An abandoned wall light of 3HST origin, a faulty circuit resulted in reduced brightness.</description>
+		<comps>
+			<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
+				<spawnGlowerInFacedCell>true</spawnGlowerInFacedCell>
+				<colorOptions>
+					<li>
+						<glowRadius>12</glowRadius>
+						<glowColor>(100,126,126,0)</glowColor>
+					</li>
+				</colorOptions>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+	<ThingDef ParentName="Prop3HSTBase">
+		<defName>Prop_Abandoned3HSTCrateSmall</defName>
+		<label>abandoned crate</label>
+		<description>An abandoned crate of 3HST origin. Any valuables it once contained have degraded to uselessness, but itself can be deconstructed for some resource.</description>
+		<graphicData>
+			<texPath>Things/Building/Props/Props_Abandoned3HSTCrateSmall</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(1, 1)</drawSize>
+			<shadowData>
+				<volume>(0.8, 0.5, 0.8)</volume>
+			</shadowData>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<size>(1, 1)</size>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+		</statBases>
+		<costList>
+			<Steel>25</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="Prop3HSTBase">
+		<defName>Prop_3HSTcardboxSmall</defName>
+		<label>abandoned cardboard box</label>
+		<description>An abandoned cardboard box of 3HST origin. Any valuables it once contained have degraded to uselessness, but itself can be deconstructed for some resource.</description>
+		<graphicData>
+			<texPath>Things/Building/Props/Prop_3HSTcardboxSmallN</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(2.2,2.2)</drawSize>
+			<shadowData>
+				<volume>(0.9, 0.5, 0.9)</volume>
+			</shadowData>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<size>(1, 1)</size>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+		</statBases>
+		<costList>
+			<Cloth>25</Cloth>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="Prop3HSTBase">
+		<defName>Prop_3HSTcardboxSmallR</defName>
+		<label>abandoned cardboard box</label>
+		<description>An abandoned cardboard box of 3HST origin. Any valuables it once contained have degraded to uselessness, but itself can be deconstructed for some resource.</description>
+		<graphicData>
+			<texPath>Things/Building/Props/Prop_3HSTcardboxSmallR</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(2.2,2.2)</drawSize>
+			<shadowData>
+				<volume>(0.9, 0.5, 0.9)</volume>
+			</shadowData>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<size>(1, 1)</size>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+		</statBases>
+		<costList>
+			<Cloth>25</Cloth>
+		</costList>
+	</ThingDef>
+	
+	<ThingDef ParentName="Prop3HSTBase">
+		<defName>Prop_3HSTcardboxSmallL</defName>
+		<label>abandoned cardboard box</label>
+		<description>An abandoned cardboard box of 3HST origin. Any valuables it once contained have degraded to uselessness, but itself can be deconstructed for some resource.</description>
+		<graphicData>
+			<texPath>Things/Building/Props/Prop_3HSTcardboxSmallL</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(2.2,2.2)</drawSize>
+			<shadowData>
+				<volume>(0.9, 0.5, 0.9)</volume>
+			</shadowData>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<size>(1, 1)</size>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+		</statBases>
+		<costList>
+			<Cloth>25</Cloth>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="Prop3HSTBase">
+		<defName>Props_Abandoned3HSTflatbedRusted</defName>
+		<label>abandoned flatbed truck</label>
+		<description>An abandoned flatbed truck of 3HST origin. Any valuables it once contained have degraded to uselessness, but itself can be deconstructed for some resource.</description>
+		<graphicData>
+			<texPath>Things/Building/Props/Props_Abandoned3HSTflatbedRusted</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.5,5)</drawSize>
+			<shadowData>
+				<volume>(1.5, 0.5, 3.5)</volume>
+			</shadowData>
+		</graphicData>
+		<size>(2,5)</size>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+		</statBases>
+		<costList>
+			<Steel>125</Steel>
+			<Plasteel>100</Plasteel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+		</costList>
+		<passability>Impassable</passability>
+	</ThingDef>
+
+	<ThingDef ParentName="Prop3HSTBase">
+		<defName>Props_Abandoned1x3Conveyoy</defName>
+		<label>abandoned conveyor</label>
+		<description>An abandoned conveyor belt. No longer functional, but itself can be deconstructed for some resource.</description>
+		<graphicData>
+			<texPath>Things/Building/Props/Props_ConveyorBelt1x3</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(5,5)</drawSize>
+			<shadowData>
+				<volume>(0.8, 0.5, 3.5)</volume>
+			</shadowData>
+		</graphicData>
+		<size>(1,3)</size>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+		</statBases>
+		<costList>
+			<Steel>50</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+				<randomGraphics>
+					<li>Things/Building/Props/Props_ConveyorBelt1x3</li>
+					<li>Things/Building/Props/Props_ConveyorBelt1x3A</li>
+					<li>Things/Building/Props/Props_ConveyorBelt1x3B</li>
+					<li>Things/Building/Props/Props_ConveyorBelt1x3C</li>
+				</randomGraphics>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Prop3HSTBase">
+		<defName>Prop_Abandoned3HSTCrateLong</defName>
+		<label>abandoned crate</label>
+		<description>An abandoned crate of 3HST origin. Any valuables it once contained have degraded to uselessness, but itself can be deconstructed for some resource.</description>
+		<graphicData>
+			<texPath>Things/Building/Props/Props_Abandoned3HSTcrateLong/Props_Abandoned3HSTcrateLong</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,1)</drawSize>
+			<shadowData>
+				<volume>(0.8, 0.5, 1.5)</volume>
+			</shadowData>
+		</graphicData>
+		<size>(2,1)</size>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+		</statBases>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+		<comps>
+			<li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+				<randomGraphics>
+					<li>Things/Building/Props/Props_Abandoned3HSTcrateLong/Props_Abandoned3HSTcrateLong</li>
+					<li>Things/Building/Props/Props_Abandoned3HSTcrateLong/Props_Abandoned3HSTcrateLongA</li>
+					<li>Things/Building/Props/Props_Abandoned3HSTcrateLong/Props_Abandoned3HSTcrateLongB</li>
+					<li>Things/Building/Props/Props_Abandoned3HSTcrateLong/Props_Abandoned3HSTcrateLongC</li>
+					<li>Things/Building/Props/Props_Abandoned3HSTcrateLong/Props_Abandoned3HSTcrateLongD</li>
+				</randomGraphics>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>
