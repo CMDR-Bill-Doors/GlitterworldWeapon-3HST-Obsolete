@@ -4,8 +4,6 @@
   <author>3HST Limited</author>
   <packageId>3HSTltd.Weapons.Base</packageId>
   <supportedVersions>
-    <li>1.1</li>
-    <li>1.2</li>
     <li>1.3</li>
   </supportedVersions>
   <loadAfter>
@@ -20,14 +18,6 @@
       <displayName>Combat Extended</displayName>
       <downloadUrl>https://github.com/CombatExtended-Continued/CombatExtended</downloadUrl>
     </li>
-    <!--
-    <li>
-      <packageId>Exploriters.ExploriteCore</packageId>
-      <displayName>Explorite Core</displayName>
-      <steamWorkshopUrl>steam://url/CommunityFilePage/2384633508</steamWorkshopUrl>
-      <downloadUrl>https://github.com/Exploriters/explorite-core</downloadUrl>
-    </li>
-    -->
   </modDependencies>
-  <description>Placeholder</description>
+  <description>This mod introduces two brand-new types of weapons to rimworld: enemy-penetrating railguns, and missile launchers capable of switching between direct and indirect fire mode.</description>
 </ModMetaData>
