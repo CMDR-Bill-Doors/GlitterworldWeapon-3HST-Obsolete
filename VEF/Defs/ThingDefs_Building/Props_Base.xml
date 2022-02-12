@@ -74,6 +74,40 @@
 		</costList>
 	</ThingDef>
 
+	<ThingDef ParentName="Wall">
+		<defName>Abandoned3HSTwireFence</defName>
+		<label>abandoned wire fence</label>
+		<description>An impassable wall. Capable of holding up a roof.</description>
+		<graphicData>
+			<texPath>Things/Building/Abandoned3HSTwireFence</texPath>
+			<shadowData>
+				<volume>(0.1, 1, 0.1)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>UI/Icons/Abandoned3HSTwireFence_MenuIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>135</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<MeditationFocusStrength>0.22</MeditationFocusStrength>
+		</statBases>
+		<costStuffCount/>
+		<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+		<stuffCategories Inherit="false"/>
+		<coversFloor>false</coversFloor>
+		<holdsRoof>false</holdsRoof>
+		<fillPercent>0</fillPercent>
+		<blockWind>false</blockWind>
+		<castEdgeShadows>false</castEdgeShadows>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<building>
+			<relatedBuildCommands Inherit="false"/>
+		</building>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+	</ThingDef>
+
 	<ThingDef Abstract="True" ParentName="LampBase" Name="3HSTwallLightBase">
 		<graphicData>
 			<texPath>Things/Building/Props/Abandoned3HSTwallLight/Abandoned3HSTwallLight</texPath>
