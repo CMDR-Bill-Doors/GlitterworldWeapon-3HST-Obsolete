@@ -80,6 +80,28 @@
 		<description>An impassable wall. Capable of holding up a roof.</description>
 		<graphicData>
 			<texPath>Things/Building/Abandoned3HSTwireFence</texPath>
+			<drawSize>(2,2)</drawSize>
+			<linkType>Asymmetric</linkType>
+			<linkFlags Inherit="false">
+				<li>Fences</li>
+			</linkFlags>
+			<asymmetricLink>
+				<linkFlags>
+					<li>Wall</li>
+					<li>Rock</li>
+				</linkFlags>
+				<linkToDoors>true</linkToDoors>
+				<drawDoorBorderEast>
+					<color>(0,0,0)</color>
+					<size>(0.04, 0.77)</size>
+					<offset>(0.5, 0, -0.08)</offset>
+				</drawDoorBorderEast>
+				<drawDoorBorderWest>
+					<color>(0,0,0)</color>
+					<size>(0.04, 0.77)</size>
+					<offset>(-0.5, 0, -0.08)</offset>
+				</drawDoorBorderWest>
+			</asymmetricLink>
 			<shadowData>
 				<volume>(0.1, 1, 0.1)</volume>
 			</shadowData>
@@ -101,10 +123,36 @@
 		<castEdgeShadows>false</castEdgeShadows>
 		<staticSunShadowHeight>0</staticSunShadowHeight>
 		<building>
+			<isFence>true</isFence>
 			<relatedBuildCommands Inherit="false"/>
 		</building>
 		<costList>
 			<Steel>50</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DoorBase">
+		<defName>WireDoor3HSTabandoned</defName>
+		<label>abandoned wire fence door</label>
+		<description>An abandoned door of 3HST origin.</description>
+		<statBases>
+			<WorkToBuild>850</WorkToBuild>
+			<MaxHitPoints>1600</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<stuffCategories Inherit="false"/>
+		<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+		<graphicData>
+			<texPath>Things/Building/WireFenceDoor_Mover</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>UI/Icons/WireFenceDoor_MenuIcon</uiIconPath>
+		<costStuffCount/>
+		<costList>
+			<Steel>25</Steel>
 		</costList>
 	</ThingDef>
 
