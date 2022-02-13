@@ -9,7 +9,7 @@
   <!-- EN: Aerial deployed mines -->
   <BDGW_Mines.label>ADM空布雷</BDGW_Mines.label>
   <!-- EN: Aerial deployed mines are proximity mines made extremely simple to fit in a LGIS missile, thus they lack any proper friend and foe identification system and have a risk of self-detonation after half a year. Your colonist and animals are more likely to accidently trigger them, and it's never safe to deconstruct one, leaving alone the fact They blend in the terrain so well that you can't select them, and they're buried in the ground so bullets can't harm them.\n\nTo safely disarm an ADM, you'll need to use am EMP blast to trigger its fuse, use incendiary weapons to ignite the mine, or simply blow'em up with explosives like HE or thermobaric shells. -->
-  <BDGW_Mines.helpText>ADM空布雷是一种为了塞进LGIS导弹而极其小型化的感应地雷，虽然能极其快捷方便的布撒一片雷区，但是由于不太可靠的敌我识别和仅仅半年的额定工作寿命(超过这个寿命的地雷可能会随时自爆，哪怕并没有被触发)，这样一片雷区对自己人也是潜在的威胁。\n\n由于其埋在地下且尺寸极小，所以无法被玩家选中，也不会被子弹伤害，但是爆炸，范围EMP冲击或者燃烧弹火焰都能引爆ADM地雷，如果有排雷需求可以考虑使用AOE武器攻击可能有地雷的区域。</BDGW_Mines.helpText>
+  <BDGW_Mines.helpText>ADM空布雷是一种为了塞进LGIS导弹而极其小型化的感应地雷，虽然能极其快捷方便的布撒一片雷区，但是由于不太可靠的敌我识别和仅仅半年的额定工作寿命(超过这个寿命的地雷可能会随时自爆，哪怕并没有被触发)，这样一片雷区对自己人也是潜在的威胁。\n\n由于其埋在地下且尺寸极小，所以无法被玩家选中，也不会被子弹伤害，但是爆炸，范围EMP冲击或者燃烧弹火焰都能引爆ADM地雷，如果有排雷需求可以考虑使用AOE武器攻击可能有地雷的区域。\n\n如果你有一个小人的智识与手工高于8，而且操作与视力没大问题的话，可以尝试安全排除地上的ADM，成功率与智识，手工，视力与操作正相关。如果成功的话会得到一颗ADM地雷。\n智识或手工低于8或者一次失败的尝试会触发地雷。\n敌对的ADM空布雷在你接近的时候就会爆炸，所以想都别想。</BDGW_Mines.helpText>
   
   <!-- EN: Piercing munitions -->
   <BDGW_RailPiercing.label>穿透弹药</BDGW_RailPiercing.label>
