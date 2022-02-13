@@ -20,6 +20,14 @@
     </value>
   </Operation>
 
+	<Operation Class="PatchOperationAdd">
+		<xpath>
+			/Defs/ThingDef[defName="Melee_3HST_ECSBlade"]/costList
+		</xpath>
+		<value>
+			<BroadshieldCore>1</BroadshieldCore>
+		</value>
+	</Operation>
   
   
 </Patch>

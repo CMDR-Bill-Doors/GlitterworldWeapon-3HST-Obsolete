@@ -26,6 +26,7 @@
       <li>MeleePiercer</li>
     </weaponClasses>
     <statBases>
+		<WorkToMake>60500</WorkToMake>
       <Mass>1</Mass>
       <Bulk>8</Bulk>
       <MeleeCounterParryBonus>3</MeleeCounterParryBonus>
@@ -38,6 +39,10 @@
     </statBases>
     <smeltable>true</smeltable>
     <burnableByRecipe>true</burnableByRecipe>
+	  <costList>
+		  <Plasteel>25</Plasteel>
+		  <ComponentSpacer>5</ComponentSpacer>
+	  </costList>
     <comps>
       <li>
         <compClass>CompQuality</compClass>
@@ -109,5 +114,15 @@
     <inspectorTabs>
       <li>ITab_Art</li>
     </inspectorTabs>
+	  <recipeMaker>
+		  <skillRequirements>
+			  <Crafting>10</Crafting>
+			  <Intellectual>8</Intellectual>
+		  </skillRequirements>
+		  <recipeUsers>
+			  <li>FabricationBench</li>
+		  </recipeUsers>
+		  <researchPrerequisite>ShieldBelt</researchPrerequisite>
+	  </recipeMaker>
   </ThingDef>
 </Defs>

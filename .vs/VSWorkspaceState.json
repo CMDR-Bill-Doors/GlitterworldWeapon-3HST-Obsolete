@@ -2,8 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\About",
-    "\\Defs",
-    "\\Defs\\ThingDefs_Building"
+    "\\Languages",
+    "\\Languages\\ChineseSimplified (简体中文)",
+    "\\Languages\\ChineseSimplified (简体中文)\\DefInjected",
+    "\\Languages\\ChineseSimplified (简体中文)\\DefInjected\\JobDef",
+    "\\Languages\\ChineseSimplified (简体中文)\\DefInjected\\WorkGiverDef",
+    "\\Textures"
   ],
+  "SelectedNode": "\\Languages\\ChineseSimplified (简体中文)\\DefInjected\\WorkGiverDef",
   "PreviewInSolutionExplorer": false
 }

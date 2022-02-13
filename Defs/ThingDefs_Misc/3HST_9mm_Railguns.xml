@@ -71,7 +71,7 @@
     <weaponTags>
       <li>SniperRifle</li>
       <li>3HST_Sniper</li>
-      <li>CE_AI_Rifle</li>
+      <li>CE_AI_SR</li>
     </weaponTags>
     <!--<AllowWithRunAndGun>false</AllowWithRunAndGun>-->
     <recipeMaker>
@@ -150,6 +150,8 @@
 		</li>
     </comps>
     <weaponTags>
+		<li>CE_MachineGun</li>
+		<li>CE_AI_LMG</li>
       <li>GunHeavy</li>
       <li>3HST_HMRG</li>
     </weaponTags>

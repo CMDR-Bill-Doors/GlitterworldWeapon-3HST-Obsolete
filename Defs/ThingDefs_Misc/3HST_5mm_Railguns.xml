@@ -72,7 +72,7 @@
       </li>
     </modExtensions>
     <weaponTags>
-      <li>CE_AI_Rifle</li>
+      <li>CE_AI_AR</li>
       <li>3HST_ARG</li>
     </weaponTags>
     <recipeMaker>
@@ -151,7 +151,7 @@
     </comps>
     <weaponTags>
       <li>CE_MachineGun</li>
-      <li>CE_AI_Suppressive</li>
+      <li>CE_AI_LMG</li>
       <li>3HST_LMRG</li>
     </weaponTags>
     <modExtensions>
@@ -238,7 +238,7 @@
     <weaponTags>
       <li>SniperRifle</li>
       <li>3HST_Sniper</li>
-      <li>CE_AI_Rifle</li>
+      <li>CE_AI_SR</li>
     </weaponTags>
     <!--<AllowWithRunAndGun>false</AllowWithRunAndGun>-->
     <recipeMaker>
