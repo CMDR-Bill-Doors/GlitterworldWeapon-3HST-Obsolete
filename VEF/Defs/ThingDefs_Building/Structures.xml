@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="DoorBase">
+		<defName>Door3HSTabandoned</defName>
+		<label>abandoned door</label>
+		<description>An abandoned door of 3HST origin.</description>
+		<statBases>
+			<WorkToBuild>850</WorkToBuild>
+			<MaxHitPoints>1600</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<stuffCategories Inherit="false"/>
+		<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+		<graphicData>
+			<texPath>Things/Building/Abandoned3HSTdoor_Mover</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>UI/Icons/Abandoned3HSTdoor_MenuIcon</uiIconPath>
+		<costStuffCount/>
+		<costList>
+			<Steel>25</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="Wall">
+		<defName>Abandoned3HSTwall</defName>
+		<label>abandoned wall</label>
+		<description>An impassable wall. Capable of holding up a roof.</description>
+		<graphicData>
+			<texPath>Things/Building/Abandoned3HSTwall</texPath>
+		</graphicData>
+		<uiIconPath>UI/Icons/Abandoned3HSTwall_MenuIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>135</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<MeditationFocusStrength>0.22</MeditationFocusStrength>
+		</statBases>
+		<costStuffCount/>
+		<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+		<stuffCategories Inherit="false"/>
+		<building>
+			<relatedBuildCommands Inherit="false"/>
+		</building>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="Wall">
+		<defName>Abandoned3HSTwireFence</defName>
+		<label>abandoned wire fence</label>
+		<description>An impassable wall. Capable of holding up a roof.</description>
+		<graphicData>
+			<texPath>Things/Building/Abandoned3HSTwireFence</texPath>
+			<linkType>Asymmetric</linkType>
+			<linkFlags Inherit="false">
+				<li>Fences</li>
+			</linkFlags>
+			<asymmetricLink>
+				<linkFlags>
+					<li>Wall</li>
+					<li>Rock</li>
+				</linkFlags>
+				<linkToDoors>true</linkToDoors>
+				<drawDoorBorderEast>
+					<color>(0,0,0)</color>
+					<size>(0.04, 0.77)</size>
+					<offset>(0.5, 0, -0.08)</offset>
+				</drawDoorBorderEast>
+				<drawDoorBorderWest>
+					<color>(0,0,0)</color>
+					<size>(0.04, 0.77)</size>
+					<offset>(-0.5, 0, -0.08)</offset>
+				</drawDoorBorderWest>
+			</asymmetricLink>
+			<shadowData>
+				<volume>(0.1, 1, 0.1)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>UI/Icons/Abandoned3HSTwireFence_MenuIcon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>135</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<MeditationFocusStrength>0.22</MeditationFocusStrength>
+		</statBases>
+		<costStuffCount/>
+		<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+		<stuffCategories Inherit="false"/>
+		<coversFloor>false</coversFloor>
+		<holdsRoof>false</holdsRoof>
+		<fillPercent>0</fillPercent>
+		<blockWind>false</blockWind>
+		<castEdgeShadows>false</castEdgeShadows>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<building>
+			<isFence>true</isFence>
+			<relatedBuildCommands Inherit="false"/>
+		</building>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="DoorBase">
+		<defName>WireDoor3HSTabandoned</defName>
+		<label>abandoned wire fence door</label>
+		<description>An abandoned door of 3HST origin.</description>
+		<statBases>
+			<WorkToBuild>850</WorkToBuild>
+			<MaxHitPoints>1600</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<stuffCategories Inherit="false"/>
+		<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+		<graphicData>
+			<texPath>Things/Building/WireFenceDoor_Mover</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>UI/Icons/WireFenceDoor_MenuIcon</uiIconPath>
+		<costStuffCount/>
+		<costList>
+			<Steel>25</Steel>
+		</costList>
+	</ThingDef>
+</Defs>
