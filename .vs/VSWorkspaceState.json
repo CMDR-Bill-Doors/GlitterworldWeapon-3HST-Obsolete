@@ -3,7 +3,10 @@
     "",
     "\\About",
     "\\Defs",
-    "\\Defs\\ThingDefs_Building"
+    "\\VEF",
+    "\\VEF\\Defs",
+    "\\VEF\\Defs\\ThingDefs_Building"
   ],
+  "SelectedNode": "\\VEF\\Defs\\ThingDefs_Building\\Props_Base.xml",
   "PreviewInSolutionExplorer": false
 }

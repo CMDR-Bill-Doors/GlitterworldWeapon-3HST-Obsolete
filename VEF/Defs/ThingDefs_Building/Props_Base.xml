@@ -272,4 +272,54 @@
 			</li>
 		</comps>
 	</ThingDef>
+
+	<ThingDef ParentName="Prop3HSTBase">
+		<defName>Prop_3HSTServerRack</defName>
+		<label>abandoned server</label>
+		<description>An abandoned server of 3HST origin.</description>
+		<uiIconScale>0.5</uiIconScale>
+		<fillPercent>0.9</fillPercent>
+		<graphicData>
+			<texPath>Things/Building/Props/Prop_3HSTServerRack</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<drawOffset>(0,0,0.5)</drawOffset>
+			<shadowData>
+				<volume>(1, 0.8, 1)</volume>
+			</shadowData>
+		</graphicData>
+		<size>(1,1)</size>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+		</statBases>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="Prop3HSTBase">
+		<defName>Prop_3HSTServerConsole</defName>
+		<label>abandoned server console</label>
+		<description>An abandoned server console of 3HST origin.</description>
+		<uiIconScale>0.5</uiIconScale>
+		<fillPercent>0.9</fillPercent>
+		<graphicData>
+			<texPath>Things/Building/Props/Prop_3HSTServerConsole</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<drawOffset>(0,0,0.5)</drawOffset>
+			<shadowData>
+				<volume>(1, 0.8, 1)</volume>
+			</shadowData>
+		</graphicData>
+		<size>(1,1)</size>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+		</statBases>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+	</ThingDef>
 </Defs>
