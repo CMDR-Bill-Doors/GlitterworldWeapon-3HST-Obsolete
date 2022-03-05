@@ -557,7 +557,7 @@
 				<maxDeviation>0.5</maxDeviation>
 			</li>
 			<li Class="BDsCSharpTest.CompProperties_BroadcastReceiverDetonate">
-				<receiverChannel>15</receiverChannel>
+				<receiverChannel>3HSTmilitary</receiverChannel>
 				<signalContentWanted>detonate</signalContentWanted>
 			</li>
 		</comps>
