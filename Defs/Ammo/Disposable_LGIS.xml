@@ -52,7 +52,7 @@
 			<li>3HST_Weapons</li>
 		</weaponTags>
 
-		<generateCommonality>2</generateCommonality>
+		<generateCommonality>1.3</generateCommonality>
 		<comps>
 			<li Class="CompProperties_Forbiddable" />
 			<li>
@@ -145,7 +145,7 @@
 		<!--<uiIconPath>UI/Icons/Rockets/3HST_IAA_12_LGIS_Missile_frag_a</uiIconPath>-->
 
 		<statBases>
-			<MarketValue>107</MarketValue>
+			<MarketValue>163</MarketValue>
 		</statBases>
 		<weaponTags>
 			<li>GunHeavy</li>
@@ -217,7 +217,7 @@
 		<label>cluster LGIS tube</label>
 		<ammoClass>RocketCluster</ammoClass>
 		<detonateProjectile>Projectile_70mmLGIS_Cluster</detonateProjectile>
-		<generateAllowChance>0.01</generateAllowChance>
+		<generateAllowChance>0.05</generateAllowChance>
 
 		<graphicData>
 			<texPath>Things/Weapons/Disposable_LGIS/cluster</texPath>
@@ -306,7 +306,7 @@
 		<!--<uiIconPath>UI/Icons/Rockets/3HST_IAA_12_LGIS_Missile_thermobaric_a</uiIconPath>-->
 
 		<statBases>
-			<MarketValue>167</MarketValue>
+			<MarketValue>241</MarketValue>
 
 		</statBases>
 		<weaponTags>
@@ -388,7 +388,7 @@
 		<!--<uiIconPath>UI/Icons/Rockets/3HST_IAA_12_LGIS_Missile_heat_a</uiIconPath>-->
 
 		<statBases>
-			<MarketValue>107</MarketValue>
+			<MarketValue>163</MarketValue>
 
 		</statBases>
 		<weaponTags>
@@ -544,7 +544,7 @@
 		<!--<uiIconPath>UI/Icons/Rockets/3HST_IAA_12_LGIS_Missile_incendiary_a</uiIconPath>-->
 
 		<statBases>
-			<MarketValue>94</MarketValue>
+			<MarketValue>149</MarketValue>
 
 		</statBases>
 		<weaponTags>
@@ -770,7 +770,7 @@
 		<!--<uiIconPath>UI/Icons/Rockets/3HST_IAA_12_LGIS_Missile_emp_a</uiIconPath>-->
 
 		<statBases>
-			<MarketValue>148</MarketValue>
+			<MarketValue>185</MarketValue>
 
 		</statBases>
 		<generateCommonality>0.2</generateCommonality>
@@ -911,7 +911,7 @@
 		<label>minelayer LGIS tube</label>
 		<ammoClass>RocketMinelayer</ammoClass>
 		<detonateProjectile>Projectile_70mmLGIS_MineLayer</detonateProjectile>
-		<generateCommonality>0.4</generateCommonality>
+		<generateCommonality>0.8</generateCommonality>
 		<graphicData>
 			<texPath>Things/Weapons/Disposable_LGIS/minelayer</texPath>
 		</graphicData>
