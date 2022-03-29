@@ -25,6 +25,102 @@
 	</ThingDef>
 
 	<!--Wall light-->
+	<ThingDef ParentName="LampBase">
+		<defName>abandoned3HSTwallLight</defName>
+		<label>abandoned wall light</label>
+		<description>An abandoned wall light of 3HST origin, still intact.</description>
+		<statBases>
+			<Mass>4</Mass>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Building/Props/Abandoned3HSTwallLight/Abandoned3HSTwallLight</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+		</graphicData>
+		<rotatable>true</rotatable>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
+				<spawnGlowerInFacedCell>true</spawnGlowerInFacedCell>
+				<colorOptions>
+					<li>
+						<glowRadius>12</glowRadius>
+						<glowColor>(199,252,252,0)</glowColor>
+					</li>
+				</colorOptions>
+			</li>
+			<li Class="VanillaFurnitureExpanded.CompProperties_MountableOnWall"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>30</basePowerConsumption>
+			</li>
+		</comps>
+		<building>
+			<isInert>true</isInert>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<placeWorkers>
+			<li>VanillaFurnitureExpanded.PlaceWorker_OnWall</li>
+		</placeWorkers>
+		<costList>
+			<Steel>20</Steel>
+		</costList>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<designationCategory>Furniture</designationCategory>
+		<minifiedDef Inherit="false" IsNull="true"/>
+		<thingCategories Inherit="false" IsNull="true"/>
+	</ThingDef>
+
+	<ThingDef ParentName="LampBase">
+		<defName>abandoned3HSTwallLightDimmed</defName>
+		<label>abandoned wall light</label>
+		<description>An abandoned wall light of 3HST origin, still intact.</description>
+		<statBases>
+			<Mass>4</Mass>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Building/Props/Abandoned3HSTwallLight/Abandoned3HSTwallLight</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+		</graphicData>
+		<rotatable>true</rotatable>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="VanillaFurnitureExpanded.CompProperties_GlowerExtended">
+				<spawnGlowerInFacedCell>true</spawnGlowerInFacedCell>
+				<colorOptions>
+					<li>
+						<glowRadius>12</glowRadius>
+						<glowColor>(199,252,252,0)</glowColor>
+					</li>
+				</colorOptions>
+			</li>
+			<li Class="VanillaFurnitureExpanded.CompProperties_MountableOnWall"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>30</basePowerConsumption>
+			</li>
+		</comps>
+		<building>
+			<isInert>true</isInert>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<placeWorkers>
+			<li>VanillaFurnitureExpanded.PlaceWorker_OnWall</li>
+		</placeWorkers>
+		<costList>
+			<Steel>20</Steel>
+		</costList>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<designationCategory>Furniture</designationCategory>
+		<minifiedDef Inherit="false" IsNull="true"/>
+		<thingCategories Inherit="false" IsNull="true"/>
+	</ThingDef>
+
+
+	<!--
 	<ThingDef Abstract="True" ParentName="LampBase" Name="3HSTwallLightBase">
 		<graphicData>
 			<texPath>Things/Building/Props/Abandoned3HSTwallLight/Abandoned3HSTwallLight</texPath>
@@ -89,6 +185,7 @@
 			</li>
 		</comps>
 	</ThingDef>
+-->
 
 	<!--Small crate-->
 	<ThingDef ParentName="Prop3HSTBase">
@@ -159,7 +256,7 @@
 			<Cloth>25</Cloth>
 		</costList>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="Prop3HSTBase">
 		<defName>Prop_3HSTcardboxSmallL</defName>
 		<label>abandoned cardboard box</label>
@@ -273,22 +370,126 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="Prop3HSTBase">
-		<defName>Prop_3HSTServerRack</defName>
-		<label>abandoned server</label>
-		<description>An abandoned server of 3HST origin.</description>
-		<uiIconScale>0.5</uiIconScale>
+	<ThingDef Abstract="True" Name="Prop3HSTRackLikeBase" ParentName="Prop3HSTBase">
+		<uiIconScale>0.8</uiIconScale>
 		<fillPercent>0.9</fillPercent>
 		<graphicData>
-			<texPath>Things/Building/Props/Prop_3HSTServerRack</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
-			<drawOffset>(0,0,0.5)</drawOffset>
+			<drawOffset>(0,0,0)</drawOffset>
 			<shadowData>
 				<volume>(1, 0.8, 1)</volume>
 			</shadowData>
 		</graphicData>
 		<size>(1,1)</size>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<passability>Impassable</passability>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="Prop3HSTRackLikeBase">
+		<defName>Prop_3HSTServerRack</defName>
+		<label>abandoned server</label>
+		<description>An abandoned server of 3HST origin.</description>
+		<graphicData>
+			<texPath>Things/Building/Props/Prop_3HSTServerRack</texPath>
+		</graphicData>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="Prop3HSTRackLikeBase">
+		<defName>Prop_3HSTServerConsole</defName>
+		<label>abandoned server console</label>
+		<description>An abandoned server console of 3HST origin.</description>
+		<graphicData>
+			<texPath>Things/Building/Props/Prop_3HSTServerConsole</texPath>
+		</graphicData>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+	</ThingDef>
+
+
+	<ThingDef ParentName="Prop3HSTRackLikeBase">
+		<defName>Prop_3HSTLockerClosed</defName>
+		<label>abandoned locker</label>
+		<description>An abandoned locker of 3HST origin.</description>
+		<graphicData>
+			<texPath>Things/Building/Props/Prop_3HSTLockerClose</texPath>
+		</graphicData>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="Prop3HSTRackLikeBase">
+		<defName>Prop_3HSTLockerOpen</defName>
+		<label>abandoned locker</label>
+		<description>An abandoned locker of 3HST origin.</description>
+		<graphicData>
+			<texPath>Things/Building/Props/Prop_3HSTLockerOpen</texPath>
+		</graphicData>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="Prop3HSTRackLikeBase">
+		<defName>Prop_3HSTDualLockerClosed</defName>
+		<label>abandoned locker</label>
+		<description>An abandoned locker of 3HST origin.</description>
+		<graphicData>
+			<texPath>Things/Building/Props/Prop_3HSTDualLockerClose</texPath>
+			<drawSize>(4,4)</drawSize>
+			<shadowData>
+				<volume>(2, 0.8, 1)</volume>
+			</shadowData>
+		</graphicData>
+		<size>(2,1)</size>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="Prop3HSTRackLikeBase">
+		<defName>Prop_3HSTDualLockerOpen</defName>
+		<label>abandoned locker</label>
+		<description>An abandoned locker of 3HST origin.</description>
+		<graphicData>
+			<texPath>Things/Building/Props/Prop_3HSTDualLockerOpen</texPath>
+			<drawSize>(4,4)</drawSize>
+			<shadowData>
+				<volume>(2, 0.8, 1)</volume>
+			</shadowData>
+		</graphicData>
+		<size>(2,1)</size>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+	</ThingDef>
+
+
+
+	<ThingDef ParentName="Prop3HSTBase">
+		<defName>Prop_3HSTBotanyBay</defName>
+		<label>abandoned botany bay</label>
+		<description>An abandoned botany bay of 3HST origin.</description>
+		<uiIconScale>0.5</uiIconScale>
+		<fillPercent>0.9</fillPercent>
+		<graphicData>
+			<texPath>Things/Building/Props/Prop_3HSTBotanyBay</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(7.5,7.5)</drawSize>
+			<drawOffset>(0,0,0)</drawOffset>
+			<shadowData>
+				<volume>(4.8, 0.8, 1)</volume>
+			</shadowData>
+		</graphicData>
+		<size>(5,1)</size>
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
@@ -299,21 +500,125 @@
 	</ThingDef>
 
 	<ThingDef ParentName="Prop3HSTBase">
-		<defName>Prop_3HSTServerConsole</defName>
-		<label>abandoned server console</label>
-		<description>An abandoned server console of 3HST origin.</description>
-		<uiIconScale>0.5</uiIconScale>
-		<fillPercent>0.9</fillPercent>
+		<defName>Prop_3HSTPBM</defName>
+		<label>abandoned PBM system</label>
+		<description>An abandoned particle bombardment system used in 3HST accelerator rail manufacture.</description>
+		<uiIconScale>0.8</uiIconScale>
+		<fillPercent>0.6</fillPercent>
 		<graphicData>
-			<texPath>Things/Building/Props/Prop_3HSTServerConsole</texPath>
+			<texPath>Things/Building/Props/Prop_3HSTPBM</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2,2)</drawSize>
-			<drawOffset>(0,0,0.5)</drawOffset>
+			<drawSize>(8,8)</drawSize>
+			<drawOffset>(0,0,0)</drawOffset>
 			<shadowData>
-				<volume>(1, 0.8, 1)</volume>
+				<volume>(5, 0.8, 4.4)</volume>
 			</shadowData>
 		</graphicData>
-		<size>(1,1)</size>
+		<size>(5,5)</size>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+		</statBases>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="Prop3HSTBase">
+		<defName>Prop_3HSTGenerator</defName>
+		<label>abandoned fusion generator</label>
+		<description>An abandoned particle bombardment system used in 3HST accelerator rail manufacture.</description>
+		<uiIconScale>0.8</uiIconScale>
+		<fillPercent>0.6</fillPercent>
+		<graphicData>
+			<texPath>Things/Building/Props/Prop_3HSTfusionGenerator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(8,8)</drawSize>
+			<drawOffset>(0,0,0)</drawOffset>
+			<shadowData>
+				<volume>(5, 0.8, 4.5)</volume>
+			</shadowData>
+		</graphicData>
+		<size>(5,5)</size>
+		<rotatable>false</rotatable>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+		</statBases>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="Prop3HSTBase">
+		<defName>Prop_3HSTCoolingTower</defName>
+		<label>abandoned cooling tower</label>
+		<description>An abandoned cooling tower of 3HST origin.</description>
+		<uiIconScale>0.8</uiIconScale>
+		<fillPercent>1</fillPercent>
+		<graphicData>
+			<texPath>Things/Building/Props/Prop_3HSTCoolingTower</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4.5,4.5)</drawSize>
+			<drawOffset>(0,0,1)</drawOffset>
+			<shadowData>
+				<volume>(3, 0.8, 3)</volume>
+			</shadowData>
+		</graphicData>
+		<size>(3,3)</size>
+		<rotatable>false</rotatable>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+		</statBases>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="Prop3HSTBase">
+		<defName>Prop_3HSTPump</defName>
+		<label>abandoned pumping station</label>
+		<description>An abandoned pumping station of 3HST origin.</description>
+		<uiIconScale>0.8</uiIconScale>
+		<fillPercent>0.5</fillPercent>
+		<graphicData>
+			<texPath>Things/Building/Props/Prop_3HSTPump</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(5,5)</drawSize>
+			<drawOffset>(0,0,0)</drawOffset>
+			<shadowData>
+				<volume>(3, 0.8, 3)</volume>
+			</shadowData>
+		</graphicData>
+		<size>(3,3)</size>
+		<defaultPlacingRot>North</defaultPlacingRot>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+		</statBases>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="Prop3HSTBase">
+		<defName>Prop_3HSTLathe</defName>
+		<label>abandoned lathe</label>
+		<description>An abandoned lathe of 3HST origin.</description>
+		<uiIconScale>0.8</uiIconScale>
+		<fillPercent>0.9</fillPercent>
+		<graphicData>
+			<texPath>Things/Building/Props/Prop_3HSTLathe</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.9,3.9)</drawSize>
+			<drawOffset>(0,0,0)</drawOffset>
+			<shadowData>
+				<volume>(3, 0.8, 1)</volume>
+			</shadowData>
+		</graphicData>
+		<size>(3,1)</size>
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>

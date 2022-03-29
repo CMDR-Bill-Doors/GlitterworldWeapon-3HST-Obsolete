@@ -3,10 +3,11 @@
     "",
     "\\About",
     "\\Defs",
+    "\\Defs\\Ammo",
     "\\VEF",
     "\\VEF\\Defs",
     "\\VEF\\Defs\\ThingDefs_Building"
   ],
-  "SelectedNode": "\\VEF\\Defs\\ThingDefs_Building\\MedievalTortureTool.xml",
+  "SelectedNode": "\\Defs\\Ammo\\Disposable_LGIS.xml",
   "PreviewInSolutionExplorer": false
 }
