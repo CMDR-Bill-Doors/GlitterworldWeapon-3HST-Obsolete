@@ -337,6 +337,53 @@
 	</ThingDef>
 
 	<ThingDef ParentName="Prop3HSTBase">
+		<defName>Prop_3HSTSmallCart</defName>
+		<label>abandoned cart</label>
+		<description>An abandoned cart of 3HST origin</description>
+		<graphicData>
+			<texPath>Things/Building/Props/Prop_3HSTSmallCart/Prop_3HSTSmallCartEmpty</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.2,2.2)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+		</statBases>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+		<comps>
+			<li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+				<randomGraphics>
+					<li>Things/Building/Props/Prop_3HSTSmallCart/Prop_3HSTSmallCartA</li>
+					<li>Things/Building/Props/Prop_3HSTSmallCart/Prop_3HSTSmallCartB</li>
+					<li>Things/Building/Props/Prop_3HSTSmallCart/Prop_3HSTSmallCartC</li>
+					<li>Things/Building/Props/Prop_3HSTSmallCart/Prop_3HSTSmallCartEmpty</li>
+				</randomGraphics>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Prop3HSTBase">
+		<defName>Prop_3HSTForkCart</defName>
+		<label>abandoned cart</label>
+		<description>An abandoned cart of 3HST origin</description>
+		<graphicData>
+			<texPath>Things/Building/Props/Prop_3HSTForkCartEmpty</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.2,2.2)</drawSize>
+			<drawOffset>(0,0,0.1)</drawOffset>
+		</graphicData>
+		<size>(1,2)</size>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+		</statBases>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="Prop3HSTBase">
 		<defName>Prop_Abandoned3HSTCrateLong</defName>
 		<label>abandoned crate</label>
 		<description>An abandoned crate of 3HST origin. Any valuables it once contained have degraded to uselessness, but itself can be deconstructed for some resource.</description>
@@ -387,6 +434,38 @@
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="Prop3HSTRackLikeBase">
+		<defName>Prop_3HSTFridge</defName>
+		<label>abandoned fridge</label>
+		<description>An abandoned fridge of 3HST origin</description>
+		<graphicData>
+			<texPath>Things/Building/Props/Prop_3HSTFridge/Prop_3HSTFridgeClose</texPath>
+		</graphicData>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
+		<comps>
+			<li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+				<randomGraphics>
+					<li>Things/Building/Props/Prop_3HSTFridge/Prop_3HSTFridgeClose</li>
+					<li>Things/Building/Props/Prop_3HSTFridge/Prop_3HSTFridgeOpen</li>
+				</randomGraphics>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Prop3HSTRackLikeBase">
+		<defName>Prop_3HSTOven</defName>
+		<label>abandoned oven</label>
+		<description>An abandoned oven of 3HST origin.</description>
+		<graphicData>
+			<texPath>Things/Building/Props/Prop_3HSTOven</texPath>
+		</graphicData>
+		<costList>
+			<Steel>50</Steel>
+		</costList>
 	</ThingDef>
 
 	<ThingDef ParentName="Prop3HSTRackLikeBase">
