@@ -6,7 +6,7 @@
 		<description>An armored automated vehicle with rudimentary IFF system and a turret mount.</description>
 		<statBases>
 			<MoveSpeed>1.9</MoveSpeed>
-			<ArmorRating_Blunt>38</ArmorRating_Blunt>
+			<ArmorRating_Blunt>280</ArmorRating_Blunt>
 			<ArmorRating_Sharp>15</ArmorRating_Sharp>
 			<PsychicSensitivity>0</PsychicSensitivity>
 			<CarryWeight>400</CarryWeight>
@@ -62,6 +62,9 @@
 			<Steel>30</Steel>
 			<Plasteel>10</Plasteel>
 		</butcherProducts>
+		<killedLeavings>
+			<ChunkSlagSteel>5</ChunkSlagSteel>
+		</killedLeavings>
 		<modExtensions>
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
 				<bodyShape>QuadrupedLow</bodyShape>
@@ -130,7 +133,7 @@
 		<statBases>
 			<MoveSpeed>6.9</MoveSpeed>
 			<ArmorRating_Blunt>5000</ArmorRating_Blunt>
-			<ArmorRating_Sharp>100</ArmorRating_Sharp>
+			<ArmorRating_Sharp>150</ArmorRating_Sharp>
 			<PsychicSensitivity>0</PsychicSensitivity>
 			<CarryWeight>2000</CarryWeight>
 			<CarryBulk>1000</CarryBulk>
@@ -185,6 +188,9 @@
 			<Steel>30</Steel>
 			<Plasteel>10</Plasteel>
 		</butcherProducts>
+		<killedLeavings>
+			<ChunkSlagSteel>15</ChunkSlagSteel>
+		</killedLeavings>
 		<modExtensions>
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
 				<bodyShape>QuadrupedLow</bodyShape>
@@ -192,7 +198,7 @@
 			<li Class="PLA.Vehicle.VehicleExtension">
 				<allowVechicleInCaravan>true</allowVechicleInCaravan>
 				<carryWeightInCaravan>400</carryWeightInCaravan>
-				<explosionRadius>5</explosionRadius>
+				<explosionRadius>7</explosionRadius>
 			</li>
 		</modExtensions>
 		<uiIconPath>Things/Pawn/3HST_LCB_04 MBT/3HST_LCB_04 MBT_Icon</uiIconPath>
@@ -254,8 +260,8 @@
 		<statBases>
 			<MoveSpeed>10.9</MoveSpeed>
 			<CaravanRidingSpeedFactor>10.9</CaravanRidingSpeedFactor>
-			<ArmorRating_Blunt>5000</ArmorRating_Blunt>
-			<ArmorRating_Sharp>100</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1000</ArmorRating_Blunt>
+			<ArmorRating_Sharp>35</ArmorRating_Sharp>
 			<PsychicSensitivity>0</PsychicSensitivity>
 			<CarryWeight>2000</CarryWeight>
 			<CarryBulk>1000</CarryBulk>
@@ -310,6 +316,9 @@
 			<Steel>30</Steel>
 			<Plasteel>10</Plasteel>
 		</butcherProducts>
+		<killedLeavings>
+			<ChunkSlagSteel>10</ChunkSlagSteel>
+		</killedLeavings>
 		<modExtensions>
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
 				<bodyShape>QuadrupedLow</bodyShape>
@@ -317,7 +326,7 @@
 			<li Class="PLA.Vehicle.VehicleExtension">
 				<allowVechicleInCaravan>true</allowVechicleInCaravan>
 				<carryWeightInCaravan>1000</carryWeightInCaravan>
-				<explosionRadius>4</explosionRadius>
+				<explosionRadius>5</explosionRadius>
 			</li>
 		</modExtensions>
 		<uiIconPath>Things/Pawn/3HST_IFV/3HST_IFV_Icon</uiIconPath>
