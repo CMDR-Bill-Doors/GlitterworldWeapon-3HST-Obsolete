@@ -69,7 +69,7 @@
 			</concepts>
 		</li>
     </comps>
-    <weaponTags>
+    <weaponTags Inherit="False">
       <li>3HST_Autocannon</li>
     </weaponTags>
     <!--<AllowWithRunAndGun>false</AllowWithRunAndGun>-->

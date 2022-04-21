@@ -9,6 +9,7 @@
       <li>Railgun turrets consume extra power after firing to charge it's capacitors. Be aware of your battery charge if you intend to use them!</li>
 		<li>Directly damaging explosions, incendiary weapons and EMP blasts are capable of detonating an ADM without risking your pawn's life.</li>
 		<li>Sometimes it's easier to spot the ADM carrier casing than the mine itself.</li>
+		<li>You can safely disarm an ADM with enough intellectual and crafting skill, and with sufficient manipulation and sight capability.</li>
     </tips>
   </TipSetDef>
 
@@ -62,7 +63,7 @@
 		<label>Aerial deployed mines</label>
 		<priority>50</priority>
 		<needsOpportunity>True</needsOpportunity>
-		<helpText>Aerial deployed mines are proximity mines made extremely simple to fit in a LGIS missile, thus they lack any proper friend and foe identification system and have a risk of self-detonation after half a year. Your colonist and animals are more likely to accidently trigger them, and it's never safe to deconstruct one, leaving alone the fact They blend in the terrain so well that you can't select them, and they're buried in the ground so bullets can't harm them.\n\nTo safely disarm an ADM, you'll need to use am EMP blast to trigger its fuse, use incendiary weapons to ignite the mine, or simply blow'em up with explosives like HE or thermobaric shells.</helpText>
+		<helpText>Aerial deployed mines are proximity mines made extremely simple to fit in a LGIS missile, thus they lack any proper friend and foe identification system and have a risk of self-detonation after half a year. Your colonist and animals are more likely to accidently trigger them, and it's never safe to deconstruct one, leaving alone the fact They blend in the terrain so well that you can't select them, and they're buried in the ground so bullets can't harm them.\n\nTo safely disarm an ADM, you'll need to use am EMP blast to trigger its fuse, use incendiary weapons to ignite the mine, or simply blow'em up with explosives like HE or thermobaric shells.\n\nWith more than level 8 in crafting and intelletual. and not severely impaired visually and manipulatively, you can also attempt to safely disarm an ADM, getting a detached ADM back if succeeds.\n(Faliure of mine disposal or lack of skill will result in explosive consequences)\nAn hostile ADM will always detonate when you come close, don't even think about it.</helpText>
 		<highlightTags>
 			<li>BDGW_Mines</li>
 		</highlightTags>

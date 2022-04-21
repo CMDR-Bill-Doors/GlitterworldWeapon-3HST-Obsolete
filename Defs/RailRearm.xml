@@ -8,4 +8,26 @@
     <alwaysShowWeapon>true</alwaysShowWeapon>
     <joyDuration>120</joyDuration>
   </JobDef>
+
+	<WorkGiverDef>
+		<defName>WorkGiver_3HSTMineDefuse</defName>
+		<label>defuse ADM mines</label>
+		<giverClass>ThreeHST.WorkGiver_BombDisarm</giverClass>
+		<workType>Research</workType>
+		<verb>disarm</verb>
+		<gerund>disarming</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<priorityInType>110</priorityInType>
+	</WorkGiverDef>
+
+	<JobDef>
+		<defName>BDsBombDisarm</defName>
+		<driverClass>ThreeHST.JobDriver_BombDisarm</driverClass>
+		<reportString>Disarming ADM</reportString>
+		<allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+		<alwaysShowWeapon>false</alwaysShowWeapon>
+		<joyDuration>1200</joyDuration>
+	</JobDef>
 </Defs>

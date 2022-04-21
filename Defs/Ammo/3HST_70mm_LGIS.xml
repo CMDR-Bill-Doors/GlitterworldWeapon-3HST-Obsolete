@@ -519,6 +519,19 @@
 				<selfExplodeChance>0.8</selfExplodeChance>
 				<minSelfExplodeTick>2592000</minSelfExplodeTick>
 				<maxSelfExplodeTick>10368000</maxSelfExplodeTick>
+				<disarmTime>15</disarmTime>
+				<!--point=(int-8)*(craft-8)*sight*manipulation-->
+				<disarmSuccessRateCurve>
+					<points>
+						<li>(0,0)</li>
+						<li>(16,0.5)</li>
+						<li>(49,0.99)</li>
+						<li>(400,0.99)</li>
+					</points>
+				</disarmSuccessRateCurve>
+				<disarmLeavings>
+					<Weapon_ThrownADM>1</Weapon_ThrownADM>
+				</disarmLeavings>
 				<startWickOnDamageTaken>
 					<li>EMP</li>
 					<li>PrometheumFlame</li>
@@ -555,10 +568,6 @@
 					</damageData>
 				</graphicData>
 				<maxDeviation>0.5</maxDeviation>
-			</li>
-			<li Class="BDsCSharpTest.CompProperties_BroadcastReceiverDetonate">
-				<receiverChannel>3HSTmilitary</receiverChannel>
-				<signalContentWanted>detonate</signalContentWanted>
 			</li>
 		</comps>
 	</ThingDef>
@@ -852,7 +861,7 @@
 			<damageAmountBase>0</damageAmountBase>
 			<armorPenetrationSharp>0</armorPenetrationSharp>
 			<armorPenetrationBlunt>0</armorPenetrationBlunt>
-			<explosionRadius>5</explosionRadius>
+			<explosionRadius>4</explosionRadius>
 			<preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
 			<preExplosionSpawnChance>0.3</preExplosionSpawnChance>
 			<soundExplode>MortarIncendiary_Explode</soundExplode>

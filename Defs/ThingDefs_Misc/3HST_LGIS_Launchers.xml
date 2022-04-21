@@ -239,6 +239,7 @@
 			<li>CE_AI_AOE</li>
 			<li>GunHeavy</li>
 			<li>3HST_LGIS_Reusable</li>
+			<li>WarcasketVeteran</li>
 		</weaponTags>
 		<modExtensions>
 			<li Class="CombatExtended.GunDrawExtension">

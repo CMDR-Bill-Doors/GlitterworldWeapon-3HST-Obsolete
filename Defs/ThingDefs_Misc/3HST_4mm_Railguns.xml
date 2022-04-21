@@ -23,7 +23,7 @@
       <li>CE_Sidearm</li>
       <li>CE_OneHandedWeapon</li>
       <li>3HST_Sidearm</li>
-      <li>CE_AI_Pistol</li>
+      <li>CE_AI_BROOM</li>
     </weaponTags>
     <costList>
       <Steel>20</Steel>
@@ -102,7 +102,7 @@
       <li>CE_Sidearm</li>
       <li>CE_OneHandedWeapon</li>
       <li>3HST_Sidearm</li>
-      <li>CE_AI_Pistol</li>
+      <li>CE_AI_BROOM</li>
     </weaponTags>
     <costList>
       <Steel>15</Steel>
@@ -183,7 +183,7 @@
       <li>3HST_Sidearm</li>
 	  <li>3HST_SMG</li>
       <li>CE_SMG</li>
-      <li>CE_AI_AssaultWeapon</li>
+      <li>CE_AI_BROOM</li>
     </weaponTags>
     <costList>
       <Steel>35</Steel>

@@ -64,6 +64,6 @@
         <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
       </li>
     </tools>
-
+	  <recipeMaker Inherit="False"/>
   </ThingDef>
 </Defs>
