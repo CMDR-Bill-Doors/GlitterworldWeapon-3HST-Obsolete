@@ -5,6 +5,7 @@
     <li>/</li>
     <li IfModActive="Ludeon.RimWorld.Royalty">Royalty</li>
 	  <li IfModActive="IssacZhuang.PLA.Vehicle">PLAST</li>
+	  <li IfModActive="oskarpotocki.vanillafactionsexpanded.core">VEF</li>
   </v1.3>
 
 </loadFolders>

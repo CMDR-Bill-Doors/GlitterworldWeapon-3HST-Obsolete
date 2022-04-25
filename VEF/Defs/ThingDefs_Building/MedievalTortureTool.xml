@@ -121,6 +121,7 @@
 		<description>A wooden rack designed to restrain prisoner.</description>
 		<uiIconScale>0.5</uiIconScale>
 		<rotatable>false</rotatable>
+		<defaultPlacingRot>North</defaultPlacingRot>
 		<graphicData>
 			<texPath>Things/Building/Props/Prop_WoodenTortureToolTable</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
