@@ -16,7 +16,9 @@
 			<SwayFactor>1.25</SwayFactor>
 			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
 		</statBases>
-		<designatorDropdown>Group_3HST_AutoRailgunTurret</designatorDropdown>
+		<costList>
+			<VehicleMod_3HST5mmLMRG>1</VehicleMod_3HST5mmLMRG>
+		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
 				<verbClass>PLA.CE.Vehicle.Verb_ShootVehicleCE</verbClass>
@@ -62,6 +64,9 @@
 			<SwayFactor>1.25</SwayFactor>
 			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
 		</statBases>
+		<costList>
+			<VehicleMod_3HST9mmHMRG>1</VehicleMod_3HST9mmHMRG>
+		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
 				<verbClass>PLA.CE.Vehicle.Verb_ShootVehicleCE</verbClass>
@@ -108,6 +113,9 @@
 			<SwayFactor>1.25</SwayFactor>
 			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
 		</statBases>
+		<costList>
+			<VehicleMod_3HSTDual9mmHMRG>1</VehicleMod_3HSTDual9mmHMRG>
+		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
 				<verbClass>PLA.CE.Vehicle.Verb_ShootVehicleCE</verbClass>
@@ -154,6 +162,9 @@
 			<SwayFactor>0.98</SwayFactor>
 			<RangedWeapon_Cooldown>2.69</RangedWeapon_Cooldown>
 		</statBases>
+		<costList>
+			<VehicleMod_3HST20mmARC>1</VehicleMod_3HST20mmARC>
+		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
 				<verbClass>PLA.CE.Vehicle.Verb_ShootVehicleCE</verbClass>
@@ -247,6 +258,9 @@
 			<SwayFactor>1.2</SwayFactor>
 			<RangedWeapon_Cooldown>0.41</RangedWeapon_Cooldown>
 		</statBases>
+		<costList>
+			<VehicleMod_3HSTAIGS>1</VehicleMod_3HSTAIGS>
+		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
 				<verbClass>PLA.CE.Vehicle.Verb_ShootVehicleCE</verbClass>
@@ -319,6 +333,9 @@
 			<SwayFactor>0</SwayFactor>
 			<RangedWeapon_Cooldown>0.35</RangedWeapon_Cooldown>
 		</statBases>
+		<costList>
+			<VehicleMod_3HSTDualLGIS>1</VehicleMod_3HSTDualLGIS>
+		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
 				<verbClass>PLA.CE.Vehicle.Verb_ShootVehicleCE</verbClass>
@@ -402,6 +419,9 @@
 			<SwayFactor>3.77</SwayFactor>
 			<RangedWeapon_Cooldown>0.35</RangedWeapon_Cooldown>
 		</statBases>
+		<costList>
+			<VehicleMod_3HSTMLGIS>1</VehicleMod_3HSTMLGIS>
+		</costList>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
 				<verbClass>PLA.CE.Vehicle.Verb_ShootVehicleCE</verbClass>

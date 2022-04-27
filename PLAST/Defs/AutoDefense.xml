@@ -7,7 +7,7 @@
 		<statBases>
 			<MoveSpeed>1.9</MoveSpeed>
 			<ArmorRating_Blunt>280</ArmorRating_Blunt>
-			<ArmorRating_Sharp>15</ArmorRating_Sharp>
+			<ArmorRating_Sharp>10</ArmorRating_Sharp>
 			<PsychicSensitivity>0</PsychicSensitivity>
 			<CarryWeight>400</CarryWeight>
 			<CarryBulk>80</CarryBulk>
@@ -111,6 +111,7 @@
 		<tickerType>Normal</tickerType>
 		<rotatable>true</rotatable>
 		<costList>
+			<Gun_3HST_Light_Machine_Railgun>1</Gun_3HST_Light_Machine_Railgun>
 			<Steel>150</Steel>
 			<Plasteel>200</Plasteel>
 			<Uranium>50</Uranium>
