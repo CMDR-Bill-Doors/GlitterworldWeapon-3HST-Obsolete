@@ -226,17 +226,40 @@
 				<recoilAmount>1.51</recoilAmount>
 				<muzzleFlashScale>20</muzzleFlashScale>
 				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+				<recoilPattern>Mounted</recoilPattern>
 			</li>
 		</verbs>
 		<comps>
-			<li Class="PLA.CE.Vehicle.CompProperties_AmmoUserVehicle">
-				<magazineSize>120</magazineSize>
-				<reloadTime>7.8</reloadTime>
-				<ammoSet>AmmoSet_3HST20mmRG</ammoSet>
-			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aimedBurstShotCount>5</aimedBurstShotCount>
 				<aiAimMode>Snapshot</aiAimMode>
+			</li>
+			<li Class="PLA.CE.Vehicle.CompProperties_AmmoUserVehicle">
+				<magazineSize>120</magazineSize>
+				<ammoSet>AmmoSet_3HST20mmRG</ammoSet>
+				<secondaryAttackVerb>
+					<verbClass>PLA.CE.Vehicle.Verb_ShootVehicleCE</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>Projectile_70mmLGIS_Frag</defaultProjectile>
+					<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+					<warmupTime>3.4</warmupTime>
+					<range>150</range>
+					<minRange>10</minRange>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+					</targetParams>
+					<soundCast>InfernoCannon_Fire</soundCast>
+					<soundCastTail>GunTail_Medium</soundCastTail>
+					<muzzleFlashScale>5</muzzleFlashScale>
+					<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+				</secondaryAttackVerb>
+				<secondaryAmmoSet>AmmoSet_70mmLGIS</secondaryAmmoSet>
+				<secondaryMagazineSize>4</secondaryMagazineSize>
+				<reloadTime>12.6</reloadTime>
+				<mainWeaponLabel>Use auto railcannon</mainWeaponLabel>
+				<secondaryWeaponLabel>Use LGIS launcher</secondaryWeaponLabel>
+				<mainWeaponIcon>UI/Icons/FireModes/SecondaryWeaponIcon_20mmAC</mainWeaponIcon>
+				<secondaryWeaponIcon>UI/Icons/FireModes/SecondaryWeaponIcon_QuadLGIS</secondaryWeaponIcon>
 			</li>
 		</comps>
 	</ThingDef>
@@ -533,13 +556,34 @@
 			</li>
 		</verbs>
 		<comps>
-			<li Class="PLA.CE.Vehicle.CompProperties_AmmoUserVehicle">
-				<magazineSize>24</magazineSize>
-				<reloadTime>7.8</reloadTime>
-				<ammoSet>AmmoSet_3HST76mmRG</ammoSet>
-			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+			<li Class="PLA.CE.Vehicle.CompProperties_AmmoUserVehicle">
+				<magazineSize>24</magazineSize>
+				<ammoSet>AmmoSet_3HST76mmRG</ammoSet>
+				<secondaryAttackVerb>
+					<verbClass>PLA.CE.Vehicle.Verb_ShootVehicleCE</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>Projectile_3HST9mmRG_Steel</defaultProjectile>
+					<warmupTime>1.5</warmupTime>
+					<burstShotCount>10</burstShotCount>
+					<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+					<range>86</range>
+					<soundCast>RG_9mm</soundCast>
+					<soundCastTail>GunTail_Heavy</soundCastTail>
+					<recoilAmount>2.14</recoilAmount>
+					<muzzleFlashScale>18</muzzleFlashScale>
+					<ai_AvoidFriendlyFireRadius>2</ai_AvoidFriendlyFireRadius>
+					<recoilPattern>Mounted</recoilPattern>
+				</secondaryAttackVerb>
+				<secondaryAmmoSet>AmmoSet_3HST9mmRG</secondaryAmmoSet>
+				<secondaryMagazineSize>360</secondaryMagazineSize>
+				<reloadTime>25</reloadTime>
+				<mainWeaponLabel>Use rail maingun</mainWeaponLabel>
+				<secondaryWeaponLabel>Use coaxial rail HMG</secondaryWeaponLabel>
+				<mainWeaponIcon>UI/Icons/FireModes/SecondaryWeaponIcon_76mmMaingun</mainWeaponIcon>
+				<secondaryWeaponIcon>UI/Icons/FireModes/SecondaryWeaponIcon_9mmHMG</secondaryWeaponIcon>
 			</li>
 		</comps>
 	</ThingDef>

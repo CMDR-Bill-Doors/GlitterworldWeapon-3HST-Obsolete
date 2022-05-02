@@ -112,10 +112,10 @@
 		<rotatable>true</rotatable>
 		<costList>
 			<Gun_3HST_Light_Machine_Railgun>1</Gun_3HST_Light_Machine_Railgun>
-			<Steel>150</Steel>
+			<Steel>50</Steel>
 			<Plasteel>200</Plasteel>
 			<Uranium>50</Uranium>
-			<ComponentIndustrial>12</ComponentIndustrial>
+			<ComponentIndustrial>8</ComponentIndustrial>
 			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
 		<designationCategory>Security</designationCategory>
@@ -239,11 +239,13 @@
 		<tickerType>Normal</tickerType>
 		<rotatable>true</rotatable>
 		<costList>
-			<Steel>150</Steel>
-			<Plasteel>200</Plasteel>
-			<Uranium>50</Uranium>
-			<ComponentIndustrial>12</ComponentIndustrial>
-			<ComponentSpacer>2</ComponentSpacer>
+			<Gun_3HST_76mm_Cannon>1</Gun_3HST_76mm_Cannon>
+			<Gun_3HST_9mmHMG>1</Gun_3HST_9mmHMG>
+			<Steel>200</Steel>
+			<Plasteel>1000</Plasteel>
+			<Uranium>450</Uranium>
+			<ComponentIndustrial>25</ComponentIndustrial>
+			<ComponentSpacer>10</ComponentSpacer>
 		</costList>
 		<designationCategory>Security</designationCategory>
 		<comps>
@@ -367,11 +369,13 @@
 		<tickerType>Normal</tickerType>
 		<rotatable>true</rotatable>
 		<costList>
+			<Gun_3HST_20mmAutocannon>1</Gun_3HST_20mmAutocannon>
+			<Gun_3HST_Quad_LGIS_Launcher>1</Gun_3HST_Quad_LGIS_Launcher>
 			<Steel>150</Steel>
-			<Plasteel>200</Plasteel>
-			<Uranium>50</Uranium>
-			<ComponentIndustrial>12</ComponentIndustrial>
-			<ComponentSpacer>2</ComponentSpacer>
+			<Plasteel>500</Plasteel>
+			<Uranium>450</Uranium>
+			<ComponentIndustrial>18</ComponentIndustrial>
+			<ComponentSpacer>5</ComponentSpacer>
 		</costList>
 		<designationCategory>Security</designationCategory>
 		<comps>
