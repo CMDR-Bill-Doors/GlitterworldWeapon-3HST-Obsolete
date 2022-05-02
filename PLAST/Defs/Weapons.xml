@@ -567,7 +567,7 @@
 					<hasStandardCommand>true</hasStandardCommand>
 					<defaultProjectile>Projectile_3HST9mmRG_Steel</defaultProjectile>
 					<warmupTime>1.5</warmupTime>
-					<burstShotCount>10</burstShotCount>
+					<burstShotCount>20</burstShotCount>
 					<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
 					<range>86</range>
 					<soundCast>RG_9mm</soundCast>
@@ -578,7 +578,7 @@
 					<recoilPattern>Mounted</recoilPattern>
 				</secondaryAttackVerb>
 				<secondaryAmmoSet>AmmoSet_3HST9mmRG</secondaryAmmoSet>
-				<secondaryMagazineSize>360</secondaryMagazineSize>
+				<secondaryMagazineSize>640</secondaryMagazineSize>
 				<reloadTime>25</reloadTime>
 				<mainWeaponLabel>Use rail maingun</mainWeaponLabel>
 				<secondaryWeaponLabel>Use coaxial rail HMG</secondaryWeaponLabel>

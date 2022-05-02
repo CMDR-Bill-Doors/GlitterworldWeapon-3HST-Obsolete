@@ -114,11 +114,14 @@
 			<Gun_3HST_Light_Machine_Railgun>1</Gun_3HST_Light_Machine_Railgun>
 			<Steel>50</Steel>
 			<Plasteel>200</Plasteel>
-			<Uranium>50</Uranium>
+			<Uranium>25</Uranium>
 			<ComponentIndustrial>8</ComponentIndustrial>
 			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
-		<designationCategory>Security</designationCategory>
+		<designationCategory>PLA_DesignationCategory_Vehicle</designationCategory>
+		<researchPrerequisites>
+			<li>Research_3HST_AFP</li>
+		</researchPrerequisites>
 		<comps>
 			<li Class="PLA.Vehicle.CompProperties_BuildingToVehicle">
 				<vehicle>Pawn_3HSTAFP_PLAST</vehicle>
@@ -247,7 +250,10 @@
 			<ComponentIndustrial>25</ComponentIndustrial>
 			<ComponentSpacer>10</ComponentSpacer>
 		</costList>
-		<designationCategory>Security</designationCategory>
+		<designationCategory>PLA_DesignationCategory_Vehicle</designationCategory>
+		<researchPrerequisites>
+			<li>Research_3HST_MBT</li>
+		</researchPrerequisites>
 		<comps>
 			<li Class="PLA.Vehicle.CompProperties_BuildingToVehicle">
 				<vehicle>Pawn_3HSTMBT_PLAST</vehicle>
@@ -373,11 +379,14 @@
 			<Gun_3HST_Quad_LGIS_Launcher>1</Gun_3HST_Quad_LGIS_Launcher>
 			<Steel>150</Steel>
 			<Plasteel>500</Plasteel>
-			<Uranium>450</Uranium>
+			<Uranium>300</Uranium>
 			<ComponentIndustrial>18</ComponentIndustrial>
 			<ComponentSpacer>5</ComponentSpacer>
 		</costList>
-		<designationCategory>Security</designationCategory>
+		<designationCategory>PLA_DesignationCategory_Vehicle</designationCategory>
+		<researchPrerequisites>
+			<li>Research_3HST_IFV</li>
+		</researchPrerequisites>
 		<comps>
 			<li Class="PLA.Vehicle.CompProperties_BuildingToVehicle">
 				<vehicle>Pawn_3HSTIFV_PLAST</vehicle>

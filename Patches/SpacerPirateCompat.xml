@@ -29,7 +29,7 @@
 				</li>
 
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[@Name ="Base105mmDemoLauncher" or defName=“Gun_3HST_AutoGrenade”]/weaponTags</xpath>
+					<xpath>Defs/ThingDef[@Name="Base105mmDemoLauncher" or defName="Gun_3HST_AutoGrenade"]/weaponTags</xpath>
 					<value>
 						<li>GunSPDemo</li>
 						<li>GunSPLord</li>
@@ -37,14 +37,14 @@
 				</li>
 
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[@Name ="BaseDisposableLGIS"]/weaponTags</xpath>
+					<xpath>Defs/ThingDef[@Name="BaseDisposableLGIS"]/weaponTags</xpath>
 					<value>
 						<li>GunSPDemo</li>
 					</value>
 				</li>
 
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName=“Gun_3HST_LGIS_thermobaric” or defName=“Gun_3HST_LGIS_Minelayer”]/weaponTags</xpath>
+					<xpath>Defs/ThingDef[defName="Gun_3HST_LGIS_thermobaric" or defName="Gun_3HST_LGIS_Minelayer"]/weaponTags</xpath>
 					<value>
 						<li>GunSPLord</li>
 					</value>
