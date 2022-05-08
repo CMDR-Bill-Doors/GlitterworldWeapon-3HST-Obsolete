@@ -139,7 +139,7 @@
 		</modExtensions>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>35</magazineSize>
+				<magazineSize>15</magazineSize>
 				<reloadTime>7.7</reloadTime>
 				<ammoSet>AmmoSet_ScatterRG</ammoSet>
 			</li>

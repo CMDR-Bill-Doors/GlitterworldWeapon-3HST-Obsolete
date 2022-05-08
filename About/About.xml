@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>Bill Doors' Glitterworld Weapon Pack: 3HST limited corporation</name>
-  <author>3HST Limited</author>
-  <packageId>3HSTltd.Weapons.Base</packageId>
-  <supportedVersions>
-    <li>1.3</li>
-  </supportedVersions>
-  <loadAfter>
-    <li>Ludeon.RimWorld</li>
-    <li>Ludeon.RimWorld.Royalty</li>
-    <li>CETeam.CombatExtended</li>
-	  <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
-  </loadAfter>
-  <modDependencies>
-    <li>
-      <packageId>CETeam.CombatExtended</packageId>
-      <displayName>Combat Extended</displayName>
-      <downloadUrl>https://github.com/CombatExtended-Continued/CombatExtended</downloadUrl>
-    </li>
-  </modDependencies>
-  <description>This mod introduces two brand-new types of weapons to rimworld: enemy-penetrating railguns, and missile launchers capable of switching between direct and indirect fire mode.</description>
+	<name>Bill Doors' Glitterworld Weapon Pack: 3HST limited corporation</name>
+	<author>3HST Limited</author>
+	<packageId>3HSTltd.Weapons.Base</packageId>
+	<supportedVersions>
+		<li>1.3</li>
+	</supportedVersions>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>CETeam.CombatExtended</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>issaczhuang.pla.vehicle</li>
+	</loadAfter>
+	<modDependencies>
+		<li>
+			<packageId>CETeam.CombatExtended</packageId>
+			<displayName>Combat Extended</displayName>
+			<downloadUrl>https://github.com/CombatExtended-Continued/CombatExtended</downloadUrl>
+		</li>
+	</modDependencies>
+	<description>This mod introduces two brand-new types of weapons to rimworld: enemy-penetrating railguns, and missile launchers capable of switching between direct and indirect fire mode.</description>
 </ModMetaData>
