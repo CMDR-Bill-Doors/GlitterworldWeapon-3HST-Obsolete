@@ -223,18 +223,9 @@
 	</ThingDef>
 
 
-
-	<ThingDef ParentName="BaseSubmunition">
-		<defName>Fragment_ExplosiveSubmunitionFar</defName>
-		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<gravityFactor>10</gravityFactor>
-		</projectile>
-	</ThingDef>
-
 	<ThingDef Name="BaseSubmunition" ParentName="BaseFragment">
 		<defName>Fragment_ExplosiveSubmunition</defName>
 		<label>Explosive submunition</label>
-		<thingClass>ThreeHST.ProjectileCE_FromAirExplode</thingClass>
 		<randomizeRotationOnSpawn>true</randomizeRotationOnSpawn>
 		<graphicData>
 			<texPath>Things/Projectile/ClusterBomblet</texPath>
@@ -244,30 +235,29 @@
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<explosionRadius>0.9</explosionRadius>
 			<damageDef>Bomb</damageDef>
-			<speed>20</speed>
+			<speed>10</speed>
 			<armorPenetrationSharp>0</armorPenetrationSharp>
 			<damageAmountBase>15</damageAmountBase>
 			<armorPenetrationBlunt>0</armorPenetrationBlunt>
 			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
 			<alwaysFreeIntercept>true</alwaysFreeIntercept>
-			<gravityFactor>15</gravityFactor>
+			<gravityFactor>8</gravityFactor>
 		</projectile>
 		<comps>
 			<li Class="CombatExtended.CompProperties_Fragments">
 				<fragments>
-					<Fragment_Small>15</Fragment_Small>
+					<Fragment_Small>8</Fragment_Small>
 				</fragments>
 			</li>
 		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseSubmunition">
-		<defName>Fragment_ExplosiveSubmunitionNear</defName>
+		<defName>Fragment_ExplosiveSubmunitionHiVelovity</defName>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<gravityFactor>30</gravityFactor>
+			<speed>20</speed>
 		</projectile>
 	</ThingDef>
-
 
 
 	<ThingDef ParentName="BaseFragment">
@@ -315,7 +305,7 @@
 			<damageDef>Blunt</damageDef>
 			<damageAmountBase>5</damageAmountBase>
 			<armorPenetrationBlunt>20</armorPenetrationBlunt>
-			<speed>15</speed>
+			<speed>10</speed>
 			<alwaysFreeIntercept>true</alwaysFreeIntercept>
 			<gravityFactor>10</gravityFactor>
 		</projectile>
@@ -806,13 +796,13 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_Fragments">
 				<fragments>
-					<Fragment_ExplosiveSubmunitionNear>5</Fragment_ExplosiveSubmunitionNear>
-					<Fragment_ExplosiveSubmunition>10</Fragment_ExplosiveSubmunition>
-					<Fragment_ExplosiveSubmunitionFar>15</Fragment_ExplosiveSubmunitionFar>
+					<Fragment_ExplosiveSubmunitionHiVelovity>30</Fragment_ExplosiveSubmunitionHiVelovity>
 					<Fragment_ClusterMissile_casingA>1</Fragment_ClusterMissile_casingA>
 					<Fragment_ClusterMissile_casingB>1</Fragment_ClusterMissile_casingB>
 					<Fragment_ClusterMissile_casingC>1</Fragment_ClusterMissile_casingC>
 				</fragments>
+				<fragAngleRange>5~25</fragAngleRange>
+				<fragXZAngleRange>-45~45</fragXZAngleRange>
 			</li>
 		</comps>
 	</ThingDef>
@@ -1004,6 +994,8 @@
 					<Fragment_AerialDeployedMineCasingB>1</Fragment_AerialDeployedMineCasingB>
 					<Fragment_AerialDeployedMineCasingC>1</Fragment_AerialDeployedMineCasingC>
 				</fragments>
+				<fragAngleRange>10~45</fragAngleRange>
+				<fragXZAngleRange>-45~45</fragXZAngleRange>
 			</li>
 		</comps>
 	</ThingDef>
@@ -1149,13 +1141,12 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_Fragments">
 				<fragments>
-					<Fragment_ExplosiveSubmunitionNear>5</Fragment_ExplosiveSubmunitionNear>
-					<Fragment_ExplosiveSubmunition>15</Fragment_ExplosiveSubmunition>
-					<Fragment_ExplosiveSubmunitionFar>25</Fragment_ExplosiveSubmunitionFar>
+					<Fragment_ExplosiveSubmunition>30</Fragment_ExplosiveSubmunition>
 					<Fragment_ClusterMissile_casingA>1</Fragment_ClusterMissile_casingA>
 					<Fragment_ClusterMissile_casingB>1</Fragment_ClusterMissile_casingB>
 					<Fragment_ClusterMissile_casingC>1</Fragment_ClusterMissile_casingC>
 				</fragments>
+				<fragAngleRange>0.05~45</fragAngleRange>
 			</li>
 		</comps>
 	</ThingDef>
@@ -1347,6 +1338,8 @@
 					<Fragment_AerialDeployedMineCasingB>1</Fragment_AerialDeployedMineCasingB>
 					<Fragment_AerialDeployedMineCasingC>1</Fragment_AerialDeployedMineCasingC>
 				</fragments>
+				<fragAngleRange>10~45</fragAngleRange>
+				<fragXZAngleRange>-45~45</fragXZAngleRange>
 			</li>
 		</comps>
 	</ThingDef>

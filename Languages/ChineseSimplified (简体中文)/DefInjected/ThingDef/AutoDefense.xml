@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 3HST automatic firepower platform -->
+  <Building_3HSTAFP_PLAST.label>3HST自行火力支援平台</Building_3HSTAFP_PLAST.label>
+  <!-- EN: An remote controled weapon station on tracks, powered by a tiny fission reactor. -->
+  <Building_3HSTAFP_PLAST.description>由一个小型裂变反应堆驱动的履带式遥控武器站。</Building_3HSTAFP_PLAST.description>
+  
+  <!-- EN: 3HST LCF-03 IFV -->
+  <Building_3HSTIFV_PLAST.label>3HST LCF-03式步战车</Building_3HSTIFV_PLAST.label>
+  <!-- EN: A remotely controled infantry fighting vehicle equipped with a powerful 20mm rail autocannon. -->
+  <Building_3HSTIFV_PLAST.description>装备有强大的20mm自动磁轨炮和LGIS发射器的重型步战车。</Building_3HSTIFV_PLAST.description>
+  
+  <!-- EN: 3HST LCB-04 MBT -->
+  <Building_3HSTMBT_PLAST.label>3HST LCB-04式主战坦克</Building_3HSTMBT_PLAST.label>
+  <!-- EN: An 3HST main battle tank armed with 76mm rail main gun, powered by a tiny fission reactor. -->
+  <Building_3HSTMBT_PLAST.description>先进的太空时代主战坦克，重型磁轨主炮和同轴重机枪能驱散一切来犯之敌。</Building_3HSTMBT_PLAST.description>
+  
+  <!-- EN: 3HST LCF-03 IFV -->
+  <Mech_3HSTIFV_PLAST.label>3HST LCF-03式步战车</Mech_3HSTIFV_PLAST.label>
+  <!-- EN: A remotely controled infantry fighting vehicle equipped with a powerful 20mm rail autocannon. -->
+  <Mech_3HSTIFV_PLAST.description>装备有强大的20mm自动磁轨炮和LGIS发射器的重型步战车。</Mech_3HSTIFV_PLAST.description>
+  <!-- EN: chassis -->
+  <Mech_3HSTIFV_PLAST.tools.chassis.label>车体</Mech_3HSTIFV_PLAST.tools.chassis.label>
+  
+  <!-- EN: 3HST LCB-04 MBT -->
+  <Mech_3HSTMBT_PLAST.label>3HST LCB-04式主战坦克</Mech_3HSTMBT_PLAST.label>
+  <!-- EN: A remotely controled main battle tank equipped with a powerful 76mm rail cannon. -->
+  <Mech_3HSTMBT_PLAST.description>先进的太空时代主战坦克，重型磁轨主炮和同轴重机枪能驱散一切来犯之敌。</Mech_3HSTMBT_PLAST.description>
+  <!-- EN: chassis -->
+  <Mech_3HSTMBT_PLAST.tools.chassis.label>车体</Mech_3HSTMBT_PLAST.tools.chassis.label>
+  
+  <!-- EN: 3HST automatic fire platform -->
+  <Mech_AutoFirePlatform_PLAST.label>3HST自行火力支援平台</Mech_AutoFirePlatform_PLAST.label>
+  <!-- EN: An armored automated vehicle with rudimentary IFF system and a turret mount. -->
+  <Mech_AutoFirePlatform_PLAST.description>由一个小型裂变反应堆驱动的履带式遥控武器站。</Mech_AutoFirePlatform_PLAST.description>
+  <!-- EN: chassis -->
+  <Mech_AutoFirePlatform_PLAST.tools.chassis.label>车体</Mech_AutoFirePlatform_PLAST.tools.chassis.label>
+  
+</LanguageData>

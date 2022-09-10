@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Mounted 3HST 20mm rail autocannon -->
+  <Gun_20mmAC_TurretIFV.label>3HST制20mm磁轨自动炮（步战车用）</Gun_20mmAC_TurretIFV.label>
+  <!-- EN: 3HST 20mm rail autocannon on a vehicular emplacement. -->
+  <Gun_20mmAC_TurretIFV.description>安装在步战车炮塔上的3HST制20mm磁轨自动炮</Gun_20mmAC_TurretIFV.description>
+  <!-- EN: Use auto railcannon -->
+  <Gun_20mmAC_TurretIFV.comps.CompAmmoUserVehicle.mainWeaponLabel>使用磁轨自动炮</Gun_20mmAC_TurretIFV.comps.CompAmmoUserVehicle.mainWeaponLabel>
+  <!-- EN: Use LGIS launcher -->
+  <Gun_20mmAC_TurretIFV.comps.CompAmmoUserVehicle.secondaryWeaponLabel>使用LGIS发射器</Gun_20mmAC_TurretIFV.comps.CompAmmoUserVehicle.secondaryWeaponLabel>
+  <!-- EN: Mounted 3HST 20mm rail autocannon -->
+  <Gun_20mmAC_TurretIFV.verbs.Verb_ShootVehicleCE.label>3HST制20mm磁轨自动炮</Gun_20mmAC_TurretIFV.verbs.Verb_ShootVehicleCE.label>
+  
+  <!-- EN: Mounted 3HST 20mm rail autocannon -->
+  <Gun_20mmAC_TurretVehicle.label>3HST制20mm磁轨自动炮（载具用）</Gun_20mmAC_TurretVehicle.label>
+  <!-- EN: 3HST 20mm rail autocannon on a vehicular emplacement. -->
+  <Gun_20mmAC_TurretVehicle.description>安装在载具上的3HST制20mm磁轨自动炮</Gun_20mmAC_TurretVehicle.description>
+  <!-- EN: Mounted 3HST 20mm rail autocannon -->
+  <Gun_20mmAC_TurretVehicle.verbs.Verb_ShootVehicleCE.label>3HST制20mm磁轨自动炮</Gun_20mmAC_TurretVehicle.verbs.Verb_ShootVehicleCE.label>
+  
+  <!-- EN: Mounted 3HST automatic indirect grenade system -->
+  <Gun_3HST_AutoGrenade_TurretVehicle.label>3HST制自动曲射榴弹系统（载具用）</Gun_3HST_AutoGrenade_TurretVehicle.label>
+  <!-- EN: 3HST automatic indirect grenade system on a vehicular emplacement. -->
+  <Gun_3HST_AutoGrenade_TurretVehicle.description>安装在载具上的3HST制自动曲射榴弹系统</Gun_3HST_AutoGrenade_TurretVehicle.description>
+  <!-- EN: Mounted 3HST automatic indirect grenade system -->
+  <Gun_3HST_AutoGrenade_TurretVehicle.verbs.Verb_ShootVehicleCE.label>3HST制自动曲射榴弹系统</Gun_3HST_AutoGrenade_TurretVehicle.verbs.Verb_ShootVehicleCE.label>
+  
+  <!-- EN: Mounted 3HST 5mm LMG -->
+  <Gun_5mmHMG_TurretVehicle.label>3HST制5mm磁轨轻机枪（载具用）</Gun_5mmHMG_TurretVehicle.label>
+  <!-- EN: 3HST 5mm LMG on a vehicular emplacement. -->
+  <Gun_5mmHMG_TurretVehicle.description>安装在载具上的3HST制5mm磁轨轻机枪</Gun_5mmHMG_TurretVehicle.description>
+  <!-- EN: Mounted 3HST 5mm LMG -->
+  <Gun_5mmHMG_TurretVehicle.verbs.Verb_ShootVehicleCE.label>3HST制5mm磁轨轻机枪</Gun_5mmHMG_TurretVehicle.verbs.Verb_ShootVehicleCE.label>
+  
+  <!-- EN: 3HST 76mm tank maingun -->
+  <Gun_76mmRGTank.label>3HST制76mm坦克主炮</Gun_76mmRGTank.label>
+  <!-- EN: 3HST 76mm heavy railgun on MBT turret. -->
+  <Gun_76mmRGTank.description>安装在主战坦克主炮塔上的3HST制76mm重磁轨炮</Gun_76mmRGTank.description>
+  <!-- EN: Use rail maingun -->
+  <Gun_76mmRGTank.comps.CompAmmoUserVehicle.mainWeaponLabel>使用主炮</Gun_76mmRGTank.comps.CompAmmoUserVehicle.mainWeaponLabel>
+  <!-- EN: Use coaxial rail HMG -->
+  <Gun_76mmRGTank.comps.CompAmmoUserVehicle.secondaryWeaponLabel>使用同轴机枪</Gun_76mmRGTank.comps.CompAmmoUserVehicle.secondaryWeaponLabel>
+  <!-- EN: 3HST 76mm tank maingun -->
+  <Gun_76mmRGTank.verbs.Verb_ShootVehicleCE.label>3HST制76mm坦克主炮</Gun_76mmRGTank.verbs.Verb_ShootVehicleCE.label>
+  
+  <!-- EN: Dual 3HST 9mm HMG -->
+  <Gun_9mmHMG_DualVehicle.label>双联3HST制9mm磁轨重机枪（载具用）</Gun_9mmHMG_DualVehicle.label>
+  <!-- EN: Two 3HST 9mm HMG on a vehicular emplacement. -->
+  <Gun_9mmHMG_DualVehicle.description>安装在载具上的双联3HST制9mm磁轨重机枪</Gun_9mmHMG_DualVehicle.description>
+  <!-- EN: Dual 3HST 9mm HMG -->
+  <Gun_9mmHMG_DualVehicle.verbs.Verb_ShootVehicleCE.label>双联3HST制9mm磁轨重机枪</Gun_9mmHMG_DualVehicle.verbs.Verb_ShootVehicleCE.label>
+  
+  <!-- EN: Mounted 3HST 9mm HMG -->
+  <Gun_9mmHMG_TurretVehlcle.label>3HST制9mm磁轨重机枪（载具用）</Gun_9mmHMG_TurretVehlcle.label>
+  <!-- EN: 3HST 9mm HMG on a vehicular emplacement. -->
+  <Gun_9mmHMG_TurretVehlcle.description>安装在载具上的3HST制磁轨重机枪</Gun_9mmHMG_TurretVehlcle.description>
+  <!-- EN: Mounted 3HST 9mm HMG -->
+  <Gun_9mmHMG_TurretVehlcle.verbs.Verb_ShootVehicleCE.label>3HST制磁轨重机枪</Gun_9mmHMG_TurretVehlcle.verbs.Verb_ShootVehicleCE.label>
+  
+  <!-- EN: dual LGIS missile launcher -->
+  <Gun_DualLGIS_Vehicle.label>双联LGIS发射器（载具用）</Gun_DualLGIS_Vehicle.label>
+  <!-- EN: A multiple rocket launcher capable of holding and firing 2 LGIS missiles.\n\nThis simple launcher does not come with rail accelerators and solely depends on the propellant charge in the casing to fire. While range remain unchanged, this launcher benefits from better fire rate and accuracy. -->
+  <Gun_DualLGIS_Vehicle.description>安装在载具上的双联LGIS发射器</Gun_DualLGIS_Vehicle.description>
+  <!-- EN: dual LGIS missile launcher -->
+  <Gun_DualLGIS_Vehicle.verbs.Verb_ShootVehicleCE.label>双联LGIS发射器</Gun_DualLGIS_Vehicle.verbs.Verb_ShootVehicleCE.label>
+  
+  <!-- EN: multiple LGIS missile launcher -->
+  <Gun_MLGIS_Vehicle.label>3HST制多联LGIS发射器（载具用）</Gun_MLGIS_Vehicle.label>
+  <!-- EN: A multiple rocket launcher capable of holding and firing 27 LGIS missiles.  Built-in low-power rail accelerator gives missile greater range. -->
+  <Gun_MLGIS_Vehicle.description>安装在载具上的3HST制多联LGIS发射器</Gun_MLGIS_Vehicle.description>
+  <!-- EN: multiple LGIS missile launcher -->
+  <Gun_MLGIS_Vehicle.verbs.Verb_ShootVehicleCE.label>3HST制多联LGIS发射器</Gun_MLGIS_Vehicle.verbs.Verb_ShootVehicleCE.label>
+  
+</LanguageData>

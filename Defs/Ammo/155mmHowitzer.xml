@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<CombatExtended.AmmoCategoryDef>
+		<defName>GrenadeMinelayer</defName>
+		<label>mine layer</label>
+		<labelShort>mine</labelShort>
+		<description>Advanced shell designed for remote destribution of land mines.</description>
+	</CombatExtended.AmmoCategoryDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="155mmHowitzerShellBase">
+		<defName>Ammo_155mmHowitzerShell_Minelayer</defName>
+		<label>155mm Howitzer shell (Minelayer)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Cannon/Howitzer/Minelayer</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>333.53</MarketValue>
+		</statBases>
+		<ammoClass>GrenadeMinelayer</ammoClass>
+		<detonateProjectile>Bullet_155mmHowitzerShell_HE</detonateProjectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseFragment">
+		<defName>Fragment_AerialDeployedMineFast</defName>
+		<label>aerial deployed mine</label>
+		<thingClass>ThreeHST.ProjectileCE_FromAirExplode</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/ADM_projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.4,0.4)</drawSize>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Blunt</damageDef>
+			<damageAmountBase>5</damageAmountBase>
+			<armorPenetrationBlunt>20</armorPenetrationBlunt>
+			<speed>20</speed>
+			<alwaysFreeIntercept>true</alwaysFreeIntercept>
+			<gravityFactor>10</gravityFactor>
+		</projectile>
+		<comps>
+			<li Class="ThreeHST.CompProperties_SpawnThingOnDestroy">
+				<def>Trap_AerialDeployedMine</def>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Base155mmHowitzerShell">
+		<defName>Bullet_155mmHowitzerShell_Minelayer</defName>
+		<label>155mm Howitzer shell (Minelayer)</label>
+		<thingClass>ThreeHST.ProjectileCE_AirExplode</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Minelayer_projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Smoke</damageDef>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<soundExplode>InfernoCannon_Fire</soundExplode>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_AerialDeployedMineFast>36</Fragment_AerialDeployedMineFast>
+					<Fragment_AerialDeployedMineCasingA>1</Fragment_AerialDeployedMineCasingA>
+					<Fragment_AerialDeployedMineCasingB>1</Fragment_AerialDeployedMineCasingB>
+				</fragments>
+				<fragAngleRange>10~45</fragAngleRange>
+				<fragXZAngleRange>-90~90</fragXZAngleRange>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_155mmHowitzerShell_Minelayer</defName>
+		<label>make 155mm minelayer Howitzer shells x1</label>
+		<description>Craft 1 155mm minelayer Howitzer shells.</description>
+		<jobString>Making 155mm minelayer Howitzer shells.</jobString>
+		<workAmount>19400</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>94</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>ComponentIndustrial</li>
+				<li>FSX</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_155mmHowitzerShell_Minelayer>1</Ammo_155mmHowitzerShell_Minelayer>
+		</products>
+		<researchPrerequisite>Research_3HST_ADV_LGIS</researchPrerequisite>
+	</RecipeDef>
+</Defs>

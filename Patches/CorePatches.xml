@@ -132,4 +132,11 @@
 			</li>
 		</value>
 	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_155mmHowitzerShell"]/ammoTypes</xpath>
+		<value>
+			<Ammo_155mmHowitzerShell_Minelayer>Bullet_155mmHowitzerShell_Minelayer</Ammo_155mmHowitzerShell_Minelayer>
+		</value>
+	</Operation>
 </Patch>
