@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef  MayRequire="Ludeon.RimWorld.Biotech" ParentName="Shell_Toxic_Releasing_Base">
+		<defName>LGIS_Toxic_Releasing</defName>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/LGIS_toxic_projectile_landed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef  MayRequire="Ludeon.RimWorld.Biotech" ParentName="Shell_Toxic_Releasing_Base">
+		<defName>LGIS_Toxic_Releasing_Water</defName>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/LGIS_toxic_projectile_landedwater</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+	</ThingDef>
+</Defs>

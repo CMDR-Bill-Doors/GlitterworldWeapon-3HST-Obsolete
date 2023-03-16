@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/WorkGiverDef[defName="PLA_DoBilModifyVehicle"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>Mech_AutoFirePlatform_PLAST</li>
+			<li>Mech_3HSTMBT_PLAST</li>
+			<li>Mech_3HSTIFV_PLAST</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName="PLA_InstallAdvancedFireControlComputer"]/recipeUsers</xpath>
+		<value>
+			<li>Mech_AutoFirePlatform_PLAST</li>
+			<li>Mech_3HSTMBT_PLAST</li>
+			<li>Mech_3HSTIFV_PLAST</li>
+		</value>
+	</Operation>
+</Patch>

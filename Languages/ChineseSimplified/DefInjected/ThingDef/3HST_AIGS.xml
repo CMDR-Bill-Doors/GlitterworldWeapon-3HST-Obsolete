@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Gun_3HST_AutoGrenade.label>3HST制自动曲射榴弹系统</Gun_3HST_AutoGrenade.label>
+  <Gun_3HST_AutoGrenade.description>一个设计用于高角度曲射的自动榴弹发射器。因为实战效果低于预期所以存世量不高。</Gun_3HST_AutoGrenade.description>
+  <Gun_3HST_AutoGrenade.tools.0.label>枪托</Gun_3HST_AutoGrenade.tools.0.label>
+  <Gun_3HST_AutoGrenade.tools.1.label>枪管</Gun_3HST_AutoGrenade.tools.1.label>
+  <Gun_3HST_AutoGrenade.tools.2.label>枪口</Gun_3HST_AutoGrenade.tools.2.label>
+
+
+  <!-- Turret manned -->
+
+  <Turret_3HSTAIGSmanned.label>手动自动曲射榴弹系统炮塔</Turret_3HSTAIGSmanned.label>
+  <Turret_3HSTAIGSmanned.description>一门安装在三脚架上面的3HST自动曲射榴弹系统。</Turret_3HSTAIGSmanned.description>
+
+  <Gun_3HST_AutoGrenade_Turret.label>3HST自动曲射榴弹系统（炮塔用）</Gun_3HST_AutoGrenade_Turret.label>
+  <Gun_3HST_AutoGrenade_Turret.description>安装在炮塔上的3HST自动曲射榴弹系统。</Gun_3HST_AutoGrenade_Turret.description>
+
+
+  <!-- Turret auto -->
+
+  <Turret_3HSTAIGSAuto.label>自动曲射榴弹系统炮塔</Turret_3HSTAIGSAuto.label>
+  <Turret_3HSTAIGSAuto.description>一部装在自动炮塔上的3HST自动曲射榴弹发射器，厚重的装甲保护着内部结构，但是也使得这个炮塔一旦完工就再也无法移动。</Turret_3HSTAIGSAuto.description>
+
+  <Gun_3HST_AutoGrenade_Turret_Auto.label>3HST自动曲射榴弹系统（炮塔用）</Gun_3HST_AutoGrenade_Turret_Auto.label>
+  <Gun_3HST_AutoGrenade_Turret_Auto.description>安装在炮塔上的3HST自动曲射榴弹系统。</Gun_3HST_AutoGrenade_Turret_Auto.description>
+
+
+</LanguageData>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 4mm autopistol -->
+
+  <Gun_3HST_4mm_AutoRailPistol.label>3HST制4mm自动磁轨手枪</Gun_3HST_4mm_AutoRailPistol.label>
+  <Gun_3HST_4mm_AutoRailPistol.description>发射4mm磁轨弹的自动手枪，3HST有限公司的标配副武器。</Gun_3HST_4mm_AutoRailPistol.description>
+  <Gun_3HST_4mm_AutoRailPistol.comps.2.label>磁轨寿命</Gun_3HST_4mm_AutoRailPistol.comps.2.label>
+  <Gun_3HST_4mm_AutoRailPistol.tools.0.label>握把</Gun_3HST_4mm_AutoRailPistol.tools.0.label>
+  <Gun_3HST_4mm_AutoRailPistol.tools.1.label>枪口</Gun_3HST_4mm_AutoRailPistol.tools.1.label>
+  <Gun_3HST_4mm_AutoRailPistol.tools.2.label>能量刺刀刀刃</Gun_3HST_4mm_AutoRailPistol.tools.2.label>
+  <Gun_3HST_4mm_AutoRailPistol.tools.3.label>能量刺刀刀尖</Gun_3HST_4mm_AutoRailPistol.tools.3.label>
+
+
+  <!-- 4mm Triple -->
+
+  <Gun_3HST_4mm_TriRailPistol.label>3HST制4mm三联磁轨手枪</Gun_3HST_4mm_TriRailPistol.label>
+  <Gun_3HST_4mm_TriRailPistol.description>一部结构极其简单的中折式磁轨手枪，专为有情怀的人设计。\n在沙漠星球拍的现代风意面西部片中，经常能看到主角或者反派拿着镀铬雕金红木握把的三联磁轨手枪潇洒换弹的特写镜头。</Gun_3HST_4mm_TriRailPistol.description>
+  <Gun_3HST_4mm_TriRailPistol.comps.2.label>磁轨寿命</Gun_3HST_4mm_TriRailPistol.comps.2.label>
+  <Gun_3HST_4mm_TriRailPistol.tools.0.label>握把</Gun_3HST_4mm_TriRailPistol.tools.0.label>
+  <Gun_3HST_4mm_TriRailPistol.tools.1.label>枪口</Gun_3HST_4mm_TriRailPistol.tools.1.label>
+  <Gun_3HST_4mm_TriRailPistol.tools.2.label>能量刺刀刀刃</Gun_3HST_4mm_TriRailPistol.tools.2.label>
+  <Gun_3HST_4mm_TriRailPistol.tools.3.label>能量刺刀刀尖</Gun_3HST_4mm_TriRailPistol.tools.3.label>
+
+
+  <!-- 4mm SMG -->
+
+  <Gun_3HST_4mm_SMG.label>3HST制4mm磁轨冲锋枪</Gun_3HST_4mm_SMG.label>
+  <Gun_3HST_4mm_SMG.description>第三次内战后代替新重庆系列磁轨霰弹的近战武器，比起手枪射速更高，弹夹容量更大，精确性和操控性更好。</Gun_3HST_4mm_SMG.description>
+  <Gun_3HST_4mm_SMG.comps.2.label>磁轨寿命</Gun_3HST_4mm_SMG.comps.2.label>
+  <Gun_3HST_4mm_SMG.tools.0.label>握把</Gun_3HST_4mm_SMG.tools.0.label>
+  <Gun_3HST_4mm_SMG.tools.1.label>枪口</Gun_3HST_4mm_SMG.tools.1.label>
+  <Gun_3HST_4mm_SMG.tools.2.label>能量刺刀刀刃</Gun_3HST_4mm_SMG.tools.2.label>
+  <Gun_3HST_4mm_SMG.tools.3.label>能量刺刀刀尖</Gun_3HST_4mm_SMG.tools.3.label>
+  <Gun_3HST_4mm_SMG.tools.4.label>枪托</Gun_3HST_4mm_SMG.tools.4.label>
+  <Gun_3HST_4mm_SMG.tools.5.label>枪管</Gun_3HST_4mm_SMG.tools.5.label>
+  <Gun_3HST_4mm_SMG.tools.6.label>枪口</Gun_3HST_4mm_SMG.tools.6.label>
+  <Gun_3HST_4mm_SMG.tools.7.label>能量刺刀刀刃</Gun_3HST_4mm_SMG.tools.7.label>
+  <Gun_3HST_4mm_SMG.tools.8.label>能量刺刀刀尖</Gun_3HST_4mm_SMG.tools.8.label>
+
+
+</LanguageData>

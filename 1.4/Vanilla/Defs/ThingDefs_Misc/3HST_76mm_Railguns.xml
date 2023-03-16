@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Projectile_3HST76mmRG_HE</defName>
+		<label>76mm railgun</label>
+		<thingClass>BillDoorsFramework.PenetratingBullet</thingClass>
+		<uiIconPath>UI/Icons/Projectile_3HST_Rail_Icon</uiIconPath>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,4)</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>BDRG_HighCalRailgun</damageDef>
+			<damageAmountBase>120</damageAmountBase>
+			<stoppingPower>10</stoppingPower>
+			<speed>150</speed>
+			<armorPenetrationBase>2</armorPenetrationBase>
+			<explosionRadius>1.2</explosionRadius>
+			<soundExplode>Explosion_Stun</soundExplode>
+		</projectile>
+		<comps>
+			<li Class="BillDoorsFramework.CompProperties_PostPenetrationExplosive">
+				<compClass>BillDoorsFramework.CompPostPenetrationExplosive</compClass>
+				<damageAmountBase>450</damageAmountBase>
+				<explosiveRadius>4.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<wickTicks>3~10</wickTicks>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="BillDoorsFramework.ModExtension_PenetratingProjectile">
+				<overpenDamageMulti>1</overpenDamageMulti>
+				<stopperDamageMulti>2.5</stopperDamageMulti>
+				<penetrationPotentialMultiplier>10</penetrationPotentialMultiplier>
+				<postPenetrationDeviationAngle>1</postPenetrationDeviationAngle>
+				<bounceEquivalent>1</bounceEquivalent>
+				<bodysizeEquivalentMulti>0.3</bodysizeEquivalentMulti>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Projectile_3HST76mmRG_HE_ID</defName>
+		<label>76mm railgun</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<uiIconPath>UI/Icons/Projectile_3HST_Rail_Icon</uiIconPath>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,2)</drawSize>
+		</graphicData>
+		<projectile>
+			<speed>30</speed>
+			<explosionRadius>4.9</explosionRadius>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>450</damageAmountBase>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<flyOverhead>true</flyOverhead>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTHeavyGun">
+		<defName>Gun_3HST_76mm_Cannon</defName>
+		<label>3HST 76mm heavy railgun</label>
+		<generateAllowChance>0</generateAllowChance>
+		<description>A heavy railgun usually found on 3HST tanks or corvettes, you can also choose to wield it with your hands, if you have the strenth to do so. This artillery system can fire semi-AP HE shells that detonates with a brief delay after penetrating something. While this gun is also capable of indirect fire, it must fire at a steep angle for it to land so near, resulting in very long time to target.</description>
+		<weaponTags>
+			<li>3HST_Weapons</li>
+		</weaponTags>
+		<graphicData>
+			<texPath>Things/Weapons/3HST_76mm_Corvette_Gun_Item</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>4</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>100000</WorkToMake>
+			<Mass>3500</Mass>
+			<AccuracyTouch>0.01</AccuracyTouch>
+			<AccuracyShort>0.1</AccuracyShort>
+			<AccuracyMedium>0.22</AccuracyMedium>
+			<AccuracyLong>0.4</AccuracyLong>
+			<RangedWeapon_Cooldown>30</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>1500</Steel>
+			<Plasteel>3000</Plasteel>
+			<ComponentIndustrial>30</ComponentIndustrial>
+			<ComponentSpacer>10</ComponentSpacer>
+			<Resource_3HST_RailComponent>100</Resource_3HST_RailComponent>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>BDsGlitterworldFaction3HST.Verb_ShootByBarrel</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_3HST76mmRG_HE</defaultProjectile>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<warmupTime>20</warmupTime>
+				<range>85.9</range>
+				<minRange>10</minRange>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<soundCast>RG_76mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>5</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tradeability>Sellable</tradeability>
+		<comps>
+			<li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeBarrel">
+				<durability>4</durability>
+				<label>Rail durability</label>
+				<loadingAmount>1</loadingAmount>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_RailPiercing</li>
+				</concepts>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+	<ThingDef ParentName="Base3HSTStationaryTurretHeavy">
+		<defName>Turret_76mmCorvette</defName>
+		<label>3HST 76mm Corvette Maingun</label>
+		<thingClass>BillDoorsFramework.Building_TurretGunWithGizmo</thingClass>
+		<constructionSkillPrerequisite>15</constructionSkillPrerequisite>
+		<rotatable Inherit="False">false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/Turrets/3HST_76mm_Corvette_Gun_Base</texPath>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<uiIconPath>UI/Icons/Security/3HST_76mm_Corvette_Gun_Turret_icon</uiIconPath>
+		<tradeability>None</tradeability>
+		<statBases>
+			<WorkToBuild>575000</WorkToBuild>
+			<MaxHitPoints>10000</MaxHitPoints>
+			<Mass>12000</Mass>
+			<ShootingAccuracyTurret>1</ShootingAccuracyTurret>
+		</statBases>
+		<designatorDropdown>Group_3HST_AutoRailgunTurret</designatorDropdown>
+		<thingCategories Inherit="False" />
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>3000</basePowerConsumption>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_PowerTurretGun">
+				<rechargePowerConsumption>80000</rechargePowerConsumption>
+				<rechargePower>Recharge power consumption</rechargePower>
+				<cooldownTime>10</cooldownTime>
+				<rechargePower_Stat>The amount of power the weapon will draw from the power grid during cool down.\n\nRailguns' built in capacitors need to be recharged after each salvo, leading to a power consumption spike.\n\nThe power consumption is calculated as: Power draw x Turret cooldown / 1000\n{0} W x {1} s / 1000 = {2} Wd</rechargePower_Stat>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until accelerator rail change</fuelLabel>
+				<fuelGizmoLabel>Rail durability</fuelGizmoLabel>
+				<outOfFuelMessage>Cannot shoot: Needs new accelerator rail</outOfFuelMessage>
+				<fuelFilter>
+					<thingDefs>
+						<li>Resource_3HST_RailComponent</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>30</fuelCapacity>
+				<fuelMultiplier>1</fuelMultiplier>
+				<initialFuelPercent>1</initialFuelPercent>
+				<autoRefuelPercent>0.1</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_RailPiercing</li>
+					<li>BDGW_Turret</li>
+				</concepts>
+			</li>
+		</comps>
+		<description>A 3HST-XML-58 corvette maingun module armed with a 76mm heavy railgun. Turrets like this are commonly found on 3HST corvettes and frigates. This turret is too large to be placed under a roof. This quick-firing artillery system can fire bursts of semi-AP HE shells that detonates with a brief delay after penetrating something.</description>
+		<costList>
+			<Steel>2500</Steel>
+			<Plasteel>6000</Plasteel>
+			<ComponentIndustrial>200</ComponentIndustrial>
+			<ComponentSpacer>40</ComponentSpacer>
+			<Gun_3HST_76mm_Cannon>1</Gun_3HST_76mm_Cannon>
+		</costList>
+		<building>
+			<turretGunDef>Gun_76mmCorvette</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretTopDrawSize>10</turretTopDrawSize>
+			<turretBurstCooldownTime>5</turretBurstCooldownTime>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<size>(5,5)</size>
+		<designationCategory>Security</designationCategory>
+	</ThingDef>
+
+
+	<ThingDef ParentName="Base3HSTTurretGun">
+		<defName>Gun_76mmCorvette</defName>
+		<label>3HST 76mm corvette maingun</label>
+		<graphicData>
+			<texPath>Things/Building/Turrets/3HST_76mm_Corvette_Gun_Turret</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>3HST 76mm heavy railgun on a ship turret.</description>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<statBases>
+			<MarketValue>100000</MarketValue>
+			<AccuracyTouch>0.22</AccuracyTouch>
+			<AccuracyShort>0.33</AccuracyShort>
+			<AccuracyMedium>0.44</AccuracyMedium>
+			<AccuracyLong>0.95</AccuracyLong>
+			<RangedWeapon_Cooldown>10</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_3HST76mmRG_HE</defaultProjectile>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<warmupTime>20</warmupTime>
+				<ticksBetweenBurstShots>60</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+				<range>85.9</range>
+				<minRange>10</minRange>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<soundCast>RG_76mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>5</muzzleFlashScale>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+				<stopBurstWithoutLos>false</stopBurstWithoutLos>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="BillDoorsFramework.CompProperties_SecondaryVerb">
+				<verbProps>
+					<verbClass>Verb_Shoot</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>Projectile_3HST76mmRG_HE_ID</defaultProjectile>
+					<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+					<warmupTime>20</warmupTime>
+					<ticksBetweenBurstShots>60</ticksBetweenBurstShots>
+					<burstShotCount>3</burstShotCount>
+					<range>500</range>
+					<minRange>50</minRange>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+					</targetParams>
+					<soundCast>RG_76mm</soundCast>
+					<soundCastTail>GunTail_Heavy</soundCastTail>
+					<muzzleFlashScale>5</muzzleFlashScale>
+					<forcedMissRadius>5</forcedMissRadius>
+					<requireLineOfSight>false</requireLineOfSight>
+					<consumeFuelPerShot>2</consumeFuelPerShot>
+					<stopBurstWithoutLos>false</stopBurstWithoutLos>
+				</verbProps>
+				<mainWeaponLabel>direct fire</mainWeaponLabel>
+				<secondaryWeaponLabel>indirect fire</secondaryWeaponLabel>
+				<description>Extend the sights and switch the launcher to indirect fire mode, or fold it back to direct fire mode.</description>
+				<mainCommandIcon>UI/Icons/FireModes/Direct</mainCommandIcon>
+				<secondaryCommandIcon>UI/Icons/FireModes/Indirect</secondaryCommandIcon>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="BillDoorsFramework.ModExtension_VerbNotUnderRoof">
+				<appliesInPrimaryMode>false</appliesInPrimaryMode>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+
+</Defs>

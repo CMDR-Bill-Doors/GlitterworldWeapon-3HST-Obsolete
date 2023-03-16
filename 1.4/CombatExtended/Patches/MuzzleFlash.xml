@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Testing only-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Muzzle Flash</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!--4mm-->
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Gun_3HST_4mm_AutoRailPistol"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.8,0.5)</drawSize>
+							<offsets>
+								<li>(0.51,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Gun_3HST_4mm_TriRailPistol"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.8,0.5)</drawSize>
+							<offsets>
+								<li>(0.52,0)</li>
+								<li>(0.52,-0.05)</li>
+								<li>(0.52,-0.1)</li>
+							</offsets>
+							<isAlternately>true</isAlternately>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Gun_3HST_4mm_SMG"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(0.8,0.5)</drawSize>
+							<offsets>
+								<li>(0.61,-0.06)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<!--5mm-->
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Gun_3HST_Assault_Railgun"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.74,-0.08)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Gun_3HST_Light_Machine_Railgun"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(1.05,0.05)</li>
+								<li>(1.05,-0.05)</li>
+							</offsets>
+							<isAlternately>true</isAlternately>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Gun_3HST_5mmDMR"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(1.11,-0.05)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Gun_5mmHMG_TurretQuad"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.85,-0.15)</li>
+								<li>(0.85,0.15)</li>
+								<li>(0.7,-0.23)</li>
+								<li>(0.7,0.23)</li>
+							</offsets>
+							<isAlternately>true</isAlternately>
+						</li>
+					</value>
+				</li>
+
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Gun_5mmHMG_TurretManned" or defName="Gun_5mmHMG_TurretAuto"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.7,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<!--9mm-->
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Gun_3HST_9mmDMR"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(2,1.5)</drawSize>
+							<offsets>
+								<li>(1.25,-0.04)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Gun_3HST_9mmHMG"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(2,1.5)</drawSize>
+							<offsets>
+								<li>(1.25,-0.22)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Gun_9mmHMG_Dual"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(2,1.5)</drawSize>
+							<offsets>
+								<li>(0.85,-0.18)</li>
+								<li>(0.85,0.18)</li>
+							</offsets>
+							<isAlternately>true</isAlternately>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Gun_9mmHMG_Turret" or defName="Gun_9mmSniper_Turret"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(2,1.5)</drawSize>
+							<offsets>
+								<li>(0.85,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<!--20mm-->
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Gun_3HST_20mmAutocannon"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(5,3)</drawSize>
+							<offsets>
+								<li>(1.2,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Gun_20mmAC_Turret"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(5,3)</drawSize>
+							<offsets>
+								<li>(1.8,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+				<!--76mm-->
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Gun_3HST_76mm_Cannon"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(10,7)</drawSize>
+							<offsets>
+								<li>(2,0.1)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Gun_76mmCorvette"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(10,7)</drawSize>
+							<offsets>
+								<li>(4.5,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<!--Scatter-->
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Gun_3HST_Scatter_Railgun"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,0.5)</drawSize>
+							<offsets>
+								<li>(0.56,0.03)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Gun_3HST_Scatter_Railgun_Heavy"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.89,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Gun_3HST_Scatter_Railgun_Pump"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(1,1)</drawSize>
+							<offsets>
+								<li>(0.94,0.02)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<!--AIGS-->
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Gun_3HST_AutoGrenade"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(2,2)</drawSize>
+							<offsets>
+								<li>(1.05,0.06)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Gun_3HST_AutoGrenade_Turret" or defName="Gun_3HST_AutoGrenade_Turret_Auto"]</xpath>
+					<value>
+						<li Class="MuzzleFlash.MuzzleFlashProps">
+							<def>MF_StandardMuzzleFalsh</def>
+							<drawSize>(2,2)</drawSize>
+							<offsets>
+								<li>(0.7,0)</li>
+							</offsets>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

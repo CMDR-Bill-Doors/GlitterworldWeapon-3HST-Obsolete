@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ResearchProjectDef ParentName="PLA_VehicleResearchProjectBase">
+		<defName>Research_3HST_AFP</defName>
+		<label>3HST APF</label>
+		<description>Allows construction of 3HST automated firepower platform.</description>
+		<prerequisites>
+			<li>MultiAnalyzer</li>
+		</prerequisites>
+		<baseCost>2800</baseCost>
+		<researchViewX>0</researchViewX>
+		<researchViewY>2.1</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="PLA_VehicleResearchProjectBase">
+		<defName>Research_3HST_IFV</defName>
+		<label>3HST-LCF-03</label>
+		<description>Allows construction of 3HST-LCF-03 infantry fighting vehicle.</description>
+		<prerequisites>
+			<li>MultiAnalyzer</li>
+		</prerequisites>
+		<baseCost>4500</baseCost>
+		<researchViewX>1</researchViewX>
+		<researchViewY>2.1</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="PLA_VehicleResearchProjectBase">
+		<defName>Research_3HST_MBT</defName>
+		<label>3HST-LCB-04</label>
+		<description>Allows construction of 3HST-LCB-04 main battle tank.</description>
+		<prerequisites>
+			<li>MultiAnalyzer</li>
+		</prerequisites>
+		<baseCost>8500</baseCost>
+		<researchViewX>2</researchViewX>
+		<researchViewY>2.1</researchViewY>
+	</ResearchProjectDef>
+</Defs>

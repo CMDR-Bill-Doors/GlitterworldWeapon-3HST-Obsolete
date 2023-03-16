@@ -1,0 +1,694 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>AmmoCategory_ScatterRG</defName>
+		<label>3HST Scatterailgun Cartridge</label>
+		<parent>AmmoAdvanced</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberRailgunPistol</iconPath>
+	</ThingCategoryDef>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_ScatterRG</defName>
+		<label>3HST scatterailgun</label>
+		<ammoTypes>
+			<Ammo_ScatterRG_Standard>Projectile_ScatterRG_Heavy</Ammo_ScatterRG_Standard>
+			<Ammo_ScatterRG_HE>Projectile_ScatterRG_HE</Ammo_ScatterRG_HE>
+			<Ammo_ScatterRG_EMP>Projectile_ScatterRG_EMP</Ammo_ScatterRG_EMP>
+			<Ammo_ScatterRG_Smoke>Projectile_ScatterRG_Smoke</Ammo_ScatterRG_Smoke>
+			<Ammo_ScatterRG_HEAT>Projectile_ScatterRG_HEAT</Ammo_ScatterRG_HEAT>
+			<Ammo_ScatterRG_Incendiary>Projectile_ScatterRG_Incendiary</Ammo_ScatterRG_Incendiary>
+			<Ammo_ScatterRG_Tox  MayRequire="Ludeon.RimWorld.Biotech">Projectile_ScatterRG_Tox</Ammo_ScatterRG_Tox>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>Scatterailgun_Standard</defName>
+		<label>Scatterailgun canister</label>
+		<labelShort>scatter</labelShort>
+		<description>A cluster of railgun rounds encased in a large discarding sabot in the similar fashion of a shotgun.</description>
+	</CombatExtended.AmmoCategoryDef>
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>Scatterailgun_HE</defName>
+		<label>Breaching HE Scatterailgun canister</label>
+		<labelShort>HE</labelShort>
+		<description>A small amount of explosive charge is placed inside the casing of a scatterailgun shell, effectvely turning scatterailguns into grenade launchers. Hardened tip allows it to penetrate common wooden walls and dry walls before detonating.</description>
+	</CombatExtended.AmmoCategoryDef>
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>Scatterailgun_EMP</defName>
+		<label>EMP Scatterailgun canister</label>
+		<labelShort>EMP</labelShort>
+		<description>An EMP device is placed inside the casing of a scatterailgun shell, effectvely turning scatterailguns into EMP launchers.</description>
+	</CombatExtended.AmmoCategoryDef>
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>Scatterailgun_Smoke</defName>
+		<label>Smoke Scatterailgun canister</label>
+		<labelShort>Smoke</labelShort>
+		<description>A small amount of smoke generating agent is placed inside the casing of a scatterailgun shell, effectvely turning scatterailguns into smoke launchers.</description>
+	</CombatExtended.AmmoCategoryDef>
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>Scatterailgun_HEAT</defName>
+		<label>HEAT Scatterailgun canister</label>
+		<labelShort>HEAT</labelShort>
+		<description>A small shaped charge is placed inside the casing of a scatterailgun shell, effectvely turning scatterailguns into anti-armor weapons.</description>
+	</CombatExtended.AmmoCategoryDef>
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>Scatterailgun_Incendiary</defName>
+		<label>Incendiary Scatterailgun canister</label>
+		<labelShort>Incendiary</labelShort>
+		<description>A small amount of combustive substance is placed inside the casing of a scatterailgun shell, effectvely turning scatterailguns into incendiary launchers.</description>
+	</CombatExtended.AmmoCategoryDef>
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>Scatterailgun_Toxic</defName>
+		<label>Toxic Scatterailgun canister</label>
+		<labelShort>Toxic</labelShort>
+		<description>Filled with tox gas, a caustic agent that burns the lungs and eyes. Continued exposure to it results in toxic buildup which can be lethal.</description>
+	</CombatExtended.AmmoCategoryDef>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="ScatterailgunBase" ParentName="SpacerMediumAmmoBase" Abstract="true">
+		<statBases>
+			<Mass>0.105</Mass>
+			<Bulk>0.09</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_FabricationBench</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoCategory_ScatterRG</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="ScatterailgunBase">
+		<defName>Ammo_ScatterRG_Standard</defName>
+		<label>3HST Scatterailgun Cartridge (Buck)</label>
+		<uiIconPath>UI/Icons/Grenades/3HST_20mmG_Scatter_1</uiIconPath>
+
+		<description>Large-caliber cartridge containing multiple pellets used on various 3HST scatterailguns.\n\nDespite also calibered as 20mm, its internal component can not survive the extreme acceleration of a railcannon, preventing such ammunition to be used on them.</description>
+		<graphicData>
+			<texPath>Things/Ammo/GrenadeLauncher/Ammo_3HST_20mm/3HST_20mmG_Scatter</texPath>
+			<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
+		</graphicData>
+		<ammoClass>Scatterailgun_Standard</ammoClass>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="ScatterailgunBase">
+		<defName>Ammo_ScatterRG_HE</defName>
+		<label>3HST Scatterailgun Cartridge (HE)</label>
+		<uiIconPath>UI/Icons/Grenades/3HST_20mmG_HE_1</uiIconPath>
+		<generateAllowChance>0.5</generateAllowChance>
+		<description>Large-caliber cartridge containing explosive charge used on various 3HST scatterailguns.\n\nDespite also calibered as 20mm, its internal component can not survive the extreme acceleration of a railcannon, preventing such ammunition to be used on them.</description>
+		<graphicData>
+			<texPath>Things/Ammo/GrenadeLauncher/Ammo_3HST_20mm/3HST_20mmG_HE</texPath>
+			<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
+		</graphicData>
+		<ammoClass>Scatterailgun_HE</ammoClass>
+		<detonateProjectile>Projectile_ScatterRG_HEDetonate</detonateProjectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="ScatterailgunBase">
+		<defName>Ammo_ScatterRG_EMP</defName>
+		<label>3HST Scatterailgun Cartridge (EMP)</label>
+		<uiIconPath>UI/Icons/Grenades/3HST_20mmG_EMP_1</uiIconPath>
+		<generateAllowChance>0.1</generateAllowChance>
+		<description>Large-caliber cartridge containing EMP emmiter used on various 3HST scatterailguns.\n\nDespite also calibered as 20mm, its internal component can not survive the extreme acceleration of a railcannon, preventing such ammunition to be used on them.</description>
+		<graphicData>
+			<texPath>Things/Ammo/GrenadeLauncher/Ammo_3HST_20mm/3HST_20mmG_EMP</texPath>
+			<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
+		</graphicData>
+		<ammoClass>Scatterailgun_EMP</ammoClass>
+		<detonateProjectile>Projectile_ScatterRG_EMP</detonateProjectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="ScatterailgunBase">
+		<defName>Ammo_ScatterRG_Smoke</defName>
+		<label>3HST Scatterailgun Cartridge (Smoke)</label>
+		<uiIconPath>UI/Icons/Grenades/3HST_20mmG_Smoke_1</uiIconPath>
+		<generateAllowChance>0</generateAllowChance>
+		<description>Large-caliber cartridge containing smoke generating agent used on various 3HST scatterailguns.\n\nDespite also calibered as 20mm, its internal component can not survive the extreme acceleration of a railcannon, preventing such ammunition to be used on them.</description>
+		<graphicData>
+			<texPath>Things/Ammo/GrenadeLauncher/Ammo_3HST_20mm/3HST_20mmG_Smoke</texPath>
+			<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
+		</graphicData>
+		<ammoClass>Scatterailgun_Smoke</ammoClass>
+		<detonateProjectile>Projectile_ScatterRG_HEDetonate</detonateProjectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="ScatterailgunBase">
+		<defName>Ammo_ScatterRG_HEAT</defName>
+		<label>3HST Scatterailgun Cartridge (HEAT)</label>
+		<uiIconPath>UI/Icons/Grenades/3HST_20mmG_AT_1</uiIconPath>
+		<generateAllowChance>0.5</generateAllowChance>
+		<description>Large-caliber cartridge containing shaped charge used on various 3HST scatterailguns.\n\nDespite also calibered as 20mm, its internal component can not survive the extreme acceleration of a railcannon, preventing such ammunition to be used on them.</description>
+		<graphicData>
+			<texPath>Things/Ammo/GrenadeLauncher/Ammo_3HST_20mm/3HST_20mmG_AT</texPath>
+			<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
+		</graphicData>
+		<ammoClass>Scatterailgun_HEAT</ammoClass>
+		<detonateProjectile>Projectile_ScatterRG_HEDetonate</detonateProjectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="ScatterailgunBase">
+		<defName>Ammo_ScatterRG_Incendiary</defName>
+		<label>3HST Scatterailgun Cartridge (Incendiary)</label>
+		<uiIconPath>UI/Icons/Grenades/3HST_20mmG_Incendiary_1</uiIconPath>
+		<generateAllowChance>0.25</generateAllowChance>
+		<description>Large-caliber cartridge containing combustive material used on various 3HST scatterailguns.\n\nDespite also calibered as 20mm, its internal component can not survive the extreme acceleration of a railcannon, preventing such ammunition to be used on them.</description>
+		<graphicData>
+			<texPath>Things/Ammo/GrenadeLauncher/Ammo_3HST_20mm/3HST_20mmG_Incendiary</texPath>
+			<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
+		</graphicData>
+		<ammoClass>Scatterailgun_Incendiary</ammoClass>
+		<detonateProjectile>Projectile_ScatterRG_Incendiary</detonateProjectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="ScatterailgunBase"  MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Ammo_ScatterRG_Tox</defName>
+		<label>3HST Scatterailgun Cartridge (Tox)</label>
+		<uiIconPath>UI/Icons/Grenades/3HST_20mmG_Tox_1</uiIconPath>
+		<generateAllowChance>0.25</generateAllowChance>
+		<description>Large-caliber cartridge containing combustive material used on various 3HST scatterailguns.\n\nDespite also calibered as 20mm, its internal component can not survive the extreme acceleration of a railcannon, preventing such ammunition to be used on them.</description>
+		<graphicData>
+			<texPath>Things/Ammo/GrenadeLauncher/Ammo_3HST_20mm/3HST_20mmG_Tox</texPath>
+			<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
+		</graphicData>
+		<ammoClass>Scatterailgun_Toxic</ammoClass>
+		<detonateProjectile>Projectile_ScatterRG_Tox</detonateProjectile>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveDamageType>ToxGas</explosiveDamageType>
+				<explosiveRadius>7</explosiveRadius>
+				<postExplosionGasType>ToxGas</postExplosionGasType>
+				<wickTicks>30~60</wickTicks>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Projectile_ScatterRG_Heavy</defName>
+		<label>2x32.5mm Scatterailgun Sabot</label>
+		<thingClass>BillDoorsFramework.PenetratingBulletCE</thingClass>
+
+		<graphicData>
+			<texPath>Things/Projectile/Shotgun_Pellet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>160</speed>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationSharp>10</armorPenetrationSharp>
+			<armorPenetrationBlunt>25.88</armorPenetrationBlunt>
+			<spreadMult>23.8</spreadMult>
+			<pelletCount>12</pelletCount>
+		</projectile>
+		<modExtensions>
+			<li Class="BillDoorsFramework.ModExtension_PenetratingProjectile">
+				<overpenDamageMulti>0.8</overpenDamageMulti>
+				<PenetrationFloorPercentage>0.2</PenetrationFloorPercentage>
+				<penetrationPotentialMultiplier>1</penetrationPotentialMultiplier>
+				<postPenetrationDeviationAngle>20</postPenetrationDeviationAngle>
+				<buildingEquivalentMulti>0.125</buildingEquivalentMulti>
+				<bodysizeEquivalentMulti>5</bodysizeEquivalentMulti>
+				<treeEquivalent>5</treeEquivalent>
+				<chunkEquivalent>25</chunkEquivalent>
+				<bounceEquivalent>10</bounceEquivalent>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef Name="BaseScatterailgunExplosive" ParentName="BaseBullet" Abstract="true">
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/LauncherShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.3,0.6)</drawSize>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>50</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseScatterailgunExplosive">
+		<defName>Projectile_ScatterRG_HEDetonate</defName>
+		<label>20x40mm Rail-launched grenade (Breach HE)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>17</damageAmountBase>
+			<explosionRadius>1</explosionRadius>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Small>13</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseScatterailgunExplosive">
+		<defName>Projectile_ScatterRG_HE</defName>
+		<label>20x40mm Rail-launched grenade (Breach HE)</label>
+		<thingClass>BillDoorsFramework.PenetratingBulletCE</thingClass>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>30</damageAmountBase>
+			<armorPenetrationSharp>10.2</armorPenetrationSharp>
+			<armorPenetrationBlunt>128.76</armorPenetrationBlunt>
+		</projectile>
+		<comps>
+			<li Class="BillDoorsFramework.CompProperties_PostPenetrationExplosive">
+				<compClass>BillDoorsFramework.CompPostPenetrationExplosive</compClass>
+				<damageAmountBase>17</damageAmountBase>
+				<explosiveRadius>1</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<wickTicks>5~15</wickTicks>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Small>13</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="BillDoorsFramework.ModExtension_PenetratingProjectile">
+				<overpenDamageMulti>0.8</overpenDamageMulti>
+				<PenetrationFloorPercentage>0.2</PenetrationFloorPercentage>
+				<penetrationPotentialMultiplier>1</penetrationPotentialMultiplier>
+				<postPenetrationDeviationAngle>25</postPenetrationDeviationAngle>
+				<buildingEquivalentMulti>0.03</buildingEquivalentMulti>
+				<bodysizeEquivalentMulti>4</bodysizeEquivalentMulti>
+				<treeEquivalent>5</treeEquivalent>
+				<chunkEquivalent>25</chunkEquivalent>
+				<bounceEquivalent>25</bounceEquivalent>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseScatterailgunExplosive">
+		<defName>Projectile_ScatterRG_EMP</defName>
+		<label>20x40mm Rail-launched grenade (EMP)</label>
+
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>EMP</damageDef>
+			<damageAmountBase>17</damageAmountBase>
+			<explosionRadius>1.5</explosionRadius>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseScatterailgunExplosive">
+		<defName>Projectile_ScatterRG_Smoke</defName>
+		<label>20x40mm Rail-launched grenade (Smoke)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<explosionRadius>2</explosionRadius>
+			<damageDef>Smoke</damageDef>
+			<postExplosionGasType>BlindSmoke</postExplosionGasType>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseScatterailgunExplosive">
+		<defName>Projectile_ScatterRG_HEAT</defName>
+		<label>20x40mm Rail-launched grenade (HEAT)</label>
+		<thingClass>CombatExtended.BulletCE</thingClass>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>35</damageAmountBase>
+			<armorPenetrationSharp>65.2</armorPenetrationSharp>
+			<armorPenetrationBlunt>46.7</armorPenetrationBlunt>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>12</damageAmountBase>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveRadius>0.5</explosiveRadius>
+				<explosionSound>MortarBomb_Explode</explosionSound>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Small>6</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseScatterailgunExplosive">
+		<defName>Projectile_ScatterRG_Incendiary</defName>
+		<label>20x40mm Rail-launched grenade (Incendiary)</label>
+
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>PrometheumFlame</damageDef>
+			<damageAmountBase>0</damageAmountBase>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<explosionRadius>1.5</explosionRadius>
+			<preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>0.3</preExplosionSpawnChance>
+			<soundExplode>MortarIncendiary_Explode</soundExplode>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseScatterailgunExplosive" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Projectile_ScatterRG_Tox</defName>
+		<label>20x40mm Rail-launched grenade (Tox)</label>
+
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>ToxGas</damageDef>
+			<damageAmountBase>0</damageAmountBase>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<explosionRadius>1</explosionRadius>
+			<postExplosionGasType>ToxGas</postExplosionGasType>
+			<soundExplode>MortarIncendiary_Explode</soundExplode>
+		</projectile>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_ScatterRG_Standard</defName>
+		<label>make Scatterailgun cartridge (Buck) x200</label>
+		<description>Craft 200 Scatterailgun cartridges (Buck).</description>
+		<jobString>Making Scatterailgun cartridges (Buck).</jobString>
+		<workAmount>2700</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>26</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Plasteel</li>
+				<li>Uranium</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_ScatterRG_Standard>200</Ammo_ScatterRG_Standard>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_ScatterRG_HE</defName>
+		<label>make Scatterailgun cartridge (HE) x100</label>
+		<description>Craft 100 Scatterailgun cartridges (HE).</description>
+		<jobString>Making Scatterailgun cartridges (HE).</jobString>
+		<workAmount>5800</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>26</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_ScatterRG_HE>100</Ammo_ScatterRG_HE>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_ScatterRG_EMP</defName>
+		<label>make Scatterailgun cartridge (EMP) x100</label>
+		<description>Craft 100 Scatterailgun cartridges (EMP).</description>
+		<jobString>Making Scatterailgun cartridges (EMP).</jobString>
+		<workAmount>6800</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>26</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>7</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>ComponentIndustrial</li>
+				<li>Plasteel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_ScatterRG_EMP>100</Ammo_ScatterRG_EMP>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_ScatterRG_Smoke</defName>
+		<label>make Scatterailgun cartridge (Smoke) x100</label>
+		<description>Craft 100 Scatterailgun cartridges (Smoke).</description>
+		<jobString>Making Scatterailgun cartridges (Smoke).</jobString>
+		<workAmount>4600</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>26</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prometheum</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Prometheum</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_ScatterRG_Smoke>100</Ammo_ScatterRG_Smoke>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_ScatterRG_HEAT</defName>
+		<label>make Scatterailgun cartridge (HEAT) x100</label>
+		<description>Craft 100 Scatterailgun cartridges (HEAT).</description>
+		<jobString>Making Scatterailgun cartridges (HEAT).</jobString>
+		<workAmount>6800</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>26</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_ScatterRG_HEAT>100</Ammo_ScatterRG_HEAT>
+		</products>
+	</RecipeDef>
+
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_ScatterRG_Incendiary</defName>
+		<label>make Scatterailgun cartridge (Incendiary) x100</label>
+		<description>Craft 100 Scatterailgun cartridges (Incendiary).</description>
+		<jobString>Making Scatterailgun cartridges (Incendiary).</jobString>
+		<workAmount>4600</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>26</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prometheum</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Prometheum</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_ScatterRG_Incendiary>100</Ammo_ScatterRG_Incendiary>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AmmoRecipeBase"  MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>MakeAmmo_ScatterRG_Tox</defName>
+		<label>make Scatterailgun cartridge (Tox) x100</label>
+		<description>Craft 100 Scatterailgun cartridges (Tox).</description>
+		<jobString>Making Scatterailgun cartridges (Tox).</jobString>
+		<workAmount>4600</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>26</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prometheum</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Prometheum</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_ScatterRG_Tox>100</Ammo_ScatterRG_Tox>
+		</products>
+		<researchPrerequisites>
+			<li>ToxGas</li>
+		</researchPrerequisites>
+	</RecipeDef>
+</Defs>

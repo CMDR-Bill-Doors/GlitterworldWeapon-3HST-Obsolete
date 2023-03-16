@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="Base3HSTHeavyGun">
+		<defName>Gun_3HST_AutoGrenade</defName>
+		<label>3HST automatic indirect grenade system</label>
+		<description>A automatic grenade launcher designed to fire at a high angle, raining grenade from above.</description>
+		<graphicData>
+			<drawSize>1.5,1.5</drawSize>
+			<texPath>Things/Weapons/3HST_Automatic_Indirect_Grenade_System</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>75500</WorkToMake>
+			<SightsEfficiency>1</SightsEfficiency>
+			<ShotSpread>0.15</ShotSpread>
+			<SwayFactor>2.43</SwayFactor>
+			<Bulk>24</Bulk>
+			<Mass>32</Mass>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>165</Steel>
+			<Plasteel>65</Plasteel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<weaponTags>
+			<li>3HST_AIGS</li>
+			<li>CE_AI_Suppressive</li>
+			<li>CE_AI_Launcher</li>
+			<li>WarcasketVeteran</li>
+		</weaponTags>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>BillDoorsFramework.Verb_ShootNotUnderRoofCE</verbClass>
+				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_3HST40mmGrenade_HE_D</defaultProjectile>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<warmupTime>4.225</warmupTime>
+				<minRange>6</minRange>
+				<range>65</range>
+				<burstShotCount>6</burstShotCount>
+				<ticksBetweenBurstShots>14</ticksBetweenBurstShots>
+				<soundCast>InfernoCannon_Fire</soundCast>
+				<muzzleFlashScale>16</muzzleFlashScale>
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<recoilAmount>2.32</recoilAmount>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="BillDoorsFramework.CompProperties_SecondaryAmmo">
+				<secondaryVerb>
+					<verbClass>BillDoorsFramework.Verb_ShootNotUnderRoofCE</verbClass>
+					<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>Bullet_3HST40mmGrenade_HE</defaultProjectile>
+					<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+					<warmupTime>6.226</warmupTime>
+					<minRange>16</minRange>
+					<range>65</range>
+					<burstShotCount>6</burstShotCount>
+					<ticksBetweenBurstShots>14</ticksBetweenBurstShots>
+					<soundCast>InfernoCannon_Fire</soundCast>
+					<muzzleFlashScale>16</muzzleFlashScale>
+					<circularError>10</circularError>
+					<indirectFirePenalty>0.3</indirectFirePenalty>
+					<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+					</targetParams>
+					<recoilAmount>2.32</recoilAmount>
+				</secondaryVerb>
+				<secondaryAmmoProps>
+					<magazineSize>18</magazineSize>
+					<reloadTime>7.8</reloadTime>
+					<ammoSet>AmmoSet_3HST40mmGrenade</ammoSet>
+				</secondaryAmmoProps>
+				<mainWeaponLabel>direct fire</mainWeaponLabel>
+				<secondaryWeaponLabel>indirect fire</secondaryWeaponLabel>
+				<description>switch firing mode</description>
+				<mainCommandIcon>UI/Icons/FireModes/Direct</mainCommandIcon>
+				<secondaryCommandIcon>UI/Icons/FireModes/Indirect</secondaryCommandIcon>
+				<secondaryWeaponChargeSpeeds>
+					<li>5</li>
+					<li>10</li>
+					<li>20</li>
+					<li>30</li>
+					<li>40</li>
+					<li>50</li>
+					<li>60</li>
+					<li>70</li>
+					<li>80</li>
+					<li>90</li>
+					<li>100</li>
+					<li>110</li>
+					<li>120</li>
+					<li>130</li>
+				</secondaryWeaponChargeSpeeds>
+			</li>
+
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>18</magazineSize>
+				<reloadTime>7.8</reloadTime>
+				<ammoSet>AmmoSet_3HST40mmGrenade_Direct</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>TRUE</aiUseBurstMode>
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+		</comps>
+
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.5,1.5</DrawSize>
+				<DrawOffset>0.0,0.0</DrawOffset>
+			</li>
+			<li Class="BillDoorsFramework.ModExtension_LGISdualModeNPCpatch">
+				<chance>0.8</chance>
+			</li>
+			<li Class="BillDoorsFramework.ModExtension_VerbNotUnderRoof">
+				<appliesInPrimaryMode>false</appliesInPrimaryMode>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+
+	<!--Turret manned-->
+	<ThingDef ParentName="Base3HSTMoveableMannedTurret">
+		<defName>Turret_3HSTAIGSmanned</defName>
+		<label>Manned 3HST automatic indirect grenade system</label>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+		<graphicData>
+			<texPath>Things/Building/Turrets/3HST_Small_Turret_BaseManned</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.5,1.5)</drawSize>
+		</graphicData>
+		<uiIconPath>UI/Icons/Security/3HST_AIGS_Manned_icon</uiIconPath>
+		<tradeTags>
+			<li>CE_Turret</li>
+		</tradeTags>
+		<statBases>
+			<Mass>55</Mass>
+			<Bulk>70</Bulk>
+		</statBases>
+		<designatorDropdown Inherit="False">Group_3HST_AIGS</designatorDropdown>
+		<terrainAffordanceNeeded Inherit="False">Light</terrainAffordanceNeeded>
+		<description>A 3HST automatic indirect grenade system mounted on a turret mount.</description>
+		<costList>
+			<Steel>25</Steel>
+			<Gun_3HST_AutoGrenade>1</Gun_3HST_AutoGrenade>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<building>
+			<turretGunDef>Gun_3HST_AutoGrenade_Turret</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretTopDrawSize>2</turretTopDrawSize>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<size>(1,1)</size>
+		<researchPrerequisites>
+			<li>CE_TurretHeavyWeapons</li>
+		</researchPrerequisites>
+		<comps>
+			<li>
+				<compClass>BillDoorsFramework.CompTurretFix</compClass>
+			</li>
+		</comps>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<designationCategory>Security</designationCategory>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseArtilleryWeapon">
+		<defName>Gun_3HST_AutoGrenade_Turret</defName>
+		<label>Mounted 3HST automatic indirect grenade system</label>
+		<graphicData>
+			<texPath>Things/Building/Turrets/3HST_Automatic_Indirect_Grenade_System_Manned</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>3HST automatic indirect grenade system on a stationary emplacement.</description>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<statBases>
+			<SightsEfficiency>2.15</SightsEfficiency>
+			<ShotSpread>0.15</ShotSpread>
+			<SwayFactor>1.2</SwayFactor>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>BillDoorsFramework.Verb_ShootNotUnderRoofCE</verbClass>
+				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_3HST40mmGrenade_HE_D</defaultProjectile>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<warmupTime>1.435</warmupTime>
+				<minRange>6</minRange>
+				<range>65</range>
+				<burstShotCount>6</burstShotCount>
+				<ticksBetweenBurstShots>14</ticksBetweenBurstShots>
+				<soundCast>InfernoCannon_Fire</soundCast>
+				<muzzleFlashScale>16</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+				<recoilAmount>2.32</recoilAmount>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="BillDoorsFramework.CompProperties_SecondaryAmmo">
+				<secondaryVerb>
+					<verbClass>BillDoorsFramework.Verb_ShootNotUnderRoofCE</verbClass>
+					<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>Bullet_3HST40mmGrenade_HE</defaultProjectile>
+					<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+					<warmupTime>3.225</warmupTime>
+					<minRange>16</minRange>
+					<range>65</range>
+					<burstShotCount>6</burstShotCount>
+					<ticksBetweenBurstShots>14</ticksBetweenBurstShots>
+					<soundCast>InfernoCannon_Fire</soundCast>
+					<muzzleFlashScale>16</muzzleFlashScale>
+					<circularError>10</circularError>
+					<indirectFirePenalty>0.3</indirectFirePenalty>
+					<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+					</targetParams>
+					<recoilAmount>2.32</recoilAmount>
+				</secondaryVerb>
+				<secondaryAmmoProps>
+					<magazineSize>60</magazineSize>
+					<reloadTime>7.8</reloadTime>
+					<ammoSet>AmmoSet_3HST40mmGrenade</ammoSet>
+				</secondaryAmmoProps>
+				<mainWeaponLabel>direct fire</mainWeaponLabel>
+				<secondaryWeaponLabel>indirect fire</secondaryWeaponLabel>
+				<description>switch firing mode</description>
+				<mainCommandIcon>UI/Icons/FireModes/Direct</mainCommandIcon>
+				<secondaryCommandIcon>UI/Icons/FireModes/Indirect</secondaryCommandIcon>
+				<secondaryWeaponChargeSpeeds>
+					<li>5</li>
+					<li>10</li>
+					<li>20</li>
+					<li>30</li>
+					<li>40</li>
+					<li>50</li>
+					<li>60</li>
+					<li>70</li>
+					<li>80</li>
+					<li>90</li>
+					<li>100</li>
+					<li>110</li>
+					<li>120</li>
+					<li>130</li>
+				</secondaryWeaponChargeSpeeds>
+			</li>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>60</magazineSize>
+				<reloadTime>7.8</reloadTime>
+				<ammoSet>AmmoSet_3HST40mmGrenade_Direct</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>TRUE</aiUseBurstMode>
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="BillDoorsFramework.ModExtension_VerbNotUnderRoof">
+				<appliesInPrimaryMode>false</appliesInPrimaryMode>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!--Turret auto-->
+	<ThingDef ParentName="Base3HSTStationaryTurretHeavy">
+		<defName>Turret_3HSTAIGSAuto</defName>
+		<label>Auto 3HST automatic indirect grenade system turret</label>
+		<graphicData>
+			<drawSize>(1.5,1.5)</drawSize>
+		</graphicData>
+		<designatorDropdown Inherit="False">Group_3HST_AIGS</designatorDropdown>
+		<uiIconPath>UI/Icons/Security/3HST_AIGS_Auto_icon</uiIconPath>
+		<statBases>
+			<Mass>55</Mass>
+			<Bulk>70</Bulk>
+			<AimingAccuracy>0.5</AimingAccuracy>
+			<ShootingAccuracyTurret>1</ShootingAccuracyTurret>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>460</basePowerConsumption>
+			</li>
+			<li>
+				<compClass>BillDoorsFramework.CompTurretFix</compClass>
+			</li>
+		</comps>
+		<costList>
+			<Steel>250</Steel>
+			<Plasteel>100</Plasteel>
+			<Gun_3HST_AutoGrenade>1</Gun_3HST_AutoGrenade>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<building>
+			<turretGunDef>Gun_3HST_AutoGrenade_Turret_Auto</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretTopDrawSize>2</turretTopDrawSize>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+		</placeWorkers>
+		<size>(2,2)</size>
+		<researchPrerequisites>
+			<li>CE_TurretHeavyWeapons</li>
+		</researchPrerequisites>
+		<designationCategory>Security</designationCategory>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseArtilleryWeapon">
+		<defName>Gun_3HST_AutoGrenade_Turret_Auto</defName>
+		<label>Mounted 3HST automatic indirect grenade system</label>
+		<graphicData>
+			<texPath>Things/Building/Turrets/3HST_Automatic_Indirect_Grenade_System_Auto</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>3HST automatic indirect grenade system on a stationary emplacement.</description>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<statBases>
+			<SightsEfficiency>2.15</SightsEfficiency>
+			<ShotSpread>0.15</ShotSpread>
+			<SwayFactor>1.2</SwayFactor>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>BillDoorsFramework.Verb_ShootNotUnderRoofCE</verbClass>
+				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_3HST40mmGrenade_HE_D</defaultProjectile>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<warmupTime>1.435</warmupTime>
+				<minRange>6</minRange>
+				<range>65</range>
+				<burstShotCount>6</burstShotCount>
+				<ticksBetweenBurstShots>14</ticksBetweenBurstShots>
+				<soundCast>InfernoCannon_Fire</soundCast>
+				<muzzleFlashScale>16</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+				<recoilAmount>2.32</recoilAmount>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="BillDoorsFramework.CompProperties_SecondaryAmmo">
+				<secondaryVerb>
+					<verbClass>BillDoorsFramework.Verb_ShootNotUnderRoofCE</verbClass>
+					<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>Bullet_3HST40mmGrenade_HE</defaultProjectile>
+					<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+					<warmupTime>3.225</warmupTime>
+					<minRange>16</minRange>
+					<range>65</range>
+					<burstShotCount>6</burstShotCount>
+					<ticksBetweenBurstShots>14</ticksBetweenBurstShots>
+					<soundCast>InfernoCannon_Fire</soundCast>
+					<muzzleFlashScale>16</muzzleFlashScale>
+					<circularError>10</circularError>
+					<indirectFirePenalty>0.3</indirectFirePenalty>
+					<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+					</targetParams>
+					<recoilAmount>2.32</recoilAmount>
+				</secondaryVerb>
+				<secondaryAmmoProps>
+					<magazineSize>90</magazineSize>
+					<reloadTime>7.8</reloadTime>
+					<ammoSet>AmmoSet_3HST40mmGrenade</ammoSet>
+				</secondaryAmmoProps>
+				<mainWeaponLabel>direct fire</mainWeaponLabel>
+				<secondaryWeaponLabel>indirect fire</secondaryWeaponLabel>
+				<description>switch firing mode</description>
+				<mainCommandIcon>UI/Icons/FireModes/Direct</mainCommandIcon>
+				<secondaryCommandIcon>UI/Icons/FireModes/Indirect</secondaryCommandIcon>
+				<secondaryWeaponChargeSpeeds>
+					<li>5</li>
+					<li>10</li>
+					<li>20</li>
+					<li>30</li>
+					<li>40</li>
+					<li>50</li>
+					<li>60</li>
+					<li>70</li>
+					<li>80</li>
+					<li>90</li>
+					<li>100</li>
+					<li>110</li>
+					<li>120</li>
+					<li>130</li>
+				</secondaryWeaponChargeSpeeds>
+			</li>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>90</magazineSize>
+				<reloadTime>7.8</reloadTime>
+				<ammoSet>AmmoSet_3HST40mmGrenade_Direct</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>TRUE</aiUseBurstMode>
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="BillDoorsFramework.ModExtension_VerbNotUnderRoof">
+				<appliesInPrimaryMode>false</appliesInPrimaryMode>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

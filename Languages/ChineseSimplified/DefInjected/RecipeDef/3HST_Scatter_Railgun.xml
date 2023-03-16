@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_ScatterRG_Standard.label>制作 3HST制标准霰射磁轨弹 x200</MakeAmmo_ScatterRG_Standard.label>
+  <MakeAmmo_ScatterRG_Standard.description>制作 3HST制标准霰射磁轨弹 x200</MakeAmmo_ScatterRG_Standard.description>
+  <MakeAmmo_ScatterRG_Standard.jobString>正在制作 3HST制标准霰射磁轨弹.</MakeAmmo_ScatterRG_Standard.jobString>
+
+  <MakeAmmo_ScatterRG_HE.label>制作 3HST制霰射磁轨榴弹 (高爆) x100</MakeAmmo_ScatterRG_HE.label>
+  <MakeAmmo_ScatterRG_HE.description>制作 3HST制霰射磁轨榴弹 (高爆) x100</MakeAmmo_ScatterRG_HE.description>
+  <MakeAmmo_ScatterRG_HE.jobString>正在制作 3HST制霰射磁轨榴弹 (高爆).</MakeAmmo_ScatterRG_HE.jobString>
+
+  <MakeAmmo_ScatterRG_EMP.label>制作 3HST制霰射磁轨榴弹 (EMP) x100</MakeAmmo_ScatterRG_EMP.label>
+  <MakeAmmo_ScatterRG_EMP.description>制作 3HST制霰射磁轨榴弹 (EMP) x100</MakeAmmo_ScatterRG_EMP.description>
+  <MakeAmmo_ScatterRG_EMP.jobString>正在制作 3HST制霰射磁轨榴弹 (EMP)。</MakeAmmo_ScatterRG_EMP.jobString>
+
+  <MakeAmmo_ScatterRG_Smoke.label>制作 3HST制霰射磁轨榴弹 (烟雾) x100</MakeAmmo_ScatterRG_Smoke.label>
+  <MakeAmmo_ScatterRG_Smoke.description>制作 3HST制霰射磁轨榴弹 (烟雾) x100</MakeAmmo_ScatterRG_Smoke.description>
+  <MakeAmmo_ScatterRG_Smoke.jobString>正在制作 3HST制霰射磁轨榴弹 (烟雾)0。</MakeAmmo_ScatterRG_Smoke.jobString>
+
+  <MakeAmmo_ScatterRG_HEAT.label>制作 3HST制霰射磁轨榴弹 (破甲) x100</MakeAmmo_ScatterRG_HEAT.label>
+  <MakeAmmo_ScatterRG_HEAT.description>制作 3HST制霰射磁轨榴弹 (破甲) x100</MakeAmmo_ScatterRG_HEAT.description>
+  <MakeAmmo_ScatterRG_HEAT.jobString>正在制作 3HST制霰射磁轨榴弹 (破甲)。</MakeAmmo_ScatterRG_HEAT.jobString>
+
+  <MakeAmmo_ScatterRG_Incendiary.label>制作 3HST制霰射磁轨榴弹 (燃烧) x100</MakeAmmo_ScatterRG_Incendiary.label>
+  <MakeAmmo_ScatterRG_Incendiary.description>制作 3HST制霰射磁轨榴弹 (燃烧) x100</MakeAmmo_ScatterRG_Incendiary.description>
+  <MakeAmmo_ScatterRG_Incendiary.jobString>正在制作 3HST制霰射磁轨榴弹 (燃烧)。</MakeAmmo_ScatterRG_Incendiary.jobString>
+
+  <MakeAmmo_ScatterRG_Tox.label>制作 3HST制霰射磁轨榴弹 (毒气) x100</MakeAmmo_ScatterRG_Tox.label>
+  <MakeAmmo_ScatterRG_Tox.description>制作 3HST制霰射磁轨榴弹 (毒气) x100</MakeAmmo_ScatterRG_Tox.description>
+  <MakeAmmo_ScatterRG_Tox.jobString>正在制作 3HST制霰射磁轨榴弹 (毒气)。</MakeAmmo_ScatterRG_Tox.jobString>
+
+
+</LanguageData>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ResearchProjectDef>
+		<defName>Research_3HST_Railgun</defName>
+		<label>3HST railguns</label>
+		<description>Allows production of 3HST-designed railguns, weapons that trade barrel life and damage for penetration.</description>
+		<baseCost>2000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<hiddenPrerequisites>
+			<li>ChargedShot</li>
+		</hiddenPrerequisites>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<researchViewX>16.00</researchViewX>
+		<researchViewY>5.3</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Research_3HST_Railgun_Components</defName>
+		<label>3HST EMA rails</label>
+		<description>Allows production of advanced electromagnetic accelerators, an essential component if you want to keep your railguns firing.</description>
+		<baseCost>5000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>Research_3HST_Railgun</li>
+		</prerequisites>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<researchViewX>17.00</researchViewX>
+		<researchViewY>5.3</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Research_3HST_ADV_LGIS</defName>
+		<label>Advanced LGIS missile</label>
+		<description>Craft experimental, advanced yet more costy LGIS missiles.</description>
+		<baseCost>5000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>Mortars</li>
+		</prerequisites>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<researchViewX>13</researchViewX>
+		<researchViewY>5.7</researchViewY>
+	</ResearchProjectDef>
+
+</Defs>

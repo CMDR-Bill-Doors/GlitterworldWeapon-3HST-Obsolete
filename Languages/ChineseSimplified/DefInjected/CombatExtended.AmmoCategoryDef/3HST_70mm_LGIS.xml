@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<RocketConfetti.label>礼花弹</RocketConfetti.label>
+	<RocketConfetti.labelShort>礼花</RocketConfetti.labelShort>
+	<RocketConfetti.description>弹头内装载着彩纸而不是杀伤性战斗部，引爆时一个小型雷管炸开弹体并将彩纸播撒出去。</RocketConfetti.description>
+
+	<RocketIncendiary.label>燃烧弹</RocketIncendiary.label>
+	<RocketIncendiary.labelShort>燃烧</RocketIncendiary.labelShort>
+	<RocketIncendiary.description>装满了燃烧剂，撞击后释放，产生覆盖大范围的火焰。</RocketIncendiary.description>
+
+	<RocketSmoke.label>烟雾弹</RocketSmoke.label>
+	<RocketSmoke.labelShort>烟雾</RocketSmoke.labelShort>
+	<RocketSmoke.description>填充发烟剂的弹头，引爆后产生阻挡视线的烟幕。</RocketSmoke.description>
+
+	<RocketEMP.label>EMP弹</RocketEMP.label>
+	<RocketEMP.labelShort>EMP弹</RocketEMP.labelShort>
+	<RocketEMP.description>撞击后产生一股电磁脉冲，暂时干扰电气设备及机甲敌人。</RocketEMP.description>
+
+	<RocketFoam.label>灭火剂</RocketFoam.label>
+	<RocketFoam.labelShort>灭火</RocketFoam.labelShort>
+	<RocketFoam.description>为民用消防而设计的特殊炮弹。由阻燃泡沫填充，可以大面积灭火。</RocketFoam.description>
+
+	<RocketCluster.label>集束炸弹</RocketCluster.label>
+	<RocketCluster.labelShort>集束</RocketCluster.labelShort>
+	<RocketCluster.description>种内含大量爆炸性子弹药的先进弹药。</RocketCluster.description>
+
+	<RocketIllumination.label>照明弹</RocketIllumination.label>
+	<RocketIllumination.labelShort>照明</RocketIllumination.labelShort>
+	<RocketIllumination.description>在撞击后点燃内部的燃烧剂，发出宛如白昼的光芒，照亮一大片区域，持续时间三小时。在封闭空间内点燃的话可能造成火灾。</RocketIllumination.description>
+
+	<RocketMinelayer.label>布雷弹</RocketMinelayer.label>
+	<RocketMinelayer.labelShort>布雷</RocketMinelayer.labelShort>
+	<RocketMinelayer.description>用于远程地雷播撒的先进导弹。</RocketMinelayer.description>
+
+	<BDRG_RailgunAP.label>穿甲磁轨弹</BDRG_RailgunAP.label>
+	<BDRG_RailgunAP.labelShort>穿甲</BDRG_RailgunAP.labelShort>
+	<BDRG_RailgunAP.description>牺牲杀伤性换取穿透建筑物时稳定性的特种磁轨弹药。</BDRG_RailgunAP.description>
+
+	<BDRG_RailgunSAPHE.label>半穿甲高爆弹</BDRG_RailgunSAPHE.label>
+	<BDRG_RailgunSAPHE.labelShort>SAPHE</BDRG_RailgunSAPHE.labelShort>
+	<BDRG_RailgunSAPHE.description>安装有延时引信和爆炸性装药的磁轨弹药，在命中任何物体后延时起爆。</BDRG_RailgunSAPHE.description>
+</LanguageData>

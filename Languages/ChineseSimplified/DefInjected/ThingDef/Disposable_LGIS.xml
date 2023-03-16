@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Direct launchers/ammo -->
+
+  <Gun_3HST_LGIS_frag.label>破片 LGIS发射筒</Gun_3HST_LGIS_frag.label>
+  <Gun_3HST_LGIS_frag.description>搭载激光制导和惯性制导的小口径导弹，装备于步兵或者轻型战斗载具上。\n该导弹是帝国陆军在第三次内战前数十年委托3HST有限公司设计和生产，用于替代榴弹发射器，单兵火箭筒，迫击炮，车载导弹发射器等一系列武器的“终极解决方案”。但是事实上这个决定是否正确还有待历史证明。\nLGIS导弹出厂时便被装在装备有可折叠简易握把和瞄准装置的，可以作为一次性发射筒发射的保护筒包装内。在用做弹药时，将握把和瞄具折叠便可装入发射器。\n这个发射筒目前处在直射模式，利用一系列陀螺仪，测距仪射击诸元输入，发射器上的简易火控会将数据输入进LGIS导弹的惯性导引头，对目标发起快速，突然，精确的直接打击。但是由于尺寸缘故，LGIS导弹的杀伤力有点差强人意，以至于被戏称为“窜天猴”或者“摔炮”。在战后，一款新的导弹研发出来代替它的位置，而战争期间产能过剩的LGIS弹便被大量下发至担任反恐反海盗清剿叛军任务的二线部队。</Gun_3HST_LGIS_frag.description>
+  <Gun_3HST_LGIS_frag.comps.4.description>展开瞄具切换成曲射模式，或是收起瞄具切换成直射模式。</Gun_3HST_LGIS_frag.comps.4.description>
+  <Gun_3HST_LGIS_frag.tools.0.label>枪托</Gun_3HST_LGIS_frag.tools.0.label>
+  <Gun_3HST_LGIS_frag.tools.1.label>枪管</Gun_3HST_LGIS_frag.tools.1.label>
+  <Gun_3HST_LGIS_frag.tools.2.label>枪口</Gun_3HST_LGIS_frag.tools.2.label>
+
+  <Gun_3HST_LGIS_cluster.label>集束 LGIS发射筒</Gun_3HST_LGIS_cluster.label>
+  <Gun_3HST_LGIS_cluster.description>搭载激光制导和惯性制导的小口径导弹，装备于步兵或者轻型战斗载具上。\n该导弹是帝国陆军在第三次内战前数十年委托3HST有限公司设计和生产，用于替代榴弹发射器，单兵火箭筒，迫击炮，车载导弹发射器等一系列武器的“终极解决方案”。但是事实上这个决定是否正确还有待历史证明。\nLGIS导弹出厂时便被装在装备有可折叠简易握把和瞄准装置的，可以作为一次性发射筒发射的保护筒包装内。在用做弹药时，将握把和瞄具折叠便可装入发射器。\n这个发射筒目前处在直射模式，利用一系列陀螺仪，测距仪射击诸元输入，发射器上的简易火控会将数据输入进LGIS导弹的惯性导引头，对目标发起快速，突然，精确的直接打击。但是由于尺寸缘故，LGIS导弹的杀伤力有点差强人意，以至于被戏称为“窜天猴”或者“摔炮”。在战后，一款新的导弹研发出来代替它的位置，而战争期间产能过剩的LGIS弹便被大量下发至担任反恐反海盗清剿叛军任务的二线部队。</Gun_3HST_LGIS_cluster.description>
+  <Gun_3HST_LGIS_cluster.comps.4.description>展开瞄具切换成曲射模式，或是收起瞄具切换成直射模式。</Gun_3HST_LGIS_cluster.comps.4.description>
+  <Gun_3HST_LGIS_cluster.tools.0.label>枪托</Gun_3HST_LGIS_cluster.tools.0.label>
+  <Gun_3HST_LGIS_cluster.tools.1.label>枪管</Gun_3HST_LGIS_cluster.tools.1.label>
+  <Gun_3HST_LGIS_cluster.tools.2.label>枪口</Gun_3HST_LGIS_cluster.tools.2.label>
+
+  <Gun_3HST_LGIS_thermobaric.label>温压 LGIS发射筒</Gun_3HST_LGIS_thermobaric.label>
+  <Gun_3HST_LGIS_thermobaric.description>搭载激光制导和惯性制导的小口径导弹，装备于步兵或者轻型战斗载具上。\n该导弹是帝国陆军在第三次内战前数十年委托3HST有限公司设计和生产，用于替代榴弹发射器，单兵火箭筒，迫击炮，车载导弹发射器等一系列武器的“终极解决方案”。但是事实上这个决定是否正确还有待历史证明。\nLGIS导弹出厂时便被装在装备有可折叠简易握把和瞄准装置的，可以作为一次性发射筒发射的保护筒包装内。在用做弹药时，将握把和瞄具折叠便可装入发射器。\n这个发射筒目前处在直射模式，利用一系列陀螺仪，测距仪射击诸元输入，发射器上的简易火控会将数据输入进LGIS导弹的惯性导引头，对目标发起快速，突然，精确的直接打击。但是由于尺寸缘故，LGIS导弹的杀伤力有点差强人意，以至于被戏称为“窜天猴”或者“摔炮”。在战后，一款新的导弹研发出来代替它的位置，而战争期间产能过剩的LGIS弹便被大量下发至担任反恐反海盗清剿叛军任务的二线部队。</Gun_3HST_LGIS_thermobaric.description>
+  <Gun_3HST_LGIS_thermobaric.comps.4.description>展开瞄具切换成曲射模式，或是收起瞄具切换成直射模式。</Gun_3HST_LGIS_thermobaric.comps.4.description>
+  <Gun_3HST_LGIS_thermobaric.tools.0.label>枪托</Gun_3HST_LGIS_thermobaric.tools.0.label>
+  <Gun_3HST_LGIS_thermobaric.tools.1.label>枪管</Gun_3HST_LGIS_thermobaric.tools.1.label>
+  <Gun_3HST_LGIS_thermobaric.tools.2.label>枪口</Gun_3HST_LGIS_thermobaric.tools.2.label>
+
+  <Gun_3HST_LGIS_heat.label>破甲 LGIS发射筒</Gun_3HST_LGIS_heat.label>
+  <Gun_3HST_LGIS_heat.description>搭载激光制导和惯性制导的小口径导弹，装备于步兵或者轻型战斗载具上。\n该导弹是帝国陆军在第三次内战前数十年委托3HST有限公司设计和生产，用于替代榴弹发射器，单兵火箭筒，迫击炮，车载导弹发射器等一系列武器的“终极解决方案”。但是事实上这个决定是否正确还有待历史证明。\nLGIS导弹出厂时便被装在装备有可折叠简易握把和瞄准装置的，可以作为一次性发射筒发射的保护筒包装内。在用做弹药时，将握把和瞄具折叠便可装入发射器。\n这个发射筒目前处在直射模式，利用一系列陀螺仪，测距仪射击诸元输入，发射器上的简易火控会将数据输入进LGIS导弹的惯性导引头，对目标发起快速，突然，精确的直接打击。但是由于尺寸缘故，LGIS导弹的杀伤力有点差强人意，以至于被戏称为“窜天猴”或者“摔炮”。在战后，一款新的导弹研发出来代替它的位置，而战争期间产能过剩的LGIS弹便被大量下发至担任反恐反海盗清剿叛军任务的二线部队。</Gun_3HST_LGIS_heat.description>
+  <Gun_3HST_LGIS_heat.comps.4.description>展开瞄具切换成曲射模式，或是收起瞄具切换成直射模式。</Gun_3HST_LGIS_heat.comps.4.description>
+  <Gun_3HST_LGIS_heat.tools.0.label>枪托</Gun_3HST_LGIS_heat.tools.0.label>
+  <Gun_3HST_LGIS_heat.tools.1.label>枪管</Gun_3HST_LGIS_heat.tools.1.label>
+  <Gun_3HST_LGIS_heat.tools.2.label>枪口</Gun_3HST_LGIS_heat.tools.2.label>
+
+  <Gun_3HST_LGIS_confetti.label>礼花 LGIS发射筒</Gun_3HST_LGIS_confetti.label>
+  <Gun_3HST_LGIS_confetti.description>搭载激光制导和惯性制导的小口径导弹，装备于步兵或者轻型战斗载具上。\n该导弹是帝国陆军在第三次内战前数十年委托3HST有限公司设计和生产，用于替代榴弹发射器，单兵火箭筒，迫击炮，车载导弹发射器等一系列武器的“终极解决方案”。但是事实上这个决定是否正确还有待历史证明。\nLGIS导弹出厂时便被装在装备有可折叠简易握把和瞄准装置的，可以作为一次性发射筒发射的保护筒包装内。在用做弹药时，将握把和瞄具折叠便可装入发射器。\n这个发射筒目前处在直射模式，利用一系列陀螺仪，测距仪射击诸元输入，发射器上的简易火控会将数据输入进LGIS导弹的惯性导引头，对目标发起快速，突然，精确的直接打击。但是由于尺寸缘故，LGIS导弹的杀伤力有点差强人意，以至于被戏称为“窜天猴”或者“摔炮”。在战后，一款新的导弹研发出来代替它的位置，而战争期间产能过剩的LGIS弹便被大量下发至担任反恐反海盗清剿叛军任务的二线部队。</Gun_3HST_LGIS_confetti.description>
+  <Gun_3HST_LGIS_confetti.comps.4.description>展开瞄具切换成曲射模式，或是收起瞄具切换成直射模式。</Gun_3HST_LGIS_confetti.comps.4.description>
+  <Gun_3HST_LGIS_confetti.tools.0.label>枪托</Gun_3HST_LGIS_confetti.tools.0.label>
+  <Gun_3HST_LGIS_confetti.tools.1.label>枪管</Gun_3HST_LGIS_confetti.tools.1.label>
+  <Gun_3HST_LGIS_confetti.tools.2.label>枪口</Gun_3HST_LGIS_confetti.tools.2.label>
+
+  <Gun_3HST_LGIS_incendiary.label>燃烧 LGIS发射筒</Gun_3HST_LGIS_incendiary.label>
+  <Gun_3HST_LGIS_incendiary.description>搭载激光制导和惯性制导的小口径导弹，装备于步兵或者轻型战斗载具上。\n该导弹是帝国陆军在第三次内战前数十年委托3HST有限公司设计和生产，用于替代榴弹发射器，单兵火箭筒，迫击炮，车载导弹发射器等一系列武器的“终极解决方案”。但是事实上这个决定是否正确还有待历史证明。\nLGIS导弹出厂时便被装在装备有可折叠简易握把和瞄准装置的，可以作为一次性发射筒发射的保护筒包装内。在用做弹药时，将握把和瞄具折叠便可装入发射器。\n这个发射筒目前处在直射模式，利用一系列陀螺仪，测距仪射击诸元输入，发射器上的简易火控会将数据输入进LGIS导弹的惯性导引头，对目标发起快速，突然，精确的直接打击。但是由于尺寸缘故，LGIS导弹的杀伤力有点差强人意，以至于被戏称为“窜天猴”或者“摔炮”。在战后，一款新的导弹研发出来代替它的位置，而战争期间产能过剩的LGIS弹便被大量下发至担任反恐反海盗清剿叛军任务的二线部队。</Gun_3HST_LGIS_incendiary.description>
+  <Gun_3HST_LGIS_incendiary.comps.4.description>展开瞄具切换成曲射模式，或是收起瞄具切换成直射模式。</Gun_3HST_LGIS_incendiary.comps.4.description>
+  <Gun_3HST_LGIS_incendiary.tools.0.label>枪托</Gun_3HST_LGIS_incendiary.tools.0.label>
+  <Gun_3HST_LGIS_incendiary.tools.1.label>枪管</Gun_3HST_LGIS_incendiary.tools.1.label>
+  <Gun_3HST_LGIS_incendiary.tools.2.label>枪口</Gun_3HST_LGIS_incendiary.tools.2.label>
+
+  <Gun_3HST_LGIS_smoke.label>烟雾 LGIS发射筒</Gun_3HST_LGIS_smoke.label>
+  <Gun_3HST_LGIS_smoke.description>搭载激光制导和惯性制导的小口径导弹，装备于步兵或者轻型战斗载具上。\n该导弹是帝国陆军在第三次内战前数十年委托3HST有限公司设计和生产，用于替代榴弹发射器，单兵火箭筒，迫击炮，车载导弹发射器等一系列武器的“终极解决方案”。但是事实上这个决定是否正确还有待历史证明。\nLGIS导弹出厂时便被装在装备有可折叠简易握把和瞄准装置的，可以作为一次性发射筒发射的保护筒包装内。在用做弹药时，将握把和瞄具折叠便可装入发射器。\n这个发射筒目前处在直射模式，利用一系列陀螺仪，测距仪射击诸元输入，发射器上的简易火控会将数据输入进LGIS导弹的惯性导引头，对目标发起快速，突然，精确的直接打击。但是由于尺寸缘故，LGIS导弹的杀伤力有点差强人意，以至于被戏称为“窜天猴”或者“摔炮”。在战后，一款新的导弹研发出来代替它的位置，而战争期间产能过剩的LGIS弹便被大量下发至担任反恐反海盗清剿叛军任务的二线部队。</Gun_3HST_LGIS_smoke.description>
+  <Gun_3HST_LGIS_smoke.comps.4.description>展开瞄具切换成曲射模式，或是收起瞄具切换成直射模式。</Gun_3HST_LGIS_smoke.comps.4.description>
+  <Gun_3HST_LGIS_smoke.tools.0.label>枪托</Gun_3HST_LGIS_smoke.tools.0.label>
+  <Gun_3HST_LGIS_smoke.tools.1.label>枪管</Gun_3HST_LGIS_smoke.tools.1.label>
+  <Gun_3HST_LGIS_smoke.tools.2.label>枪口</Gun_3HST_LGIS_smoke.tools.2.label>
+
+  <Gun_3HST_LGIS_firefoam.label>灭火 LGIS发射筒</Gun_3HST_LGIS_firefoam.label>
+  <Gun_3HST_LGIS_firefoam.description>搭载激光制导和惯性制导的小口径导弹，装备于步兵或者轻型战斗载具上。\n该导弹是帝国陆军在第三次内战前数十年委托3HST有限公司设计和生产，用于替代榴弹发射器，单兵火箭筒，迫击炮，车载导弹发射器等一系列武器的“终极解决方案”。但是事实上这个决定是否正确还有待历史证明。\nLGIS导弹出厂时便被装在装备有可折叠简易握把和瞄准装置的，可以作为一次性发射筒发射的保护筒包装内。在用做弹药时，将握把和瞄具折叠便可装入发射器。\n这个发射筒目前处在直射模式，利用一系列陀螺仪，测距仪射击诸元输入，发射器上的简易火控会将数据输入进LGIS导弹的惯性导引头，对目标发起快速，突然，精确的直接打击。但是由于尺寸缘故，LGIS导弹的杀伤力有点差强人意，以至于被戏称为“窜天猴”或者“摔炮”。在战后，一款新的导弹研发出来代替它的位置，而战争期间产能过剩的LGIS弹便被大量下发至担任反恐反海盗清剿叛军任务的二线部队。</Gun_3HST_LGIS_firefoam.description>
+  <Gun_3HST_LGIS_firefoam.comps.4.description>展开瞄具切换成曲射模式，或是收起瞄具切换成直射模式。</Gun_3HST_LGIS_firefoam.comps.4.description>
+  <Gun_3HST_LGIS_firefoam.tools.0.label>枪托</Gun_3HST_LGIS_firefoam.tools.0.label>
+  <Gun_3HST_LGIS_firefoam.tools.1.label>枪管</Gun_3HST_LGIS_firefoam.tools.1.label>
+  <Gun_3HST_LGIS_firefoam.tools.2.label>枪口</Gun_3HST_LGIS_firefoam.tools.2.label>
+
+  <Gun_3HST_LGIS_Nuke.label>EMP LGIS发射筒</Gun_3HST_LGIS_Nuke.label>
+  <Gun_3HST_LGIS_EMP.description>搭载激光制导和惯性制导的小口径导弹，装备于步兵或者轻型战斗载具上。\n该导弹是帝国陆军在第三次内战前数十年委托3HST有限公司设计和生产，用于替代榴弹发射器，单兵火箭筒，迫击炮，车载导弹发射器等一系列武器的“终极解决方案”。但是事实上这个决定是否正确还有待历史证明。\nLGIS导弹出厂时便被装在装备有可折叠简易握把和瞄准装置的，可以作为一次性发射筒发射的保护筒包装内。在用做弹药时，将握把和瞄具折叠便可装入发射器。\n这个发射筒目前处在直射模式，利用一系列陀螺仪，测距仪射击诸元输入，发射器上的简易火控会将数据输入进LGIS导弹的惯性导引头，对目标发起快速，突然，精确的直接打击。但是由于尺寸缘故，LGIS导弹的杀伤力有点差强人意，以至于被戏称为“窜天猴”或者“摔炮”。在战后，一款新的导弹研发出来代替它的位置，而战争期间产能过剩的LGIS弹便被大量下发至担任反恐反海盗清剿叛军任务的二线部队。</Gun_3HST_LGIS_EMP.description>
+  <Gun_3HST_LGIS_EMP.comps.4.description>展开瞄具切换成曲射模式，或是收起瞄具切换成直射模式。</Gun_3HST_LGIS_EMP.comps.4.description>
+  <Gun_3HST_LGIS_EMP.tools.0.label>枪托</Gun_3HST_LGIS_EMP.tools.0.label>
+  <Gun_3HST_LGIS_EMP.tools.1.label>枪管</Gun_3HST_LGIS_EMP.tools.1.label>
+  <Gun_3HST_LGIS_EMP.tools.2.label>枪口</Gun_3HST_LGIS_EMP.tools.2.label>
+
+  <Gun_3HST_LGIS_Nuke.label>核弹头 LGIS发射筒</Gun_3HST_LGIS_Nuke.label>
+  <Gun_3HST_LGIS_Nuke.description>搭载激光制导和惯性制导的小口径导弹，装备于步兵或者轻型战斗载具上。\n该导弹是帝国陆军在第三次内战前数十年委托3HST有限公司设计和生产，用于替代榴弹发射器，单兵火箭筒，迫击炮，车载导弹发射器等一系列武器的“终极解决方案”。但是事实上这个决定是否正确还有待历史证明。\nLGIS导弹出厂时便被装在装备有可折叠简易握把和瞄准装置的，可以作为一次性发射筒发射的保护筒包装内。在用做弹药时，将握把和瞄具折叠便可装入发射器。\n这个发射筒目前处在直射模式，利用一系列陀螺仪，测距仪射击诸元输入，发射器上的简易火控会将数据输入进LGIS导弹的惯性导引头，对目标发起快速，突然，精确的直接打击。但是由于尺寸缘故，LGIS导弹的杀伤力有点差强人意，以至于被戏称为“窜天猴”或者“摔炮”。在战后，一款新的导弹研发出来代替它的位置，而战争期间产能过剩的LGIS弹便被大量下发至担任反恐反海盗清剿叛军任务的二线部队。</Gun_3HST_LGIS_Nuke.description>
+  <Gun_3HST_LGIS_Nuke.comps.4.description>展开瞄具切换成曲射模式，或是收起瞄具切换成直射模式。</Gun_3HST_LGIS_Nuke.comps.4.description>
+  <Gun_3HST_LGIS_Nuke.tools.0.label>枪托</Gun_3HST_LGIS_Nuke.tools.0.label>
+  <Gun_3HST_LGIS_Nuke.tools.1.label>枪管</Gun_3HST_LGIS_Nuke.tools.1.label>
+  <Gun_3HST_LGIS_Nuke.tools.2.label>枪口</Gun_3HST_LGIS_Nuke.tools.2.label>
+
+  <Gun_3HST_LGIS_Illumination.label>照明 LGIS发射筒</Gun_3HST_LGIS_Illumination.label>
+  <Gun_3HST_LGIS_Illumination.description>搭载激光制导和惯性制导的小口径导弹，装备于步兵或者轻型战斗载具上。\n该导弹是帝国陆军在第三次内战前数十年委托3HST有限公司设计和生产，用于替代榴弹发射器，单兵火箭筒，迫击炮，车载导弹发射器等一系列武器的“终极解决方案”。但是事实上这个决定是否正确还有待历史证明。\nLGIS导弹出厂时便被装在装备有可折叠简易握把和瞄准装置的，可以作为一次性发射筒发射的保护筒包装内。在用做弹药时，将握把和瞄具折叠便可装入发射器。\n这个发射筒目前处在直射模式，利用一系列陀螺仪，测距仪射击诸元输入，发射器上的简易火控会将数据输入进LGIS导弹的惯性导引头，对目标发起快速，突然，精确的直接打击。但是由于尺寸缘故，LGIS导弹的杀伤力有点差强人意，以至于被戏称为“窜天猴”或者“摔炮”。在战后，一款新的导弹研发出来代替它的位置，而战争期间产能过剩的LGIS弹便被大量下发至担任反恐反海盗清剿叛军任务的二线部队。</Gun_3HST_LGIS_Illumination.description>
+  <Gun_3HST_LGIS_Illumination.comps.4.description>展开瞄具切换成曲射模式，或是收起瞄具切换成直射模式。</Gun_3HST_LGIS_Illumination.comps.4.description>
+  <Gun_3HST_LGIS_Illumination.tools.0.label>枪托</Gun_3HST_LGIS_Illumination.tools.0.label>
+  <Gun_3HST_LGIS_Illumination.tools.1.label>枪管</Gun_3HST_LGIS_Illumination.tools.1.label>
+  <Gun_3HST_LGIS_Illumination.tools.2.label>枪口</Gun_3HST_LGIS_Illumination.tools.2.label>
+
+  <Gun_3HST_LGIS_Minelayer.label>布雷 LGIS发射筒</Gun_3HST_LGIS_Minelayer.label>
+  <Gun_3HST_LGIS_Minelayer.description>搭载激光制导和惯性制导的小口径导弹，装备于步兵或者轻型战斗载具上。\n该导弹是帝国陆军在第三次内战前数十年委托3HST有限公司设计和生产，用于替代榴弹发射器，单兵火箭筒，迫击炮，车载导弹发射器等一系列武器的“终极解决方案”。但是事实上这个决定是否正确还有待历史证明。\nLGIS导弹出厂时便被装在装备有可折叠简易握把和瞄准装置的，可以作为一次性发射筒发射的保护筒包装内。在用做弹药时，将握把和瞄具折叠便可装入发射器。\n这个发射筒目前处在直射模式，利用一系列陀螺仪，测距仪射击诸元输入，发射器上的简易火控会将数据输入进LGIS导弹的惯性导引头，对目标发起快速，突然，精确的直接打击。但是由于尺寸缘故，LGIS导弹的杀伤力有点差强人意，以至于被戏称为“窜天猴”或者“摔炮”。在战后，一款新的导弹研发出来代替它的位置，而战争期间产能过剩的LGIS弹便被大量下发至担任反恐反海盗清剿叛军任务的二线部队。</Gun_3HST_LGIS_Minelayer.description>
+  <Gun_3HST_LGIS_Minelayer.comps.4.description>展开瞄具切换成曲射模式，或是收起瞄具切换成直射模式。</Gun_3HST_LGIS_Minelayer.comps.4.description>
+  <Gun_3HST_LGIS_Minelayer.tools.0.label>枪托</Gun_3HST_LGIS_Minelayer.tools.0.label>
+  <Gun_3HST_LGIS_Minelayer.tools.1.label>枪管</Gun_3HST_LGIS_Minelayer.tools.1.label>
+  <Gun_3HST_LGIS_Minelayer.tools.2.label>枪口</Gun_3HST_LGIS_Minelayer.tools.2.label>
+
+  <Gun_3HST_LGIS_Holodecoy.label>诱饵 LGIS发射筒</Gun_3HST_LGIS_Holodecoy.label>
+  <Gun_3HST_LGIS_Holodecoy.description>搭载激光制导和惯性制导的小口径导弹，装备于步兵或者轻型战斗载具上。\n该导弹是帝国陆军在第三次内战前数十年委托3HST有限公司设计和生产，用于替代榴弹发射器，单兵火箭筒，迫击炮，车载导弹发射器等一系列武器的“终极解决方案”。但是事实上这个决定是否正确还有待历史证明。\nLGIS导弹出厂时便被装在装备有可折叠简易握把和瞄准装置的，可以作为一次性发射筒发射的保护筒包装内。在用做弹药时，将握把和瞄具折叠便可装入发射器。\n这个发射筒目前处在直射模式，利用一系列陀螺仪，测距仪射击诸元输入，发射器上的简易火控会将数据输入进LGIS导弹的惯性导引头，对目标发起快速，突然，精确的直接打击。但是由于尺寸缘故，LGIS导弹的杀伤力有点差强人意，以至于被戏称为“窜天猴”或者“摔炮”。在战后，一款新的导弹研发出来代替它的位置，而战争期间产能过剩的LGIS弹便被大量下发至担任反恐反海盗清剿叛军任务的二线部队。</Gun_3HST_LGIS_Holodecoy.description>
+  <Gun_3HST_LGIS_Holodecoy.comps.4.description>展开瞄具切换成曲射模式，或是收起瞄具切换成直射模式。</Gun_3HST_LGIS_Holodecoy.comps.4.description>
+  <Gun_3HST_LGIS_Holodecoy.tools.0.label>枪托</Gun_3HST_LGIS_Holodecoy.tools.0.label>
+  <Gun_3HST_LGIS_Holodecoy.tools.1.label>枪管</Gun_3HST_LGIS_Holodecoy.tools.1.label>
+  <Gun_3HST_LGIS_Holodecoy.tools.2.label>枪口</Gun_3HST_LGIS_Holodecoy.tools.2.label>
+
+  <Gun_3HST_LGIS_Tox.label>毒气 LGIS发射筒</Gun_3HST_LGIS_Tox.label>
+  <Gun_3HST_LGIS_Tox.description>搭载激光制导和惯性制导的小口径导弹，装备于步兵或者轻型战斗载具上。\n该导弹是帝国陆军在第三次内战前数十年委托3HST有限公司设计和生产，用于替代榴弹发射器，单兵火箭筒，迫击炮，车载导弹发射器等一系列武器的“终极解决方案”。但是事实上这个决定是否正确还有待历史证明。\nLGIS导弹出厂时便被装在装备有可折叠简易握把和瞄准装置的，可以作为一次性发射筒发射的保护筒包装内。在用做弹药时，将握把和瞄具折叠便可装入发射器。\n这个发射筒目前处在直射模式，利用一系列陀螺仪，测距仪射击诸元输入，发射器上的简易火控会将数据输入进LGIS导弹的惯性导引头，对目标发起快速，突然，精确的直接打击。但是由于尺寸缘故，LGIS导弹的杀伤力有点差强人意，以至于被戏称为“窜天猴”或者“摔炮”。在战后，一款新的导弹研发出来代替它的位置，而战争期间产能过剩的LGIS弹便被大量下发至担任反恐反海盗清剿叛军任务的二线部队。</Gun_3HST_LGIS_Tox.description>
+  <Gun_3HST_LGIS_Tox.comps.5.description>展开瞄具切换成曲射模式，或是收起瞄具切换成直射模式。</Gun_3HST_LGIS_Tox.comps.5.description>
+  <Gun_3HST_LGIS_Tox.tools.0.label>枪托</Gun_3HST_LGIS_Tox.tools.0.label>
+  <Gun_3HST_LGIS_Tox.tools.1.label>枪管</Gun_3HST_LGIS_Tox.tools.1.label>
+  <Gun_3HST_LGIS_Tox.tools.2.label>枪口</Gun_3HST_LGIS_Tox.tools.2.label>
+
+
+</LanguageData>

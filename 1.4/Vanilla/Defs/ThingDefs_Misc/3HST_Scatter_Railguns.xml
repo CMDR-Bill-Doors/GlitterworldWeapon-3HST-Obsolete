@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Projectile_ScatterRG_Heavy</defName>
+		<label>2mm railgun</label>
+		<thingClass>BillDoorsFramework.PenetratingBullet</thingClass>
+		<uiIconPath>UI/Icons/Projectile_3HST_Rail_Icon</uiIconPath>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.3,0.5)</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>5</damageAmountBase>
+			<stoppingPower>0.5</stoppingPower>
+			<speed>70</speed>
+			<armorPenetrationBase>0.1</armorPenetrationBase>
+		</projectile>
+		<modExtensions>
+			<li Class="BillDoorsFramework.ModExtension_PenetratingProjectile">
+				<overpenDamageMulti>0.8</overpenDamageMulti>
+				<penetrationPotentialMultiplier>5</penetrationPotentialMultiplier>
+				<postPenetrationDeviationAngle>10</postPenetrationDeviationAngle>
+				<bounceEquivalent>0.2</bounceEquivalent>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTShortGun">
+		<defName>Gun_3HST_Scatter_Railgun</defName>
+		<label>3HST "NCQ Sprayer" Scatterailgun</label>
+		<description>A pistol-sized high-caliber scatterailgun developed by 3HST Limited during the Third Elven Civil War, also capable of launching a variety of grenades.</description>
+		<graphicData>
+			<texPath>Things/Weapons/3HST_DWR_07_NCQ_Sprayer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>23000</WorkToMake>
+			<Mass>2.5</Mass>
+			<AccuracyTouch>0.80</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.22</AccuracyMedium>
+			<AccuracyLong>0.1</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponClasses>
+			<li>RangedLight</li>
+			<li>ShortShots</li>
+		</weaponClasses>
+		<weaponTags>
+			<li>CE_Sidearm</li>
+			<li>CE_OneHandedWeapon</li>
+			<li>3HST_Sidearm</li>
+			<li>CE_AI_BROOM</li>
+			<li>ShortShots</li>
+		</weaponTags>
+		<costList>
+			<Steel>30</Steel>
+			<Plasteel>20</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Resource_3HST_RailComponent>2</Resource_3HST_RailComponent>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>BDsGlitterworldFaction3HST.Verb_ShootByBarrel</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_ScatterRG_Heavy</defaultProjectile>
+				<warmupTime>0.7</warmupTime>
+				<range>12.9</range>
+				<soundCast>RG_20mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>5</muzzleFlashScale>
+			</li>
+		</verbs>
+		<modExtensions>
+			<li Class="BillDoorsFramework.ModExtension_Verb_Shotgun">
+				<ShotgunPellets>5</ShotgunPellets>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeBarrel">
+				<durability>75</durability>
+				<label>Rail durability</label>
+				<loadingAmount>25</loadingAmount>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_RailPiercing</li>
+				</concepts>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTLongGun">
+		<defName>Gun_3HST_Scatter_Railgun_Heavy</defName>
+		<label>3HST "NCQ Spammer" Scatterailgun</label>
+		<description>A Machinegun-sized automatic scatterailgun developed by 3HST Limited during the Third Elven Civil War, also capable of launching a variety of grenades. Half shotgun, half machinegun, complete slaughter.</description>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+			<li>ShortShots</li>
+		</weaponClasses>
+		<graphicData>
+			<texPath>Things/Weapons/3HST_IWR_22_NCQ_Spammer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.18</drawSize>
+		</graphicData>
+		<generateCommonality>0.6</generateCommonality>
+		<statBases>
+			<WorkToMake>80000</WorkToMake>
+			<Mass>12.2</Mass>
+			<AccuracyTouch>0.57</AccuracyTouch>
+			<AccuracyShort>0.64</AccuracyShort>
+			<AccuracyMedium>0.55</AccuracyMedium>
+			<AccuracyLong>0.45</AccuracyLong>
+			<RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>GunHeavy</li>
+			<li>CE_AI_BROOM</li>
+			<li>CE_MachineGun</li>
+			<li>3HST_NCQSH</li>
+			<li>ShortShots</li>
+		</weaponTags>
+		<costList>
+			<Steel>70</Steel>
+			<Plasteel>35</Plasteel>
+			<ComponentIndustrial>11</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Resource_3HST_RailComponent>4</Resource_3HST_RailComponent>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>BDsGlitterworldFaction3HST.Verb_ShootByBarrel</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_ScatterRG_Heavy</defaultProjectile>
+				<warmupTime>1.5</warmupTime>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+				<range>25.9</range>
+				<soundCast>RG_20mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+
+			</li>
+		</verbs>
+		<modExtensions>
+			<li Class="BillDoorsFramework.ModExtension_Verb_Shotgun">
+				<ShotgunPellets>5</ShotgunPellets>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeBarrel">
+				<durability>150</durability>
+				<label>Rail durability</label>
+				<loadingAmount>25</loadingAmount>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_RailPiercing</li>
+				</concepts>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTLongGun">
+		<defName>Gun_3HST_Scatter_Railgun_Pump</defName>
+		<label>3HST "NCQ Splasher" Scatterailgun</label>
+		<description>A old school pump action scatterailgun developed by 3HST Limited during the Third Elven Civil War, a popular choice for mafia-themed joywire recordings.</description>
+		<graphicData>
+			<texPath>Things/Weapons/3HST_IWR_21</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.18</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>30000</WorkToMake>
+			<Mass>5.2</Mass>
+			<AccuracyTouch>0.80</AccuracyTouch>
+			<AccuracyShort>0.87</AccuracyShort>
+			<AccuracyMedium>0.77</AccuracyMedium>
+			<AccuracyLong>0.64</AccuracyLong>
+			<RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponClasses>
+			<li>ShortShots</li>
+		</weaponClasses>
+		<weaponTags>
+			<li>CE_AI_BROOM</li>
+			<li>3HST_NCQSP</li>
+			<li>ShortShots</li>
+		</weaponTags>
+		<costList>
+			<Steel>40</Steel>
+			<Plasteel>25</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Resource_3HST_RailComponent>3</Resource_3HST_RailComponent>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>BDsGlitterworldFaction3HST.Verb_ShootByBarrel</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_ScatterRG_Heavy</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<range>25.9</range>
+				<soundCast>RG_20mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+			</li>
+		</verbs>
+		<modExtensions>
+			<li Class="BillDoorsFramework.ModExtension_Verb_Shotgun">
+				<ShotgunPellets>5</ShotgunPellets>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeBarrel">
+				<durability>100</durability>
+				<label>Rail durability</label>
+				<loadingAmount>25</loadingAmount>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_RailPiercing</li>
+				</concepts>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+</Defs>

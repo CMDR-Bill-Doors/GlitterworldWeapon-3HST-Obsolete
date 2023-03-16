@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <JobDef>
+    <defName>Job_3HSTRailRearm</defName>
+    <driverClass>JobDriver_UseItem</driverClass>
+    <reportString>Rearming railgun rails</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    <alwaysShowWeapon>true</alwaysShowWeapon>
+    <joyDuration>120</joyDuration>
+  </JobDef>
+
+	<WorkGiverDef>
+		<defName>WorkGiver_3HSTMineDefuse</defName>
+		<label>defuse ADM mines</label>
+		<giverClass>BillDoorsFramework.WorkGiver_BombDisarm</giverClass>
+		<workType>Research</workType>
+		<verb>disarm</verb>
+		<gerund>disarming</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<priorityInType>110</priorityInType>
+	</WorkGiverDef>
+
+	<JobDef>
+		<defName>BDsBombDisarm</defName>
+		<driverClass>BillDoorsFramework.JobDriver_BombDisarm</driverClass>
+		<reportString>Disarming ADM</reportString>
+		<allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+		<alwaysShowWeapon>false</alwaysShowWeapon>
+		<joyDuration>1200</joyDuration>
+	</JobDef>
+</Defs>

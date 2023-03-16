@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Assault Railgun -->
+
+  <Gun_3HST_Assault_Railgun.label>3HST制5mm突击磁轨步枪</Gun_3HST_Assault_Railgun.label>
+  <Gun_3HST_Assault_Railgun.description>3HST陆军正规军的标配武器。虽然后坐力和枪管耐久是个问题，但是为了能打穿动力甲，这一切都是值得的......吧？</Gun_3HST_Assault_Railgun.description>
+  <Gun_3HST_Assault_Railgun.comps.2.label>磁轨寿命</Gun_3HST_Assault_Railgun.comps.2.label>
+  <Gun_3HST_Assault_Railgun.tools.0.label>枪托</Gun_3HST_Assault_Railgun.tools.0.label>
+  <Gun_3HST_Assault_Railgun.tools.1.label>枪管</Gun_3HST_Assault_Railgun.tools.1.label>
+  <Gun_3HST_Assault_Railgun.tools.2.label>枪口</Gun_3HST_Assault_Railgun.tools.2.label>
+  <Gun_3HST_Assault_Railgun.tools.3.label>能量刺刀刀刃</Gun_3HST_Assault_Railgun.tools.3.label>
+  <Gun_3HST_Assault_Railgun.tools.4.label>能量刺刀刀尖</Gun_3HST_Assault_Railgun.tools.4.label>
+
+
+  <!-- Light Machine Gun -->
+
+  <Gun_3HST_Light_Machine_Railgun.label>3HST制5mm磁轨轻机枪</Gun_3HST_Light_Machine_Railgun.label>
+  <Gun_3HST_Light_Machine_Railgun.description>3HST陆军机枪手和部分载具所使用的机枪。双管结构带来了极其凶猛，堪比某些转管机枪的火力，但是代价是让这把机枪极其笨重，且精度没法看。</Gun_3HST_Light_Machine_Railgun.description>
+  <Gun_3HST_Light_Machine_Railgun.comps.2.label>磁轨寿命</Gun_3HST_Light_Machine_Railgun.comps.2.label>
+  <Gun_3HST_Light_Machine_Railgun.tools.0.label>枪托</Gun_3HST_Light_Machine_Railgun.tools.0.label>
+  <Gun_3HST_Light_Machine_Railgun.tools.1.label>枪管</Gun_3HST_Light_Machine_Railgun.tools.1.label>
+  <Gun_3HST_Light_Machine_Railgun.tools.2.label>枪口</Gun_3HST_Light_Machine_Railgun.tools.2.label>
+  <Gun_3HST_Light_Machine_Railgun.tools.3.label>能量刺刀刀刃</Gun_3HST_Light_Machine_Railgun.tools.3.label>
+  <Gun_3HST_Light_Machine_Railgun.tools.4.label>能量刺刀刀尖</Gun_3HST_Light_Machine_Railgun.tools.4.label>
+
+
+  <!-- DMR -->
+
+  <Gun_3HST_5mmDMR.label>3HST制5mm磁轨精确射手步枪</Gun_3HST_5mmDMR.label>
+  <Gun_3HST_5mmDMR.description>使用3HST制5mm标准弹的狙击步枪，可以短点射，虽然后续的子弹因为后坐力所以基本上打不中。</Gun_3HST_5mmDMR.description>
+  <Gun_3HST_5mmDMR.comps.2.label>磁轨寿命</Gun_3HST_5mmDMR.comps.2.label>
+  <Gun_3HST_5mmDMR.tools.0.label>枪托</Gun_3HST_5mmDMR.tools.0.label>
+  <Gun_3HST_5mmDMR.tools.1.label>枪管</Gun_3HST_5mmDMR.tools.1.label>
+  <Gun_3HST_5mmDMR.tools.2.label>枪口</Gun_3HST_5mmDMR.tools.2.label>
+  <Gun_3HST_5mmDMR.tools.3.label>能量刺刀刀刃</Gun_3HST_5mmDMR.tools.3.label>
+  <Gun_3HST_5mmDMR.tools.4.label>能量刺刀刀尖</Gun_3HST_5mmDMR.tools.4.label>
+
+
+  <!-- Turret manned -->
+
+  <Turret_3HST5mmLMGmanned.label>手动5mm磁轨轻机枪炮塔</Turret_3HST5mmLMGmanned.label>
+  <Turret_3HST5mmLMGmanned.description>一部安装在三脚架上面的5mm磁轨轻机枪。虽然是手动炮塔，但是由于磁轨炮需要供能的缘故所以还是需要电力才能工作。</Turret_3HST5mmLMGmanned.description>
+
+
+  <!-- Turret auto -->
+
+  <Turret_3HST5mmLMGAuto.label>固定 自动5mm磁轨轻机枪炮塔</Turret_3HST5mmLMGAuto.label>
+  <Turret_3HST5mmLMGAuto.description>一部装在自动炮塔上的3HST制5mm磁轨轻机枪，厚重的装甲保护着内部结构，但是也使得这个炮塔一旦完工就再也无法移动。</Turret_3HST5mmLMGAuto.description>
+
+  <Turret_3HST5mmLMGAutoMoveable.label>可移动 自动5mm磁轨轻机枪炮塔</Turret_3HST5mmLMGAutoMoveable.label>
+  <Turret_3HST5mmLMGAutoMoveable.description>安装在带有作动器的三脚架上的3HST制5mm磁轨轻机枪，虽然便于转移，但是很容易在炮火下损毁。</Turret_3HST5mmLMGAutoMoveable.description>
+
+  <Gun_5mmHMG_TurretManned.label>3HST制5mm磁轨轻机枪（炮塔用）</Gun_5mmHMG_TurretManned.label>
+  <Gun_5mmHMG_TurretManned.description>安装在固定支架上的3HST制20mm磁轨自动炮。</Gun_5mmHMG_TurretManned.description>
+
+  <Gun_5mmHMG_TurretAuto.label>3HST制5mm磁轨轻机枪（炮塔用）</Gun_5mmHMG_TurretAuto.label>
+  <Gun_5mmHMG_TurretAuto.description>安装在固定支架上的3HST制20mm磁轨自动炮。</Gun_5mmHMG_TurretAuto.description>
+
+
+  <!-- Turret Quad -->
+
+  <Turret_3HST5mmLMGQuad.label>固定 自动四联5mm磁轨轻机枪炮塔</Turret_3HST5mmLMGQuad.label>
+  <Turret_3HST5mmLMGQuad.description>四把装在自动炮塔上的3HST制5mm磁轨轻机枪，厚重的装甲保护着内部结构，但是也使得这个炮塔一旦完工就再也无法移动。</Turret_3HST5mmLMGQuad.description>
+
+  <Gun_5mmHMG_TurretQuad.label>四联3HST制5mm磁轨轻机枪（炮塔用）</Gun_5mmHMG_TurretQuad.label>
+  <Gun_5mmHMG_TurretQuad.description>四门3HST制5mm磁轨轻机枪绑在一起，总共八根枪管。可能很浪费，可能很异端，但是一定很好玩。</Gun_5mmHMG_TurretQuad.description>
+
+
+</LanguageData>

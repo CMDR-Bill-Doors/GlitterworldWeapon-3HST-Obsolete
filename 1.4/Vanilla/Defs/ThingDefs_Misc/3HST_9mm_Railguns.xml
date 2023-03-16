@@ -1,0 +1,761 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Projectile_3HST9mmRG_Sniper</defName>
+		<label>9mm railgun</label>
+		<thingClass>BillDoorsFramework.PenetratingBullet</thingClass>
+		<uiIconPath>UI/Icons/Projectile_3HST_Rail_Icon</uiIconPath>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,2)</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<stoppingPower>2</stoppingPower>
+			<speed>70</speed>
+			<armorPenetrationBase>0.75</armorPenetrationBase>
+		</projectile>
+		<modExtensions>
+			<li Class="BillDoorsFramework.ModExtension_PenetratingProjectile">
+				<overpenDamageMulti>1</overpenDamageMulti>
+				<stopperDamageMulti>2</stopperDamageMulti>
+				<penetrationPotentialMultiplier>3</penetrationPotentialMultiplier>
+				<postPenetrationDeviationAngle>10</postPenetrationDeviationAngle>
+				<bounceEquivalent>0.7</bounceEquivalent>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTLongGun">
+		<defName>Gun_3HST_9mmDMR</defName>
+		<label>anti-armor railgun</label>
+		<description>Intermediate caliber sniper rifle developed by 3HST limited weaponry department, designed to fight enemy combatants in heavy armor when 5mm rifle is not enough. The armor piercing projectile will pass through flesh harmlessly, but when it hits sufficiently armored targets, the projectill will disintegrate violently on the inner side of the armor, causing huge damage.</description>
+		<generateCommonality>0.2</generateCommonality>
+		<graphicData>
+			<texPath>Things/Weapons/3HST_IWR_08_DMR</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5,1.5</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>65500</WorkToMake>
+			<Mass>6.7</Mass>
+			<AccuracyTouch>0.3</AccuracyTouch>
+			<AccuracyShort>0.55</AccuracyShort>
+			<AccuracyMedium>0.80</AccuracyMedium>
+			<AccuracyLong>0.90</AccuracyLong>
+			<RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>65</Steel>
+			<Plasteel>35</Plasteel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+			<Resource_3HST_RailComponent>2</Resource_3HST_RailComponent>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>BDsGlitterworldFaction3HST.Verb_ShootByBarrel</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_3HST9mmRG_Sniper</defaultProjectile>
+				<warmupTime>5</warmupTime>
+				<range>54.9</range>
+				<soundCast>RG_9mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<ai_AvoidFriendlyFireRadius>1</ai_AvoidFriendlyFireRadius>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeBarrel">
+				<durability>50</durability>
+				<label>Rail durability</label>
+				<loadingAmount>50</loadingAmount>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_RailPiercing</li>
+				</concepts>
+			</li>
+		</comps>
+		<weaponClasses>
+			<li>LongShots</li>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<weaponTags>
+			<li>SniperRifle</li>
+			<li>3HST_Sniper</li>
+			<li>CE_AI_SR</li>
+		</weaponTags>
+		<!--<AllowWithRunAndGun>false</AllowWithRunAndGun>-->
+		<recipeMaker>
+			<researchPrerequisite>Research_3HST_Railgun</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTHeavyGun">
+		<defName>Gun_3HST_9mmHMG</defName>
+		<label>rail HMG</label>
+		<description>Heavy machine railgun installed on 3HST fighting vehicles and carried by power armor soldiers, devastating against personnel and light vehicles. The reinforced projectile it fires, while still react violently to armor as most railguns do, turns out too powerful that it even over penetrates power armors.</description>
+		<graphicData>
+			<texPath>Things/Weapons/3HST_HWR_03_HMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.6,1.6</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>80000</WorkToMake>
+			<Mass>49</Mass>
+			<AccuracyTouch>0.2</AccuracyTouch>
+			<AccuracyShort>0.38</AccuracyShort>
+			<AccuracyMedium>0.35</AccuracyMedium>
+			<AccuracyLong>0.24</AccuracyLong>
+			<RangedWeapon_Cooldown>4.8</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>220</Steel>
+			<Plasteel>80</Plasteel>
+			<ComponentIndustrial>15</ComponentIndustrial>
+			<ComponentSpacer>5</ComponentSpacer>
+			<Resource_3HST_RailComponent>4</Resource_3HST_RailComponent>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>BDsGlitterworldFaction3HST.Verb_ShootByBarrel</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_3HST9mmRG_HMG</defaultProjectile>
+				<warmupTime>3.5</warmupTime>
+				<burstShotCount>6</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<range>35.9</range>
+				<soundCast>RG_9mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>18</muzzleFlashScale>
+				<ai_AvoidFriendlyFireRadius>2</ai_AvoidFriendlyFireRadius>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeBarrel">
+				<durability>150</durability>
+				<label>Rail durability</label>
+				<loadingAmount>50</loadingAmount>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_RailPiercing</li>
+				</concepts>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>CE_MachineGun</li>
+			<li>CE_AI_LMG</li>
+			<li>GunHeavy</li>
+			<li>3HST_HMRG</li>
+			<li>WarcasketVeteran</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>LongShots</li>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<!--<AllowWithRunAndGun>false</AllowWithRunAndGun>-->
+		<recipeMaker>
+			<researchPrerequisite>Research_3HST_Railgun</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Projectile_3HST9mmRG_HMG</defName>
+		<label>9mm railgun</label>
+		<thingClass>BillDoorsFramework.PenetratingBullet</thingClass>
+		<uiIconPath>UI/Icons/Projectile_3HST_Rail_Icon</uiIconPath>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,2)</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<stoppingPower>2</stoppingPower>
+			<speed>70</speed>
+			<armorPenetrationBase>0.75</armorPenetrationBase>
+		</projectile>
+		<modExtensions>
+			<li Class="BillDoorsFramework.ModExtension_PenetratingProjectile">
+				<overpenDamageMulti>1</overpenDamageMulti>
+				<stopperDamageMulti>2</stopperDamageMulti>
+				<penetrationPotentialMultiplier>5</penetrationPotentialMultiplier>
+				<postPenetrationDeviationAngle>10</postPenetrationDeviationAngle>
+				<bounceEquivalent>0.7</bounceEquivalent>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!--Turret manned-->
+	<ThingDef ParentName="Base3HSTMoveableMannedTurret">
+		<defName>Turret_3HST9mmHMGmanned</defName>
+		<label>Manned 9mm heavy machine railgun</label>
+		<uiIconPath>UI/Icons/Security/3HST_HWR_03_HMG_TurretM_icon</uiIconPath>
+		<statBases>
+			<Mass>55</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>10</basePowerConsumption>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_PowerTurretGun">
+
+				<rechargePowerConsumption>5000</rechargePowerConsumption>
+				<rechargePower>Recharge power consumption</rechargePower>
+				<cooldownTime>2</cooldownTime>
+				<rechargePower_Stat>The amount of power the weapon will draw from the power grid during cool down.\n\nRailguns' built in capacitors need to be recharged after each salvo, leading to a power consumption spike.\n\nThe power consumption is calculated as: Power draw x Turret cooldown / 1000\n{0} W x {1} s / 1000 = {2} Wd</rechargePower_Stat>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until accelerator rail change</fuelLabel>
+				<fuelGizmoLabel>Rail durability</fuelGizmoLabel>
+				<outOfFuelMessage>Cannot shoot: Needs new accelerator rail</outOfFuelMessage>
+				<fuelFilter>
+					<thingDefs>
+						<li>Resource_3HST_RailComponent</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>250</fuelCapacity>
+				<fuelMultiplier>50</fuelMultiplier>
+				<initialFuelPercent>1</initialFuelPercent>
+				<autoRefuelPercent>0.25</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_RailPiercing</li>
+					<li>BDGW_Turret</li>
+				</concepts>
+			</li>
+		</comps>
+		<description>A 3HST heavy machine railgun mounted on an stationary mount. Despite the fact this turret is manually operated, this turret still needs a amount of power to operate since railguns consumes power.</description>
+		<costList>
+			<Plasteel>25</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Gun_3HST_9mmHMG>1</Gun_3HST_9mmHMG>
+		</costList>
+		<building>
+			<turretGunDef>Gun_9mmHMG_Turret</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretTopDrawSize>2</turretTopDrawSize>
+			<turretBurstCooldownTime>1.5</turretBurstCooldownTime>
+		</building>
+		<size>(1,1)</size>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<killedLeavings>
+			<Plasteel>12</Plasteel>
+			<Gun_3HST_9mmHMG>1</Gun_3HST_9mmHMG>
+		</killedLeavings>
+	</ThingDef>
+
+	<!--Turret auto-->
+	<ThingDef ParentName="Base3HSTStationaryTurret">
+		<defName>Turret_3HST9mmHMGAuto</defName>
+		<label>Auto 9mm heavy machine railgun</label>
+		<uiIconPath>UI/Icons/Security/3HST_HWR_03_HMG_TurretA_icon</uiIconPath>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>200</basePowerConsumption>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_PowerTurretGun">
+
+				<rechargePowerConsumption>2000</rechargePowerConsumption>
+				<rechargePower>Recharge power consumption</rechargePower>
+				<cooldownTime>5</cooldownTime>
+				<rechargePower_Stat>The amount of power the weapon will draw from the power grid during cool down.\n\nRailguns' built in capacitors need to be recharged after each salvo, leading to a power consumption spike.\n\nThe power consumption is calculated as: Power draw x Turret cooldown / 1000\n{0} W x {1} s / 1000 = {2} Wd</rechargePower_Stat>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until accelerator rail change</fuelLabel>
+				<fuelGizmoLabel>Rail durability</fuelGizmoLabel>
+				<outOfFuelMessage>Cannot shoot: Needs new accelerator rail</outOfFuelMessage>
+				<fuelFilter>
+					<thingDefs>
+						<li>Resource_3HST_RailComponent</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>150</fuelCapacity>
+				<fuelMultiplier>50</fuelMultiplier>
+				<initialFuelPercent>1</initialFuelPercent>
+				<autoRefuelPercent>0.25</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_RailPiercing</li>
+					<li>BDGW_Turret</li>
+				</concepts>
+			</li>
+		</comps>
+		<costList>
+			<Plasteel>40</Plasteel>
+			<Steel>125</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<Gun_3HST_9mmHMG>1</Gun_3HST_9mmHMG>
+		</costList>
+		<building>
+			<turretGunDef>Gun_9mmHMG_Turret</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretTopDrawSize>2</turretTopDrawSize>
+			<turretBurstCooldownTime>5</turretBurstCooldownTime>
+		</building>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<killedLeavings>
+			<ChunkSlagSteel>4</ChunkSlagSteel>
+			<Steel>15</Steel>
+			<Plasteel>20</Plasteel>
+			<Gun_3HST_9mmHMG>1</Gun_3HST_9mmHMG>
+		</killedLeavings>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTMoveableAutoTurret">
+		<defName>Turret_3HST9mmHMGAutoMoveable</defName>
+		<label>Auto 9mm heavy machine railgun</label>
+		<uiIconPath>UI/Icons/Security/3HST_HWR_03_HMG_TurretM_icon</uiIconPath>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>200</basePowerConsumption>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_PowerTurretGun">
+
+				<rechargePowerConsumption>2000</rechargePowerConsumption>
+				<rechargePower>Recharge power consumption</rechargePower>
+				<cooldownTime>5</cooldownTime>
+				<rechargePower_Stat>The amount of power the weapon will draw from the power grid during cool down.\n\nRailguns' built in capacitors need to be recharged after each salvo, leading to a power consumption spike.\n\nThe power consumption is calculated as: Power draw x Turret cooldown / 1000\n{0} W x {1} s / 1000 = {2} Wd</rechargePower_Stat>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until accelerator rail change</fuelLabel>
+				<fuelGizmoLabel>Rail durability</fuelGizmoLabel>
+				<outOfFuelMessage>Cannot shoot: Needs new accelerator rail</outOfFuelMessage>
+				<fuelFilter>
+					<thingDefs>
+						<li>Resource_3HST_RailComponent</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>150</fuelCapacity>
+				<fuelMultiplier>50</fuelMultiplier>
+				<initialFuelPercent>1</initialFuelPercent>
+				<autoRefuelPercent>0.25</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_RailPiercing</li>
+					<li>BDGW_Turret</li>
+				</concepts>
+			</li>
+		</comps>
+		<costList>
+			<Plasteel>25</Plasteel>
+			<Steel>20</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<Gun_3HST_9mmHMG>1</Gun_3HST_9mmHMG>
+		</costList>
+		<building>
+			<turretGunDef>Gun_9mmHMG_Turret</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretTopDrawSize>2</turretTopDrawSize>
+			<turretBurstCooldownTime>5</turretBurstCooldownTime>
+		</building>
+		<size>(1,1)</size>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<killedLeavings>
+			<Steel>10</Steel>
+			<Plasteel>12</Plasteel>
+			<Gun_3HST_9mmHMG>1</Gun_3HST_9mmHMG>
+		</killedLeavings>
+	</ThingDef>
+
+
+	<ThingDef ParentName="Base3HSTTurretGun">
+		<defName>Gun_9mmHMG_Turret</defName>
+		<label>Mounted 3HST 9mm HMG</label>
+		<graphicData>
+			<texPath>Things/Building/Turrets/3HST_HWR_03_HMG_Turret</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>3HST 9mm HMG on a stationary emplacement.</description>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<statBases>
+			<AccuracyTouch>0.3</AccuracyTouch>
+			<AccuracyShort>0.5</AccuracyShort>
+			<AccuracyMedium>0.5</AccuracyMedium>
+			<AccuracyLong>0.24</AccuracyLong>
+			<RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_3HST9mmRG_HMG</defaultProjectile>
+				<warmupTime>2.1</warmupTime>
+				<burstShotCount>10</burstShotCount>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<range>45.9</range>
+				<soundCast>RG_9mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>18</muzzleFlashScale>
+				<stopBurstWithoutLos>false</stopBurstWithoutLos>
+			</li>
+		</verbs>
+	</ThingDef>
+
+
+	<!--Sniper Turret-->
+	<ThingDef ParentName="Base3HSTStationaryTurret">
+		<defName>Turret_3HST9mmSniperAuto</defName>
+		<label>Auto 9mm sniper railgun</label>
+		<graphicData>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<uiIconPath>UI/Icons/Security/3HST_SniperTurretA_Icon</uiIconPath>
+		<statBases>
+			<Mass>55</Mass>
+			<ShootingAccuracyTurret>1.5</ShootingAccuracyTurret>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>200</basePowerConsumption>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_PowerTurretGun">
+
+				<rechargePowerConsumption>2000</rechargePowerConsumption>
+				<rechargePower>Recharge power consumption</rechargePower>
+				<cooldownTime>5</cooldownTime>
+				<rechargePower_Stat>The amount of power the weapon will draw from the power grid during cool down.\n\nRailguns' built in capacitors need to be recharged after each salvo, leading to a power consumption spike.\n\nThe power consumption is calculated as: Power draw x Turret cooldown / 1000\n{0} W x {1} s / 1000 = {2} Wd</rechargePower_Stat>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until accelerator rail change</fuelLabel>
+				<fuelGizmoLabel>Rail durability</fuelGizmoLabel>
+				<outOfFuelMessage>Cannot shoot: Needs new accelerator rail</outOfFuelMessage>
+				<fuelFilter>
+					<thingDefs>
+						<li>Resource_3HST_RailComponent</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>50</fuelCapacity>
+				<fuelMultiplier>50</fuelMultiplier>
+				<initialFuelPercent>1</initialFuelPercent>
+				<autoRefuelPercent>0.25</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_RailPiercing</li>
+					<li>BDGW_Turret</li>
+				</concepts>
+			</li>
+		</comps>
+		<costList>
+			<Plasteel>40</Plasteel>
+			<Steel>125</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<Gun_3HST_9mmDMR>1</Gun_3HST_9mmDMR>
+		</costList>
+		<building>
+			<turretGunDef>Gun_9mmSniper_Turret</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretTopDrawSize>2</turretTopDrawSize>
+			<turretBurstCooldownTime>5</turretBurstCooldownTime>
+		</building>
+		<size>(1,1)</size>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<killedLeavings>
+			<ChunkSlagSteel>4</ChunkSlagSteel>
+			<Steel>15</Steel>
+			<Plasteel>20</Plasteel>
+			<Gun_3HST_9mmDMR>1</Gun_3HST_9mmDMR>
+		</killedLeavings>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTMoveableAutoTurret">
+		<defName>Turret_3HST9mmSniperAutoMoveable</defName>
+		<label>Auto 9mm sniper railgun</label>
+		<uiIconPath>UI/Icons/Security/3HST_SniperTurretM_Icon</uiIconPath>
+		<statBases>
+			<Mass>55</Mass>
+			<ShootingAccuracyTurret>1.5</ShootingAccuracyTurret>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>200</basePowerConsumption>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_PowerTurretGun">
+
+				<rechargePowerConsumption>2000</rechargePowerConsumption>
+				<rechargePower>Recharge power consumption</rechargePower>
+				<cooldownTime>5</cooldownTime>
+				<rechargePower_Stat>The amount of power the weapon will draw from the power grid during cool down.\n\nRailguns' built in capacitors need to be recharged after each salvo, leading to a power consumption spike.\n\nThe power consumption is calculated as: Power draw x Turret cooldown / 1000\n{0} W x {1} s / 1000 = {2} Wd</rechargePower_Stat>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until accelerator rail change</fuelLabel>
+				<fuelGizmoLabel>Rail durability</fuelGizmoLabel>
+				<outOfFuelMessage>Cannot shoot: Needs new accelerator rail</outOfFuelMessage>
+				<fuelFilter>
+					<thingDefs>
+						<li>Resource_3HST_RailComponent</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>50</fuelCapacity>
+				<fuelMultiplier>50</fuelMultiplier>
+				<initialFuelPercent>1</initialFuelPercent>
+				<autoRefuelPercent>0.25</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_RailPiercing</li>
+					<li>BDGW_Turret</li>
+				</concepts>
+			</li>
+		</comps>
+		<costList>
+			<Plasteel>25</Plasteel>
+			<Steel>20</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<Gun_3HST_9mmDMR>1</Gun_3HST_9mmDMR>
+		</costList>
+		<building>
+			<turretGunDef>Gun_9mmSniper_Turret</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretTopDrawSize>2</turretTopDrawSize>
+			<turretBurstCooldownTime>5</turretBurstCooldownTime>
+		</building>
+		<size>(1,1)</size>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<killedLeavings>
+			<Steel>10</Steel>
+			<Plasteel>12</Plasteel>
+			<Gun_3HST_9mmDMR>1</Gun_3HST_9mmDMR>
+		</killedLeavings>
+	</ThingDef>
+
+
+	<ThingDef ParentName="Base3HSTMoveableMannedTurret">
+		<defName>Turret_3HST9mmSniperManned</defName>
+		<label>Manned 9mm sniper railgun</label>
+		<uiIconPath>UI/Icons/Security/3HST_SniperTurretM_Icon</uiIconPath>
+		<statBases>
+			<Mass>55</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>10</basePowerConsumption>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_PowerTurretGun">
+				<rechargePowerConsumption>5000</rechargePowerConsumption>
+				<rechargePower>Recharge power consumption</rechargePower>
+				<cooldownTime>2</cooldownTime>
+				<rechargePower_Stat>The amount of power the weapon will draw from the power grid during cool down.\n\nRailguns' built in capacitors need to be recharged after each salvo, leading to a power consumption spike.\n\nThe power consumption is calculated as: Power draw x Turret cooldown / 1000\n{0} W x {1} s / 1000 = {2} Wd</rechargePower_Stat>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until accelerator rail change</fuelLabel>
+				<fuelGizmoLabel>Rail durability</fuelGizmoLabel>
+				<outOfFuelMessage>Cannot shoot: Needs new accelerator rail</outOfFuelMessage>
+				<fuelFilter>
+					<thingDefs>
+						<li>Resource_3HST_RailComponent</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>100</fuelCapacity>
+				<fuelMultiplier>50</fuelMultiplier>
+				<initialFuelPercent>1</initialFuelPercent>
+				<autoRefuelPercent>0.25</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_RailPiercing</li>
+					<li>BDGW_Turret</li>
+				</concepts>
+			</li>
+		</comps>
+		<description>A 3HST anti-armor sniper railgun mounted on an tripod mount.</description>
+		<costList>
+			<Steel>25</Steel>
+			<Gun_3HST_9mmDMR>1</Gun_3HST_9mmDMR>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<building>
+			<turretGunDef>Gun_9mmSniper_Turret</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretTopDrawSize>2</turretTopDrawSize>
+			<turretBurstCooldownTime>2</turretBurstCooldownTime>
+		</building>
+		<size>(1,1)</size>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<killedLeavings>
+			<Plasteel>12</Plasteel>
+			<Gun_3HST_9mmDMR>1</Gun_3HST_9mmDMR>
+		</killedLeavings>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTTurretGun">
+		<defName>Gun_9mmSniper_Turret</defName>
+		<label>Mounted 3HST 9mm sniper</label>
+		<graphicData>
+			<texPath>Things/Building/Turrets/3HST_SniperTurret</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>3HST 9mm sniper on a stationary emplacement.</description>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<statBases>
+			<AccuracyTouch>0.3</AccuracyTouch>
+			<AccuracyShort>0.6</AccuracyShort>
+			<AccuracyMedium>0.88</AccuracyMedium>
+			<AccuracyLong>0.93</AccuracyLong>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<consumeFuelPerShot>3</consumeFuelPerShot>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_3HST9mmRG_HMG</defaultProjectile>
+				<warmupTime>2.5</warmupTime>
+				<range>54.9</range>
+				<soundCast>RG_9mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<ai_AvoidFriendlyFireRadius>1</ai_AvoidFriendlyFireRadius>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<!--Turret Dual-->
+	<ThingDef ParentName="Base3HSTStationaryTurretHeavy">
+		<defName>Turret_3HST9mmHMGDual</defName>
+		<label>Dual 9mm heavy machine railgun</label>
+		<uiIconPath>UI/Icons/Security/3HST_HWR_03_HMG_DualTurret_icon</uiIconPath>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>200</basePowerConsumption>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_PowerTurretGun">
+
+				<rechargePowerConsumption>1000</rechargePowerConsumption>
+				<rechargePower>Recharge power consumption</rechargePower>
+				<cooldownTime>10</cooldownTime>
+				<rechargePower_Stat>The amount of power the weapon will draw from the power grid during cool down.\n\nRailguns' built in capacitors need to be recharged after each salvo, leading to a power consumption spike.\n\nThe power consumption is calculated as: Power draw x Turret cooldown / 1000\n{0} W x {1} s / 1000 = {2} Wd</rechargePower_Stat>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until accelerator rail change</fuelLabel>
+				<fuelGizmoLabel>Rail durability</fuelGizmoLabel>
+				<outOfFuelMessage>Cannot shoot: Needs new accelerator rail</outOfFuelMessage>
+				<fuelFilter>
+					<thingDefs>
+						<li>Resource_3HST_RailComponent</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>250</fuelCapacity>
+				<fuelMultiplier>50</fuelMultiplier>
+				<initialFuelPercent>1</initialFuelPercent>
+				<autoRefuelPercent>0.25</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_RailPiercing</li>
+					<li>BDGW_Turret</li>
+				</concepts>
+			</li>
+		</comps>
+		<costList>
+			<Plasteel>100</Plasteel>
+			<Steel>400</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<Gun_3HST_9mmHMG>2</Gun_3HST_9mmHMG>
+		</costList>
+		<building>
+			<turretGunDef>Gun_9mmHMG_Dual</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretTopDrawSize>2</turretTopDrawSize>
+			<turretBurstCooldownTime>10</turretBurstCooldownTime>
+		</building>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<killedLeavings>
+			<ChunkSlagSteel>10</ChunkSlagSteel>
+			<Steel>50</Steel>
+			<Plasteel>50</Plasteel>
+			<Gun_3HST_9mmHMG>2</Gun_3HST_9mmHMG>
+		</killedLeavings>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTTurretGun">
+		<defName>Gun_9mmHMG_Dual</defName>
+		<label>Dual 3HST 9mm HMG</label>
+		<graphicData>
+			<texPath>Things/Building/Turrets/3HST_HWR_03_HMG_DualTurret</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>Two 3HST 9mm HMG on a stationary emplacement.</description>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<statBases>
+			<AccuracyTouch>0.3</AccuracyTouch>
+			<AccuracyShort>0.5</AccuracyShort>
+			<AccuracyMedium>0.5</AccuracyMedium>
+			<AccuracyLong>0.24</AccuracyLong>
+			<RangedWeapon_Cooldown>10</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_3HST9mmRG_HMG</defaultProjectile>
+				<warmupTime>2.1</warmupTime>
+				<burstShotCount>20</burstShotCount>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<range>45.9</range>
+				<soundCast>RG_9mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>18</muzzleFlashScale>
+				<stopBurstWithoutLos>false</stopBurstWithoutLos>
+			</li>
+		</verbs>
+	</ThingDef>
+
+</Defs>

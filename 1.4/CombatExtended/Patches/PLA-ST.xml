@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>PLA Steel Torrent</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="Mech_AutoFirePlatform_PLAST"]/tools</xpath>
+					<value>
+						<tools>
+							<li Class="CombatExtended.ToolCE">
+								<label>chassis</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>15</power>
+								<cooldownTime>3.51</cooldownTime>
+								<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+								<armorPenetrationSharp>0</armorPenetrationSharp>
+								<armorPenetrationBlunt>15</armorPenetrationBlunt>
+								<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+							</li>
+						</tools>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="Mech_3HSTMBT_PLAST"]/tools</xpath>
+					<value>
+						<tools>
+							<li Class="CombatExtended.ToolCE">
+								<label>chassis</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>150</power>
+								<cooldownTime>3.51</cooldownTime>
+								<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+								<armorPenetrationSharp>0</armorPenetrationSharp>
+								<armorPenetrationBlunt>1500</armorPenetrationBlunt>
+								<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+							</li>
+						</tools>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="Mech_3HSTIFV_PLAST"]/tools</xpath>
+					<value>
+						<tools>
+							<li Class="CombatExtended.ToolCE">
+								<label>chassis</label>
+								<capacities>
+									<li>Blunt</li>
+								</capacities>
+								<power>100</power>
+								<cooldownTime>3.51</cooldownTime>
+								<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+								<armorPenetrationSharp>0</armorPenetrationSharp>
+								<armorPenetrationBlunt>1500</armorPenetrationBlunt>
+								<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+							</li>
+						</tools>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="Gun_5mmHMG_TurretVehicle"]</xpath>
+					<value>
+						<ThingDef ParentName="Base3HSTTurretGun">
+							<defName>Gun_5mmHMG_TurretVehicle</defName>
+							<label>Mounted 3HST 5mm LMG</label>
+							<graphicData>
+								<texPath>Things/Building/Turrets/3HST_HWR_04_LMG_Manned</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+								<drawSize>(2,2)</drawSize>
+							</graphicData>
+							<description>3HST 5mm LMG on a vehicular emplacement.</description>
+							<soundInteract>Artillery_ShellLoaded</soundInteract>
+							<statBases>
+								<SightsEfficiency>0.9</SightsEfficiency>
+								<ShotSpread>0.1</ShotSpread>
+								<SwayFactor>1.25</SwayFactor>
+								<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+							</statBases>
+							<costList>
+								<VehicleMod_3HST5mmLMRG>1</VehicleMod_3HST5mmLMRG>
+							</costList>
+							<verbs>
+								<li Class="CombatExtended.VerbPropertiesCE">
+									<verbClass>PLA.CE.Vehicle.Verb_ShootVehicleCE</verbClass>
+									<hasStandardCommand>true</hasStandardCommand>
+									<defaultProjectile>Projectile_3HST5mmRG_Steel</defaultProjectile>
+									<warmupTime>1.2</warmupTime>
+									<burstShotCount>20</burstShotCount>
+									<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+									<range>68</range>
+									<soundCast>RG_5mm</soundCast>
+									<soundCastTail>GunTail_Heavy</soundCastTail>
+									<recoilAmount>1.25</recoilAmount>
+									<muzzleFlashScale>8</muzzleFlashScale>
+									<ai_AvoidFriendlyFireRadius>2</ai_AvoidFriendlyFireRadius>
+								</li>
+							</verbs>
+							<comps>
+								<li Class="PLA.CE.Vehicle.CompProperties_AmmoUserVehicle">
+									<magazineSize>320</magazineSize>
+									<reloadTime>6.5</reloadTime>
+									<ammoSet>AmmoSet_3HST5mmRG</ammoSet>
+								</li>
+								<li Class="CombatExtended.CompProperties_FireModes">
+									<noSingleShot>true</noSingleShot>
+									<aiAimMode>SuppressFire</aiAimMode>
+								</li>
+							</comps>
+						</ThingDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="Gun_9mmHMG_TurretVehlcle"]</xpath>
+					<value>
+						<ThingDef ParentName="Base3HSTTurretGun">
+							<defName>Gun_9mmHMG_TurretVehlcle</defName>
+							<label>Mounted 3HST 9mm HMG</label>
+							<graphicData>
+								<texPath>Things/Building/Turrets/3HST_HWR_03_HMG_Turret</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+								<drawSize>(2,2)</drawSize>
+							</graphicData>
+							<description>3HST 9mm HMG on a vehicular emplacement.</description>
+							<soundInteract>Artillery_ShellLoaded</soundInteract>
+							<statBases>
+								<SightsEfficiency>1.2</SightsEfficiency>
+								<ShotSpread>0.01</ShotSpread>
+								<SwayFactor>1.25</SwayFactor>
+								<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+							</statBases>
+							<costList>
+								<VehicleMod_3HST9mmHMRG>1</VehicleMod_3HST9mmHMRG>
+							</costList>
+							<verbs>
+								<li Class="CombatExtended.VerbPropertiesCE">
+									<verbClass>PLA.CE.Vehicle.Verb_ShootVehicleCE</verbClass>
+									<hasStandardCommand>true</hasStandardCommand>
+									<defaultProjectile>Projectile_3HST9mmRG_Steel</defaultProjectile>
+									<warmupTime>2.1</warmupTime>
+									<burstShotCount>10</burstShotCount>
+									<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+									<range>86</range>
+									<soundCast>RG_9mm</soundCast>
+									<soundCastTail>GunTail_Heavy</soundCastTail>
+									<recoilAmount>1.5</recoilAmount>
+									<muzzleFlashScale>18</muzzleFlashScale>
+									<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+									<recoilPattern>Mounted</recoilPattern>
+								</li>
+							</verbs>
+							<comps>
+								<li Class="PLA.CE.Vehicle.CompProperties_AmmoUserVehicle">
+									<magazineSize>180</magazineSize>
+									<reloadTime>7.8</reloadTime>
+									<ammoSet>AmmoSet_3HST9mmRG</ammoSet>
+								</li>
+								<li Class="CombatExtended.CompProperties_FireModes">
+									<noSingleShot>true</noSingleShot>
+									<aiAimMode>AimedShot</aiAimMode>
+								</li>
+							</comps>
+						</ThingDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="Gun_9mmHMG_DualVehicle"]</xpath>
+					<value>
+						<ThingDef ParentName="Base3HSTTurretGun">
+							<defName>Gun_9mmHMG_DualVehicle</defName>
+							<label>Dual 3HST 9mm HMG</label>
+							<graphicData>
+								<texPath>Things/Building/Turrets/3HST_HWR_03_HMG_DualTurret</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+								<drawSize>(2,2)</drawSize>
+							</graphicData>
+							<description>Two 3HST 9mm HMG on a vehicular emplacement.</description>
+							<soundInteract>Artillery_ShellLoaded</soundInteract>
+							<statBases>
+								<SightsEfficiency>1.2</SightsEfficiency>
+								<ShotSpread>0.01</ShotSpread>
+								<SwayFactor>1.25</SwayFactor>
+								<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+							</statBases>
+							<costList>
+								<VehicleMod_3HSTDual9mmHMRG>1</VehicleMod_3HSTDual9mmHMRG>
+							</costList>
+							<verbs>
+								<li Class="CombatExtended.VerbPropertiesCE">
+									<verbClass>PLA.CE.Vehicle.Verb_ShootVehicleCE</verbClass>
+									<hasStandardCommand>true</hasStandardCommand>
+									<defaultProjectile>Projectile_3HST9mmRG_Steel</defaultProjectile>
+									<warmupTime>2.1</warmupTime>
+									<burstShotCount>20</burstShotCount>
+									<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+									<range>86</range>
+									<soundCast>RG_9mm</soundCast>
+									<soundCastTail>GunTail_Heavy</soundCastTail>
+									<recoilAmount>1.5</recoilAmount>
+									<muzzleFlashScale>18</muzzleFlashScale>
+									<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+									<recoilPattern>Mounted</recoilPattern>
+								</li>
+							</verbs>
+							<comps>
+								<li Class="PLA.CE.Vehicle.CompProperties_AmmoUserVehicle">
+									<magazineSize>360</magazineSize>
+									<reloadTime>10.8</reloadTime>
+									<ammoSet>AmmoSet_3HST9mmRG</ammoSet>
+								</li>
+								<li Class="CombatExtended.CompProperties_FireModes">
+									<noSingleShot>true</noSingleShot>
+									<aiAimMode>AimedShot</aiAimMode>
+								</li>
+							</comps>
+						</ThingDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="Gun_20mmAC_TurretVehicle"]</xpath>
+					<value>
+						<ThingDef ParentName="Base3HSTTurretGun">
+							<defName>Gun_20mmAC_TurretVehicle</defName>
+							<label>Mounted 3HST 20mm rail autocannon</label>
+							<graphicData>
+								<texPath>Things/Building/Turrets/3HST_HWR_11_Autocannon_Turret</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+								<drawSize>(4,4)</drawSize>
+							</graphicData>
+							<description>3HST 20mm rail autocannon on a vehicular emplacement.</description>
+							<soundInteract>Artillery_ShellLoaded</soundInteract>
+							<statBases>
+								<SightsEfficiency>1.1</SightsEfficiency>
+								<ShotSpread>0.01</ShotSpread>
+								<SwayFactor>0.98</SwayFactor>
+								<RangedWeapon_Cooldown>2.69</RangedWeapon_Cooldown>
+							</statBases>
+							<costList>
+								<VehicleMod_3HST20mmARC>1</VehicleMod_3HST20mmARC>
+							</costList>
+							<verbs>
+								<li Class="CombatExtended.VerbPropertiesCE">
+									<verbClass>PLA.CE.Vehicle.Verb_ShootVehicleCE</verbClass>
+									<hasStandardCommand>true</hasStandardCommand>
+									<defaultProjectile>Projectile_3HST20mmRG_Steel</defaultProjectile>
+									<warmupTime>4.2</warmupTime>
+									<burstShotCount>10</burstShotCount>
+									<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+									<range>112</range>
+									<minRange>15</minRange>
+									<soundCast>RG_20mm</soundCast>
+									<soundCastTail>GunTail_Heavy</soundCastTail>
+									<recoilAmount>1.51</recoilAmount>
+									<muzzleFlashScale>20</muzzleFlashScale>
+									<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+								</li>
+							</verbs>
+							<comps>
+								<li Class="PLA.CE.Vehicle.CompProperties_AmmoUserVehicle">
+									<magazineSize>100</magazineSize>
+									<reloadTime>7.8</reloadTime>
+									<ammoSet>AmmoSet_3HST20mmRG</ammoSet>
+								</li>
+								<li Class="CombatExtended.CompProperties_FireModes">
+									<aimedBurstShotCount>5</aimedBurstShotCount>
+									<aiAimMode>AimedShot</aiAimMode>
+								</li>
+							</comps>
+						</ThingDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="Gun_20mmAC_TurretIFV"]</xpath>
+					<value>
+						<ThingDef ParentName="Base3HSTTurretGun">
+							<defName>Gun_20mmAC_TurretIFV</defName>
+							<label>Mounted 3HST 20mm rail autocannon</label>
+							<graphicData>
+								<texPath>Things/Weapons/3HST_IFV_turret</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+								<drawSize>8</drawSize>
+							</graphicData>
+							<description>3HST 20mm rail autocannon on a vehicular emplacement.</description>
+							<soundInteract>Artillery_ShellLoaded</soundInteract>
+							<statBases>
+								<SightsEfficiency>1.1</SightsEfficiency>
+								<ShotSpread>0.01</ShotSpread>
+								<SwayFactor>0.98</SwayFactor>
+								<RangedWeapon_Cooldown>2.69</RangedWeapon_Cooldown>
+							</statBases>
+							<verbs>
+								<li Class="CombatExtended.VerbPropertiesCE">
+									<verbClass>PLA.CE.Vehicle.Verb_ShootVehicleCE</verbClass>
+									<hasStandardCommand>true</hasStandardCommand>
+									<defaultProjectile>Projectile_3HST20mmRG_Steel</defaultProjectile>
+									<warmupTime>3.2</warmupTime>
+									<burstShotCount>10</burstShotCount>
+									<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+									<range>112</range>
+									<minRange>15</minRange>
+									<soundCast>RG_20mm</soundCast>
+									<soundCastTail>GunTail_Heavy</soundCastTail>
+									<recoilAmount>1.51</recoilAmount>
+									<muzzleFlashScale>20</muzzleFlashScale>
+									<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+									<recoilPattern>Mounted</recoilPattern>
+								</li>
+							</verbs>
+							<comps>
+								<li Class="CombatExtended.CompProperties_FireModes">
+									<aimedBurstShotCount>5</aimedBurstShotCount>
+									<aiAimMode>Snapshot</aiAimMode>
+								</li>
+								<li Class="PLA.CE.Vehicle.CompProperties_AmmoUserVehicle">
+									<magazineSize>120</magazineSize>
+									<ammoSet>AmmoSet_3HST20mmRG</ammoSet>
+									<secondaryAttackVerb>
+										<verbClass>PLA.CE.Vehicle.Verb_ShootVehicleCE</verbClass>
+										<hasStandardCommand>true</hasStandardCommand>
+										<defaultProjectile>Projectile_70mmLGIS_Frag</defaultProjectile>
+										<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+										<warmupTime>3.4</warmupTime>
+										<range>150</range>
+										<minRange>10</minRange>
+										<targetParams>
+											<canTargetLocations>true</canTargetLocations>
+										</targetParams>
+										<soundCast>InfernoCannon_Fire</soundCast>
+										<soundCastTail>GunTail_Medium</soundCastTail>
+										<muzzleFlashScale>5</muzzleFlashScale>
+										<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+									</secondaryAttackVerb>
+									<secondaryAmmoSet>AmmoSet_70mmLGIS</secondaryAmmoSet>
+									<secondaryMagazineSize>4</secondaryMagazineSize>
+									<reloadTime>12.6</reloadTime>
+									<mainWeaponLabel>Use auto railcannon</mainWeaponLabel>
+									<secondaryWeaponLabel>Use LGIS launcher</secondaryWeaponLabel>
+									<mainWeaponIcon>UI/Icons/FireModes/SecondaryWeaponIcon_20mmAC</mainWeaponIcon>
+									<secondaryWeaponIcon>UI/Icons/FireModes/SecondaryWeaponIcon_QuadLGIS</secondaryWeaponIcon>
+								</li>
+							</comps>
+						</ThingDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="Gun_3HST_AutoGrenade_TurretVehicle"]</xpath>
+					<value>
+						<ThingDef ParentName="BaseArtilleryWeapon">
+							<defName>Gun_3HST_AutoGrenade_TurretVehicle</defName>
+							<label>Mounted 3HST automatic indirect grenade system</label>
+							<graphicData>
+								<texPath>Things/Building/Turrets/3HST_Automatic_Indirect_Grenade_System_Manned</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+								<drawSize>(2,2)</drawSize>
+							</graphicData>
+							<description>3HST automatic indirect grenade system on a vehicular emplacement.</description>
+							<soundInteract>Artillery_ShellLoaded</soundInteract>
+							<statBases>
+								<SightsEfficiency>2.15</SightsEfficiency>
+								<ShotSpread>0.15</ShotSpread>
+								<SwayFactor>1.2</SwayFactor>
+								<RangedWeapon_Cooldown>0.41</RangedWeapon_Cooldown>
+							</statBases>
+							<costList>
+								<VehicleMod_3HSTAIGS>1</VehicleMod_3HSTAIGS>
+							</costList>
+							<verbs>
+								<li Class="CombatExtended.VerbPropertiesCE">
+									<verbClass>PLA.CE.Vehicle.Verb_ShootVehicleCE</verbClass>
+									<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+									<hasStandardCommand>true</hasStandardCommand>
+									<defaultProjectile>Bullet_3HST40mmGrenade_HE</defaultProjectile>
+									<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+									<warmupTime>3.225</warmupTime>
+									<minRange>16</minRange>
+									<range>65</range>
+									<burstShotCount>6</burstShotCount>
+									<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+									<soundCast>InfernoCannon_Fire</soundCast>
+									<muzzleFlashScale>16</muzzleFlashScale>
+									<circularError>3</circularError>
+									<indirectFirePenalty>0.3</indirectFirePenalty>
+									<targetParams>
+										<canTargetLocations>true</canTargetLocations>
+									</targetParams>
+									<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+								</li>
+							</verbs>
+							<comps>
+								<li Class="CombatExtended.CompProperties_Charges">
+									<chargeSpeeds>
+										<li>5</li>
+										<li>10</li>
+										<li>20</li>
+										<li>30</li>
+										<li>40</li>
+										<li>50</li>
+										<li>60</li>
+										<li>70</li>
+										<li>80</li>
+										<li>90</li>
+										<li>100</li>
+										<li>110</li>
+										<li>120</li>
+										<li>130</li>
+									</chargeSpeeds>
+								</li>
+								<li Class="PLA.CE.Vehicle.CompProperties_AmmoUserVehicle">
+									<magazineSize>60</magazineSize>
+									<reloadTime>7.8</reloadTime>
+									<ammoSet>AmmoSet_3HST40mmGrenade</ammoSet>
+								</li>
+								<li Class="CombatExtended.CompProperties_FireModes">
+									<noSingleShot>true</noSingleShot>
+									<aiAimMode>AimedShot</aiAimMode>
+								</li>
+							</comps>
+						</ThingDef>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="Gun_76mmRGTank"]</xpath>
+					<value>
+						<ThingDef ParentName="Base3HSTTurretGun">
+							<defName>Gun_76mmRGTank</defName>
+							<label>3HST 76mm tank maingun</label>
+							<graphicData>
+								<texPath>Things/Weapons/3HST_LCB_04 MBT_Turret</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+								<drawSize>(10,10)</drawSize>
+							</graphicData>
+							<description>3HST 76mm heavy railgun on MBT turret.</description>
+							<soundInteract>Artillery_ShellLoaded</soundInteract>
+							<statBases>
+								<MarketValue>20000</MarketValue>
+								<SightsEfficiency>5</SightsEfficiency>
+								<ShotSpread>0.01</ShotSpread>
+								<SwayFactor>1</SwayFactor>
+								<RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+							</statBases>
+							<verbs>
+								<li Class="CombatExtended.VerbPropertiesCE">
+									<verbClass>PLA.CE.Vehicle.Verb_ShootVehicleCE</verbClass>
+									<hasStandardCommand>true</hasStandardCommand>
+									<defaultProjectile>Projectile_3HST76mmRG_Steel</defaultProjectile>
+									<warmupTime>4.7</warmupTime>
+									<range>500</range>
+									<minRange>30</minRange>
+									<soundCast>RG_76mm</soundCast>
+									<soundCastTail>GunTail_Heavy</soundCastTail>
+									<muzzleFlashScale>20</muzzleFlashScale>
+									<recoilPattern>Mounted</recoilPattern>
+									<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+									<targetParams>
+										<canTargetLocations>true</canTargetLocations>
+									</targetParams>
+								</li>
+							</verbs>
+							<comps>
+								<li Class="CombatExtended.CompProperties_FireModes">
+									<aiAimMode>AimedShot</aiAimMode>
+								</li>
+								<li Class="PLA.CE.Vehicle.CompProperties_AmmoUserVehicle">
+									<magazineSize>24</magazineSize>
+									<ammoSet>AmmoSet_3HST76mmRG</ammoSet>
+									<secondaryAttackVerb>
+										<verbClass>PLA.CE.Vehicle.Verb_ShootVehicleCE</verbClass>
+										<hasStandardCommand>true</hasStandardCommand>
+										<defaultProjectile>Projectile_3HST9mmRG_Steel</defaultProjectile>
+										<warmupTime>1.5</warmupTime>
+										<burstShotCount>20</burstShotCount>
+										<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+										<range>86</range>
+										<soundCast>RG_9mm</soundCast>
+										<soundCastTail>GunTail_Heavy</soundCastTail>
+										<recoilAmount>2.14</recoilAmount>
+										<muzzleFlashScale>18</muzzleFlashScale>
+										<ai_AvoidFriendlyFireRadius>2</ai_AvoidFriendlyFireRadius>
+										<recoilPattern>Mounted</recoilPattern>
+									</secondaryAttackVerb>
+									<secondaryAmmoSet>AmmoSet_3HST9mmRG</secondaryAmmoSet>
+									<secondaryMagazineSize>640</secondaryMagazineSize>
+									<reloadTime>25</reloadTime>
+									<mainWeaponLabel>Use rail maingun</mainWeaponLabel>
+									<secondaryWeaponLabel>Use coaxial rail HMG</secondaryWeaponLabel>
+									<mainWeaponIcon>UI/Icons/FireModes/SecondaryWeaponIcon_76mmMaingun</mainWeaponIcon>
+									<secondaryWeaponIcon>UI/Icons/FireModes/SecondaryWeaponIcon_9mmHMG</secondaryWeaponIcon>
+								</li>
+							</comps>
+						</ThingDef>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>

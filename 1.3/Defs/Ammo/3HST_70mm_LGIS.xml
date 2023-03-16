@@ -1,0 +1,1399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>AmmoCategory70mmLGIS</defName>
+		<label>LGIS 70mm missiles</label>
+		<parent>AmmoRockets</parent>
+		<iconPath>UI/Icons/ThingCategories/LGIS_missile</iconPath>
+	</ThingCategoryDef>
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>RocketConfetti</defName>
+		<label>confetti shell</label>
+		<labelShort>confetti</labelShort>
+		<description>Filled with confetti and a small explosive charge, barely destructive but extremely humiliating.</description>
+	</CombatExtended.AmmoCategoryDef>
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>RocketIncendiary</defName>
+		<label>Incendiary</label>
+		<labelShort>incendiary</labelShort>
+		<description>Filled with incendiary agent. The agent is dispersed on impact, covering the area in flames.</description>
+	</CombatExtended.AmmoCategoryDef>
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>RocketSmoke</defName>
+		<label>Smoke</label>
+		<labelShort>smoke</labelShort>
+		<description>Filled with a smoke-producing agent. Explodes on impact to generate a thick smokescreen.</description>
+	</CombatExtended.AmmoCategoryDef>
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>RocketEMP</defName>
+		<label>EMP</label>
+		<labelShort>EMP</labelShort>
+		<description>Creates an electro-magnetic burst on impact, temporarily disrupting electronic systems and Mechanoids.</description>
+	</CombatExtended.AmmoCategoryDef>
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>RocketFoam</defName>
+		<label>Foam</label>
+		<labelShort>foam</labelShort>
+		<description>Special round designed for civilian fire-fighting purposes. Filled with fire-retardant foam to suppress fires in a large area.</description>
+	</CombatExtended.AmmoCategoryDef>
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>RocketCluster</defName>
+		<label>Cluster</label>
+		<labelShort>cluster</labelShort>
+		<description>Advanced rocket containing multiple submunitions.</description>
+	</CombatExtended.AmmoCategoryDef>
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>RocketIllumination</defName>
+		<label>Illumination</label>
+		<labelShort>illumination</labelShort>
+		<description>Lights up a large area with the illumination agents insides that ignited on impact, lasts for roughtly 3 hours. May cause fire when ignited in enclosed space.</description>
+	</CombatExtended.AmmoCategoryDef>
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>RocketMinelayer</defName>
+		<label>mine layer</label>
+		<labelShort>minelayer</labelShort>
+		<description>Advanced missile designed for remote destribution of land mines.</description>
+	</CombatExtended.AmmoCategoryDef>
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>RocketDecoy</defName>
+		<label>decoy</label>
+		<labelShort>decoy</labelShort>
+		<description>Deploys a decoy projector on impact, distracts enemy attention.</description>
+	</CombatExtended.AmmoCategoryDef>
+
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_70mmLGIS</defName>
+		<label>LGIS missiles</label>
+		<ammoTypes>
+			<Gun_3HST_LGIS_frag>Projectile_70mmLGIS_Frag</Gun_3HST_LGIS_frag>
+			<Gun_3HST_LGIS_cluster>Projectile_70mmLGIS_Cluster</Gun_3HST_LGIS_cluster>
+			<Gun_3HST_LGIS_heat>Projectile_70mmLGIS_HEAT</Gun_3HST_LGIS_heat>
+			<Gun_3HST_LGIS_thermobaric>Projectile_70mmLGIS_Thermobaric</Gun_3HST_LGIS_thermobaric>
+			<Gun_3HST_LGIS_confetti>Projectile_70mmLGIS_Confetti</Gun_3HST_LGIS_confetti>
+			<Gun_3HST_LGIS_incendiary>Projectile_70mmLGIS_Incendiary</Gun_3HST_LGIS_incendiary>
+			<Gun_3HST_LGIS_smoke>Projectile_70mmLGIS_Smoke</Gun_3HST_LGIS_smoke>
+			<Gun_3HST_LGIS_firefoam>Projectile_70mmLGIS_Firefoam</Gun_3HST_LGIS_firefoam>
+			<Gun_3HST_LGIS_EMP>Projectile_70mmLGIS_EMP</Gun_3HST_LGIS_EMP>
+			<Gun_3HST_LGIS_Illumination>Projectile_70mmLGIS_Illumination</Gun_3HST_LGIS_Illumination>
+			<Gun_3HST_LGIS_Minelayer>Projectile_70mmLGIS_MineLayer</Gun_3HST_LGIS_Minelayer>
+			<Gun_3HST_LGIS_Holodecoy>Projectile_70mmLGIS_Holodecoy</Gun_3HST_LGIS_Holodecoy>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_70mmLGIS_Indirect</defName>
+		<label>LGIS missiles</label>
+		<ammoTypes>
+			<Gun_3HST_LGIS_frag>Projectile_70mmLGIS_Frag_Indirect</Gun_3HST_LGIS_frag>
+			<Gun_3HST_LGIS_cluster>Projectile_70mmLGIS_Cluster_Indirect</Gun_3HST_LGIS_cluster>
+			<Gun_3HST_LGIS_heat>Projectile_70mmLGIS_HEAT_Indirect</Gun_3HST_LGIS_heat>
+			<Gun_3HST_LGIS_thermobaric>Projectile_70mmLGIS_Thermobaric_Indirect</Gun_3HST_LGIS_thermobaric>
+			<Gun_3HST_LGIS_confetti>Projectile_70mmLGIS_Confetti_Indirect</Gun_3HST_LGIS_confetti>
+			<Gun_3HST_LGIS_incendiary>Projectile_70mmLGIS_Incendiary_Indirect</Gun_3HST_LGIS_incendiary>
+			<Gun_3HST_LGIS_smoke>Projectile_70mmLGIS_Smoke_Indirect</Gun_3HST_LGIS_smoke>
+			<Gun_3HST_LGIS_firefoam>Projectile_70mmLGIS_Firefoam_Indirect</Gun_3HST_LGIS_firefoam>
+			<Gun_3HST_LGIS_EMP>Projectile_70mmLGIS_EMP_Indirect</Gun_3HST_LGIS_EMP>
+			<Gun_3HST_LGIS_Illumination>Projectile_70mmLGIS_Illumination_Indirect</Gun_3HST_LGIS_Illumination>
+			<Gun_3HST_LGIS_Minelayer>Projectile_70mmLGIS_MineLayer_Indirect</Gun_3HST_LGIS_Minelayer>
+			<Gun_3HST_LGIS_Holodecoy>Projectile_70mmLGIS_Holodecoy_Indirect</Gun_3HST_LGIS_Holodecoy>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!--======================= Confetti frags ==============-->
+
+	<ThingDef ParentName="BaseFragment">
+		<defName>Fragment_ConfettiLarge</defName>
+		<label>Confetti</label>
+		<graphicData>
+			<drawSize>0.3</drawSize>
+			<texPath>Things/Projectile/Confetti/confetti_a</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Fragment</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<speed>10</speed>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<gravityFactor>3</gravityFactor>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseFragment">
+		<defName>Fragment_ConfettiMedium</defName>
+		<label>Confetti</label>
+		<graphicData>
+			<drawSize>0.3</drawSize>
+			<texPath>Things/Projectile/Confetti/confetti_k</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Fragment</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<speed>10</speed>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<gravityFactor>3</gravityFactor>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseFragment">
+		<defName>Fragment_ConfettiSmallR</defName>
+		<label>Confetti</label>
+		<graphicData>
+			<drawSize>0.3</drawSize>
+			<texPath>Things/Projectile/Confetti/confetti_u</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Fragment</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<speed>10</speed>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<gravityFactor>3</gravityFactor>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseFragment">
+		<defName>Fragment_ConfettiSmallY</defName>
+		<label>Confetti</label>
+		<graphicData>
+			<drawSize>0.3</drawSize>
+			<texPath>Things/Projectile/Confetti/confetti_w</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Fragment</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<speed>10</speed>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<gravityFactor>3</gravityFactor>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseFragment">
+		<defName>Fragment_ConfettiSmallG</defName>
+		<label>Confetti</label>
+		<graphicData>
+			<drawSize>0.3</drawSize>
+			<texPath>Things/Projectile/Confetti/confetti_t</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Fragment</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<speed>10</speed>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<gravityFactor>3</gravityFactor>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseFragment">
+		<defName>Fragment_ConfettiSmallB</defName>
+		<label>Confetti</label>
+		<graphicData>
+			<drawSize>0.3</drawSize>
+			<texPath>Things/Projectile/Confetti/confetti_v</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Fragment</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<speed>10</speed>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<gravityFactor>3</gravityFactor>
+		</projectile>
+	</ThingDef>
+
+
+	<ThingDef Name="BaseSubmunition" ParentName="BaseFragment">
+		<defName>Fragment_ExplosiveSubmunition</defName>
+		<label>Explosive submunition</label>
+		<thingClass>ThreeHST.ProjectileCE_FromAirExplode</thingClass>
+		<randomizeRotationOnSpawn>true</randomizeRotationOnSpawn>
+		<graphicData>
+			<texPath>Things/Projectile/ClusterBomblet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.2,0.2)</drawSize>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<explosionRadius>0.9</explosionRadius>
+			<damageDef>Bomb</damageDef>
+			<speed>10</speed>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<damageAmountBase>15</damageAmountBase>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<alwaysFreeIntercept>true</alwaysFreeIntercept>
+			<gravityFactor>8</gravityFactor>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Small>8</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseSubmunition">
+		<defName>Fragment_ExplosiveSubmunitionHiVelovity</defName>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>20</speed>
+		</projectile>
+	</ThingDef>
+
+
+	<ThingDef ParentName="BaseFragment">
+		<defName>Fragment_RecursiveSubmunition</defName>
+		<label>Recursive submunition</label>
+		<randomizeRotationOnSpawn>true</randomizeRotationOnSpawn>
+		<graphicData>
+			<texPath>Things/Projectile/ClusterBomblet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.4,0.4)</drawSize>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<explosionRadius>1.5</explosionRadius>
+			<damageDef>Bomb</damageDef>
+			<speed>20</speed>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<damageAmountBase>65</damageAmountBase>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<alwaysFreeIntercept>true</alwaysFreeIntercept>
+			<gravityFactor>10</gravityFactor>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_RecursiveSubmunition>1</Fragment_RecursiveSubmunition>
+					<Fragment_Small>25</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+
+	<ThingDef ParentName="BaseFragment">
+		<defName>Fragment_AerialDeployedMine</defName>
+		<label>aerial deployed mine</label>
+		<thingClass>ThreeHST.ProjectileCE_FromAirExplode</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/ADM_projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.4,0.4)</drawSize>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Blunt</damageDef>
+			<damageAmountBase>5</damageAmountBase>
+			<armorPenetrationBlunt>20</armorPenetrationBlunt>
+			<speed>10</speed>
+			<alwaysFreeIntercept>true</alwaysFreeIntercept>
+			<gravityFactor>10</gravityFactor>
+		</projectile>
+		<comps>
+			<li Class="ThreeHST.CompProperties_SpawnThingOnDestroy">
+				<def>Trap_AerialDeployedMine</def>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+
+	<ThingDef ParentName="Base3HSTcosmeticFragmentAirBurst">
+		<defName>Fragment_AerialDeployedMineCasingA</defName>
+		<label>ADM carrier casing</label>
+		<graphicData>
+			<texPath>Things/Projectile/ADM_carrier_casingLeft</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<preExplosionSpawnThingDef>Filth_ADScarrierCasingA</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTcosmeticFragmentAirBurst">
+		<defName>Fragment_AerialDeployedMineCasingB</defName>
+		<label>ADM carrier casing</label>
+		<graphicData>
+			<texPath>Things/Projectile/ADM_carrier_casingRight</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<preExplosionSpawnThingDef>Filth_ADScarrierCasingB</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTcosmeticFragmentAirBurst">
+		<defName>Fragment_AerialDeployedMineCasingC</defName>
+		<label>ADM carrier thruster</label>
+		<graphicData>
+			<texPath>Things/Projectile/ADM_carrier_Thruster</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<preExplosionSpawnThingDef>Filth_ADScarrierCasingC</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationBlunt>100</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+
+
+	<ThingDef ParentName="Base3HSTcosmeticFragmentAirBurst">
+		<defName>Fragment_ClusterMissile_casingA</defName>
+		<label>cluster missile casing</label>
+		<graphicData>
+			<texPath>Things/Projectile/ClusterMissile_casingA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<preExplosionSpawnThingDef>Filth_ClusterMissile_casingA</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTcosmeticFragmentAirBurst">
+		<defName>Fragment_ClusterMissile_casingB</defName>
+		<label>cluster missile casing</label>
+		<graphicData>
+			<texPath>Things/Projectile/ClusterMissile_casingB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<preExplosionSpawnThingDef>Filth_ClusterMissile_casingB</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTcosmeticFragmentAirBurst">
+		<defName>Fragment_ClusterMissile_casingC</defName>
+		<label>cluster missile thruster</label>
+		<graphicData>
+			<texPath>Things/Projectile/ADM_carrier_Thruster</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<preExplosionSpawnThingDef>Filth_ClusterMissile_casingC</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationBlunt>100</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTcosmeticFragment">
+		<defName>Fragment_Holodecoy_casingA</defName>
+		<label>holodecoy missile casing</label>
+		<graphicData>
+			<texPath>Things/Projectile/Holodecoy_CasingA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<preExplosionSpawnThingDef>Filth_Holodecoy_casingA</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			<damageDef>Smoke</damageDef>
+			<damageAmountBase>0</damageAmountBase>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTcosmeticFragment">
+		<defName>Fragment_Holodecoy_casingB</defName>
+		<label>holodecoy missile casing</label>
+		<graphicData>
+			<texPath>Things/Projectile/Holodecoy_CasingB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<preExplosionSpawnThingDef>Filth_Holodecoy_casingB</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			<damageDef>Smoke</damageDef>
+			<damageAmountBase>0</damageAmountBase>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTcosmeticFragment">
+		<defName>Fragment_Holodecoy_casingC</defName>
+		<label>holodecoy missile thruster</label>
+		<graphicData>
+			<texPath>Things/Projectile/ADM_carrier_Thruster</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<preExplosionSpawnThingDef>Filth_Holodecoy_casingC</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			<damageDef>Smoke</damageDef>
+			<damageAmountBase>0</damageAmountBase>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTcosmeticFragmentAirBurst">
+		<defName>Fragment_LGISthrusterAB</defName>
+		<label>LGIS missile thruster</label>
+		<graphicData>
+			<texPath>Things/Projectile/LGISthruster</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<preExplosionSpawnThingDef>Filth_LGISthruster</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationBlunt>100</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTcosmeticFragment">
+		<defName>Fragment_LGISthruster</defName>
+		<label>LGIS missile thruster</label>
+		<graphicData>
+			<texPath>Things/Projectile/LGISthruster</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<preExplosionSpawnThingDef>Filth_LGISthruster</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationBlunt>100</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+
+	<ThingDef>
+		<defName>Trap_AerialDeployedMine</defName>
+		<label>aerial deployed mine</label>
+		<description>A tiny anti-personnel proximity mine deployed en masse via LGIS missiles and detonates once hostile personnel is detected within blast radius. Due to the ADM's nature of missile deployment, your colonists don't know their exact location thus won't automatically avoid them! Its small size prohibits complicated IFF system to be installed, rendering it impossible to deconstruct it safely, requiring manual detonation via gunfire or EMP blast to defuse. Its proximity sensor may be accidently triggered by colonists.</description>
+		<thingClass>ThreeHST.Mine</thingClass>
+		<category>Item</category>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/none</texPath>
+		</graphicData>
+		<uiIconPath>Things/Building/Aerial_Deployed_Mine</uiIconPath>
+		<altitudeLayer>Filth</altitudeLayer>
+		<tickerType>Normal</tickerType>
+		<drawerType>MapMeshOnly</drawerType>
+		<selectable>false</selectable>
+		<statBases>
+			<Mass>0.25</Mass>
+			<MaxHitPoints>20</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<TrapSpringChance>10</TrapSpringChance>
+		</statBases>
+		<comps>
+			<li Class="ThreeHST.CompProperties_ProximityExplosive">
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveRadius>2</explosiveRadius>
+				<damageAmountBase>35</damageAmountBase>
+				<wildAnimalSpringChance>0.005</wildAnimalSpringChance>
+				<colonistSpringChance>0.015</colonistSpringChance>
+				<selfExplodeChance>0.8</selfExplodeChance>
+				<minSelfExplodeTick>2592000</minSelfExplodeTick>
+				<maxSelfExplodeTick>10368000</maxSelfExplodeTick>
+				<disarmTime>15</disarmTime>
+				<!--point=(int-8)*(craft-8)*sight*manipulation-->
+				<disarmSuccessRateCurve>
+					<points>
+						<li>(0,0)</li>
+						<li>(16,0.5)</li>
+						<li>(49,0.99)</li>
+						<li>(400,0.99)</li>
+					</points>
+				</disarmSuccessRateCurve>
+				<disarmLeavings>
+					<Weapon_ThrownADM>1</Weapon_ThrownADM>
+				</disarmLeavings>
+				<startWickOnDamageTaken>
+					<li>EMP</li>
+					<li>PrometheumFlame</li>
+					<li>Flame</li>
+				</startWickOnDamageTaken>
+				<wickTicks>
+					<min>20</min>
+					<max>60</max>
+				</wickTicks>
+				<detectionRadius>1.7</detectionRadius>
+			</li>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>35</damageAmountBase>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveRadius>2</explosiveRadius>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Small>25</Fragment_Small>
+				</fragments>
+			</li>
+			<li Class="ThreeHST.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_Mines</li>
+				</concepts>
+			</li>
+			<li Class="BDsGlitterworldFaction3HST.CompProperties_RandomPositionPrint">
+				<graphicData>
+					<graphicClass>Graphic_Single</graphicClass>
+					<texPath>Things/Building/Aerial_Deployed_Mine</texPath>
+					<drawSize>(0.4,0.4)</drawSize>
+					<damageData>
+						<enabled>false</enabled>
+					</damageData>
+				</graphicData>
+				<maxDeviation>0.5</maxDeviation>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+
+
+	<ThingDef ParentName="BuildingBase">
+		<thingClass>CombatExtended.Building_TurretGunCE</thingClass>
+		<defName>Turret_Holodecoy</defName>
+		<label>holographic decoy</label>
+		<description>A holographic decoy that attracts enemy aggression. It's internal battery lasts for 6 hours.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<drawSize>2</drawSize>
+			<shaderType>Transparent</shaderType>
+			<texPath>Things/Building/Holodecoy</texPath>
+			<drawOffset>(0, 0, 0.5)</drawOffset>
+			<shadowData>
+				<volume>(0.27,0.25,0.27)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<tradeability>None</tradeability>
+		<techLevel>Spacer</techLevel>
+		<stealable>false</stealable>
+		<rotatable>false</rotatable>
+		<statBases>
+			<AimingAccuracy>1</AimingAccuracy>
+			<ShootingAccuracyTurret>1</ShootingAccuracyTurret>
+			<MaxHitPoints>240</MaxHitPoints>
+			<Flammability>0.1</Flammability>
+			<Beauty>10</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.15</fillPercent>
+		<castEdgeShadows>false</castEdgeShadows>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<building>
+			<expandHomeArea>false</expandHomeArea>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretBurstCooldownTime>1</turretBurstCooldownTime>
+			<turretGunDef>Gun_Holodecoy</turretGunDef>
+		</building>
+		<placeWorkers Inherit="False">
+			<li>PlaceWorker_TurretTop</li>
+		</placeWorkers>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveDamageType>EMP</explosiveDamageType>
+				<explosiveRadius>2</explosiveRadius>
+				<damageAmountBase>10</damageAmountBase>
+				<startWickOnDamageTaken>
+					<li>EMP</li>
+				</startWickOnDamageTaken>
+				<wickTicks>
+					<min>5</min>
+					<max>30</max>
+				</wickTicks>
+			</li>
+			<li Class="CompProperties_DestroyAfterDelay">
+				<delayTicks>21600</delayTicks>
+				<destroyMode>KillFinalize</destroyMode>
+				<countdownLabel>Power off in</countdownLabel>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(43,255,255,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseAutoTurretGun">
+		<defName>Gun_Holodecoy</defName>
+		<label>Taunt</label>
+		<graphicData>
+			<texPath>Things/none</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>A built-in loud speaker that attracts enemy aggression.</description>
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+		<destroyOnDrop>true</destroyOnDrop>
+		<tradeability>None</tradeability>
+		<useHitPoints>false</useHitPoints>
+		<statBases>
+			<MarketValue>0</MarketValue>
+			<SightsEfficiency>1</SightsEfficiency>
+			<ShotSpread>0</ShotSpread>
+			<SwayFactor>0</SwayFactor>
+			<RangedWeapon_Cooldown>0</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>0</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_none</defaultProjectile>
+				<warmupTime>0</warmupTime>
+				<range>0</range>
+				<ticksBetweenBurstShots>114514</ticksBetweenBurstShots>
+				<burstShotCount>0</burstShotCount>
+				<muzzleFlashScale>0</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Projectile_none</defName>
+		<label>nothing</label>
+		<graphicData>
+			<texPath>Things/none</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Smoke</damageDef>
+			<damageAmountBase>0</damageAmountBase>
+			<speed>114514</speed>
+		</projectile>
+	</ThingDef>
+
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Name="Base70mmLGIS" ParentName="BaseBullet" Abstract="true">
+		<graphicData>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>80</speed>
+			<soundAmbient>RocketPropelledLoop_Small</soundAmbient>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base70mmLGIS">
+		<defName>Projectile_70mmLGIS_HEAT</defName>
+		<label>LGIS missile (HEAT)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/3HST_IAA_12_LGIS_Missile_heat_projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>248</damageAmountBase>
+			<armorPenetrationSharp>280</armorPenetrationSharp>
+			<armorPenetrationBlunt>33.233</armorPenetrationBlunt>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>111</damageAmountBase>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveRadius>1</explosiveRadius>
+				<explosionSound>MortarBomb_Explode</explosionSound>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>6</Fragment_Large>
+					<Fragment_Small>48</Fragment_Small>
+					<Fragment_LGISthruster>1</Fragment_LGISthruster>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Base70mmLGIS">
+		<defName>Projectile_70mmLGIS_Thermobaric</defName>
+		<label>LGIS missile (Thermobaric)</label>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/3HST_IAA_12_LGIS_Missile_thermobaric_projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<explosionRadius>3.7</explosionRadius>
+			<damageDef>Thermobaric</damageDef>
+			<damageAmountBase>277</damageAmountBase>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<soundExplode>MortarIncendiary_Explode</soundExplode>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_LGISthruster>1</Fragment_LGISthruster>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Base70mmLGIS">
+		<defName>Projectile_70mmLGIS_Frag</defName>
+		<label>LGIS missile (Frag)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/3HST_IAA_12_LGIS_Missile_frag_projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<explosionRadius>2</explosionRadius>
+			<damageDef>Bomb</damageDef>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<damageAmountBase>110</damageAmountBase>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>8</Fragment_Large>
+					<Fragment_Small>75</Fragment_Small>
+					<Fragment_LGISthruster>1</Fragment_LGISthruster>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Base70mmLGIS">
+		<defName>Projectile_70mmLGIS_Cluster</defName>
+		<label>LGIS missile (Cluster)</label>
+		<thingClass>BDsGlitterworldFaction3HST.Projectile_HeightFuse</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/3HST_IAA_12_LGIS_Missile_cluster_projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Smoke</damageDef>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<soundExplode>InfernoCannon_Fire</soundExplode>
+			<aimHeightOffset>10</aimHeightOffset>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_ExplosiveSubmunitionHiVelovity>30</Fragment_ExplosiveSubmunitionHiVelovity>
+					<Fragment_ClusterMissile_casingA>1</Fragment_ClusterMissile_casingA>
+					<Fragment_ClusterMissile_casingB>1</Fragment_ClusterMissile_casingB>
+					<Fragment_ClusterMissile_casingC>1</Fragment_ClusterMissile_casingC>
+				</fragments>
+				<fragAngleRange>-89~-10</fragAngleRange>
+				<fragXZAngleRange>-45~45</fragXZAngleRange>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="BDsGlitterworldFaction3HST.DefModExtension_HeightFuse">
+				<detonateOnAscend>true</detonateOnAscend>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="Base70mmLGIS">
+		<defName>Projectile_70mmLGIS_Confetti</defName>
+		<label>LGIS missile (Confetti)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/3HST_IAA_12_LGIS_Missile_confetti_projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<explosionRadius>2.5</explosionRadius>
+			<damageDef>Bomb</damageDef>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<damageAmountBase>2</damageAmountBase>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Small>10</Fragment_Small>
+					<Fragment_ConfettiLarge>50</Fragment_ConfettiLarge>
+					<Fragment_ConfettiMedium>50</Fragment_ConfettiMedium>
+					<Fragment_ConfettiSmallR>30</Fragment_ConfettiSmallR>
+					<Fragment_ConfettiSmallG>30</Fragment_ConfettiSmallG>
+					<Fragment_ConfettiSmallB>30</Fragment_ConfettiSmallB>
+					<Fragment_ConfettiSmallY>30</Fragment_ConfettiSmallY>
+					<Fragment_LGISthruster>1</Fragment_LGISthruster>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Base70mmLGIS">
+		<defName>Projectile_70mmLGIS_Incendiary</defName>
+		<label>LGIS missile (Incendiary)</label>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/3HST_IAA_12_LGIS_Missile_incendiary_projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>PrometheumFlame</damageDef>
+			<damageAmountBase>0</damageAmountBase>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<explosionRadius>4</explosionRadius>
+			<preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>0.3</preExplosionSpawnChance>
+			<soundExplode>MortarIncendiary_Explode</soundExplode>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_LGISthruster>1</Fragment_LGISthruster>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Base70mmLGIS">
+		<defName>Projectile_70mmLGIS_Firefoam</defName>
+		<label>LGIS missile (Foam)</label>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/3HST_IAA_12_LGIS_Missile_firefoam_projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Extinguish</damageDef>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<explosionRadius>7</explosionRadius>
+			<soundExplode>Explosion_EMP</soundExplode>
+			<postExplosionSpawnThingDef>Filth_FireFoam</postExplosionSpawnThingDef>
+			<postExplosionSpawnChance>1</postExplosionSpawnChance>
+			<postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<explosionEffect>ExtinguisherExplosion</explosionEffect>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_LGISthruster>1</Fragment_LGISthruster>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Base70mmLGIS">
+		<defName>Projectile_70mmLGIS_Smoke</defName>
+		<label>LGIS missile (Smoke)</label>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/3HST_IAA_12_LGIS_Missile_smoke_projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Smoke</damageDef>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<explosionRadius>5</explosionRadius>
+			<soundExplode>Explosion_EMP</soundExplode>
+			<postExplosionSpawnThingDef>Gas_Smoke</postExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<explosionEffect>ExtinguisherExplosion</explosionEffect>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_LGISthruster>1</Fragment_LGISthruster>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Base70mmLGIS">
+		<defName>Projectile_70mmLGIS_EMP</defName>
+		<label>LGIS missile (EMP)</label>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/3HST_IAA_12_LGIS_Missile_emp_projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>EMP</damageDef>
+			<damageAmountBase>85</damageAmountBase>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<explosionRadius>3.5</explosionRadius>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_LGISthruster>1</Fragment_LGISthruster>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Base70mmLGIS">
+		<defName>Projectile_70mmLGIS_Illumination</defName>
+		<label>LGIS missile (Illumination)</label>
+		<thingClass>BDsGlitterworldFaction3HST.Projectile_HeightFuse</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/3HST_IAA_12_LGIS_Missile_illumination_projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<armorPenetrationBlunt>320</armorPenetrationBlunt>
+			<preExplosionSpawnThingDef>Filth_Illumition_LGIS</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			<soundExplode>MortarIncendiary_Explode</soundExplode>
+			<aimHeightOffset>10</aimHeightOffset>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_LGISthrusterAB>1</Fragment_LGISthrusterAB>
+				</fragments>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="BDsGlitterworldFaction3HST.DefModExtension_HeightFuse">
+				<detonateOnAscend>true</detonateOnAscend>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="Base70mmLGIS">
+		<defName>Projectile_70mmLGIS_MineLayer</defName>
+		<label>LGIS missile (Mine layer)</label>
+		<thingClass>BDsGlitterworldFaction3HST.Projectile_HeightFuse</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/ADM_carrier</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Smoke</damageDef>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<soundExplode>InfernoCannon_Fire</soundExplode>
+			<aimHeightOffset>10</aimHeightOffset>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_AerialDeployedMine>5</Fragment_AerialDeployedMine>
+					<Fragment_AerialDeployedMineCasingA>1</Fragment_AerialDeployedMineCasingA>
+					<Fragment_AerialDeployedMineCasingB>1</Fragment_AerialDeployedMineCasingB>
+					<Fragment_AerialDeployedMineCasingC>1</Fragment_AerialDeployedMineCasingC>
+				</fragments>
+				<fragAngleRange>-89~-10</fragAngleRange>
+				<fragXZAngleRange>-45~45</fragXZAngleRange>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="BDsGlitterworldFaction3HST.DefModExtension_HeightFuse">
+				<detonateOnAscend>true</detonateOnAscend>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="Base70mmLGIS">
+		<defName>Projectile_70mmLGIS_Holodecoy</defName>
+		<label>LGIS missile (Holodecoy)</label>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/Holodecoy_Projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Smoke</damageDef>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<soundExplode>InfernoCannon_Fire</soundExplode>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Holodecoy_casingA>1</Fragment_Holodecoy_casingA>
+					<Fragment_Holodecoy_casingB>1</Fragment_Holodecoy_casingB>
+					<Fragment_Holodecoy_casingC>1</Fragment_Holodecoy_casingC>
+				</fragments>
+			</li>
+			<li Class="ThreeHST.CompProperties_SpawnThingOnDestroy">
+				<def>Turret_Holodecoy</def>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+
+	<ThingDef Name="Base70mmLGISIDR" ParentName="BaseBullet" Abstract="true">
+		<graphicData>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>0</speed>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<flyOverhead>true</flyOverhead>
+			<gravityFactor>20</gravityFactor>
+			<soundAmbient>RocketPropelledLoop_Small</soundAmbient>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base70mmLGISIDR">
+		<defName>Projectile_70mmLGIS_HEAT_Indirect</defName>
+		<label>LGIS missile (HEAT)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/3HST_IAA_12_LGIS_Missile_heat_projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>248</damageAmountBase>
+			<armorPenetrationSharp>280</armorPenetrationSharp>
+			<armorPenetrationBlunt>33.233</armorPenetrationBlunt>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>111</damageAmountBase>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveRadius>1</explosiveRadius>
+				<explosionSound>MortarBomb_Explode</explosionSound>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>6</Fragment_Large>
+					<Fragment_Small>48</Fragment_Small>
+					<Fragment_LGISthruster>1</Fragment_LGISthruster>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Base70mmLGISIDR">
+		<defName>Projectile_70mmLGIS_Thermobaric_Indirect</defName>
+		<label>LGIS missile (Thermobaric)</label>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/3HST_IAA_12_LGIS_Missile_thermobaric_projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<explosionRadius>3.7</explosionRadius>
+			<damageDef>Thermobaric</damageDef>
+			<damageAmountBase>277</damageAmountBase>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_LGISthruster>1</Fragment_LGISthruster>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Base70mmLGISIDR">
+		<defName>Projectile_70mmLGIS_Frag_Indirect</defName>
+		<label>LGIS missile (Frag)</label>
+		<thingClass>BDsGlitterworldFaction3HST.Projectile_HeightFuse</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/3HST_IAA_12_LGIS_Missile_frag_projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<explosionRadius>2.5</explosionRadius>
+			<damageDef>Bomb</damageDef>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<damageAmountBase>165</damageAmountBase>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<aimHeightOffset>3</aimHeightOffset>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>10</Fragment_Large>
+					<Fragment_Small>145</Fragment_Small>
+					<Fragment_LGISthruster>1</Fragment_LGISthruster>
+				</fragments>
+				<fragAngleRange>-89~-10</fragAngleRange>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Base70mmLGISIDR">
+		<defName>Projectile_70mmLGIS_Cluster_Indirect</defName>
+		<label>LGIS missile (Cluster)</label>
+		<thingClass>BDsGlitterworldFaction3HST.Projectile_HeightFuse</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/3HST_IAA_12_LGIS_Missile_cluster_projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Smoke</damageDef>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<soundExplode>InfernoCannon_Fire</soundExplode>
+			<aimHeightOffset>10</aimHeightOffset>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_ExplosiveSubmunition>30</Fragment_ExplosiveSubmunition>
+					<Fragment_ClusterMissile_casingA>1</Fragment_ClusterMissile_casingA>
+					<Fragment_ClusterMissile_casingB>1</Fragment_ClusterMissile_casingB>
+					<Fragment_ClusterMissile_casingC>1</Fragment_ClusterMissile_casingC>
+				</fragments>
+				<fragAngleRange>-89~-10</fragAngleRange>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Base70mmLGISIDR">
+		<defName>Projectile_70mmLGIS_Confetti_Indirect</defName>
+		<label>LGIS missile (Confetti)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/3HST_IAA_12_LGIS_Missile_confetti_projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<explosionRadius>2.5</explosionRadius>
+			<damageDef>Bomb</damageDef>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<damageAmountBase>2</damageAmountBase>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Small>10</Fragment_Small>
+					<Fragment_ConfettiLarge>50</Fragment_ConfettiLarge>
+					<Fragment_ConfettiMedium>50</Fragment_ConfettiMedium>
+					<Fragment_ConfettiSmallR>30</Fragment_ConfettiSmallR>
+					<Fragment_ConfettiSmallG>30</Fragment_ConfettiSmallG>
+					<Fragment_ConfettiSmallB>30</Fragment_ConfettiSmallB>
+					<Fragment_ConfettiSmallY>30</Fragment_ConfettiSmallY>
+					<Fragment_LGISthruster>1</Fragment_LGISthruster>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Base70mmLGISIDR">
+		<defName>Projectile_70mmLGIS_Incendiary_Indirect</defName>
+		<label>LGIS missile (Incendiary)</label>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/3HST_IAA_12_LGIS_Missile_incendiary_projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>PrometheumFlame</damageDef>
+			<damageAmountBase>0</damageAmountBase>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<explosionRadius>7</explosionRadius>
+			<preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>0.3</preExplosionSpawnChance>
+			<soundExplode>MortarIncendiary_Explode</soundExplode>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_LGISthruster>1</Fragment_LGISthruster>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Base70mmLGISIDR">
+		<defName>Projectile_70mmLGIS_Firefoam_Indirect</defName>
+		<label>LGIS missile (Foam)</label>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/3HST_IAA_12_LGIS_Missile_firefoam_projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Extinguish</damageDef>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<explosionRadius>7</explosionRadius>
+			<soundExplode>Explosion_EMP</soundExplode>
+			<postExplosionSpawnThingDef>Filth_FireFoam</postExplosionSpawnThingDef>
+			<postExplosionSpawnChance>1</postExplosionSpawnChance>
+			<postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<explosionEffect>ExtinguisherExplosion</explosionEffect>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_LGISthruster>1</Fragment_LGISthruster>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Base70mmLGISIDR">
+		<defName>Projectile_70mmLGIS_Smoke_Indirect</defName>
+		<label>LGIS missile (Smoke)</label>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/3HST_IAA_12_LGIS_Missile_smoke_projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Smoke</damageDef>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<explosionRadius>6</explosionRadius>
+			<soundExplode>Explosion_EMP</soundExplode>
+			<postExplosionSpawnThingDef>Gas_Smoke</postExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<explosionEffect>ExtinguisherExplosion</explosionEffect>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_LGISthruster>1</Fragment_LGISthruster>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Base70mmLGISIDR">
+		<defName>Projectile_70mmLGIS_EMP_Indirect</defName>
+		<label>LGIS missile (EMP)</label>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/3HST_IAA_12_LGIS_Missile_emp_projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>EMP</damageDef>
+			<damageAmountBase>85</damageAmountBase>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<explosionRadius>3.5</explosionRadius>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_LGISthruster>1</Fragment_LGISthruster>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Base70mmLGISIDR">
+		<defName>Projectile_70mmLGIS_Illumination_Indirect</defName>
+		<label>LGIS missile (Illumination)</label>
+		<thingClass>BDsGlitterworldFaction3HST.Projectile_HeightFuse</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/3HST_IAA_12_LGIS_Missile_illumination_projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<armorPenetrationBlunt>320</armorPenetrationBlunt>
+			<preExplosionSpawnThingDef>Filth_Illumition_LGIS</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			<soundExplode>MortarIncendiary_Explode</soundExplode>
+			<aimHeightOffset>10</aimHeightOffset>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_LGISthrusterAB>1</Fragment_LGISthrusterAB>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Base70mmLGISIDR">
+		<defName>Projectile_70mmLGIS_MineLayer_Indirect</defName>
+		<label>LGIS missile (Mine layer)</label>
+		<thingClass>BDsGlitterworldFaction3HST.Projectile_HeightFuse</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/ADM_carrier</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Smoke</damageDef>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<soundExplode>InfernoCannon_Fire</soundExplode>
+			<aimHeightOffset>10</aimHeightOffset>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_AerialDeployedMine>5</Fragment_AerialDeployedMine>
+					<Fragment_AerialDeployedMineCasingA>1</Fragment_AerialDeployedMineCasingA>
+					<Fragment_AerialDeployedMineCasingB>1</Fragment_AerialDeployedMineCasingB>
+					<Fragment_AerialDeployedMineCasingC>1</Fragment_AerialDeployedMineCasingC>
+				</fragments>
+				<fragAngleRange>-89~-10</fragAngleRange>
+				<fragXZAngleRange>-45~45</fragXZAngleRange>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Base70mmLGISIDR">
+		<defName>Projectile_70mmLGIS_Holodecoy_Indirect</defName>
+		<label>LGIS missile (Holodecoy)</label>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/Holodecoy_Projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Smoke</damageDef>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<soundExplode>InfernoCannon_Fire</soundExplode>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Holodecoy_casingA>1</Fragment_Holodecoy_casingA>
+					<Fragment_Holodecoy_casingB>1</Fragment_Holodecoy_casingB>
+					<Fragment_Holodecoy_casingC>1</Fragment_Holodecoy_casingC>
+				</fragments>
+			</li>
+			<li Class="ThreeHST.CompProperties_SpawnThingOnDestroy">
+				<def>Turret_Holodecoy</def>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

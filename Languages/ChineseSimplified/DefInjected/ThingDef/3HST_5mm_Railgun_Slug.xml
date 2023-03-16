@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- Ammo -->
+
+	<Ammo_3HST5mmRG_Steel.label>3HST制 5mm磁轨通用弹</Ammo_3HST5mmRG_Steel.label>
+	<Ammo_3HST5mmRG_Steel.description>用于一系列3HST制步枪和机枪的小口径磁轨弹。</Ammo_3HST5mmRG_Steel.description>
+
+
+	<!-- Projectiles -->
+
+	<Projectile_3HST5mmRG_Steel.label>3HST制 5mm磁轨通用弹 (脱壳穿甲弹)</Projectile_3HST5mmRG_Steel.label>
+
+	<Ammo_3HST5mmRG_AP.label>3HST制 5mm磁轨穿甲弹</Ammo_3HST5mmRG_AP.label>
+	<Ammo_3HST5mmRG_AP.description>用于一系列3HST制步枪和机枪的小口径磁轨弹。</Ammo_3HST5mmRG_AP.description>
+
+
+	<Projectile_3HST5mmRG_AP.label>3HST制 5mm磁轨通用弹 (加固穿甲弹)</Projectile_3HST5mmRG_AP.label>
+
+
+</LanguageData>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Research_3HST_Railgun.label>3HST制磁轨炮</Research_3HST_Railgun.label>
+  <Research_3HST_Railgun.description>解锁3HST制磁轨武器，一种牺牲枪管寿命和伤害换取穿甲能力的武器。</Research_3HST_Railgun.description>
+
+  <Research_3HST_Railgun_Components.label>3HST磁轨部件</Research_3HST_Railgun_Components.label>
+  <Research_3HST_Railgun_Components.description>解锁3HST制磁轨武器所使用的电磁加速轨道的制作。</Research_3HST_Railgun_Components.description>
+
+  <Research_3HST_ADV_LGIS.label>先进LGIS导弹</Research_3HST_ADV_LGIS.label>
+  <Research_3HST_ADV_LGIS.description>解锁更为昂贵，更为先进，或许还有附带伤害的实验性LGIS导弹。</Research_3HST_ADV_LGIS.description>
+
+
+</LanguageData>

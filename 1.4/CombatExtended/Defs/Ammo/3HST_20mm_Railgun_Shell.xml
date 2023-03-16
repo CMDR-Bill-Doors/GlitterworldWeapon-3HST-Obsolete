@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>AmmoCategory_3HST_20mm_Railgun</defName>
+		<label>3HST 20mm Railgun Slug</label>
+		<parent>AmmoAdvanced</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberRailgunHighCaliber</iconPath>
+	</ThingCategoryDef>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_3HST20mmRG</defName>
+		<label>3HST 20mm railgun</label>
+		<ammoTypes>
+			<Ammo_3HST20mmRG_Steel>Projectile_3HST20mmRG_Steel</Ammo_3HST20mmRG_Steel>
+			<Ammo_3HST20mmRG_SAPHE>Projectile_3HST20mmRG_SAPHE</Ammo_3HST20mmRG_SAPHE>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerMediumAmmoBase">
+		<defName>Ammo_3HST20mmRG_Steel</defName>
+		<label>3HST 20mm Steel Railgun Slug</label>
+		<description>High caliber railgun cartridges used by a variety of 3HST-made heavy weapons</description>
+		<generateCommonality>1</generateCommonality>
+		<generateAllowChance>1</generateAllowChance>
+		<statBases>
+			<Mass>0.625</Mass>
+			<Bulk>0.25</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_FabricationBench</li>
+			<!-- Railgun ammo isn't handloaded because it contains no propellant, and the sabots must be precision-machined anyway -->
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoCategory_3HST_20mm_Railgun</li>
+		</thingCategories>
+		<stackLimit>3000</stackLimit>
+		<graphicData>
+			<texPath>Things/Ammo/Railgun/Ammo_3HST_20mm</texPath>
+			<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<ammoClass>RailgunSabot</ammoClass>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
+		<defName>Ammo_3HST20mmRG_SAPHE</defName>
+		<label>3HST 20mm SAPHE Railgun Slug</label>
+		<description>High caliber railgun cartridges used by a variety of 3HST-made heavy weapons</description>
+		<generateCommonality>1</generateCommonality>
+		<generateAllowChance>1</generateAllowChance>
+		<statBases>
+			<Mass>0.625</Mass>
+			<Bulk>0.25</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_FabricationBench</li>
+			<!-- Railgun ammo isn't handloaded because it contains no propellant, and the sabots must be precision-machined anyway -->
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoCategory_3HST_20mm_Railgun</li>
+		</thingCategories>
+		<stackLimit>3000</stackLimit>
+		<graphicData>
+			<texPath>Things/Ammo/Railgun/Ammo_3HST_20mmHE</texPath>
+			<graphicClass>CombatExtended.Graphic_StackCountRanged</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<ammoClass>BDRG_RailgunSAPHE</ammoClass>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseFragment">
+		<defName>Fragment_Large_20mmRG</defName>
+		<label>large fragments</label>
+		<graphicData>
+			<texPath>Things/Projectile/Fragments/Fragment_Large</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Fragment</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<speed>40</speed>
+			<armorPenetrationSharp>4.5</armorPenetrationSharp>
+			<armorPenetrationBlunt>75</armorPenetrationBlunt>
+			<gravityFactor>80</gravityFactor>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseFragment">
+		<defName>Fragment_Small_20mmRG</defName>
+		<label>small fragments</label>
+		<graphicData>
+			<texPath>Things/Projectile/Fragments/Fragment_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Fragment</damageDef>
+			<damageAmountBase>4</damageAmountBase>
+			<speed>30</speed>
+			<armorPenetrationSharp>2</armorPenetrationSharp>
+			<armorPenetrationBlunt>6.4</armorPenetrationBlunt>
+			<gravityFactor>80</gravityFactor>
+		</projectile>
+	</ThingDef>
+
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Projectile_3HST20mmRG_Steel</defName>
+		<label>20mm Railgun shell (Sabot)</label>
+		<thingClass>BillDoorsFramework.PenetratingBulletCE</thingClass>
+		<uiIconPath>UI/Icons/Projectile_3HST_Rail_Icon</uiIconPath>
+
+		<graphicData>
+			<texPath>Things/Projectile/Projectile_3HST_Rail</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>BDRG_HighCalRailgun</damageDef>
+			<damageAmountBase>120</damageAmountBase>
+			<armorPenetrationSharp>289</armorPenetrationSharp>
+			<armorPenetrationBlunt>45839</armorPenetrationBlunt>
+			<speed>350</speed>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>20</damageAmountBase>
+				<explosiveDamageType>DamageDef_Shockwave</explosiveDamageType>
+				<explosiveRadius>1.2</explosiveRadius>
+				<explosionSound>Explosion_Stun</explosionSound>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="BillDoorsFramework.ModExtension_PenetratingProjectile">
+				<overpenDamageMulti>0.4</overpenDamageMulti>
+				<PenetrationFloorPercentage>0.2</PenetrationFloorPercentage>
+				<penetrationPotentialMultiplier>2</penetrationPotentialMultiplier>
+				<postPenetrationDeviationAngle>5</postPenetrationDeviationAngle>
+				<buildingEquivalentMulti>0.09</buildingEquivalentMulti>
+				<bodysizeEquivalentMulti>5</bodysizeEquivalentMulti>
+				<treeEquivalent>5</treeEquivalent>
+				<chunkEquivalent>25</chunkEquivalent>
+				<bounceEquivalent>50</bounceEquivalent>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Projectile_3HST20mmRG_SAPHE</defName>
+		<label>20mm Railgun shell (SAPHE)</label>
+		<thingClass>BillDoorsFramework.PenetratingBulletCE</thingClass>
+		<uiIconPath>UI/Icons/Projectile_3HST_Rail_Icon</uiIconPath>
+
+		<graphicData>
+			<texPath>Things/Projectile/Projectile_3HST_Rail</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>BDRG_HighCalRailgun</damageDef>
+			<damageAmountBase>90</damageAmountBase>
+			<armorPenetrationSharp>289</armorPenetrationSharp>
+			<armorPenetrationBlunt>45839</armorPenetrationBlunt>
+			<speed>350</speed>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>20</damageAmountBase>
+				<explosiveDamageType>DamageDef_Shockwave</explosiveDamageType>
+				<explosiveRadius>1.2</explosiveRadius>
+				<explosionSound>Explosion_Stun</explosionSound>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_PostPenetrationExplosive">
+				<compClass>BillDoorsFramework.CompPostPenetrationExplosive</compClass>
+				<damageAmountBase>30</damageAmountBase>
+				<explosiveRadius>1.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<wickTicks>1~3</wickTicks>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Small_20mmRG>13</Fragment_Small_20mmRG>
+					<Fragment_Large_20mmRG>5</Fragment_Large_20mmRG>
+				</fragments>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="BillDoorsFramework.ModExtension_PenetratingProjectile">
+				<overpenDamageMulti>0.4</overpenDamageMulti>
+				<PenetrationFloorPercentage>0.2</PenetrationFloorPercentage>
+				<penetrationPotentialMultiplier>2</penetrationPotentialMultiplier>
+				<postPenetrationDeviationAngle>5</postPenetrationDeviationAngle>
+				<buildingEquivalentMulti>0.09</buildingEquivalentMulti>
+				<bodysizeEquivalentMulti>5</bodysizeEquivalentMulti>
+				<treeEquivalent>5</treeEquivalent>
+				<chunkEquivalent>25</chunkEquivalent>
+				<bounceEquivalent>50</bounceEquivalent>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_3HST20mmRG_Steel</defName>
+		<label>make 20mm Railgun cartridge (Sabot) x100</label>
+		<description>Craft 100 20mm Railgun (Sabot) cartridges.</description>
+		<jobString>Making 20mm Railgun (Sabot) cartridges.</jobString>
+		<workAmount>8000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Uranium</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_3HST20mmRG_Steel>100</Ammo_3HST20mmRG_Steel>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_3HST20mmRG_SAPHE</defName>
+		<label>make 20mm Railgun cartridge (SAPHE) x100</label>
+		<description>Craft 100 20mm Railgun (SAPHE) cartridges.</description>
+		<jobString>Making 20mm Railgun (SAPHE) cartridges.</jobString>
+		<workAmount>16000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+				<li>Uranium</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_3HST20mmRG_SAPHE>100</Ammo_3HST20mmRG_SAPHE>
+		</products>
+	</RecipeDef>
+
+</Defs>

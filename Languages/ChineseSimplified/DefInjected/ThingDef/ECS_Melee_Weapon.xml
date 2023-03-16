@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Melee_3HST_ECSBlade.label>ECS剑刃</Melee_3HST_ECSBlade.label>
+  <Melee_3HST_ECSBlade.description>用一片ECS护盾力场作为刀刃的军刀。比羽毛更轻，比单分子剑更锐利，但是很脆而且伤害不高。</Melee_3HST_ECSBlade.description>
+  <Melee_3HST_ECSBlade.tools.0.label>剑柄</Melee_3HST_ECSBlade.tools.0.label>
+  <Melee_3HST_ECSBlade.tools.1.label>剑尖</Melee_3HST_ECSBlade.tools.1.label>
+  <Melee_3HST_ECSBlade.tools.2.label>剑刃</Melee_3HST_ECSBlade.tools.2.label>
+
+
+</LanguageData>

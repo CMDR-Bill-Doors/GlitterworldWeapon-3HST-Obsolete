@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Projectile_3HST4mmRG_Steel</defName>
+		<label>4mm railgun</label>
+		<thingClass>BillDoorsFramework.PenetratingBullet</thingClass>
+		<uiIconPath>UI/Icons/Projectile_3HST_Rail_Icon</uiIconPath>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.5,1)</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>55</speed>
+			<armorPenetrationBase>0.2</armorPenetrationBase>
+		</projectile>
+		<modExtensions>
+			<li Class="BillDoorsFramework.ModExtension_PenetratingProjectile">
+				<overpenDamageMulti>0.8</overpenDamageMulti>
+				<stopperDamageMulti>1.225</stopperDamageMulti>
+				<penetrationPotentialMultiplier>5</penetrationPotentialMultiplier>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- ================== 4mm autopistol =====================-->
+	<ThingDef ParentName="Base3HSTShortGun">
+		<defName>Gun_3HST_4mm_AutoRailPistol</defName>
+		<label>rail autopistol</label>
+		<description>An automatic pistol chambered in 4mm railgun sabot. Standard sidearm for 3HST combatants.</description>
+		<graphicData>
+			<texPath>Things/Weapons/3HST_DWR_01_NCQ_RailPistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8,0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>17000</WorkToMake>
+			<Mass>1</Mass>
+			<AccuracyTouch>0.80</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.42</AccuracyMedium>
+			<AccuracyLong>0.30</AccuracyLong>
+			<RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>CE_Sidearm</li>
+			<li>CE_OneHandedWeapon</li>
+			<li>3HST_Sidearm</li>
+			<li>CE_AI_BROOM</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>ShortShots</li>
+			<li>RangedLight</li>
+		</weaponClasses>
+		<costList>
+			<Steel>20</Steel>
+			<Plasteel>20</Plasteel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Resource_3HST_RailComponent>1</Resource_3HST_RailComponent>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>BDsGlitterworldFaction3HST.Verb_ShootByBarrel</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_3HST4mmRG_Steel</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<range>25.9</range>
+				<soundCast>RG_4mm</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>8</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeBarrel">
+				<durability>250</durability>
+				<label>Rail durability</label>
+				<loadingAmount>250</loadingAmount>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_RailPiercing</li>
+				</concepts>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisite>Research_3HST_Railgun</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<!-- =================== 4mm Triple ========================-->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Projectile_3HST4mmRG_Triple</defName>
+		<label>4mm railgun</label>
+		<thingClass>BillDoorsFramework.PenetratingBullet</thingClass>
+		<uiIconPath>UI/Icons/Projectile_3HST_Rail_Icon</uiIconPath>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.5,1)</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>8</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>55</speed>
+			<armorPenetrationBase>0.10</armorPenetrationBase>
+		</projectile>
+		<modExtensions>
+			<li Class="BillDoorsFramework.ModExtension_PenetratingProjectile">
+				<overpenDamageMulti>0.8</overpenDamageMulti>
+				<stopperDamageMulti>1.225</stopperDamageMulti>
+				<penetrationPotentialMultiplier>5</penetrationPotentialMultiplier>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTShortGun">
+		<defName>Gun_3HST_4mm_TriRailPistol</defName>
+		<label>triple railpistol</label>
+		<description>A highly simplified railgun that doesn't contain any servos. Standard sidearm for 3HST slave-fodders and a common sight in spacer spaghetti western joywire programs.</description>
+		<graphicData>
+			<texPath>Things/Weapons/3HST_DWR_04_RailPistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8,0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>0.4</Mass>
+			<AccuracyTouch>0.70</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.30</AccuracyMedium>
+			<AccuracyLong>0.21</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>CE_Sidearm</li>
+			<li>CE_OneHandedWeapon</li>
+			<li>3HST_Sidearm</li>
+			<li>CE_AI_BROOM</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>ShortShots</li>
+			<li>RangedLight</li>
+		</weaponClasses>
+		<costList>
+			<Steel>15</Steel>
+			<Plasteel>15</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Resource_3HST_RailComponent>1</Resource_3HST_RailComponent>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>BDsGlitterworldFaction3HST.Verb_ShootByBarrel</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_3HST4mmRG_Triple</defaultProjectile>
+				<warmupTime>0.6</warmupTime>
+				<range>17.9</range>
+				<soundCast>RG_4mm</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>8</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeBarrel">
+				<durability>250</durability>
+				<label>Rail durability</label>
+				<loadingAmount>250</loadingAmount>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_RailPiercing</li>
+				</concepts>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="BillDoorsFramework.ModExtension_Verb_Shotgun">
+				<ShotgunPellets>3</ShotgunPellets>
+			</li>
+		</modExtensions>
+		<recipeMaker>
+			<researchPrerequisite>Research_3HST_Railgun</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<!-- =================== 4mm SMG ============================-->
+	<ThingDef ParentName="Base3HSTShortGun">
+		<defName>Gun_3HST_4mm_SMG</defName>
+		<label>3HST 4mm Submachinerailgun</label>
+		<description>A rail submachinegun with better fire rate, accuracy, handling and magazine capacity than auto pistol. Standard sidearm for 3HST combatants and armed police.</description>
+		<graphicData>
+			<texPath>Things/Weapons/3HST_DWR_04_Submachinerailgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_SMG</soundInteract>
+		<statBases>
+			<WorkToMake>23500</WorkToMake>
+			<Mass>2.2</Mass>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.60</AccuracyShort>
+			<AccuracyMedium>0.30</AccuracyMedium>
+			<AccuracyLong>0.20</AccuracyLong>
+			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>CE_Sidearm</li>
+			<li>CE_OneHandedWeapon</li>
+			<li>3HST_Sidearm</li>
+			<li>3HST_SMG</li>
+			<li>CE_SMG</li>
+			<li>CE_AI_BROOM</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>ShortShots</li>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<costList>
+			<Steel>35</Steel>
+			<Plasteel>20</Plasteel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<Resource_3HST_RailComponent>1</Resource_3HST_RailComponent>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>BDsGlitterworldFaction3HST.Verb_ShootByBarrel</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_3HST4mmRG_Steel</defaultProjectile>
+				<warmupTime>1.1</warmupTime>
+				<burstShotCount>4</burstShotCount>
+				<ticksBetweenBurstShots>11</ticksBetweenBurstShots>
+				<range>22.9</range>
+				<soundCast>RG_4mm</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>8</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeBarrel">
+				<durability>300</durability>
+				<label>Rail durability</label>
+				<loadingAmount>300</loadingAmount>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_RailPiercing</li>
+				</concepts>
+			</li>
+		</comps>
+		<recipeMaker>
+			<researchPrerequisite>Research_3HST_Railgun</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+</Defs>

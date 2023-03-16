@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TipSetDef>
+		<defName>BDGW_Tips</defName>
+		<tips>
+			<li>Railgun rails are short-lived, remember to bring spares or you may end up in a gun fight with a malfunctional railgun.</li>
+			<li>Most if not all LGIS launchers are capable of switching between direct fire and indirect, mortar-like fire. Use this at your advantage!</li>
+			<li>Scatterailguns introduce heavy rail degradation, with an estimated rail life of 125 rounds per standard rail package. Mind your rail durability when using them!</li>
+			<li>Railgun turrets consume extra power after firing to charge it's capacitors. Be aware of your battery charge if you intend to use them!</li>
+			<li>Directly damaging explosions, incendiary weapons and EMP blasts are capable of detonating an ADM without risking your pawn's life.</li>
+			<li>Sometimes it's easier to spot the ADM carrier casing than the mine itself.</li>
+			<li>You can safely disarm an ADM with enough intellectual and crafting skill, and with sufficient manipulation and sight capability.</li>
+			<li>Only half damage will be dealt if a railgun overpenetrates!</li>
+		</tips>
+	</TipSetDef>
+
+	<ConceptDef>
+		<defName>BDGW_RailRearm</defName>
+		<label>Rearming Railguns</label>
+		<priority>50</priority>
+		<needsOpportunity>True</needsOpportunity>
+		<helpText>Railguns of both handheld and turret mounted consumes rail durability when firing, which are replenished with electromagnetic accelerator rails, the same one you make railguns with.\n\nTo replace the spent rails, equip the gun that needs replacement, right-click on an electromagnetic accelerator rail on the ground and select "Rearm rail"\n\nNote that all LGIS launchers but the dual LGIS turret are railguns and require rails as well.\n\nYour pawn will try to rearm their main weapon if its rail durability has fallen below 20%, or has less than 25 shots left, whichever is earlier.</helpText>
+		<highlightTags>
+			<li>BDGW_RailRearm</li>
+		</highlightTags>
+	</ConceptDef>
+
+	<ConceptDef>
+		<defName>BDGW_RailPiercing</defName>
+		<label>Piercing munitions</label>
+		<priority>50</priority>
+		<needsOpportunity>True</needsOpportunity>
+		<helpText>The majority of 3HST railguns has far more penetration than most of opponents you may face, while this is more or less due to the heavy anti-power-armor need in the designer's homeland, the extra penetraing power won't go wasted.\n\nFor every enemy hit, the rail sabot's sharp penetration will be reduced by:\n 2 x target's general defense (as shown in gear tab) + 5 x target body size\nIf the bullet still have more than 20% of it's initial penetration potential left, it will overpenetrate, continue on it's flight path and hit the next unlucky victim.\nBuildings, items, trees etc. may also be penetrated, their sharp defence is estimated as HP remaining / 8.\m\mOverpenetrating bullet deals half damage to target, while full damage is dealt to whatever that stopped the projectile.</helpText>
+		<highlightTags>
+			<li>BDGW_RailPiercing</li>
+		</highlightTags>
+	</ConceptDef>
+
+
+	<ConceptDef>
+		<defName>BDGW_LGIS</defName>
+		<label>LGIS missiles</label>
+		<priority>50</priority>
+		<needsOpportunity>True</needsOpportunity>
+		<helpText>The LGIS missile, short for Laser-Guided-Infantry-Support missiles comes in the form of ready-to-fire launch tubes. While launch them as disposable rockets are a perfectly valid way of using them, you can also load and fire them in rail-assisted dedictated launchers for greater range, accurancy or fire rate.\n\nMost if not all LGIS launchers, including disposable launch tubes themselves, are capable of switching between direct fire and indirect, mortar-like fire.\n\nIt's noteworthy that most LGIS launchers are railguns, requiring rails and power to function, with the sole exception of dual LGIS launcher.</helpText>
+		<highlightTags>
+			<li>BDGW_LGIS</li>
+		</highlightTags>
+	</ConceptDef>
+
+	<ConceptDef>
+		<defName>BDGW_Turret</defName>
+		<label>Railgun turrets</label>
+		<priority>50</priority>
+		<needsOpportunity>True</needsOpportunity>
+		<helpText>Railgun turrets, even manual ones, consume power after firing to recharge their capacitors， failure to fullfil the power demand will prevent the turret from complete its cool down. Turrets will have extra power consumption during turret cool down, proportional to rounds fired in the previous salvo, fewer the shot, lower the power draw, so don't be afraid to switch them to single-shot mode.\n\nThe electricity consumed per shot is displayed on the left-lower panel and info panel of the turret, while some deviation may occur, it should be within 5/4 of the expected power consumption.\n\nDon't panic if your turret are consuming half a million watt per day, it'll only last for a second!</helpText>
+		<highlightTags>
+			<li>BDGW_Turret</li>
+		</highlightTags>
+	</ConceptDef>
+</Defs>

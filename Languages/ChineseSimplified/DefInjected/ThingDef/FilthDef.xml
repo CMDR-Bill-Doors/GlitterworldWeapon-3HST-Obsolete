@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Filth_Illumition_LGIS.label>LGIS照明弹</Filth_Illumition_LGIS.label>
+  <Filth_Illuminator_Ash.label>灰烬</Filth_Illuminator_Ash.label>
+  <Filth_ADScarrierCasingC.label>布雷LGIS推进段</Filth_ADScarrierCasingC.label>
+  <Filth_ClusterMissile_casingA.label>集束LGIS壳体</Filth_ClusterMissile_casingA.label>
+  <Filth_ClusterMissile_casingB.label>集束LGIS壳体</Filth_ClusterMissile_casingB.label>
+  <Filth_ClusterMissile_casingC.label>集束LGIS推进段</Filth_ClusterMissile_casingC.label>
+  <Filth_Holodecoy_casingA.label>诱饵LGIS壳体</Filth_Holodecoy_casingA.label>
+  <Filth_Holodecoy_casingB.label>诱饵LGIS壳体</Filth_Holodecoy_casingB.label>
+  <Filth_Holodecoy_casingC.label>诱饵LGIS推进段</Filth_Holodecoy_casingC.label>
+  <Filth_LGISthruster.label>LGIS导弹推进段</Filth_LGISthruster.label>
+
+
+</LanguageData>

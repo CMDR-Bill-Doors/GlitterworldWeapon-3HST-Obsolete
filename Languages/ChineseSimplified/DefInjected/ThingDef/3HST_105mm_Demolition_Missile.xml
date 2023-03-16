@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Projectile_105mmDemo_Thermobaric.label>105mm破拆弹 (温压)</Projectile_105mmDemo_Thermobaric.label>
+  <Projectile_105mmDemo_HE.label>105mm破拆弹 (高爆)</Projectile_105mmDemo_HE.label>
+  <Projectile_105mmDemo_Incendiary.label>105mm破拆弹 (燃烧)</Projectile_105mmDemo_Incendiary.label>
+
+  <Gun_3HST_105mmDemo_thermobaric.label>105mm一次性温压破拆弹发射器</Gun_3HST_105mmDemo_thermobaric.label>
+  <Gun_3HST_105mmDemo_thermobaric.description>3HST有限公司专门设计的一次性单兵曲射火力支援单元，用于替换名声不佳的LGIS导弹。虽然不如LGIS便宜灵活，但是威力强大。</Gun_3HST_105mmDemo_thermobaric.description>
+  <Gun_3HST_105mmDemo_thermobaric.tools.0.label>枪托</Gun_3HST_105mmDemo_thermobaric.tools.0.label>
+  <Gun_3HST_105mmDemo_thermobaric.tools.1.label>枪管</Gun_3HST_105mmDemo_thermobaric.tools.1.label>
+  <Gun_3HST_105mmDemo_thermobaric.tools.2.label>枪口</Gun_3HST_105mmDemo_thermobaric.tools.2.label>
+
+  <Gun_3HST_105mmDemo_thermobaric_Tacticool.label>105mm一次性温压破拆弹发射器</Gun_3HST_105mmDemo_thermobaric_Tacticool.label>
+  <Gun_3HST_105mmDemo_thermobaric_Tacticool.description>3HST有限公司专门设计的一次性单兵曲射火力支援单元，用于替换名声不佳的LGIS导弹。虽然不如LGIS便宜灵活，但是威力强大。</Gun_3HST_105mmDemo_thermobaric_Tacticool.description>
+  <Gun_3HST_105mmDemo_thermobaric_Tacticool.tools.0.label>枪托</Gun_3HST_105mmDemo_thermobaric_Tacticool.tools.0.label>
+  <Gun_3HST_105mmDemo_thermobaric_Tacticool.tools.1.label>枪管</Gun_3HST_105mmDemo_thermobaric_Tacticool.tools.1.label>
+  <Gun_3HST_105mmDemo_thermobaric_Tacticool.tools.2.label>枪口</Gun_3HST_105mmDemo_thermobaric_Tacticool.tools.2.label>
+
+  <Gun_3HST_105mmDemo_HE.label>105mm一次性高爆破拆弹发射器</Gun_3HST_105mmDemo_HE.label>
+  <Gun_3HST_105mmDemo_HE.description>3HST有限公司专门设计的一次性单兵曲射火力支援单元，用于替换名声不佳的LGIS导弹。虽然不如LGIS便宜灵活，但是威力强大。</Gun_3HST_105mmDemo_HE.description>
+  <Gun_3HST_105mmDemo_HE.tools.0.label>枪托</Gun_3HST_105mmDemo_HE.tools.0.label>
+  <Gun_3HST_105mmDemo_HE.tools.1.label>枪管</Gun_3HST_105mmDemo_HE.tools.1.label>
+  <Gun_3HST_105mmDemo_HE.tools.2.label>枪口</Gun_3HST_105mmDemo_HE.tools.2.label>
+
+  <Gun_3HST_105mmDemo_HE_Tacticool.label>105mm一次性高爆破拆弹发射器</Gun_3HST_105mmDemo_HE_Tacticool.label>
+  <Gun_3HST_105mmDemo_HE_Tacticool.description>3HST有限公司专门设计的一次性单兵曲射火力支援单元，用于替换名声不佳的LGIS导弹。虽然不如LGIS便宜灵活，但是威力强大。</Gun_3HST_105mmDemo_HE_Tacticool.description>
+  <Gun_3HST_105mmDemo_HE_Tacticool.tools.0.label>枪托</Gun_3HST_105mmDemo_HE_Tacticool.tools.0.label>
+  <Gun_3HST_105mmDemo_HE_Tacticool.tools.1.label>枪管</Gun_3HST_105mmDemo_HE_Tacticool.tools.1.label>
+  <Gun_3HST_105mmDemo_HE_Tacticool.tools.2.label>枪口</Gun_3HST_105mmDemo_HE_Tacticool.tools.2.label>
+
+  <Gun_3HST_105mmDemo_Incendiary.label>105mm一次性燃烧破拆弹发射器</Gun_3HST_105mmDemo_Incendiary.label>
+  <Gun_3HST_105mmDemo_Incendiary.description>3HST有限公司专门设计的一次性单兵曲射火力支援单元，用于替换名声不佳的LGIS导弹。虽然不如LGIS便宜灵活，但是威力强大。</Gun_3HST_105mmDemo_Incendiary.description>
+  <Gun_3HST_105mmDemo_Incendiary.tools.0.label>枪托</Gun_3HST_105mmDemo_Incendiary.tools.0.label>
+  <Gun_3HST_105mmDemo_Incendiary.tools.1.label>枪管</Gun_3HST_105mmDemo_Incendiary.tools.1.label>
+  <Gun_3HST_105mmDemo_Incendiary.tools.2.label>枪口</Gun_3HST_105mmDemo_Incendiary.tools.2.label>
+
+  <Gun_3HST_105mmDemo_Incendiary_Tacticool.label>105mm一次性燃烧破拆弹发射器</Gun_3HST_105mmDemo_Incendiary_Tacticool.label>
+  <Gun_3HST_105mmDemo_Incendiary_Tacticool.description>3HST有限公司专门设计的一次性单兵曲射火力支援单元，用于替换名声不佳的LGIS导弹。虽然不如LGIS便宜灵活，但是威力强大。</Gun_3HST_105mmDemo_Incendiary_Tacticool.description>
+  <Gun_3HST_105mmDemo_Incendiary_Tacticool.tools.0.label>枪托</Gun_3HST_105mmDemo_Incendiary_Tacticool.tools.0.label>
+  <Gun_3HST_105mmDemo_Incendiary_Tacticool.tools.1.label>枪管</Gun_3HST_105mmDemo_Incendiary_Tacticool.tools.1.label>
+  <Gun_3HST_105mmDemo_Incendiary_Tacticool.tools.2.label>枪口</Gun_3HST_105mmDemo_Incendiary_Tacticool.tools.2.label>
+
+
+</LanguageData>

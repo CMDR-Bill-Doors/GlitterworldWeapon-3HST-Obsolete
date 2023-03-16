@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="PLA_BaseVehicle">
+		<defName>Mech_AutoFirePlatform_PLAST</defName>
+		<label>3HST automatic fire platform</label>
+		<description>An armored automated vehicle with rudimentary IFF system and a turret mount.</description>
+		<statBases>
+			<MoveSpeed>1.9</MoveSpeed>
+			<ArmorRating_Blunt>280</ArmorRating_Blunt>
+			<ArmorRating_Sharp>10</ArmorRating_Sharp>
+			<PsychicSensitivity>0</PsychicSensitivity>
+			<CarryWeight MayRequire="ceteam.combatextended">400</CarryWeight>
+			<CarryBulk MayRequire="ceteam.combatextended">80</CarryBulk>
+			<Mass>100</Mass>
+			<AimingAccuracy MayRequire="ceteam.combatextended">0.9</AimingAccuracy>
+			<ShootingAccuracyPawn>1</ShootingAccuracyPawn>
+			<AimingDelayFactor>1.2</AimingDelayFactor>
+			<MaxHitPoints>500</MaxHitPoints>
+		</statBases>
+		<comps>
+			<li Class="PLA.Vehicle.CompProperties_VehicleWeapon">
+				<turretRotationFollowPawn>false</turretRotationFollowPawn>
+				<defaultWeapon>Gun_5mmHMG_TurretVehicle</defaultWeapon>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>3</fuelConsumptionRate>
+				<fuelCapacity>60</fuelCapacity>
+				<fuelMultiplier>2</fuelMultiplier>
+				<fuelFilter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</fuelFilter>
+				<showAllowAutoRefuelToggle>false</showAllowAutoRefuelToggle>
+				<autoRefuelPercent>0.75</autoRefuelPercent>
+				<initialFuelPercent>1</initialFuelPercent>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6.7</power>
+				<cooldownTime>1.6</cooldownTime>
+			</li>
+			<li>
+				<label>Body</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15.7</power>
+				<cooldownTime>3.6</cooldownTime>
+			</li>
+		</tools>
+		<race>
+			<deathActionWorkerClass>PLA.Vehicle.DeathActionWorker_VehicleExplosion</deathActionWorkerClass>
+			<body>PLA_VehicleTank</body>
+			<baseBodySize>2</baseBodySize>
+			<baseHealthScale>2.5</baseHealthScale>
+		</race>
+		<butcherProducts>
+			<Steel>30</Steel>
+			<Plasteel>10</Plasteel>
+		</butcherProducts>
+		<killedLeavings>
+			<ChunkSlagSteel>5</ChunkSlagSteel>
+		</killedLeavings>
+		<modExtensions>
+			<li Class="CombatExtended.RacePropertiesExtensionCE"  MayRequire="ceteam.combatextended">
+				<bodyShape>QuadrupedLow</bodyShape>
+			</li>
+			<li Class="PLA.Vehicle.VehicleExtension">
+				<allowVechicleInCaravan>true</allowVechicleInCaravan>
+				<carryWeightInCaravan>0</carryWeightInCaravan>
+				<explosionRadius>2</explosionRadius>
+			</li>
+		</modExtensions>
+		<uiIconPath>Things/Pawn/AutoTurretCart/AutoTurretCartIcon</uiIconPath>
+	</ThingDef>
+
+	<PawnKindDef ParentName="PLA_BaseVehiclePawnKind">
+		<defName>Pawn_3HSTAFP_PLAST</defName>
+		<label>3HST automatic firepower platform</label>
+		<race>Mech_AutoFirePlatform_PLAST</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/AutoTurretCart/AutoTurretCart</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Building_3HSTAFP_PLAST</defName>
+		<label>3HST automatic firepower platform</label>
+		<description>An remote controled weapon station on tracks, powered by a tiny fission reactor.</description>
+		<graphicData>
+			<texPath>Things/Pawn/AutoTurretCart/AutoTurretCartPack</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>3</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToBuild>1000</WorkToBuild>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<rotatable>true</rotatable>
+		<costList>
+			<Gun_3HST_Light_Machine_Railgun>1</Gun_3HST_Light_Machine_Railgun>
+			<Steel>50</Steel>
+			<Plasteel>200</Plasteel>
+			<Uranium>30</Uranium>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<designationCategory>PLA_DesignationCategory_Vehicle</designationCategory>
+		<researchPrerequisites>
+			<li>Research_3HST_AFP</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="PLA.Vehicle.CompProperties_BuildingToVehicle">
+				<vehicle>Pawn_3HSTAFP_PLAST</vehicle>
+			</li>
+		</comps>
+		<uiIconPath>Things/Pawn/AutoTurretCart/AutoTurretCartIcon</uiIconPath>
+	</ThingDef>
+
+	<ThingDef ParentName="PLA_BaseVehicle">
+		<defName>Mech_3HSTMBT_PLAST</defName>
+		<label>3HST LCB-04 MBT</label>
+		<description>A remotely controled main battle tank equipped with a powerful 76mm rail cannon.</description>
+		<statBases>
+			<MoveSpeed>6.9</MoveSpeed>
+			<ArmorRating_Blunt>5000</ArmorRating_Blunt>
+			<ArmorRating_Sharp>150</ArmorRating_Sharp>
+			<PsychicSensitivity>0</PsychicSensitivity>
+			<CarryWeight MayRequire="ceteam.combatextended">2000</CarryWeight>
+			<CarryBulk MayRequire="ceteam.combatextended">1000</CarryBulk>
+			<Mass>65000</Mass>
+			<AimingAccuracy MayRequire="ceteam.combatextended">1</AimingAccuracy>
+			<ShootingAccuracyPawn>1</ShootingAccuracyPawn>
+			<AimingDelayFactor>1</AimingDelayFactor>
+			<MaxHitPoints>10000</MaxHitPoints>
+		</statBases>
+		<comps>
+			<li Class="PLA.Vehicle.CompProperties_VehicleWeapon">
+				<turretRotationFollowPawn>true</turretRotationFollowPawn>
+				<defaultWeapon>Gun_76mmRGTank</defaultWeapon>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>40</fuelConsumptionRate>
+				<fuelCapacity>400</fuelCapacity>
+				<fuelMultiplier>2</fuelMultiplier>
+				<fuelFilter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</fuelFilter>
+				<showAllowAutoRefuelToggle>false</showAllowAutoRefuelToggle>
+				<autoRefuelPercent>0.75</autoRefuelPercent>
+				<initialFuelPercent>1</initialFuelPercent>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>40.7</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>Body</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>50.7</power>
+				<cooldownTime>5.6</cooldownTime>
+			</li>
+		</tools>
+		<race>
+			<deathActionWorkerClass>PLA.Vehicle.DeathActionWorker_VehicleExplosion</deathActionWorkerClass>
+			<body>PLA_VehicleTank</body>
+			<baseBodySize>5</baseBodySize>
+			<baseHealthScale>5</baseHealthScale>
+		</race>
+		<butcherProducts>
+			<Steel>30</Steel>
+			<Plasteel>10</Plasteel>
+		</butcherProducts>
+		<killedLeavings>
+			<ChunkSlagSteel>15</ChunkSlagSteel>
+		</killedLeavings>
+		<modExtensions>
+			<li Class="CombatExtended.RacePropertiesExtensionCE"  MayRequire="ceteam.combatextended">
+				<bodyShape>QuadrupedLow</bodyShape>
+			</li>
+			<li Class="PLA.Vehicle.VehicleExtension">
+				<allowVechicleInCaravan>true</allowVechicleInCaravan>
+				<carryWeightInCaravan>400</carryWeightInCaravan>
+				<explosionRadius>7</explosionRadius>
+			</li>
+		</modExtensions>
+		<uiIconPath>Things/Pawn/3HST_LCB_04 MBT/3HST_LCB_04 MBT_Icon</uiIconPath>
+	</ThingDef>
+
+	<PawnKindDef ParentName="PLA_BaseVehiclePawnKind">
+		<defName>Pawn_3HSTMBT_PLAST</defName>
+		<label>3HST LCB-04 MBT</label>
+		<race>Mech_3HSTMBT_PLAST</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/3HST_LCB_04 MBT/3HST_LCB_04 MBT</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>8</drawSize>
+					<shadowData>
+						<volume>(3, 1, 1.5)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Building_3HSTMBT_PLAST</defName>
+		<label>3HST LCB-04 MBT</label>
+		<description>An 3HST main battle tank armed with 76mm rail main gun, powered by a tiny fission reactor.</description>
+		<graphicData>
+			<texPath>Things/Pawn/3HST_LCB_04 MBT/3HST_LCB_04 MBTPack</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>10</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToBuild>1000</WorkToBuild>
+		</statBases>
+		<size>(3,3)</size>
+		<tickerType>Normal</tickerType>
+		<rotatable>true</rotatable>
+		<costList>
+			<Gun_3HST_76mm_Cannon  MayRequire="ceteam.combatextended">1</Gun_3HST_76mm_Cannon>
+			<Gun_3HST_9mmHMG>1</Gun_3HST_9mmHMG>
+			<Steel>200</Steel>
+			<Plasteel>1000</Plasteel>
+			<Uranium>200</Uranium>
+			<ComponentIndustrial>25</ComponentIndustrial>
+			<ComponentSpacer>10</ComponentSpacer>
+		</costList>
+		<designationCategory>PLA_DesignationCategory_Vehicle</designationCategory>
+		<researchPrerequisites>
+			<li>Research_3HST_MBT</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="PLA.Vehicle.CompProperties_BuildingToVehicle">
+				<vehicle>Pawn_3HSTMBT_PLAST</vehicle>
+			</li>
+		</comps>
+		<uiIconPath>Things/Pawn/3HST_LCB_04 MBT/3HST_LCB_04 MBT_Icon</uiIconPath>
+	</ThingDef>
+
+	<ThingDef ParentName="PLA_BaseVehicle">
+		<defName>Mech_3HSTIFV_PLAST</defName>
+		<label>3HST LCF-03 IFV</label>
+		<description>A remotely controled infantry fighting vehicle equipped with a powerful 20mm rail autocannon.</description>
+		<statBases>
+			<MoveSpeed>10.9</MoveSpeed>
+			<CaravanRidingSpeedFactor>10.9</CaravanRidingSpeedFactor>
+			<ArmorRating_Blunt>1000</ArmorRating_Blunt>
+			<ArmorRating_Sharp>35</ArmorRating_Sharp>
+			<PsychicSensitivity>0</PsychicSensitivity>
+			<CarryWeight MayRequire="ceteam.combatextended">2000</CarryWeight>
+			<CarryBulk MayRequire="ceteam.combatextended">1000</CarryBulk>
+			<Mass>3500</Mass>
+			<AimingAccuracy MayRequire="ceteam.combatextended">1</AimingAccuracy>
+			<ShootingAccuracyPawn>1</ShootingAccuracyPawn>
+			<AimingDelayFactor>1</AimingDelayFactor>
+			<MaxHitPoints>10000</MaxHitPoints>
+		</statBases>
+		<comps>
+			<li Class="PLA.Vehicle.CompProperties_VehicleWeapon">
+				<turretRotationFollowPawn>true</turretRotationFollowPawn>
+				<defaultWeapon>Gun_20mmAC_TurretIFV</defaultWeapon>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>12</fuelConsumptionRate>
+				<fuelCapacity>400</fuelCapacity>
+				<fuelMultiplier>2</fuelMultiplier>
+				<fuelFilter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</fuelFilter>
+				<showAllowAutoRefuelToggle>false</showAllowAutoRefuelToggle>
+				<autoRefuelPercent>0.75</autoRefuelPercent>
+				<initialFuelPercent>1</initialFuelPercent>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>40.7</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>Body</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>50.7</power>
+				<cooldownTime>5.6</cooldownTime>
+			</li>
+		</tools>
+		<race>
+			<deathActionWorkerClass>PLA.Vehicle.DeathActionWorker_VehicleExplosion</deathActionWorkerClass>
+			<body>PLA_VehicleCar</body>
+			<baseBodySize>6</baseBodySize>
+			<baseHealthScale>2</baseHealthScale>
+		</race>
+		<butcherProducts>
+			<Steel>30</Steel>
+			<Plasteel>10</Plasteel>
+		</butcherProducts>
+		<killedLeavings>
+			<ChunkSlagSteel>10</ChunkSlagSteel>
+		</killedLeavings>
+		<modExtensions>
+			<li Class="CombatExtended.RacePropertiesExtensionCE"  MayRequire="ceteam.combatextended">
+				<bodyShape>QuadrupedLow</bodyShape>
+			</li>
+			<li Class="PLA.Vehicle.VehicleExtension">
+				<allowVechicleInCaravan>true</allowVechicleInCaravan>
+				<carryWeightInCaravan>1000</carryWeightInCaravan>
+				<explosionRadius>5</explosionRadius>
+			</li>
+		</modExtensions>
+		<uiIconPath>Things/Pawn/3HST_IFV/3HST_IFV_Icon</uiIconPath>
+	</ThingDef>
+
+	<PawnKindDef ParentName="PLA_BaseVehiclePawnKind">
+		<defName>Pawn_3HSTIFV_PLAST</defName>
+		<label>3HST LCF-03 IFV</label>
+		<race>Mech_3HSTIFV_PLAST</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/3HST_IFV/3HST_IFV</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>8</drawSize>
+					<shadowData>
+						<volume>(3, 1, 1.5)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Building_3HSTIFV_PLAST</defName>
+		<label>3HST LCF-03 IFV</label>
+		<description>A remotely controled infantry fighting vehicle equipped with a powerful 20mm rail autocannon.</description>
+		<graphicData>
+			<texPath>Things/Pawn/3HST_IFV/3HST_IFVPack</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>8</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToBuild>1000</WorkToBuild>
+		</statBases>
+		<size>(3,3)</size>
+		<tickerType>Normal</tickerType>
+		<rotatable>true</rotatable>
+		<costList>
+			<Gun_3HST_20mmAutocannon>1</Gun_3HST_20mmAutocannon>
+			<Gun_3HST_Quad_LGIS_Launcher  MayRequire="ceteam.combatextended">1</Gun_3HST_Quad_LGIS_Launcher>
+			<Steel>150</Steel>
+			<Plasteel>500</Plasteel>
+			<Uranium>200</Uranium>
+			<ComponentIndustrial>18</ComponentIndustrial>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+		<designationCategory>PLA_DesignationCategory_Vehicle</designationCategory>
+		<researchPrerequisites>
+			<li>Research_3HST_IFV</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="PLA.Vehicle.CompProperties_BuildingToVehicle">
+				<vehicle>Pawn_3HSTIFV_PLAST</vehicle>
+			</li>
+		</comps>
+		<uiIconPath>Things/Pawn/3HST_IFV/3HST_IFV_Icon</uiIconPath>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_3HST4mmRG_Steel.label>3HST制4mm磁轨手枪弹</Ammo_3HST4mmRG_Steel.label>
+  <Ammo_3HST4mmRG_Steel.description>用于一系列3HST制手枪和冲锋枪的小口径磁轨弹。</Ammo_3HST4mmRG_Steel.description>
+
+
+  <!-- Projectiles -->
+
+  <Projectile_3HST4mmRG_Steel.label>3HST制4mm磁轨手枪弹 (脱壳穿甲弹)</Projectile_3HST4mmRG_Steel.label>
+
+
+</LanguageData>

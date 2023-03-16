@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Projectile_3HST20mmRG_Steel</defName>
+		<label>20mm railgun</label>
+		<thingClass>BillDoorsFramework.PenetratingBullet</thingClass>
+		<uiIconPath>UI/Icons/Projectile_3HST_Rail_Icon</uiIconPath>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.8,1.5)</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>BDRG_HighCalRailgun</damageDef>
+			<damageAmountBase>55</damageAmountBase>
+			<stoppingPower>10</stoppingPower>
+			<speed>150</speed>
+			<armorPenetrationBase>1</armorPenetrationBase>
+			<explosionRadius>1.2</explosionRadius>
+			<soundExplode>Explosion_Stun</soundExplode>
+		</projectile>
+		<modExtensions>
+			<li Class="BillDoorsFramework.ModExtension_PenetratingProjectile">
+				<overpenDamageMulti>1</overpenDamageMulti>
+				<stopperDamageMulti>2.5</stopperDamageMulti>
+				<penetrationPotentialMultiplier>4.1</penetrationPotentialMultiplier>
+				<postPenetrationDeviationAngle>3</postPenetrationDeviationAngle>
+				<bounceEquivalent>1</bounceEquivalent>
+				<bodysizeEquivalentMulti>0.3</bodysizeEquivalentMulti>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTHeavyGun">
+		<defName>Gun_3HST_20mmAutocannon</defName>
+		<label>rail autocannon</label>
+		<description>High caliber, fast firing railgun commonly found on a wide variety of 3HST vehicles, from IFV to space warship AA guns, and probably super strength ancient soldiers with archotech implants.</description>
+		<graphicData>
+			<texPath>Things/Weapons/3HST_HWR_11_Autocannon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>124500</WorkToMake>
+			<Mass>120</Mass>
+			<AccuracyTouch>0.22</AccuracyTouch>
+			<AccuracyShort>0.33</AccuracyShort>
+			<AccuracyMedium>0.44</AccuracyMedium>
+			<AccuracyLong>0.60</AccuracyLong>
+			<RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>420</Steel>
+			<Plasteel>150</Plasteel>
+			<ComponentIndustrial>20</ComponentIndustrial>
+			<ComponentSpacer>10</ComponentSpacer>
+			<Resource_3HST_RailComponent>15</Resource_3HST_RailComponent>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>BDsGlitterworldFaction3HST.Verb_ShootByBarrel</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_3HST20mmRG_Steel</defaultProjectile>
+				<warmupTime>4.3</warmupTime>
+				<minRange>15.9</minRange>
+				<range>55.9</range>
+				<soundCast>RG_20mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>20</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeBarrel">
+				<durability>50</durability>
+				<label>Rail durability</label>
+				<loadingAmount>10</loadingAmount>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_RailPiercing</li>
+					<li>BDGW_Turret</li>
+				</concepts>
+			</li>
+		</comps>
+		<weaponTags Inherit="False">
+			<li>3HST_Autocannon</li>
+		</weaponTags>
+		<!--<AllowWithRunAndGun>false</AllowWithRunAndGun>-->
+		<recipeMaker>
+			<researchPrerequisite>Research_3HST_Railgun</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+
+	<!--Turret manned-->
+	<ThingDef ParentName="Base3HSTMoveableMannedTurret">
+		<defName>Turret_3HST20mmACmanned</defName>
+		<label>Manned 20mm rail autocannon</label>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+		<interactionCellOffset>(0,0,0)</interactionCellOffset>
+		<graphicData>
+			<texPath>Things/Building/Turrets/MannedTurretLarge</texPath>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<uiIconPath>UI/Icons/Security/3HST_HWR_11_Autocannon_Manned_icon</uiIconPath>
+		<statBases>
+			<WorkToBuild>18000</WorkToBuild>
+			<MaxHitPoints>600</MaxHitPoints>
+			<Mass>140</Mass>
+		</statBases>
+		<designatorDropdown>Group_3HST_ManualRailgunTurret</designatorDropdown>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>80</basePowerConsumption>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_PowerTurretGun">
+				<rechargePowerConsumption>10000</rechargePowerConsumption>
+				<rechargePower>Recharge power consumption</rechargePower>
+				<cooldownTime>5</cooldownTime>
+				<rechargePower_Stat>The amount of power the weapon will draw from the power grid during cool down.\n\nRailguns' built in capacitors need to be recharged after each salvo, leading to a power consumption spike.\n\nThe power consumption is calculated as: Power draw x Turret cooldown / 1000\n{0} W x {1} s / 1000 = {2} Wd</rechargePower_Stat>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until accelerator rail change</fuelLabel>
+				<fuelGizmoLabel>Rail durability</fuelGizmoLabel>
+				<outOfFuelMessage>Cannot shoot: Needs new accelerator rail</outOfFuelMessage>
+				<fuelFilter>
+					<thingDefs>
+						<li>Resource_3HST_RailComponent</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>50</fuelCapacity>
+				<fuelMultiplier>10</fuelMultiplier>
+				<initialFuelPercent>1</initialFuelPercent>
+				<autoRefuelPercent>0.25</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_RailPiercing</li>
+					<li>BDGW_Turret</li>
+				</concepts>
+			</li>
+		</comps>
+		<description>A 3HST rail autocannon mounted on an fixed mount. Despite the fact this turret is manually operated, this turret still needs a amount of power to operate since railguns consumes power.</description>
+		<costList>
+			<Plasteel>100</Plasteel>
+			<Gun_3HST_20mmAutocannon>1</Gun_3HST_20mmAutocannon>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<building>
+			<turretGunDef>Gun_20mmAC_TurretManned</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretTopDrawSize>4</turretTopDrawSize>
+			<turretBurstCooldownTime>5</turretBurstCooldownTime>
+		</building>
+		<castEdgeShadows>false</castEdgeShadows>
+		<size>(2,2)</size>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<designationCategory>Security</designationCategory>
+		<killedLeavings>
+			<Plasteel>50</Plasteel>
+			<Gun_3HST_20mmAutocannon>1</Gun_3HST_20mmAutocannon>
+		</killedLeavings>
+
+	</ThingDef>
+
+	<!--Turret auto-->
+	<ThingDef ParentName="Base3HSTStationaryTurretHeavy">
+		<defName>Turret_3HST20mmHMGAuto</defName>
+		<label>Auto 20mm rail autocannon</label>
+		<graphicData>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<uiIconPath>UI/Icons/Security/3HST_HWR_11_Autocannon_auto_icon</uiIconPath>
+		<statBases>
+			<Mass>200</Mass>
+			<ShootingAccuracyTurret>2</ShootingAccuracyTurret>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>400</basePowerConsumption>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_PowerTurretGun">
+				<rechargePowerConsumption>10000</rechargePowerConsumption>
+				<cooldownTime>5</cooldownTime>
+				<rechargePower>Recharge power consumption</rechargePower>
+				<rechargePower_Stat>The amount of power the weapon will draw from the power grid during cool down.\n\nRailguns' built in capacitors need to be recharged after each salvo, leading to a power consumption spike.\n\nThe power consumption is calculated as: Power draw x Turret cooldown / 1000\n{0} W x {1} s / 1000 = {2} Wd</rechargePower_Stat>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until accelerator rail change</fuelLabel>
+				<fuelGizmoLabel>Rail durability</fuelGizmoLabel>
+				<outOfFuelMessage>Cannot shoot: Needs new accelerator rail</outOfFuelMessage>
+				<fuelFilter>
+					<thingDefs>
+						<li>Resource_3HST_RailComponent</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>50</fuelCapacity>
+				<fuelMultiplier>10</fuelMultiplier>
+				<initialFuelPercent>1</initialFuelPercent>
+				<autoRefuelPercent>0.25</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_RailPiercing</li>
+					<li>BDGW_Turret</li>
+				</concepts>
+			</li>
+		</comps>
+		<costList>
+			<Plasteel>100</Plasteel>
+			<Steel>400</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<Gun_3HST_20mmAutocannon>1</Gun_3HST_20mmAutocannon>
+		</costList>
+		<building>
+			<turretGunDef>Gun_20mmAC_Turret</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretTopDrawSize>4</turretTopDrawSize>
+			<turretBurstCooldownTime>5</turretBurstCooldownTime>
+		</building>
+		<size>(2,2)</size>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<killedLeavings>
+			<ChunkSlagSteel>10</ChunkSlagSteel>
+			<Steel>50</Steel>
+			<Plasteel>50</Plasteel>
+			<Gun_3HST_20mmAutocannon>1</Gun_3HST_20mmAutocannon>
+		</killedLeavings>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTMoveableAutoTurret">
+		<defName>Turret_3HST20mmHMGAutoMoveable</defName>
+		<label>Auto 20mm rail autocannon</label>
+		<graphicData>
+			<texPath>Things/Building/Turrets/MannedTurretLarge</texPath>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<uiIconPath>UI/Icons/Security/3HST_HWR_11_Autocannon_Manned_icon</uiIconPath>
+		<statBases>
+			<WorkToBuild>24000</WorkToBuild>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Mass>130</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>400</basePowerConsumption>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_PowerTurretGun">
+				<rechargePowerConsumption>10000</rechargePowerConsumption>
+				<cooldownTime>5</cooldownTime>
+				<rechargePower>Recharge power consumption</rechargePower>
+				<rechargePower_Stat>The amount of power the weapon will draw from the power grid during cool down.\n\nRailguns' built in capacitors need to be recharged after each salvo, leading to a power consumption spike.\n\nThe power consumption is calculated as: Power draw x Turret cooldown / 1000\n{0} W x {1} s / 1000 = {2} Wd</rechargePower_Stat>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until accelerator rail change</fuelLabel>
+				<fuelGizmoLabel>Rail durability</fuelGizmoLabel>
+				<outOfFuelMessage>Cannot shoot: Needs new accelerator rail</outOfFuelMessage>
+				<fuelFilter>
+					<thingDefs>
+						<li>Resource_3HST_RailComponent</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>50</fuelCapacity>
+				<fuelMultiplier>10</fuelMultiplier>
+				<initialFuelPercent>1</initialFuelPercent>
+				<autoRefuelPercent>0.25</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_RailPiercing</li>
+					<li>BDGW_Turret</li>
+				</concepts>
+			</li>
+		</comps>
+		<costList>
+			<Plasteel>100</Plasteel>
+			<Steel>80</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<Gun_3HST_20mmAutocannon>1</Gun_3HST_20mmAutocannon>
+		</costList>
+		<building>
+			<turretGunDef>Gun_20mmAC_Turret</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretTopDrawSize>4</turretTopDrawSize>
+			<turretBurstCooldownTime>5</turretBurstCooldownTime>
+		</building>
+		<size>(2,2)</size>
+		<killedLeavings>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+			<Steel>10</Steel>
+			<Plasteel>50</Plasteel>
+			<Gun_3HST_20mmAutocannon>1</Gun_3HST_20mmAutocannon>
+		</killedLeavings>
+	</ThingDef>
+
+
+	<ThingDef ParentName="Base3HSTTurretGun" Name="base3HSTARC">
+		<defName>Gun_20mmAC_Turret</defName>
+		<label>Mounted 3HST 20mm rail autocannon</label>
+		<graphicData>
+			<texPath>Things/Building/Turrets/3HST_HWR_11_Autocannon_Turret</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>3HST 20mm rail autocannon on a stationary emplacement.</description>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<statBases>
+			<AccuracyTouch>0.22</AccuracyTouch>
+			<AccuracyShort>0.33</AccuracyShort>
+			<AccuracyMedium>0.44</AccuracyMedium>
+			<AccuracyLong>0.95</AccuracyLong>
+			<RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_3HST20mmRG_Steel</defaultProjectile>
+				<warmupTime>4.2</warmupTime>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<range>55.9</range>
+				<minRange>15.9</minRange>
+				<soundCast>RG_20mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>20</muzzleFlashScale>
+			        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="base3HSTARC">
+		<defName>Gun_20mmAC_TurretManned</defName>
+		<graphicData>
+			<texPath>Things/Building/Turrets/3HST_HWR_11_Autocannon_TurretManned</texPath>
+		</graphicData>
+	</ThingDef>
+</Defs>

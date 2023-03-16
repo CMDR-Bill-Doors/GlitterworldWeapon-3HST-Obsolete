@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- value multiplier:
+  4mm 1/3
+  5mm 1/2
+  9mm 2/3
+  
+  6mm scatter 1/3
+  8mm scatter 1/2
+  
+  shots per rail
+  4mm 1000
+  5mm 500
+  9mm 250
+  
+  20mm 100
+  76mm 10
+  
+  6mm scatter 125
+  8mm scatter 125
+  
+  LGIS 100
+  
+  each weapon has a maximal barrel durability of 1/2 of the cost
+  now 1/1 due to small cal durability nerf -->
+
+  <Gun3HST.label>3HST制武器</Gun3HST.label>
+  <GunInfantry3HST.label>3HST单兵武器</GunInfantry3HST.label>
+  <Gun3HSTDisposable.label>3HST一次性武器</Gun3HSTDisposable.label>
+  <GunHeavy3HST.label>3HST重武器</GunHeavy3HST.label>
+
+
+</LanguageData>

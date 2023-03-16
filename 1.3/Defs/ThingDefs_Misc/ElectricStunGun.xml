@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<DamageDef ParentName="BurnBase">
+		<defName>ElectricStunGun</defName>
+		<label>non-lethal electric arc</label>
+		<deathMessage>{0} has been tasered to death.</deathMessage>
+		<hediff>MuscleSpasms</hediff>
+		<hediffSkin>ElectricStunBurn</hediffSkin>
+		<hediffSolid>ElectricStunBurn</hediffSolid>
+		<hasForcefulImpact>false</hasForcefulImpact>
+		<makesBlood>false</makesBlood>
+		<armorCategory>Heat</armorCategory>
+		<canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+		<modExtensions>
+			<li Class="CombatExtended.DamageDefExtensionCE">
+				<harmOnlyOutsideLayers>true</harmOnlyOutsideLayers>
+			</li>
+		</modExtensions>
+
+	</DamageDef>
+
+	<HediffDef ParentName="Burn">
+		<defName>ElectricStunBurn</defName>
+		<label>electric arc burn</label>
+		<labelNoun>an electric arc burn</labelNoun>
+		<comps>
+			<li Class="CombatExtended.HediffCompProperties_Beanbag"/>
+		</comps>
+	</HediffDef>
+
+	<ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" ParentName="BaseBullet">
+		<defName>ElectricStunGunBeam</defName>
+		<thingClass>CombatExtended.Lasers.LaserBeamCE</thingClass>
+		<label>non-lethal electric arc</label>
+		<LightningBeam>true</LightningBeam>
+		<ArcCount>3</ArcCount>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+			<color>(5,195,221)</color>
+		</graphicData>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<beamGraphic>BeamGraphic</beamGraphic>
+		<seam>0</seam>
+		<textures>
+			<li>Things/Mote/LongSparkThrown</li>
+		</textures>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<isInstant>true</isInstant>
+			<damageDef>ElectricStunGun</damageDef>
+			<damageAmountBase>5</damageAmountBase>
+			<armorPenetrationSharp>18.25</armorPenetrationSharp>
+		</projectile>
+		<modExtensions>
+			<li Class="ProjectileImpactFX.EffectProjectileExtension">
+				<explosionMote>true</explosionMote>
+				<explosionMoteSize>0.25</explosionMoteSize>
+				<ImpactMoteDef>Mote_YellowSparkFlash</ImpactMoteDef>
+				<ImpactMoteSize>1</ImpactMoteSize>
+				<ImpactGlowMoteDef>Mote_ExplosionFlash</ImpactGlowMoteDef>
+				<ImpactGlowMoteSize>2.5</ImpactGlowMoteSize>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" ParentName="BaseBullet">
+		<defName>ElectricStunGunEMPBeam</defName>
+		<thingClass>CombatExtended.Lasers.LaserBeamCE</thingClass>
+		<label>non-lethal electric arc</label>
+		<ArcCount>3</ArcCount>
+		<canExplode>true</canExplode>
+		<graphicData>
+			<texPath>Things/Weapons/ElectricStunRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+			<color>(5,195,221)</color>
+		</graphicData>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<beamGraphic>Gun_3HST_ElectricStunGun</beamGraphic>
+		<seam>0</seam>
+		<textures>
+			<li>Things/Mote/LongSparkThrown</li>
+		</textures>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<isInstant>true</isInstant>
+			<explosionRadius>2</explosionRadius>
+			<damageDef>EMP</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+		</projectile>
+		<modExtensions>
+			<li Class="ProjectileImpactFX.EffectProjectileExtension">
+				<explosionMote>true</explosionMote>
+				<explosionMoteSize>0.25</explosionMoteSize>
+				<ImpactMoteDef>Mote_YellowSparkFlash</ImpactMoteDef>
+				<ImpactMoteSize>1</ImpactMoteSize>
+				<ImpactGlowMoteDef>Mote_ExplosionFlash</ImpactGlowMoteDef>
+				<ImpactGlowMoteSize>2.5</ImpactGlowMoteSize>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>ElectricStunGunEMP</defName>
+		<label>directed EMP blast</label>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Charge_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+			<color>(5,195,221)</color>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<explosionRadius>2</explosionRadius>
+			<damageDef>EMP</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<speed>180</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTHeavyGun">
+		<defName>Gun_3HST_ElectricStunGun</defName>
+		<label>3HST non-lethal electric arc gun</label>
+		<description>An expensive and clumbersome non-lethal weapon solution, this weapon fires an electric arc from its electrodes, burning and electrifying the victim. The electrodes will erode from each fire, eventurally need a pair of accelerator rails to replace, which happened to be a good material for electrode and readily avaliable.\n\nCan also be reprogrammed to fire EMP blasts.</description>
+		<graphicData>
+			<texPath>Things/Weapons/ElectricStunRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.45,1.45</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>93500</WorkToMake>
+			<Mass>29</Mass>
+			<Bulk>25</Bulk>
+			<SwayFactor>2.2</SwayFactor>
+			<ShotSpread>0.01</ShotSpread>
+			<SightsEfficiency>1</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>250</Steel>
+			<Plasteel>100</Plasteel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+			<Resource_3HST_RailComponent>4</Resource_3HST_RailComponent>
+		</costList>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>BDsGlitterworldFaction3HST.Verb_ShootByBarrel</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>ElectricStunGunEMPBeam</defaultProjectile>
+				<warmupTime>3.1</warmupTime>
+				<burstShotCount>6</burstShotCount>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<range>15</range>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<soundCast>RG_9mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>18</muzzleFlashScale>
+			</li>
+		</verbs>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.45,1.45</DrawSize>
+				<DrawOffset>0.12,-0.20</DrawOffset>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>5</aimedBurstShotCount>
+				<aiAimMode>SuppressFire</aiAimMode>
+			</li>
+			<li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeBarrel">
+				<durability>50</durability>
+				<label>Electrode durability</label>
+				<loadingAmount>50</loadingAmount>
+			</li>
+			<li Class="ThreeHST.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+				</concepts>
+			</li>
+			<li Class="ThreeHST.CompProperties_SecondaryVerb">
+				<verbProps>
+					<verbClass>BDsGlitterworldFaction3HST.Verb_ShootByBarrel</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>ElectricStunGunBeam</defaultProjectile>
+					<warmupTime>2.1</warmupTime>
+					<burstShotCount>6</burstShotCount>
+					<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+					<range>15</range>
+					<soundCast>RG_9mm</soundCast>
+					<soundCastTail>GunTail_Heavy</soundCastTail>
+					<recoilAmount>0</recoilAmount>
+					<muzzleFlashScale>18</muzzleFlashScale>
+				</verbProps>
+				<mainWeaponLabel>directed EMP blast</mainWeaponLabel>
+				<secondaryWeaponLabel>non-lethal electric arc</secondaryWeaponLabel>
+				<description>switch firing mode</description>
+				<mainCommandIcon>UI/Icons/FireModes/EMP_Blast</mainCommandIcon>
+				<secondaryCommandIcon>UI/Icons/FireModes/Non_Lethal</secondaryCommandIcon>
+				<secondaryWeaponChargeSpeeds>
+					<li>0</li>
+				</secondaryWeaponChargeSpeeds>
+			</li>
+		</comps>
+		<weaponTags Inherit="False"/>
+		<recipeMaker>
+			<researchPrerequisite>Research_3HST_Railgun</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+</Defs>

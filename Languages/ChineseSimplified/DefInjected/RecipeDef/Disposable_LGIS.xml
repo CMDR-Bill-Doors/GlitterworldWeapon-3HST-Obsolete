@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Direct launchers/ammo -->
+
+  <MakeDLGISfrag.label>制作 LGIS 破片弹发射筒 x5</MakeDLGISfrag.label>
+  <MakeDLGISfrag.description>制作 LGIS 破片弹发射筒 x5。</MakeDLGISfrag.description>
+  <MakeDLGISfrag.jobString>正在制作 LGIS 破片弹发射筒 x5。</MakeDLGISfrag.jobString>
+
+  <MakeDLGISCluster.label>制作 LGIS 集束弹发射筒 x5</MakeDLGISCluster.label>
+  <MakeDLGISCluster.description>制作 LGIS 集束弹发射筒 x5。</MakeDLGISCluster.description>
+  <MakeDLGISCluster.jobString>正在制作 LGIS 集束弹发射筒 x5。</MakeDLGISCluster.jobString>
+
+  <MakeDLGISMineLayer.label>制作 LGIS 布雷弹发射筒 x5</MakeDLGISMineLayer.label>
+  <MakeDLGISMineLayer.description>制作 LGIS 布雷弹发射筒 x5。</MakeDLGISMineLayer.description>
+  <MakeDLGISMineLayer.jobString>正在制作 LGIS 布雷弹发射筒 x5。</MakeDLGISMineLayer.jobString>
+
+  <MakeDLGISDecoy.label>制作 LGIS 诱饵弹发射筒 x5</MakeDLGISDecoy.label>
+  <MakeDLGISDecoy.description>制作 LGIS 诱饵弹发射筒 x5。</MakeDLGISDecoy.description>
+  <MakeDLGISDecoy.jobString>正在制作 LGIS 诱饵弹发射筒 x5。</MakeDLGISDecoy.jobString>
+
+  <MakeDLGISheat.label>制作 LGIS 破甲弹发射筒 x5</MakeDLGISheat.label>
+  <MakeDLGISheat.description>制作 LGIS 破甲弹发射筒 x5。</MakeDLGISheat.description>
+  <MakeDLGISheat.jobString>正在制作 LGIS 破甲弹发射筒 x5。</MakeDLGISheat.jobString>
+
+  <MakeDLGISthermobaric.label>制作 LGIS 温压弹发射筒 x5</MakeDLGISthermobaric.label>
+  <MakeDLGISthermobaric.description>制作 LGIS 温压弹发射筒 x5。</MakeDLGISthermobaric.description>
+  <MakeDLGISthermobaric.jobString>正在制作 LGIS 温压弹发射筒 x5。</MakeDLGISthermobaric.jobString>
+
+  <MakeDLGISconfetti.label>制作 LGIS 礼花弹发射筒 x5</MakeDLGISconfetti.label>
+  <MakeDLGISconfetti.description>制作 LGIS 礼花弹发射筒 x5。</MakeDLGISconfetti.description>
+  <MakeDLGISconfetti.jobString>正在制作 LGIS 礼花弹发射筒 x5。</MakeDLGISconfetti.jobString>
+
+  <MakeDLGISincendiary.label>制作 LGIS 燃烧弹发射筒 x5</MakeDLGISincendiary.label>
+  <MakeDLGISincendiary.description>制作 LGIS 燃烧弹发射筒 x5。</MakeDLGISincendiary.description>
+  <MakeDLGISincendiary.jobString>正在制作 LGIS 燃烧弹发射筒 x5。</MakeDLGISincendiary.jobString>
+
+  <MakeDLGISsmoke.label>制作 LGIS 烟雾弹发射筒 x5</MakeDLGISsmoke.label>
+  <MakeDLGISsmoke.description>制作 LGIS 烟雾弹发射筒 x5。</MakeDLGISsmoke.description>
+  <MakeDLGISsmoke.jobString>正在制作 LGIS 烟雾弹发射筒 x5。</MakeDLGISsmoke.jobString>
+
+  <MakeDLGISfirefoam.label>制作 LGIS 灭火弹发射筒 x5</MakeDLGISfirefoam.label>
+  <MakeDLGISfirefoam.description>制作 LGIS 灭火弹发射筒 x5。</MakeDLGISfirefoam.description>
+  <MakeDLGISfirefoam.jobString>正在制作 LGIS 灭火弹发射筒 x5。</MakeDLGISfirefoam.jobString>
+
+  <MakeDLGISemp.label>制作 LGIS EMP弹发射筒 x5</MakeDLGISemp.label>
+  <MakeDLGISemp.description>制作 LGIS EMP弹发射筒 x5。</MakeDLGISemp.description>
+  <MakeDLGISemp.jobString>正在制作 LGIS EMP弹发射筒 x5。</MakeDLGISemp.jobString>
+
+  <MakeDLGISillumination.label>制作 LGIS 照明弹发射筒 x5</MakeDLGISillumination.label>
+  <MakeDLGISillumination.description>制作 LGIS 照明弹发射筒 x5。</MakeDLGISillumination.description>
+  <MakeDLGISillumination.jobString>正在制作 LGIS 照明弹发射筒 x5。</MakeDLGISillumination.jobString>
+
+  <MakeDLGISnuke.label>制作 LGIS 核弹发射筒 x5</MakeDLGISnuke.label>
+  <MakeDLGISnuke.description>制作 LGIS 核弹发射筒 x5。</MakeDLGISnuke.description>
+  <MakeDLGISnuke.jobString>正在制作 LGIS 核弹发射筒 x5。</MakeDLGISnuke.jobString>
+
+  <MakeDLGIStoxic.label>制作 LGIS 毒气发射筒 x5</MakeDLGIStoxic.label>
+  <MakeDLGIStoxic.description>制作 LGIS 毒气发射筒 x5。</MakeDLGIStoxic.description>
+  <MakeDLGIStoxic.jobString>正在制作 LGIS 毒气发射筒 x5。</MakeDLGIStoxic.jobString>
+
+  <MakeDLGISMineLayerfromADM.label>制作 LGIS ADM空布雷发射筒 x5</MakeDLGISMineLayerfromADM.label>
+  <MakeDLGISMineLayerfromADM.description>制作 LGIS ADM空布雷发射筒 x5。</MakeDLGISMineLayerfromADM.description>
+  <MakeDLGISMineLayerfromADM.jobString>正在制作 LGIS ADM空布雷发射筒 x5。</MakeDLGISMineLayerfromADM.jobString>
+
+  <DismantleLGISminelayer.label>拆除 LGIS ADM空布雷</DismantleLGISminelayer.label>
+  <DismantleLGISminelayer.description>拆开一个LGIS制地雷取出里面的ADM, 但...为什么?</DismantleLGISminelayer.description>
+  <DismantleLGISminelayer.jobString>拆开LGIS地雷</DismantleLGISminelayer.jobString>
+
+
+</LanguageData>

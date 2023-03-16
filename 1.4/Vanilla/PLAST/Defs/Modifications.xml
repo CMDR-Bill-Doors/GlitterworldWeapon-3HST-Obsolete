@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef Name="VehicleMod3HSTBase" ParentName="PLA_VehicleModWeaponBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/Item/Resource/Modification_3HST</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="VehicleMod3HSTBase">
+		<defName>VehicleMod_3HST5mmLMRG</defName>
+		<label>vehicle modification kit - 3HST 5mm light machinerailgun</label>
+		<description>A modification toolkit that can be used to install an 3HST 5mm light machinerailgun on vehicle.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Gun_5mmHMG_TurretVehicle</ThingDef>
+			<RecipeDef>VehicleModRecipe_Install3HST5mmLMRG</RecipeDef>
+			<ThingDef>PLA_CSZ181OffRoad</ThingDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>50</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<Gun_3HST_Light_Machine_Railgun>1</Gun_3HST_Light_Machine_Railgun>
+		</costList>
+		<statBases>
+			<Mass>20</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="PLA_RecipeInstallVehicleWeapon">
+		<defName>VehicleModRecipe_Install3HST5mmLMRG</defName>
+		<label>install 3HST 5mm LMRG</label>
+		<description>Install a 3HST 5mm LMRG on vehicle.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Gun_5mmHMG_TurretVehicle</ThingDef>
+			<ThingDef>VehicleMod_3HST5mmLMRG</ThingDef>
+			<ThingDef>PLA_CSZ181OffRoad</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing 3HST 5mm LMRG.</jobString>
+		<recipeUsers>
+			<li>PLA_CSZ181OffRoad</li>
+			<li>Mech_AutoFirePlatform_PLAST</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VehicleMod_3HST5mmLMRG</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>VehicleMod_3HST5mmLMRG</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>PLA_VehicleTurret</li>
+		</appliedOnFixedBodyParts>
+		<modExtensions>
+			<li Class="PLA.Vehicle.RecipeModifyVehicleProps">
+				<weaponToInstall>Gun_5mmHMG_TurretVehicle</weaponToInstall>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<ThingDef ParentName="VehicleMod3HSTBase">
+		<defName>VehicleMod_3HST9mmHMRG</defName>
+		<label>vehicle modification kit - 3HST 9mm heavy machinerailgun</label>
+		<description>A modification toolkit that can be used to install an 3HST 9mm heavy machinerailgun on vehicle.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Gun_9mmHMG_TurretVehlcle</ThingDef>
+			<RecipeDef>VehicleModRecipe_Install3HST9mmHMRG</RecipeDef>
+			<ThingDef>PLA_CSZ181OffRoad</ThingDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>70</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<Gun_3HST_9mmHMG>1</Gun_3HST_9mmHMG>
+		</costList>
+		<statBases>
+			<Mass>60</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="PLA_RecipeInstallVehicleWeapon">
+		<defName>VehicleModRecipe_Install3HST9mmHMRG</defName>
+		<label>install 3HST 9mm HMRG</label>
+		<description>Install a 3HST 9mm HMRG on vehicle.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Gun_9mmHMG_TurretVehlcle</ThingDef>
+			<ThingDef>VehicleMod_3HST9mmHMRG</ThingDef>
+			<ThingDef>PLA_CSZ181OffRoad</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing 3HST 9mm HMRG.</jobString>
+		<recipeUsers>
+			<li>PLA_CSZ181OffRoad</li>
+			<li>Mech_AutoFirePlatform_PLAST</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VehicleMod_3HST9mmHMRG</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>VehicleMod_3HST9mmHMRG</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>PLA_VehicleTurret</li>
+		</appliedOnFixedBodyParts>
+		<modExtensions>
+			<li Class="PLA.Vehicle.RecipeModifyVehicleProps">
+				<weaponToInstall>Gun_9mmHMG_TurretVehlcle</weaponToInstall>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<ThingDef ParentName="VehicleMod3HSTBase">
+		<defName>VehicleMod_3HSTDual9mmHMRG</defName>
+		<label>vehicle modification kit - 3HST dual 9mm heavy machinerailgun</label>
+		<description>A modification toolkit that can be used to install an 3HST dual 9mm heavy machinerailgun on vehicle.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Gun_9mmHMG_DualVehicle</ThingDef>
+			<RecipeDef>VehicleModRecipe_Install3HSTDual9mmHMRG</RecipeDef>
+			<ThingDef>PLA_CSZ181OffRoad</ThingDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<Gun_3HST_9mmHMG>2</Gun_3HST_9mmHMG>
+		</costList>
+		<statBases>
+			<Mass>110</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="PLA_RecipeInstallVehicleWeapon">
+		<defName>VehicleModRecipe_Install3HSTDual9mmHMRG</defName>
+		<label>install 3HST dual 9mm HMRG</label>
+		<description>Install a 3HST 9mm dual HMRG on vehicle.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Gun_9mmHMG_DualVehicle</ThingDef>
+			<ThingDef>VehicleMod_3HSTDual9mmHMRG</ThingDef>
+			<ThingDef>PLA_Lynx6x6UltraLight</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing 3HST dual 9mm HMRG.</jobString>
+		<recipeUsers>
+			<li>PLA_Lynx6x6UltraLight</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VehicleMod_3HSTDual9mmHMRG</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>VehicleMod_3HSTDual9mmHMRG</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>PLA_VehicleTurret</li>
+		</appliedOnFixedBodyParts>
+		<modExtensions>
+			<li Class="PLA.Vehicle.RecipeModifyVehicleProps">
+				<weaponToInstall>Gun_9mmHMG_DualVehicle</weaponToInstall>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<ThingDef ParentName="VehicleMod3HSTBase">
+		<defName>VehicleMod_3HST20mmARC</defName>
+		<label>vehicle modification kit - 3HST 20mm auto railcannon</label>
+		<description>A modification toolkit that can be used to install an 3HST 20mm auto railcannon on vehicle.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Gun_20mmAC_TurretVehicle</ThingDef>
+			<RecipeDef>VehicleModRecipe_Install3HST20mmARC</RecipeDef>
+			<ThingDef>PLA_Lynx6x6UltraLight</ThingDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>100</Plasteel>
+			<Steel>150</Steel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<Gun_3HST_20mmAutocannon>1</Gun_3HST_20mmAutocannon>
+		</costList>
+		<statBases>
+			<Mass>200</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="PLA_RecipeInstallVehicleWeapon">
+		<defName>VehicleModRecipe_Install3HST20mmARC</defName>
+		<label>install 3HST 20mm ARC</label>
+		<description>Install a 3HST 20mm ARC on vehicle.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Gun_20mmAC_TurretVehicle</ThingDef>
+			<ThingDef>VehicleMod_3HST20mmARC</ThingDef>
+			<ThingDef>PLA_Lynx6x6UltraLight</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing 3HST 20mm ARC.</jobString>
+		<recipeUsers>
+			<li>PLA_Lynx6x6UltraLight</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VehicleMod_3HST20mmARC</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>VehicleMod_3HST20mmARC</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>PLA_VehicleTurret</li>
+		</appliedOnFixedBodyParts>
+		<modExtensions>
+			<li Class="PLA.Vehicle.RecipeModifyVehicleProps">
+				<weaponToInstall>Gun_20mmAC_TurretVehicle</weaponToInstall>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<ThingDef ParentName="VehicleMod3HSTBase">
+		<defName>VehicleMod_3HSTAIGS</defName>
+		<label>vehicle modification kit - 3HST 40mm AIGS</label>
+		<description>A modification toolkit that can be used to install an 3HST 40mm auto indirect grenade system on vehicle.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Gun_3HST_AutoGrenade_TurretVehicle</ThingDef>
+			<RecipeDef>VehicleModRecipe_Install3HSTAIGS</RecipeDef>
+			<ThingDef>PLA_CSZ181OffRoad</ThingDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>50</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<Gun_3HST_AutoGrenade>1</Gun_3HST_AutoGrenade>
+		</costList>
+		<statBases>
+			<Mass>45</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="PLA_RecipeInstallVehicleWeapon">
+		<defName>VehicleModRecipe_Install3HSTAIGS</defName>
+		<label>install 3HST 40mm AUGS</label>
+		<description>Install a 3HST 40mm AIGS on vehicle.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Gun_3HST_AutoGrenade_TurretVehicle</ThingDef>
+			<ThingDef>VehicleMod_3HSTAIGS</ThingDef>
+			<ThingDef>PLA_CSZ181OffRoad</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing 3HST 40mm AIGS.</jobString>
+		<recipeUsers>
+			<li>PLA_CSZ181OffRoad</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VehicleMod_3HSTAIGS</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>VehicleMod_3HSTAIGS</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>PLA_VehicleTurret</li>
+		</appliedOnFixedBodyParts>
+		<modExtensions>
+			<li Class="PLA.Vehicle.RecipeModifyVehicleProps">
+				<weaponToInstall>Gun_3HST_AutoGrenade_TurretVehicle</weaponToInstall>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<ThingDef ParentName="VehicleMod3HSTBase"  MayRequire="ceteam.combatextended">
+		<defName>VehicleMod_3HSTDualLGIS</defName>
+		<label>vehicle modification kit - 3HST dual LGIS</label>
+		<description>A modification toolkit that can be used to install an 3HST dual LGIS launcher on vehicle.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Gun_DualLGIS_Vehicle</ThingDef>
+			<RecipeDef>VehicleModRecipe_Install3HSTDualLGIS</RecipeDef>
+			<ThingDef>PLA_CSZ181OffRoad</ThingDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>100</Steel>
+			<Plasteel>35</Plasteel>
+			<ComponentIndustrial>9</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>40</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="PLA_RecipeInstallVehicleWeapon"  MayRequire="ceteam.combatextended">
+		<defName>VehicleModRecipe_Install3HSTDualLGIS</defName>
+		<label>install 3HST dual LGIS launcher</label>
+		<description>Install a 3HST dual LGIS launcher on vehicle.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Gun_DualLGIS_Vehicle</ThingDef>
+			<ThingDef>VehicleMod_3HSTDualLGIS</ThingDef>
+			<ThingDef>PLA_CSZ181OffRoad</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing 3HST dual LGIS launcher.</jobString>
+		<recipeUsers>
+			<li>PLA_CSZ181OffRoad</li>
+			<li>Mech_AutoFirePlatform_PLAST</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VehicleMod_3HSTDualLGIS</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>VehicleMod_3HSTDualLGIS</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>PLA_VehicleTurret</li>
+		</appliedOnFixedBodyParts>
+		<modExtensions>
+			<li Class="PLA.Vehicle.RecipeModifyVehicleProps">
+				<weaponToInstall>Gun_DualLGIS_Vehicle</weaponToInstall>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+	<ThingDef ParentName="VehicleMod3HSTBase"  MayRequire="ceteam.combatextended">
+		<defName>VehicleMod_3HSTMLGIS</defName>
+		<label>vehicle modification kit - 3HST multiple LGIS</label>
+		<description>A modification toolkit that can be used to install an 3HST multiple LGIS launcher on vehicle.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Gun_MLGIS_Vehicle</ThingDef>
+			<RecipeDef>VehicleModRecipe_Install3HSTMLGIS</RecipeDef>
+			<ThingDef>PLA_Lynx6x6UltraLight</ThingDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Steel>200</Steel>
+			<Plasteel>185</Plasteel>
+			<ComponentIndustrial>20</ComponentIndustrial>
+			<ComponentSpacer>7</ComponentSpacer>
+			<Resource_3HST_RailComponent>7</Resource_3HST_RailComponent>
+		</costList>
+		<statBases>
+			<Mass>800</Mass>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="PLA_RecipeInstallVehicleWeapon"  MayRequire="ceteam.combatextended">
+		<defName>VehicleModRecipe_Install3HSTMLGIS</defName>
+		<label>install 3HST MLGIS</label>
+		<description>Install a 3HST MLGIS on vehicle.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Gun_MLGIS_Vehicle</ThingDef>
+			<ThingDef>VehicleMod_3HSTMLGIS</ThingDef>
+			<ThingDef>PLA_Lynx6x6UltraLight</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing 3HST MLGIS.</jobString>
+		<recipeUsers>
+			<li>PLA_Lynx6x6UltraLight</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VehicleMod_3HSTMLGIS</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>VehicleMod_3HSTMLGIS</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>PLA_VehicleTurret</li>
+		</appliedOnFixedBodyParts>
+		<modExtensions>
+			<li Class="PLA.Vehicle.RecipeModifyVehicleProps">
+				<weaponToInstall>Gun_MLGIS_Vehicle</weaponToInstall>
+			</li>
+		</modExtensions>
+	</RecipeDef>
+
+</Defs>

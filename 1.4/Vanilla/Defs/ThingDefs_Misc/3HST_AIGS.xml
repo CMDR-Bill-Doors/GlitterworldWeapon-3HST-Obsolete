@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_3HST40mmGrenade_HE</defName>
+		<label>40mm Hi-V grenade</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/LauncherShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius>1.9</explosionRadius>
+			<damageDef>Bomb</damageDef>
+			<speed>75</speed>
+			<damageAmountBase>25</damageAmountBase>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<arcHeightFactor>2</arcHeightFactor>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<flyOverhead>true</flyOverhead>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTHeavyGun">
+		<defName>Gun_3HST_AutoGrenade</defName>
+		<label>3HST automatic indirect grenade system</label>
+		<description>A automatic grenade launcher designed to fire at a high angle, raining grenade from above.</description>
+		<graphicData>
+			<drawSize>1.5,1.5</drawSize>
+			<texPath>Things/Weapons/3HST_Automatic_Indirect_Grenade_System</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>75500</WorkToMake>
+			<AccuracyTouch>0.40</AccuracyTouch>
+			<AccuracyShort>0.48</AccuracyShort>
+			<AccuracyMedium>0.35</AccuracyMedium>
+			<AccuracyLong>0.26</AccuracyLong>
+			<Mass>32</Mass>
+			<RangedWeapon_Cooldown>10</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>165</Steel>
+			<Plasteel>65</Plasteel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<weaponTags>
+			<li>3HST_AIGS</li>
+			<li>CE_AI_Suppressive</li>
+			<li>CE_AI_Launcher</li>
+			<li>WarcasketVeteran</li>
+		</weaponTags>
+		<comps>
+			<li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeBarrel">
+				<durability>90</durability>
+				<label>Rail durability</label>
+				<loadingAmount>30</loadingAmount>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_RailPiercing</li>
+				</concepts>
+			</li>
+		</comps>
+		<verbs>
+			<li>
+				<verbClass>BDsGlitterworldFaction3HST.Verb_ShootNotUnderRoofByBarrel</verbClass>
+				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_3HST40mmGrenade_HE</defaultProjectile>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<warmupTime>10</warmupTime>
+				<minRange>16</minRange>
+				<range>50.9</range>
+				<burstShotCount>6</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<forcedMissRadius>15</forcedMissRadius>
+				<soundCast>InfernoCannon_Fire</soundCast>
+				<muzzleFlashScale>16</muzzleFlashScale>
+				<requireLineOfSight>false</requireLineOfSight>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+	</ThingDef>
+
+
+	<!--Turret manned-->
+	<ThingDef ParentName="Base3HSTMoveableMannedTurret">
+		<defName>Turret_3HSTAIGSmanned</defName>
+		<label>Manned 3HST automatic indirect grenade system</label>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+		<uiIconPath>UI/Icons/Security/3HST_AIGS_Manned_icon</uiIconPath>
+		<statBases>
+			<Mass>55</Mass>
+		</statBases>
+		<designatorDropdown Inherit="False">Group_3HST_AIGS</designatorDropdown>
+		<terrainAffordanceNeeded Inherit="False">Light</terrainAffordanceNeeded>
+		<description>A 3HST automatic indirect grenade system mounted on a turret mount.</description>
+		<costList>
+			<Steel>25</Steel>
+			<Gun_3HST_AutoGrenade>1</Gun_3HST_AutoGrenade>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<building>
+			<turretGunDef>Gun_3HST_AutoGrenade_Turret</turretGunDef>
+			<turretTopDrawSize>2</turretTopDrawSize>
+			<turretBurstCooldownTime>10</turretBurstCooldownTime>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<size>(1,1)</size>
+		<researchPrerequisites>
+			<li>Mortars</li>
+		</researchPrerequisites>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<designationCategory>Security</designationCategory>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>10</basePowerConsumption>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_PowerTurretGun">
+				<rechargePowerConsumption>1000</rechargePowerConsumption>
+				<rechargePower>Recharge power consumption</rechargePower>
+				<cooldownTime>10</cooldownTime>
+				<rechargePower_Stat>The amount of power the weapon will draw from the power grid during cool down.\n\nRailguns' built in capacitors need to be recharged after each salvo, leading to a power consumption spike.\n\nThe power consumption is calculated as: Power draw x Turret cooldown / 1000\n{0} W x {1} s / 1000 = {2} Wd</rechargePower_Stat>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until accelerator rail change</fuelLabel>
+				<fuelGizmoLabel>Rail durability</fuelGizmoLabel>
+				<outOfFuelMessage>Cannot shoot: Needs new accelerator rail</outOfFuelMessage>
+				<fuelFilter>
+					<thingDefs>
+						<li>Resource_3HST_RailComponent</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>90</fuelCapacity>
+				<fuelMultiplier>30</fuelMultiplier>
+				<initialFuelPercent>1</initialFuelPercent>
+				<autoRefuelPercent>0.25</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_RailPiercing</li>
+					<li>BDGW_Turret</li>
+				</concepts>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseArtilleryWeapon">
+		<defName>Gun_3HST_AutoGrenade_Turret</defName>
+		<label>Mounted 3HST automatic indirect grenade system</label>
+		<graphicData>
+			<texPath>Things/Building/Turrets/3HST_Automatic_Indirect_Grenade_System_Manned</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>3HST automatic indirect grenade system on a stationary emplacement.</description>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<statBases>
+			<AccuracyTouch>0.40</AccuracyTouch>
+			<AccuracyShort>0.48</AccuracyShort>
+			<AccuracyMedium>0.35</AccuracyMedium>
+			<AccuracyLong>0.26</AccuracyLong>
+			<RangedWeapon_Cooldown>10</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>BillDoorsFramework.Verb_ShootNotUnderRoof</verbClass>
+				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_3HST40mmGrenade_HE</defaultProjectile>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<warmupTime>5</warmupTime>
+				<minRange>16</minRange>
+				<range>50.9</range>
+				<burstShotCount>6</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<forcedMissRadius>5</forcedMissRadius>
+				<soundCast>InfernoCannon_Fire</soundCast>
+				<muzzleFlashScale>16</muzzleFlashScale>
+				<requireLineOfSight>false</requireLineOfSight>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<!--Turret auto-->
+	<ThingDef ParentName="Base3HSTStationaryTurretHeavy">
+		<defName>Turret_3HSTAIGSAuto</defName>
+		<label>Auto 3HST automatic indirect grenade system turret</label>
+		<graphicData>
+			<drawSize>(1.5,1.5)</drawSize>
+		</graphicData>
+		<designatorDropdown Inherit="False">Group_3HST_AIGS</designatorDropdown>
+		<uiIconPath>UI/Icons/Security/3HST_AIGS_Auto_icon</uiIconPath>
+		<statBases>
+			<Mass>55</Mass>
+			<ShootingAccuracyTurret>0.5</ShootingAccuracyTurret>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>10</basePowerConsumption>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_PowerTurretGun">
+				<rechargePowerConsumption>500</rechargePowerConsumption>
+				<rechargePower>Recharge power consumption</rechargePower>
+				<cooldownTime>20</cooldownTime>
+				<rechargePower_Stat>The amount of power the weapon will draw from the power grid during cool down.\n\nRailguns' built in capacitors need to be recharged after each salvo, leading to a power consumption spike.\n\nThe power consumption is calculated as: Power draw x Turret cooldown / 1000\n{0} W x {1} s / 1000 = {2} Wd</rechargePower_Stat>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until accelerator rail change</fuelLabel>
+				<fuelGizmoLabel>Rail durability</fuelGizmoLabel>
+				<outOfFuelMessage>Cannot shoot: Needs new accelerator rail</outOfFuelMessage>
+				<fuelFilter>
+					<thingDefs>
+						<li>Resource_3HST_RailComponent</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>90</fuelCapacity>
+				<fuelMultiplier>30</fuelMultiplier>
+				<initialFuelPercent>1</initialFuelPercent>
+				<autoRefuelPercent>0.25</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_RailPiercing</li>
+					<li>BDGW_Turret</li>
+				</concepts>
+			</li>
+		</comps>
+		<costList>
+			<Steel>250</Steel>
+			<Plasteel>100</Plasteel>
+			<Gun_3HST_AutoGrenade>1</Gun_3HST_AutoGrenade>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<building>
+			<turretGunDef>Gun_3HST_AutoGrenade_Turret_Auto</turretGunDef>
+			<turretTopDrawSize>2</turretTopDrawSize>
+			<turretBurstCooldownTime>20</turretBurstCooldownTime>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<size>(2,2)</size>
+		<researchPrerequisites>
+			<li>Mortars</li>
+		</researchPrerequisites>
+		<designationCategory>Security</designationCategory>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseArtilleryWeapon">
+		<defName>Gun_3HST_AutoGrenade_Turret_Auto</defName>
+		<label>Mounted 3HST automatic indirect grenade system</label>
+		<graphicData>
+			<texPath>Things/Building/Turrets/3HST_Automatic_Indirect_Grenade_System_Auto</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>3HST automatic indirect grenade system on a stationary emplacement.</description>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<statBases>
+			<AccuracyTouch>0.40</AccuracyTouch>
+			<AccuracyShort>0.48</AccuracyShort>
+			<AccuracyMedium>0.35</AccuracyMedium>
+			<AccuracyLong>0.26</AccuracyLong>
+			<RangedWeapon_Cooldown>20</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>BillDoorsFramework.Verb_ShootNotUnderRoof</verbClass>
+				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_3HST40mmGrenade_HE</defaultProjectile>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<warmupTime>5</warmupTime>
+				<minRange>16</minRange>
+				<range>50.9</range>
+				<burstShotCount>6</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<forcedMissRadius>10</forcedMissRadius>
+				<soundCast>InfernoCannon_Fire</soundCast>
+				<muzzleFlashScale>16</muzzleFlashScale>
+				<requireLineOfSight>false</requireLineOfSight>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+	</ThingDef>
+
+</Defs>

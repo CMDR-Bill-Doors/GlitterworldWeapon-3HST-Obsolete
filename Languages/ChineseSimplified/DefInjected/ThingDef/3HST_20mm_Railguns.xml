@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Gun_3HST_20mmAutocannon.label>3HST制20mm载具用磁轨自动炮</Gun_3HST_20mmAutocannon.label>
+  <Gun_3HST_20mmAutocannon.description>一种常见的3HST制大口径磁轨自动炮，从步战车到战舰防空炮都有使用。</Gun_3HST_20mmAutocannon.description>
+  <Gun_3HST_20mmAutocannon.comps.2.label>磁轨寿命</Gun_3HST_20mmAutocannon.comps.2.label>
+  <Gun_3HST_20mmAutocannon.tools.0.label>枪托</Gun_3HST_20mmAutocannon.tools.0.label>
+  <Gun_3HST_20mmAutocannon.tools.1.label>枪管</Gun_3HST_20mmAutocannon.tools.1.label>
+  <Gun_3HST_20mmAutocannon.tools.2.label>枪口</Gun_3HST_20mmAutocannon.tools.2.label>
+
+
+  <!-- Turret manned -->
+
+  <Turret_3HST20mmACmanned.label>手动20mm磁轨自动炮炮塔</Turret_3HST20mmACmanned.label>
+  <Turret_3HST20mmACmanned.description>一部装在固定炮架上的3HST制20mm磁轨自动炮。虽然是手动炮塔，但是由于磁轨炮需要供能的缘故所以还是需要电力才能工作。</Turret_3HST20mmACmanned.description>
+
+
+  <!-- Turret auto -->
+
+  <Turret_3HST20mmHMGAuto.label>固定自动20mm磁轨自动炮炮塔</Turret_3HST20mmHMGAuto.label>
+  <Turret_3HST20mmHMGAuto.description>一部装在自动炮塔上的3HST制20mm自动磁轨炮，厚重的装甲保护着内部结构，但是也使得这个炮塔一旦完工就再也无法移动。</Turret_3HST20mmHMGAuto.description>
+
+  <Turret_3HST20mmHMGAutoMoveable.label>可移动自动20mm磁轨自动炮炮塔</Turret_3HST20mmHMGAutoMoveable.label>
+  <Turret_3HST20mmHMGAutoMoveable.description>安装在带有作动器的三脚架上的3HST制20mm自动磁轨炮，虽然便于转移，但是很容易在炮火下损毁。</Turret_3HST20mmHMGAutoMoveable.description>
+
+  <Gun_20mmAC_Turret.label>3HST制20mm磁轨自动炮（炮塔用）</Gun_20mmAC_Turret.label>
+  <Gun_20mmAC_Turret.description>安装在固定支架上的3HST制20mm磁轨自动炮。</Gun_20mmAC_Turret.description>
+
+
+</LanguageData>

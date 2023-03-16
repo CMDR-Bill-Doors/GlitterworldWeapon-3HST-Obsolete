@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- Ammo -->
+
+	<Ammo_ScatterRG_Standard.label>标准霰射磁轨弹</Ammo_ScatterRG_Standard.label>
+	<Ammo_ScatterRG_Standard.description>用于霰射磁轨炮的霰弹，虽然同样为20mm口径，但是它精密的内部结构无法从普通磁轨炮的加速度中幸存，所以不能用于20mm磁轨机炮。</Ammo_ScatterRG_Standard.description>
+
+	<Ammo_ScatterRG_HE.label>高爆霰射磁轨榴弹</Ammo_ScatterRG_HE.label>
+	<Ammo_ScatterRG_HE.description>用于霰射磁轨炮的高爆榴弹，虽然同样为20mm口径，但是它精密的内部结构无法从普通磁轨炮的加速度中幸存，所以不能用于20mm磁轨机炮。其加固弹头可以在穿透部分薄墙体后起爆。</Ammo_ScatterRG_HE.description>
+
+	<Ammo_ScatterRG_EMP.label>EMP霰射磁轨榴弹</Ammo_ScatterRG_EMP.label>
+	<Ammo_ScatterRG_EMP.description>用于霰射磁轨炮的EMP榴弹，虽然同样为20mm口径，但是它精密的内部结构无法从普通磁轨炮的加速度中幸存，所以不能用于20mm磁轨机炮。</Ammo_ScatterRG_EMP.description>
+
+	<Ammo_ScatterRG_Smoke.label>烟雾霰射磁轨榴弹</Ammo_ScatterRG_Smoke.label>
+	<Ammo_ScatterRG_Smoke.description>用于霰射磁轨炮的烟雾榴弹，虽然同样为20mm口径，但是它精密的内部结构无法从普通磁轨炮的加速度中幸存，所以不能用于20mm磁轨机炮。</Ammo_ScatterRG_Smoke.description>
+
+	<Ammo_ScatterRG_HEAT.label>破甲霰射磁轨榴弹</Ammo_ScatterRG_HEAT.label>
+	<Ammo_ScatterRG_HEAT.description>用于霰射磁轨炮的破甲榴弹，虽然同样为20mm口径，但是它精密的内部结构无法从普通磁轨炮的加速度中幸存，所以不能用于20mm磁轨机炮。</Ammo_ScatterRG_HEAT.description>
+
+	<Ammo_ScatterRG_Incendiary.label>燃烧霰射磁轨榴弹</Ammo_ScatterRG_Incendiary.label>
+	<Ammo_ScatterRG_Incendiary.description>用于霰射磁轨炮的燃烧榴弹，虽然同样为20mm口径，但是它精密的内部结构无法从普通磁轨炮的加速度中幸存，所以不能用于20mm磁轨机炮。</Ammo_ScatterRG_Incendiary.description>
+
+	<Ammo_ScatterRG_Tox.label>毒气霰射磁轨榴弹</Ammo_ScatterRG_Tox.label>
+	<Ammo_ScatterRG_Tox.description>用于霰射磁轨炮的毒气榴弹，虽然同样为20mm口径，但是它精密的内部结构无法从普通磁轨炮的加速度中幸存，所以不能用于20mm磁轨机炮。</Ammo_ScatterRG_Tox.description>
+
+
+	<!-- Projectiles -->
+
+	<Projectile_ScatterRG_Heavy.label>2x32.5mm 霰射磁轨弹</Projectile_ScatterRG_Heavy.label>
+	<Projectile_ScatterRG_HE.label>20x40mm 高爆霰射磁轨榴弹</Projectile_ScatterRG_HE.label>
+	<Projectile_ScatterRG_EMP.label>20x40mm EMP霰射磁轨榴弹</Projectile_ScatterRG_EMP.label>
+	<Projectile_ScatterRG_Smoke.label>20x40mm 烟雾霰射磁轨榴弹</Projectile_ScatterRG_Smoke.label>
+	<Projectile_ScatterRG_HEAT.label>20x40mm 破甲霰射磁轨榴弹</Projectile_ScatterRG_HEAT.label>
+	<Projectile_ScatterRG_Incendiary.label>20x40mm 燃烧霰射磁轨榴弹</Projectile_ScatterRG_Incendiary.label>
+	<Projectile_ScatterRG_Tox.label>20x40mm 毒气霰射磁轨榴弹</Projectile_ScatterRG_Tox.label>
+
+
+</LanguageData>

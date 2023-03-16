@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- Recipes -->
+
+	<MakeAmmo_3HST9mmRG_Steel.label>制作 3HST制9mm大口径磁轨弹 x300</MakeAmmo_3HST9mmRG_Steel.label>
+	<MakeAmmo_3HST9mmRG_Steel.description>制作 3HST制9mm大口径磁轨弹 x300。</MakeAmmo_3HST9mmRG_Steel.description>
+	<MakeAmmo_3HST9mmRG_Steel.jobString>正在制作 3HST制9mm大口径磁轨弹 x300。</MakeAmmo_3HST9mmRG_Steel.jobString>
+
+	<MakeAmmo_3HST9mmRG_AP.label>制作 3HST制9mm大口径磁轨穿甲弹 x300</MakeAmmo_3HST9mmRG_AP.label>
+	<MakeAmmo_3HST9mmRG_AP.description>制作 3HST制9mm大口径磁轨穿甲弹 x300。</MakeAmmo_3HST9mmRG_AP.description>
+	<MakeAmmo_3HST9mmRG_AP.jobString>正在制作 3HST制9mm大口径磁轨穿甲弹 x300。</MakeAmmo_3HST9mmRG_AP.jobString>
+
+
+</LanguageData>

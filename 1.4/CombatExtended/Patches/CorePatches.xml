@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraderKindDef[defName="Caravan_Outlander_CombatSupplier"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Resource_3HST_RailComponent</thingDef>
+				<countRange>1~5</countRange>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraderKindDef[defName="Orbital_CombatSupplier"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Resource_3HST_RailComponent</thingDef>
+				<countRange>2~10</countRange>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraderKindDef[defName="Caravan_Outlander_Exotic" or defName="Orbital_Exotic"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>BDGunComponents</tradeTag>
+				<thingDefCountRange>1~2</thingDefCountRange>
+				<countRange>1~5</countRange>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraderKindDef[defName="Caravan_Neolithic_ShamanMerchant"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>BDGunComponents</tradeTag>
+				<thingDefCountRange>1~2</thingDefCountRange>
+				<countRange>1~5</countRange>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraderKindDef[defName="Visitor_Outlander_Standard"]/stockGenerators</xpath>
+		<value>
+			<li Class="StockGenerator_Tag">
+				<tradeTag>BDGunComponents</tradeTag>
+				<thingDefCountRange>0~1</thingDefCountRange>
+				<countRange>0~3</countRange>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[@Name="TurretBase"]/placeWorkers/li[2]</xpath>
+		<value>
+			<li>BillDoorsFramework.PlaceWorker_ShowVerbRadiusBySight</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>RunAndGun</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[@Name="Base3HSTHeavyGun" or defName="Gun_3HST_9mmDMR" or defName="Gun_3HST_Light_Machine_Railgun" or defName="Gun_3HST_LGIS_Launcher" or defName="Gun_3HST_Quad_LGIS_Launcher" or @Name="Base105mmDemoLauncher" or @Name="BaseDisposableLGIS" or defName="Gun_3HST_Scatter_Railgun_Heavy" or defName="Gun_3HST_5mmDMR"]</xpath>
+					<value>
+						<li Class="RunAndGun.DefModExtension_SettingDefaults">
+							<weaponForbidden>true</weaponForbidden>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThinkTreeDef[defName="MainColonistBehaviorCore"]/thinkRoot/subNodes/li[@Class="ThinkNode_PrioritySorter"]/subNodes</xpath>
+		<value>
+			<li Class="BDsGlitterworldFaction3HST.JobGiver_RailRearm"/>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd"  MayRequire="3HSTltd.landmines">
+		<xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers</xpath>
+		<value>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>15</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<Mercenary_Minelayer>10</Mercenary_Minelayer>
+					<Mercenary_Gunner>10</Mercenary_Gunner>
+					<PirateBoss>5</PirateBoss>
+				</options>
+			</li>
+		</value>
+	</Operation>
+</Patch>

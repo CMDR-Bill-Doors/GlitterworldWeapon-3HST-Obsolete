@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- Recipes -->
+
+	<MakeAmmo_3HST20mmRG_Steel.label>制作 3HST制20mm磁轨炮弹 (脱壳穿甲弹) x100</MakeAmmo_3HST20mmRG_Steel.label>
+	<MakeAmmo_3HST20mmRG_Steel.description>制作 3HST制20mm磁轨炮弹 (脱壳穿甲弹) x100</MakeAmmo_3HST20mmRG_Steel.description>
+	<MakeAmmo_3HST20mmRG_Steel.jobString>正在制作 3HST制20mm磁轨炮弹 (脱壳穿甲弹) x100。</MakeAmmo_3HST20mmRG_Steel.jobString>
+
+	<MakeAmmo_3HST20mmRG_SAPHE.label>制作 3HST制20mm磁轨炮弹 (半穿甲高爆) x100</MakeAmmo_3HST20mmRG_SAPHE.label>
+	<MakeAmmo_3HST20mmRG_SAPHE.description>制作 3HST制20mm磁轨炮弹 (半穿甲高爆) x100</MakeAmmo_3HST20mmRG_SAPHE.description>
+	<MakeAmmo_3HST20mmRG_SAPHE.jobString>正在制作 3HST制20mm磁轨炮弹 (半穿甲高爆) x100。</MakeAmmo_3HST20mmRG_SAPHE.jobString>
+</LanguageData>

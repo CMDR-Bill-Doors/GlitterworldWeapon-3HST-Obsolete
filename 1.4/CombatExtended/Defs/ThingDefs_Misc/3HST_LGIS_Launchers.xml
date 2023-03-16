@@ -1,0 +1,744 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!--==================== Single LGIS Launcher ===============  -->
+	<ThingDef ParentName="Base3HSTLongGun">
+		<defName>Gun_3HST_LGIS_Launcher</defName>
+		<label>3HST LGIS missile Launcher</label>
+		<description>Small caliber infantry-portable missile launcher employed by 3HST grenadiers. Built-in low-power rail accelerator gives missile greater range.</description>
+		<graphicData>
+			<texPath>Things/Weapons/3HST_IWL_09_Single_Launcher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<storedConceptLearnOpportunity>BDGW_LGIS</storedConceptLearnOpportunity>
+		<statBases>
+			<WorkToMake>62500</WorkToMake>
+			<Mass>4</Mass>
+			<Bulk>6</Bulk>
+			<SwayFactor>0.82</SwayFactor>
+			<ShotSpread>-114514</ShotSpread>
+			<SightsEfficiency>3</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
+			<NightVisionEfficiency_Weapon>0.4</NightVisionEfficiency_Weapon>
+		</statBases>
+		<costList>
+			<Steel>30</Steel>
+			<Plasteel>20</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Resource_3HST_RailComponent>1</Resource_3HST_RailComponent>
+		</costList>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>BDsGlitterworldFaction3HST.Verb_ShootNotUnderRoofByBarrel</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_70mmLGIS_Frag</defaultProjectile>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<warmupTime>3.4</warmupTime>
+				<burstShotCount />
+				<range>150</range>
+				<minRange>10</minRange>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<soundCast>InfernoCannon_Fire</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>5</muzzleFlashScale>
+				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+				<circularError>5</circularError>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<reloadTime>8.6</reloadTime>
+				<ammoSet>AmmoSet_70mmLGIS</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_SecondaryAmmo">
+				<secondaryVerb>
+					<verbClass>BDsGlitterworldFaction3HST.Verb_ShootNotUnderRoofByBarrel</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>Projectile_70mmLGIS_Frag_Indirect</defaultProjectile>
+					<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+					<warmupTime>6.4</warmupTime>
+					<burstShotCount />
+					<range>200</range>
+					<minRange>10</minRange>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+					</targetParams>
+					<soundCast>InfernoCannon_Fire</soundCast>
+					<soundCastTail>GunTail_Medium</soundCastTail>
+					<muzzleFlashScale>5</muzzleFlashScale>
+					<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+					<circularError>1</circularError>
+					<indirectFirePenalty>0.2</indirectFirePenalty>
+				</secondaryVerb>
+				<secondaryAmmoProps>
+					<magazineSize>1</magazineSize>
+					<reloadTime>8.6</reloadTime>
+					<ammoSet>AmmoSet_70mmLGIS_Indirect</ammoSet>
+				</secondaryAmmoProps>
+				<mainWeaponLabel>direct fire</mainWeaponLabel>
+				<secondaryWeaponLabel>indirect fire</secondaryWeaponLabel>
+				<description>switch firing mode</description>
+				<mainCommandIcon>UI/Icons/FireModes/Direct</mainCommandIcon>
+				<secondaryCommandIcon>UI/Icons/FireModes/Indirect</secondaryCommandIcon>
+				<secondaryWeaponChargeSpeeds>
+					<li>30</li>
+					<li>50</li>
+					<li>70</li>
+					<li>90</li>
+				</secondaryWeaponChargeSpeeds>
+			</li>
+			<li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeBarrel">
+				<durability>100</durability>
+				<label>Rail durability</label>
+				<loadingAmount>50</loadingAmount>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_LGIS</li>
+				</concepts>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>CE_AI_AOE</li>
+			<li>GunHeavy</li>
+			<li>3HST_LGIS_Reusable</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.3,1.3</DrawSize>
+				<DrawOffset>-0.3,0.0</DrawOffset>
+			</li>
+			<li Class="BillDoorsFramework.ModExtension_VerbNotUnderRoof">
+				<appliesInPrimaryMode>false</appliesInPrimaryMode>
+			</li>
+		</modExtensions>
+
+		<recipeMaker>
+			<researchPrerequisite>CE_AdvancedLaunchers</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<!--=====================Quad LGIS Launcher ==================  -->
+	<ThingDef ParentName="Base3HSTLongGun">
+		<defName>Gun_3HST_Quad_LGIS_Launcher</defName>
+		<label>3HST quadruple LGIS missile Launcher</label>
+		<description>Four standard LGIS launchers straped together, quadruple the destruction, quadruple the fun. Built-in low-power rail accelerator gives missile greater range.</description>
+		<graphicData>
+			<texPath>Things/Weapons/3HST_IWL_10_QuadLauncher</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>152500</WorkToMake>
+			<Mass>15</Mass>
+			<Bulk>16</Bulk>
+			<SwayFactor>1.12</SwayFactor>
+			<ShotSpread>-114514</ShotSpread>
+			<SightsEfficiency>3</SightsEfficiency>
+			<RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
+			<NightVisionEfficiency_Weapon>0.4</NightVisionEfficiency_Weapon>
+		</statBases>
+		<storedConceptLearnOpportunity>BDGW_LGIS</storedConceptLearnOpportunity>
+		<costList>
+			<Steel>140</Steel>
+			<Plasteel>80</Plasteel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+			<Resource_3HST_RailComponent>4</Resource_3HST_RailComponent>
+		</costList>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>BDsGlitterworldFaction3HST.Verb_ShootNotUnderRoofByBarrel</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_70mmLGIS_Frag</defaultProjectile>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<warmupTime>3.4</warmupTime>
+				<burstShotCount>4</burstShotCount>
+				<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+				<range>150</range>
+				<minRange>10</minRange>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<soundCast>InfernoCannon_Fire</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>5</muzzleFlashScale>
+				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+				<circularError>5</circularError>
+				<indirectFirePenalty>0.2</indirectFirePenalty>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>4</magazineSize>
+				<reloadTime>12.6</reloadTime>
+				<ammoSet>AmmoSet_70mmLGIS</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>AimedShot</aiAimMode>
+				<aimedBurstShotCount>2</aimedBurstShotCount>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_SecondaryAmmo">
+				<secondaryVerb>
+					<verbClass>BDsGlitterworldFaction3HST.Verb_ShootNotUnderRoofByBarrel</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>Projectile_70mmLGIS_Frag_Indirect</defaultProjectile>
+					<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+					<warmupTime>6.4</warmupTime>
+					<burstShotCount>4</burstShotCount>
+					<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+					<range>200</range>
+					<minRange>10</minRange>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+					</targetParams>
+					<soundCast>InfernoCannon_Fire</soundCast>
+					<soundCastTail>GunTail_Medium</soundCastTail>
+					<muzzleFlashScale>5</muzzleFlashScale>
+					<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+					<circularError>1</circularError>
+					<indirectFirePenalty>0.2</indirectFirePenalty>
+				</secondaryVerb>
+
+				<secondaryAmmoProps>
+					<magazineSize>4</magazineSize>
+					<reloadTime>12.6</reloadTime>
+					<ammoSet>AmmoSet_70mmLGIS_Indirect</ammoSet>
+				</secondaryAmmoProps>
+				<mainWeaponLabel>direct fire</mainWeaponLabel>
+				<secondaryWeaponLabel>indirect fire</secondaryWeaponLabel>
+				<description>switch firing mode</description>
+				<mainCommandIcon>UI/Icons/FireModes/Direct</mainCommandIcon>
+				<secondaryCommandIcon>UI/Icons/FireModes/Indirect</secondaryCommandIcon>
+				<secondaryWeaponChargeSpeeds>
+					<li>30</li>
+					<li>50</li>
+					<li>70</li>
+					<li>90</li>
+				</secondaryWeaponChargeSpeeds>
+			</li>
+			<li Class="BDsGlitterworldFaction3HST.CompProperties_ChangeBarrel">
+				<durability>400</durability>
+				<label>Rail durability</label>
+				<loadingAmount>50</loadingAmount>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_LGIS</li>
+				</concepts>
+			</li>
+		</comps>
+		<weaponTags>
+			<li>CE_AI_AOE</li>
+			<li>GunHeavy</li>
+			<li>3HST_LGIS_Reusable</li>
+			<li>WarcasketVeteran</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.GunDrawExtension">
+				<DrawSize>1.3,1.3</DrawSize>
+				<DrawOffset>-0.3,0.0</DrawOffset>
+			</li>
+			<li Class="BillDoorsFramework.ModExtension_VerbNotUnderRoof">
+				<appliesInPrimaryMode>false</appliesInPrimaryMode>
+			</li>
+		</modExtensions>
+
+		<recipeMaker>
+			<researchPrerequisite>CE_AdvancedLaunchers</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<!--======================= Dual high-angle(not now) LGIS Turret ===================-->
+	<ThingDef ParentName="Base3HSTMoveableMannedTurret">
+		<defName>Turret_DualLGIS_ID</defName>
+		<label>dual LGIS turret</label>
+		<uiIconPath>UI/Icons/Security/3HST_DLGIS_icon</uiIconPath>
+		<tradeTags>
+			<li>CE_Turret</li>
+		</tradeTags>
+		<statBases>
+			<WorkToBuild>6600</WorkToBuild>
+			<Mass>30</Mass>
+			<Bulk>100</Bulk>
+		</statBases>
+		<comps>
+			<li>
+				<compClass>BillDoorsFramework.CompTurretFix</compClass>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_LGIS</li>
+				</concepts>
+			</li>
+		</comps>
+		<designatorDropdown Inherit="False">Group_LGIS_Launchers</designatorDropdown>
+		<techLevel>Spacer</techLevel>
+		<description>A set of two LGIS launch tubes and advanced targeting device mounted on a tripod.</description>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<costList>
+			<Steel>50</Steel>
+			<Plasteel>35</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<specialDisplayRadius>15</specialDisplayRadius>
+		<building>
+			<turretGunDef>Gun_DualLGIS_ID</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretTopDrawSize>1.5</turretTopDrawSize>
+			<spawnedConceptLearnOpportunity>BDGW_LGIS</spawnedConceptLearnOpportunity>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+			<li>PlaceWorker_TurretTop</li>
+		</placeWorkers>
+		<size>(1,1)</size>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<researchPrerequisites>
+			<li>CE_TurretHeavyWeapons</li>
+			<li>CE_AdvancedLaunchers</li>
+		</researchPrerequisites>
+		<designationCategory>Security</designationCategory>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseArtilleryWeapon">
+		<defName>Gun_DualLGIS_ID</defName>
+		<label>dual LGIS missile launcher</label>
+		<description>A multiple rocket launcher capable of holding and firing 2 LGIS missiles.\n\nThis simple launcher does not come with rail accelerators and solely depends on the propellant charge in the casing to fire. While range remain unchanged, this launcher benefits from better fire rate and accuracy.</description>
+		<graphicData>
+			<texPath>Things/Building/Turrets/3HST_XML_26_DualLGISL</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<weaponTags>
+			<li>Artillery_BaseDestroyer</li>
+		</weaponTags>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<statBases>
+			<SightsEfficiency>2</SightsEfficiency>
+			<ShotSpread>0</ShotSpread>
+			<SwayFactor>0</SwayFactor>
+			<RangedWeapon_Cooldown>0.35</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>BillDoorsFramework.Verb_ShootNotUnderRoofCE</verbClass>
+				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_70mmLGIS_Frag</defaultProjectile>
+				<warmupTime>2.5</warmupTime>
+				<minRange>10</minRange>
+				<range>60</range>
+				<burstShotCount>2</burstShotCount>
+				<soundCast>InfernoCannon_Fire</soundCast>
+				<muzzleFlashScale>16</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>2</magazineSize>
+				<reloadTime>6.6</reloadTime>
+				<ammoSet>AmmoSet_70mmLGIS</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_SecondaryAmmo">
+				<secondaryVerb>
+					<verbClass>BillDoorsFramework.Verb_ShootNotUnderRoofCE</verbClass>
+					<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>Projectile_70mmLGIS_Frag_Indirect</defaultProjectile>
+					<warmupTime>6.5</warmupTime>
+					<minRange>20</minRange>
+					<range>90</range>
+					<burstShotCount>2</burstShotCount>
+					<soundCast>InfernoCannon_Fire</soundCast>
+					<muzzleFlashScale>16</muzzleFlashScale>
+					<circularError>3</circularError>
+					<indirectFirePenalty>0.2</indirectFirePenalty>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+					</targetParams>
+				</secondaryVerb>
+				<secondaryAmmoProps>
+					<magazineSize>2</magazineSize>
+					<reloadTime>6.6</reloadTime>
+					<ammoSet>AmmoSet_70mmLGIS_Indirect</ammoSet>
+				</secondaryAmmoProps>
+				<mainWeaponLabel>direct fire</mainWeaponLabel>
+				<secondaryWeaponLabel>indirect fire</secondaryWeaponLabel>
+				<description>switch firing mode</description>
+				<mainCommandIcon>UI/Icons/FireModes/Direct</mainCommandIcon>
+				<secondaryCommandIcon>UI/Icons/FireModes/Indirect</secondaryCommandIcon>
+				<secondaryWeaponChargeSpeeds>
+					<li>30</li>
+					<li>50</li>
+					<li>70</li>
+					<li>90</li>
+				</secondaryWeaponChargeSpeeds>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="BillDoorsFramework.ModExtension_VerbNotUnderRoof">
+				<appliesInPrimaryMode>false</appliesInPrimaryMode>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<!--======================= Multiple Direct LGIS Turret =======================-->
+	<ThingDef ParentName="Base3HSTStationaryTurretHeavy">
+		<defName>Turret_MLGIS</defName>
+		<label>Multiple LGIS Launcher</label>
+		<constructionSkillPrerequisite>15</constructionSkillPrerequisite>
+		<graphicData>
+			<drawSize>(2,2)</drawSize>
+			<texPath>Things/Building/Turrets/3HST_Turret_Heavy/3HST_Heavy_Turret_Base</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+		</graphicData>
+		<uiIconPath>UI/Icons/Security/3HST_MLGIS_icon</uiIconPath>
+		<statBases>
+			<WorkToBuild>150000</WorkToBuild>
+			<Mass>1000</Mass>
+			<Bulk>1000</Bulk>
+			<AimingAccuracy>0.5</AimingAccuracy>
+			<ShootingAccuracyTurret>0.5</ShootingAccuracyTurret>
+		</statBases>
+		<designatorDropdown>Group_LGIS_Launchers</designatorDropdown>
+		<techLevel>Spacer</techLevel>
+		<thingCategories Inherit="False" />
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>1500</basePowerConsumption>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_PowerTurretGun">
+
+				<rechargePowerConsumption>10000</rechargePowerConsumption>
+				<rechargePower>Recharge power consumption</rechargePower>
+				<cooldownTime>5</cooldownTime>
+				<rechargePower_Stat>The amount of power the weapon will draw from the power grid during cool down.\n\nThe built-in capacitors of the rail-accelerator need to be recharged after each salvo, leading to a power consumption spike.\n\nThe power consumption is calculated as: Power draw x Turret cooldown / 1000\n{0} W x {1} s / 1000 = {2} Wd</rechargePower_Stat>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until accelerator rail change</fuelLabel>
+				<fuelGizmoLabel>Rail durability</fuelGizmoLabel>
+				<outOfFuelMessage>Cannot shoot: Needs new accelerator rail</outOfFuelMessage>
+				<fuelFilter>
+					<thingDefs>
+						<li>Resource_3HST_RailComponent</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>200</fuelCapacity>
+				<fuelMultiplier>50</fuelMultiplier>
+				<initialFuelPercent>1</initialFuelPercent>
+				<autoRefuelPercent>0.75</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
+			</li>
+			<li>
+				<compClass>BillDoorsFramework.CompTurretFix</compClass>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_LGIS</li>
+					<li>BDGW_Turret</li>
+				</concepts>
+			</li>
+		</comps>
+		<fillPercent>0.9</fillPercent>
+		<description>A multiple LGIS missile turret with it's targeting system set to direct fire.</description>
+		<costList>
+			<Steel>1150</Steel>
+			<Plasteel>385</Plasteel>
+			<ComponentIndustrial>13</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Resource_3HST_RailComponent>7</Resource_3HST_RailComponent>
+		</costList>
+		<specialDisplayRadius>10</specialDisplayRadius>
+		<building>
+			<turretGunDef>Gun_MLGIS</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretTopDrawSize>2.5</turretTopDrawSize>
+			<turretBurstCooldownTime>5</turretBurstCooldownTime>
+			<spawnedConceptLearnOpportunity>BDGW_LGIS</spawnedConceptLearnOpportunity>
+
+		</building>
+		<size>(2,2)</size>
+		<researchPrerequisites>
+			<li>RocketswarmLauncher</li>
+			<li>CE_TurretHeavyWeapons</li>
+			<li>Research_3HST_ADV_LGIS</li>
+		</researchPrerequisites>
+		<designationCategory>Security</designationCategory>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseArtilleryWeapon">
+		<defName>Gun_MLGIS</defName>
+		<label>multiple LGIS missile launcher</label>
+		<description>A multiple rocket launcher capable of holding and firing 27 LGIS missiles.  Built-in low-power rail accelerator gives missile greater range.</description>
+		<graphicData>
+			<texPath>Things/Building/Turrets/3HST_XML_25_MLGISL</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<statBases>
+			<SightsEfficiency>1.5</SightsEfficiency>
+			<ShotSpread>1</ShotSpread>
+			<SwayFactor>3.77</SwayFactor>
+			<RangedWeapon_Cooldown>0.35</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>BillDoorsFramework.Verb_ShootNotUnderRoofCE</verbClass>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_70mmLGIS_Frag</defaultProjectile>
+				<warmupTime>4.6</warmupTime>
+				<minRange>10</minRange>
+				<range>150</range>
+				<burstShotCount>9</burstShotCount>
+				<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+				<soundCast>InfernoCannon_Fire</soundCast>
+				<muzzleFlashScale>16</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>27</magazineSize>
+				<reloadTime>15.6</reloadTime>
+				<ammoSet>AmmoSet_70mmLGIS</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+				<aiAimMode>SuppressFire</aiAimMode>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_SecondaryAmmo">
+				<secondaryVerb>
+					<verbClass>BillDoorsFramework.Verb_ShootNotUnderRoofCE</verbClass>
+					<consumeFuelPerShot>2</consumeFuelPerShot>
+					<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>Projectile_70mmLGIS_Frag_Indirect</defaultProjectile>
+					<warmupTime>10.6</warmupTime>
+					<minRange>20</minRange>
+					<range>180</range>
+					<burstShotCount>9</burstShotCount>
+					<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+					<soundCast>InfernoCannon_Fire</soundCast>
+					<muzzleFlashScale>16</muzzleFlashScale>
+					<circularError>10</circularError>
+					<indirectFirePenalty>1</indirectFirePenalty>
+				</secondaryVerb>
+
+				<secondaryAmmoProps>
+					<magazineSize>27</magazineSize>
+					<reloadTime>15.6</reloadTime>
+					<ammoSet>AmmoSet_70mmLGIS_Indirect</ammoSet>
+				</secondaryAmmoProps>
+				<mainWeaponLabel>direct fire</mainWeaponLabel>
+				<secondaryWeaponLabel>indirect fire</secondaryWeaponLabel>
+				<description>switch firing mode</description>
+				<mainCommandIcon>UI/Icons/FireModes/Direct</mainCommandIcon>
+				<secondaryCommandIcon>UI/Icons/FireModes/Indirect</secondaryCommandIcon>
+				<secondaryWeaponChargeSpeeds>
+					<li>30</li>
+					<li>50</li>
+					<li>70</li>
+					<li>90</li>
+				</secondaryWeaponChargeSpeeds>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="BillDoorsFramework.ModExtension_VerbNotUnderRoof">
+				<appliesInPrimaryMode>false</appliesInPrimaryMode>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTStationaryTurret">
+		<defName>Turret_HLGIS</defName>
+		<label>Hexa-LGIS Launcher</label>
+		<constructionSkillPrerequisite>15</constructionSkillPrerequisite>
+		<uiIconPath>UI/Icons/Security/3HST_HLGIS_icon</uiIconPath>
+		<graphicData>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToBuild>37500</WorkToBuild>
+			<Mass>55</Mass>
+			<Bulk>70</Bulk>
+			<AimingAccuracy>0.5</AimingAccuracy>
+			<ShootingAccuracyTurret>0.5</ShootingAccuracyTurret>
+		</statBases>
+		<designatorDropdown>Group_LGIS_Launchers</designatorDropdown>
+		<techLevel>Spacer</techLevel>
+		<thingCategories Inherit="False" />
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>300</basePowerConsumption>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_PowerTurretGun">
+
+				<rechargePowerConsumption>10000</rechargePowerConsumption>
+				<rechargePower>Recharge power consumption</rechargePower>
+				<cooldownTime>4</cooldownTime>
+				<rechargePower_Stat>The amount of power the weapon will draw from the power grid during cool down.\n\nThe built-in capacitors of the rail-accelerator need to be recharged after each salvo, leading to a power consumption spike.\n\nThe power consumption is calculated as: Power draw x Turret cooldown / 1000\n{0} W x {1} s / 1000 = {2} Wd</rechargePower_Stat>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until accelerator rail change</fuelLabel>
+				<fuelGizmoLabel>Rail durability</fuelGizmoLabel>
+				<outOfFuelMessage>Cannot shoot: Needs new accelerator rail</outOfFuelMessage>
+				<fuelFilter>
+					<thingDefs>
+						<li>Resource_3HST_RailComponent</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>50</fuelCapacity>
+				<fuelMultiplier>50</fuelMultiplier>
+				<initialFuelPercent>1</initialFuelPercent>
+				<autoRefuelPercent>0.1</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>Things/Item/Resource/Resource_3HST_RailComponent</fuelIconPath>
+			</li>
+			<li>
+				<compClass>BillDoorsFramework.CompTurretFix</compClass>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_ShowConcept">
+				<concepts>
+					<li>BDGW_RailRearm</li>
+					<li>BDGW_LGIS</li>
+					<li>BDGW_Turret</li>
+				</concepts>
+			</li>
+		</comps>
+		<fillPercent>0.9</fillPercent>
+		<description>A multiple LGIS missile turret with it's targeting system set to direct fire.</description>
+		<costList>
+			<Steel>260</Steel>
+			<Plasteel>100</Plasteel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Resource_3HST_RailComponent>2</Resource_3HST_RailComponent>
+		</costList>
+		<specialDisplayRadius>10</specialDisplayRadius>
+		<building>
+			<turretGunDef>Gun_HLGIS</turretGunDef>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretTopDrawSize>1.25</turretTopDrawSize>
+			<turretBurstCooldownTime>4</turretBurstCooldownTime>
+			<spawnedConceptLearnOpportunity>BDGW_LGIS</spawnedConceptLearnOpportunity>
+
+		</building>
+		<size>(1,1)</size>
+		<researchPrerequisites>
+			<li>CE_TurretHeavyWeapons</li>
+			<li>CE_AdvancedLaunchers</li>
+		</researchPrerequisites>
+		<designationCategory>Security</designationCategory>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseArtilleryWeapon">
+		<defName>Gun_HLGIS</defName>
+		<label>hexa LGIS missile launcher</label>
+		<description>A multiple rocket launcher capable of holding and firing 6 LGIS missiles.  Built-in low-power rail accelerator gives missile greater range.</description>
+		<graphicData>
+			<texPath>Things/Building/Turrets/3HST_HLGIS</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<statBases>
+			<SightsEfficiency>2</SightsEfficiency>
+			<ShotSpread>0.4</ShotSpread>
+			<SwayFactor>2.25</SwayFactor>
+			<RangedWeapon_Cooldown>0.35</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>BillDoorsFramework.Verb_ShootNotUnderRoofCE</verbClass>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_70mmLGIS_Frag</defaultProjectile>
+				<warmupTime>1.6</warmupTime>
+				<minRange>10</minRange>
+				<range>150</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+				<soundCast>InfernoCannon_Fire</soundCast>
+				<muzzleFlashScale>16</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>6</magazineSize>
+				<reloadTime>15.6</reloadTime>
+				<ammoSet>AmmoSet_70mmLGIS</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>2</aimedBurstShotCount>
+				<aiAimMode>SuppressFire</aiAimMode>
+			</li>
+			<li Class="BillDoorsFramework.CompProperties_SecondaryAmmo">
+				<secondaryVerb>
+					<verbClass>BillDoorsFramework.Verb_ShootNotUnderRoofCE</verbClass>
+					<consumeFuelPerShot>2</consumeFuelPerShot>
+					<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>Projectile_70mmLGIS_Frag_Indirect</defaultProjectile>
+					<warmupTime>10.6</warmupTime>
+					<minRange>20</minRange>
+					<range>180</range>
+					<burstShotCount>3</burstShotCount>
+					<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+					<soundCast>InfernoCannon_Fire</soundCast>
+					<muzzleFlashScale>16</muzzleFlashScale>
+					<circularError>10</circularError>
+					<indirectFirePenalty>1</indirectFirePenalty>
+				</secondaryVerb>
+				<secondaryAmmoProps>
+					<magazineSize>6</magazineSize>
+					<reloadTime>15.6</reloadTime>
+					<ammoSet>AmmoSet_70mmLGIS_Indirect</ammoSet>
+				</secondaryAmmoProps>
+				<mainWeaponLabel>direct fire</mainWeaponLabel>
+				<secondaryWeaponLabel>indirect fire</secondaryWeaponLabel>
+				<description>switch firing mode</description>
+				<mainCommandIcon>UI/Icons/FireModes/Direct</mainCommandIcon>
+				<secondaryCommandIcon>UI/Icons/FireModes/Indirect</secondaryCommandIcon>
+				<secondaryWeaponChargeSpeeds>
+					<li>30</li>
+					<li>50</li>
+					<li>70</li>
+					<li>90</li>
+				</secondaryWeaponChargeSpeeds>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="BillDoorsFramework.ModExtension_VerbNotUnderRoof">
+				<appliesInPrimaryMode>false</appliesInPrimaryMode>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+
+</Defs>

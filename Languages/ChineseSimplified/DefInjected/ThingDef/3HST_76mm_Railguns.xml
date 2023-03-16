@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Gun_3HST_76mm_Cannon.label>3HST制 76mm重型磁轨炮</Gun_3HST_76mm_Cannon.label>
+  <Gun_3HST_76mm_Cannon.description>一门3HST制磁轨重炮。通常用作坦克主炮或者小型战舰主炮。当然，你也可以把它拎起来打，如果你够强壮的话。</Gun_3HST_76mm_Cannon.description>
+  <Gun_3HST_76mm_Cannon.comps.2.label>磁轨寿命</Gun_3HST_76mm_Cannon.comps.2.label>
+  <Gun_3HST_76mm_Cannon.tools.0.label>枪托</Gun_3HST_76mm_Cannon.tools.0.label>
+  <Gun_3HST_76mm_Cannon.tools.1.label>枪管</Gun_3HST_76mm_Cannon.tools.1.label>
+  <Gun_3HST_76mm_Cannon.tools.2.label>枪口</Gun_3HST_76mm_Cannon.tools.2.label>
+
+  <Turret_76mmCorvette.label>76mm 轻型护卫舰主炮炮塔</Turret_76mmCorvette.label>
+  <Turret_76mmCorvette.description>一台安装有76mm主炮的3HST-XML-58炮塔模块。这种炮塔通常安装在3HST有限公司的护卫舰上面。</Turret_76mmCorvette.description>
+
+  <Gun_76mmCorvette.label>3HST制 76mm轻护主炮（炮塔用）</Gun_76mmCorvette.label>
+  <Gun_76mmCorvette.description>安装在舰用炮塔上面的76mm磁轨重炮。</Gun_76mmCorvette.description>
+  <Gun_76mmCorvette.comps.2.description>切换射击模式</Gun_76mmCorvette.comps.2.description>
+
+
+</LanguageData>

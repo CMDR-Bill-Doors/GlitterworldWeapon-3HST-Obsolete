@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="Base3HSTcosmeticFilth">
+		<defName>Filth_LGIScasingArchotech</defName>
+		<label>LGIS launch tube</label>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/archotech_Launcher_filth</texPath>
+			<drawSize>2</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTcosmeticFilth">
+		<defName>Filth_LGIScasingCluster</defName>
+		<label>LGIS launch tube</label>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/cluster_filth</texPath>
+			<drawSize>2</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTcosmeticFilth">
+		<defName>Filth_LGIScasingConfetti</defName>
+		<label>LGIS launch tube</label>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/confetti_filth</texPath>
+			<drawSize>2</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTcosmeticFilth">
+		<defName>Filth_LGIScasingEMP</defName>
+		<label>LGIS launch tube</label>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/EMP_filth</texPath>
+			<drawSize>2</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTcosmeticFilth">
+		<defName>Filth_LGIScasingFirefoam</defName>
+		<label>LGIS launch tube</label>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/firefoam_filth</texPath>
+			<drawSize>2</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTcosmeticFilth">
+		<defName>Filth_LGIScasingFrag</defName>
+		<label>LGIS launch tube</label>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/frag_filth</texPath>
+			<drawSize>2</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTcosmeticFilth">
+		<defName>Filth_LGIScasingHEAT</defName>
+		<label>LGIS launch tube</label>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/heat_filth</texPath>
+			<drawSize>2</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTcosmeticFilth">
+		<defName>Filth_LGIScasingDecoy</defName>
+		<label>LGIS launch tube</label>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/holodecoy_Launcher_filth</texPath>
+			<drawSize>2</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTcosmeticFilth">
+		<defName>Filth_LGIScasingIllumination</defName>
+		<label>LGIS launch tube</label>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/illumination_filth</texPath>
+			<drawSize>2</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTcosmeticFilth">
+		<defName>Filth_LGIScasingIncendiary</defName>
+		<label>LGIS launch tube</label>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/incendiary_filth</texPath>
+			<drawSize>2</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTcosmeticFilth">
+		<defName>Filth_LGIScasingMechanoid</defName>
+		<label>LGIS launch tube</label>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/mech_filth</texPath>
+			<drawSize>2</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTcosmeticFilth">
+		<defName>Filth_LGIScasingMinelayer</defName>
+		<label>LGIS launch tube</label>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/minelayer_filth</texPath>
+			<drawSize>2</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTcosmeticFilth">
+		<defName>Filth_LGIScasingNuke</defName>
+		<label>LGIS launch tube</label>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/nuke_filth</texPath>
+			<drawSize>2</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTcosmeticFilth">
+		<defName>Filth_LGIScasingOri</defName>
+		<label>LGIS launch tube</label>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/originium_filth</texPath>
+			<drawSize>2</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTcosmeticFilth">
+		<defName>Filth_LGIScasingSlow</defName>
+		<label>LGIS launch tube</label>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/slowfoam_filth</texPath>
+			<drawSize>2</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTcosmeticFilth">
+		<defName>Filth_LGIScasingSmoke</defName>
+		<label>LGIS launch tube</label>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/smoke_filth</texPath>
+			<drawSize>2</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTcosmeticFilth">
+		<defName>Filth_LGIScasingThermobaric</defName>
+		<label>LGIS launch tube</label>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/thermobaric_filth</texPath>
+			<drawSize>2</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="Base3HSTcosmeticFilth">
+		<defName>Filth_LGIScasingToxic</defName>
+		<label>LGIS launch tube</label>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/toxic_filth</texPath>
+			<drawSize>2</drawSize>
+		</graphicData>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Spacertech Raiders for Outlanders and Pirates</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Gun_3HST_Light_Machine_Railgun" or defName="Gun_3HST_Scatter_Railgun_Heavy"]/weaponTags</xpath>
+					<value>
+						<li>GunSPHeavy</li>
+						<li>GunSEAssault</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Gun_3HST_5mmDMR"]/weaponTags</xpath>
+					<value>
+						<li>GunSPSniper</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Gun_3HST_9mmDMR" or defName="Gun_3HST_9mmHMG"]/weaponTags</xpath>
+					<value>
+						<li>GunSPLord</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Gun_3HST_AutoGrenade"]/weaponTags</xpath>
+					<value>
+						<li>GunSPDemo</li>
+						<li>GunSPLord</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[@Name="BaseDisposableLGIS"]/weaponTags</xpath>
+					<value>
+						<li>GunSPDemo</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd" MayRequire="3HSTltd.landmines">
+					<xpath>Defs/ThingDef[defName="Gun_3HST_LGIS_Minelayer"]/weaponTags</xpath>
+					<value>
+						<li>GunSPLord</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Gun_3HST_LGIS_thermobaric"]/weaponTags</xpath>
+					<value>
+						<li>GunSPLord</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Gun_3HST_Assault_Railgun"]/weaponTags</xpath>
+					<value>
+						<li>GunSPCharge</li>
+						<li>GunSMShooter</li>
+					</value>
+				</li>
+
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Gun_3HST_4mm_SMG" or defName="Gun_3HST_Scatter_Railgun_Pump"]/weaponTags</xpath>
+					<value>
+						<li>GunSPCharge</li>
+						<li>GunSEAssault</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Gun_3HST_4mm_AutoRailPistol"or defName="Gun_3HST_4mm_TriRailPistol" or defName="Gun_3HST_Scatter_Railgun"]/weaponTags</xpath>
+					<value>
+						<li>GunSPCharge</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

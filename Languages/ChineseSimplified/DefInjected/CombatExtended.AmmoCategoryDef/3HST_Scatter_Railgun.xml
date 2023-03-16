@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- AmmoSet -->
+
+  <Scatterailgun_Standard.label>标准霰射磁轨弹</Scatterailgun_Standard.label>
+  <Scatterailgun_Standard.labelShort>霰弹</Scatterailgun_Standard.labelShort>
+  <Scatterailgun_Standard.description>如同化学能霰弹一样在一个大口径弹托内放有大量小型投射物的磁轨弹药。</Scatterailgun_Standard.description>
+
+  <Scatterailgun_HE.label>高爆霰射磁轨榴弹</Scatterailgun_HE.label>
+  <Scatterailgun_HE.labelShort>高爆霰射磁轨弹</Scatterailgun_HE.labelShort>
+  <Scatterailgun_HE.description>往霰射磁轨弹壳里面放入FSX炸药制成的小口径高爆榴弹。</Scatterailgun_HE.description>
+
+  <Scatterailgun_EMP.label>EMP霰射磁轨榴弹</Scatterailgun_EMP.label>
+  <Scatterailgun_EMP.labelShort>EMP霰射磁轨弹</Scatterailgun_EMP.labelShort>
+  <Scatterailgun_EMP.description>往霰射磁轨弹壳里面放入一个EMP装置制成的小口径EMP榴弹。</Scatterailgun_EMP.description>
+
+  <Scatterailgun_Smoke.label>烟雾霰射磁轨榴弹</Scatterailgun_Smoke.label>
+  <Scatterailgun_Smoke.labelShort>烟雾霰射磁轨弹</Scatterailgun_Smoke.labelShort>
+  <Scatterailgun_Smoke.description>往霰射磁轨弹壳里面放入发烟剂制成的小口径烟雾榴弹。</Scatterailgun_Smoke.description>
+
+  <Scatterailgun_HEAT.label>破甲霰射磁轨榴弹</Scatterailgun_HEAT.label>
+  <Scatterailgun_HEAT.labelShort>破甲霰射磁轨弹</Scatterailgun_HEAT.labelShort>
+  <Scatterailgun_HEAT.description>往霰射磁轨弹壳里面放入一个聚能装药，可以将散射榴弹变成反护甲武器。</Scatterailgun_HEAT.description>
+
+  <Scatterailgun_Incendiary.label>燃烧霰射磁轨榴弹</Scatterailgun_Incendiary.label>
+  <Scatterailgun_Incendiary.labelShort>燃烧霰射磁轨弹</Scatterailgun_Incendiary.labelShort>
+  <Scatterailgun_Incendiary.description>往霰射磁轨弹壳里面放入苯基燃料制成的小口径燃烧榴弹。</Scatterailgun_Incendiary.description>
+
+  <Scatterailgun_Toxic.label>有毒霰射磁轨榴弹</Scatterailgun_Toxic.label>
+  <Scatterailgun_Toxic.labelShort>有毒霰射磁轨弹</Scatterailgun_Toxic.labelShort>
+  <Scatterailgun_Toxic.description>毒气会灼伤生物的眼睛与肺部,使视觉与呼吸能力暂时降低。持续暴露在毒气里还会引起中毒。</Scatterailgun_Toxic.description>
+
+
+</LanguageData>

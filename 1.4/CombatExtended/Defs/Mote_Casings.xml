@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<FleckDef ParentName="FleckBase_Thrown" Name="FleckBase_LGIScasing" Abstract="true">
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<solidTime>3</solidTime>
+		<fadeOutTime>1.5</fadeOutTime>
+		<landSound>LGIS_TubeDrop</landSound>
+		<collide>true</collide>
+		<graphicData>
+			<renderInstanced>true</renderInstanced>
+			<drawSize>2</drawSize>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="FleckBase_LGIScasing">
+		<defName>Mote_LGIScasingArchotech</defName>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/archotech_Launcher_filth</texPath>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="FleckBase_LGIScasing">
+		<defName>Mote_LGIScasingCluster</defName>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/cluster_filth</texPath>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="FleckBase_LGIScasing">
+		<defName>Mote_LGIScasingConfetti</defName>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/confetti_filth</texPath>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="FleckBase_LGIScasing">
+		<defName>Mote_LGIScasingEMP</defName>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/EMP_filth</texPath>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="FleckBase_LGIScasing">
+		<defName>Mote_LGIScasingFirefoam</defName>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/firefoam_filth</texPath>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="FleckBase_LGIScasing">
+		<defName>Mote_LGIScasingFrag</defName>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/frag_filth</texPath>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="FleckBase_LGIScasing">
+		<defName>Mote_LGIScasingHEAT</defName>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/heat_filth</texPath>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="FleckBase_LGIScasing">
+		<defName>Mote_LGIScasingDecoy</defName>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/holodecoy_Launcher_filth</texPath>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="FleckBase_LGIScasing">
+		<defName>Mote_LGIScasingIllumination</defName>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/illumination_filth</texPath>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="FleckBase_LGIScasing">
+		<defName>Mote_LGIScasingIncendiary</defName>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/incendiary_filth</texPath>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="FleckBase_LGIScasing">
+		<defName>Mote_LGIScasingMechanoid</defName>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/mech_filth</texPath>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="FleckBase_LGIScasing">
+		<defName>Mote_LGIScasingMinelayer</defName>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/minelayer_filth</texPath>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="FleckBase_LGIScasing">
+		<defName>Mote_LGIScasingNuke</defName>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/nuke_filth</texPath>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="FleckBase_LGIScasing">
+		<defName>Mote_LGIScasingOri</defName>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/originium_filth</texPath>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="FleckBase_LGIScasing">
+		<defName>Mote_LGIScasingSlow</defName>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/slowfoam_filth</texPath>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="FleckBase_LGIScasing">
+		<defName>Mote_LGIScasingSmoke</defName>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/smoke_filth</texPath>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="FleckBase_LGIScasing">
+		<defName>Mote_LGIScasingThermobaric</defName>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/thermobaric_filth</texPath>
+		</graphicData>
+	</FleckDef>
+
+	<FleckDef ParentName="FleckBase_LGIScasing">
+		<defName>Mote_LGIScasingToxic</defName>
+		<graphicData>
+			<texPath>Things/Filth/LGIScasing/toxic_filth</texPath>
+		</graphicData>
+	</FleckDef>
+</Defs>

@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!--
+  value multiplier:
+  4mm 1/3
+  5mm 1/2
+  9mm 2/3
+  
+  6mm scatter 1/3
+  8mm scatter 1/2
+  
+  shots per rail
+  4mm 1000
+  5mm 500
+  9mm 250
+  
+  20mm 100
+  76mm 10
+  
+  6mm scatter 125
+  8mm scatter 125
+  
+  LGIS 100
+  
+  each weapon has a maximal barrel durability of 1/2 of the cost
+  now 1/1 due to small cal durability nerf
+  -->
+	<DesignatorDropdownGroupDef>
+		<defName>Group_LGIS_Launchers</defName>
+		<label>LGIS launchers</label>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>Group_3HST_AutoRailgunTurret</defName>
+		<label>Stationary automatic railgun turrets</label>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>Group_3HST_MoveableAutoRailgunTurret</defName>
+		<label>Moveable automatic railgun turrets</label>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>Group_3HST_ManualRailgunTurret</defName>
+		<label>Manned railgun turrets</label>
+	</DesignatorDropdownGroupDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>Group_3HST_AIGS</defName>
+		<label>3HST automatic indirect grenade system</label>
+	</DesignatorDropdownGroupDef>
+
+	<ThingCategoryDef>
+		<defName>Gun3HST</defName>
+		<label>3HST weapons</label>
+		<parent>WeaponsRanged</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>GunInfantry3HST</defName>
+		<label>3HST infantry weapons</label>
+		<parent>Gun3HST</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>Gun3HSTDisposable</defName>
+		<label>3HST disposable weapons</label>
+		<parent>GunInfantry3HST</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>GunHeavy3HST</defName>
+		<label>3HST heavy weapons</label>
+		<parent>Gun3HST</parent>
+	</ThingCategoryDef>
+
+	<BodyPartGroupDef>
+		<defName>BayonetBlade</defName>
+		<label>bayonet blade</label>
+	</BodyPartGroupDef>
+
+	<BodyPartGroupDef>
+		<defName>BayonetPoint</defName>
+		<label>bayonet point</label>
+	</BodyPartGroupDef>
+
+
+
+	<DamageDef ParentName="Bomb">
+		<defName>DamageDef_Shockwave</defName>
+		<label>shockwave</label>
+		<explosionAffectOutsidePartsOnly>true</explosionAffectOutsidePartsOnly>
+		<deathMessage>{0} has died from impact shockwave.</deathMessage>
+		<buildingDamageFactor>0.2</buildingDamageFactor>
+		<plantDamageFactor>0.2</plantDamageFactor>
+		<explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+		<explosionColorCenter>(1, 1, 1)</explosionColorCenter>
+		<explosionColorEdge>(0.7, 0.7, 0.7)</explosionColorEdge>
+		<soundExplosion>Explosion_Flame</soundExplosion>
+	</DamageDef>
+
+	<DamageDef ParentName="Bullet">
+		<defName>BDRG_HighCalRailgun</defName>
+		<minDamageToFragment>15</minDamageToFragment>
+	</DamageDef>
+
+	<ThingDef Name="3HSTTurretBase" ParentName="BuildingBase" Abstract="True">
+		<thingClass>Building_TurretGun</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<tradeability>All</tradeability>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0.1</Flammability>
+			<WorkToMake>10000</WorkToMake>
+			<Beauty>-60</Beauty>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<tickerType>Normal</tickerType>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.85</fillPercent>
+		<castEdgeShadows>false</castEdgeShadows>
+		<hasTooltip>true</hasTooltip>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretBurstCooldownTime>1</turretBurstCooldownTime>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>BillDoorsFramework.PlaceWorker_ShowVerbRadiusBySight</li>
+		</placeWorkers>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef Name="Base3HSTStationaryTurret" ParentName="3HSTTurretBase" Abstract="True">
+		<description>A permanent defensive structure covered under thick steel armor reinforced by a layer of plasteel surface hardening. While extremely durable and resilent to all but EMP attacks, they're costly to build both in terms of material and time, and being unable to move after construction.</description>
+		<statBases>
+			<WorkToBuild>24000</WorkToBuild>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Mass>55</Mass>
+			<ShootingAccuracyTurret>1</ShootingAccuracyTurret>
+		</statBases>
+		<size>(1,1)</size>
+		<fillPercent>0.72</fillPercent>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+		<designationCategory>Security</designationCategory>
+		<comps>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<graphicData>
+			<texPath>Things/Building/Turrets/3HST_Turret_Auto_Light/3HST_Turret_Auto_Light</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<drawOffset>(0,0,-0.025)</drawOffset>
+		</graphicData>
+		<designatorDropdown>Group_3HST_AutoRailgunTurret</designatorDropdown>
+		<researchPrerequisites>
+			<li>HeavyTurrets</li>
+		</researchPrerequisites>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<thingCategories Inherit="False" />
+		<tradeability>None</tradeability>
+		<damageMultipliers>
+			<li>
+				<damageDef>RangedStab</damageDef>
+				<multiplier>0.2</multiplier>
+			</li>
+			<li>
+				<damageDef>Arrow</damageDef>
+				<multiplier>0.2</multiplier>
+			</li>
+			<li>
+				<damageDef>ArrowHighVelocity</damageDef>
+				<multiplier>0.2</multiplier>
+			</li>
+			<li>
+				<damageDef>Bullet</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li>
+				<damageDef>Cut</damageDef>
+				<multiplier>0.2</multiplier>
+			</li>
+			<li>
+				<damageDef>Blunt</damageDef>
+				<multiplier>0.2</multiplier>
+			</li>
+			<li>
+				<damageDef>Poke</damageDef>
+				<multiplier>0.2</multiplier>
+			</li>
+			<li>
+				<damageDef>Stab</damageDef>
+				<multiplier>0.2</multiplier>
+			</li>
+			<li>
+				<damageDef>Scratch</damageDef>
+				<multiplier>0.2</multiplier>
+			</li>
+			<li>
+				<damageDef>ScratchToxic</damageDef>
+				<multiplier>0.2</multiplier>
+			</li>
+			<li>
+				<damageDef>Bite</damageDef>
+				<multiplier>0.2</multiplier>
+			</li>
+			<li>
+				<damageDef>ToxicBite</damageDef>
+				<multiplier>0.2</multiplier>
+			</li>
+			<li>
+				<damageDef>EMP</damageDef>
+				<multiplier>4</multiplier>
+			</li>
+		</damageMultipliers>
+	</ThingDef>
+	<!--Material:
+      <Plasteel>40</Plasteel>
+      <Steel>125</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+-->
+
+	<ThingDef Name="Base3HSTStationaryTurretHeavy" ParentName="Base3HSTStationaryTurret" Abstract="True">
+		<statBases>
+			<WorkToBuild>90000</WorkToBuild>
+			<MaxHitPoints>2000</MaxHitPoints>
+			<Mass>250</Mass>
+			<ShootingAccuracyTurret>1</ShootingAccuracyTurret>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Building/Turrets/3HST_Turret_Heavy/3HST_Heavy_Turret_Base</texPath>
+			<drawSize>(2,2)</drawSize>
+			<drawOffset>(0,0,-0.05)</drawOffset>
+		</graphicData>
+		<size>(2,2)</size>
+	</ThingDef>
+	<!--Material:
+      <Plasteel>100</Plasteel>
+      <Steel>400</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+-->
+
+	<ThingDef Name="Base3HSTMoveableAutoTurret" ParentName="3HSTTurretBase" Abstract="True">
+		<description>A gun, a tripod, and some servos between them. While more fragile and inaccurate than their permanent cousins, they enjoy the versatility of being moveable.</description>
+		<statBases>
+			<WorkToBuild>2700</WorkToBuild>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>10</Mass>
+			<ShootingAccuracyTurret>0.8</ShootingAccuracyTurret>
+		</statBases>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+		<designationCategory>Security</designationCategory>
+		<comps>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<graphicData>
+			<texPath>Things/Building/Turrets/3HST_Small_Turret_Base</texPath>
+			<drawSize>(1.5,1.5)</drawSize>
+		</graphicData>
+		<designatorDropdown>Group_3HST_MoveableAutoRailgunTurret</designatorDropdown>
+		<researchPrerequisites>
+			<li>HeavyTurrets</li>
+		</researchPrerequisites>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
+
+
+	<!--Material:
+      <Plasteel>25</Plasteel>
+      <Steel>20</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+-->
+
+	<ThingDef Name="Base3HSTMoveableMannedTurret" ParentName="3HSTTurretBase" Abstract="True">
+		<statBases>
+			<WorkToBuild>1800</WorkToBuild>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Mass>8</Mass>
+		</statBases>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+		<graphicData>
+			<texPath>Things/Building/Turrets/3HST_Small_Turret_BaseManned</texPath>
+			<drawSize>(1.5,1.5)</drawSize>
+		</graphicData>
+		<designatorDropdown>Group_3HST_ManualRailgunTurret</designatorDropdown>
+		<researchPrerequisites>
+			<li>HeavyTurrets</li>
+		</researchPrerequisites>
+		<designationCategory>Security</designationCategory>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<comps>
+			<li Class="CompProperties_Mannable">
+				<manWorkType>Violent</manWorkType>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+	<!--Material:
+      <Plasteel>25</Plasteel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+-->
+
+
+	<ThingDef Name="Base3HSTGun" ParentName="BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>3HST_Weapons</li>
+			<li>SpacerGun</li>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Gun3HST</li>
+		</thingCategories>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+				<Intellectual>8</Intellectual>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<techLevel>Spacer</techLevel>
+		<storedConceptLearnOpportunity>BDGW_RailRearm</storedConceptLearnOpportunity>
+	</ThingDef>
+
+	<ThingDef Name="Base3HSTLongGun" ParentName="Base3HSTGun" Abstract="True">
+		<thingCategories Inherit="False">
+			<li>GunInfantry3HST</li>
+		</thingCategories>
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>energy bayonet</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<armorPenetration>0.5</armorPenetration>
+			</li>
+		</tools>
+
+	</ThingDef>
+
+	<ThingDef Name="Base3HSTShortGun" ParentName="Base3HSTGun" Abstract="True">
+		<thingCategories Inherit="False">
+			<li>GunInfantry3HST</li>
+		</thingCategories>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<tools>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>energy bayonet</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<armorPenetration>0.5</armorPenetration>
+			</li>
+		</tools>
+	</ThingDef>
+
+
+	<ThingDef Name="Base3HSTHeavyGun" ParentName="Base3HSTGun" Abstract="True">
+		<thingCategories Inherit="False">
+			<li>GunHeavy3HST</li>
+		</thingCategories>
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef Name="Base3HSTTurretGun" ParentName="BaseWeaponTurret" Abstract="True">
+		<relicChance>0</relicChance>
+	</ThingDef>
+</Defs>

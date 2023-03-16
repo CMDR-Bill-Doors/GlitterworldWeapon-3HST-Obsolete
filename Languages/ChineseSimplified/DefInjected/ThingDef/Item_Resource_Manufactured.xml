@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Resource_3HST_RailComponent.label>电磁加速轨道</Resource_3HST_RailComponent.label>
+  <Resource_3HST_RailComponent.description>极其先进的电磁加速轨道，用于各式各样的3HST制武器。</Resource_3HST_RailComponent.description>
+  <Resource_3HST_RailComponent.comps.0.useLabel>更换磁轨</Resource_3HST_RailComponent.comps.0.useLabel>
+
+
+</LanguageData>
